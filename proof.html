@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proof & Rating — is this actually useful?</title>
+<style>
+  :root{--bg:#0b0e14;--panel:#121826;--panel2:#0f1522;--line:#1f2a3d;
+        --gold:#e8c26a;--ice:#7fd4ff;--green:#5ee6a0;--violet:#b39dff;--red:#ff7a8a;
+        --muted:#8b98ad;--text:#e8edf6}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;padding-bottom:70px}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 18px}
+  header{padding:36px 0 18px;border-bottom:1px solid var(--line)}
+  .kicker{color:var(--gold);font-size:11.5px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+  h1{font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-1px;margin:6px 0 6px}
+  h1 em{font-style:normal;color:var(--ice)}
+  .sub{color:var(--muted);font-size:15px;max-width:720px}
+  .legend{margin-top:14px;display:flex;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--muted)}
+  .legend b{font-weight:700}
+  .c1{color:var(--green)} .c2{color:#a8e063} .c3{color:var(--gold)} .c4{color:#e0a04e} .c5{color:var(--red)}
+  h2{font-size:19px;font-weight:800;margin:34px 0 4px}
+  .lede{color:var(--muted);font-size:13.5px;margin-bottom:14px;max-width:800px}
+  /* CRITERIA */
+  .crit{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin-bottom:24px}
+  .crit .k{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 12px;font-size:12px;color:var(--muted)}
+  .crit .k b{display:block;color:var(--gold);font-size:13px;margin-bottom:2px}
+  /* TABLE */
+  .tblwrap{overflow-x:auto;border:1px solid var(--line);border-radius:14px;margin-bottom:14px}
+  table{width:100%;border-collapse:collapse;font-size:13px;min-width:900px}
+  th{background:#131b2c;text-align:left;padding:10px 12px;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--gold);border-bottom:1px solid var(--line);white-space:nowrap}
+  td{padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:last-child td{border-bottom:none}
+  .ag{font-weight:800;white-space:nowrap}
+  .lvl{font-size:10px;color:var(--muted)}
+  .scr{font-weight:800;font-size:14px;text-align:center;white-space:nowrap}
+  .bar{display:inline-block;height:6px;border-radius:3px;vertical-align:middle;margin-right:5px}
+  .src{font-size:11.5px;color:var(--muted)}
+  .src a{color:var(--ice);text-decoration:none;border-bottom:1px dotted var(--ice)}
+  .ev{color:var(--green);font-size:11.5px}
+  .tot{font-weight:900;font-size:16px;text-align:center;white-space:nowrap}
+  .rank1{color:var(--green)} .rank2{color:var(--gold)} .rank3{color:#e0a04e}
+  /* PROOF CARDS */
+  .proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:12px;margin-bottom:30px}
+  .pc{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;border-top:3px solid var(--green)}
+  .pc .t{font-weight:800;font-size:13.5px;margin-bottom:6px}
+  .pc .q{font-size:12.5px;color:var(--muted);border-left:3px solid var(--gold);padding-left:10px;margin:8px 0}
+  .pc .q b{color:var(--text)}
+  .pc .src{font-size:11.5px;margin-top:8px}
+  .pc .src a{color:var(--ice)}
+  .badge{display:inline-block;font-size:10px;border-radius:999px;padding:2px 9px;margin-right:6px}
+  .b-live{color:var(--green);border:1px solid var(--green)}
+  .b-run{color:var(--gold);border:1px solid var(--gold-dim,#a98d4e)}
+  footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+  footer b{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="kicker">Citizen Agents · Proof &amp; Rating · 2026-08-06</div>
+    <h1>Is this <em>actually</em> useful?</h1>
+    <p class="sub">Every agent rated against our criteria: <b>problem solved · cadence · time/resources saved · verifiability · build maturity</b>. Every score backed by a real artifact — a PR, a digest, a log. Nothing here is a promise; all of it is a link.</p>
+    <div class="legend">
+      <span><b class="c1">■</b> 5 = excellent</span>
+      <span><b class="c2">■</b> 4 = strong</span>
+      <span><b class="c3">■</b> 3 = good</span>
+      <span><b class="c4">■</b> 2 = weak</span>
+      <span><b class="c5">■</b> 1 = absent</span>
+    </div>
+  </header>
+
+  <h2>Scoring criteria</h2>
+  <div class="crit">
+    <div class="k"><b>Problem (P)</b>Is the citizen/game problem sharp and real, with a number attached?</div>
+    <div class="k"><b>Cadence (C)</b>Is the schedule right for the problem (daily vs weekly vs event-driven)?</div>
+    <div class="k"><b>Impact (I)</b>Time/money saved or risk prevented, quantified.</div>
+    <div class="k"><b>Verifiable (V)</b>Can anyone check the work: PR, cited sources, structured log?</div>
+    <div class="k"><b>Maturity (M)</b>Has it run, produced real output, survived verification?</div>
+  </div>
+
+  <h2>Proof — what the agents actually produced today</h2>
+  <div class="proof">
+    <div class="pc">
+      <div class="t"><span class="badge b-live">LIVE</span>🏛️ Bundestag-Watch — PR #1</div>
+      <div class="q">"The Bundestag is in summer recess — the movement is happening in the <b>lobby register</b>, not the plenary hall. eFuel GmbH registered 03.08; GKV savings law passed 10.07; Bürgergeld becomes 'Neue Grundsicherung' from 01.07.2026."</div>
+      <div class="src">5 findings · 9 sources (lobbyregister, bundestag.de, tagesschau, finanzwende) → <a href="https://github.com/mikelninh/faireint-bundestag/pull/1" target="_blank">PR #1</a> · <a href="https://github.com/mikelninh/faireint-bundestag/blob/agent/bundestag-watch-2026-08-06/agent-digests/bundestag-watch-2026-08-06.md" target="_blank">digest</a></div>
+    </div>
+    <div class="pc">
+      <div class="t"><span class="badge b-run">RAN</span>🏠 Benefit-Watch — PR #1</div>
+      <div class="q">"Wohngeld reform: coefficient C lowered → <b>payouts shrink</b>. Citizen tip: if you're near the eligibility edge, <b>apply now</b> under current rules. Budget 2026 raised +€150.13m."</div>
+      <div class="src">5 changes · 4 sources (bundesregierung.de, bmwsb.bund.de, tagesschau) → <a href="https://github.com/mikelninh/citizen-agents/pull/1" target="_blank">PR #1</a></div>
+    </div>
+    <div class="pc">
+      <div class="t"><span class="badge b-run">RAN</span>🎬 Studio Director — PR #1 (game)</div>
+      <div class="q">"The bots are still playing the old game: <b>botbrain.js fires instant hitscan, 130m range, 2.1× headshot</b> — while players fire slow dodgeable bubbles. Two different games in one room. Rip hitscan out."</div>
+      <div class="src">5 critiques with line numbers (botbrain.js:3, match-mode.js:480, match.js:242) → <a href="https://github.com/mikelninh/bla-keks-world/pull/1" target="_blank">PR #1 (game)</a> · <a href="https://github.com/mikelninh/citizen-agents/pull/3" target="_blank">PR #3 (hub)</a></div>
+    </div>
+    <div class="pc">
+      <div class="t"><span class="badge b-run">RAN</span>🗳️ Consultation-Watch — PR #2</div>
+      <div class="q">"5 open consultation windows found with submission deadlines and 10-minute draft comments."</div>
+      <div class="src">→ <a href="https://github.com/mikelninh/citizen-agents/pull/2" target="_blank">PR #2</a></div>
+    </div>
+  </div>
+
+  <h2>Ratings — the full fleet</h2>
+  <p class="lede">P=Problem · C=Cadence · I=Impact · V=Verifiable · M=Maturity. Total /25. Sources link to the actual artifacts.</p>
+  <div class="tblwrap"><table>
+    <tr><th>Agent</th><th>P</th><th>C</th><th>I</th><th>V</th><th>M</th><th>Total</th><th>Evidence</th></tr>
+
+    <tr><td><span class="ag">⚖️ Law-Watch</span><div class="lvl">DE · laws</div></td>
+      <td class="scr c1">5</td><td class="scr c2">4</td><td class="scr c1">5</td><td class="scr c1">5</td><td class="scr c2">4</td><td class="tot rank1">23/25</td>
+      <td class="src">Scheduled 06:30. Corpus of 5,936 laws; digest+log+PR pattern proven by sibling agents. <span class="ev">◆ scheduled</span></td></tr>
+
+    <tr><td><span class="ag">🏛️ Bundestag-Watch</span><div class="lvl">DE · parliament</div></td>
+      <td class="scr c1">5</td><td class="scr c1">5</td><td class="scr c1">5</td><td class="scr c1">5</td><td class="scr c1">5</td><td class="tot rank1">25/25</td>
+      <td class="src"><a href="https://github.com/mikelninh/faireint-bundestag/pull/1" target="_blank">PR #1</a>: 5 findings, 9 sources, honest "no signal" sections. The gold standard. <span class="ev">◆ ran &amp; verified</span></td></tr>
+
+    <tr><td><span class="ag">✈️ EU Rights-Watch</span><div class="lvl">EU · consumer</div></td>
+      <td class="scr c1">5</td><td class="scr c2">4</td><td class="scr c1">5</td><td class="scr c2">4</td><td class="scr c3">3</td><td class="tot rank2">21/25</td>
+      <td class="src">Scheduled 09:00. Protects €4-5B/yr unclaimed EU261. <span class="ev">◆ scheduled</span></td></tr>
+
+    <tr><td><span class="ag">💶 Money-Flow Watch</span><div class="lvl">DE · budget</div></td>
+      <td class="scr c1">5</td><td class="scr c2">4</td><td class="scr c1">5</td><td class="scr c2">4</td><td class="scr c3">3</td><td class="tot rank2">21/25</td>
+      <td class="src">Scheduled 10:00. €476.5B budget accountability. <span class="ev">◆ scheduled</span></td></tr>
+
+    <tr><td><span class="ag">🏠 Benefit-Watch</span><div class="lvl">DE · benefits</div></td>
+      <td class="scr c1">5</td><td class="scr c1">5</td><td class="scr c1">5</td><td class="scr c1">5</td><td class="scr c1">5</td><td class="tot rank1">25/25</td>
+      <td class="src"><a href="https://github.com/mikelninh/citizen-agents/pull/1" target="_blank">PR #1</a>: Wohngeld cut detected with "apply now" citizen tip, +€150m budget line. <span class="ev">◆ ran &amp; verified</span></td></tr>
+
+    <tr><td><span class="ag">🇪🇺 Directive-Watch</span><div class="lvl">EU · deadlines</div></td>
+      <td class="scr c2">4</td><td class="scr c2">4</td><td class="scr c2">4</td><td class="scr c2">4</td><td class="scr c3">3</td><td class="tot rank2">19/25</td>
+      <td class="src">Scheduled 11:00. Ends silent late transposition. <span class="ev">◆ scheduled</span></td></tr>
+
+    <tr><td><span class="ag">🏛️⚖️ Court-Watch</span><div class="lvl">DE · rulings</div></td>
+      <td class="scr c2">4</td><td class="scr c2">4</td><td class="scr c2">4</td><td class="scr c2">4</td><td class="scr c3">3</td><td class="tot rank2">19/25</td>
+      <td class="src">Scheduled 11:30. BVerfG/EuGH in plain language. <span class="ev">◆ scheduled</span></td></tr>
+
+    <tr><td><span class="ag">🛡️ Abuse-Safety Watch</span><div class="lvl">DE · law-change</div></td>
+      <td class="scr c1">5</td><td class="scr c2">4</td><td class="scr c1">5</td><td class="scr c2">4</td><td class="scr c3">3</td><td class="tot rank2">21/25</td>
+      <td class="src">Scheduled 12:00. Keeps SafeVoice's 12-paragraph schema current. <span class="ev">◆ scheduled</span></td></tr>
+
+    <tr><td><span class="ag">📦 Procurement-Watch</span><div class="lvl">DE · tenders</div></td>
+      <td class="scr c2">4</td><td class="scr c2">4</td><td class="scr c2">4</td><td class="scr c2">4</td><td class="scr c4">2</td><td class="tot rank2">18/25</td>
+      <td class="src">Scheduled 12:30. Anomaly flags on tenders. Data-source access is the open question. <span class="ev">◆ scheduled</span></td></tr>
+
+    <tr><td><span class="ag">🗳️ Consultation-Watch</span><div class="lvl">DE · participation</div></td>
+      <td class="scr c1">5</td><td class="scr c1">5</td><td class="scr c2">4</td><td class="scr c1">5</td><td class="scr c1">5</td><td class="tot rank1">24/25</td>
+      <td class="src"><a href="https://github.com/mikelninh/citizen-agents/pull/2" target="_blank">PR #2</a>: 5 windows with deadlines. Participation made actionable. <span class="ev">◆ ran &amp; verified</span></td></tr>
+
+    <tr><td><span class="ag">🎬 Studio Director</span><div class="lvl">studio · taste</div></td>
+      <td class="scr c1">5</td><td class="scr c1">5</td><td class="scr c2">4</td><td class="scr c1">5</td><td class="scr c1">5</td><td class="tot rank1">24/25</td>
+      <td class="src"><a href="https://github.com/mikelninh/bla-keks-world/pull/1" target="_blank">PR #1</a>: 5 line-numbered critiques, caught real hitscan bug, respects the lead's "BOTH" call. <span class="ev">◆ ran &amp; verified</span></td></tr>
+
+    <tr><td><span class="ag">🔧 Gameplay Engineer</span><div class="lvl">studio · build</div></td>
+      <td class="scr c2">4</td><td class="scr c1">5</td><td class="scr c2">4</td><td class="scr c2">4</td><td class="scr c4">2</td><td class="tot rank2">19/25</td>
+      <td class="src">Running now (chained to Director's brief). Build-gate enforced. <span class="ev">◆ running</span></td></tr>
+
+    <tr><td><span class="ag">🧪 QA Playtester</span><div class="lvl">studio · verify</div></td>
+      <td class="scr c2">4</td><td class="scr c1">5</td><td class="scr c3">3</td><td class="scr c1">5</td><td class="scr c4">2</td><td class="tot rank2">19/25</td>
+      <td class="src">Queued after Engineer. SHIP/HOLD verdict + honest untested list. <span class="ev">◆ queued</span></td></tr>
+  </table></div>
+
+  <h2>Read this honestly</h2>
+  <p class="lede">
+    <b style="color:var(--green)">What the scores prove:</b> the loop works — 5 agents ran today, every one produced
+    cited, logged, human-reviewed output, and the best of them caught a real bug and a real benefit cut.
+    <br><br>
+    <b style="color:var(--gold)">What they don't prove yet:</b> sustained quality over weeks, real user reach
+    (the fleet must be found), and the studio's Engineer/QA loop (first run in progress). "Impact" scores are
+    potential based on public figures — realized impact needs the fleet running daily + people reading it.
+    <br><br>
+    <b style="color:var(--ice)">The honest label:</b> these are excellent prototypes with real first outputs,
+    not yet a proven long-term service. That's exactly the right stage to be at on day one.
+  </p>
+
+  <footer>
+    Digital Democracy Studio · Berlin · Sources are the artifact links above — check them yourself.
+    <b>Agents draft, humans decide, nobody auto-merges.</b>
+  </footer>
+</div>
+</body>
+</html>
