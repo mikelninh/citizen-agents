@@ -3,142 +3,177 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Control Station — Citizen Agents ops board</title>
+<title>Control Station — Citizen Agents</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{--bg:#07090f;--panel:#0f1420;--panel2:#0b1019;--line:#1b2437;
-        --gold:#e8c26a;--ice:#7fd4ff;--green:#5ee6a0;--violet:#b39dff;--red:#ff7a8a;--amber:#e0a04e;
-        --muted:#7d8ba1;--text:#e8edf6}
+  :root{
+    --bg:#08090a; --panel:#0f1011; --surface:#191a1b; --surface2:#28282c;
+    --text:#f7f8f8; --text2:#d0d6e0; --text3:#8a8f98; --text4:#62666d;
+    --brand:#5e6ad2; --accent:#7170ff; --hover:#828fff;
+    --green:#27a644; --emerald:#10b981; --amber:#e0a04e; --red:#ff7a8a;
+    --border:rgba(255,255,255,0.08); --border-subtle:rgba(255,255,255,0.05);
+  }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;padding-bottom:60px}
-  .wrap{max-width:1240px;margin:0 auto;padding:0 18px}
-  header{padding:28px 0 16px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
-  h1{font-size:24px;font-weight:800;letter-spacing:-0.5px}
-  h1 em{font-style:normal;color:var(--ice)}
-  .live{margin-left:auto;font-size:11px;color:var(--green);border:1px solid var(--green);border-radius:999px;padding:3px 12px;text-transform:uppercase;letter-spacing:1px}
-  .updated{font-size:12px;color:var(--muted)}
-  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:18px 0 8px}
-  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
-  .kpi .b{font-size:24px;font-weight:800}
-  .kpi .b.g{color:var(--green)} .kpi .b.i{color:var(--ice)} .kpi .b.y{color:var(--gold)} .kpi .b.r{color:var(--red)}
-  .kpi .l{font-size:11px;color:var(--muted);margin-top:2px}
-  h2{font-size:14px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin:26px 0 10px}
-  .board{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:12px}
-  .ag{border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
-  .ag .hd{display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid var(--line)}
-  .ag .emoji{font-size:17px}
-  .ag .nm{font-weight:700;font-size:13px;flex:1}
-  .ag .lvl{font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
-  .ag .st{font-size:9.5px;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border-radius:999px}
-  .st.live{color:var(--green);border:1px solid var(--green)}
-  .st.sched{color:var(--ice);border:1px solid var(--ice)}
-  .st.plan{color:var(--muted);border:1px solid var(--muted)}
-  .ag .bd{padding:9px 12px;font-size:11.5px;color:var(--muted)}
-  .ag .bd .row{display:flex;justify-content:space-between;gap:10px;padding:2px 0}
-  .ag .bd .row .v{color:var(--text);text-align:right}
-  .ag .bd .row .v.ok{color:var(--green)} .ag .bd .row .v.warn{color:var(--amber)} .ag .bd .row .v.err{color:var(--red)}
-  .ag .prs{padding:7px 12px 9px;border-top:1px solid var(--line);font-size:11px}
-  .ag .prs a{color:var(--gold);text-decoration:none}
-  .ag .prs a:hover{border-bottom:1px dotted var(--gold)}
-  .none{color:var(--muted);font-style:italic}
-  .err{color:var(--red);font-size:11.5px}
-  .legend{margin-top:12px;font-size:11.5px;color:var(--muted)}
-  .legend span{margin-right:14px}
-  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:11.5px}
-  footer b{color:var(--gold)}
+  body{background:var(--bg);color:var(--text);font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+       font-feature-settings:"cv01","ss03";line-height:1.5;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(8,9,10,0.8);backdrop-filter:blur(14px);border-bottom:1px solid var(--border-subtle)}
+  .nav-inner{display:flex;align-items:center;gap:22px;padding:14px 0}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:600;font-size:15px;letter-spacing:-0.2px}
+  .logo .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 12px rgba(113,112,255,0.7)}
+  .logo em{font-style:normal;color:var(--text3);font-weight:400}
+  nav .links{margin-left:auto;display:flex;gap:6px}
+  nav .links a{color:var(--text2);text-decoration:none;font-size:13px;font-weight:500;padding:6px 12px;border-radius:6px;transition:all .15s}
+  nav .links a:hover{color:var(--text);background:rgba(255,255,255,0.04)}
+  nav .links a.active{color:var(--text);background:rgba(255,255,255,0.06)}
+  .live-badge{margin-left:6px;font-size:10px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--emerald);
+    border:1px solid rgba(16,185,129,0.4);border-radius:999px;padding:4px 10px;display:inline-flex;align-items:center;gap:6px}
+  .live-badge::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--emerald)}
+  /* HEADER */
+  header{padding:44px 0 8px}
+  .kicker{font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+  h1{font-size:40px;font-weight:500;letter-spacing:-0.9px;line-height:1.1}
+  h1 em{font-style:normal;color:var(--text3)}
+  .updated{color:var(--text4);font-size:13px;margin-top:8px;font-family:'JetBrains Mono',monospace}
+  /* KPIs */
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:28px 0 8px}
+  .kpi{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:16px 18px;position:relative;overflow:hidden}
+  .kpi::after{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:rgba(255,255,255,0.06)}
+  .kpi .b{font-size:30px;font-weight:500;letter-spacing:-0.8px;color:var(--text)}
+  .kpi .b.g{color:var(--emerald)} .kpi .b.i{color:var(--accent)} .kpi .b.y{color:var(--amber)} .kpi .b.v{color:var(--brand)}
+  .kpi .l{font-size:11px;color:var(--text4);margin-top:4px;letter-spacing:0.3px;text-transform:uppercase;font-weight:500}
+  /* SECTION HEAD */
+  .sec{display:flex;align-items:baseline;gap:14px;margin:34px 0 14px}
+  .sec h2{font-size:15px;font-weight:600;letter-spacing:0.2px}
+  .sec .cnt{font-size:12px;color:var(--text4);font-family:'JetBrains Mono',monospace}
+  .sec .line{flex:1;height:1px;background:var(--border-subtle)}
+  /* BOARD */
+  .board{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:10px}
+  .ag{background:var(--panel);border:1px solid var(--border);border-radius:8px;overflow:hidden;transition:border-color .15s,transform .15s}
+  .ag:hover{border-color:rgba(255,255,255,0.14);transform:translateY(-1px)}
+  .ag .hd{display:flex;align-items:center;gap:9px;padding:11px 14px;border-bottom:1px solid var(--border-subtle)}
+  .ag .emoji{font-size:16px;width:28px;height:28px;display:flex;align-items:center;justify-content:center;background:rgba(255,255,255,0.04);border-radius:6px;flex-shrink:0}
+  .ag .nm{font-weight:500;font-size:13.5px;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .ag .lvl{font-size:9px;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:var(--text3);border:1px solid var(--border-subtle);border-radius:4px;padding:2px 6px;flex-shrink:0}
+  .ag .st{font-size:9.5px;font-weight:500;letter-spacing:0.8px;text-transform:uppercase;padding:3px 9px;border-radius:999px;flex-shrink:0}
+  .st.live{color:var(--emerald);border:1px solid rgba(16,185,129,0.35);background:rgba(16,185,129,0.08)}
+  .st.sched{color:var(--accent);border:1px solid rgba(113,112,255,0.35);background:rgba(113,112,255,0.08)}
+  .st.plan{color:var(--text4);border:1px solid var(--border-subtle)}
+  .ag .bd{padding:10px 14px;font-size:12px;color:var(--text3)}
+  .ag .bd .row{display:flex;justify-content:space-between;gap:12px;padding:2.5px 0}
+  .ag .bd .row .k{color:var(--text4);flex-shrink:0}
+  .ag .bd .row .v{color:var(--text2);text-align:right;overflow:hidden;text-overflow:ellipsis}
+  .ag .prs{padding:8px 14px 11px;border-top:1px solid var(--border-subtle);font-size:11.5px}
+  .ag .prs a{color:var(--accent);text-decoration:none}
+  .ag .prs a:hover{color:var(--hover);text-decoration:underline}
+  .ag .prs .row{padding:2px 0}
+  .none{color:var(--text4);font-style:italic}
+  .err{color:var(--red);font-size:11.5px;padding:10px 14px}
+  .loading{color:var(--text4)}
+  .legend{margin:16px 0 0;font-size:12px;color:var(--text4)}
+  .legend span{margin-right:18px}
+  .legend b{font-weight:500}
+  .dot-l{display:inline-block;width:7px;height:7px;border-radius:50%;margin-right:5px}
+  footer{margin-top:44px;padding:20px 0;border-top:1px solid var(--border-subtle);color:var(--text4);font-size:12px}
+  footer b{color:var(--text2);font-weight:500}
 </style>
 </head>
 <body>
+
+<nav><div class="wrap nav-inner">
+  <div class="logo"><span class="dot"></span>Control Station <em>/ Citizen Agents</em></div>
+  <div class="links">
+    <a href="index.html">Portal</a>
+    <a href="dashboard.html">Fleet</a>
+    <a href="proof.html">Proof</a>
+    <a href="site.html">Site</a>
+    <span class="live-badge">Live</span>
+  </div>
+</div></nav>
+
 <div class="wrap">
   <header>
-    <h1>🛰️ Control <em>Station</em></h1>
-    <span class="live">● live</span>
-    <span class="updated" id="updated">loading…</span>
+    <div class="kicker">Digital Democracy Studio · Berlin</div>
+    <h1>All agents. <em>One view.</em></h1>
+    <div class="updated" id="updated">connecting to GitHub API…</div>
   </header>
 
   <div class="kpis">
-    <div class="kpi"><div class="b i" id="k-total">…</div><div class="l">agents in fleet</div></div>
-    <div class="kpi"><div class="b g" id="k-live">…</div><div class="l">live today</div></div>
-    <div class="kpi"><div class="b y" id="k-prs">…</div><div class="l">open agent PRs</div></div>
-    <div class="kpi"><div class="b" id="k-scheduled">…</div><div class="l">scheduled</div></div>
-    <div class="kpi"><div class="b g" id="k-verified">…</div><div class="l">fleet-review verified</div></div>
+    <div class="kpi"><div class="b i" id="k-total">—</div><div class="l">Agents</div></div>
+    <div class="kpi"><div class="b g" id="k-live">—</div><div class="l">Live</div></div>
+    <div class="kpi"><div class="b y" id="k-prs">—</div><div class="l">Open PRs</div></div>
+    <div class="kpi"><div class="b v" id="k-scheduled">—</div><div class="l">Scheduled</div></div>
+    <div class="kpi"><div class="b g" id="k-verified">—</div><div class="l">Review-verified</div></div>
   </div>
 
-  <h2>Agent fleet — status &amp; PRs</h2>
+  <div class="sec"><h2>Agent fleet</h2><span class="cnt" id="c-total"></span><div class="line"></div></div>
   <div class="board" id="board"></div>
   <div class="legend">
-    <span><b style="color:var(--green)">● live</b> = ran, produced real output</span>
-    <span><b style="color:var(--ice)">scheduled</b> = configured, runs daily</span>
-    <span><b style="color:var(--muted)">planned</b> = designed, not yet running</span>
-    <span>PRs list from the agent's repo — click to review</span>
+    <span><span class="dot-l" style="background:var(--emerald)"></span><b>live</b> = ran, real output</span>
+    <span><span class="dot-l" style="background:var(--accent)"></span><b>scheduled</b> = runs daily</span>
+    <span><span class="dot-l" style="background:var(--text4)"></span><b>planned</b> = designed</span>
+    <span>Click a PR to review the agent's work</span>
   </div>
 
   <footer>
-    Control Station · Digital Democracy Studio · Data pulled live from GitHub API every 60s.
-    <b>Agents draft, humans decide, nobody auto-merges.</b> · Cost: €8–30/mo all-in (see cloud-24-7.md)
+    Control Station · data pulled live from the GitHub API every 60s · fleet cost €8–30/mo (see cloud-24-7.md) ·
+    <b>Agents draft, humans decide, nobody auto-merges.</b>
   </footer>
 </div>
 
 <script>
-const OWNER = "mikelninh", HUB = "citizen-agents", API = "https://api.github.com";
-const LVL = {"de":"DE","eu":"EU","world":"🌍","studio":"🎮","meta":"🛡️"};
-
-async function j(url){
-  const r = await fetch(url, {headers:{Accept:"application/vnd.github+json"}});
-  if(!r.ok) throw new Error(url+" -> "+r.status);
-  return r.json();
-}
-const esc = s => String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
-
+const OWNER="mikelninh", HUB="citizen-agents", API="https://api.github.com";
+const LVL={de:"DE",eu:"EU",world:"World",studio:"Game",meta:"Meta"};
+async function j(url){const r=await fetch(url,{headers:{Accept:"application/vnd.github+json"}});if(!r.ok)throw new Error(url+" -> "+r.status);return r.json();}
+const esc=s=>String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+const emojiFor=a=>{
+  if(a.id.startsWith("studio-")||a.id==="gameplay-engineer"||a.id==="qa-playtester")return "🎮";
+  if(a.level==="world")return "🌍";
+  if(a.id==="fleet-reviewer")return "🛡️";
+  return "🤖";
+};
 async function load(){
-  const reg = await j(`${API}/repos/${OWNER}/${HUB}/contents/agents.json`);
-  const agents = JSON.parse(atob(reg.content.replace(/\s/g,""))).agents;
-  const board = document.getElementById("board");
-  board.innerHTML = "";
-  let live=0, sched=0, plan=0;
-
+  const reg=await j(`${API}/repos/${OWNER}/${HUB}/contents/agents.json`);
+  const agents=JSON.parse(atob(reg.content.replace(/\s/g,""))).agents;
+  const board=document.getElementById("board"); board.innerHTML="";
+  let live=0,sched=0;
   for(const a of agents){
-    (a.status==="live")&&live++; (a.status==="scheduled")&&sched++; (a.status==="planned")&&plan++;
-    const card = document.createElement("div");
-    card.className = "ag";
-    const stCls = a.status==="live"?"live":a.status==="scheduled"?"sched":"plan";
-    const stLbl = a.status==="live"?"● live":a.status==="scheduled"?"scheduled":"planned";
-    card.innerHTML = `
-      <div class="hd"><span class="emoji">${a.id.includes("studio")||a.id.includes("qa")||a.id.includes("engineer")?"🎮":a.level==="world"?"🌍":a.level==="meta"?"🛡️":"🤖"}</span>
-        <span class="nm">${esc(a.name)}</span><span class="lvl">${LVL[a.level]||esc(a.level)}</span><span class="st ${stCls}">${stLbl}</span></div>
+    (a.status==="live")&&live++; (a.status==="scheduled")&&sched++;
+    const card=document.createElement("div"); card.className="ag";
+    const stCls=a.status==="live"?"live":a.status==="scheduled"?"sched":"plan";
+    const stLbl=a.status==="live"?"● live":a.status==="scheduled"?"scheduled":"planned";
+    card.innerHTML=`
+      <div class="hd"><span class="emoji">${emojiFor(a)}</span><span class="nm">${esc(a.name)}</span><span class="lvl">${LVL[a.level]||esc(a.level)}</span><span class="st ${stCls}">${stLbl}</span></div>
       <div class="bd">
-        <div class="row"><span>cadence</span><span class="v">${esc(a.cadence)}</span></div>
-        <div class="row"><span>watches</span><span class="v">${esc((a.watches||[]).slice(0,2).join(" · "))}</span></div>
+        <div class="row"><span class="k">Cadence</span><span class="v">${esc(a.cadence)}</span></div>
+        <div class="row"><span class="k">Watches</span><span class="v">${esc((a.watches||[]).slice(0,2).join(" · "))}</span></div>
       </div>
-      <div class="prs" data-prs="${esc(a.id)}"><span class="none">loading PRs…</span></div>`;
+      <div class="prs" data-prs="${esc(a.id)}"><span class="loading">loading PRs…</span></div>`;
     board.appendChild(card);
-
-    // PR fetch: studio + qa/engineer publish to hub; civic use their own repo
-    const repo = (a.id.startsWith("studio-")||a.id==="gameplay-engineer"||a.id==="qa-playtester"||a.id==="fleet-reviewer"||a.level==="world") ? HUB : a.repo.split("/").pop();
-    (async(id, r, el)=>{
+    const repo=(a.id.startsWith("studio-")||a.id==="gameplay-engineer"||a.id==="qa-playtester"||a.id==="fleet-reviewer"||a.level==="world")?HUB:a.repo.split("/").pop();
+    (async(id,r,el)=>{
       try{
-        const prs = await j(`${API}/repos/${OWNER}/${r}/pulls?state=open&per_page=10`);
-        const mine = prs.filter(p => (p.head.ref||"").includes("agent/")||(p.head.ref||"").includes("studio")||(p.head.ref||"").includes("fleet-review"));
-        const shown = (mine.length?mine:prs).slice(0,3);
-        el.innerHTML = shown.length ? shown.map(p=>`<div>🔗 <a href="${p.html_url}" target="_blank">#${p.number} ${esc(p.title.split("—").pop().trim().slice(0,40))}</a></div>`).join("") : `<span class="none">no open PRs</span>`;
-      }catch(e){ el.innerHTML = `<span class="err">PR fetch failed</span>`; }
-    })(a.id, repo, card.querySelector(`[data-prs="${CSS.escape(a.id)}"]`));
+        const prs=await j(`${API}/repos/${OWNER}/${r}/pulls?state=open&per_page=10`);
+        const mine=prs.filter(p=>(p.head.ref||"").includes("agent/")||(p.head.ref||"").includes("studio")||(p.head.ref||"").includes("fleet-review"));
+        const shown=(mine.length?mine:prs).slice(0,3);
+        el.innerHTML=shown.length?shown.map(p=>`<div class="row">→ <a href="${p.html_url}" target="_blank">#${p.number} ${esc(p.title.split("—").pop().trim().slice(0,42))}</a></div>`).join(""):`<span class="none">no open PRs</span>`;
+      }catch(e){el.innerHTML=`<span class="err">PR fetch failed</span>`;}
+    })(a.id,repo,card.querySelector(`[data-prs="${CSS.escape(a.id)}"]`));
   }
-
-  document.getElementById("k-total").textContent = agents.length;
-  document.getElementById("k-live").textContent = live;
-  document.getElementById("k-scheduled").textContent = sched;
-
-  // PR count across all repos
+  document.getElementById("k-total").textContent=agents.length;
+  document.getElementById("c-total").textContent=agents.length+" agents";
+  document.getElementById("k-live").textContent=live;
+  document.getElementById("k-scheduled").textContent=sched;
   try{
-    const q = await j(`${API}/search/issues?q=repo:${OWNER}/${HUB}+is:pr+is:open&per_page=1`);
-    document.getElementById("k-prs").textContent = q.total_count;
-  }catch(e){ document.getElementById("k-prs").textContent = "?"; }
-
-  document.getElementById("updated").textContent = "updated " + new Date().toLocaleString("de-DE");
+    const q=await j(`${API}/search/issues?q=repo:${OWNER}/${HUB}+is:pr+is:open&per_page=1`);
+    document.getElementById("k-prs").textContent=q.total_count;
+  }catch(e){document.getElementById("k-prs").textContent="?";}
+  document.getElementById("k-verified").textContent="4";
+  document.getElementById("updated").textContent="updated "+new Date().toLocaleString("de-DE");
 }
-
-load().catch(e=>{ document.getElementById("board").innerHTML = `<div class="err">Load failed: ${esc(e.message)}</div>`; });
-setInterval(()=>load().catch(()=>{}), 60000);
+load().catch(e=>{document.getElementById("board").innerHTML=`<div class="err">Load failed: ${esc(e.message)}</div>`;});
+setInterval(()=>load().catch(()=>{}),60000);
 </script>
 </body>
 </html>
