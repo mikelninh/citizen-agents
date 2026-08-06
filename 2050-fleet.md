@@ -29,6 +29,10 @@ protokolliert, menschlich geprüft. **Diese Schicht existiert bereits.**
 | Gerichte | Court-Watch | jedes Leiturteil in Alltagssprache, weltweit |
 | EU | Directive-Watch | jede Richtlinie, jedes Mitgliedsland |
 | Industrie | Meat-Dairy | Pharma, Energie, Finanzen, Tech, Bau — jede Branche |
+| Macht-Wege | Revolving-Door | wer wechselt zwischen Politik, Ministerium und Industrie |
+| Maschinen | Algorithm-Watch | KI-Entscheidungen über dein Leben — sichtbar & anfechtbar |
+| Rüstung | Arms-Export | Wohin deutsche Waffen gehen, wer entscheidet, was es kostet |
+| Gesundheit | Pharma-Supply | Lieferengpässe: welches Medikament fehlt, warum, wie lange |
 | Welt | Treaty, Truth, Climate | jede Konvention, jeder Faktencheck, jedes Emissionsversprechen |
 
 ---
@@ -109,8 +113,25 @@ Architektur, auf der 2050 die persönliche Flotte jedes Menschen läuft.
 ## Die 2050-Antwort in einem Satz
 
 > **2050 hat jeder Mensch acht persönliche Wächter, die öffentliche Flotte wacht
-> über alle, und die Wächter der Wächter garantieren, dass niemand — auch wir nicht —
+> über alle — von Gesetzen bis zu den Maschinen, die über uns entscheiden — und
+> die Wächter der Wächter garantieren, dass niemand — auch wir nicht —
 > ungeprüft bleibt.**
 
-*Digital Democracy Studio, Berlin, 2026. Fundament gelegt: 18 öffentliche Wächter,
-1 Fleet-Reviewer, 1 lokales Rechte-Profil. Der Rest ist Ausdauer.*
+### Was 2050 noch kommt (die nächsten Bausteine)
+
+| Wächter | Beobachtet | Status |
+|---|---|---|
+| 🚪 Revolving-Door | Politik ↔ Industrie-Wechsel | 🟢 live (22. Wächter) |
+| 🤖 Algorithm-Watch | KI-Entscheidungen + EU AI Act | 🟢 live |
+| 🛡️ Arms-Export | Rüstungsexporte | 🟢 live |
+| 💊 Pharma-Supply | Medikamenten-Lieferengpässe (BfArM) | 🟢 live |
+| ⚡ Energie-Watch | Preise, Netze, Versorgungssicherheit | ⚪ nächste Welle |
+| 🏠 Miet-Watch | Mietpreisbremse, Mieterhöhungen je Stadt | ⚪ nächste Welle |
+| 🍔 Food-Watch | Rückrufe (Lebensmittelwarnung.de), Zusatzstoffe | ⚪ nächste Welle |
+| 🏦 Finanz-Watch | Gebühren, Zinsen, versteckte Kosten | ⚪ nächste Welle |
+| 📺 Medien-Watch | Medienkonzentration, wer die News besitzt | ⚪ nächste Welle |
+| 🧓 Alter-Watch | Rente, Pflege, Gesundheit im Alter | ⚪ nächste Welle |
+
+*Stand 2026-08-06: 22 öffentliche Wächter live + 1 Fleet-Reviewer + 1 lokales Rechte-Profil.*
+
+*Digital Democracy Studio, Berlin, 2026. Fundament gelegt. Der Rest ist Ausdauer.*

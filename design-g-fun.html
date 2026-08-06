@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citizen Agents — Wir beobachten. Du entscheidest.</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23533afd'/%3E%3Cstop offset='1' stop-color='%23f96bee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='48' height='48' rx='11' fill='url(%23g)'/%3E%3Cpath d='M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3Ccircle cx='24' cy='24' r='7.5' fill='%23fff'/%3E%3Cpath d='M20.5 24 L23 26.5 L27.8 21.4' stroke='url(%23g)' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbfaf7; --ink:#101014; --ink2:#43434c; --ink3:#92929c;
+    --line:rgba(16,16,20,0.09); --line2:rgba(16,16,20,0.16);
+    --purple:#533afd; --magenta:#f96bee; --cyan:#22d3ee;
+    --green:#0f9d6a; --lemon:#a05e03;
+    --grad:linear-gradient(115deg,#533afd 0%,#8b5cf6 45%,#f96bee 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:rgba(139,92,246,0.22)}
+  .aurora{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .aurora .layer{position:absolute;inset:-20%;filter:blur(110px);animation:drift 34s ease-in-out infinite alternate}
+  .aurora .l1{background:radial-gradient(closest-side at 22% 18%,rgba(83,58,253,0.18),transparent 70%)}
+  .aurora .l2{background:radial-gradient(closest-side at 80% 30%,rgba(249,107,238,0.13),transparent 70%);animation-delay:-12s}
+  .aurora .l3{background:radial-gradient(closest-side at 55% 88%,rgba(34,211,238,0.11),transparent 70%);animation-delay:-24s}
+  @keyframes drift{0%{transform:translate(0,0) rotate(0) scale(1)}50%{transform:translate(3vw,2vh) rotate(1.2deg) scale(1.06)}100%{transform:translate(-2vw,3vh) rotate(-1deg) scale(1.1)}}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 36px;position:relative;z-index:1}
+
+  /* NAV */
+  nav{display:flex;align-items:center;padding:30px 0;gap:28px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .brand .mark{width:34px;height:34px;border-radius:9px;background:var(--grad);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 4px 14px rgba(83,58,253,0.28)}
+  .brand .mark svg{width:26px;height:26px;position:relative;z-index:2}
+  .brand .mark .sweep{position:absolute;top:-20%;bottom:-20%;width:8px;background:rgba(255,255,255,0.35);transform:skewX(-20deg);animation:sweep 3.2s ease-in-out infinite;z-index:1}
+  @keyframes sweep{0%{left:-20%}60%,100%{left:120%}}
+  .brand .word{font-size:16.5px;font-weight:600;letter-spacing:-0.3px;color:var(--ink)}
+  .brand .word em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav .links{margin-left:auto;display:flex;gap:6px;align-items:center}
+  nav .links a{color:var(--ink2);text-decoration:none;font-size:13.5px;padding:7px 13px;border-radius:7px;transition:all .18s}
+  nav .links a:hover{color:var(--ink);background:rgba(16,16,20,0.045)}
+  nav .links .pill{font-weight:500;color:var(--purple);border:1px solid rgba(83,58,253,0.25);padding:6px 14px;border-radius:999px}
+  nav .links .pill:hover{background:rgba(83,58,253,0.06);border-color:rgba(83,58,253,0.4)}
+
+  /* HERO */
+  .hero{padding:96px 0 46px;max-width:900px;position:relative}
+  .kicker{display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:3px;text-transform:uppercase;color:var(--purple);margin-bottom:30px}
+  .kicker .live{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(15,157,106,0.15);animation:pulse 3s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.35}}
+  h1{font-size:clamp(54px,8.6vw,98px);font-weight:500;letter-spacing:-0.045em;line-height:0.97;margin-bottom:32px}
+  h1 .th{display:block;font-weight:350}
+  h1 .row{display:block;font-weight:350}
+  h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;padding-right:0.08em}
+  .dek{font-size:19px;font-weight:300;color:var(--ink2);max-width:560px;line-height:1.65}
+  .dek b{font-weight:500;color:var(--ink)}
+  .cta-line{margin-top:42px;display:flex;align-items:center;gap:30px;flex-wrap:wrap}
+  .cta-line a{font-size:16px;font-weight:500;text-decoration:none;position:relative;padding-bottom:5px;transition:opacity .2s}
+  .cta-line .primary{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .cta-line .primary::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--grad);opacity:0.5;transition:opacity .2s}
+  .cta-line .primary:hover::after{opacity:1}
+  .cta-line .secondary{color:var(--ink3);border-bottom:1px solid var(--line2)}
+  .cta-line .secondary:hover{color:var(--ink);border-color:var(--ink)}
+
+  /* THE WATCHFUL EYE — follows cursor, blinks */
+  .eye-stage{position:absolute;right:0;top:40px;width:180px;height:120px;display:flex;align-items:center;justify-content:center;pointer-events:none}
+  .eye{position:relative;width:84px;height:52px;cursor:pointer;pointer-events:auto;transition:transform .25s}
+  .eye:hover{transform:scale(1.08)}
+  .eye .lid{position:absolute;left:0;right:0;height:50%;background:var(--paper);z-index:5;transition:height .18s ease}
+  .eye .lid.top{top:0;border-bottom:2px solid var(--ink)}
+  .eye .lid.bot{bottom:0;border-top:2px solid var(--ink)}
+  .eye.blink .lid.top,.eye.blink .lid.bot{height:100%}
+  .eye svg{width:100%;height:100%;overflow:visible}
+  .eye .pupil{transition:transform .15s ease-out}
+  .eye .hint{position:absolute;top:-26px;left:50%;transform:translateX(-50%);font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);white-space:nowrap;opacity:0;transition:opacity .3s}
+  .eye-stage:hover .hint{opacity:1}
+
+  /* STATS */
+  .stats{display:flex;margin:86px 0 12px;flex-wrap:wrap}
+  .stat{flex:1;min-width:170px;padding:6px 30px 6px 0;position:relative}
+  .stat+.stat{padding-left:30px}
+  .stat+.stat::before{content:"";position:absolute;left:0;top:8%;bottom:8%;width:1px;background:var(--line)}
+  .stat .b{font-size:54px;font-weight:400;letter-spacing:-0.03em;font-variant-numeric:tabular-nums;line-height:1}
+  .stat .b .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat .l{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3);margin-top:8px}
+
+  /* REVEAL */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+
+  /* SECTIONS */
+  .sec{padding:104px 0 0}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
+  .sec-head .n{font-family:'Newsreader',serif;font-style:italic;font-size:21px;color:var(--purple)}
+  .sec-head .rule{flex:1;height:1px;background:var(--line)}
+  .sec h2{font-size:clamp(34px,5vw,56px);font-weight:400;letter-spacing:-0.035em;line-height:1.05;margin-bottom:20px}
+  .sec h2 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sec .lede{font-size:16.5px;font-weight:300;color:var(--ink2);max-width:620px;margin-bottom:38px}
+
+  /* PROBLEMS — rows with wiggle + arrow slide */
+  .problems{border-top:1px solid var(--line)}
+  .prob{display:flex;align-items:baseline;gap:24px;padding:27px 6px;border-bottom:1px solid var(--line);text-decoration:none;color:inherit;transition:all .25s cubic-bezier(.2,.6,.2,1);position:relative}
+  .prob::before{content:"";position:absolute;left:-6px;top:0;bottom:0;width:3px;border-radius:3px;background:var(--grad);opacity:0;transition:opacity .25s}
+  .prob:hover{padding-left:22px;background:linear-gradient(90deg,rgba(139,92,246,0.06),transparent 70%)}
+  .prob:hover::before{opacity:1}
+  .prob .ic{font-size:21px;width:46px;flex-shrink:0;display:inline-block;transition:transform .25s cubic-bezier(.3,1.6,.4,1)}
+  .prob:hover .ic{transform:rotate(-8deg) scale(1.18)}
+  .prob .mid{flex:1}
+  .prob .q{font-size:22px;font-weight:400;letter-spacing:-0.015em;margin-bottom:3px}
+  .prob .a{font-size:14.5px;color:var(--ink3);font-weight:300;max-width:560px}
+  .prob .go{font-family:'JetBrains Mono',monospace;font-size:12px;font-weight:500;color:var(--purple);white-space:nowrap;opacity:0.5;transition:opacity .2s,transform .2s;letter-spacing:0.5px}
+  .prob:hover .go{opacity:1;transform:translateX(4px)}
+
+  /* FEED — timeline with stamp slam */
+  .feed{margin-top:10px;border-top:1px solid var(--line);position:relative}
+  .f-entry{display:grid;grid-template-columns:44px 1fr;gap:26px;padding:34px 0;border-bottom:1px solid var(--line);position:relative}
+  .f-entry .clock{width:44px;display:flex;flex-direction:column;align-items:center;position:relative;z-index:1}
+  .f-entry .clock .t{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink3);letter-spacing:0.5px;white-space:nowrap;margin-top:4px}
+  .f-entry .dot{width:13px;height:13px;border-radius:50%;background:var(--green);border:3px solid var(--paper);box-shadow:0 0 0 1px rgba(15,157,106,0.4);flex-shrink:0;animation:pulse 3s infinite}
+  .f-entry.part .dot{background:var(--lemon);box-shadow:0 0 0 1px rgba(160,94,3,0.4)}
+  .f-entry .body .t{font-size:21px;font-weight:400;letter-spacing:-0.015em;position:relative;display:inline-block}
+  .f-entry .body .s{font-size:15px;color:var(--ink2);font-weight:300;margin-top:6px;max-width:640px}
+  .f-entry .body .src{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink3);margin-top:10px;letter-spacing:0.3px}
+  .f-entry .body .src b{color:var(--purple);font-weight:500}
+  .stamp-ink{position:relative;display:inline-block}
+  .stamp-ink .stamp{position:absolute;top:-6px;right:-6px;font-family:'JetBrains Mono',monospace;font-size:10px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;padding:3px 9px;border:1.6px solid;border-radius:4px;opacity:0;transform:scale(1.8) rotate(-14deg);pointer-events:none}
+  .stamp-ink.stamped .stamp{animation:stamp-slam .5s cubic-bezier(.2,1.6,.3,1) forwards}
+  .stamp-ink .stamp.v{color:var(--green);border-color:var(--green);background:rgba(15,157,106,0.06)}
+  .stamp-ink .stamp.p{color:var(--lemon);border-color:var(--lemon);background:rgba(160,94,3,0.06)}
+  @keyframes stamp-slam{0%{opacity:0;transform:scale(1.8) rotate(-20deg)}55%{opacity:1;transform:scale(0.92) rotate(-8deg)}75%{transform:scale(1.06) rotate(-10deg)}100%{opacity:1;transform:scale(1) rotate(-10deg)}}
+
+  /* ORACLE — the fun widget */
+  .oracle{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:44px 0;text-align:center;position:relative}
+  .oracle .ring{width:64px;height:64px;border-radius:50%;margin:0 auto 18px;position:relative;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(83,58,253,0.35);animation:float 4s ease-in-out infinite}
+  @keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+  .oracle .ring::after{content:"";position:absolute;inset:-8px;border-radius:50%;border:1.5px dashed rgba(83,58,253,0.4);animation:spin 14s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .oracle .ring span{font-size:28px}
+  .oracle .prompt{font-family:'Newsreader',serif;font-style:italic;font-size:22px;color:var(--ink2);max-width:560px;margin:0 auto 22px;min-height:64px;transition:opacity .25s}
+  .oracle .prompt.swap{opacity:0}
+  .oracle .btn{font-family:'JetBrains Mono',monospace;font-size:13px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:var(--grad);border:none;border-radius:999px;padding:13px 30px;cursor:pointer;box-shadow:0 6px 20px rgba(83,58,253,0.3);transition:transform .15s,box-shadow .15s}
+  .oracle .btn:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 10px 28px rgba(83,58,253,0.4)}
+  .oracle .btn:active{transform:scale(0.96)}
+  .oracle .count{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3);margin-top:16px}
+
+  /* WATCHERS — chips that pop on hover */
+  .watch-wrap{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:38px 0}
+  .watch-flow{display:flex;flex-wrap:wrap;gap:12px 34px}
+  .w-chip{font-size:17px;font-weight:300;color:var(--ink2);padding:6px 10px;border-radius:8px;cursor:default;transition:all .2s cubic-bezier(.3,1.6,.4,1)}
+  .w-chip:hover{color:var(--purple);transform:translateY(-3px) scale(1.05);background:rgba(139,92,246,0.07)}
+  .w-chip b{font-weight:450;color:var(--ink)}
+  .w-chip .e{margin-right:9px;font-size:18px}
+
+  /* STATEMENT */
+  .statement{margin-top:110px;padding:120px 0;background:#0c0c12;color:#f5f5f7;position:relative;overflow:hidden}
+  .statement .aur{position:absolute;inset:0;filter:blur(90px);opacity:0.6;pointer-events:none}
+  .statement .aur i{position:absolute;border-radius:50%}
+  .statement .aur i:nth-child(1){width:55vw;height:55vw;background:radial-gradient(closest-side,rgba(83,58,253,0.32),transparent);top:-22vw;left:-12vw}
+  .statement .aur i:nth-child(2){width:45vw;height:45vw;background:radial-gradient(closest-side,rgba(249,107,238,0.24),transparent);bottom:-18vw;right:-10vw}
+  .statement .inner{position:relative;z-index:1;max-width:920px;margin:0 auto;padding:0 36px}
+  .statement .k{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:3px;text-transform:uppercase;color:#a78bfa;margin-bottom:26px}
+  .statement h2{font-size:clamp(32px,5vw,52px);font-weight:400;letter-spacing:-0.03em;line-height:1.22;margin-bottom:44px}
+  .statement h2 .g{background:linear-gradient(115deg,#c4b5fd,#f9a8d4 70%);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .statement .ps{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:38px}
+  .statement .p .ic{font-size:24px;margin-bottom:12px;display:inline-block;transition:transform .25s}
+  .statement .p:hover .ic{transform:rotate(-10deg) scale(1.15)}
+  .statement .p .t{font-size:16px;font-weight:500;margin-bottom:6px}
+  .statement .p .d{font-size:13.5px;color:rgba(245,245,247,0.55);font-weight:300;line-height:1.6}
+  .statement .p .d a{color:#c4b5fd}
+
+  /* SUPPORT + FOOTER */
+  .support-zone{padding:96px 0 40px;text-align:center}
+  .support-zone h2{font-size:clamp(32px,4.5vw,48px);font-weight:400;letter-spacing:-0.03em;margin-bottom:16px}
+  .support-zone .lede{color:var(--ink2);font-weight:300;max-width:520px;margin:0 auto 38px;font-size:15.5px}
+  .support-zone .big{font-size:20px;font-weight:500;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;text-decoration:none;position:relative;padding-bottom:4px}
+  .support-zone .big::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--grad);opacity:0.45}
+  .support-zone .small{display:block;margin-top:24px;color:var(--ink3);font-size:13.5px}
+  .support-zone .small a{color:var(--ink2);text-decoration:none;border-bottom:1px solid var(--line2);margin:0 11px;transition:color .15s}
+  .support-zone .small a:hover{color:var(--purple)}
+  footer{padding:48px 0 76px;border-top:1px solid var(--line);color:var(--ink3);font-size:13px;text-align:center}
+  footer b{color:var(--ink);font-weight:500}
+  footer .mark-line{display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;color:var(--ink);font-weight:600;font-size:14px}
+  footer .mark-line svg{width:20px;height:20px}
+  @media(max-width:640px){.eye-stage{display:none}.wrap{padding:0 20px}.stat{min-width:130px}.stat .b{font-size:40px}}
+</style>
+</head>
+<body>
+<div class="aurora"><div class="layer l1"></div><div class="layer l2"></div><div class="layer l3"></div></div>
+
+<div class="wrap">
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="mark">
+        <span class="sweep"></span>
+        <svg viewBox="0 0 48 48"><path d="M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="24" cy="24" r="7.5" fill="#fff"/><path d="M20.5 24 L23 26.5 L27.8 21.4" stroke="#533afd" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="word">Citizen <em>Agents</em></span>
+    </a>
+    <div class="links">
+      <a href="#anliegen">Anliegen</a>
+      <a href="#signal">Signal</a>
+      <a href="#orakel">Orakel</a>
+      <a href="#waechter">Wächter</a>
+      <a class="pill" href="control-station.html">Control Station</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="kicker"><span class="live"></span>18 Wächter im Dienst · Berlin · Open Source · 2026</div>
+    <h1>
+      <span class="th">Dein Recht.</span>
+      <span class="row">Dein Geld.</span>
+      <span class="row serif">Deine Frage.</span>
+    </h1>
+    <p class="dek"><b>Wir beobachten. Wir verifizieren. Du entscheidest.</b> Achtzehn Wächter melden, was Gesetze, Parlament, Haushalt und Gerichte mit dir vorhaben — <b>0 € für dich. Für immer.</b></p>
+    <div class="cta-line">
+      <a class="primary" href="#anliegen">Was ist dein Anliegen?</a>
+      <a class="secondary" href="https://github.com/mikelninh/citizen-agents" target="_blank">Quellcode ansehen</a>
+    </div>
+    <div class="eye-stage">
+      <div class="eye" id="eye">
+        <span class="hint">Wir beobachten.</span>
+        <div class="lid top"></div>
+        <div class="lid bot"></div>
+        <svg viewBox="0 0 84 52">
+          <defs><linearGradient id="eg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#533afd"/><stop offset="1" stop-color="#f96bee"/></linearGradient></defs>
+          <path d="M4 26 C18 8 66 8 80 26 C66 44 18 44 4 26 Z" fill="#fff" stroke="rgba(16,16,20,0.35)" stroke-width="2"/>
+          <circle class="pupil" cx="42" cy="26" r="9" fill="url(#eg)"/>
+          <circle cx="45" cy="22" r="2.6" fill="#fff" opacity="0.85"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="b">18</div><div class="l">Wächter-Agenten</div></div>
+    <div class="stat"><div class="b">0<span class="g"> €</span></div><div class="l">Für dich, für immer</div></div>
+    <div class="stat"><div class="b">€4–5 <span class="g">Mrd</span></div><div class="l">EU261 unbeansprucht/Jahr</div></div>
+    <div class="stat"><div class="b">€1 <span class="g">Mrd+</span></div><div class="l">Wohngeld unbeansprucht/Jahr</div></div>
+  </div>
+
+  <div class="sec" id="anliegen">
+    <div class="sec-head"><span class="n">I.</span><div class="rule"></div></div>
+    <h2>Eins davon <span class="serif">kennst du.</span></h2>
+    <p class="lede">Klick — und du hast eine Antwort, die dir weiterhilft. Kostenlos, ohne Anmeldung, mit Quellen.</p>
+    <div class="problems reveal">
+      <a class="prob" href="eu261.html"><span class="ic">✈️</span><span class="mid"><div class="q">„Mein Flug hatte 4 Stunden Verspätung."</div><div class="a">Bekomme ich €600? Der EU261-Rechner prüft deinen Anspruch in 30 Sekunden — mit EuGH-Rechtsprechung.</div></span><span class="go">anspruch_pruefen()</span></a>
+      <a class="prob" href="agb-reader.html"><span class="ic">🧾</span><span class="mid"><div class="q">„Dürfen die das in die AGB schreiben?"</div><div class="a">AGB einfügen — der Reader findet unwirksame Klauseln mit dem genauen § (BGB §§ 305c–309).</div></span><span class="go">klauseln_pruefen()</span></a>
+      <a class="prob" href="https://safevoice-vert.vercel.app/" target="_blank"><span class="ic">🛡️</span><span class="mid"><div class="q">„Ich werde online belästigt."</div><div class="a">SafeVoice erstellt in 30 Sekunden eine gerichtsfeste Strafanzeige. Anonym, ohne Konto.</div></span><span class="go">dokumentieren()</span></a>
+      <a class="prob" href="gitlaw-im-einsatz.html"><span class="ic">⚖️</span><span class="mid"><div class="q">„Was sagt das Gesetz dazu?"</div><div class="a">GitLaw erklärt alle 5.942 Bundesgesetze. <span style="color:var(--purple)">Sieh den echten Demo-Lauf →</span></div></span><span class="go">gesetz_fragen()</span></a>
+      <a class="prob" href="https://mikelninh.github.io/faireint/" target="_blank"><span class="ic">🏛️</span><span class="mid"><div class="q">„Welche Politik würde helfen?"</div><div class="a">10 evidenzbasierte Reformen mit Policy-Simulator.</div></span><span class="go">simulation()</span></a>
+      <a class="prob" href="dashboard.html"><span class="ic">📡</span><span class="mid"><div class="q">„Was passiert in meinem Namen?"</div><div class="a">Die Wächter berichten täglich: Gesetze, Lobby, Haushalt, Urteile, EU-Fristen.</div></span><span class="go">meldungen()</span></a>
+    </div>
+  </div>
+
+  <div class="sec" id="signal">
+    <div class="sec-head"><span class="n">II.</span><div class="rule"></div></div>
+    <h2>Was heute <span class="serif">passiert ist.</span></h2>
+    <p class="lede">Geprüft vom unabhängigen Fleet-Reviewer: <b style="color:var(--green)">4 verifiziert</b> · <b style="color:var(--lemon)">2 teilweise</b> · 0 Fehler. Tipp auf einen Eintrag — der Stempel schlägt zu.</p>
+    <div class="feed">
+      <div class="f-entry"><div class="clock"><span class="dot"></span><span class="t">08:00</span></div><div class="body"><div class="t stamp-ink" onclick="stamp(this,'v')"><span class="stamp v">✓ Geprüft</span>Lobby aktiv trotz Sommerpause</div><div class="s">eFuel GmbH neu im Lobbyregister (03.08.) — Energiepolitik. Bürgergeld → „Neue Grundsicherung" ab 01.07.2026 (Drs. 21/3541).</div><div class="src"><b>Quelle:</b> lobbyregister.bundestag.de · tagesschau.de</div></div></div>
+      <div class="f-entry part"><div class="clock"><span class="dot"></span><span class="t">10:30</span></div><div class="body"><div class="t stamp-ink" onclick="stamp(this,'p')"><span class="stamp p">◐ Teilweise</span>Wohngeld — Neuordnung im Kabinett</div><div class="s">Formel-Koeffizient C sinkt → geringere Auszahlungen. Tipp: wer nahe der Grenze ist, sollte jetzt beantragen.</div><div class="src"><b>Quelle:</b> bundesregierung.de · bmwsb.bund.de</div></div></div>
+      <div class="f-entry"><div class="clock"><span class="dot"></span><span class="t">13:00</span></div><div class="body"><div class="t stamp-ink" onclick="stamp(this,'v')"><span class="stamp v">✓ Geprüft</span>Fünf offene Beteiligungsfenster</div><div class="s">BauGB-Anhörung minutengenau verifiziert. Mit Fristen und Stellungnahme-Vorlagen.</div><div class="src"><b>Quelle:</b> bundestag.de</div></div></div>
+    </div>
+    <p class="lede" style="margin-top:18px;font-size:13px">2 Meldungen hatten Quellen-Unschärfen — vom Fleet-Reviewer gefunden, gemeldet, korrigierbar. Das ist das System. <a href="https://github.com/mikelninh/citizen-agents/tree/main/agent-digests" style="color:var(--purple)">alle_befunde() →</a></p>
+  </div>
+
+  <div class="sec" id="orakel">
+    <div class="sec-head"><span class="n">III.</span><div class="rule"></div></div>
+    <h2>Das Wächter-<span class="serif">Orakel.</span></h2>
+    <p class="lede">Frag die Wächter — sie antworten mit echten Funden von heute. Jeder Satz ist belegt.</p>
+    <div class="oracle">
+      <div class="ring"><span>🔮</span></div>
+      <div class="prompt" id="oprompt">Frag das Orakel nach deinem Recht…</div>
+      <button class="btn" onclick="oracle()">Wächter befragen</button>
+      <div class="count" id="ocount">18 Wächter · echte Funde · mit Quelle</div>
+    </div>
+  </div>
+
+  <div class="sec" id="waechter">
+    <div class="sec-head"><span class="n">IV.</span><div class="rule"></div></div>
+    <h2>Wer nicht schläft, <span class="serif">damit du es kannst.</span></h2>
+    <p class="lede">18 Agenten, jeden Tag, jede Meldung mit Quelle, jeder Lauf protokolliert, jeder Befund von Menschen geprüft.</p>
+    <div class="watch-wrap">
+      <div class="watch-flow">
+        <span class="w-chip"><span class="e">⚖️</span><b>Law-Watch</b></span>
+        <span class="w-chip"><span class="e">🏛️</span><b>Bundestag-Watch</b></span>
+        <span class="w-chip"><span class="e">✈️</span><b>EU Rights</b></span>
+        <span class="w-chip"><span class="e">💶</span><b>Money-Flow</b></span>
+        <span class="w-chip"><span class="e">🏠</span><b>Benefit</b></span>
+        <span class="w-chip"><span class="e">🇪🇺</span><b>Directive</b></span>
+        <span class="w-chip"><span class="e">🏛️⚖️</span><b>Court</b></span>
+        <span class="w-chip"><span class="e">🛡️</span><b>Abuse-Safety</b></span>
+        <span class="w-chip"><span class="e">📦</span><b>Procurement</b></span>
+        <span class="w-chip"><span class="e">🗳️</span><b>Consultation</b></span>
+        <span class="w-chip"><span class="e">🌍</span><b>Treaty</b></span>
+        <span class="w-chip"><span class="e">🌐</span><b>Truth</b></span>
+        <span class="w-chip"><span class="e">🌡️</span><b>Climate</b></span>
+        <span class="w-chip"><span class="e">🥩</span><b>Meat-Dairy</b></span>
+        <span class="w-chip"><span class="e">🚪</span><b>Revolving-Door</b></span>
+        <span class="w-chip"><span class="e">🤖</span><b>Algorithm</b></span>
+        <span class="w-chip"><span class="e">🛡️</span><b>Arms-Export</b></span>
+        <span class="w-chip"><span class="e">💊</span><b>Pharma-Supply</b></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="statement">
+  <div class="aur"><i></i><i></i></div>
+  <div class="inner">
+    <div class="k">Das Prinzip</div>
+    <h2>Warum du uns glauben kannst — ohne uns zu glauben: <span class="g">jede Meldung mit Quelle, jeder Lauf geprüft, du entscheidest.</span></h2>
+    <div class="ps">
+      <div class="p"><div class="ic">🔎</div><div class="t">Alles ist prüfbar</div><div class="d">Der erste Bundestag-Report: 5 Funde, 9 Quellen — <a href="https://github.com/mikelninh/faireint-bundestag/pull/1" target="_blank">sieh selbst</a>.</div></div>
+      <div class="p"><div class="ic">🧑‍⚖️</div><div class="t">Menschen entscheiden</div><div class="d">Agenten entwerfen, Menschen prüfen. Niemand merged automatisch.</div></div>
+      <div class="p"><div class="ic">🔒</div><div class="t">Kein Datenschutz-Problem</div><div class="d">Die Wächter verarbeiten keine personenbezogenen Daten — nur öffentliche Quellen.</div></div>
+      <div class="p"><div class="ic">💰</div><div class="t">Kostenlos, für immer</div><div class="d">Finanziert durch Unterstützung und Lizenzen — nie durch eine Paywall vor deinen Rechten.</div></div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+  <div class="support-zone">
+    <h2>Unterstützen</h2>
+    <p class="lede">Wenn dir ein Wächter Zeit, Geld oder Ärger erspart hat: ab 1 €, einmalig oder monatlich. Hält Server, Review und neue Agenten am Laufen.</p>
+    <a class="big" href="https://github.com/sponsors/mikelninh" target="_blank">⭐ GitHub Sponsors</a>
+    <span class="small">
+      <a href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents">Organisationen &amp; NGOs</a>
+      <a href="proof.html">Beweise &amp; Bewertungen</a>
+      <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/2050-thesis.md">2050-These</a>
+      <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/datenschutz-architecture.md">Datenschutz</a>
+    </span>
+  </div>
+  <footer>
+    <div class="mark-line"><svg viewBox="0 0 48 48"><rect width="48" height="48" rx="11" fill="url(#fg)"/><path d="M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="24" cy="24" r="7.5" fill="#fff"/><path d="M20.5 24 L23 26.5 L27.8 21.4" stroke="#533afd" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><defs><linearGradient id="fg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#533afd"/><stop offset="1" stop-color="#f96bee"/></linearGradient></defs></svg>Citizen Agents</div>
+    Digital Democracy Studio · Berlin · Open Source · <b>„Recht auf dem Papier → Recht im Leben."</b><br>
+    Wir beobachten. Wir verifizieren. Du entscheidest.
+  </footer>
+</div>
+
+<script>
+// THE WATCHFUL EYE — follows cursor, blinks
+const eye = document.getElementById("eye");
+if (eye) {
+  const pupil = eye.querySelector(".pupil");
+  const stage = eye.closest(".eye-stage");
+  document.addEventListener("mousemove", (e) => {
+    const r = stage.getBoundingClientRect();
+    const cx = r.left + r.width / 2, cy = r.top + r.height / 2;
+    const dx = (e.clientX - cx) / r.width, dy = (e.clientY - cy) / r.height;
+    pupil.setAttribute("transform", `translate(${dx * 6} ${dy * 5})`);
+  });
+  setInterval(() => {
+    eye.classList.add("blink");
+    setTimeout(() => eye.classList.remove("blink"), 160);
+  }, 4200);
+}
+
+// STAMP SLAM — satisfying hit on feed items
+function stamp(el, kind) {
+  el.classList.remove("stamped");
+  void el.offsetWidth;
+  el.classList.add("stamped");
+}
+
+// THE ORACLE — real verified findings
+const ORACLE = [
+  "Die eFuel GmbH hat sich am 03.08.2026 neu im Lobbyregister eingetragen — Energiepolitik. Wer im Sommer registriert, will im Herbst reden.",
+  "Bürgergeld heißt ab 01.07.2026 \u201eNeue Grundsicherung\u201c — mit schärferen Sanktionen. 5,5 Mio. Menschen sind betroffen.",
+  "Das Wohngeld-Gesetz wird neu geordnet: Formel-Koeffizient C sinkt, Auszahlungen werden geringer. Wer nahe der Grenze ist, sollte jetzt beantragen.",
+  "Fünf Beteiligungsfenster sind gerade offen — die BauGB-Anhörung ist minutengenau verifiziert. 10 Minuten genügen für eine Stellungnahme.",
+  "€4–5 Mrd Fluggastrechte bleiben jedes Jahr unbeansprucht. Eine 4h-Verspätung auf der Langstrecke = bis zu €600.",
+  "Der Bundestag hat das GKV-Sparpaket beschlossen — Beiträge bleiben stabil, aber Kliniken und Leistungen tragen die Kürzung.",
+  "Deutschland setzt EU-Richtlinien chronisch zu spät um — wir machen jede Frist pro Ministerium sichtbar.",
+  "Die Finanzlobby übertrifft Ministerien und Abgeordnete zahlenmäßig — Transparenz allein gleicht das nicht aus.",
+];
+let oi = 0;
+function oracle() {
+  const p = document.getElementById("oprompt");
+  p.classList.add("swap");
+  setTimeout(() => {
+    p.textContent = ORACLE[oi % ORACLE.length];
+    p.classList.remove("swap");
+    document.getElementById("ocount").textContent = "Fund " + (oi + 1) + " von " + ORACLE.length + " · echte Befunde · mit Quelle";
+    oi++;
+  }, 260);
+}
+
+// scroll reveal
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } });
+}, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+document.querySelectorAll(".reveal").forEach((el) => io.observe(el));
+</script>
+</body>
+</html>

@@ -217,6 +217,54 @@
       "watches": ["Lobbyregister", "EU Transparency Register", "GAP subsidies", "animal-welfare law"],
       "impact_estimate": "Lobby + subsidies + policy + science in one public feed — watching the powerful, for the people",
       "open_items": ["subsidy dataset integration", "revolving-door tracker"]
+    },
+    {
+      "id": "revolving-door-watch",
+      "name": "Revolving-Door Watch",
+      "level": "de",
+      "status": "live",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 14:00",
+      "problem": "Ex-ministers and officials moving into industry lobbying (and back) is how influence becomes invisible",
+      "watches": ["abgeordnetenwatch", "lobbycontrol", "Lobbyregister", "news"],
+      "impact_estimate": "Tracks who leaves politics for industry and who returns — the door becomes visible",
+      "open_items": ["career-move dataset", "cooling-off period tracker"]
+    },
+    {
+      "id": "algorithm-watch",
+      "name": "Algorithm-Watch",
+      "level": "eu",
+      "status": "live",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 14:30",
+      "problem": "Algorithms decide credit, insurance, jobs, benefits — citizens have rights they don't know about",
+      "watches": ["EU AI Act", "AlgorithmWatch.org", "netzpolitik", "DSGVO Art. 22"],
+      "impact_estimate": "Makes automated decisions over citizens visible and contestable — the 2050 rights layer",
+      "open_items": ["AI Act registry tracker", "wrongful-decision case feed"]
+    },
+    {
+      "id": "arms-export-watch",
+      "name": "Arms-Export Watch",
+      "level": "de",
+      "status": "live",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 15:00",
+      "problem": "Germany is a top-5 arms exporter; approvals affect wars and human rights, yet happen quietly",
+      "watches": ["Rüstungsexportbericht", "Bundestag Drucksachen", "Amnesty", "news"],
+      "impact_estimate": "Export licenses, destinations, and values become public, timestamped facts",
+      "open_items": ["license-value dataset", "destination risk scoring"]
+    },
+    {
+      "id": "pharma-supply-watch",
+      "name": "Pharma-Supply Watch",
+      "level": "de",
+      "status": "live",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 15:30",
+      "problem": "Medicine shortages hit millions — antibiotics, cancer drugs, children's syrups — with no citizen alert system",
+      "watches": ["BfArM Lieferengpass-Liste", "Pharmazeutische Zeitung", "news"],
+      "impact_estimate": "Shortages + alternatives + expected end dates, tracked for the patients who need them",
+      "open_items": ["BfArM list API integration", "alternative-medication matcher"]
     }
   ],
   "principles": [
