@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citizen Agents — Das Bild-Universum</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23533afd'/%3E%3Cstop offset='1' stop-color='%23f96bee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='48' height='48' rx='11' fill='url(%23g)'/%3E%3Cpath d='M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3Ccircle cx='24' cy='24' r='7.5' fill='%23fff'/%3E%3Cpath d='M20.5 24 L23 26.5 L27.8 21.4' stroke='url(%23g)' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbfaf7; --ink:#101014; --ink2:#43434c; --ink3:#92929c;
+    --line:rgba(16,16,20,0.09); --line2:rgba(16,16,20,0.16);
+    --purple:#533afd; --magenta:#f96bee; --cyan:#22d3ee;
+    --green:#0f9d6a; --lemon:#a05e03;
+    --grad:linear-gradient(115deg,#533afd 0%,#8b5cf6 45%,#f96bee 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:rgba(139,92,246,0.22)}
+  .aurora{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .aurora .layer{position:absolute;inset:-20%;filter:blur(110px);animation:drift 34s ease-in-out infinite alternate}
+  .aurora .l1{background:radial-gradient(closest-side at 22% 18%,rgba(83,58,253,0.18),transparent 70%)}
+  .aurora .l2{background:radial-gradient(closest-side at 80% 30%,rgba(249,107,238,0.13),transparent 70%);animation-delay:-12s}
+  .aurora .l3{background:radial-gradient(closest-side at 55% 88%,rgba(34,211,238,0.11),transparent 70%);animation-delay:-24s}
+  @keyframes drift{0%{transform:translate(0,0) rotate(0) scale(1)}50%{transform:translate(3vw,2vh) rotate(1.2deg) scale(1.06)}100%{transform:translate(-2vw,3vh) rotate(-1deg) scale(1.1)}}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 36px;position:relative;z-index:1}
+
+  nav{display:flex;align-items:center;padding:30px 0;gap:28px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .brand .mark{width:34px;height:34px;border-radius:9px;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(83,58,253,0.28)}
+  .brand .mark svg{width:26px;height:26px}
+  .brand .word{font-size:16.5px;font-weight:600;letter-spacing:-0.3px;color:var(--ink)}
+  .brand .word em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav .links{margin-left:auto;display:flex;gap:6px;align-items:center}
+  nav .links a{color:var(--ink2);text-decoration:none;font-size:13.5px;padding:7px 13px;border-radius:7px;transition:all .18s}
+  nav .links a:hover{color:var(--ink);background:rgba(16,16,20,0.045)}
+  nav .links .pill{font-weight:500;color:var(--purple);border:1px solid rgba(83,58,253,0.25);padding:6px 14px;border-radius:999px}
+  nav .links .pill:hover{background:rgba(83,58,253,0.06);border-color:rgba(83,58,253,0.4)}
+
+  .hero{padding:90px 0 40px;max-width:900px}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:3px;text-transform:uppercase;color:var(--purple);margin-bottom:30px}
+  h1{font-size:clamp(46px,7.2vw,82px);font-weight:500;letter-spacing:-0.045em;line-height:1.0;margin-bottom:28px}
+  h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .dek{font-size:18px;font-weight:300;color:var(--ink2);max-width:600px;line-height:1.65}
+  .dek b{font-weight:500;color:var(--ink)}
+
+  .sec{padding:70px 0 0}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
+  .sec-head .n{font-family:'Newsreader',serif;font-style:italic;font-size:21px;color:var(--purple)}
+  .sec-head .rule{flex:1;height:1px;background:var(--line)}
+  .sec h2{font-size:clamp(30px,4.5vw,50px);font-weight:400;letter-spacing:-0.035em;line-height:1.05;margin-bottom:18px}
+  .sec h2 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sec .lede{font-size:16px;font-weight:300;color:var(--ink2);max-width:640px;margin-bottom:34px}
+
+  /* THE EYE — brand centerpiece */
+  .eye-hero{display:flex;align-items:center;gap:56px;padding:30px 0 50px;flex-wrap:wrap}
+  .eye-hero .img{width:210px;height:210px;border-radius:24px;overflow:hidden;box-shadow:0 20px 50px rgba(83,58,253,0.25);flex-shrink:0}
+  .eye-hero .img img{width:100%;height:100%;object-fit:cover}
+  .eye-hero .meta{flex:1;min-width:260px}
+  .eye-hero .meta .name{font-size:30px;font-weight:500;letter-spacing:-0.02em;margin-bottom:6px}
+  .eye-hero .meta .role{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--purple);letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
+  .eye-hero .meta .d{font-size:15px;color:var(--ink2);font-weight:300;max-width:420px}
+  .eye-hero .meta .tag{display:inline-block;margin-top:14px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);border:1px solid rgba(15,157,106,0.4);border-radius:999px;padding:5px 13px}
+
+  /* GUARD ROW — agent faces */
+  .guards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:26px}
+  .guard{text-align:center;padding:26px 16px;border:1px solid var(--line);border-radius:18px;transition:all .25s cubic-bezier(.2,.6,.2,1)}
+  .guard:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(83,58,253,0.14);border-color:var(--line2)}
+  .guard .av{width:110px;height:110px;border-radius:50%;overflow:hidden;margin:0 auto 16px;box-shadow:0 10px 26px rgba(83,58,253,0.2)}
+  .guard .av img{width:100%;height:100%;object-fit:cover}
+  .guard .nm{font-size:17px;font-weight:500;margin-bottom:4px}
+  .guard .jd{font-size:12.5px;color:var(--ink3);font-weight:300;line-height:1.5}
+  .guard .code{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--purple);margin-top:8px;letter-spacing:0.5px}
+
+  /* LANGUAGE — brand voice */
+  .lang{border-top:1px solid var(--line)}
+  .l-row{display:grid;grid-template-columns:200px 1fr;gap:22px;padding:24px 0;border-bottom:1px solid var(--line)}
+  .l-row .k{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);padding-top:3px}
+  .l-row .v{font-size:15.5px;color:var(--ink);font-weight:300}
+  .l-row .v b{font-weight:500}
+  .l-row .v .ex{display:block;font-family:'Newsreader',serif;font-style:italic;font-size:18px;color:var(--ink2);margin-top:6px}
+  .l-row .v .no{display:block;font-size:13px;color:var(--ink3);margin-top:4px}
+
+  footer{padding:50px 0 70px;border-top:1px solid var(--line);color:var(--ink3);font-size:13px;text-align:center}
+  footer b{color:var(--ink);font-weight:500}
+  @media(max-width:640px){.wrap{padding:0 20px}.eye-hero{gap:28px}.l-row{grid-template-columns:1fr;gap:8px}}
+</style>
+</head>
+<body>
+<div class="aurora"><div class="layer l1"></div><div class="layer l2"></div><div class="layer l3"></div></div>
+
+<div class="wrap">
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 48 48"><path d="M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="24" cy="24" r="7.5" fill="#fff"/><path d="M20.5 24 L23 26.5 L27.8 21.4" stroke="#533afd" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="word">Citizen <em>Agents</em></span>
+    </a>
+    <div class="links">
+      <a href="#auge">Das Auge</a>
+      <a href="#waechter">Die Wächter</a>
+      <a href="#sprache">Die Sprache</a>
+      <a class="pill" href="index.html">← Start</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="kicker">Das Bild-Universum · Brand v0.9</div>
+    <h1>Ein Gesicht für <span class="serif">jeden Wächter.</span></h1>
+    <p class="dek">Nicht nur Worte: Die Marke bekommt ein <b>Bild-Universum</b>. Ein Auge, das beobachtet und prüft — und jedes Wächter-Gesicht erzählt seine eigene Geschichte.</p>
+  </div>
+
+  <div class="sec" id="auge">
+    <div class="sec-head"><span class="n">Die Marke</span><div class="rule"></div></div>
+    <h2>Das <span class="serif">Auge.</span></h2>
+    <div class="eye-hero">
+      <div class="img"><img src="assets/mascot-eye.png" alt="Das Wächterauge"></div>
+      <div class="meta">
+        <div class="name">Das Wächterauge</div>
+        <div class="role">Maskottchen · Markenzeichen</div>
+        <div class="d">Ein Auge, das beobachtet — mit einem Haken als Pupille: <b>Wir beobachten. Wir verifizieren.</b> Das Auge ist das Symbol für die ganze Idee: Wachsamkeit ohne Angst, Prüfung ohne Misstrauen.</div>
+        <span class="tag">✓ Verifiziert</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" id="waechter">
+    <div class="sec-head"><span class="n">Die Gesichter</span><div class="rule"></div></div>
+    <h2>Jeder Wächter, <span class="serif">ein Charakter.</span></h2>
+    <p class="lede">Gleiche Welt, gleiche Farben, gleicher Stil — jedes Gesicht erzählt, wofür es wacht. Die ersten drei sind geboren; die nächsten folgen im selben Universum.</p>
+    <div class="guards">
+      <div class="guard">
+        <div class="av"><img src="assets/mascot-eye.png" alt="Das Auge"></div>
+        <div class="nm">Das Auge</div>
+        <div class="jd">Die Marke selbst — beobachtet alles, prüft alles.</div>
+        <div class="code">citizen_agents</div>
+      </div>
+      <div class="guard">
+        <div class="av"><img src="assets/mascot-law.png" alt="Law-Watch"></div>
+        <div class="nm">Justitia</div>
+        <div class="jd">Law-Watch — die Perücke, die Waage, das Gesetz in Alltagssprache.</div>
+        <div class="code">law_watch</div>
+      </div>
+      <div class="guard">
+        <div class="av"><img src="assets/mascot-algorithm.png" alt="Algorithm-Watch"></div>
+        <div class="nm">Circuit</div>
+        <div class="jd">Algorithm-Watch — das Auge mit Leiterbahnen, bewaffnet mit Schild.</div>
+        <div class="code">algorithm_watch</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="sec" id="sprache">
+    <div class="sec-head"><span class="n">Die Stimme</span><div class="rule"></div></div>
+    <h2>Wie die Marke <span class="serif">spricht.</span></h2>
+    <p class="lede">Eine Sprache, die man hört, bevor man sie liest: ruhig, ehrlich, auf Augenhöhe. Nie drohend. Nie besserwisserisch.</p>
+    <div class="lang">
+      <div class="l-row"><span class="k">Claim</span><div class="v">Wir beobachten. Wir verifizieren. <b>Du entscheidest.</b><span class="ex">„Recht auf dem Papier → Recht im Leben."</span></div></div>
+      <div class="l-row"><span class="k">Ton</span><div class="v">Ruhig, präzise, warm. Ein Wächter, kein Ankläger.<span class="ex">„Ein Gesetz ändert sich — jetzt sagt es dir jemand."</span></div></div>
+      <div class="l-row"><span class="k">Haltung</span><div class="v">Ehrlichkeit als Design. Quellen immer. Fehler zugeben.<span class="ex">„2 Meldungen hatten Quellen-Unschärfen — gemeldet, nicht versteckt."</span></div></div>
+      <div class="l-row"><span class="k">Versprechen</span><div class="v">Kostenlos. Für immer. Deine Daten bleiben bei dir.<span class="ex">„0 € für dich. Für immer."</span><span class="no">Nie eine Paywall vor deinen Rechten.</span></div></div>
+      <div class="l-row"><span class="k">Du-Form</span><div class="v">Wir sagen „du" — nicht weil es modern ist, sondern weil Rechte persönlich sind.<span class="ex">„Dein Recht. Dein Geld. Deine Frage."</span></div></div>
+      <div class="l-row"><span class="k">Bildwelt</span><div class="v">Ein Auge, das prüft statt starrt. Gradient von Violett zu Magenta: Energie, keine Angst.<span class="ex">Der Haken in der Pupille: beobachten + verifizieren.</span></div></div>
+    </div>
+  </div>
+
+  <footer>
+    Digital Democracy Studio · Berlin · Open Source · <b>„Wir beobachten. Wir verifizieren. Du entscheidest."</b><br>
+    Brand v0.9 — das Bild-Universum wächst mit jedem Wächter.
+  </footer>
+</div>
+
+</body>
+</html>
