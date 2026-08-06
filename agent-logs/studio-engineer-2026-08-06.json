@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-06",
+  "repo": "bla-keks-world",
+  "branch": "studio/engineer-2026-08-06",
+  "build_passed": true,
+  "tests": { "command": "node tools/aimtest.mjs", "assertions": 8, "passed": 8 },
+  "changes": [
+    {
+      "file": "src/modes/botbrain.js",
+      "what": "Removed the hitscan fire path (WEAPON/applySpread/traceShot). Bots now hold one tool from TOOLS, lead their target with ballisticAim+leadTarget, track target velocity frame-to-frame, apply aimError to the predicted position, fire at tool.rate and only within toolRange().",
+      "why": "Bots dealt instant, invisible, headshot-capable damage from 130m while players threw slow visible arcs. It made the core 'see it coming and dodge' promise false whenever a bot was in the match, and bot fill is the default."
+    },
+    {
+      "file": "src/modes/match-mode.js",
+      "what": "Added _botShoot() spawning through the same Projectiles pool as _shoot(); exposed it to brains as ctx.spawnShot; _onProjectileHit() now reports hits for projectiles owned by our simulated bots; swapped applySpread for scatter.",
+      "why": "Bots must use the player's exact spawn path so their shots are real dodgeable objects, and the host still needs to report their hits with the same authority as before."
+    },
+    {
+      "file": "src/modes/weapons/trace.js",
+      "what": "New module: scatter() (the old applySpread, reframed as launch-time projectile scatter), plus pure ballisticAim() and leadTarget() helpers.",
+      "why": "Keeps the one piece of useful maths from the carbine module and gives bots testable, non-random aiming."
+    },
+    {
+      "file": "src/modes/weapon.js",
+      "what": "Deleted. WEAPON, Magazine, buildViewModel, applySpread and all spread*/headMult constants removed from the codebase.",
+      "why": "Dead code that still defined this game's combat constants is how a design pivot quietly rots back into the old game."
+    },
+    {
+      "file": "tools/aimtest.mjs",
+      "what": "New node test for the pure aim maths: 8 assertions on ballisticAim, leadTarget and scatter.",
+      "why": "The bot aim solver is pure and headless-testable, so it should not require launching a browser to verify."
+    },
+    {
+      "file": "agent-digests/studio-engineer-2026-08-06.md",
+      "what": "Human-readable summary of the session.",
+      "why": "Reviewer context and dashboard publishing."
+    }
+  ],
+  "directives_done": [
+    "1 — Bots fire real projectiles (P0): DONE",
+    "3 — Retire the carbine (P1): DONE (weapon.js deleted, grep clean)"
+  ],
+  "directives_deferred": [
+    "2 — Bubble Float respawn (P0): deferred, needs its own diff across match-mode.js, shared/match.js and ui.js plus One Life interaction",
+    "3b — Per-tool server hit validation in shared/match.js:_hit(): deferred, requires a protocol change (client must send tool id)"
+  ],
+  "guardrails": {
+    "merged_anything": false,
+    "pushed_to_main": false,
+    "force_pushed": false,
+    "new_dependencies": 0,
+    "explore_mode_touched": false
+  }
+}
