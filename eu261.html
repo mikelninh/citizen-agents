@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Flight-Rights — Bekommst du €600? EU261-Rechner</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --purple:#533afd; --purple-hover:#4434d4; --purple-light:#b9b9f9; --purple-soft:#d6d9fc;
+    --navy:#061b31; --label:#273951; --body:#64748d; --border:#e5edf5;
+    --green:#15be53; --green-text:#108c3d; --amber:#9b6829;
+    --brand-dark:#1c1e54; --shadow:rgba(50,50,93,0.25) 0px 30px 45px -30px, rgba(0,0,0,0.1) 0px 18px 36px -18px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#f7f9fc;color:var(--label);font-family:'Source Sans 3',system-ui,sans-serif;font-feature-settings:"ss01";line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:0 24px}
+  nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+  .nav-inner{display:flex;align-items:center;gap:16px;padding:14px 0}
+  .back{color:var(--purple);text-decoration:none;font-size:14px;padding:6px 12px;border-radius:6px;border:1px solid var(--purple-light);transition:all .15s}
+  .back:hover{background:rgba(83,58,253,0.05)}
+  .logo{font-weight:600;color:var(--navy);font-size:15px}
+  header{padding:48px 0 12px;text-align:center}
+  .kicker{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--purple);margin-bottom:12px}
+  h1{font-size:40px;font-weight:300;letter-spacing:-0.9px;color:var(--navy);line-height:1.1}
+  .sub{font-size:16px;font-weight:300;color:var(--body);margin:12px auto 0;max-width:520px}
+  .card{background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow);padding:28px;margin-top:28px}
+  label{display:block;font-size:13px;font-weight:500;color:var(--label);margin:14px 0 6px}
+  select,input{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:4px;font-size:15px;font-family:inherit;color:var(--navy);background:#fff;transition:border .15s}
+  select:focus,input:focus{outline:none;border-color:var(--purple)}
+  .row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+  .btn{width:100%;margin-top:20px;padding:13px;border:none;border-radius:4px;background:var(--purple);color:#fff;font-size:16px;font-weight:500;cursor:pointer;transition:background .15s}
+  .btn:hover{background:var(--purple-hover)}
+  .result{display:none;margin-top:22px;border-radius:8px;padding:20px;border:1px solid var(--border)}
+  .result.show{display:block;animation:fade .3s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .result .big{font-size:34px;font-weight:300;color:var(--green-text);font-feature-settings:"tnum"}
+  .result .lbl{font-size:13px;color:var(--body);margin-top:2px}
+  .result .note{margin-top:12px;font-size:13.5px;color:var(--body);border-top:1px solid var(--border);padding-top:10px}
+  .result .note b{color:var(--label);font-weight:500}
+  .result .tier-tag{display:inline-block;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.5px;padding:3px 10px;border-radius:4px;margin-top:8px}
+  .tier-short{background:rgba(21,190,83,0.12);color:var(--green-text);border:1px solid rgba(21,190,83,0.3)}
+  .tier-medium{background:rgba(83,58,253,0.1);color:var(--purple);border:1px solid var(--purple-light)}
+  .tier-long{background:rgba(155,104,41,0.1);color:var(--amber);border:1px solid rgba(155,104,41,0.3)}
+  .result.denied .big{color:var(--body)}
+  .checks{margin-top:14px;font-size:13.5px;color:var(--label)}
+  .checks label{display:flex;align-items:center;gap:8px;font-size:13.5px;font-weight:400;margin:6px 0}
+  .checks input{width:16px;height:16px;flex-shrink:0}
+  .hint{font-size:12px;color:var(--body);margin-top:6px}
+  footer{margin-top:40px;padding:20px 0 40px;text-align:center;color:var(--body);font-size:12.5px;border-top:1px solid var(--border)}
+  footer b{color:var(--navy);font-weight:500}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav-inner">
+  <a class="back" href="site.html">← Zurück</a>
+  <span class="logo">✈️ Flight-Rights</span>
+</div></nav>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">EU261 · 2004/261/EG · kostenlos</div>
+    <h1>Bekomme ich <em style="font-style:normal;color:var(--purple)">€600</em>?</h1>
+    <p class="sub">30 Sekunden, kein Anwalt nötig. Gib Flug und Verspätung ein — der Rechner prüft deinen Anspruch nach EU-Verordnung 261/2004.</p>
+  </header>
+
+  <div class="card">
+    <div class="row2">
+      <div><label for="from">Abflughafen (IATA)</label><input id="from" placeholder="z. B. BER" maxlength="3" style="text-transform:uppercase"></div>
+      <div><label for="to">Ziel (IATA)</label><input id="to" placeholder="z. B. JFK" maxlength="3" style="text-transform:uppercase"></div>
+    </div>
+    <label for="delay">Verspätung bei Ankunft (Stunden)</label>
+    <select id="delay">
+      <option value="2">2–3 Stunden</option>
+      <option value="3" selected>3–4 Stunden</option>
+      <option value="4">4+ Stunden</option>
+    </select>
+    <div class="checks">
+      <label><input type="checkbox" id="ck-eu"> Abflug aus der EU (oder EU-Fluglinie aus Drittland)</label>
+      <label><input type="checkbox" id="ck-cause"> Keine außergewöhnlichen Umstände (z. B. Streik des Kabinenpersonals, technischer Defekt, Wetter war NICHT die Ursache)</label>
+    </div>
+    <button class="btn" onclick="calc()">Anspruch prüfen</button>
+    <div class="hint">Technischer Defekt zählt laut EuGH NICHT als außergewöhnlicher Umstand (C-549/07 Wallentin-Hermann).</div>
+  </div>
+
+  <div class="result" id="res">
+    <div class="lbl">Dein möglicher Ausgleich</div>
+    <div class="big" id="res-amount">—</div>
+    <span class="tier-tag" id="res-tier">—</span>
+    <div class="note" id="res-note"></div>
+  </div>
+
+  <footer>Flight-Rights · engine: flight-rights-mcp (open source, 42 Tests, EuGH-geprüft) · <b>Keine Rechtsberatung — Anspruch von der Airline prüfen lassen.</b></footer>
+</div>
+
+<script>
+// Airport distance table (approx, km) — core EU261 tier basis
+const DIST = {
+  "BER-MUC":480, "BER-FRA":430, "BER-HAM":250, "BER-JFK":6380, "BER-LHR":930,
+  "FRA-JFK":6200, "FRA-MAD":1430, "FRA-IST":1850, "MUC-JFK":6470, "FRA-DXB":4900,
+  "FRA-BKK":9000, "BER-IST":1740, "MAD-BER":1860, "BER-LIS":2300, "FRA-NYC":6200,
+  "LHR-JFK":5540, "AMS-JFK":5850, "CDG-JFK":5840, "BER-AMS":580, "BER-CDG":840,
+};
+function dist(a,b){
+  const k=(a+"-"+b).toUpperCase(), r=(b+"-"+a).toUpperCase();
+  return DIST[k]||DIST[r]||null;
+}
+function tier(km){
+  if(km<=1500)return{name:"Kurzstrecke",cls:"tier-short"};
+  if(km<=3500)return{name:"Mittelstrecke",cls:"tier-medium"};
+  return{name:"Langstrecke",cls:"tier-long"};
+}
+function calc(){
+  const from=document.getElementById("from").value.trim().toUpperCase();
+  const to=document.getElementById("to").value.trim().toUpperCase();
+  const delay=parseInt(document.getElementById("delay").value);
+  const eu=document.getElementById("ck-eu").checked;
+  const noExc=document.getElementById("ck-cause").checked;
+  const res=document.getElementById("res");
+  const km=dist(from,to);
+  let amount=0, note="";
+
+  if(!eu){ amount=0; note="❌ <b>Kein Anspruch</b>: Dein Flug fällt nicht unter EU261 (Abflug außerhalb der EU mit Nicht-EU-Fluglinie)."; }
+  else if(!noExc){ amount=0; note="⚠️ <b>Prüfbedarf</b>: Wenn die Airline außergewöhnliche Umstände nachweist (z. B. extreme Wetterlage, politische Unruhen), entfällt der Anspruch. Technische Defekte zählen NICHT (EuGH C-549/07)."; }
+  else if(delay<3){ amount=0; note="❌ <b>Noch kein Anspruch</b>: Unter 3 Stunden Verspätung greift EU261 nicht (außer bei Annullierung < 14 Tage vor Abflug)."; }
+  else{
+    if(!km){ amount=0; note="❓ <b>Unbekannte Strecke</b>: Ich kenne diese Route nicht — aber nach EU261 gilt: bis 1.500 km = €250, bis 3.500 km = €400, darüber = €600 (ab 4h)."; }
+    else{
+      const t=tier(km);
+      amount = delay>=4 ? (km>3500?600:km>1500?400:250) : (km>3500?300:km>1500?200:250);
+      note=`${t.name} (${km.toLocaleString("de-DE")} km). Bei ${delay}–4h Verspätung: ${amount} €. Ab 4h: ${km>3500?600:km>1500?400:250} €. Forderung schriftlich an die Airline — Frist: 3 Jahre + Jahresende (§ 195 BGB).`;
+    }
+  }
+  const amt=document.getElementById("res-amount"), tTag=document.getElementById("res-tier");
+  if(amount>0){ res.className="result show"; res.classList.remove("denied"); amt.textContent=amount+" €"; tTag.textContent=(km?tier(km).name+" · ":"")+"Anspruch besteht"; tTag.className="tier-tag "+(km?tier(km).cls:"tier-short"); }
+  else{ res.className="result show denied"; amt.textContent="0 €"; tTag.textContent="kein Anspruch / prüfen"; tTag.className="tier-tag tier-short"; }
+  document.getElementById("res-note").innerHTML=note;
+}
+</script>
+</body>
+</html>
