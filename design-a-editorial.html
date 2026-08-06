@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citizen Agents — Die Zeitung deiner Rechte</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#faf8f4; --paper2:#f3efe7; --ink:#191714; --ink2:#4a463e; --ink3:#7a746a;
+    --rule:#e3ddd2; --rule2:#cfc7b8;
+    --red:#b3261e; --red-dark:#8f1d16; --green:#1e6b45;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1040px;margin:0 auto;padding:0 28px}
+
+  /* MASTHEAD */
+  .masthead{border-bottom:3px double var(--ink);padding:22px 0 16px;text-align:center}
+  .masthead .brand{font-family:'Newsreader',serif;font-weight:400;font-size:34px;letter-spacing:-0.5px}
+  .masthead .brand em{font-style:italic}
+  .masthead .brand .red{color:var(--red);font-style:normal}
+  .masthead .datebar{display:flex;justify-content:space-between;font-size:11px;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);padding:7px 0;margin-top:14px}
+  nav{display:flex;justify-content:center;gap:26px;padding:14px 0}
+  nav a{color:var(--ink2);text-decoration:none;font-size:13px;font-weight:500;letter-spacing:0.3px}
+  nav a:hover{color:var(--red)}
+
+  /* HERO — editorial lead */
+  .lead{padding:52px 0 20px;text-align:center;max-width:820px;margin:0 auto}
+  .kicker{font-size:11px;letter-spacing:2.5px;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:20px}
+  .lead h1{font-family:'Newsreader',serif;font-weight:300;font-size:clamp(40px,6vw,64px);line-height:1.06;letter-spacing:-1px}
+  .lead h1 em{font-style:italic;color:var(--red)}
+  .lead .dek{font-family:'Newsreader',serif;font-style:italic;font-size:21px;color:var(--ink2);max-width:640px;margin:22px auto 0;line-height:1.45}
+  .lead .byline{font-size:12px;letter-spacing:1px;text-transform:uppercase;color:var(--ink3);margin-top:26px}
+  .cta-row{display:flex;gap:14px;justify-content:center;margin-top:28px;flex-wrap:wrap}
+  .btn{font-family:'Inter',sans-serif;font-size:13.5px;font-weight:600;letter-spacing:0.5px;text-transform:uppercase;padding:13px 26px;text-decoration:none;transition:all .15s}
+  .btn.fill{background:var(--ink);color:var(--paper)}
+  .btn.fill:hover{background:var(--red)}
+  .btn.line{border:1px solid var(--ink);color:var(--ink)}
+  .btn.line:hover{border-color:var(--red);color:var(--red)}
+
+  /* STATS — pull quotes */
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:44px 0 8px}
+  .stat{background:var(--paper);padding:26px 22px;text-align:center}
+  .stat .b{font-family:'Newsreader',serif;font-weight:400;font-size:34px;color:var(--ink)}
+  .stat .b .red{color:var(--red)}
+  .stat .l{font-size:12px;color:var(--ink3);letter-spacing:0.5px;margin-top:4px;text-transform:uppercase}
+
+  /* SECTION NUMBERS */
+  .secnum{display:flex;align-items:baseline;gap:16px;margin:56px 0 6px}
+  .secnum .n{font-family:'Newsreader',serif;font-style:italic;font-size:26px;color:var(--red)}
+  .secnum h2{font-family:'Newsreader',serif;font-weight:400;font-size:30px;letter-spacing:-0.4px}
+  .secnum .line{flex:1;height:1px;background:var(--rule2)}
+  .lede{color:var(--ink2);font-size:15.5px;max-width:700px;margin-bottom:26px}
+  .lede b{color:var(--ink);font-weight:500}
+
+  /* PROBLEM CARDS — editorial columns */
+  .probs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0;border-top:2px solid var(--ink)}
+  .prob{padding:22px 18px;border-bottom:1px solid var(--rule);border-right:1px solid var(--rule);text-decoration:none;color:inherit;display:block;transition:background .15s;position:relative}
+  .prob:nth-child(3n){border-right:none}
+  .prob:hover{background:var(--paper2)}
+  .prob .q{font-family:'Newsreader',serif;font-size:20px;font-weight:400;line-height:1.3;margin-bottom:8px}
+  .prob .q .ic{font-size:18px;margin-right:6px}
+  .prob .a{font-size:13.5px;color:var(--ink2);line-height:1.55}
+  .prob .go{margin-top:12px;font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--red)}
+  .prob .go::after{content:" →"}
+
+  /* DIGEST — front page */
+  .digest{background:var(--paper2);border:1px solid var(--rule2);padding:34px;margin-top:8px}
+  .digest h3{font-family:'Newsreader',serif;font-weight:400;font-size:26px;margin-bottom:4px}
+  .digest .ed{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:18px}
+  .digest .item{padding:16px 0;border-bottom:1px solid var(--rule)}
+  .digest .item:last-child{border-bottom:none}
+  .digest .item .t{font-family:'Newsreader',serif;font-size:19px;margin-bottom:4px}
+  .digest .item .t .tag{font-family:'Inter';font-size:10px;font-weight:600;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border:1px solid var(--red);color:var(--red);margin-left:8px;vertical-align:2px}
+  .digest .item .t .tag.ok{border-color:var(--green);color:var(--green)}
+  .digest .item .s{font-size:13px;color:var(--ink2)}
+  .digest .item .src{font-size:11.5px;color:var(--ink3);margin-top:5px}
+
+  /* WATCHERS — small index */
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:0;border-top:2px solid var(--ink);border-left:1px solid var(--rule)}
+  .card{padding:18px;border-right:1px solid var(--rule);border-bottom:1px solid var(--rule);background:var(--paper)}
+  .card .n{font-family:'Newsreader',serif;font-size:17.5px;margin-bottom:4px}
+  .card .d{font-size:12.5px;color:var(--ink2)}
+
+  /* PRINCIPLE — editorial blockquote */
+  .principle{border-top:3px double var(--ink);border-bottom:3px double var(--ink);padding:40px 0;margin-top:44px}
+  .principle h2{font-family:'Newsreader',serif;font-weight:400;font-size:28px;text-align:center;margin-bottom:24px}
+  .principle .p{display:flex;gap:16px;padding:13px 0;border-bottom:1px solid var(--rule);font-size:15.5px;color:var(--ink2);max-width:820px;margin:0 auto}
+  .principle .p:last-child{border-bottom:none}
+  .principle .p .ic{font-size:19px;flex-shrink:0}
+  .principle .p b{color:var(--ink);font-weight:500}
+  .principle .p a{color:var(--red)}
+  .principle .pull{font-family:'Newsreader',serif;font-style:italic;font-size:22px;text-align:center;color:var(--ink);margin-top:26px;max-width:640px;margin-left:auto;margin-right:auto}
+
+  /* SUPPORT */
+  .support{display:flex;gap:14px;flex-wrap:wrap;justify-content:center}
+  .links{margin-top:22px;text-align:center;font-size:13px}
+  .links a{color:var(--red);text-decoration:none;border-bottom:1px dotted var(--rule2);margin:0 12px}
+  footer{padding:36px 0 46px;border-top:3px double var(--ink);margin-top:52px;text-align:center;color:var(--ink3);font-size:12.5px}
+  footer b{color:var(--ink);font-weight:500}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <div class="masthead">
+    <div class="brand">Citizen <em>Agents</em> <span class="red">· Die Zeitung deiner Rechte</span></div>
+    <div class="datebar"><span>Berlin — 6. August 2026</span><span>18 Wächter im Dienst</span><span>Kostenlos für alle</span></div>
+  </div>
+  <nav>
+    <a href="#anliegen">Dein Anliegen</a>
+    <a href="#heute">Heutige Meldungen</a>
+    <a href="#selbst">Rechte aktualisieren sich</a>
+    <a href="#waechter">Die Wächter</a>
+    <a href="control-station.html">Control Station</a>
+  </nav>
+
+  <div class="lead">
+    <div class="kicker">Digital Democracy Studio · Open Source · Seit 2026</div>
+    <h1>Dein Recht. Dein Geld. <em>Deine Frage.</em></h1>
+    <p class="dek">Achtzehn Wächter beobachten jeden Tag, was Gesetze, Parlament, Haushalt und Gerichte mit dir vorhaben — mit Quelle, mit Frist, und zur Prüfung durch Menschen.</p>
+    <div class="byline">Verifizierbarkeit als Bürgerrecht · Menschen prüfen, Agenten arbeiten</div>
+    <div class="cta-row">
+      <a class="btn fill" href="#anliegen">Was ist dein Anliegen?</a>
+      <a class="btn line" href="https://github.com/mikelninh/citizen-agents" target="_blank">Quellcode</a>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="b">18</div><div class="l">Wächter-Agenten</div></div>
+    <div class="stat"><div class="b">0<span class="red"> €</span></div><div class="l">für Bürger:innen</div></div>
+    <div class="stat"><div class="b">€4–5 <span class="red">Mrd</span></div><div class="l">EU261 unbeansprucht/Jahr</div></div>
+    <div class="stat"><div class="b">€1 <span class="red">Mrd+</span></div><div class="l">Wohngeld unbeansprucht/Jahr</div></div>
+  </div>
+
+  <div class="secnum" id="anliegen"><span class="n">I.</span><h2>Was ist dein Anliegen?</h2><div class="line"></div></div>
+  <p class="lede">Eins von diesen kennst du bestimmt. Klick — und du hast eine Antwort, die dir weiterhilft.</p>
+  <div class="probs">
+    <a class="prob" href="eu261.html"><div class="q"><span class="ic">✈️</span> „Mein Flug hatte 4 Stunden Verspätung."</div><div class="a">Bekomme ich €600? Der EU261-Rechner prüft deinen Anspruch in 30 Sekunden.</div><div class="go">Anspruch prüfen</div></a>
+    <a class="prob" href="agb-reader.html"><div class="q"><span class="ic">🧾</span> „Dürfen die das in die AGB schreiben?"</div><div class="a">AGB einfügen — der Reader findet unwirksame Klauseln mit dem genauen §.</div><div class="go">Klauseln prüfen</div></a>
+    <a class="prob" href="https://safevoice-vert.vercel.app/" target="_blank"><div class="q"><span class="ic">🛡️</span> „Ich werde online belästigt."</div><div class="a">SafeVoice erstellt in 30 Sekunden eine gerichtsfeste Strafanzeige. Anonym.</div><div class="go">Jetzt dokumentieren</div></a>
+    <a class="prob" href="https://gitlaw-xi.vercel.app/" target="_blank"><div class="q"><span class="ic">⚖️</span> „Was sagt das Gesetz dazu?"</div><div class="a">Alle 5.936 Bundesgesetze in verständlicher Sprache — mit Quellen.</div><div class="go">Gesetz fragen</div></a>
+    <a class="prob" href="https://mikelninh.github.io/faireint/" target="_blank"><div class="q"><span class="ic">🏛️</span> „Welche Politik würde helfen?"</div><div class="a">10 evidenzbasierte Reformen mit Policy-Simulator.</div><div class="go">Simulation starten</div></a>
+    <a class="prob" href="dashboard.html"><div class="q"><span class="ic">📡</span> „Was passiert in meinem Namen?"</div><div class="a">Tägliche Meldungen: Gesetze, Lobby, Haushalt, Urteile, EU-Fristen.</div><div class="go">Heutige Meldungen</div></a>
+  </div>
+
+  <div class="secnum" id="heute"><span class="n">II.</span><h2>Heutige Meldungen</h2><div class="line"></div></div>
+  <div class="digest">
+    <div class="ed">Redaktion · 6. August 2026 · geprüft vom Fleet-Reviewer — 4 verifiziert, 2 teilweise</div>
+    <div class="item"><div class="t">Lobby aktiv trotz Sommerpause<span class="tag ok">Verifiziert</span></div><div class="s">eFuel GmbH neu im Lobbyregister (03.08.) — Energiepolitik. Bürgergeld wird ab 01.07.2026 zur „Neuen Grundsicherung" (Drs. 21/3541).</div><div class="src">Quelle: lobbyregister.bundestag.de · tagesschau.de</div></div>
+    <div class="item"><div class="t">Wohngeld — Neuordnung im Kabinett<span class="tag">Teilweise</span></div><div class="s">Formel-Koeffizient C sinkt → geringere Auszahlungen. Tipp: Wer nahe der Grenze ist, sollte jetzt beantragen.</div><div class="src">Quelle: bundesregierung.de · bmwsb.bund.de</div></div>
+    <div class="item"><div class="t">Fünf offene Beteiligungsfenster<span class="tag ok">Verifiziert</span></div><div class="s">BauGB-Anhörung minutengenau gegen bundestag.de geprüft. Mit Fristen und Stellungnahme-Vorlagen.</div><div class="src">Quelle: bundestag.de</div></div>
+  </div>
+  <p class="lede" style="margin-top:14px;font-size:13px">Ehrliche Prüfung: 2 Meldungen hatten Quellen-Unschärfen (Wohngeld-Zahl, GKV-Datum) — vom Fleet-Reviewer gefunden, gemeldet, korrigierbar. Das ist das System. <a href="https://github.com/mikelninh/citizen-agents/tree/main/agent-digests" style="color:var(--red)">Alle Befunde →</a></p>
+
+  <div class="secnum" id="selbst"><span class="n">III.</span><h2>Rechte, die sich selbst aktualisieren</h2><div class="line"></div></div>
+  <p class="lede">Ein Gesetz ändert sich — und niemand sagt es dir. Das beheben wir: <b>was sich geändert hat, was es für dich bedeutet, mit Quelle und Frist.</b></p>
+  <div class="probs">
+    <div class="prob"><div class="q">🔔 Law-Watch</div><div class="a">Neue Bundesgesetze erklärt, bevor sie dich treffen — mit BGBl-Quelle.</div></div>
+    <div class="prob"><div class="q">🏠 Benefit-Watch</div><div class="a">Wohngeld, Elterngeld, Bürgergeld: jede Änderung, inklusive „jetzt beantragen"-Tipp.</div></div>
+    <div class="prob"><div class="q">🏛️⚖️ Court-Watch</div><div class="a">BVerfG- und EuGH-Leiturteile in Alltagssprache, am Tag der Veröffentlichung.</div></div>
+    <div class="prob"><div class="q">🇪🇺 Directive-Watch</div><div class="a">EU-Richtlinien mit Frist und Ministerium — Verspätung wird sichtbar.</div></div>
+  </div>
+
+  <div class="secnum" id="waechter"><span class="n">IV.</span><h2>Die Wächter</h2><div class="line"></div></div>
+  <div class="grid">
+    <div class="card"><div class="n">⚖️ Law-Watch</div><div class="d">Neue Bundesgesetze, bevor sie dich treffen.</div></div>
+    <div class="card"><div class="n">🏛️ Bundestag-Watch</div><div class="d">Wer entscheidet, wer lobbyiert — täglich.</div></div>
+    <div class="card"><div class="n">✈️ EU Rights-Watch</div><div class="d">EuGH &amp; Flugrechte — €4–5 Mrd/Jahr.</div></div>
+    <div class="card"><div class="n">💶 Money-Flow Watch</div><div class="d">Steuergeld: wohin, und wo schief?</div></div>
+    <div class="card"><div class="n">🏠 Benefit-Watch</div><div class="d">Wohngeld, Elterngeld, Bürgergeld.</div></div>
+    <div class="card"><div class="n">🇪🇺 Directive-Watch</div><div class="d">EU-Fristen pro Ministerium.</div></div>
+    <div class="card"><div class="n">🏛️⚖️ Court-Watch</div><div class="d">Leiturteile in Alltagssprache.</div></div>
+    <div class="card"><div class="n">🛡️ Abuse-Safety Watch</div><div class="d">SafeVoice: Strafanzeige in 30s.</div></div>
+    <div class="card"><div class="n">📦 Procurement-Watch</div><div class="d">Vergabe-Anomalien sichtbar.</div></div>
+    <div class="card"><div class="n">🗳️ Consultation-Watch</div><div class="d">Beteiligung in 10 Minuten.</div></div>
+    <div class="card"><div class="n">🌍 Treaty-Watch</div><div class="d">Menschenrechte weltweit.</div></div>
+    <div class="card"><div class="n">🌐 Truth-Watch</div><div class="d">Falschinfo + Faktencheck.</div></div>
+    <div class="card"><div class="n">🌡️ Climate-Watch</div><div class="d">Versprechen vs. Emissionen.</div></div>
+    <div class="card"><div class="n">🥩 Meat-Dairy Watch</div><div class="d">Die mächtigste Lobby, öffentlich.</div></div>
+  </div>
+
+  <div class="principle">
+    <h2>Warum du uns vertrauen kannst</h2>
+    <div class="p"><span class="ic">🔎</span><span><b>Alles ist prüfbar.</b> Jede Meldung trägt ihre Quelle. Der erste Bundestag-Report: 5 Funde, 9 Quellen — <a href="https://github.com/mikelninh/faireint-bundestag/pull/1" target="_blank">sieh selbst</a>.</span></div>
+    <div class="p"><span class="ic">🧑‍⚖️</span><span><b>Menschen entscheiden.</b> Agenten entwerfen, Menschen prüfen. Niemand merged automatisch.</span></div>
+    <div class="p"><span class="ic">🔒</span><span><b>Kein Datenschutz-Problem.</b> Die Wächter verarbeiten keine personenbezogenen Daten — nur öffentliche Quellen.</span></div>
+    <div class="p"><span class="ic">💰</span><span><b>Kostenlos. Für immer.</b> Finanziert durch Unterstützung und institutionelle Lizenzen — nie durch eine Paywall vor deinen Rechten.</span></div>
+    <div class="pull">„Verifizierbarkeit ist ein Bürgerrecht — und deine Rechte aktualisieren sich selbst." — 2050-These</div>
+  </div>
+
+  <div class="secnum"><span class="n">V.</span><h2>Unterstützen</h2><div class="line"></div></div>
+  <div class="support">
+    <a class="btn fill" href="https://github.com/sponsors/mikelninh" target="_blank">⭐ GitHub Sponsors</a>
+    <a class="btn line" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents">🤝 Organisationen &amp; NGOs</a>
+    <a class="btn line" href="proof.html">📊 Beweise &amp; Bewertungen</a>
+  </div>
+  <div class="links">
+    <a href="https://github.com/mikelninh/citizen-agents" target="_blank">Hub-Repo</a>
+    <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/datenschutz-architecture.md" target="_blank">Datenschutz</a>
+    <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/2050-thesis.md" target="_blank">2050-These</a>
+    <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/b2b-monetization.md" target="_blank">B2B</a>
+  </div>
+
+  <footer>
+    Digital Democracy Studio · Berlin · Open Source · <b>„Recht auf dem Papier → Recht im Leben."</b><br>
+    Agenten entwerfen, Menschen entscheiden, niemand merged automatisch.
+  </footer>
+</div>
+</body>
+</html>
