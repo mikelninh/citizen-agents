@@ -1,0 +1,51 @@
+{
+  "date": "2026-08-06",
+  "pass": 3,
+  "repo": "bla-keks-world",
+  "branch": "studio/director-2026-08-06",
+  "head_commit": "0bd23bd",
+  "repo_unchanged_since_last_brief": true,
+  "files_read": [
+    "README.md",
+    "src/entities/remote.js",
+    "src/entities/avatar.js",
+    "src/entities/player.js",
+    "src/modes/match-mode.js",
+    "src/modes/weapon.js",
+    "src/modes/weapons/saber.js",
+    "src/modes/weapons/projectiles.js",
+    "src/modes/weapons/tools.js",
+    "src/shared/items.js",
+    "src/shared/match.js",
+    "src/shared/conditions.js",
+    "server/room.js"
+  ],
+  "critiques": 3,
+  "critique_ids": [
+    "5: remote.js/avatar.js mount no weapon model - nobody can see what class you are",
+    "6: player.js SPEEDS has no dodge; 62 m/s petals cannot be dodged at 8.6 m/s; mobility outsourced to the dash pickup in items.js",
+    "7: conditions.js is pre-round dressing; no mid-round arena moment anywhere in match.js"
+  ],
+  "one_big_idea": "Show the weapon, give them a Dodge Roll: mount real weapon models on remote avatars (readability) + a 0.35s dodge with 0.12s i-frames (the movement verb both weapon families need).",
+  "directives": [
+    {
+      "id": "P3-D1",
+      "title": "Weapon on the body",
+      "files": ["src/entities/remote.js", "src/entities/avatar.js", "src/modes/match-mode.js", "src/net/client.js"],
+      "acceptance": "In a 2-client mptest run, a Leaf Blade swap is visible as a lit blade in the remote's hand within one snapshot; veiled players show no weapon; <1ms frame regression with 8 bots."
+    },
+    {
+      "id": "P3-D2",
+      "title": "Dodge Roll with i-frames",
+      "files": ["src/entities/player.js", "src/core/input.js", "src/ui/ui.js"],
+      "acceptance": "Double-tap A launches ~4.5m sideways; a petal timed into the first 0.12s deals no damage; no chain-dodge inside 0.45s; works with all five tools."
+    },
+    {
+      "id": "P3-D3",
+      "title": "The Last Thirty (mid-round arena moment)",
+      "files": ["src/shared/match.js", "src/shared/regions.js", "src/ui/ui.js"],
+      "acceptance": "At 30s left the play area contracts server-authoritatively, charge regen x1.4, 4 soak/sec outside; stalemate rounds now force contact; rematch flow unchanged."
+    }
+  ],
+  "challenge_for_mikel": "Does the Dodge Roll spend the same resource as the saber? Shared pool = every roll is a swing you didn't take, both families play the same mental game (my call). Free roll on a flat cooldown = faster and friendlier but a lower ceiling. Decide before the engineer starts P3-D2, because it decides whether Stamina lives on the saber or on player.js. Dare: let me see other people's weapons before you balance another number."
+}

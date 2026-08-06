@@ -1,0 +1,55 @@
+{
+  "date": "2026-08-06",
+  "repo": "bla-keks-world",
+  "branch": "studio/director-2026-08-06",
+  "head": "0bd23bd",
+  "files_read": [
+    "README.md",
+    "src/modes/match-mode.js",
+    "src/modes/weapon.js",
+    "src/modes/weapons/tools.js",
+    "src/modes/weapons/saber.js",
+    "src/modes/weapons/projectiles.js",
+    "src/modes/botbrain.js",
+    "src/shared/items.js",
+    "src/shared/match.js",
+    "src/shared/conditions.js",
+    "server/room.js",
+    "src/entities/player.js",
+    "src/entities/bot.js",
+    "src/render/fx.js"
+  ],
+  "critiques": 5,
+  "critique_titles": [
+    "botbrain.js still uses hitscan traceShot while players fire slow projectiles",
+    "weapon.js carbine is dead code that still defines combat constants",
+    "_initLoadout randomises loadout + rarity instead of class identity",
+    "Elimination locks players out for a full round (match-mode.js:480)",
+    "match.js _hit validates all tools against one MAX_DAMAGE_RANGE"
+  ],
+  "one_big_idea": "Bots fire real dodgeable projectiles with lead prediction; eliminations become a 6s Bubble Float respawn",
+  "directives": [
+    {
+      "n": 1,
+      "priority": "P0",
+      "title": "Bots fire real projectiles",
+      "files": ["src/modes/botbrain.js", "src/modes/match-mode.js", "src/modes/weapons/projectiles.js"],
+      "acceptance": "No WEAPON/traceShot import in botbrain.js; every bot shot is a visible object; strafing dodges >60% of shots"
+    },
+    {
+      "n": 2,
+      "priority": "P0",
+      "title": "Bubble Float respawn",
+      "files": ["src/modes/match-mode.js", "src/shared/match.js", "src/ui/ui.js"],
+      "acceptance": "Max 6s out of control in tactical; 1.5s invuln on respawn; One Life condition still ends the round"
+    },
+    {
+      "n": 3,
+      "priority": "P1",
+      "title": "Retire the carbine, tighten hit validation",
+      "files": ["src/modes/weapon.js", "src/modes/weapons/trace.js", "src/shared/match.js"],
+      "acceptance": "grep for WEAPON|Magazine|applySpread returns nothing; per-tool range validation server-side"
+    }
+  ],
+  "challenge_for_mikel": "Is Bla Keks World about WHO YOU PICKED or WHAT YOU FOUND? The code votes 'what you found' (rarity rolls, random secondary, item field) while the README pitches a class-fantasy PvP. Pick one: kill RARITY and ship four named classes (Splasher / Bubbler / Petal / Blade), or make rarity visible, earned and tradeable. You can't have both."
+}
