@@ -121,6 +121,42 @@
       "watches": ["Bundestag", "Bundesrat", "Ministerien"],
       "impact_estimate": "Turns apathy into a 10-minute submitted comment; participation uplift",
       "open_items": ["window calendar", "comment template engine"]
+    },
+    {
+      "id": "studio-director",
+      "name": "Studio Director (co-creative)",
+      "level": "studio",
+      "status": "live",
+      "repo": "mikelninh/bla-keks-world",
+      "cadence": "daily 15:00",
+      "problem": "Games need taste and direction — an agent with strong opinions who challenges the lead",
+      "watches": ["bla-keks-world src", "design briefs"],
+      "impact_estimate": "Turns 'what should we build' into a directed, prioritized brief every day",
+      "open_items": ["Nostale-inspired PvP direction", "personal challenges for Mikel"]
+    },
+    {
+      "id": "gameplay-engineer",
+      "name": "Gameplay Engineer",
+      "level": "studio",
+      "status": "live",
+      "repo": "mikelninh/bla-keks-world",
+      "cadence": "daily 15:30 (after director)",
+      "problem": "Ideas don't ship themselves — implement the director's directives with passing builds",
+      "watches": ["director briefs", "src/modes", "src/entities"],
+      "impact_estimate": "Working game code every day, verified by build, reviewed via PR",
+      "open_items": ["combat feel", "class identity", "arena moments"]
+    },
+    {
+      "id": "qa-playtester",
+      "name": "QA Playtester",
+      "level": "studio",
+      "status": "live",
+      "repo": "mikelninh/bla-keks-world",
+      "cadence": "daily 16:00 (after engineer)",
+      "problem": "Nobody protects the players — verify builds, server boot, and logic regressions",
+      "watches": ["engineer branches", "server/node.js", "room.js"],
+      "impact_estimate": "SHIP / HOLD verdict every day; catches regressions before players do",
+      "open_items": ["automated boot test", "logic review checklist"]
     }
   ],
   "principles": [

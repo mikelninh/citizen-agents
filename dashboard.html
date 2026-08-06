@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agent Studio Board — live status of every agent</title>
+<style>
+  :root{--bg:#0b0e14;--panel:#121826;--panel2:#0f1522;--line:#1f2a3d;
+        --gold:#e8c26a;--ice:#7fd4ff;--green:#5ee6a0;--violet:#b39dff;--red:#ff7a8a;
+        --muted:#8b98ad;--text:#e8edf6}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;padding-bottom:60px}
+  .wrap{max-width:1200px;margin:0 auto;padding:0 18px}
+  header{padding:34px 0 20px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  h1{font-size:26px;font-weight:800;letter-spacing:-0.5px}
+  h1 em{font-style:normal;color:var(--ice)}
+  .live{margin-left:auto;font-size:11px;color:var(--green);border:1px solid var(--green);border-radius:999px;padding:3px 12px;text-transform:uppercase;letter-spacing:1px}
+  .updated{font-size:12px;color:var(--muted)}
+  h2{font-size:15px;font-weight:800;margin:26px 0 10px;letter-spacing:0.5px;text-transform:uppercase;color:var(--gold)}
+  /* FLEET */
+  .board{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:12px}
+  .ag{border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
+  .ag .hd{display:flex;align-items:center;gap:8px;padding:10px 12px;border-bottom:1px solid var(--line)}
+  .ag .emoji{font-size:18px}
+  .ag .nm{font-weight:700;font-size:13.5px;flex:1}
+  .ag .st{font-size:9.5px;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border-radius:999px}
+  .st.live{color:var(--green);border:1px solid var(--green)}
+  .st.sched{color:var(--ice);border:1px solid var(--ice)}
+  .st.plan{color:var(--muted);border:1px solid var(--muted)}
+  .ag .bd{padding:10px 12px;font-size:12px;color:var(--muted)}
+  .ag .bd b{color:var(--text)}
+  .ag .row{display:flex;justify-content:space-between;padding:3px 0;font-size:11.5px}
+  .ag .row .k{color:var(--muted)}
+  .ag .row .v{color:var(--ice);text-align:right;max-width:60%;word-break:break-all}
+  .ag .prs{padding:8px 12px 10px;border-top:1px solid var(--line);font-size:11.5px}
+  .ag .prs a{color:var(--gold);text-decoration:none}
+  .ag .prs a:hover{border-bottom:1px dotted var(--gold)}
+  .ag .none{color:var(--muted);font-style:italic}
+  .tag{display:inline-block;font-size:9.5px;border-radius:4px;padding:1px 6px;margin-right:4px}
+  .tag.open{background:#17301f;color:var(--green);border:1px solid var(--green)}
+  .tag.draft{background:#332b14;color:var(--gold);border:1px solid var(--gold)}
+  .err{color:var(--red);font-size:12px;padding:8px}
+  .loading{color:var(--muted);font-size:13px;padding:20px 0}
+  /* PIPELINE */
+  .pipe{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+  .step{border:1px solid var(--line);border-radius:12px;padding:14px;background:var(--panel2);position:relative}
+  .step .arrow{position:absolute;right:-16px;top:50%;transform:translateY(-50%);color:var(--gold);font-size:16px;z-index:2}
+  .step .t{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:700}
+  .step .n{font-size:14px;font-weight:800;margin:3px 0 6px}
+  .step .d{font-size:12px;color:var(--muted)}
+  .step .when{font-size:11px;color:var(--ice);margin-top:8px}
+  footer{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--muted);font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Agent <em>Studio Board</em></h1>
+    <span class="live">● live</span>
+    <span class="updated" id="updated">loading…</span>
+  </header>
+
+  <h2>🎬 Studio pipeline — BlaKeks World</h2>
+  <div class="pipe">
+    <div class="step"><div class="t">1 · Taste</div><div class="n">Studio Director</div><div class="d">Reads the code, writes the brief, challenges the lead. 15:00 daily.</div><div class="when" id="p-director">…</div></div>
+    <div class="step"><div class="arrow">→</div><div class="t">2 · Build</div><div class="n">Gameplay Engineer</div><div class="d">Implements the director's directives, build must pass. 15:30 daily.</div><div class="when" id="p-engineer">…</div></div>
+    <div class="step"><div class="arrow">→</div><div class="t">3 · Verify</div><div class="n">QA Playtester</div><div class="d">Builds, boots the server, reviews logic. Verdict: SHIP / HOLD. 16:00 daily.</div><div class="when" id="p-qa">…</div></div>
+  </div>
+
+  <h2>🤖 Citizen fleet — 10 watchdogs</h2>
+  <div class="board" id="fleet"></div>
+
+  <footer>Data pulled live from the GitHub API (open PRs + agent logs) every page load. Nothing cached, nothing hidden — agents leave traces, you read them.</footer>
+</div>
+
+<script>
+const OWNER = "mikelninh";
+const HUB = "citizen-agents";
+const API = "https://api.github.com";
+
+// agent registry: id -> {emoji, repo}
+const REGISTRY = {
+  "law-watch":          {emoji:"⚖️", repo:"gitlaw"},
+  "bundestag-watch":    {emoji:"🏛️", repo:"faireint-bundestag"},
+  "eu-rights-watch":    {emoji:"✈️", repo:"flight-rights-mcp"},
+  "money-flow-watch":   {emoji:"💶", repo:"pmm-mcp"},
+  "benefit-watch":      {emoji:"🏠", repo:HUB},
+  "directive-watch":    {emoji:"🇪🇺", repo:HUB},
+  "court-watch":        {emoji:"🏛️⚖️", repo:HUB},
+  "abuse-safety-watch": {emoji:"🛡️", repo:"safevoice"},
+  "procurement-watch":  {emoji:"📦", repo:HUB},
+  "consultation-watch": {emoji:"🗳️", repo:HUB},
+  "studio-director":    {emoji:"🎬", repo:"bla-keks-world"},
+  "gameplay-engineer":  {emoji:"🔧", repo:"bla-keks-world"},
+  "qa-playtester":      {emoji:"🧪", repo:"bla-keks-world"},
+};
+
+async function j(url){
+  const r = await fetch(url, {headers:{Accept:"application/vnd.github+json"}});
+  if(!r.ok) throw new Error(url + " -> " + r.status);
+  return r.json();
+}
+
+function esc(s){ return String(s ?? "").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+
+function prTags(pr){
+  let h = `<span class="tag ${pr.draft ? "draft" : "open"}">${pr.draft ? "draft" : "open"}</span>`;
+  return h;
+}
+
+async function loadFleet(){
+  const reg = await j(`${API}/repos/${OWNER}/${HUB}/contents/agents.json`);
+  const regJson = JSON.parse(atob(reg.content.replace(/\s/g,"")));
+  const agents = regJson.agents;
+  const board = document.getElementById("fleet");
+  board.innerHTML = "";
+  const now = new Date().toISOString();
+
+  for(const a of agents){
+    const meta = REGISTRY[a.id] || {emoji:"🤖", repo:a.repo};
+    const card = document.createElement("div");
+    card.className = "ag";
+    const stClass = a.status === "live" ? "live" : a.status === "scheduled" ? "sched" : "plan";
+    const stLabel = a.status === "live" ? "● live" : a.status === "scheduled" ? "scheduled" : "planned";
+    card.innerHTML = `
+      <div class="hd"><span class="emoji">${meta.emoji}</span><span class="nm">${esc(a.name)}</span><span class="st ${stClass}">${stLabel}</span></div>
+      <div class="bd">
+        <div class="row"><span class="k">watches</span><span class="v">${esc((a.watches||[]).slice(0,2).join(" · "))}</span></div>
+        <div class="row"><span class="k">cadence</span><span class="v">${esc(a.cadence)}</span></div>
+        <div class="row"><span class="k">impact</span><span class="v">${esc(a.impact_estimate||"")}</span></div>
+      </div>
+      <div class="prs" id="prs-${esc(a.id)}"><span class="loading">loading PRs…</span></div>`;
+    board.appendChild(card);
+
+    // fetch open PRs for this agent's repo (head ref contains agent id or studio role)
+    (async (id, repo, el){
+      try{
+        const prs = await j(`${API}/repos/${OWNER}/${repo}/pulls?state=open&per_page=10`);
+        const mine = prs.filter(p => (p.head.ref||"").includes("agent/") || (p.head.ref||"").includes("studio/"));
+        const shown = (mine.length ? mine : prs).slice(0,3);
+        if(!shown.length){ el.innerHTML = `<span class="none">no open PRs</span>`; return; }
+        el.innerHTML = shown.map(p => `<div style="padding:2px 0">${prTags(p)} <a href="${p.html_url}" target="_blank">#${p.number} ${esc(p.title.split("—").pop().trim().slice(0,44))}</a></div>`).join("");
+      }catch(e){ el.innerHTML = `<span class="err">PR fetch failed</span>`; }
+    })(a.id, meta.repo, card.querySelector(`#prs-${CSS.escape(a.id)}`));
+  }
+  document.getElementById("updated").textContent = "updated " + new Date().toLocaleString("de-DE");
+}
+
+// pipeline statuses (from git log of bla-keks-world studio branches)
+async function loadPipeline(){
+  try{
+    const branches = await j(`${API}/repos/${OWNER}/bla-keks-world/branches?per_page=100`);
+    const studio = branches.filter(b => b.name.startsWith("studio/"));
+    const map = {"studio-director":"p-director","studio-engineer":"p-engineer","studio-qa":"p-qa"};
+    for(const b of studio){
+      const el = document.getElementById(map[b.name.split("-")[0] + "-" + b.name.split("-")[1]]);
+      if(el) el.textContent = "branch: " + b.name;
+    }
+  }catch(e){ /* non-fatal */ }
+}
+
+loadFleet().catch(e => { document.getElementById("fleet").innerHTML = `<div class="err">Fleet load failed: ${esc(e.message)}</div>`; });
+loadPipeline();
+setInterval(() => loadFleet().catch(()=>{}), 60000); // refresh every 60s
+</script>
+</body>
+</html>
