@@ -1,0 +1,75 @@
+{
+  "date": "2026-08-06",
+  "agents_reviewed": 6,
+  "verified": 4,
+  "partial": 2,
+  "failed": 0,
+  "blockers": 0,
+  "verdicts": {
+    "benefit-watch": "PARTIAL",
+    "consultation-watch": "VERIFIED",
+    "bundestag-watch": "PARTIAL",
+    "studio-director": "VERIFIED",
+    "studio-engineer": "VERIFIED",
+    "studio-qa": "VERIFIED"
+  },
+  "no_artifacts_today": ["gitlaw (law-watch)", "pmm-mcp (money-flow)", "safevoice (abuse-safety)", "flight-rights-mcp (eu-rights)"],
+  "sources_fetched": 12,
+  "source_checks": [
+    {"url": "https://www.bundestag.de/presse/hib/kurzmeldungen-1127152", "http": 200, "result": "MISMATCH", "note": "150.13m EUR is the Einzelplan-25 total increase; the Wohngeld title rose 160m EUR to 2.4bn. Source dated 17.11.2025."},
+    {"url": "https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796", "http": 200, "result": "OK"},
+    {"url": "https://www.tagesschau.de/inland/prien-elterngeld-102.html", "http": 200, "result": "OK", "note": "12 vs 14 months, 3 Vaetermonate, 175k cap confirmed; 330/1900 raise not visible in article."},
+    {"url": "https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562", "http": 200, "result": "OK"},
+    {"url": "https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen", "http": 200, "result": "OK", "note": "Non-official source for a hard Kindergeld figure."},
+    {"url": "https://www.lobbyregister.bundestag.de/suche/R008150/76567", "http": 200, "result": "OK", "note": "eFuel GmbH Ersteintrag 03.08.2026 08:05 - exact match."},
+    {"url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw24-de-gkv-1181958", "http": 200, "result": "MISMATCH", "note": "Page documents 1st reading 12.06.2026, not a 10.07.2026 Beschluss."},
+    {"url": "https://dserver.bundestag.de/btd/21/035/2103541.pdf", "http": 200, "result": "OK"},
+    {"url": "https://www.finanzwende.de/fileadmin/user_upload/Themen/Finanzlobbyismus/Dauerbeschallung_in_UEberzahl_-_Finanzlobby-Analyse_2026.pdf", "http": 200, "result": "OK"},
+    {"url": "https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096", "http": 200, "result": "OK", "note": "23.09.2026 16:30-18:30, PLH E.400, BT-Drs. 21/6588 - exact match."},
+    {"url": "https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf", "http": 200, "result": "OK"},
+    {"url": "https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026", "http": 200, "result": "OK"}
+  ],
+  "reproduction_checks": [
+    {"agent": "studio-engineer", "check": "grep -rn 'WEAPON|Magazine|applySpread' src/", "result": "no output - claim holds"},
+    {"agent": "studio-engineer", "check": "node tools/aimtest.mjs", "result": "8/8 ok, exit 0"},
+    {"agent": "studio-engineer", "check": "npm run build", "result": "PASS, built in 1.72s, only pre-existing chunk warning"},
+    {"agent": "studio-engineer", "check": "git diff merge-base", "result": "exactly the 7 claimed files; src/modes/weapon.js deleted"}
+  ],
+  "issues": [
+    {"agent": "benefit-watch", "severity": "HIGH", "issue": "Wohngeld budget claim conflates two figures: 150.13m EUR is the total Einzelplan-25 increase, the Wohngeld line rose 160m EUR. Source is also dated 17.11.2025, presented as a fresh item."},
+    {"agent": "benefit-watch", "severity": "MEDIUM", "issue": "Kindergeld 259 EUR/month and the ~272 EUR plan rest only on smartunterhalt.de and sparkasse.de - no official source."},
+    {"agent": "benefit-watch", "severity": "MEDIUM", "issue": "Elterngeld min 330 / max 1900 EUR not supported by the cited tagesschau article, which confirms only the current 300/1800."},
+    {"agent": "benefit-watch", "severity": "LOW", "issue": "Recipient counts (~1.9m Wohngeld households, ~5.5m Grundsicherung) carried without citation."},
+    {"agent": "consultation-watch", "severity": "LOW", "issue": "Both EU consultations link the generic better-regulation landing page instead of the specific 'Have your say' initiative URL."},
+    {"agent": "consultation-watch", "severity": "LOW", "issue": "Log inconsistency: windows_found=5 but the deadlines array holds 6 entries."},
+    {"agent": "bundestag-watch", "severity": "MEDIUM", "issue": "Claim 'Bundestag beschloss das GKV-Beitragssatzstabilisierungsgesetz am 10.07.2026' is not supported by the cited page, which covers the 1st reading on 12.06.2026."},
+    {"agent": "bundestag-watch", "severity": "MEDIUM", "issue": "Sentence 'Bundesrat und Bundestag zogen im Juni/Juli nach' is incoherent - Bundestag named as both actor and follower."},
+    {"agent": "bundestag-watch", "severity": "MEDIUM", "issue": "Item 3 makes dated claims (Insulet 28.07., Biocon 24.07., Aktionsbuendnis Psychotherapie 24.07.) but cites only the lobbyregister homepage."},
+    {"agent": "bundestag-watch", "severity": "LOW", "issue": "abgeordnetenwatch.de source listed in the log but not used in the digest."},
+    {"agent": "studio-director", "severity": "LOW", "issue": "Two log files for one run (main + pass2); no 'sources' field."},
+    {"agent": "studio-engineer", "severity": "LOW", "issue": "No 'sources' field in the log (schema expects one)."},
+    {"agent": "studio-qa", "severity": "LOW", "issue": "No 'sources' field; QA reviews its own studio's PR - mild independence concern, mitigated by a real MEDIUM finding filed against the engineer."},
+    {"agent": "fleet", "severity": "LOW", "issue": "Watchdog branches are cut from a stale main and will need rebasing before merge."}
+  ],
+  "guardrail_audit": {
+    "merges_by_agents": 0,
+    "all_prs_open": true,
+    "scope_violations": 0,
+    "note": "All watchdogs touched only agent-digests/ and agent-logs/ (verified against merge-base). studio-engineer touched game source, which is its mandate."
+  },
+  "needs_human_eyes": [
+    "benefit-watch: fix the 150.13m/160m Wohngeld conflation before publishing.",
+    "bundestag-watch: verify the 10.07.2026 GKV passage date and re-source it; fix the garbled Bundesrat sentence."
+  ],
+  "actions_taken": [
+    "fresh clones of citizen-agents, faireint-bundestag and bla-keks-world",
+    "enumerated branches and PRs across hub + 5 satellite repos",
+    "diffed every agent branch against its merge-base for guardrail scope",
+    "fetched 12 source URLs live and compared them against the claims made",
+    "independently reproduced studio-engineer's build, test and grep claims",
+    "wrote agent-digests/fleet-review-2026-08-06.md and agent-logs/fleet-review-2026-08-06.json",
+    "committed, pushed and opened a PR (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "studio/fleet-review-2026-08-06"
+}
