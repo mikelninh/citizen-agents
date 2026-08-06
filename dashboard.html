@@ -79,6 +79,8 @@ const HUB = "citizen-agents";
 const API = "https://api.github.com";
 
 // agent registry: id -> {emoji, repo}
+// NOTE: studio agents publish their status to the PUBLIC hub (bla-keks-world is private,
+// browser dashboards can't read it) — so their PRs are listed from the hub.
 const REGISTRY = {
   "law-watch":          {emoji:"⚖️", repo:"gitlaw"},
   "bundestag-watch":    {emoji:"🏛️", repo:"faireint-bundestag"},
@@ -90,9 +92,9 @@ const REGISTRY = {
   "abuse-safety-watch": {emoji:"🛡️", repo:"safevoice"},
   "procurement-watch":  {emoji:"📦", repo:HUB},
   "consultation-watch": {emoji:"🗳️", repo:HUB},
-  "studio-director":    {emoji:"🎬", repo:"bla-keks-world"},
-  "gameplay-engineer":  {emoji:"🔧", repo:"bla-keks-world"},
-  "qa-playtester":      {emoji:"🧪", repo:"bla-keks-world"},
+  "studio-director":    {emoji:"🎬", repo:HUB},
+  "gameplay-engineer":  {emoji:"🔧", repo:HUB},
+  "qa-playtester":      {emoji:"🧪", repo:HUB},
 };
 
 async function j(url){
@@ -146,15 +148,16 @@ async function loadFleet(){
   document.getElementById("updated").textContent = "updated " + new Date().toLocaleString("de-DE");
 }
 
-// pipeline statuses (from git log of bla-keks-world studio branches)
+// pipeline statuses (studio agents publish to the PUBLIC hub — bla-keks-world is private)
 async function loadPipeline(){
   try{
-    const branches = await j(`${API}/repos/${OWNER}/bla-keks-world/branches?per_page=100`);
-    const studio = branches.filter(b => b.name.startsWith("studio/"));
+    const branches = await j(`${API}/repos/${OWNER}/${HUB}/branches?per_page=100`);
+    const studio = branches.filter(b => b.name.startsWith("studio-") || b.name.startsWith("studio/"));
     const map = {"studio-director":"p-director","studio-engineer":"p-engineer","studio-qa":"p-qa"};
     for(const b of studio){
-      const el = document.getElementById(map[b.name.split("-")[0] + "-" + b.name.split("-")[1]]);
-      if(el) el.textContent = "branch: " + b.name;
+      const key = b.name.split("-")[0] + "-" + b.name.split("-")[1];
+      const el = document.getElementById(map[key]);
+      if(el) el.textContent = "latest: " + b.name;
     }
   }catch(e){ /* non-fatal */ }
 }
