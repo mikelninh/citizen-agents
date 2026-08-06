@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-06",
+  "windows_found": 5,
+  "deadlines": [
+    {"window": "EU public consultation — semiconductor ecosystem", "deadline": "2026-09-11", "institution": "European Commission"},
+    {"window": "Bundestag Anhörung 'BauGB-Upgrade'", "deadline": "2026-09-23", "institution": "Ausschuss für Wohnen, Stadtentwicklung, Bauwesen und Kommunen"},
+    {"window": "Bundestag Anhörung 'Situation der Reisebüros und Reiseveranstalter'", "deadline": "2026-09-23", "institution": "Tourismusausschuss"},
+    {"window": "EU consultation — Quantum technology future", "deadline": "2026-10-16", "institution": "European Commission"},
+    {"window": "EU consultation — Joint Undertakings under Horizon Europe", "deadline": "2026-10-16", "institution": "European Commission"},
+    {"window": "Bundestag öffentliche Anhörung Recht und Verbraucherschutz", "deadline": "2026-10-14", "institution": "Ausschuss für Recht und Verbraucherschutz"}
+  ],
+  "highlights": [
+    "BauGB-Upgrade hearing on 23 Sep 2026 touches rents, densification and local participation rights — highest everyday relevance.",
+    "Two EU consultations are open to any individual without needing an association; nearest hard deadline is 11 Sep 2026.",
+    "Quantum consultation (deadline 16 Oct 2026) is framed as industry policy but directly concerns encryption of citizens' bank and health data.",
+    "German ministry Referentenentwurf consultations remain formally limited to Verbände; BMUV environment draft window closed 6 Jul 2026."
+  ],
+  "sources": [
+    "https://www.bundestag.de/ausschuesse",
+    "https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096",
+    "https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf",
+    "https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen",
+    "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen",
+    "https://ec.europa.eu/info/law/better-regulation/",
+    "https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026",
+    "https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/",
+    "https://www.bmas.de/DE/Service/Gesetze-und-Gesetzesvorhaben/vom-entwurf-zum-gesetz.html",
+    "https://www.bundesfinanzministerium.de/Web/DE/Service/Gesetze_Gesetzesvorhaben/Gesetze_Gesetzgebungsvorhaben.html",
+    "https://www.bundesumweltministerium.de/gesetz/referentenentwuerfe-eines-gesetzes-zur-staerkung-eines-modernen-digitalen-und-wirksamen-umweltschutzes-sowie-einer-verordnung-zur-staerkung-eines-modernen-digitalen-und-wirksamen-umweltschutzes"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/consultation-2026-08-06",
+    "Researched Bundestag committee hearings, ministry Referentenentwürfe and EU 'Have your say' consultations",
+    "Wrote citizen digest with 5 open windows and adaptable submission drafts",
+    "Wrote structured JSON log",
+    "Committed, pushed branch and opened a pull request for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/consultation-2026-08-06"
+}
