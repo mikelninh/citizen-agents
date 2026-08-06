@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citizen Agents — Deine Rechte, verständlich gemacht</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#0c0c12; --ink:#f4f4f6; --ink2:#b9b9c4; --ink3:#6f6f7e;
+    --violet:#8b5cf6; --magenta:#f96bee; --gold:#f0c86b;
+    --grad:linear-gradient(115deg,#8b5cf6 0%,#a78bfa 45%,#f96bee 100%);
+    --gold-grad:linear-gradient(115deg,#f0c86b,#d4a017);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:rgba(139,92,246,0.35)}
+
+  /* cosmic aurora */
+  .cosmos{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
+  .cosmos .layer{position:absolute;inset:-20%;filter:blur(120px);animation:drift 40s ease-in-out infinite alternate}
+  .cosmos .c1{background:radial-gradient(closest-side at 25% 20%,rgba(139,92,246,0.22),transparent 70%)}
+  .cosmos .c2{background:radial-gradient(closest-side at 80% 35%,rgba(249,107,238,0.14),transparent 70%);animation-delay:-14s}
+  .cosmos .c3{background:radial-gradient(closest-side at 50% 90%,rgba(240,200,107,0.07),transparent 70%);animation-delay:-28s}
+  @keyframes drift{0%{transform:translate(0,0) rotate(0) scale(1)}50%{transform:translate(3vw,2vh) rotate(1.2deg) scale(1.06)}100%{transform:translate(-2vw,3vh) rotate(-1deg) scale(1.1)}}
+  /* stars */
+  .stars{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:0.6}
+  .stars i{position:absolute;width:2px;height:2px;border-radius:50%;background:#fff;animation:twinkle 5s ease-in-out infinite}
+  @keyframes twinkle{0%,100%{opacity:0.15}50%{opacity:0.9}}
+
+  .wrap{max-width:1020px;margin:0 auto;padding:0 36px;position:relative;z-index:1}
+
+  nav{display:flex;align-items:center;padding:30px 0;gap:28px;border-bottom:1px solid rgba(244,244,246,0.08)}
+  .brand{display:flex;align-items:center;gap:13px;text-decoration:none}
+  .brand .mark{width:38px;height:38px;filter:drop-shadow(0 0 14px rgba(139,92,246,0.5))}
+  .brand .mark img{width:100%;height:100%}
+  .brand .word{font-size:16.5px;font-weight:600;letter-spacing:-0.3px;color:var(--ink)}
+  .brand .word em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav .links{margin-left:auto;display:flex;gap:6px;align-items:center}
+  nav .links a{color:var(--ink2);text-decoration:none;font-size:13.5px;padding:7px 13px;border-radius:7px;transition:all .18s}
+  nav .links a:hover{color:var(--ink);background:rgba(244,244,246,0.06)}
+  nav .links .pill{font-weight:500;color:var(--gold);border:1px solid rgba(240,200,107,0.3);padding:6px 14px;border-radius:999px}
+  nav .links .pill:hover{background:rgba(240,200,107,0.08);border-color:rgba(240,200,107,0.5)}
+
+  /* HERO — the eye as centerpiece */
+  .hero{padding:70px 0 30px;text-align:center;position:relative}
+  .hero .eye-wrap{position:relative;display:inline-block;margin-bottom:34px}
+  .hero .eye-wrap .halo{position:absolute;inset:-70px;border-radius:50%;background:radial-gradient(closest-side,rgba(139,92,246,0.28),transparent 75%);filter:blur(30px);animation:pulse-halo 6s ease-in-out infinite}
+  @keyframes pulse-halo{0%,100%{opacity:0.7;transform:scale(1)}50%{opacity:1;transform:scale(1.07)}}
+  .hero .eye-wrap img{width:210px;height:210px;position:relative;z-index:2;filter:drop-shadow(0 0 40px rgba(139,92,246,0.35));animation:float-eye 7s ease-in-out infinite}
+  @keyframes float-eye{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+  .hero .eye-wrap .ring{position:absolute;inset:-24px;border-radius:50%;border:1px solid rgba(240,200,107,0.35);animation:spin-slow 30s linear infinite;z-index:1}
+  .hero .eye-wrap .ring2{position:absolute;inset:-46px;border-radius:50%;border:1px dashed rgba(139,92,246,0.35);animation:spin-slow 45s linear infinite reverse;z-index:1}
+  @keyframes spin-slow{to{transform:rotate(360deg)}}
+
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:24px}
+  h1{font-size:clamp(52px,8.4vw,96px);font-weight:500;letter-spacing:-0.045em;line-height:1.0;margin-bottom:28px}
+  h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  h1 .thin{font-weight:300;display:block}
+  .dek{font-size:18px;font-weight:300;color:var(--ink2);max-width:580px;margin:0 auto;line-height:1.65}
+  .dek b{font-weight:500;color:var(--ink)}
+  .cta-line{margin-top:38px;display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap}
+  .cta-line a{font-size:15.5px;font-weight:500;text-decoration:none;position:relative;padding-bottom:5px}
+  .cta-line .primary{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .cta-line .primary::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.5px;border-radius:2px;background:var(--gold-grad);opacity:0.6}
+  .cta-line .secondary{color:var(--ink3);border-bottom:1px solid rgba(244,244,246,0.15)}
+  .cta-line .secondary:hover{color:var(--ink);border-color:var(--ink2)}
+
+  /* watch line */
+  .watch-line{margin-top:70px;padding:26px 0;border-top:1px solid rgba(244,244,246,0.07);border-bottom:1px solid rgba(244,244,246,0.07);display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .watch-line .live{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(240,200,107,0.15);animation:pulse 3s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.35}}
+  .watch-line .txt{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink2)}
+  .watch-line .items{margin-left:auto;display:flex;gap:24px;flex-wrap:wrap}
+  .watch-line .items span{font-size:13px;color:var(--ink3);font-weight:300}
+  .watch-line .items span b{color:var(--ink2);font-weight:500}
+
+  /* principles — dark cards, gold accents */
+  .sec{padding:80px 0 0}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
+  .sec-head .n{font-family:'Newsreader',serif;font-style:italic;font-size:20px;color:var(--gold)}
+  .sec-head .rule{flex:1;height:1px;background:rgba(244,244,246,0.08)}
+  .sec h2{font-size:clamp(30px,4.5vw,50px);font-weight:400;letter-spacing:-0.035em;line-height:1.08;margin-bottom:16px}
+  .sec h2 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sec .lede{font-size:15.5px;font-weight:300;color:var(--ink2);max-width:620px;margin-bottom:34px}
+
+  .principles{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px}
+  .principle{padding:28px 24px;border:1px solid rgba(244,244,246,0.09);border-radius:16px;background:rgba(139,92,246,0.04);transition:all .25s cubic-bezier(.2,.6,.2,1);position:relative;overflow:hidden}
+  .principle:hover{transform:translateY(-4px);border-color:rgba(240,200,107,0.35);background:rgba(139,92,246,0.08)}
+  .principle .ic{font-size:24px;margin-bottom:12px}
+  .principle .t{font-size:16px;font-weight:500;margin-bottom:6px}
+  .principle .d{font-size:13.5px;color:var(--ink3);font-weight:300;line-height:1.6}
+  .principle .gold{color:var(--gold)}
+
+  /* manifesto statement */
+  .manifesto{padding:100px 0;text-align:center;position:relative}
+  .manifesto::before{content:"";position:absolute;inset:0;background:radial-gradient(closest-side at 50% 50%,rgba(139,92,246,0.12),transparent 75%);filter:blur(40px)}
+  .manifesto .inner{position:relative;z-index:1}
+  .manifesto .q{font-family:'Newsreader',serif;font-style:italic;font-weight:300;font-size:clamp(28px,4.5vw,46px);letter-spacing:-0.02em;line-height:1.3;max-width:760px;margin:0 auto 30px}
+  .manifesto .q .g{background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .manifesto .by{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:3px;text-transform:uppercase;color:var(--ink3)}
+
+  footer{padding:44px 0 70px;border-top:1px solid rgba(244,244,246,0.07);color:var(--ink3);font-size:13px;text-align:center}
+  footer b{color:var(--ink2);font-weight:500}
+  footer .mark-line{display:inline-flex;align-items:center;gap:9px;margin-bottom:10px;color:var(--ink);font-weight:600;font-size:14px}
+  footer .mark-line img{width:22px;height:22px}
+  @media(max-width:640px){.wrap{padding:0 20px}.watch-line .items{margin-left:0;gap:12px}}
+</style>
+</head>
+<body>
+<div class="cosmos"><div class="layer c1"></div><div class="layer c2"></div><div class="layer c3"></div></div>
+<div class="stars" id="stars"></div>
+
+<div class="wrap">
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="mark"><img src="assets/logo-sacred.svg" alt="Citizen Agents"></span>
+      <span class="word">Citizen <em>Agents</em></span>
+    </a>
+    <div class="links">
+      <a href="#prinzip">Prinzip</a>
+      <a href="#manifest">Manifest</a>
+      <a class="pill" href="index.html">← Start</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="eye-wrap">
+      <div class="halo"></div>
+      <div class="ring"></div>
+      <div class="ring2"></div>
+      <img src="assets/logo-sacred.svg" alt="Das Auge von Citizen Agents">
+    </div>
+    <div class="kicker">Deine Rechte · beobachtet von 22 Wächtern · für alle</div>
+    <h1>
+      <span class="thin">Du bist nicht allein</span>
+      <span class="serif">im Paragraphen-Dschungel.</span>
+    </h1>
+    <p class="dek">Gesetze, Anträge, Fristen — wer soll das alles verstehen? <b>Wir machen es dir einfach.</b> Ein Auge wacht für dich: Es liest, prüft und meldet — <b>kostenlos, in deiner Sprache, ohne dass du etwas tun musst.</b></p>
+    <div class="cta-line">
+      <a class="primary" href="deine-agenten.html">Zeig mir meine Rechte</a>
+      <a class="secondary" href="control-station.html">Was die Wächter heute fanden</a>
+    </div>
+  </div>
+
+  <div class="watch-line">
+    <span class="live"></span>
+    <span class="txt">Im Dienst</span>
+    <div class="items">
+      <span><b>22</b> Wächter</span>
+      <span><b>18</b> Länder-Coverage</span>
+      <span><b>0 €</b> für immer</span>
+      <span><b>100 %</b> Quellen</span>
+    </div>
+  </div>
+
+  <div class="sec" id="prinzip">
+    <div class="sec-head"><span class="n">So funktioniert's</span><div class="rule"></div></div>
+    <h2>Wir kümmern uns.<br><span class="serif">Du lebst dein Leben.</span></h2>
+    <p class="lede">Kein Fachchinesisch. Keine Überforderung. Nur klare Antworten auf deine Fragen — mit Quellen, die du selbst prüfen kannst.</p>
+    <div class="principles">
+      <div class="principle"><div class="ic">👁️</div><div class="t">Wir schauen hin</div><div class="d">Gesetze, Lobby, Haushalt, Gerichte — wir lesen den Kleingedruckten, damit du es nicht musst.</div></div>
+      <div class="principle"><div class="ic">✅</div><div class="t">Wir prüfen alles</div><div class="d">Jede Meldung mit Quelle. Jeder Lauf kontrolliert. Du kannst uns jederzeit auf die Finger schauen.</div></div>
+      <div class="principle"><div class="ic">💬</div><div class="t">Wir erklären einfach</div><div class="d">Kein Juristendeutsch. Wenn sich etwas für dich ändert, sagen wir es dir — mit einem Satz, der sitzt.</div></div>
+      <div class="principle"><div class="ic">❤️</div><div class="t">Wir sind für alle da</div><div class="d">0 €. Für immer. Rechte sind kein Luxus — sie gehören jedem Menschen, egal ob mit viel oder wenig Geld.</div></div>
+    </div>
+  </div>
+
+  <div class="manifesto" id="manifest">
+    <div class="inner">
+      <div class="q">„Recht auf dem Papier hilft niemandem. <span class="g">Recht im Leben — verstanden, beantragt, eingefordert — verändert alles.</span>"</div>
+      <div class="by">Unsere Überzeugung · Digital Democracy Studio</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="mark-line"><img src="assets/logo-sacred.svg" alt="">Citizen Agents</div>
+    Wir beobachten. Wir verifizieren. Du entscheidest.<br>
+    Berlin · Open Source · <b>kostenlos für alle</b>
+  </footer>
+</div>
+
+<script>
+// stars — a quiet sky
+const sky = document.getElementById("stars");
+for (let i = 0; i < 60; i++) {
+  const s = document.createElement("i");
+  s.style.left = Math.random() * 100 + "%";
+  s.style.top = Math.random() * 100 + "%";
+  s.style.animationDelay = Math.random() * 5 + "s";
+  s.style.opacity = 0.2 + Math.random() * 0.6;
+  sky.appendChild(s);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Die Wächter-Simulation — was Deutschland wirklich braucht</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbfaf7; --ink:#101014; --ink2:#43434c; --ink3:#92929c;
+    --line:rgba(16,16,20,0.09); --line2:rgba(16,16,20,0.16);
+    --purple:#533afd; --magenta:#f96bee; --cyan:#22d3ee;
+    --green:#0f9d6a; --lemon:#a05e03;
+    --grad:linear-gradient(115deg,#533afd 0%,#8b5cf6 45%,#f96bee 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:rgba(139,92,246,0.22)}
+  .aurora{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .aurora .layer{position:absolute;inset:-20%;filter:blur(110px);animation:drift 34s ease-in-out infinite alternate}
+  .aurora .l1{background:radial-gradient(closest-side at 22% 18%,rgba(83,58,253,0.18),transparent 70%)}
+  .aurora .l2{background:radial-gradient(closest-side at 80% 30%,rgba(249,107,238,0.13),transparent 70%);animation-delay:-12s}
+  .aurora .l3{background:radial-gradient(closest-side at 55% 88%,rgba(34,211,238,0.11),transparent 70%);animation-delay:-24s}
+  @keyframes drift{0%{transform:translate(0,0) rotate(0) scale(1)}50%{transform:translate(3vw,2vh) rotate(1.2deg) scale(1.06)}100%{transform:translate(-2vw,3vh) rotate(-1deg) scale(1.1)}}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 36px;position:relative;z-index:1}
+
+  nav{display:flex;align-items:center;padding:30px 0;gap:28px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .brand .mark{width:34px;height:34px;border-radius:9px;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(83,58,253,0.28)}
+  .brand .mark svg{width:26px;height:26px}
+  .brand .word{font-size:16.5px;font-weight:600;letter-spacing:-0.3px;color:var(--ink)}
+  .brand .word em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav .links{margin-left:auto;display:flex;gap:6px;align-items:center}
+  nav .links a{color:var(--ink2);text-decoration:none;font-size:13.5px;padding:7px 13px;border-radius:7px;transition:all .18s}
+  nav .links a:hover{color:var(--ink);background:rgba(16,16,20,0.045)}
+  nav .links .pill{font-weight:500;color:var(--purple);border:1px solid rgba(83,58,253,0.25);padding:6px 14px;border-radius:999px}
+  nav .links .pill:hover{background:rgba(83,58,253,0.06);border-color:rgba(83,58,253,0.4)}
+
+  .hero{padding:80px 0 30px;max-width:880px}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:3px;text-transform:uppercase;color:var(--purple);margin-bottom:26px}
+  h1{font-size:clamp(42px,6.8vw,76px);font-weight:500;letter-spacing:-0.045em;line-height:1.0;margin-bottom:26px}
+  h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .dek{font-size:17.5px;font-weight:300;color:var(--ink2);max-width:620px;line-height:1.65}
+  .dek b{font-weight:500;color:var(--ink)}
+  .anchors{display:flex;gap:0;margin:44px 0 10px;flex-wrap:wrap}
+  .anchor{flex:1;min-width:160px;padding:4px 24px 4px 0;position:relative}
+  .anchor+.anchor{padding-left:24px}
+  .anchor+.anchor::before{content:"";position:absolute;left:0;top:10%;bottom:10%;width:1px;background:var(--line)}
+  .anchor .b{font-size:30px;font-weight:400;letter-spacing:-0.02em;font-variant-numeric:tabular-nums}
+  .anchor .b .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .anchor .l{font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3);margin-top:3px}
+  .src{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ink3);margin-bottom:8px}
+
+  /* CONTROLS */
+  .controls{display:flex;align-items:center;gap:26px;padding:26px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);flex-wrap:wrap}
+  .controls .lbl{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3)}
+  .controls .lbl b{color:var(--ink);font-weight:500}
+  .controls .btn{font-family:'JetBrains Mono',monospace;font-size:12.5px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;color:#fff;background:var(--grad);border:none;border-radius:999px;padding:12px 26px;cursor:pointer;box-shadow:0 6px 20px rgba(83,58,253,0.28);transition:transform .15s,box-shadow .15s}
+  .controls .btn:hover{transform:translateY(-2px);box-shadow:0 10px 26px rgba(83,58,253,0.38)}
+  .controls .btn:active{transform:scale(0.96)}
+  .controls .meta{margin-left:auto;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink3)}
+
+  /* RESULTS */
+  .results{padding:30px 0 0}
+  .tabs{display:flex;gap:4px;margin-bottom:22px}
+  .tab{font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:1.5px;text-transform:uppercase;padding:9px 18px;border-radius:999px;cursor:pointer;border:1px solid var(--line2);color:var(--ink3);transition:all .15s;background:transparent}
+  .tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .tab:hover:not(.on){border-color:var(--purple);color:var(--purple)}
+  .rank{border-top:1px solid var(--line)}
+  .r-row{display:grid;grid-template-columns:44px 200px 1fr 90px;gap:18px;align-items:center;padding:20px 4px;border-bottom:1px solid var(--line)}
+  .r-row .pos{font-family:'Newsreader',serif;font-style:italic;font-size:26px;color:var(--purple)}
+  .r-row .who{font-size:17px;font-weight:500;letter-spacing:-0.01em}
+  .r-row .who .ic{margin-right:8px}
+  .r-row .who .pct{font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ink3);display:block;font-weight:400;margin-top:2px}
+  .r-row .bar{height:10px;border-radius:6px;background:var(--line);overflow:hidden;position:relative}
+  .r-row .bar .fill{height:100%;border-radius:6px;background:var(--grad);transform-origin:left;animation:grow 0.9s cubic-bezier(.2,.8,.2,1) forwards}
+  @keyframes grow{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  .r-row .num{font-family:'JetBrains Mono',monospace;font-size:15px;text-align:right;font-variant-numeric:tabular-nums}
+  .r-row .num small{color:var(--ink3);font-size:10px}
+  .explain{margin-top:26px;padding:24px 0;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink3);max-width:720px}
+  .explain b{color:var(--ink);font-weight:500}
+
+  footer{padding:46px 0 70px;border-top:1px solid var(--line);color:var(--ink3);font-size:13px;text-align:center}
+  footer b{color:var(--ink);font-weight:500}
+  @media(max-width:640px){.wrap{padding:0 20px}.r-row{grid-template-columns:36px 1fr 70px;gap:12px}.r-row .bar{grid-column:2/4;order:5}}
+</style>
+</head>
+<body>
+<div class="aurora"><div class="layer l1"></div><div class="layer l2"></div><div class="layer l3"></div></div>
+
+<div class="wrap">
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 48 48"><path d="M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="24" cy="24" r="7.5" fill="#fff"/><path d="M20.5 24 L23 26.5 L27.8 21.4" stroke="#533afd" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="word">Citizen <em>Agents</em></span>
+    </a>
+    <div class="links">
+      <a class="pill" href="index.html">← Start</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="kicker">Simulation · Agentenbasiert · 10.000 Bürger</div>
+    <h1>Welche Wächter <span class="serif">Deutschland braucht.</span></h1>
+    <p class="dek">Wir haben <b>10.000 Bürger:innen simuliert</b> — mit echten demografischen Verteilungen und echten Lebensereignis-Wahrscheinlichkeiten. Das Ergebnis: wer welche Wächter am meisten <b>braucht</b> und <b>nutzt</b>. Kein Bauchgefühl — eine Rechnung.</p>
+    <div class="anchors">
+      <div class="anchor"><div class="b">50–87<span class="g"> %</span></div><div class="l">Wohngeld ungenutzt</div></div>
+      <div class="anchor"><div class="b">52<span class="g"> %</span></div><div class="l">Mieter stark belastet</div></div>
+      <div class="anchor"><div class="b">€4–5 <span class="g">Mrd</span></div><div class="l">EU261 unbeansprucht</div></div>
+      <div class="anchor"><div class="b">60–88<span class="g"> %</span></div><div class="l">Kinderzuschlag ungenutzt</div></div>
+    </div>
+    <div class="src">Anker: SoVD Nicht-Inanspruchnahme · Allensbach/Zeit Mieten · EU261-Forschung</div>
+  </div>
+
+  <div class="controls">
+    <span class="lbl">Bevölkerung</span>
+    <span class="btn" onclick="simulate(10000)">Simulieren</span>
+    <span class="meta" id="meta">10.000 Bürger · 1 Jahr · deterministisch</span>
+  </div>
+
+  <div class="results" id="results"></div>
+</div>
+
+<footer>
+  Digital Democracy Studio · Berlin · <b>Simulation ≠ Realität — aber besser als Raten.</b><br>
+  Modelle sind vereinfacht · Quellen verlinkt · Code offen
+</footer>
+
+<script>
+// ---------- WATCHERS CATALOG ----------
+const WATCHERS = [
+  {id:"miet",  name:"Miet-Wächter",   ic:"🏠", need:0, use:0},
+  {id:"leistung", name:"Leistungs-Wächter", ic:"🏛️", need:0, use:0},
+  {id:"konsum", name:"Konsum-Wächter", ic:"✈️", need:0, use:0},
+  {id:"fristen", name:"Fristen-Wächter", ic:"⏰", need:0, use:0},
+  {id:"vertrag", name:"Vertrags-Wächter", ic:"📄", need:0, use:0},
+  {id:"recht", name:"Rechts-Wächter", ic:"⚖️", need:0, use:0},
+  {id:"geld",  name:"Geld-Wächter",   ic:"💶", need:0, use:0},
+  {id:"daten", name:"Daten-Wächter",  ic:"🔒", use:0, need:0},
+  {id:"gesundheit", name:"Gesundheits-Wächter", ic:"💊", need:0, use:0},
+  {id:"beteiligung", name:"Beteiligungs-Wächter", ic:"🗳️", need:0, use:0},
+];
+
+// ---------- RNG (deterministic) ----------
+function mulberry32(seed){return function(){seed|=0;seed=seed+0x6D2B79F5|0;let t=Math.imul(seed^seed>>>15,1|seed);t=t+Math.imul(t^t>>>7,61|t)^t;return((t^t>>>14)>>>0)/4294967296}}
+
+// ---------- POPULATION ----------
+function buildPopulation(n, rnd){
+  const pop = [];
+  for(let i=0;i<n;i++){
+    const r = rnd();
+    // age distribution (rough Germany): 18-30: 18%, 30-45: 24%, 45-60: 26%, 60-75: 20%, 75+: 12%
+    const ageRoll = rnd();
+    const age = ageRoll < 0.18 ? 18 + rnd()*12
+              : ageRoll < 0.42 ? 30 + rnd()*15
+              : ageRoll < 0.68 ? 45 + rnd()*15
+              : ageRoll < 0.88 ? 60 + rnd()*15
+              : 75 + rnd()*20;
+    // housing: 58% rent, 42% own (incl. 15% with high burden)
+    const rents = rnd() < 0.58;
+    const rentBurdens = rents && rnd() < 0.52; // 52% of renters burdened
+    const rentCrisis = rents && rnd() < 0.15;  // 15% >50% netto
+    // income: low <1200: 16%, mid 1200-2500: 34%, high 2500-4500: 34%, very high >4500: 16%
+    const incRoll = rnd();
+    const income = incRoll < 0.16 ? "low" : incRoll < 0.50 ? "mid" : incRoll < 0.84 ? "high" : "vhigh";
+    // family
+    const hasKids = age > 20 && age < 50 && rnd() < 0.55;
+    const singleParent = hasKids && rnd() < 0.20;
+    const pregnant = age > 18 && age < 42 && rnd() < 0.05;
+    const care = age > 45 && rnd() < 0.12;
+    // work
+    const workRoll = rnd();
+    const work = age > 65 ? "rente"
+               : age < 25 && workRoll < 0.35 ? "studium"
+               : workRoll < 0.12 ? "arbeitslos"
+               : workRoll < 0.30 ? "selbst"
+               : "angestellt";
+    // consumption
+    const flies = rnd() < 0.35;
+    const shopsOnline = rnd() < 0.65;
+    const hasContracts = rnd() < 0.75;
+    const digital = rnd() < 0.55;
+    // chronic condition (health relevance)
+    const chronic = age > 50 && rnd() < 0.45;
+    pop.push({age, rents, rentBurdens, rentCrisis, income, hasKids, singleParent, pregnant, care, work, flies, shopsOnline, hasContracts, digital, chronic});
+  }
+  return pop;
+}
+
+// ---------- YEAR OF LIFE: events → needs ----------
+function simulateYear(p, rnd, W){
+  const need = (id)=>W.find(w=>w.id===id).need++;
+
+  // Housing: the #1 pressure point
+  if(p.rents){
+    need("miet");
+    if(p.rentBurdens){ need("miet"); need("leistung"); }       // might qualify for Wohngeld
+    if(p.rentCrisis){ need("miet"); need("leistung"); need("geld"); }
+    if(rnd() < 0.09){ need("miet"); need("recht"); }            // rent increase / disputes
+    if(rnd() < 0.03){ need("miet"); need("fristen"); }          // Kündigung → deadlines
+  }
+  // Benefits: massive non-take-up
+  if((p.income==="low" || p.income==="mid") && (p.rents || p.hasKids)){
+    need("leistung");
+    if(p.income==="low" && rnd()<0.6) need("leistung");         // Wohngeld likely
+    if(p.hasKids && rnd()<0.4) need("leistung");                // Kinderzuschlag
+  }
+  if(p.pregnant) need("leistung");                              // Elterngeld
+  if(p.hasKids && rnd()<0.25) need("leistung");                 // Kindergeld/Erhöhungen
+  if(p.care) need("leistung");                                  // Pflegegeld
+  // Consumption: EU261, online purchases, contracts
+  if(p.flies && rnd()<0.22) need("konsum");                     // flight delay/cancel
+  if(p.shopsOnline && rnd()<0.18) need("konsum");               // online dispute/widerruf
+  if(p.hasContracts && rnd()<0.15) need("vertrag");             // unfair clause
+  if(p.hasContracts && rnd()<0.12) need("vertrag");             // phone/insurance change
+  // Deadlines: everyone hits one
+  if(rnd()<0.28) need("fristen");                               // Einspruch/Widerspruch/Frist
+  if(p.work==="angestellt" && rnd()<0.10) need("recht");        // labor law question
+  if(p.work==="selbst") need("recht");                          // self-employed legal base
+  if(p.work==="arbeitslos"){ need("leistung"); need("recht"); }
+  if(p.work==="studium") need("recht");                         // BAföG etc
+  if(p.work==="rente") need("leistung");                        // pension adjustments
+  // Money: who follows the money?
+  if(p.income==="high" || p.income==="vhigh") need("geld");     // taxes, where money goes
+  // Data: digital citizens
+  if(p.digital && rnd()<0.15) need("daten");                    // DSGVO / data breach
+  // Health: chronic conditions → medicine shortages, care
+  if(p.chronic && rnd()<0.25) need("gesundheit");               // Lieferengpass concern
+  if(p.care) need("gesundheit");
+  // Participation: who'd engage?
+  if(rnd()<0.06) need("beteiligung");                           // consultation windows
+}
+
+// ---------- USAGE: needs → actual usage (adoption) ----------
+function usageFromNeeds(p, rnd){
+  // adoption rates per watcher — citizens don't use what they don't know
+  const rates = {miet:0.55, leistung:0.30, konsum:0.42, fristen:0.50, vertrag:0.38,
+                 recht:0.35, geld:0.22, daten:0.28, gesundheit:0.30, beteiligung:0.15};
+  return rates;
+}
+
+function simulate(n){
+  const seed = 42;
+  const rnd = mulberry32(seed);
+  const W = WATCHERS.map(w=>({...w, need:0, use:0}));
+  const pop = buildPopulation(n, rnd);
+  const rates = usageFromNeeds(null, rnd);
+
+  for(const p of pop){
+    const needsBefore = {};
+    W.forEach(w=>needsBefore[w.id]=w.need);
+    simulateYear(p, rnd, W);
+    // usage: for each need that fired this year, usage chance
+    W.forEach(w=>{
+      const fired = w.need - needsBefore[w.id];
+      if(fired>0 && rnd() < rates[w.id]) w.use += fired;
+    });
+  }
+  render(W, n);
+}
+
+// ---------- RENDER ----------
+function render(W, n){
+  const needRank = [...W].sort((a,b)=>b.need-a.need);
+  const useRank  = [...W].sort((a,b)=>b.use-a.use);
+  const maxNeed = needRank[0].need, maxUse = useRank[0].use;
+
+  const row = (w, i, max, val, isUse) => `
+    <div class="r-row">
+      <div class="pos">${String(i+1).padStart(2,"0")}</div>
+      <div class="who"><span class="ic">${w.ic}</span>${w.name}<span class="pct">${(val/n*100).toFixed(1)} % der Bürger</span></div>
+      <div class="bar"><div class="fill" style="width:${Math.max(4, val/max*100)}%"></div></div>
+      <div class="num">${val.toLocaleString("de-DE")}<br><small>${isUse?"genutzt":"Bedarf"}</small></div>
+    </div>`;
+
+  const tabs = `
+    <div class="tabs">
+      <span class="tab on" id="tab-need" onclick="showTab('need')">Brauchen</span>
+      <span class="tab" id="tab-use" onclick="showTab('use')">Nutzen</span>
+    </div>`;
+  document.getElementById("results").innerHTML = tabs +
+    `<div id="need-panel">${needRank.map((w,i)=>row(w,i,maxNeed,w.need,false)).join("")}</div>` +
+    `<div id="use-panel" style="display:none">${useRank.map((w,i)=>row(w,i,maxUse,w.use,true)).join("")}</div>` +
+    `<div class="explain"><b>So liest du das:</b> „Brauchen" = wie oft ein Lebensereignis diesen Wächter im Jahr auslöst. „Nutzen" = wie oft Bürger ihn tatsächlich nutzen würden (Adoptionsraten berücksichtigt — Leistungs-Wächter hat z. B. niedrige Nutzung, WEIL Menschen nicht wissen, dass sie Anspruch haben; das ist genau der Effekt, den Citizen Agents umdreht). Zahlen gerundet, Modell vereinfacht, Quellen offen.</div>`;
+  document.getElementById("meta").textContent = n.toLocaleString("de-DE") + " Bürger · 1 Jahr · Seed 42 · deterministisch";
+}
+
+function showTab(which){
+  document.getElementById("need-panel").style.display = which==="need"?"block":"none";
+  document.getElementById("use-panel").style.display  = which==="use"?"block":"none";
+  document.getElementById("tab-need").classList.toggle("on", which==="need");
+  document.getElementById("tab-use").classList.toggle("on", which==="use");
+}
+
+simulate(10000);
+</script>
+</body>
+</html>
