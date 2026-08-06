@@ -1,0 +1,54 @@
+{
+  "date": "2026-08-06",
+  "repo": "bla-keks-world",
+  "branch": "studio/engineer-2026-08-06-dodge",
+  "directive_source": "Studio Director brief 2026-08-06, THIRD PASS — Directive 2 (Dodge Roll, P0)",
+  "changes": [
+    {
+      "file": "src/core/input.js",
+      "what": "Added a double-tap edge signal: DOUBLE_TAP_WINDOW = 0.28s, a per-key _lastTapAt map, a doubleTapped_ set cleared in endFrame(), and a public doubleTapped(code) accessor.",
+      "why": "The dodge needs an input that does not steal meaning from the existing movement keys. ControlLeft was unavailable as the director's suggested alias because player.js already binds it to crouch, so double-tap is the only binding. A triple tap deliberately does not fire a second dodge (the tap clock resets on trigger)."
+    },
+    {
+      "file": "src/entities/player.js",
+      "what": "Added DODGE = {speed:14, duration:0.35, iframes:0.12, cooldown:0.45}; dodgeTime/dodgeCooldown/iframes state; dodge(dirX,dirZ) and the dodging / dodgeCharge getters; _dodgeInput() reading double-tapped WASD + arrows; timer decay and a velocity override inside _move(); state reset in spawnAt().",
+      "why": "SPEEDS topped out at 8.6 m/s sprint while a petalbow petal travels at 62 m/s — the 'you can see it coming and dodge it' promise in tools.js was not implementable with the existing movement vocabulary. The roll overrides steering rather than adding to it, so it is a commitment, not a speed buff. Collision still runs afterwards, so you cannot roll through walls."
+    },
+    {
+      "file": "src/modes/match-mode.js",
+      "what": "While ctx.player.iframes > 0 the local participant is filtered out of the target list passed to projectiles.update() and _driveBots(); added dodge + dodgeActive to the HUD payload.",
+      "why": "Combat is shooter-authoritative (the owner reports the hit), so the cleanest place to honour i-frames is the target set the local client resolves hits against. Filtering rather than special-casing keeps every other participant's behaviour byte-identical."
+    },
+    {
+      "file": "src/ui/ui.js",
+      "what": "Renders a .dodge-pip bar under the crosshair when h.dodge is present, with 'ready' and 'active' states.",
+      "why": "Director asked for a cooldown pip with no number. It only draws when the mode supplies the field, so explore mode's HUD is untouched."
+    },
+    {
+      "file": "src/ui/styles.css",
+      "what": "Added .dodge-pip styling (34x3px bar, dim when ready, cyan glow during i-frames).",
+      "why": "Readability: the glow is the only frame-accurate feedback that the i-frames actually fired."
+    },
+    {
+      "file": "tools/dodgetest.mjs",
+      "what": "New headless node test stubbing window/document/performance and driving Input keydown/keyup to assert the double-tap edge behaviour (6 assertions).",
+      "why": "The tap window is the one piece of pure logic in this change and the easiest thing to regress. Matches the existing tools/*.mjs script pattern; run with `node tools/dodgetest.mjs`."
+    }
+  ],
+  "build_passed": true,
+  "build_command": "npm run build",
+  "build_output": "vite v7.3.6 - 56 modules transformed - built in 1.86s - exit 0",
+  "tests_passed": true,
+  "test_command": "node tools/dodgetest.mjs",
+  "test_result": "6/6 assertions passing",
+  "directives_done": [
+    "THIRD PASS Directive 2 — Dodge Roll (P0): double-tap detection, 0.35s @ 14 m/s burst, 0.12s i-frames, 0.45s cooldown, HUD pip"
+  ],
+  "directives_skipped": [
+    "THIRD PASS Directive 1 — weapon on the body: larger change touching remote.js/avatar.js/net state; kept out to preserve a reviewable diff",
+    "THIRD PASS Directive 3 — The Last Thirty: server-authoritative, belongs in a separate PR",
+    "SECOND PASS Directives 2 & 3 — Stamina/Guard/Reflect: blocked on Mikel's unanswered 'shared pool or flat cooldown' decision"
+  ],
+  "blocked_on_lead": "Director asked whether the roll spends the same resource as the saber. Shipped as a flat cooldown because Stamina does not exist yet; if Mikel answers 'shared', dodge() moves onto the stamina pool in one line.",
+  "note": "Pass-1 directives (bots fire real projectiles, retire weapon.js) were already implemented on branch studio/engineer-2026-08-06 by an earlier run. This branch is cut fresh from main and does not overlap it."
+}
