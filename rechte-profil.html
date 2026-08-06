@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dein Rechte-Profil — lokal, privat, bei dir</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Newsreader:ital,wght@1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf9f6; --ink:#131316; --ink2:#3f3f46; --ink3:#8b8b94;
+    --line:rgba(19,19,22,0.10); --line2:rgba(19,19,22,0.18);
+    --purple:#533afd; --magenta:#f96bee; --cyan:#22d3ee; --green:#10b981; --lemon:#b45309;
+    --grad:linear-gradient(120deg,#533afd,#f96bee);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.5;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .aurora{position:fixed;inset:0;pointer-events:none;z-index:0;filter:blur(90px);opacity:0.5}
+  .aurora .orb{position:absolute;border-radius:50%;mix-blend-mode:multiply;animation:drift 26s ease-in-out infinite alternate}
+  .aurora .o1{width:52vw;height:52vw;background:radial-gradient(closest-side,rgba(83,58,253,0.16),transparent);top:-18vw;left:-12vw}
+  .aurora .o2{width:44vw;height:44vw;background:radial-gradient(closest-side,rgba(249,107,238,0.13),transparent);top:6vh;right:-14vw;animation-delay:-9s}
+  .aurora .o3{width:40vw;height:40vw;background:radial-gradient(closest-side,rgba(34,211,238,0.11),transparent);bottom:-14vw;left:18vw;animation-delay:-18s}
+  @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(6vw,4vh) scale(1.12)}}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
+
+  nav{display:flex;align-items:center;padding:28px 0;gap:26px}
+  .word{font-size:17px;font-weight:600;letter-spacing:-0.3px}
+  .word .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav .links{margin-left:auto;display:flex;gap:22px}
+  nav .links a{color:var(--ink2);text-decoration:none;font-size:14px;transition:color .15s}
+  nav .links a:hover{color:var(--ink)}
+  nav .links .back{color:var(--purple);font-weight:500;border-bottom:1px solid rgba(83,58,253,0.35)}
+
+  .hero{padding:70px 0 26px;max-width:860px}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--purple);margin-bottom:24px}
+  h1{font-size:clamp(42px,6.5vw,72px);font-weight:500;letter-spacing:-3px;line-height:1.0;margin-bottom:22px}
+  h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;letter-spacing:-1px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .dek{font-size:17px;font-weight:300;color:var(--ink2);max-width:580px}
+  .privacy{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--green);margin-top:20px;display:flex;align-items:center;gap:8px}
+  .privacy::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(16,185,129,0.15);animation:pulse 2.5s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+
+  /* QUESTION STEPS — no tiles, just rows */
+  .steps{margin-top:44px}
+  .step{border-top:1px solid var(--line);padding:30px 0}
+  .step:last-child{border-bottom:1px solid var(--line)}
+  .step .q{font-size:24px;font-weight:400;letter-spacing:-0.5px;margin-bottom:6px}
+  .step .h{font-size:13.5px;color:var(--ink3);font-weight:300;margin-bottom:18px}
+  .opts{display:flex;flex-wrap:wrap;gap:10px}
+  .opt{padding:10px 20px;border:1px solid var(--line2);border-radius:999px;font-size:14.5px;cursor:pointer;transition:all .15s;user-select:none;background:transparent;color:var(--ink2)}
+  .opt:hover{border-color:var(--purple);color:var(--purple)}
+  .opt.on{background:var(--grad);border-color:transparent;color:#fff;font-weight:500;box-shadow:rgba(83,58,253,0.25) 0px 6px 16px -6px}
+  .opt.sub{font-size:12.5px;padding:7px 14px;border-style:dashed;opacity:0.75}
+
+  /* RESULT — flowing, no boxes */
+  .result{margin-top:30px;display:none}
+  .result.show{display:block;animation:fade .4s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  .result .head{border-top:3px double var(--ink);border-bottom:1px solid var(--line);padding:26px 0 22px}
+  .result .head .n{font-family:'Newsreader',serif;font-style:italic;font-size:19px;color:var(--purple);margin-bottom:8px}
+  .result .head h2{font-size:clamp(30px,4.5vw,46px);font-weight:400;letter-spacing:-1.5px}
+  .result .head h2 .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .r-item{display:grid;grid-template-columns:1fr auto;gap:20px;padding:24px 0;border-bottom:1px solid var(--line);align-items:baseline}
+  .r-item .t{font-size:19px;font-weight:400;letter-spacing:-0.3px}
+  .r-item .t .tag{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;margin-left:10px;vertical-align:3px;font-weight:500}
+  .tag.g{color:var(--green)} .tag.w{color:var(--lemon)} .tag.b{color:var(--purple)}
+  .r-item .d{font-size:14px;color:var(--ink2);font-weight:300;grid-column:1/-1;max-width:640px;margin-top:-12px}
+  .r-item .w{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink3);grid-column:1/-1;letter-spacing:0.3px}
+  .r-item .w b{color:var(--purple);font-weight:500}
+  .r-item .act{font-size:14px;font-weight:500;color:var(--purple);white-space:nowrap;text-decoration:none}
+  .r-item .act::after{content:" →"}
+  .reset{margin-top:26px;font-size:14px;color:var(--ink3);text-decoration:none;border-bottom:1px solid var(--line2);cursor:pointer;background:none;border-top:none;border-left:none;border-right:none;font-family:inherit;padding:0}
+  .reset:hover{color:var(--ink)}
+  footer{padding:50px 0 70px;color:var(--ink3);font-size:13px;text-align:center}
+  footer b{color:var(--ink);font-weight:500}
+</style>
+</head>
+<body>
+
+<div class="aurora"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
+
+<div class="wrap">
+  <nav>
+    <span class="word">Citizen <span class="g">Agents</span></span>
+    <div class="links">
+      <a class="back" href="index.html">← Zurück</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="kicker">Schicht 1 · Der persönliche Wächter · lokal</div>
+    <h1>Dein <span class="serif">Rechte-Profil.</span></h1>
+    <p class="dek">Beantworte fünf Fragen — das Profil zeigt, welche Rechte und Leistungen für dich gelten und welche Wächter sie beobachten. Der erste Baustein der 2050-Flotte: persönlich, aber <b>100 % lokal.</b></p>
+    <div class="privacy">Nichts verlässt deinen Browser. Keine Daten, kein Konto, kein Tracking.</div>
+  </div>
+
+  <div class="steps" id="steps">
+    <!-- STEP 1: Wohnen -->
+    <div class="step">
+      <div class="q">Wo wohnst du?</div>
+      <div class="h">Mehrfachauswahl möglich</div>
+      <div class="opts">
+        <span class="opt" data-k="miete">Miete</span>
+        <span class="opt" data-k="eigentum">Eigentum</span>
+        <span class="opt" data-k="wg">WG / Zimmer</span>
+        <span class="opt" data-k="genossenschaft">Genossenschaft</span>
+      </div>
+    </div>
+    <!-- STEP 2: Einkommen -->
+    <div class="step">
+      <div class="q">Dein Einkommen?</div>
+      <div class="h">Bitte wählen — wir rechnen nichts, wir verknüpfen nur</div>
+      <div class="opts">
+        <span class="opt sub" data-k="eink_niedrig">&lt; 1.200 € / Monat</span>
+        <span class="opt sub" data-k="eink_mittel">1.200 – 2.500 €</span>
+        <span class="opt sub" data-k="eink_hoch">2.500 – 4.500 €</span>
+        <span class="opt sub" data-k="eink_sehrhoch">&gt; 4.500 €</span>
+        <span class="opt sub" data-k="elterngeld_grenze">über Elterngeld-Grenze (200k/150k)</span>
+      </div>
+    </div>
+    <!-- STEP 3: Familie -->
+    <div class="step">
+      <div class="q">Familie?</div>
+      <div class="h">Mehrfachauswahl möglich</div>
+      <div class="opts">
+        <span class="opt" data-k="kind">Kind(er) unter 18</span>
+        <span class="opt" data-k="alleinerziehend">Alleinerziehend</span>
+        <span class="opt" data-k="schwanger">Schwangerschaft / frisch Eltern</span>
+        <span class="opt" data-k="pflege">Pflege eines Angehörigen</span>
+      </div>
+    </div>
+    <!-- STEP 4: Arbeit -->
+    <div class="step">
+      <div class="q">Arbeit &amp; Lebenslage?</div>
+      <div class="h">Mehrfachauswahl möglich</div>
+      <div class="opts">
+        <span class="opt" data-k="arbeit">Angestellt</span>
+        <span class="opt" data-k="selbst">Selbstständig / Freelance</span>
+        <span class="opt" data-k="studium">Studium / Ausbildung</span>
+        <span class="opt" data-k="arbeitslos">Arbeitslos / Bürgergeld</span>
+        <span class="opt" data-k="rente">Rente</span>
+      </div>
+    </div>
+    <!-- STEP 5: Konsum & Alltag -->
+    <div class="step">
+      <div class="q">Alltag &amp; Konsum?</div>
+      <div class="h">Mehrfachauswahl möglich</div>
+      <div class="opts">
+        <span class="opt" data-k="fliegen">Fliege oft (EU)</span>
+        <span class="opt" data-k="shop">Kaufe online</span>
+        <span class="opt" data-k="vertraege">Handy-/Versicherungsverträge</span>
+        <span class="opt" data-k="digital">Viel digital unterwegs</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="result" id="result"></div>
+</div>
+
+<footer>
+  Digital Democracy Studio · Berlin · <b>„Recht auf dem Papier → Recht im Leben."</b><br>
+  Persönliche Flotte · 2050 · Datensparsamkeit als Architektur
+</footer>
+
+<script>
+const S = new Set();
+document.querySelectorAll(".opt").forEach(o=>{
+  o.addEventListener("click",()=>{
+    const k=o.dataset.k;
+    if(S.has(k)){S.delete(k);o.classList.remove("on");}else{S.add(k);o.classList.add("on");}
+    render();
+  });
+});
+
+function has(...ks){return ks.some(k=>S.has(k));}
+
+function render(){
+  const r=document.getElementById("result");
+  const items=[];
+  const watcher=(name)=>`<span class="w">beobachtet von: <b>${name}</b></span>`;
+
+  // WOHNGELD
+  if(has("miete","wg")&&has("eink_niedrig","eink_mittel")){
+    items.push({t:"🏠 Wohngeld",tag:["g","GEPRÜFT"],d:"Bei Miete und geringem Einkommen besteht oft Anspruch — ~800.000 Haushalte lassen es liegen (€1 Mrd+/Jahr). Berechnung: 30 Sekunden.",w:watcher("Benefit-Watch"),act:"Anspruch prüfen",href:"https://github.com/mikelninh/wohngeld-mcp"});
+  }
+  // ELTERNGELD
+  if(has("schwanger","kind")&&!has("elterngeld_grenze")){
+    items.push({t:"👶 Elterngeld",tag:["g","GEPRÜFT"],d:"Basis oder Plus? 5–15 Stunden Recherche werden eine Frage — BEEG-konform, alle 16 Bundesländer.",w:watcher("Benefit-Watch"),act:"Berechnen",href:"https://elterngeld-blitz.de"});
+  }
+  // KINDERGELD
+  if(has("kind")){
+    items.push({t:"🧒 Kindergeld",tag:["b","SELBST"],d:"Steht jedem Elternteil automatisch zu — aber nur, wenn beantragt. Höhe und Voraussetzungen ändern sich.",w:watcher("Benefit-Watch"),act:"Prüfen",href:"https://gitlaw-xi.vercel.app/"});
+  }
+  // BÜRGERGELD
+  if(has("arbeitslos")||has("eink_niedrig")){
+    items.push({t:"🛟 Bürgergeld / Grundsicherung",tag:["w","ÄNDERT SICH"],d:"Wird ab 01.07.2026 zur „Neuen Grundsicherung" — mit schärferen Sanktionen. Regeln ändern sich still; wir melden.",w:watcher("Benefit-Watch"),act:"Aktuelles",href:"https://github.com/mikelninh/citizen-agents/tree/main/agent-digests"});
+  }
+  // EU261
+  if(has("fliegen")){
+    items.push({t:"✈️ EU261 Fluggastrechte",tag:["g","GEPRÜFT"],d:"3h+ Verspätung kann €250–600 bedeuten. Airlines zahlen 40% der Erstanträge nicht — die Forderung macht der Rechner.",w:watcher("EU Rights-Watch"),act:"€600 prüfen",href:"eu261.html"});
+  }
+  // AGB
+  if(has("shop","vertraege")){
+    items.push({t:"🧾 AGB & Verträge",tag:["g","GEPRÜFT"],d:"Unwirksame Klauseln mit dem genauen § erkennen — Miet-, Handy-, Versicherungs- und Online-Verträge.",w:watcher("AGB-Reader · Court-Watch"),act:"Klauseln prüfen",href:"agb-reader.html"});
+  }
+  // MIETE
+  if(has("miete","wg")){
+    items.push({t:"🏢 Mietrecht",tag:["b","DEIN RECHT"],d:"Mietpreisbremse, Kaution, Nebenkosten, Modernisierung — Gesetze ändern sich, dein Mietvertrag nicht.",w:watcher("Law-Watch · Court-Watch"),act:"Gesetz fragen",href:"https://gitlaw-xi.vercel.app/"});
+  }
+  // DATENSCHUTZ
+  if(has("digital")){
+    items.push({t:"🔒 Datenschutz & DSGVO",tag:["b","DEIN RECHT"],d:"Wer Daten über dich hält, was du unterschrieben hast, wie du Auskunft verlangst — Art. 15–20 DSGVO.",w:watcher("Truth-Watch · Court-Watch"),act:"Rechte ansehen",href:"https://raw.githubusercontent.com/mikelninh/citizen-agents/main/datenschutz-architecture.md"});
+  }
+  // SELBSTÄNDIGE
+  if(has("selbst")){
+    items.push({t:"🧑‍💻 Selbstständigkeit",tag:["b","DEIN RECHT"],d:"Krankengeld, Steuererklärung, Fristen, Fördermittel — deine Rechtsmaterie wird beobachtet.",w:watcher("Law-Watch · Money-Flow Watch"),act:"Gesetz fragen",href:"https://gitlaw-xi.vercel.app/"});
+  }
+  // PFLEGE
+  if(has("pflege")){
+    items.push({t:"💚 Pflege",tag:["w","PRÜFEN"],d:"Pflegegeld, Entlastungsbetrag, Verhinderungspflege — vieles bleibt ungenutzt, weil niemand es sagt.",w:watcher("Benefit-Watch"),act:"Prüfen",href:"https://github.com/mikelninh/citizen-agents"});
+  }
+  // STUDIUM
+  if(has("studium")){
+    items.push({t:"🎓 Studium / Ausbildung",tag:["b","DEIN RECHT"],d:"BAföG, Wohngeld als Studierende, Mindestlohn, Werkstudenten-Regeln — deine Rechte ändern sich.",w:watcher("Law-Watch · Benefit-Watch"),act:"Gesetz fragen",href:"https://gitlaw-xi.vercel.app/"});
+  }
+  // RENTE
+  if(has("rente")){
+    items.push({t:"🧓 Rente",tag:["w","ÄNDERT SICH"],d:"Grundrente, Zuschläge, Fristen — Rentenrecht ändert sich fast jährlich, still.",w:watcher("Law-Watch · Benefit-Watch"),act:"Aktuelles",href:"https://github.com/mikelninh/citizen-agents/tree/main/agent-digests"});
+  }
+  // VERMÖGEN / STEUER
+  if(has("eink_hoch","eink_sehrhoch")){
+    items.push({t:"📊 Steuern & Vermögen",tag:["b","DEIN RECHT"],d:"Steuererklärung, Freibeträge, Fristen — und wohin dein Steuergeld fließt (Bundeshaushalt, 476,5 Mrd €).",w:watcher("Money-Flow Watch"),act:"Steuergeld folgen",href:"https://github.com/mikelninh/pmm-mcp"});
+  }
+
+  if(S.size===0){r.className="result";return;}
+  r.className="result show";
+  const n=items.length;
+  r.innerHTML=`
+    <div class="head">
+      <div class="n">Dein Rechte-Profil</div>
+      <h2>${n} Rechte <span class="g">gelten für dich.</span></h2>
+    </div>
+    ${items.map(i=>`
+      <div class="r-item">
+        <div class="t">${i.t}<span class="tag ${i.tag[0]}">${i.tag[1]}</span></div>
+        <a class="act" href="${i.href}" ${i.href.startsWith("http")?"target=\"_blank\"":""}>${i.act}</a>
+        <div class="d">${i.d}</div>
+        ${i.w}
+      </div>`).join("")}
+    <button class="reset" onclick="resetAll()">Zurücksetzen</button>`;
+}
+function resetAll(){
+  S.clear();
+  document.querySelectorAll(".opt.on").forEach(o=>o.classList.remove("on"));
+  document.getElementById("result").className="result";
+}
+</script>
+</body>
+</html>

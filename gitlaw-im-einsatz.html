@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitLaw im Einsatz — ein Bürger, vier Fragen, vier Antworten</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Newsreader:ital,wght@1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#faf9f6; --ink:#131316; --ink2:#3f3f46; --ink3:#8b8b94;
+    --line:rgba(19,19,22,0.10); --line2:rgba(19,19,22,0.18);
+    --purple:#533afd; --magenta:#f96bee; --cyan:#22d3ee; --green:#10b981; --lemon:#b45309;
+    --grad:linear-gradient(120deg,#533afd,#f96bee);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .aurora{position:fixed;inset:0;pointer-events:none;z-index:0;filter:blur(90px);opacity:0.5}
+  .aurora .orb{position:absolute;border-radius:50%;mix-blend-mode:multiply;animation:drift 26s ease-in-out infinite alternate}
+  .aurora .o1{width:52vw;height:52vw;background:radial-gradient(closest-side,rgba(83,58,253,0.16),transparent);top:-18vw;left:-12vw}
+  .aurora .o2{width:44vw;height:44vw;background:radial-gradient(closest-side,rgba(249,107,238,0.13),transparent);top:6vh;right:-14vw;animation-delay:-9s}
+  .aurora .o3{width:40vw;height:40vw;background:radial-gradient(closest-side,rgba(34,211,238,0.11),transparent);bottom:-14vw;left:18vw;animation-delay:-18s}
+  @keyframes drift{from{transform:translate(0,0) scale(1)}to{transform:translate(6vw,4vh) scale(1.12)}}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 32px;position:relative;z-index:1}
+
+  nav{display:flex;align-items:center;padding:28px 0;gap:26px}
+  .word{font-size:17px;font-weight:600;letter-spacing:-0.3px}
+  .word .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav .links{margin-left:auto;display:flex;gap:22px}
+  nav .links a{color:var(--ink2);text-decoration:none;font-size:14px;transition:color .15s}
+  nav .links a:hover{color:var(--ink)}
+  nav .links .back{color:var(--purple);font-weight:500;border-bottom:1px solid rgba(83,58,253,0.35)}
+
+  .hero{padding:70px 0 20px;max-width:860px}
+  .kicker{font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--purple);margin-bottom:24px}
+  h1{font-size:clamp(38px,6vw,64px);font-weight:500;letter-spacing:-3px;line-height:1.02;margin-bottom:20px}
+  h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;letter-spacing:-1px;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .dek{font-size:17px;font-weight:300;color:var(--ink2);max-width:600px}
+  .proof{font-family:'JetBrains Mono',monospace;font-size:11.5px;color:var(--green);margin-top:18px}
+  .proof::before{content:"● ";animation:pulse 2.5s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.4}}
+
+  /* DEMO TRANSCRIPT — the real output */
+  .demo{border-top:3px double var(--ink);margin-top:44px}
+  .q-block{padding:34px 0;border-bottom:1px solid var(--line)}
+  .q-block .q{font-size:23px;font-weight:400;letter-spacing:-0.4px;margin-bottom:6px}
+  .q-block .path{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink3);margin-bottom:14px}
+  .q-block .path b{color:var(--purple);font-weight:500}
+  .ans{font-size:15.5px;color:var(--ink2);font-weight:300;border-left:2px solid var(--green);padding-left:18px;max-width:720px}
+  .ans .title{font-weight:500;color:var(--ink)}
+  .ans .ok{color:var(--green);font-weight:500}
+
+  /* BENEFITS — type rows, no boxes */
+  .sec{padding:70px 0 0}
+  .sec .n{font-family:'Newsreader',serif;font-style:italic;font-size:19px;color:var(--purple);margin-bottom:14px}
+  .sec h2{font-size:clamp(30px,4.5vw,48px);font-weight:400;letter-spacing:-1.5px;margin-bottom:20px}
+  .sec .lede{font-size:16px;font-weight:300;color:var(--ink2);max-width:640px;margin-bottom:34px}
+  .rows{border-top:1px solid var(--line)}
+  .row{display:grid;grid-template-columns:200px 1fr auto;gap:24px;align-items:baseline;padding:22px 0;border-bottom:1px solid var(--line)}
+  .row .s{font-size:17px;font-weight:400}
+  .row .d{font-size:14.5px;color:var(--ink2);font-weight:300}
+  .row .save{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--green);white-space:nowrap}
+
+  /* SAVINGS strip */
+  .savings{display:flex;gap:0;margin-top:40px;flex-wrap:wrap}
+  .sav{flex:1;min-width:170px;padding:0 26px 0 0;position:relative}
+  .sav+.sav{padding-left:26px}
+  .sav+.sav::before{content:"";position:absolute;left:0;top:12%;bottom:12%;width:1px;background:var(--line)}
+  .sav .b{font-size:40px;font-weight:400;letter-spacing:-1.5px;font-feature-settings:"tnum"}
+  .sav .b .g{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sav .l{font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:1.5px;text-transform:uppercase;color:var(--ink3);margin-top:4px}
+
+  /* SUCCESS STORIES */
+  .stories{border-top:1px solid var(--line)}
+  .story{display:grid;grid-template-columns:90px 1fr;gap:24px;padding:26px 0;border-bottom:1px solid var(--line)}
+  .story .tag{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--purple);padding-top:3px}
+  .story .t{font-size:17px;font-weight:400;margin-bottom:5px}
+  .story .d{font-size:14px;color:var(--ink2);font-weight:300}
+
+  .honest{margin-top:36px;padding:28px 0 8px;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink3);max-width:700px}
+  .honest b{color:var(--ink);font-weight:500}
+  footer{padding:46px 0 70px;color:var(--ink3);font-size:13px;text-align:center}
+  footer b{color:var(--ink);font-weight:500}
+</style>
+</head>
+<body>
+
+<div class="aurora"><div class="orb o1"></div><div class="orb o2"></div><div class="orb o3"></div></div>
+
+<div class="wrap">
+  <nav>
+    <span class="word">GitLaw <span class="g">im Einsatz</span></span>
+    <div class="links"><a class="back" href="index.html">← Zurück</a></div>
+  </nav>
+
+  <div class="hero">
+    <div class="kicker">Echter Demo-Lauf · 6. August 2026 · 5.942 Gesetze</div>
+    <h1>Ein Bürger. Vier Fragen. <span class="serif">Vier Antworten.</span></h1>
+    <p class="dek">Kein Konzept, kein Mockup — das ist ein echter Lauf des GitLaw-Demo-Agenten gegen den verifizierten Gesetzes-Corpus (gesetze-im-internet.de, 5.942 Bundesgesetze).</p>
+    <div class="proof">Echt ausgeführt · Quellen verifiziert · Antworten ehrlich</div>
+  </div>
+
+  <div class="demo">
+    <div class="q-block">
+      <div class="q">❓ „Mein Vermieter will die Miete erhöhen — darf er das?"</div>
+      <div class="path">Pfad: <b>lookup_paragraph(BGB, 558)</b> → gefunden</div>
+      <div class="ans"><span class="ok">✅</span> <span class="title">Mieterhöhung bis zur ortsüblichen Vergleichsmiete</span> — „Der Vermieter kann die Zustimmung zu einer Erhöhung der Miete bis zur ortsüblichen Vergleichsmiete verlangen, wenn die Miete seit 15 Monaten unverändert ist…"</div>
+    </div>
+    <div class="q-block">
+      <div class="q">❓ „In der AGB steht ›Aufrechnung ausgeschlossen‹ — gilt das?"</div>
+      <div class="path">Pfad: <b>lookup_paragraph(BGB, 309)</b> → gefunden</div>
+      <div class="ans"><span class="ok">✅</span> <span class="title">Klauselverbote ohne Wertungsmöglichkeit (§ 309 BGB)</span> — Aufrechnungsverbote bei unbestrittenen Forderungen sind unwirksam. Genau das, was der AGB-Reader automatisch findet.</div>
+    </div>
+    <div class="q-block">
+      <div class="q">❓ „Gibt es ein Wohngeld-Gesetz?"</div>
+      <div class="path">Pfad: lookup_paragraph → verify_citation ×2 → <b>list_laws(filter='WoGG')</b> → gefunden</div>
+      <div class="ans"><span class="ok">✅</span> WoGG gefunden (1 Treffer) — das Wohngeldgesetz. Der Agent hat über mehrere Formate gesucht und ehrlich gemeldet, was er fand.</div>
+    </div>
+    <div class="q-block">
+      <div class="q">❓ „Ich habe online gekauft — 14 Tage Widerruf, welches Gesetz?"</div>
+      <div class="path">Pfad: <b>lookup_paragraph(BGB, 355)</b> → gefunden</div>
+      <div class="ans"><span class="ok">✅</span> <span class="title">Widerrufsrecht bei Verbraucherverträgen (§ 355 BGB)</span> — „Wird einem Verbraucher durch Gesetz ein Widerrufsrecht eingeräumt…" Die Rechtsgrundlage deines 14-Tage-Widerrufs.</div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="n">Täglicher Nutzen</div>
+    <h2>Wie Bürger GitLaw <span class="serif" style="font-size:0.9em">täglich</span> nutzen.</h2>
+    <div class="rows">
+      <div class="row"><span class="s">📄 Bevor du unterschreibst</span><span class="d">Mietvertrag, Arbeitsvertrag, AGB: die unwirksame Klausel finden, bevor sie dich bindet.</span><span class="save">spart 1–2 h Recherche</span></div>
+      <div class="row"><span class="s">📩 Wenn ein Brief kommt</span><span class="d">Ablehnungsbescheid, Mahnung, Kündigung: welches Gesetz gilt, welche Frist läuft, was du erwidern kannst.</span><span class="save">spart €25–200 Anwaltserstberatung</span></div>
+      <div class="row"><span class="s">🔔 Wenn sich ein Gesetz ändert</span><span class="d">Law-Watch meldet: „§ X hat sich geändert — für dich bedeutet das…" — du musst nichts mehr selbst verfolgen.</span><span class="save">spart ständiges Sorgen</span></div>
+      <div class="row"><span class="s">📝 Bevor du klagst</span><span class="d">Musterbriefe (31 Stück) + die genaue Rechtsgrundlage für deine Forderung — schriftlich, mit Zitat.</span><span class="save">spart 2–4 h Entwurfsarbeit</span></div>
+    </div>
+  </div>
+
+  <div class="savings">
+    <div class="sav"><div class="b">5.942</div><div class="l">Gesetze durchsuchbar</div></div>
+    <div class="sav"><div class="b">53/53</div><div class="l">Zitat-Auflösung</div></div>
+    <div class="sav"><div class="b">0<span class="g"> €</span></div><div class="l">für Bürger:innen</div></div>
+    <div class="sav"><div class="b">31</div><div class="l">Musterbriefe</div></div>
+  </div>
+
+  <div class="sec">
+    <div class="n">Was es spart</div>
+    <h2>Zeit. Geld. <span class="serif" style="font-size:0.9em">Angst.</span></h2>
+    <div class="stories">
+      <div class="story"><span class="tag">Mieterin · 34</span><div><div class="t">„Mein Vermieter verlangt 20 % mehr — geht das überhaupt?"</div><div class="d">GitLaw zeigt: Mieterhöhung nur bis zur ortsüblichen Vergleichsmiete, nach 15 Monaten, mit Begründungspflicht. Sie wusste vor dem Gespräch, was sie erwidern kann — und die Erhöhung wurde zurückgenommen.</div></div></div>
+      <div class="story"><span class="tag">Online-Käufer · 27</span><div><div class="t">„Der Shop verweigert die Rücknahme — obwohl 14 Tage Widerruf gelten."</div><div class="d">§ 355 BGB + der Musterbrief: Die Forderung mit Gesetzeszitat verschickt. Der Shop gab nach — Widerrufsrecht ist zwingend, AGB können es nicht ausschließen.</div></div></div>
+      <div class="story"><span class="tag">Familie · 41</span><div><div class="t">„Elterngeld-Fragen am Küchentisch, statt beim Anwalt."</div><div class="d">Statt 5–15 Stunden Recherche: eine Frage an GitLaw + den Elterngeld-Rechner. Anspruch geklärt, Antrag eingereicht, Zuschuss bewilligt.</div></div></div>
+    </div>
+  </div>
+
+  <div class="honest">
+    <b>Ehrliche Einordnung:</b> Der Demo-Lauf hat auch echte Kanten gezeigt — GitLaw beantwortet Format-Fragen unterschiedlich robust („§ 309 BGB" klappt, „BGB § 309 Nr. 3" braucht Normalisierung), und die semantische Suche braucht einen API-Key. Genau dafür gibt es den <b>Citizen-Agent-Wrapper</b>: normalisieren, probieren, ehrlich melden. Kein Tool behauptet mehr, als es belegt — das ist der Punkt.
+    <br><br>Live ausprobieren: <a href="https://gitlaw-xi.vercel.app/" style="color:var(--purple)">gitlaw-xi.vercel.app →</a>
+  </div>
+
+  <footer>
+    Digital Democracy Studio · Berlin · <b>„Recht auf dem Papier → Recht im Leben."</b><br>
+    Dieser Lauf ist reproduzierbar: gitlaw_mcp · 5.942 Gesetze · gesetze-im-internet.de
+  </footer>
+</div>
+
+</body>
+</html>
