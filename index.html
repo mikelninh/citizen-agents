@@ -3,214 +3,208 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Citizen Agents — 10 freie Wächter für Bürger:innen</title>
+<title>Citizen Agents — Dein Recht. Dein Geld. Deine Frage.</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
 <style>
-  :root{--bg:#0b0e14;--panel:#121826;--panel2:#0f1522;--line:#1f2a3d;
-        --gold:#e8c26a;--ice:#7fd4ff;--green:#5ee6a0;--violet:#b39dff;--red:#ff7a8a;
-        --muted:#8b98ad;--text:#e8edf6}
+  :root{
+    --purple:#533afd; --purple-hover:#4434d4; --purple-light:#b9b9f9;
+    --navy:#061b31; --label:#273951; --body:#64748d; --border:#e5edf5;
+    --green:#15be53; --green-text:#108c3d; --brand-dark:#1c1e54; --brand-dark2:#24265e;
+    --shadow:rgba(50,50,93,0.25) 0px 30px 45px -30px, rgba(0,0,0,0.1) 0px 18px 36px -18px;
+    --shadow-sm:rgba(23,23,23,0.06) 0px 3px 6px;
+  }
   *{margin:0;padding:0;box-sizing:border-box}
-  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5}
-  .wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+  body{background:#ffffff;color:var(--label);font-family:'Source Sans 3',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+       font-feature-settings:"ss01";line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+  /* NAV */
+  nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.88);backdrop-filter:blur(12px);border-bottom:1px solid var(--border)}
+  .nav-inner{display:flex;align-items:center;gap:24px;padding:14px 0}
+  .logo{font-weight:600;font-size:16px;color:var(--navy);display:flex;align-items:center;gap:9px}
+  .logo .mark{width:24px;height:24px;border-radius:6px;background:linear-gradient(135deg,var(--purple),#f96bee);display:flex;align-items:center;justify-content:center;color:#fff;font-size:13px}
+  nav .links{margin-left:auto;display:flex;gap:2px;align-items:center}
+  nav .links a{color:var(--label);text-decoration:none;font-size:14px;padding:7px 13px;border-radius:6px;transition:all .15s}
+  nav .links a:hover{background:rgba(83,58,253,0.06);color:var(--purple)}
+  .btn{padding:8px 16px;border-radius:4px;font-size:14px;font-weight:500;text-decoration:none;display:inline-block;transition:all .15s;border:1px solid transparent;cursor:pointer}
+  .btn.primary{background:var(--purple);color:#fff}
+  .btn.primary:hover{background:var(--purple-hover)}
+  .btn.ghost{border-color:var(--purple-light);color:var(--purple);background:transparent}
+  .btn.ghost:hover{background:rgba(83,58,253,0.05)}
   /* HERO */
-  .hero{padding:56px 0 34px;border-bottom:1px solid var(--line);
-        background:radial-gradient(ellipse 60% 80% at 50% -10%,#16203a 0%,transparent 70%)}
-  .kicker{color:var(--gold);font-size:11.5px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
-  h1{font-size:clamp(28px,4.5vw,44px);font-weight:800;letter-spacing:-1px;margin:8px 0 6px}
-  h1 em{font-style:normal;color:var(--ice)}
-  .sub{color:var(--muted);font-size:16px;max-width:640px}
-  .badges{margin-top:18px;display:flex;gap:8px;flex-wrap:wrap}
-  .badge{border:1px solid var(--line);background:var(--panel);border-radius:999px;padding:5px 13px;font-size:12.5px}
-  .badge b{color:var(--green)}
-  /* SECTION HEADERS */
-  h2{font-size:21px;font-weight:800;margin:42px 0 6px;letter-spacing:-0.4px}
-  .lede{color:var(--muted);font-size:14px;max-width:720px;margin-bottom:16px}
-  /* AGENT CARDS - VISUAL VALUE BOARD */
+  .hero{padding:84px 0 56px;text-align:center;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;top:-180px;left:50%;transform:translateX(-50%);width:1000px;height:460px;
+    background:radial-gradient(closest-side,rgba(83,58,253,0.09),rgba(249,107,238,0.05),transparent);pointer-events:none}
+  .kicker{font-size:12px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--purple);margin-bottom:18px}
+  h1{font-size:54px;font-weight:300;letter-spacing:-1.3px;line-height:1.05;color:var(--navy);max-width:860px;margin:0 auto}
+  h1 em{font-style:normal;color:var(--purple)}
+  .sub{font-size:19px;font-weight:300;color:var(--body);max-width:640px;margin:22px auto 0;line-height:1.5}
+  .sub b{font-weight:500;color:var(--label)}
+  .cta{margin-top:34px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+  .trust{margin-top:34px;font-size:13.5px;color:var(--body)}
+  .trust b{color:var(--label);font-weight:500}
+  .trust .sep{color:var(--purple-light);margin:0 8px}
+  /* PROBLEM-FIRST — the core */
+  .problem-section{background:#f7f9fc;border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:64px 0}
+  h2{font-size:32px;font-weight:300;letter-spacing:-0.64px;color:var(--navy);margin-bottom:8px}
+  .lede{font-size:16px;font-weight:300;color:var(--body);max-width:680px;margin-bottom:32px}
+  .probs{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:14px}
+  .prob{background:#fff;border:1px solid var(--border);border-radius:8px;padding:24px;text-decoration:none;color:inherit;display:block;transition:all .18s;box-shadow:var(--shadow-sm)}
+  .prob:hover{border-color:var(--purple-light);box-shadow:var(--shadow);transform:translateY(-2px)}
+  .prob .q{font-size:17px;font-weight:500;color:var(--navy);margin-bottom:6px}
+  .prob .a{font-size:14px;font-weight:300;color:var(--body)}
+  .prob .go{margin-top:12px;font-size:13.5px;font-weight:500;color:var(--purple)}
+  .prob .go::after{content:" →"}
+  /* WATCHERS (compact, behind the scenes) */
+  section{padding:64px 0}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px}
-  .card{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
-        border-radius:14px;padding:16px 16px 14px;position:relative;overflow:hidden;
-        transition:transform .15s ease,border-color .15s ease}
-  .card:hover{transform:translateY(-2px);border-color:#2c3b55}
-  .card .top{display:flex;align-items:center;gap:10px;margin-bottom:8px}
-  .card .emoji{font-size:24px;width:40px;height:40px;display:flex;align-items:center;justify-content:center;
-               background:#0e1526;border:1px solid var(--line);border-radius:10px;flex-shrink:0}
-  .card .nm{font-weight:800;font-size:14.5px}
-  .card .lv{font-size:10px;color:var(--muted);letter-spacing:1.5px;text-transform:uppercase}
-  .card .st{margin-left:auto;font-size:10px;letter-spacing:1px;text-transform:uppercase;padding:2px 9px;border-radius:999px;flex-shrink:0}
-  .st.live{color:var(--green);border:1px solid var(--green)}
-  .st.sched{color:var(--ice);border:1px solid var(--ice)}
-  .st.plan{color:var(--muted);border:1px solid var(--muted)}
-  .card .watch{font-size:12.5px;color:var(--muted);margin-bottom:8px}
-  .card .watch b{color:var(--ice);font-weight:600}
-  .card .val{font-size:12.5px;color:var(--text);background:#101a2a;border:1px dashed var(--line);
-             border-radius:8px;padding:7px 9px;margin-bottom:8px}
-  .card .val b{color:var(--gold)}
-  .card .go{font-size:12px;color:var(--green);text-decoration:none}
-  .card .go:hover{border-bottom:1px dotted var(--green)}
-  /* TEST ZONE */
-  .tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
-  .tool{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:15px}
-  .tool .n{font-weight:700;font-size:14px}
-  .tool .d{font-size:12.5px;color:var(--muted);margin:4px 0 9px}
-  .tool .a{display:inline-block;font-size:12.5px;color:var(--gold);text-decoration:none;
-           border:1px solid var(--gold);border-radius:999px;padding:4px 13px;margin:2px 6px 0 0}
-  .tool .a:hover{background:var(--gold);color:#0b0e14}
-  /* VERIFY */
-  .verify{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
-  .verify ol{margin:10px 0 0 20px}
-  .verify li{font-size:13.5px;color:var(--muted);margin-bottom:9px}
-  .verify a{color:var(--ice);text-decoration:none;border-bottom:1px dotted var(--ice)}
-  .verify code{background:#0e1526;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-size:12px}
-  /* IMPACT STRIP */
-  .impacts{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:6px}
-  .imp{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px;text-align:center}
-  .imp .b{font-size:24px;font-weight:800;color:var(--gold)}
-  .imp .b.g{color:var(--green)} .imp .b.i{color:var(--ice)}
-  .imp .l{font-size:11.5px;color:var(--muted);margin-top:3px}
-  .foot{margin-top:50px;padding:20px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
-  .foot b{color:var(--gold)}
+  .card{background:#fff;border:1px solid var(--border);border-radius:8px;padding:20px;transition:all .18s;box-shadow:var(--shadow-sm)}
+  .card:hover{border-color:var(--purple-light);box-shadow:var(--shadow);transform:translateY(-2px)}
+  .card .e{font-size:22px}
+  .card .n{font-weight:500;font-size:15px;color:var(--navy);margin:8px 0 4px}
+  .card .d{font-size:13.5px;color:var(--body);font-weight:300}
+  /* PRINCIPLE */
+  .principle{background:var(--brand-dark);border-radius:12px;padding:44px;color:#fff}
+  .principle h2{color:#fff}
+  .principle .p{display:flex;gap:16px;padding:14px 0;border-bottom:1px solid rgba(255,255,255,0.1);font-size:16px;font-weight:300;color:rgba(255,255,255,0.85)}
+  .principle .p:last-child{border-bottom:none}
+  .principle .p .ic{flex-shrink:0;font-size:20px}
+  .principle .p b{font-weight:500;color:#fff}
+  .principle .p a{color:var(--purple-light)}
+  /* SUPPORT */
+  .support{display:flex;gap:12px;flex-wrap:wrap}
+  .links{margin-top:20px;font-size:14px}
+  .links a{color:var(--purple);text-decoration:none;border-bottom:1px dotted var(--purple-light);margin-right:18px}
+  footer{padding:34px 0 50px;border-top:1px solid var(--border);color:var(--body);font-size:13.5px}
+  footer b{color:var(--navy);font-weight:500}
 </style>
 </head>
 <body>
 
+<nav><div class="wrap nav-inner">
+  <div class="logo"><span class="mark">✦</span>Citizen Agents</div>
+  <div class="links">
+    <a href="#anliegen">Dein Anliegen</a>
+    <a href="#dahinter">Was dahinter steckt</a>
+    <a href="#prinzip">Prinzip</a>
+    <a class="btn ghost" href="control-station.html">Control Station</a>
+  </div>
+</div></nav>
+
 <div class="hero"><div class="wrap">
-  <div class="kicker">Digital Democracy Studio · Berlin</div>
-  <h1>Citizen <em>Agents</em></h1>
-  <p class="sub">10 freie Wächter, die für dich Gesetze, Parlament, Haushalt, Leistungen und Gerichte beobachten — jeden Tag. Mit Quellen. Geprüft von Menschen. <b style="color:var(--green)">Kostenlos für alle.</b></p>
-  <div class="badges">
-    <span class="badge">🔴 <b>3 live</b> — laufen täglich</span>
-    <span class="badge">⏳ 5 scheduled</span>
-    <span class="badge">📋 2 geplant</span>
-    <span class="badge">💰 0 € für Bürger:innen</span>
-    <span class="badge">🔎 alles selbst prüfbar</span>
+  <div class="kicker">Digital Democracy Studio · Berlin · Open Source · Kostenlos</div>
+  <h1>Dein Recht. Dein Geld. <em>Deine Frage.</em></h1>
+  <p class="sub">Citizen Agents ist die erste Anlaufstelle für alles, was der Staat, Gesetze und Konzerne mit dir zu tun haben. <b>Kostenlos. Mit Quellen. Von Menschen geprüft.</b></p>
+  <div class="cta">
+    <a class="btn primary" href="#anliegen">Was ist dein Anliegen?</a>
+    <a class="btn ghost" href="https://github.com/mikelninh/citizen-agents" target="_blank">Quellcode</a>
+  </div>
+  <div class="trust"><b>16 Wächter-Agenten</b> beobachten Gesetze · Parlament · Haushalt · Gerichte <span class="sep">·</span> <b>0 €</b> für Bürger:innen <span class="sep">·</span> <b>100 %</b> Quellenangabe</div>
+</div></div>
+
+<!-- THE CORE: problem-first -->
+<div class="problem-section" id="anliegen"><div class="wrap">
+  <h2>Was ist dein Anliegen?</h2>
+  <p class="lede">Eins von diesen kennst du bestimmt. Klick — und du hast eine Antwort, die dir weiterhilft. Kostenlos, ohne Anmeldung.</p>
+  <div class="probs">
+    <a class="prob" href="eu261.html">
+      <div class="q">✈️ „Mein Flug hatte 4 Stunden Verspätung."</div>
+      <div class="a">Bekomme ich €600? Der EU261-Rechner prüft deinen Anspruch in 30 Sekunden — mit EuGH-Rechtsprechung gegen Airline-Ausreden.</div>
+      <div class="go">Anspruch prüfen</div></a>
+    <a class="prob" href="agb-reader.html">
+      <div class="q">🧾 „Dürfen die das einfach in die AGB schreiben?"</div>
+      <div class="a">AGB einfügen, fertig: Der Reader findet unwirksame Klauseln mit dem genauen § (BGB §§ 305c–309).</div>
+      <div class="go">Klauseln prüfen</div></a>
+    <a class="prob" href="https://safevoice-vert.vercel.app/" target="_blank">
+      <div class="q">🛡️ „Ich werde online belästigt."</div>
+      <div class="a">SafeVoice dokumentiert den Missbrauch und erstellt in 30 Sekunden eine gerichtsfeste Strafanzeige. Anonym, ohne Konto.</div>
+      <div class="go">Jetzt dokumentieren</div></a>
+    <a class="prob" href="https://gitlaw-xi.vercel.app/" target="_blank">
+      <div class="q">⚖️ „Was sagt das Gesetz dazu?"</div>
+      <div class="a">GitLaw erklärt alle 5.936 deutschen Bundesgesetze in verständlicher Sprache — mit Quellen und 31 Musterbriefen.</div>
+      <div class="go">Gesetz fragen</div></a>
+    <a class="prob" href="https://mikelninh.github.io/faireint/" target="_blank">
+      <div class="q">🏛️ „Welche Politik würde wirklich helfen?"</div>
+      <div class="a">FairEint zeigt 10 evidenzbasierte Reformen mit Policy-Simulator — was passiert, wenn wir es anders machen?</div>
+      <div class="go">Simulation starten</div></a>
+    <a class="prob" href="dashboard.html">
+      <div class="q">📡 „Was passiert gerade in meinem Namen?"</div>
+      <div class="a">Die Wächter berichten täglich: neue Gesetze, Lobby-Aktivität, Haushalts-Anomalien, Leiturteile, EU-Fristen.</div>
+      <div class="go">Heutige Meldungen</div></a>
   </div>
 </div></div>
 
-<div class="wrap">
+<!-- TODAY'S DIGEST — real, cited, human-reviewed -->
+<section id="heute"><div class="wrap">
+  <h2>Heutige Meldungen — 6. August 2026</h2>
+  <p class="lede">Was die Wächter heute fanden. Jede Meldung von einem unabhängigen Fleet-Reviewer geprüft — <b style="color:var(--green-text)">4 verifiziert</b>, <b style="color:#9b6829">2 teilweise</b>, 0 Fehler. So funktioniert Vertrauen: prüfen, nicht versprechen.</p>
+  <div class="probs">
+    <div class="prob" style="cursor:default">
+      <div class="q">🏛️ Bundestag-Watch — Lobby aktiv trotz Sommerpause</div>
+      <div class="a">eFuel GmbH neu im Lobbyregister (03.08., exakt verifiziert) — Energiepolitik. Bürgergeld wird ab 01.07.2026 zur „Neuen Grundsicherung" (Drs. 21/3541).</div>
+      <div class="go" style="color:var(--green-text)">Quelle: lobbyregister.bundestag.de · tagesschau.de</div></div>
+    <div class="prob" style="cursor:default">
+      <div class="q">🏠 Benefit-Watch — Wohngeld-Änderungen</div>
+      <div class="a">Kabinett plant Neuordnung des Wohngeldgesetzes; Formel-Koeffizient C sinkt → geringere Auszahlungen. Tipp: Wer nahe der Einkommensgrenze ist, sollte jetzt beantragen.</div>
+      <div class="go" style="color:var(--green-text)">Quelle: bundesregierung.de · bmwsb.bund.de · tagesschau.de</div></div>
+    <div class="prob" style="cursor:default">
+      <div class="q">🗳️ Consultation-Watch — 5 offene Beteiligungsfenster</div>
+      <div class="a">BauGB-Anhörung minutengenau verifiziert gegen bundestag.de. Mit Fristen und 10-Minuten-Stellungnahme-Vorlagen.</div>
+      <div class="go" style="color:var(--green-text)">Quelle: bundestag.de (verifiziert)</div></div>
+  </div>
+  <p class="lede" style="margin-top:14px;font-size:13.5px">Ehrliche Prüfung: 2 Meldungen des Tages hatten Quellen-Unschärfen (Wohngeld-Zahl, GKV-Datum) — vom Fleet-Reviewer gefunden, gemeldet, korrigierbar. Das ist das System: <b>Agenten entwerfen, Menschen entscheiden.</b> Alle Befunde: <a href="https://github.com/mikelninh/citizen-agents/tree/main/agent-digests" style="color:var(--purple)" target="_blank">agent-digests →</a></p>
+</div></section>
 
-  <h2>Die 10 Wächter — was sie beobachten, welchen Wert sie dir geben</h2>
-  <p class="lede">Jede Karte: 👁 was der Agent beobachtet → 💛 was du davon hast → 🔗 selbst nachprüfen.</p>
-
+<!-- BEHIND THE SCENES -->
+<section id="dahinter"><div class="wrap">
+  <h2>Was dahinter steckt — die Wächter</h2>
+  <p class="lede">16 Agenten beobachten täglich, was sich in Gesetzen, Parlament, Haushalt, Leistungen und Gerichten tut. Jede Meldung mit Quelle, jeder Lauf protokolliert, jeder Befund von Menschen geprüft.</p>
   <div class="grid">
-
-    <div class="card"><div class="top"><div class="emoji">⚖️</div><div><div class="nm">Law-Watch</div><div class="lv">Bundesgesetze · 🇩🇪</div></div><span class="st live">live</span></div>
-      <div class="watch"><b>Beobachtet:</b> Neue &amp; geänderte Bundesgesetze (BGBl)</div>
-      <div class="val"><b>Wert:</b> Nie wieder auf veraltetem Recht handeln — 5.936 Gesetze bleiben aktuell</div>
-      <a class="go" href="https://github.com/mikelninh/gitlaw" target="_blank">Repo prüfen →</a></div>
-
-    <div class="card"><div class="top"><div class="emoji">🏛️</div><div><div class="nm">Bundestag-Watch</div><div class="lv">Parlament &amp; Lobby · 🇩🇪</div></div><span class="st live">live</span></div>
-      <div class="watch"><b>Beobachtet:</b> Abgeordnete, Abstimmungen, Lobbyregister</div>
-      <div class="val"><b>Wert:</b> Wer entscheidet über dein Leben — und wer bezahlt dafür. Täglich, mit Quellen</div>
-      <a class="go" href="https://github.com/mikelninh/faireint-bundestag/pull/1" target="_blank">Erster Report →</a></div>
-
-    <div class="card"><div class="top"><div class="emoji">✈️</div><div><div class="nm">EU Rights-Watch</div><div class="lv">EU-Verbraucherrechte · 🇪🇺</div></div><span class="st live">live</span></div>
-      <div class="watch"><b>Beobachtet:</b> EuGH-Urteile, Fluglinien-Politik (EU261, AGB)</div>
-      <div class="val"><b>Wert:</b> Schützt <b>€4–5 Mrd/Jahr</b> unbeanspruchte Fluggastrechte — ein Urteil ändert Millionen Ansprüche</div>
-      <a class="go" href="https://github.com/mikelninh/flight-rights-mcp" target="_blank">Repo prüfen →</a></div>
-
-    <div class="card"><div class="top"><div class="emoji">💶</div><div><div class="nm">Money-Flow Watch</div><div class="lv">Steuergeld · 🇩🇪</div></div><span class="st sched">scheduled</span></div>
-      <div class="watch"><b>Beobachtet:</b> Bundeshaushalt (€476,5 Mrd) + Bundesrechnungshof-Funde</div>
-      <div class="val"><b>Wert:</b> Wohin fließt dein Steuergeld — und wo geht etwas schief?</div>
-      <a class="go" href="https://github.com/mikelninh/pmm-mcp" target="_blank">Repo prüfen →</a></div>
-
-    <div class="card"><div class="top"><div class="emoji">🏠</div><div><div class="nm">Benefit-Watch</div><div class="lv">Staatliche Leistungen · 🇩🇪</div></div><span class="st sched">scheduled</span></div>
-      <div class="watch"><b>Beobachtet:</b> Wohngeld, Elterngeld, Bürgergeld — Regeln &amp; Fristen</div>
-      <div class="val"><b>Wert:</b> <b>€1 Mrd+/Jahr</b> unbeanspruchtes Wohngeld — niemand soll Geld liegen lassen, das ihm zusteht</div>
-      <a class="go" href="https://github.com/mikelninh/citizen-agents" target="_blank">Hub prüfen →</a></div>
-
-    <div class="card"><div class="top"><div class="emoji">🇪🇺</div><div><div class="nm">Directive-Watch</div><div class="lv">EU-Fristen · 🇪🇺</div></div><span class="st sched">scheduled</span></div>
-      <div class="watch"><b>Beobachtet:</b> EU-Richtlinien, die Deutschland umsetzen muss — mit Frist</div>
-      <div class="val"><b>Wert:</b> Deutschland ist chronisch zu spät — jetzt wird jede Frist öffentlich und pro Ministerium sichtbar</div>
-      <a class="go" href="https://github.com/mikelninh/citizen-agents" target="_blank">Hub prüfen →</a></div>
-
-    <div class="card"><div class="top"><div class="emoji">🏛️⚖️</div><div><div class="nm">Court-Watch</div><div class="lv">Gerichte · 🇩🇪</div></div><span class="st sched">scheduled</span></div>
-      <div class="watch"><b>Beobachtet:</b> BVerfG &amp; EuGH — Leiturteile</div>
-      <div class="val"><b>Wert:</b> Urteile, die dein Leben ändern — in Alltagssprache, am Tag der Veröffentlichung</div>
-      <a class="go" href="https://github.com/mikelninh/citizen-agents" target="_blank">Hub prüfen →</a></div>
-
-    <div class="card"><div class="top"><div class="emoji">🛡️</div><div><div class="nm">Abuse-Safety Watch</div><div class="lv">Digitale Gewalt · 🇩🇪</div></div><span class="st sched">scheduled</span></div>
-      <div class="watch"><b>Beobachtet:</b> StGB, NetzDG, BNetzA — Recht gegen digitale Gewalt</div>
-      <div class="val"><b>Wert:</b> Hält SafeVoice aktuell: Strafanzeige in 30 Sekunden statt ~3 Stunden</div>
-      <a class="go" href="https://github.com/mikelninh/safevoice" target="_blank">Repo prüfen →</a></div>
-
-    <div class="card"><div class="top"><div class="emoji">📦</div><div><div class="nm">Procurement-Watch</div><div class="lv">Öffentliche Vergaben · 🇩🇪</div></div><span class="st plan">geplant</span></div>
-      <div class="watch"><b>Beobachtet:</b> Ausschreibungen &amp; Zuschläge (Kommune → Bund)</div>
-      <div class="val"><b>Wert:</b> Der klassische Korruptionsvektor wird sichtbar: Einzelbieter, Schnellvergaben, Dauergewinner</div>
-      <a class="go" href="https://github.com/mikelninh/citizen-agents" target="_blank">Hub prüfen →</a></div>
-
-    <div class="card"><div class="top"><div class="emoji">🗳️</div><div><div class="nm">Consultation-Watch</div><div class="lv">Beteiligung · 🇩🇪</div></div><span class="st plan">geplant</span></div>
-      <div class="watch"><b>Beobachtet:</b> Offene Anhörungen &amp; Konsultationen</div>
-      <div class="val"><b>Wert:</b> Aus „da kann man nichts machen" wird eine 10-Minuten-Stellungnahme</div>
-      <a class="go" href="https://github.com/mikelninh/citizen-agents" target="_blank">Hub prüfen →</a></div>
-
+    <div class="card"><div class="e">⚖️</div><div class="n">Law-Watch</div><div class="d">Neue &amp; geänderte Bundesgesetze — bevor sie dich treffen.</div></div>
+    <div class="card"><div class="e">🏛️</div><div class="n">Bundestag-Watch</div><div class="d">Wer entscheidet, wer lobbyiert — täglich, mit Quellen.</div></div>
+    <div class="card"><div class="e">✈️</div><div class="n">EU Rights-Watch</div><div class="d">EuGH-Urteile &amp; Flugrechte — schützt €4–5 Mrd/Jahr.</div></div>
+    <div class="card"><div class="e">💶</div><div class="n">Money-Flow Watch</div><div class="d">Wohin fließt dein Steuergeld — und wo geht es schief?</div></div>
+    <div class="card"><div class="e">🏠</div><div class="n">Benefit-Watch</div><div class="d">Wohngeld, Elterngeld, Bürgergeld — Änderungen &amp; Fristen.</div></div>
+    <div class="card"><div class="e">🇪🇺</div><div class="n">Directive-Watch</div><div class="d">EU-Richtlinien, die Deutschland umsetzen muss — mit Frist.</div></div>
+    <div class="card"><div class="e">🏛️⚖️</div><div class="n">Court-Watch</div><div class="d">Leiturteile in Alltagssprache — am Tag der Veröffentlichung.</div></div>
+    <div class="card"><div class="e">🛡️</div><div class="n">Abuse-Safety Watch</div><div class="d">Hält SafeVoice aktuell: Strafanzeige in 30 Sekunden.</div></div>
+    <div class="card"><div class="e">📦</div><div class="n">Procurement-Watch</div><div class="d">Öffentliche Vergaben — Anomalien sichtbar machen.</div></div>
+    <div class="card"><div class="e">🗳️</div><div class="n">Consultation-Watch</div><div class="d">Anhörungen &amp; Beteiligung — aus „nichts geht" wird 10 Minuten.</div></div>
+    <div class="card"><div class="e">🌍</div><div class="n">Treaty-Watch</div><div class="d">Menschenrechts-Versprechen vs. Realität — weltweit.</div></div>
+    <div class="card"><div class="e">🌐</div><div class="n">Truth-Watch</div><div class="d">Falschinformation — immer mit dem seriösen Faktencheck.</div></div>
+    <div class="card"><div class="e">🌡️</div><div class="n">Climate-Watch</div><div class="d">Klima-Versprechen vs. echte Emissionen — mit Zahlen.</div></div>
   </div>
+</div></section>
 
-  <h2>Teste es selbst — kostenlose Werkzeuge, live heute</h2>
-  <p class="lede">Keine Anmeldung, kein Preis. Einfach öffnen und ausprobieren.</p>
-  <div class="tools">
-    <div class="tool"><div class="n">⚖️ GitLaw — „Was sagt das Gesetz?"</div>
-      <div class="d">5.936 Bundesgesetze, AI-erklärt mit Quellen. 31 Musterbriefe. Rechts-Chat.</div>
-      <a class="a" href="https://gitlaw-xi.vercel.app/" target="_blank">App öffnen</a>
-      <a class="a" href="https://github.com/mikelninh/gitlaw" target="_blank">Code</a></div>
-    <div class="tool"><div class="n">🛡️ SafeVoice — „Ich werde belästigt."</div>
-      <div class="d">Digitalen Missbrauch dokumentieren → gerichtsfeste Strafanzeige in 30 Sekunden. Anonym.</div>
-      <a class="a" href="https://safevoice-vert.vercel.app/" target="_blank">App öffnen</a>
-      <a class="a" href="https://github.com/mikelninh/safevoice" target="_blank">Code</a></div>
-    <div class="tool"><div class="n">🏛️ FairEint — „Welche Politik funktioniert?"</div>
-      <div class="d">10 evidenzbasierte Reformen + Policy-Simulator mit 24 Personas.</div>
-      <a class="a" href="https://mikelninh.github.io/faireint/" target="_blank">App öffnen</a>
-      <a class="a" href="https://github.com/mikelninh/faireint" target="_blank">Code</a></div>
-    <div class="tool"><div class="n">👶 Elterngeld-Blitz — „Wie viel bekomme ich?"</div>
-      <div class="d">Elterngeld in einer Frage — alle 16 Bundesländer, BEEG-konform.</div>
-      <a class="a" href="https://elterngeld-blitz.de" target="_blank">App öffnen</a></div>
-    <div class="tool"><div class="n">✈️ Flight-Rights — „Bekomme ich €600?"</div>
-      <div class="d">EU261-Rechner + EuGH-Check gegen Airline-Ausreden, in 30 Sekunden.</div>
-      <a class="a" href="https://github.com/mikelninh/flight-rights-mcp" target="_blank">Code</a></div>
-    <div class="tool"><div class="n">🧾 AGB-Reader — „Dürfen die das?"</div>
-      <div class="d">Unwirksame AGB-Klauseln erkennen — mit §-Zitat. Für jeden Shop.</div>
-      <a class="a" href="https://github.com/mikelninh/agb-reader-mcp" target="_blank">Code</a></div>
+<section id="prinzip"><div class="wrap">
+  <div class="principle">
+    <h2>Warum du uns vertrauen kannst</h2>
+    <div class="p"><span class="ic">🔎</span><span><b>Alles ist prüfbar.</b> Jede Meldung trägt ihre Quelle. Der erste Bundestag-Report: 5 Funde, 9 Quellen — <a href="https://github.com/mikelninh/faireint-bundestag/pull/1" target="_blank">sieh selbst</a>.</span></div>
+    <div class="p"><span class="ic">🧑‍⚖️</span><span><b>Menschen entscheiden.</b> Agenten entwerfen, Menschen prüfen. Niemand merged automatisch.</span></div>
+    <div class="p"><span class="ic">🔒</span><span><b>Kein Datenschutz-Problem.</b> Die Wächter verarbeiten keine personenbezogenen Daten — nur öffentliche Quellen. Browser-First für alles Bürgerliche.</span></div>
+    <div class="p"><span class="ic">💰</span><span><b>Kostenlos. Für immer.</b> Finanziert durch freiwillige Unterstützung und institutionelle Lizenzen — nie durch eine Paywall vor deinen Rechten.</span></div>
   </div>
+</div></section>
 
-  <h2>Prüfe uns — jeder Agent hinterlässt Spuren</h2>
-  <p class="lede">Das ist der Kern: Du musst uns nichts glauben. Jeder Lauf schreibt einen lesbaren Bericht, eine maschinenlesbare Log-Datei und öffnet einen Review-PR. <b>Agenten entwerfen — Menschen entscheiden. Niemand merged automatisch.</b></p>
-  <div class="verify">
-    <ol>
-      <li><b>Der erste echte Report:</b> <a href="https://github.com/mikelninh/faireint-bundestag/pull/1" target="_blank">PR #1 — Bundestag-Watch, 6. August 2026</a> — 5 Funde, 9 Quellen (Lobbyregister, Bundestag, Tagesschau, Finanzwende). Offen zur Prüfung.</li>
-      <li><b>Maschinenlesbare Logs:</b> <a href="https://github.com/mikelninh/citizen-agents/blob/main/agents.json" target="_blank">agents.json</a> (Fleet-Registry) · <code>agent-logs/*.json</code> (jeder Lauf) · <code>agent-digests/*.md</code> (Berichte)</li>
-      <li><b>Alles Open Source:</b> <a href="https://github.com/mikelninh/citizen-agents" target="_blank">citizen-agents Hub</a> · <a href="https://github.com/mikelninh/gitlaw" target="_blank">gitlaw</a> · <a href="https://github.com/mikelninh/safevoice" target="_blank">safevoice</a> · <a href="https://github.com/mikelninh/pmm-mcp" target="_blank">pmm-mcp</a> — AGPL/MIT, kein Lock-in.</li>
-    </ol>
+<section style="padding-top:0"><div class="wrap">
+  <h2>Unterstützen</h2>
+  <p class="lede">Wenn dir ein Wächter Zeit, Geld oder Ärger erspart hat: ab 1 €, einmalig oder monatlich. Hält Server, Review und neue Agenten am Laufen.</p>
+  <div class="support">
+    <a class="btn primary" href="https://github.com/sponsors/mikelninh" target="_blank">⭐ GitHub Sponsors</a>
+    <a class="btn ghost" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents">🤝 Organisationen &amp; NGOs</a>
+    <a class="btn ghost" href="proof.html" target="_blank">📊 Beweise &amp; Bewertungen</a>
   </div>
-
-  <h2>💛 Unterstützen — damit die Wächter frei bleiben</h2>
-  <p class="lede">Diese 10 Agenten sind und bleiben <b style="color:var(--green)">kostenlos für alle</b>. Wenn dir ein Wächter Zeit, Geld oder Ärger erspart hat, kannst du die Arbeit unterstützen — <b>ab 1 €</b>, einmalig oder monatlich. Das zahlt Server, Review-Zeit und die nächsten Agenten.</p>
-  <div class="tools">
-    <div class="tool"><div class="n">⭐ GitHub Sponsors</div>
-      <div class="d">Monatlich oder einmalig. Direkt, transparent, ohne Plattform-Gebühr im Kopf.</div>
-      <a class="a" href="https://github.com/sponsors/mikelninh" target="_blank">Jetzt unterstützen →</a></div>
-    <div class="tool"><div class="n">🪙 Einmalig danke sagen</div>
-      <div class="d">Ein Kaffee für den Wächter, der dir heute geholfen hat. Jeder Betrag zählt.</div>
-      <a class="a" href="https://github.com/sponsors/mikelninh" target="_blank">Tippen →</a></div>
-    <div class="tool"><div class="n">🤝 Organisationen &amp; NGOs</div>
-      <div class="d">Du vertrittst eine Verbraucherzentrale, NGO oder Redaktion? Wir lizenzieren Daten &amp; Agenten-Briefings.</div>
-      <a class="a" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents%20Partnerschaft" target="_blank">Kontakt →</a></div>
-    <div class="tool"><div class="n">💬 Sag es weiter</div>
-      <div class="d">Der größte Beitrag: eine Person, die ihre Rechte kennt. Teile den Link.</div>
-      <a class="a" href="https://mikelninh.github.io/citizen-agents/" target="_blank">Link kopieren →</a></div>
+  <div class="links">
+    <a href="https://github.com/mikelninh/citizen-agents" target="_blank">Hub-Repo</a>
+    <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/datenschutz-architecture.md" target="_blank">Datenschutz-Architektur</a>
+    <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/pilot-proposal.md" target="_blank">Für Institutionen</a>
+    <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/b2b-monetization.md" target="_blank">B2B</a>
   </div>
-  <p class="lede" style="margin-top:12px">Wofür das Geld konkret fließt: ☁️ 24/7-Cloud-Server (~5 €/Monat) · 🧑‍⚖️ menschliche Prüfung der Briefings · 🆕 neue Wächter (z.B. Procurement- &amp; Consultation-Watch) · 📣 Bekanntmachung, damit die Agenten auch die erreichen, die sie brauchen.</p>
+</div></section>
 
-  <h2>Die Wirkung, die wir messen</h2>
-  <div class="impacts">
-    <div class="imp"><div class="b">€4–5 Mrd</div><div class="l">EU261-Fluggastrechte unbeansprucht / Jahr</div></div>
-    <div class="imp"><div class="b g">€1 Mrd+</div><div class="l">Wohngeld unbeansprucht / Jahr</div></div>
-    <div class="imp"><div class="b i">3 Std → 30 Sek</div><div class="l">Strafanzeige bei digitaler Gewalt</div></div>
-    <div class="imp"><div class="b">5–15 Std → 1 Frage</div><div class="l">Elterngeld-Recherche pro Familie</div></div>
-  </div>
+<footer><div class="wrap">
+  Digital Democracy Studio · Berlin · Open Source · <b>„Recht auf dem Papier → Recht im Leben."</b>
+  <br>Agenten entwerfen, Menschen entscheiden, niemand merged automatisch.
+</div></footer>
 
-  <div class="foot">
-    Digital Democracy Studio · Berlin · Open Source · <b>„Recht auf dem Papier → Recht im Leben."</b><br>
-    Grundsatz: Menschen prüfen, Agenten arbeiten. Niemals automatisch veröffentlichen.
-  </div>
-
-</div>
 </body>
 </html>
