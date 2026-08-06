@@ -135,7 +135,7 @@ async function loadFleet(){
     board.appendChild(card);
 
     // fetch open PRs for this agent's repo (head ref contains agent id or studio role)
-    (async (id, repo, el){
+    (async (id, repo, el) => {
       try{
         const prs = await j(`${API}/repos/${OWNER}/${repo}/pulls?state=open&per_page=10`);
         const mine = prs.filter(p => (p.head.ref||"").includes("agent/") || (p.head.ref||"").includes("studio/"));
