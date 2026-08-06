@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citizen Agents — Freie 24/7-Wächter für Bürger:innen</title>
+<style>
+  :root{--bg:#0b0e14;--panel:#121826;--line:#1f2a3d;--gold:#e8c26a;--ice:#7fd4ff;--green:#5ee6a0;--muted:#8b98ad;--text:#e8edf6}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  .hero{padding:60px 0 30px;border-bottom:1px solid var(--line)}
+  .kicker{color:var(--gold);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+  h1{font-size:clamp(28px,4.5vw,44px);font-weight:800;margin:8px 0 6px;letter-spacing:-1px}
+  h1 em{font-style:normal;color:var(--ice)}
+  .sub{color:var(--muted);font-size:16px;max-width:620px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-top:26px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+  .stat .b{font-size:26px;font-weight:800;color:var(--gold)}
+  .stat .l{font-size:12px;color:var(--muted);margin-top:4px}
+  h2{font-size:22px;font-weight:800;margin:44px 0 8px;letter-spacing:-0.4px}
+  h2 .n{color:var(--gold);font-size:13px;border:1px solid #a98d4e;border-radius:6px;padding:1px 8px;margin-right:8px}
+  .lede{color:var(--muted);font-size:14.5px;max-width:700px;margin-bottom:18px}
+  .agents{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+  .agent{background:linear-gradient(180deg,var(--panel),#0f1522);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .agent .h{display:flex;justify-content:space-between;align-items:baseline}
+  .agent .name{font-weight:800;font-size:15.5px}
+  .agent .st{font-size:10.5px;letter-spacing:1px;text-transform:uppercase;padding:2px 9px;border-radius:999px}
+  .st.live{color:var(--green);border:1px solid var(--green)}
+  .st.sched{color:var(--ice);border:1px solid var(--ice)}
+  .st.plan{color:var(--muted);border:1px solid var(--muted)}
+  .agent .when{font-size:12px;color:var(--gold);margin:4px 0 8px}
+  .agent p{font-size:13px;color:var(--muted)}
+  .agent .src{margin-top:10px;font-size:11.5px;color:var(--ice)}
+  .agent .src a{color:var(--ice);text-decoration:none;border-bottom:1px dotted var(--ice)}
+  .tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+  .tool{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px}
+  .tool .n{font-weight:700}
+  .tool .d{font-size:12.5px;color:var(--muted);margin:4px 0 8px}
+  .tool a{color:var(--gold);font-size:12.5px;text-decoration:none;border-bottom:1px dotted var(--gold)}
+  .foot{margin-top:60px;padding:22px 0;border-top:1px solid var(--line);color:var(--muted);font-size:12.5px}
+  code{background:#101a2a;border:1px solid var(--line);border-radius:4px;padding:1px 6px;font-size:12px}
+</style>
+</head>
+<body>
+
+<div class="hero"><div class="wrap">
+  <div class="kicker">Digital Democracy Studio · Open Source · Kostenlos</div>
+  <h1>Citizen <em>Agents</em> — Wächter für alle</h1>
+  <p class="sub">Autonome Agenten, die Parlamente, Gesetze, Haushalte, Leistungen und Gerichte für dich beobachten — jeden Tag, kostenlos, mit Quellenangabe. Nichts wird automatisch veröffentlicht: <b>Menschen prüfen, Agenten arbeiten.</b></p>
+  <div class="stats">
+    <div class="stat"><div class="b">10</div><div class="l">Agenten (3 live)</div></div>
+    <div class="stat"><div class="b">0 €</div><div class="l">für alle Bürger:innen</div></div>
+    <div class="stat"><div class="b">€4-5 Mrd</div><div class="l">EU261 unbeansprucht/Jahr</div></div>
+    <div class="stat"><div class="b">€1 Mrd+</div><div class="l">Wohngeld unbeansprucht/Jahr</div></div>
+  </div>
+</div></div>
+
+<div class="wrap">
+
+<h2><span class="n">1</span>Die Wächter — Status</h2>
+<p class="lede">Live = läuft täglich und öffnet Review-PRs. Scheduled = konfiguriert, startet heute. Geplant = nächster Bau.</p>
+<div class="agents">
+
+  <div class="agent"><div class="h"><span class="name">GitLaw Law-Watch</span><span class="st live">live</span></div>
+    <div class="when">täglich 06:30 · mikelninh/gitlaw</div>
+    <p>Neue &amp; geänderte Bundesgesetze (BGBl) → Bürger-Erklärung, bevor sie wirken.</p>
+    <div class="src">Quellen: recht.bund.de · bgbl.de</div></div>
+
+  <div class="agent"><div class="h"><span class="name">Bundestag-Watch</span><span class="st live">live</span></div>
+    <div class="when">täglich 08:00 · mikelninh/faireint-bundestag</div>
+    <p>Was Abgeordnete &amp; Lobbyist:innen auf den 10 Reformfeldern wirklich tun.</p>
+    <div class="src">Quellen: abgeordnetenwatch · lobbyregister · lobbycontrol</div></div>
+
+  <div class="agent"><div class="h"><span class="name">EU Citizen-Rights Watch</span><span class="st live">live</span></div>
+    <div class="when">täglich 09:00 · mikelninh/flight-rights-mcp</div>
+    <p>EuGH/CJEU-Rechtsprechung + Fluglinien-Politik → deine Rechte (EU261 &amp; AGB).</p>
+    <div class="src">Quellen: curia.europa.eu · EU-Kommission</div></div>
+
+  <div class="agent"><div class="h"><span class="name">Money-Flow Watch</span><span class="st sched">scheduled</span></div>
+    <div class="when">täglich · mikelninh/pmm-mcp</div>
+    <p>Bundeshaushalt + Bundesrechnungshof-Funde + Anomalien. "Wohin fließt mein Steuergeld?"</p>
+    <div class="src">Quellen: Bundeshaushalt · Bundesrechnungshof</div></div>
+
+  <div class="agent"><div class="h"><span class="name">Benefit-Discovery Watch</span><span class="st sched">scheduled</span></div>
+    <div class="when">täglich · citizen-agents hub</div>
+    <p>Wohngeld / Elterngeld / Bürgergeld: Anspruchs-Änderungen + Fristen + Antrags-Hinweise.</p>
+    <div class="src">Quellen: WoGG · BEEG · SGB II</div></div>
+
+  <div class="agent"><div class="h"><span class="name">Directive-Deadline Watch</span><span class="st sched">scheduled</span></div>
+    <div class="when">täglich · citizen-agents hub</div>
+    <p>EU-Richtlinien, die Deutschland verspätet umsetzt — pro Ministerium, mit Frist.</p>
+    <div class="src">Quellen: EUR-Lex · BMI</div></div>
+
+  <div class="agent"><div class="h"><span class="name">Court-Watch</span><span class="st sched">scheduled</span></div>
+    <div class="when">täglich · citizen-agents hub</div>
+    <p>BVerfG &amp; EuGH-Leiturteile in Alltagssprache — und was sie für dich ändern.</p>
+    <div class="src">Quellen: bundesverfassungsgericht.de · curia.europa.eu</div></div>
+
+  <div class="agent"><div class="h"><span class="name">Abuse-Safety Watch</span><span class="st sched">scheduled</span></div>
+    <div class="when">täglich · mikelninh/safevoice</div>
+    <p>Rechtsänderungen zu digitaler Gewalt (StGB/NetzDG) → SafeVoice-Schema aktuell halten.</p>
+    <div class="src">Quellen: gesetze-im-internet · BNetzA</div></div>
+
+  <div class="agent"><div class="h"><span class="name">Procurement-Watch</span><span class="st plan">geplant</span></div>
+    <div class="when">täglich · citizen-agents hub</div>
+    <p>Öffentliche Vergaben &amp; Zuschläge auf Anomalien — Kommune bis Bund.</p>
+    <div class="src">Quellen: Vergabedatenbanken</div></div>
+
+  <div class="agent"><div class="h"><span class="name">Consultation-Watch</span><span class="st plan">geplant</span></div>
+    <div class="when">täglich · citizen-agents hub</div>
+    <p>Offene Anhörungs-/Konsultationsfenster + 10-Minuten-Bürger-Stellungnahme-Entwurf.</p>
+    <div class="src">Quellen: Bundestag · Bundesrat · Ministerien</div></div>
+</div>
+
+<h2><span class="n">2</span>Kostenlose Werkzeuge, die schon heute leben</h2>
+<div class="tools">
+  <div class="tool"><div class="n">GitLaw</div><div class="d">5.936 Bundesgesetze, AI-erklärt mit Quellen, 31 Musterbriefe, Rechts-Chat.</div><a href="https://gitlaw-xi.vercel.app/">öffnen →</a></div>
+  <div class="tool"><div class="n">SafeVoice</div><div class="d">Digitale Gewalt dokumentieren → in 30 Sekunden eine gerichtsfeste Strafanzeige.</div><a href="https://safevoice-vert.vercel.app/">öffnen →</a></div>
+  <div class="tool"><div class="n">FairEint</div><div class="d">10 evidenzbasierte Reformen mit Policy-Simulator (24 Personas).</div><a href="https://mikelninh.github.io/faireint/">öffnen →</a></div>
+  <div class="tool"><div class="n">Elterngeld-Blitz</div><div class="d">Elterngeld in 1 Frage — alle 16 Bundesländer.</div><a href="https://elterngeld-blitz.de">öffnen →</a></div>
+</div>
+
+<h2><span class="n">3</span>So verifizierst du uns</h2>
+<p class="lede">Jeder Lauf hinterlässt Spuren: ein <code>agent-digests/*.md</code> (lesbar), ein <code>agent-logs/*.json</code> (maschinenlesbar) und einen Review-PR. Kein Agent merged jemals selbst. Prüfe selbst:</p>
+<div class="tools">
+  <div class="tool"><div class="n">PR #1 — Bundestag-Watch</div><div class="d">5 Funde mit 9 Quellen, offen zur Review.</div><a href="https://github.com/mikelninh/faireint-bundestag/pull/1">prüfen →</a></div>
+  <div class="tool"><div class="n">Agent-Logs</div><div class="d">Strukturierte JSON-Logs jedes Laufs.</div><a href="https://github.com/mikelninh/citizen-agents/tree/main/agent-logs">prüfen →</a></div>
+  <div class="tool"><div class="n">Agenten-Katalog</div><div class="d">Maschinenlesbare Registry (agents.json).</div><a href="https://github.com/mikelninh/citizen-agents/blob/main/agents.json">prüfen →</a></div>
+</div>
+
+<div class="foot">
+  Digital Democracy Studio · Berlin · Open Source (AGPL/MIT) · "Recht auf dem Papier → Recht im Leben."
+  · Grundsatz: <b>Menschen prüfen, Agenten arbeiten. Niemals automatisch veröffentlichen.</b>
+</div>
+
+</div>
+</body>
+</html>

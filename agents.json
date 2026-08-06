@@ -1,0 +1,133 @@
+{
+  "mission": "Free 24/7 watchdogs for citizens: parliaments, laws, budgets, benefits, courts. Every run is logged, cited, and human-reviewed via PR. Agents never merge.",
+  "updated": "2026-08-06",
+  "agents": [
+    {
+      "id": "law-watch",
+      "name": "GitLaw Law-Watch",
+      "level": "de",
+      "status": "live",
+      "repo": "mikelninh/gitlaw",
+      "cadence": "daily 06:30",
+      "problem": "Citizens cannot track new/amended federal laws; stale law causes wrong decisions",
+      "watches": ["recht.bund.de", "bgbl.de", "gesetze-im-internet.de"],
+      "impact_estimate": "Prevents acting on stale law for 5,936-law corpus; ~4h/week manual corpus checks saved",
+      "open_items": ["auto-regenerate explainers", "corpus manifest diffing"]
+    },
+    {
+      "id": "bundestag-watch",
+      "name": "Bundestag-Watch",
+      "level": "de",
+      "status": "live",
+      "repo": "mikelninh/faireint-bundestag",
+      "cadence": "daily 08:00",
+      "problem": "Lobby influence and MP actions are invisible to citizens",
+      "watches": ["abgeordnetenwatch.de", "lobbyregister.bundestag.de", "lobbycontrol.de", "bundestag.de"],
+      "impact_estimate": "~2h/day of manual monitoring per researcher replaced; lobbying becomes timestamped public data",
+      "open_items": ["lobbyregister full API diffing", "monthly lobby summary"]
+    },
+    {
+      "id": "eu-rights-watch",
+      "name": "EU Citizen-Rights Watch",
+      "level": "eu",
+      "status": "live",
+      "repo": "mikelninh/flight-rights-mcp",
+      "cadence": "daily 09:00",
+      "problem": "CJEU rulings change millions of claims; citizens and tools act on stale law",
+      "watches": ["curia.europa.eu", "commission.europa.eu", "airline policy news"],
+      "impact_estimate": "Protects €4-5B/yr unclaimed EU261; one CJEU ruling can shift millions of claims",
+      "open_items": ["auto-patch flight-rights-mcp jurisprudence files", "AGB cross-ref"]
+    },
+    {
+      "id": "money-flow-watch",
+      "name": "Money-Flow Watch",
+      "level": "de",
+      "status": "scheduled",
+      "repo": "mikelninh/pmm-mcp",
+      "cadence": "daily 10:00",
+      "problem": "Citizens cannot see where tax money goes wrong",
+      "watches": ["bundeshaushalt.de", "bundesrechnungshof.de"],
+      "impact_estimate": "Accountability layer for €476.5B federal budget; anomaly alerts for journalists/citizens",
+      "open_items": ["BRH RSS monitoring", "anomaly alert thresholds"]
+    },
+    {
+      "id": "benefit-discovery-watch",
+      "name": "Benefit-Discovery Watch",
+      "level": "de",
+      "status": "scheduled",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 10:30",
+      "problem": "~800k households miss Wohngeld (€1B+/yr); eligibility rules change silently",
+      "watches": ["WoGG", "BEEG", "SGB II", "bundesregierung.de"],
+      "impact_estimate": "€1B+/yr unclaimed Wohngeld + Elterngeld research time (5-15h/family) → one question",
+      "open_items": ["eligibility-change alerts", "deadline reminders"]
+    },
+    {
+      "id": "directive-deadline-watch",
+      "name": "Directive-Deadline Watch",
+      "level": "eu",
+      "status": "scheduled",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 11:00",
+      "problem": "Germany chronically transposes EU directives late; deadlines are invisible",
+      "watches": ["EUR-Lex", "BMI transposition reports"],
+      "impact_estimate": "Public deadline tracking per ministry; ends the silent-lateness failure mode",
+      "open_items": ["EUR-Lex API scrape", "ministry ownership map"]
+    },
+    {
+      "id": "court-watch",
+      "name": "Court-Watch",
+      "level": "de",
+      "status": "scheduled",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 11:30",
+      "problem": "Landmark rulings change daily life but are written for lawyers",
+      "watches": ["bundesverfassungsgericht.de", "curia.europa.eu"],
+      "impact_estimate": "Plain-language alerts on rulings that change rights; feeds MCP jurisprudence",
+      "open_items": ["BVerfG press RSS", "plain-language templates"]
+    },
+    {
+      "id": "abuse-safety-watch",
+      "name": "Abuse-Safety Watch",
+      "level": "de",
+      "status": "scheduled",
+      "repo": "mikelninh/safevoice",
+      "cadence": "daily 12:00",
+      "problem": "Harassment-law changes (StGB/NetzDG) must stay current in SafeVoice's court-prep schema",
+      "watches": ["gesetze-im-internet.de", "BNetzA"],
+      "impact_estimate": "Keeps the 30-second court-ready file route legally current for victims",
+      "open_items": ["schema versioning", "NetzDG platform list refresh"]
+    },
+    {
+      "id": "procurement-watch",
+      "name": "Procurement-Watch",
+      "level": "de",
+      "status": "planned",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily",
+      "problem": "Public tenders and awards hide anomalies (classic corruption vector, Gemeinde→Bund)",
+      "watches": ["Vergabedatenbanken"],
+      "impact_estimate": "Anomaly flags on public spending; journalist/NGO tool",
+      "open_items": ["data source selection", "anomaly heuristics"]
+    },
+    {
+      "id": "consultation-watch",
+      "name": "Consultation-Watch",
+      "level": "de",
+      "status": "planned",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily",
+      "problem": "Consultation windows are invisible; citizens feel 'nothing I can do'",
+      "watches": ["Bundestag", "Bundesrat", "Ministerien"],
+      "impact_estimate": "Turns apathy into a 10-minute submitted comment; participation uplift",
+      "open_items": ["window calendar", "comment template engine"]
+    }
+  ],
+  "principles": [
+    "Free for every citizen. Always.",
+    "Every claim carries a source URL.",
+    "Agents draft, humans review, nobody auto-merges.",
+    "Structured logs on every run (agent-logs/*.json).",
+    "Open source, AGPL/MIT, no lock-in."
+  ]
+}
