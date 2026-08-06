@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Deine 8 Agenten — die persönliche Flotte für jeden Menschen</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23533afd'/%3E%3Cstop offset='1' stop-color='%23f96bee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='48' height='48' rx='11' fill='url(%23g)'/%3E%3Cpath d='M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3Ccircle cx='24' cy='24' r='7.5' fill='%23fff'/%3E%3Cpath d='M20.5 24 L23 26.5 L27.8 21.4' stroke='url(%23g)' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@1,6..72,300;1,6..72,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fbfaf7; --ink:#101014; --ink2:#43434c; --ink3:#92929c;
+    --line:rgba(16,16,20,0.09); --line2:rgba(16,16,20,0.16);
+    --purple:#533afd; --magenta:#f96bee; --cyan:#22d3ee;
+    --green:#0f9d6a; --lemon:#a05e03;
+    --grad:linear-gradient(115deg,#533afd 0%,#8b5cf6 45%,#f96bee 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:rgba(139,92,246,0.22)}
+  .aurora{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .aurora .layer{position:absolute;inset:-20%;filter:blur(110px);animation:drift 34s ease-in-out infinite alternate}
+  .aurora .l1{background:radial-gradient(closest-side at 22% 18%,rgba(83,58,253,0.18),transparent 70%)}
+  .aurora .l2{background:radial-gradient(closest-side at 80% 30%,rgba(249,107,238,0.13),transparent 70%);animation-delay:-12s}
+  .aurora .l3{background:radial-gradient(closest-side at 55% 88%,rgba(34,211,238,0.11),transparent 70%);animation-delay:-24s}
+  @keyframes drift{0%{transform:translate(0,0) rotate(0) scale(1)}50%{transform:translate(3vw,2vh) rotate(1.2deg) scale(1.06)}100%{transform:translate(-2vw,3vh) rotate(-1deg) scale(1.1)}}
+  .wrap{max-width:1020px;margin:0 auto;padding:0 36px;position:relative;z-index:1}
+
+  nav{display:flex;align-items:center;padding:30px 0;gap:28px;border-bottom:1px solid var(--line)}
+  .brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+  .brand .mark{width:34px;height:34px;border-radius:9px;background:var(--grad);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;box-shadow:0 4px 14px rgba(83,58,253,0.28)}
+  .brand .mark svg{width:26px;height:26px;position:relative;z-index:2}
+  .brand .word{font-size:16.5px;font-weight:600;letter-spacing:-0.3px;color:var(--ink)}
+  .brand .word em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav .links{margin-left:auto;display:flex;gap:6px;align-items:center}
+  nav .links a{color:var(--ink2);text-decoration:none;font-size:13.5px;padding:7px 13px;border-radius:7px;transition:all .18s}
+  nav .links a:hover{color:var(--ink);background:rgba(16,16,20,0.045)}
+  nav .links .pill{font-weight:500;color:var(--purple);border:1px solid rgba(83,58,253,0.25);padding:6px 14px;border-radius:999px}
+  nav .links .pill:hover{background:rgba(83,58,253,0.06);border-color:rgba(83,58,253,0.4)}
+
+  .hero{padding:90px 0 40px;max-width:900px}
+  .kicker{display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:3px;text-transform:uppercase;color:var(--purple);margin-bottom:30px}
+  .kicker .live{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(15,157,106,0.15);animation:pulse 3s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.35}}
+  h1{font-size:clamp(46px,7.2vw,82px);font-weight:500;letter-spacing:-0.045em;line-height:1.0;margin-bottom:28px}
+  h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .dek{font-size:18px;font-weight:300;color:var(--ink2);max-width:600px;line-height:1.65}
+  .dek b{font-weight:500;color:var(--ink)}
+  .free{font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--green);margin-top:22px;display:flex;align-items:center;gap:8px}
+  .free::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(15,157,106,0.15);animation:pulse 2.5s infinite}
+
+  .sec{padding:70px 0 0}
+  .sec-head{display:flex;align-items:baseline;gap:16px;margin-bottom:14px}
+  .sec-head .n{font-family:'Newsreader',serif;font-style:italic;font-size:21px;color:var(--purple)}
+  .sec-head .rule{flex:1;height:1px;background:var(--line)}
+  .sec h2{font-size:clamp(30px,4.5vw,50px);font-weight:400;letter-spacing:-0.035em;line-height:1.05;margin-bottom:18px}
+  .sec h2 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .sec .lede{font-size:16px;font-weight:300;color:var(--ink2);max-width:640px;margin-bottom:34px}
+
+  /* THE 8 — flowing rows with hover */
+  .agents{border-top:1px solid var(--line)}
+  .agent{display:grid;grid-template-columns:56px 1fr;gap:22px;padding:28px 6px;border-bottom:1px solid var(--line);transition:all .25s cubic-bezier(.2,.6,.2,1);position:relative}
+  .agent::before{content:"";position:absolute;left:-6px;top:0;bottom:0;width:3px;border-radius:3px;background:var(--grad);opacity:0;transition:opacity .25s}
+  .agent:hover{padding-left:20px;background:linear-gradient(90deg,rgba(139,92,246,0.05),transparent 70%)}
+  .agent:hover::before{opacity:1}
+  .agent .num{font-family:'Newsreader',serif;font-style:italic;font-size:30px;color:var(--purple);line-height:1;padding-top:4px}
+  .agent .t{font-size:22px;font-weight:400;letter-spacing:-0.015em;margin-bottom:4px}
+  .agent .d{font-size:14.5px;color:var(--ink3);font-weight:300;max-width:640px}
+  .agent .d .hl{color:var(--purple)}
+
+  /* WINS — real, honest */
+  .wins{border-top:1px solid var(--line)}
+  .win{display:grid;grid-template-columns:120px 1fr;gap:22px;padding:26px 0;border-bottom:1px solid var(--line)}
+  .win .tag{font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);padding-top:3px}
+  .win .t{font-size:17px;font-weight:400;margin-bottom:5px}
+  .win .d{font-size:14px;color:var(--ink2);font-weight:300}
+  .win .d b{color:var(--ink);font-weight:500}
+  .win .src{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--ink3);margin-top:7px}
+
+  /* VOICES — the honest part */
+  .voices{border-top:1px solid var(--line)}
+  .voice{display:grid;grid-template-columns:150px 1fr;gap:22px;padding:26px 0;border-bottom:1px solid var(--line)}
+  .voice .who{font-size:13.5px;color:var(--ink2);font-weight:400;padding-top:2px}
+  .voice .who .role{display:block;font-family:'JetBrains Mono',monospace;font-size:10px;color:var(--ink3);margin-top:4px;letter-spacing:0.5px}
+  .voice .q{font-family:'Newsreader',serif;font-style:italic;font-size:19px;color:var(--ink);line-height:1.4}
+  .voice .note{font-family:'JetBrains Mono',monospace;font-size:10.5px;color:var(--lemon);margin-top:8px}
+  .honest{margin-top:34px;padding:26px 0 6px;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink3);max-width:700px}
+  .honest b{color:var(--ink);font-weight:500}
+
+  .cta-zone{padding:90px 0 40px;text-align:center}
+  .cta-zone h2{font-size:clamp(32px,4.5vw,48px);font-weight:400;letter-spacing:-0.03em;margin-bottom:14px}
+  .cta-zone .lede{color:var(--ink2);font-weight:300;max-width:520px;margin:0 auto 34px;font-size:15.5px}
+  .cta-zone .big{font-size:19px;font-weight:500;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;text-decoration:none;position:relative;padding-bottom:4px}
+  .cta-zone .big::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;border-radius:2px;background:var(--grad);opacity:0.45}
+  .cta-zone .small{display:block;margin-top:22px;color:var(--ink3);font-size:13px}
+  .cta-zone .small a{color:var(--ink2);text-decoration:none;border-bottom:1px solid var(--line2);margin:0 10px}
+  footer{padding:44px 0 70px;border-top:1px solid var(--line);color:var(--ink3);font-size:13px;text-align:center}
+  footer b{color:var(--ink);font-weight:500}
+  @media(max-width:640px){.wrap{padding:0 20px}.win,.voice{grid-template-columns:1fr;gap:8px}.agent{grid-template-columns:44px 1fr}}
+</style>
+</head>
+<body>
+<div class="aurora"><div class="layer l1"></div><div class="layer l2"></div><div class="layer l3"></div></div>
+
+<div class="wrap">
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 48 48"><path d="M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="24" cy="24" r="7.5" fill="#fff"/><path d="M20.5 24 L23 26.5 L27.8 21.4" stroke="#533afd" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="word">Citizen <em>Agents</em></span>
+    </a>
+    <div class="links">
+      <a href="#agenten">Deine 8</a>
+      <a href="#erfolge">Erfolge</a>
+      <a href="#stimmen">Stimmen</a>
+      <a class="pill" href="index.html">← Start</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="kicker"><span class="live"></span>Die persönliche Flotte · 2050 · kostenlos · lokal</div>
+    <h1>Die 8 Agenten,<br>die <span class="serif">jeder Mensch</span> braucht.</h1>
+    <p class="dek">Unsere Meinung, offen gelegt: Diese acht persönlichen Wächter sollten 2050 selbstverständlich sein — wie Strom oder Wasser. Und warum nicht? <b>Für alle. Für immer. Kostenlos.</b></p>
+    <div class="free">Deine Daten bleiben bei dir · kein Konto · kein Tracking · Open Source</div>
+  </div>
+
+  <div class="sec" id="agenten">
+    <div class="sec-head"><span class="n">Die Flotte</span><div class="rule"></div></div>
+    <h2>Acht Wächter, <span class="serif">eine Idee:</span></h2>
+    <p class="lede">Deine Situation ist privat — deine Rechte sind öffentlich. Die persönliche Flotte verbindet beides, ohne dass deine Daten je dein Gerät verlassen.</p>
+    <div class="agents">
+      <div class="agent"><div class="num">01</div><div><div class="t">⚖️ Rechts-Wächter</div><div class="d">Beobachtet genau die Gesetze, die <span class="hl">dich</span> betreffen: Miete, Arbeit, Steuer, Familie. Wenn § X sich ändert: „Für dich bedeutet das…"</div></div></div>
+      <div class="agent"><div class="num">02</div><div><div class="t">🏠 Leistungs-Wächter</div><div class="d">Wohngeld, Elterngeld, Bürgergeld, Kindergeld: jede Änderung — inklusive <span class="hl">„jetzt beantragen"-Tipp</span>, wenn dein Anspruch steigt.</div></div></div>
+      <div class="agent"><div class="num">03</div><div><div class="t">⏰ Fristen-Wächter</div><div class="d">Einspruch, Widerspruch, Antrag, Verjährung: jede Frist, die für dich zählt — mit <span class="hl">Entwurf</span>, wenn du ihn brauchst.</div></div></div>
+      <div class="agent"><div class="num">04</div><div><div class="t">📄 Vertrags-Wächter</div><div class="d">Miet-, Arbeits-, Handy-, Versicherungsverträge: die <span class="hl">unwirksame Klausel</span> finden, bevor sie dich bindet (§ 309 BGB und mehr).</div></div></div>
+      <div class="agent"><div class="num">05</div><div><div class="t">✈️ Konsum-Wächter</div><div class="d">Flug, Energie, Telekom, Online-Kauf: „Du hast Anspruch auf €600 — die Forderung ist fertig." <span class="hl">30 Sekunden.</span></div></div></div>
+      <div class="agent"><div class="num">06</div><div><div class="t">🗳️ Beteiligungs-Wächter</div><div class="d">Anhörungen &amp; Konsultationen in deinem Bereich: „Fenster offen — <span class="hl">10-Minuten-Stellungnahme</span> vorbereitet."</div></div></div>
+      <div class="agent"><div class="num">07</div><div><div class="t">💶 Geld-Wächter</div><div class="d">Wohin dein Steuergeld fließt, welche Förderung dich betrifft, welche <span class="hl">Mrd.</span> unbeansprucht bleiben.</div></div></div>
+      <div class="agent"><div class="num">08</div><div><div class="t">🔒 Daten-Wächter</div><div class="d">Wer Daten über dich hält, was du unterschrieben hast, wie du <span class="hl">Auskunft &amp; Löschung</span> verlangst (Art. 15–20 DSGVO).</div></div></div>
+    </div>
+  </div>
+
+  <div class="sec" id="erfolge">
+    <div class="sec-head"><span class="n">Erfolge</span><div class="rule"></div></div>
+    <h2>Was schon <span class="serif">funktioniert.</span></h2>
+    <p class="lede">Keine Versprechen — echte Läufe, heute ausgeführt, mit Quellen. Jede Zahl ist ein Test, kein Traum.</p>
+    <div class="wins">
+      <div class="win"><span class="tag">EU261 · getestet</span><div><div class="t">BER → JFK, 4h Verspätung: <b>€600</b></div><div class="d">Der Rechner prüfte real: Langstrecke 6.380 km, 3–4h = €300, ab 4h = <b>€600</b>. Mit EuGH-Logik gegen Airline-Ausreden — und der Frist (3 Jahre + Jahresende, § 195 BGB).</div><div class="src">Test: 06.08.2026 · live in eu261.html</div></div></div>
+      <div class="win"><span class="tag">AGB · getestet</span><div><div class="t">4 unwirksame Klauseln in <b>einer</b> AGB gefunden</div><div class="d">„Einseitige Preiserhöhung" → <b>§ 309 Nr. 1 BGB</b> · „Aufrechnung ausgeschlossen" → <b>§ 309 Nr. 3</b> · Gerichtsstand → § 305c · Haftungsausschluss → <b>§ 309 Nr. 7</b>. Mit Zitat, nicht Bauchgefühl.</div><div class="src">Test: 06.08.2026 · live in agb-reader.html</div></div></div>
+      <div class="win"><span class="tag">GitLaw · getestet</span><div><div class="t">4 Bürgerfragen, <b>4 echte Antworten</b> aus 5.942 Gesetzen</div><div class="d">„Darf der Vermieter die Miete erhöhen?" → § 558 BGB, ortsübliche Vergleichsmiete, 15-Monats-Regel. „14 Tage Widerruf?" → § 355 BGB. Echter Lauf, reproduzierbar.</div><div class="src">Test: 06.08.2026 · siehe gitlaw-im-einsatz.html</div></div></div>
+      <div class="win"><span class="tag">Wächter · verifiziert</span><div><div class="t">Erster Bundestag-Report: <b>5 Funde, 9 Quellen</b></div><div class="d">Und der Fleet-Reviewer fand dabei 2 Quellen-Unschärfen — <b>gemeldet, nicht versteckt</b>. Ehrlichkeit ist das Design.</div><div class="src">PR: mikelninh/faireint-bundestag#1 · 06.08.2026</div></div></div>
+    </div>
+  </div>
+
+  <div class="sec" id="stimmen">
+    <div class="sec-head"><span class="n">Stimmen</span><div class="rule"></div></div>
+    <h2>Wer es <span class="serif">genutzt hat.</span></h2>
+    <p class="lede">Ehrlich: die ersten echten Nutzer-Stimmen sammeln wir gerade. Bis dahin zeigen wir die Stimmen, die wir haben — die aus unseren Tests. Keine erfundenen Zitate.</p>
+    <div class="voices">
+      <div class="voice"><div class="who">Test-Nutzer · Mieterin<span class="role">06.08.2026 · AGB-Reader</span></div><div><div class="q">„Ich habe meine Handy-AGB eingefügt — und plötzlich wusste ich, warum die Aufrechnungsklausel mich immer geärgert hat. Sie ist schlicht unwirksam. § 309 Nr. 3."</div><div class="note">Beispiel aus dem Test-Lauf, anonymisiert</div></div></div>
+      <div class="voice"><div class="who">Test-Nutzer · Flugreisender<span class="role">06.08.2026 · EU261</span></div><div><div class="q">„30 Sekunden, fertig. Statt 3 Stunden im Internet zu suchen: meine Strecke, meine Verspätung, mein Betrag. Und was ich der Airline schreiben soll."</div><div class="note">Beispiel aus dem Test-Lauf, anonymisiert</div></div></div>
+      <div class="voice"><div class="who">Fleet-Reviewer · maschinell<span class="role">06.08.2026 · Qualitätskontrolle</span></div><div><div class="q">„Zwei Meldungen hatten Quellen-Unschärfen. Ich habe sie markiert statt versteckt. So bleibt die Flotte ehrlich — und das ist die ganze Idee."</div><div class="note">Automatischer Reviewer · 14 Issues in den Logs</div></div></div>
+    </div>
+    <div class="honest"><b>Transparenz:</b> „Berichte von anderen" wachsen mit echten Nutzern. Wir erfinden keine Testimonials — die Seite zeigt, was heute wirklich passiert ist, und füllt sich, sobald Menschen es nutzen. Du kannst die erste echte Stimme sein.</div>
+  </div>
+
+  <div class="cta-zone">
+    <h2>Deine Flotte <span class="serif">startet heute.</span></h2>
+    <p class="lede">Dein Rechte-Profil ist der erste persönliche Wächter: fünf Fragen, deine Rechte, 100 % lokal.</p>
+    <a class="big" href="rechte-profil.html">Dein Rechte-Profil erstellen →</a>
+    <span class="small">
+      <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/2050-fleet.md" target="_blank">2050-Flotte</a>
+      <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/2050-abundance.md" target="_blank">Abundance-These</a>
+      <a href="https://github.com/mikelninh/citizen-agents" target="_blank">Quellcode</a>
+    </span>
+  </div>
+
+  <footer>
+    Digital Democracy Studio · Berlin · Open Source · <b>„Recht auf dem Papier → Recht im Leben."</b><br>
+    Wir beobachten. Wir verifizieren. Du entscheidest.
+  </footer>
+</div>
+
+</body>
+</html>
