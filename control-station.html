@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Control Station — Citizen Agents ops board</title>
+<style>
+  :root{--bg:#07090f;--panel:#0f1420;--panel2:#0b1019;--line:#1b2437;
+        --gold:#e8c26a;--ice:#7fd4ff;--green:#5ee6a0;--violet:#b39dff;--red:#ff7a8a;--amber:#e0a04e;
+        --muted:#7d8ba1;--text:#e8edf6}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5;padding-bottom:60px}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 18px}
+  header{padding:28px 0 16px;border-bottom:1px solid var(--line);display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+  h1{font-size:24px;font-weight:800;letter-spacing:-0.5px}
+  h1 em{font-style:normal;color:var(--ice)}
+  .live{margin-left:auto;font-size:11px;color:var(--green);border:1px solid var(--green);border-radius:999px;padding:3px 12px;text-transform:uppercase;letter-spacing:1px}
+  .updated{font-size:12px;color:var(--muted)}
+  .kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:18px 0 8px}
+  .kpi{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
+  .kpi .b{font-size:24px;font-weight:800}
+  .kpi .b.g{color:var(--green)} .kpi .b.i{color:var(--ice)} .kpi .b.y{color:var(--gold)} .kpi .b.r{color:var(--red)}
+  .kpi .l{font-size:11px;color:var(--muted);margin-top:2px}
+  h2{font-size:14px;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);margin:26px 0 10px}
+  .board{display:grid;grid-template-columns:repeat(auto-fill,minmax(360px,1fr));gap:12px}
+  .ag{border:1px solid var(--line);border-radius:12px;background:var(--panel);overflow:hidden}
+  .ag .hd{display:flex;align-items:center;gap:8px;padding:9px 12px;border-bottom:1px solid var(--line)}
+  .ag .emoji{font-size:17px}
+  .ag .nm{font-weight:700;font-size:13px;flex:1}
+  .ag .lvl{font-size:9px;letter-spacing:1px;text-transform:uppercase;color:var(--muted);border:1px solid var(--line);border-radius:4px;padding:1px 5px}
+  .ag .st{font-size:9.5px;letter-spacing:1px;text-transform:uppercase;padding:2px 8px;border-radius:999px}
+  .st.live{color:var(--green);border:1px solid var(--green)}
+  .st.sched{color:var(--ice);border:1px solid var(--ice)}
+  .st.plan{color:var(--muted);border:1px solid var(--muted)}
+  .ag .bd{padding:9px 12px;font-size:11.5px;color:var(--muted)}
+  .ag .bd .row{display:flex;justify-content:space-between;gap:10px;padding:2px 0}
+  .ag .bd .row .v{color:var(--text);text-align:right}
+  .ag .bd .row .v.ok{color:var(--green)} .ag .bd .row .v.warn{color:var(--amber)} .ag .bd .row .v.err{color:var(--red)}
+  .ag .prs{padding:7px 12px 9px;border-top:1px solid var(--line);font-size:11px}
+  .ag .prs a{color:var(--gold);text-decoration:none}
+  .ag .prs a:hover{border-bottom:1px dotted var(--gold)}
+  .none{color:var(--muted);font-style:italic}
+  .err{color:var(--red);font-size:11.5px}
+  .legend{margin-top:12px;font-size:11.5px;color:var(--muted)}
+  .legend span{margin-right:14px}
+  footer{margin-top:36px;padding-top:14px;border-top:1px solid var(--line);color:var(--muted);font-size:11.5px}
+  footer b{color:var(--gold)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>🛰️ Control <em>Station</em></h1>
+    <span class="live">● live</span>
+    <span class="updated" id="updated">loading…</span>
+  </header>
+
+  <div class="kpis">
+    <div class="kpi"><div class="b i" id="k-total">…</div><div class="l">agents in fleet</div></div>
+    <div class="kpi"><div class="b g" id="k-live">…</div><div class="l">live today</div></div>
+    <div class="kpi"><div class="b y" id="k-prs">…</div><div class="l">open agent PRs</div></div>
+    <div class="kpi"><div class="b" id="k-scheduled">…</div><div class="l">scheduled</div></div>
+    <div class="kpi"><div class="b g" id="k-verified">…</div><div class="l">fleet-review verified</div></div>
+  </div>
+
+  <h2>Agent fleet — status &amp; PRs</h2>
+  <div class="board" id="board"></div>
+  <div class="legend">
+    <span><b style="color:var(--green)">● live</b> = ran, produced real output</span>
+    <span><b style="color:var(--ice)">scheduled</b> = configured, runs daily</span>
+    <span><b style="color:var(--muted)">planned</b> = designed, not yet running</span>
+    <span>PRs list from the agent's repo — click to review</span>
+  </div>
+
+  <footer>
+    Control Station · Digital Democracy Studio · Data pulled live from GitHub API every 60s.
+    <b>Agents draft, humans decide, nobody auto-merges.</b> · Cost: €8–30/mo all-in (see cloud-24-7.md)
+  </footer>
+</div>
+
+<script>
+const OWNER = "mikelninh", HUB = "citizen-agents", API = "https://api.github.com";
+const LVL = {"de":"DE","eu":"EU","world":"🌍","studio":"🎮","meta":"🛡️"};
+
+async function j(url){
+  const r = await fetch(url, {headers:{Accept:"application/vnd.github+json"}});
+  if(!r.ok) throw new Error(url+" -> "+r.status);
+  return r.json();
+}
+const esc = s => String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");
+
+async function load(){
+  const reg = await j(`${API}/repos/${OWNER}/${HUB}/contents/agents.json`);
+  const agents = JSON.parse(atob(reg.content.replace(/\s/g,""))).agents;
+  const board = document.getElementById("board");
+  board.innerHTML = "";
+  let live=0, sched=0, plan=0;
+
+  for(const a of agents){
+    (a.status==="live")&&live++; (a.status==="scheduled")&&sched++; (a.status==="planned")&&plan++;
+    const card = document.createElement("div");
+    card.className = "ag";
+    const stCls = a.status==="live"?"live":a.status==="scheduled"?"sched":"plan";
+    const stLbl = a.status==="live"?"● live":a.status==="scheduled"?"scheduled":"planned";
+    card.innerHTML = `
+      <div class="hd"><span class="emoji">${a.id.includes("studio")||a.id.includes("qa")||a.id.includes("engineer")?"🎮":a.level==="world"?"🌍":a.level==="meta"?"🛡️":"🤖"}</span>
+        <span class="nm">${esc(a.name)}</span><span class="lvl">${LVL[a.level]||esc(a.level)}</span><span class="st ${stCls}">${stLbl}</span></div>
+      <div class="bd">
+        <div class="row"><span>cadence</span><span class="v">${esc(a.cadence)}</span></div>
+        <div class="row"><span>watches</span><span class="v">${esc((a.watches||[]).slice(0,2).join(" · "))}</span></div>
+      </div>
+      <div class="prs" data-prs="${esc(a.id)}"><span class="none">loading PRs…</span></div>`;
+    board.appendChild(card);
+
+    // PR fetch: studio + qa/engineer publish to hub; civic use their own repo
+    const repo = (a.id.startsWith("studio-")||a.id==="gameplay-engineer"||a.id==="qa-playtester"||a.id==="fleet-reviewer"||a.level==="world") ? HUB : a.repo.split("/").pop();
+    (async(id, r, el)=>{
+      try{
+        const prs = await j(`${API}/repos/${OWNER}/${r}/pulls?state=open&per_page=10`);
+        const mine = prs.filter(p => (p.head.ref||"").includes("agent/")||(p.head.ref||"").includes("studio")||(p.head.ref||"").includes("fleet-review"));
+        const shown = (mine.length?mine:prs).slice(0,3);
+        el.innerHTML = shown.length ? shown.map(p=>`<div>🔗 <a href="${p.html_url}" target="_blank">#${p.number} ${esc(p.title.split("—").pop().trim().slice(0,40))}</a></div>`).join("") : `<span class="none">no open PRs</span>`;
+      }catch(e){ el.innerHTML = `<span class="err">PR fetch failed</span>`; }
+    })(a.id, repo, card.querySelector(`[data-prs="${CSS.escape(a.id)}"]`));
+  }
+
+  document.getElementById("k-total").textContent = agents.length;
+  document.getElementById("k-live").textContent = live;
+  document.getElementById("k-scheduled").textContent = sched;
+
+  // PR count across all repos
+  try{
+    const q = await j(`${API}/search/issues?q=repo:${OWNER}/${HUB}+is:pr+is:open&per_page=1`);
+    document.getElementById("k-prs").textContent = q.total_count;
+  }catch(e){ document.getElementById("k-prs").textContent = "?"; }
+
+  document.getElementById("updated").textContent = "updated " + new Date().toLocaleString("de-DE");
+}
+
+load().catch(e=>{ document.getElementById("board").innerHTML = `<div class="err">Load failed: ${esc(e.message)}</div>`; });
+setInterval(()=>load().catch(()=>{}), 60000);
+</script>
+</body>
+</html>

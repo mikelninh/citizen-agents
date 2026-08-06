@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Citizen Agents — Deine Rechte, jeden Tag beobachtet</title>
+<style>
+  :root{--bg:#0b0e14;--panel:#121826;--line:#1f2a3d;--gold:#e8c26a;--ice:#7fd4ff;--green:#5ee6a0;
+        --muted:#8b98ad;--text:#e8edf6}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+  .wrap{max-width:980px;margin:0 auto;padding:0 20px}
+  nav{padding:18px 0;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:18px}
+  nav .brand{font-weight:800;font-size:15px}
+  nav .brand em{font-style:normal;color:var(--ice)}
+  nav a{color:var(--muted);text-decoration:none;font-size:13px;margin-left:auto}
+  nav a:hover{color:var(--gold)}
+  .hero{padding:64px 0 40px;background:radial-gradient(ellipse 60% 80% at 50% -10%,#16203a 0%,transparent 70%)}
+  .kicker{color:var(--gold);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:700}
+  h1{font-size:clamp(30px,5vw,50px);font-weight:800;letter-spacing:-1.5px;margin:10px 0 10px}
+  h1 em{font-style:normal;color:var(--ice)}
+  .sub{font-size:17px;color:var(--muted);max-width:660px}
+  .cta{margin-top:26px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{display:inline-block;padding:11px 22px;border-radius:999px;font-size:14px;font-weight:700;text-decoration:none}
+  .btn.primary{background:var(--gold);color:#0b0e14}
+  .btn.primary:hover{background:#f0d080}
+  .btn.ghost{border:1px solid var(--line);color:var(--text)}
+  .btn.ghost:hover{border-color:var(--ice);color:var(--ice)}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:12px;margin-top:44px}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+  .stat .b{font-size:24px;font-weight:800;color:var(--gold)}
+  .stat .l{font-size:12px;color:var(--muted);margin-top:3px}
+  section{padding:46px 0;border-bottom:1px solid var(--line)}
+  h2{font-size:24px;font-weight:800;letter-spacing:-0.5px;margin-bottom:6px}
+  .lede{color:var(--muted);font-size:15px;max-width:720px;margin-bottom:22px}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px}
+  .card .e{font-size:26px}
+  .card .n{font-weight:800;font-size:15px;margin:8px 0 4px}
+  .card .d{font-size:13px;color:var(--muted)}
+  .tools{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+  .tool{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .tool .n{font-weight:700;font-size:14.5px}
+  .tool .d{font-size:12.5px;color:var(--muted);margin:5px 0 12px}
+  .tool .a{display:inline-block;font-size:13px;color:var(--gold);text-decoration:none;border:1px solid var(--gold);border-radius:999px;padding:5px 15px;margin:2px 8px 0 0}
+  .tool .a:hover{background:var(--gold);color:#0b0e14}
+  .principle{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .principle p{font-size:14.5px;color:var(--muted);margin-bottom:10px}
+  .principle b{color:var(--text)}
+  .support{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+  footer{padding:30px 0 50px;color:var(--muted);font-size:13px}
+  footer b{color:var(--gold)}
+  .links{margin-top:14px;font-size:13px}
+  .links a{color:var(--ice);text-decoration:none;border-bottom:1px dotted var(--ice);margin-right:14px}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap" style="display:flex;align-items:center;gap:14px;padding:0">
+  <span class="brand">Citizen <em>Agents</em></span>
+  <a href="#waechter">Die Wächter</a>
+  <a href="#testen">Jetzt testen</a>
+  <a href="#prinzip">Unser Prinzip</a>
+  <a href="control-station.html">Control Station</a>
+</div></nav>
+
+<div class="hero"><div class="wrap">
+  <div class="kicker">Digital Democracy Studio · Berlin · Open Source</div>
+  <h1>Deine Rechte, <em>jeden Tag</em> beobachtet.</h1>
+  <p class="sub">Autonome Wächter-Agenten verfolgen für dich Gesetze, Parlament, Haushalt, Leistungen und Gerichte — mit Quellen, jeden Tag, kostenlos. Menschen prüfen, Agenten arbeiten.</p>
+  <div class="cta">
+    <a class="btn primary" href="#testen">Jetzt kostenlos testen</a>
+    <a class="btn ghost" href="https://github.com/mikelninh/citizen-agents" target="_blank">Quellcode ansehen</a>
+  </div>
+  <div class="stats">
+    <div class="stat"><div class="b">16</div><div class="l">Agenten im Einsatz</div></div>
+    <div class="stat"><div class="b">0 €</div><div class="l">für alle Bürger:innen</div></div>
+    <div class="stat"><div class="b">€4–5 Mrd</div><div class="l">EU261 unbeansprucht/Jahr</div></div>
+    <div class="stat"><div class="b">€1 Mrd+</div><div class="l">Wohngeld unbeansprucht/Jahr</div></div>
+    <div class="stat"><div class="b">100%</div><div class="l">Quellen angegeben</div></div>
+  </div>
+</div></div>
+
+<section id="waechter"><div class="wrap">
+  <h2>Die Wächter</h2>
+  <p class="lede">Was sie beobachten, gehört dir. Jede Meldung kommt mit Quelle — prüfbar, nachvollziehbar, menschlich geprüft.</p>
+  <div class="grid">
+    <div class="card"><div class="e">⚖️</div><div class="n">Law-Watch</div><div class="d">Neue und geänderte Bundesgesetze — bevor sie dich treffen.</div></div>
+    <div class="card"><div class="e">🏛️</div><div class="n">Bundestag-Watch</div><div class="d">Wer entscheidet, wer lobbyiert — täglich, mit Quellen.</div></div>
+    <div class="card"><div class="e">✈️</div><div class="n">EU Rights-Watch</div><div class="d">EuGH-Urteile &amp; Flugrechte — schützt €4–5 Mrd/Jahr.</div></div>
+    <div class="card"><div class="e">💶</div><div class="n">Money-Flow Watch</div><div class="d">Wohin fließt dein Steuergeld — und wo geht es schief?</div></div>
+    <div class="card"><div class="e">🏠</div><div class="n">Benefit-Watch</div><div class="d">Wohngeld, Elterngeld, Bürgergeld — Änderungen &amp; Fristen.</div></div>
+    <div class="card"><div class="e">🇪🇺</div><div class="n">Directive-Watch</div><div class="d">EU-Richtlinien, die Deutschland umsetzen muss — mit Frist.</div></div>
+    <div class="card"><div class="e">🏛️⚖️</div><div class="n">Court-Watch</div><div class="d">Leiturteile in Alltagssprache — am Tag der Veröffentlichung.</div></div>
+    <div class="card"><div class="e">🛡️</div><div class="n">Abuse-Safety Watch</div><div class="d">Hält SafeVoice aktuell: Strafanzeige in 30 Sekunden.</div></div>
+    <div class="card"><div class="e">📦</div><div class="n">Procurement-Watch</div><div class="d">Öffentliche Vergaben — Anomalien sichtbar machen.</div></div>
+    <div class="card"><div class="e">🗳️</div><div class="n">Consultation-Watch</div><div class="d">Anhörungen &amp; Beteiligung — aus „nichts geht" wird 10 Minuten.</div></div>
+    <div class="card"><div class="e">🌍</div><div class="n">Treaty-Watch</div><div class="d">Menschenrechts-Versprechen vs. Realität — weltweit.</div></div>
+    <div class="card"><div class="e">🌐</div><div class="n">Truth-Watch</div><div class="d">Falschinformation — immer mit dem seriösen Faktencheck.</div></div>
+    <div class="card"><div class="e">🌡️</div><div class="n">Climate-Watch</div><div class="d">Klima-Versprechen vs. echte Emissionen — mit Zahlen.</div></div>
+  </div>
+</div></section>
+
+<section id="testen"><div class="wrap">
+  <h2>Jetzt testen — kostenlos, ohne Anmeldung</h2>
+  <p class="lede">Diese Werkzeuge leben schon heute. Einfach öffnen und ausprobieren.</p>
+  <div class="tools">
+    <div class="tool"><div class="n">⚖️ GitLaw — „Was sagt das Gesetz?"</div><div class="d">5.936 Bundesgesetze, AI-erklärt mit Quellen. 31 Musterbriefe.</div>
+      <a class="a" href="https://gitlaw-xi.vercel.app/" target="_blank">App öffnen</a><a class="a" href="https://github.com/mikelninh/gitlaw" target="_blank">Code</a></div>
+    <div class="tool"><div class="n">🛡️ SafeVoice — „Ich werde belästigt."</div><div class="d">Gerichtsfeste Strafanzeige in 30 Sekunden. Anonym.</div>
+      <a class="a" href="https://safevoice-vert.vercel.app/" target="_blank">App öffnen</a><a class="a" href="https://github.com/mikelninh/safevoice" target="_blank">Code</a></div>
+    <div class="tool"><div class="n">🏛️ FairEint — „Welche Politik funktioniert?"</div><div class="d">10 Reformen + Policy-Simulator mit 24 Personas.</div>
+      <a class="a" href="https://mikelninh.github.io/faireint/" target="_blank">App öffnen</a></div>
+    <div class="tool"><div class="n">👶 Elterngeld-Blitz — „Wie viel bekomme ich?"</div><div class="d">Elterngeld in einer Frage — alle 16 Bundesländer.</div>
+      <a class="a" href="https://elterngeld-blitz.de" target="_blank">App öffnen</a></div>
+    <div class="tool"><div class="n">✈️ Flight-Rights — „Bekomme ich €600?"</div><div class="d">EU261-Rechner + EuGH-Check in 30 Sekunden.</div>
+      <a class="a" href="https://github.com/mikelninh/flight-rights-mcp" target="_blank">Code</a></div>
+    <div class="tool"><div class="n">🧾 AGB-Reader — „Dürfen die das?"</div><div class="d">Unwirksame Klauseln erkennen — mit §-Zitat.</div>
+      <a class="a" href="https://github.com/mikelninh/agb-reader-mcp" target="_blank">Code</a></div>
+  </div>
+</div></section>
+
+<section id="prinzip"><div class="wrap">
+  <h2>Unser Prinzip</h2>
+  <p class="lede">Warum du uns vertrauen kannst — ohne uns zu glauben.</p>
+  <div class="principle">
+    <p><b>🔎 Alles ist prüfbar.</b> Jede Meldung trägt ihre Quelle. Der erste Bundestag-Report: 5 Funde, 9 Quellen — <a href="https://github.com/mikelninh/faireint-bundestag/pull/1" style="color:var(--ice)" target="_blank">sieh selbst</a>.</p>
+    <p><b>🧑‍⚖️ Menschen entscheiden.</b> Agenten entwerfen, Menschen prüfen. Niemand merged automatisch.</p>
+    <p><b>🔒 Kein Datenschutz-Problem.</b> Die Wächter verarbeiten keine personenbezogenen Daten — nur öffentliche Quellen. Browser-First für alles Bürgerliche.</p>
+    <p><b>💰 Kostenlos. Für immer.</b> Finanziert durch freiwillige Unterstützung und institutionelle Lizenzen — nie durch eine Paywall vor deinen Rechten.</p>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Unterstützen</h2>
+  <p class="lede">Wenn dir ein Wächter Zeit, Geld oder Ärger erspart hat: ab 1 €, einmalig oder monatlich. Hält Server, Review und neue Agenten am Laufen.</p>
+  <div class="support">
+    <a class="btn primary" href="https://github.com/sponsors/mikelninh" target="_blank">⭐ GitHub Sponsors</a>
+    <a class="btn ghost" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents">🤝 Organisationen &amp; NGOs</a>
+    <a class="btn ghost" href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/proof.html" target="_blank">📊 Beweise &amp; Bewertungen</a>
+  </div>
+  <div class="links">
+    <a href="https://github.com/mikelninh/citizen-agents" target="_blank">Hub-Repo</a>
+    <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/datenschutz-architecture.md" target="_blank">Datenschutz-Architektur</a>
+    <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/pilot-proposal.md" target="_blank">Für Institutionen</a>
+    <a href="https://raw.githubusercontent.com/mikelninh/citizen-agents/main/b2b-monetization.md" target="_blank">B2B</a>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  Digital Democracy Studio · Berlin · Open Source · <b>„Recht auf dem Papier → Recht im Leben."</b>
+  <br>Agenten entwerfen, Menschen entscheiden, niemand merged automatisch.
+</div></footer>
+
+</body>
+</html>
