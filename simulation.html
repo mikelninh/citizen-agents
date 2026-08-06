@@ -188,8 +188,8 @@ function buildPopulation(n, rnd){
 }
 
 // ---------- YEAR OF LIFE: events → needs ----------
-function simulateYear(p, rnd, W){
-  const need = (id)=>W.find(w=>w.id===id).need++;
+function simulateYear(p, rnd, W, fired){
+  const need = (id)=>{ W.find(w=>w.id===id).need++; fired.add(id); };
 
   // Housing: the #1 pressure point
   if(p.rents){
@@ -242,18 +242,18 @@ function usageFromNeeds(p, rnd){
 function simulate(n){
   const seed = 42;
   const rnd = mulberry32(seed);
-  const W = WATCHERS.map(w=>({...w, need:0, use:0}));
+  const W = WATCHERS.map(w=>({...w, need:0, use:0, reach:0}));
   const pop = buildPopulation(n, rnd);
   const rates = usageFromNeeds(null, rnd);
 
   for(const p of pop){
-    const needsBefore = {};
-    W.forEach(w=>needsBefore[w.id]=w.need);
-    simulateYear(p, rnd, W);
+    const fired = new Set();
+    simulateYear(p, rnd, W, fired);
+    // reach: unique citizens per watcher (max 100%)
+    fired.forEach(id=>{ W.find(w=>w.id===id).reach++; });
     // usage: for each need that fired this year, usage chance
-    W.forEach(w=>{
-      const fired = w.need - needsBefore[w.id];
-      if(fired>0 && rnd() < rates[w.id]) w.use += fired;
+    fired.forEach(id=>{
+      if(rnd() < rates[id]) W.find(w=>w.id===id).use++;
     });
   }
   render(W, n);
@@ -261,16 +261,16 @@ function simulate(n){
 
 // ---------- RENDER ----------
 function render(W, n){
-  const needRank = [...W].sort((a,b)=>b.need-a.need);
+  const needRank = [...W].sort((a,b)=>b.reach-a.reach);
   const useRank  = [...W].sort((a,b)=>b.use-a.use);
-  const maxNeed = needRank[0].need, maxUse = useRank[0].use;
+  const maxNeed = needRank[0].reach, maxUse = useRank[0].use;
 
   const row = (w, i, max, val, isUse) => `
     <div class="r-row">
       <div class="pos">${String(i+1).padStart(2,"0")}</div>
       <div class="who"><span class="ic">${w.ic}</span>${w.name}<span class="pct">${(val/n*100).toFixed(1)} % der Bürger</span></div>
       <div class="bar"><div class="fill" style="width:${Math.max(4, val/max*100)}%"></div></div>
-      <div class="num">${val.toLocaleString("de-DE")}<br><small>${isUse?"genutzt":"Bedarf"}</small></div>
+      <div class="num">${val.toLocaleString("de-DE")}<br><small>${isUse?"genutzt":"betroffen"}</small></div>
     </div>`;
 
   const tabs = `
@@ -279,9 +279,9 @@ function render(W, n){
       <span class="tab" id="tab-use" onclick="showTab('use')">Nutzen</span>
     </div>`;
   document.getElementById("results").innerHTML = tabs +
-    `<div id="need-panel">${needRank.map((w,i)=>row(w,i,maxNeed,w.need,false)).join("")}</div>` +
+    `<div id="need-panel">${needRank.map((w,i)=>row(w,i,maxNeed,w.reach,false)).join("")}</div>` +
     `<div id="use-panel" style="display:none">${useRank.map((w,i)=>row(w,i,maxUse,w.use,true)).join("")}</div>` +
-    `<div class="explain"><b>So liest du das:</b> „Brauchen" = wie oft ein Lebensereignis diesen Wächter im Jahr auslöst. „Nutzen" = wie oft Bürger ihn tatsächlich nutzen würden (Adoptionsraten berücksichtigt — Leistungs-Wächter hat z. B. niedrige Nutzung, WEIL Menschen nicht wissen, dass sie Anspruch haben; das ist genau der Effekt, den Citizen Agents umdreht). Zahlen gerundet, Modell vereinfacht, Quellen offen.</div>`;
+    `<div class="explain"><b>Was die Zahlen bedeuten:</b> „Brauchen" = wie viele Bürger (von 10.000) mindestens einmal im Jahr diesen Wächter bräuchten — <b>maximal 100 %</b>, denn gezählt werden Menschen, nicht Ereignisse. „Nutzen" = wie viele ihn tatsächlich nutzen würden (Adoptionsraten berücksichtigt). Der wichtigste Unterschied: Der <b>Leistungs-Wächter</b> wird am meisten gebraucht, aber selten genutzt — <b>weil Menschen nicht wissen, dass sie Anspruch haben</b>. Genau diese Lücke schließt Citizen Agents. Zahlen gerundet, Modell vereinfacht, Quellen offen.</div>`;
   document.getElementById("meta").textContent = n.toLocaleString("de-DE") + " Bürger · 1 Jahr · Seed 42 · deterministisch";
 }
 
