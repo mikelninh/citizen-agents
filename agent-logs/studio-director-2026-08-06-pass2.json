@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-06",
+  "repo": "bla-keks-world",
+  "branch": "studio/director-2026-08-06",
+  "head_commit": "0bd23bd",
+  "files_read": [
+    "README.md",
+    "src/modes/match-mode.js",
+    "src/modes/weapon.js",
+    "src/modes/weapons/saber.js",
+    "src/modes/weapons/projectiles.js",
+    "src/modes/weapons/tools.js",
+    "src/shared/match.js",
+    "src/shared/items.js",
+    "server/room.js"
+  ],
+  "critiques": 4,
+  "critique_targets": [
+    "src/modes/weapon.js — dead hitscan carbine still shipped post-pivot",
+    "src/modes/weapons/tools.js TOOLS.leafblade — saber shares Charge, no melee economy, soak 100 one-shot",
+    "src/shared/match.js _hit() — no weaponId, only team + global MAX_DAMAGE_RANGE validation",
+    "TOOLS roster — five tools, no classes, no defensive verb, no rock-paper-scissors"
+  ],
+  "one_big_idea": "Guard & Reflect — a second combat verb (RMB) with a new Stamina resource for melee, keeping Charge for ranged; saber guard absorbs/reflects projectiles, lobbed tools arc over guard, creating saber-vs-ranged-vs-lob RPS",
+  "directives": [
+    {
+      "n": 1,
+      "title": "Delete the ghost, teach the server about weapons",
+      "files": ["src/modes/weapon.js", "src/shared/match.js", "src/modes/match-mode.js"],
+      "acceptance": "no src/ importer of weapon.js; WEAPON_LIMITS per-weapon range/interval/damage validation in _hit(); spoofed 40m leafblade hit dropped"
+    },
+    {
+      "n": 2,
+      "title": "Stamina + Guard on the saber",
+      "files": ["src/modes/weapons/tools.js", "src/modes/weapons/saber.js", "src/modes/match-mode.js"],
+      "acceptance": "RMB guards with visible pose + stamina bar; depletion = 1.0s stagger blocking swings; ranged tools still zoom on RMB"
+    },
+    {
+      "n": 3,
+      "title": "Reflect in the projectile layer",
+      "files": ["src/modes/weapons/projectiles.js", "src/modes/match-mode.js"],
+      "acceptance": "parried petal flies back and can soak the shooter with owner/team swapped; gravity>=6 lobs bypass guard; reflected kills credited to blocker"
+    }
+  ],
+  "challenge_for_mikel": "Should Guard be universal or melee-only? Universal = forgiving, chess-like, longer matches; melee-only = sharp class identity and real RPS but week-one 'blades are unfair' screaming. Decide before Directive 2, because it determines whether Stamina lives on the saber or on the player. Secondary dare: is a reflected shot funnier than a blocked one? If yes, reflect should be the default guard outcome and absorb the failure case.",
+  "source_modified": false,
+  "merged": false
+}
