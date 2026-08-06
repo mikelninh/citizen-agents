@@ -205,6 +205,18 @@
       "watches": ["UNFCCC", "IEA", "Carbon Market Watch"],
       "impact_estimate": "Pledge-vs-reality gap with numbers, per company and per government",
       "open_items": ["greenwashing case tracker", "NDC progress feed"]
+    },
+    {
+      "id": "meat-dairy-watch",
+      "name": "Meat-Dairy Watch",
+      "level": "de",
+      "status": "live",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 13:15",
+      "problem": "The meat & dairy lobby is one of Europe's most powerful — billions in subsidies, huge lobbying, minimal counterweight",
+      "watches": ["Lobbyregister", "EU Transparency Register", "GAP subsidies", "animal-welfare law"],
+      "impact_estimate": "Lobby + subsidies + policy + science in one public feed — watching the powerful, for the people",
+      "open_items": ["subsidy dataset integration", "revolving-door tracker"]
     }
   ],
   "principles": [
