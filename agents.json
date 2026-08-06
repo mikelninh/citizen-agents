@@ -157,6 +157,54 @@
       "watches": ["engineer branches", "server/node.js", "room.js"],
       "impact_estimate": "SHIP / HOLD verdict every day; catches regressions before players do",
       "open_items": ["automated boot test", "logic review checklist"]
+    },
+    {
+      "id": "fleet-reviewer",
+      "name": "Fleet Reviewer",
+      "level": "meta",
+      "status": "live",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 14:00 (after all agents)",
+      "problem": "Who checks the agents? Agents check each other — sources, schemas, hallucination, guardrails",
+      "watches": ["all agent digests/logs/PRs", "source URL validity"],
+      "impact_estimate": "VERIFIED/PARTIAL/FAILED verdicts daily; catches hallucinated claims before citizens read them",
+      "open_items": ["source fetch automation", "cross-agent convergence flags"]
+    },
+    {
+      "id": "treaty-watch",
+      "name": "Treaty-Watch",
+      "level": "world",
+      "status": "live",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 09:30",
+      "problem": "Governments sign human-rights treaties then ignore them — nobody tracks the gap",
+      "watches": ["OHCHR", "ECHR", "UN treaty bodies"],
+      "impact_estimate": "Turns ratified-but-ignored obligations into visible, timestamped facts",
+      "open_items": ["ratification tracker", "violation feed"]
+    },
+    {
+      "id": "truth-watch",
+      "name": "Truth-Watch",
+      "level": "world",
+      "status": "live",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 12:45",
+      "problem": "Disinformation spreads faster than debunks — citizens need the debunk attached to the claim",
+      "watches": ["IFCN fact-checkers", "Correctiv", "AFP", "EU DSA enforcement"],
+      "impact_estimate": "Every false narrative shipped WITH its credible debunk and source",
+      "open_items": ["debunk pairing rule", "DSA enforcement tracker"]
+    },
+    {
+      "id": "climate-watch",
+      "name": "Climate-Watch",
+      "level": "world",
+      "status": "live",
+      "repo": "mikelninh/citizen-agents",
+      "cadence": "daily 13:30",
+      "problem": "Corporate net-zero promises vs. real emissions — citizens can't see who's greenwashing",
+      "watches": ["UNFCCC", "IEA", "Carbon Market Watch"],
+      "impact_estimate": "Pledge-vs-reality gap with numbers, per company and per government",
+      "open_items": ["greenwashing case tracker", "NDC progress feed"]
     }
   ],
   "principles": [

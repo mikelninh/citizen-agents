@@ -1,0 +1,53 @@
+# Citizen Agents — self-host bundle (Docker Compose)
+# Run every MCP server on YOUR OWN infrastructure. No data leaves your network.
+# Usage: docker compose up -d   (each server on its own port)
+
+services:
+  gitlaw:
+    image: ghcr.io/mikelninh/gitlaw:latest   # or build: ./gitlaw
+    ports: ["8010:8010"]
+    environment:
+      MCP_TRANSPORT: "sse"
+    restart: unless-stopped
+
+  flight-rights:
+    image: ghcr.io/mikelninh/flight-rights-mcp:latest
+    ports: ["8011:8011"]
+    environment:
+      MCP_TRANSPORT: "sse"
+    restart: unless-stopped
+
+  wohngeld:
+    image: ghcr.io/mikelninh/wohngeld-mcp:latest
+    ports: ["8012:8012"]
+    environment:
+      MCP_TRANSPORT: "sse"
+    restart: unless-stopped
+
+  elterngeld:
+    image: ghcr.io/mikelninh/elterngeld-mcp:latest
+    ports: ["8013:8013"]
+    environment:
+      MCP_TRANSPORT: "sse"
+    restart: unless-stopped
+
+  agb-reader:
+    image: ghcr.io/mikelninh/agb-reader-mcp:latest
+    ports: ["8014:8014"]
+    environment:
+      MCP_TRANSPORT: "sse"
+    restart: unless-stopped
+
+  pmm:
+    image: ghcr.io/mikelninh/pmm-mcp:latest
+    ports: ["8015:8015"]
+    environment:
+      MCP_TRANSPORT: "sse"
+    restart: unless-stopped
+
+# NOTE:
+# - Images: publish via `docker buildx build --push` from each repo, or use
+#   `pip install -e .` + `civic-ai-mcp init` locally instead of Docker.
+# - Offline/air-gapped: build the images once, `docker save`, transfer, `docker load`.
+# - Each server is self-contained (no DB, no API key) — see per-repo READMEs.
+# - Health: each server exposes /health (from civic-ai-mcp-toolkit).

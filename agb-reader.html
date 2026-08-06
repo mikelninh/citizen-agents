@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AGB-Reader — „Dürfen die das?" Klausel-Check</title>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --purple:#533afd; --purple-hover:#4434d4; --purple-light:#b9b9f9; --purple-soft:#d6d9fc;
+    --navy:#061b31; --label:#273951; --body:#64748d; --border:#e5edf5;
+    --green:#15be53; --green-text:#108c3d; --amber:#9b6829; --red:#ea2261;
+    --brand-dark:#1c1e54; --shadow:rgba(50,50,93,0.25) 0px 30px 45px -30px, rgba(0,0,0,0.1) 0px 18px 36px -18px;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#f7f9fc;color:var(--label);font-family:'Source Sans 3',system-ui,sans-serif;font-feature-settings:"ss01";line-height:1.55;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:820px;margin:0 auto;padding:0 24px}
+  nav{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:10}
+  .nav-inner{display:flex;align-items:center;gap:16px;padding:14px 0}
+  .back{color:var(--purple);text-decoration:none;font-size:14px;padding:6px 12px;border-radius:6px;border:1px solid var(--purple-light);transition:all .15s}
+  .back:hover{background:rgba(83,58,253,0.05)}
+  .logo{font-weight:600;color:var(--navy);font-size:15px}
+  header{padding:48px 0 12px;text-align:center}
+  .kicker{font-size:11px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--purple);margin-bottom:12px}
+  h1{font-size:40px;font-weight:300;letter-spacing:-0.9px;color:var(--navy);line-height:1.1}
+  .sub{font-size:16px;font-weight:300;color:var(--body);margin:12px auto 0;max-width:560px}
+  .card{background:#fff;border:1px solid var(--border);border-radius:8px;box-shadow:var(--shadow);padding:28px;margin-top:28px}
+  textarea{width:100%;min-height:180px;padding:14px;border:1px solid var(--border);border-radius:4px;font-size:14px;font-family:'Source Code Pro',monospace;color:var(--navy);resize:vertical;transition:border .15s;line-height:1.5}
+  textarea:focus{outline:none;border-color:var(--purple)}
+  .btn{width:100%;margin-top:14px;padding:13px;border:none;border-radius:4px;background:var(--purple);color:#fff;font-size:16px;font-weight:500;cursor:pointer;transition:background .15s}
+  .btn:hover{background:var(--purple-hover)}
+  .hint{font-size:12px;color:var(--body);margin-top:10px;text-align:center}
+  .results{display:none;margin-top:22px}
+  .results.show{display:block;animation:fade .3s ease}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .summary{border-radius:8px;padding:18px;margin-bottom:14px;font-size:15px;border:1px solid var(--border)}
+  .summary.ok{background:rgba(21,190,83,0.07);border-color:rgba(21,190,83,0.3);color:var(--green-text)}
+  .summary.warn{background:rgba(234,34,97,0.06);border-color:rgba(234,34,97,0.25);color:var(--red)}
+  .summary b{font-weight:600}
+  .hit{border:1px solid var(--border);border-radius:8px;background:#fff;padding:16px;margin-bottom:10px;box-shadow:rgba(23,23,23,0.05) 0px 3px 6px}
+  .hit .h{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+  .hit .t{font-weight:600;color:var(--navy);font-size:14.5px}
+  .hit .par{display:inline-block;font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:0.5px;padding:2px 9px;border-radius:4px;background:rgba(234,34,97,0.1);color:var(--red);border:1px solid rgba(234,34,97,0.25)}
+  .hit .why{margin-top:7px;font-size:13.5px;color:var(--body)}
+  .hit .why b{color:var(--label);font-weight:500}
+  .hit .ex{margin-top:6px;font-size:12.5px;color:var(--body);border-left:2px solid var(--purple-light);padding-left:10px}
+  footer{margin-top:40px;padding:20px 0 40px;text-align:center;color:var(--body);font-size:12.5px;border-top:1px solid var(--border)}
+  footer b{color:var(--navy);font-weight:500}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav-inner">
+  <a class="back" href="site.html">← Zurück</a>
+  <span class="logo">🧾 AGB-Reader</span>
+</div></nav>
+
+<div class="wrap">
+  <header>
+    <div class="kicker">BGB §§ 305c · 307 · 308 · 309 · kostenlos</div>
+    <h1>„Dürfen die <em style="font-style:normal;color:var(--purple)">das</em>?"</h1>
+    <p class="sub">Füge AGB ein — der Reader findet Klauseln, die gegen das Gesetz verstoßen, mit dem genauen §.</p>
+  </header>
+
+  <div class="card">
+    <textarea id="agb" placeholder="AGB hier einfügen… z. B.:&#10;&#10;„Der Verkäufer behält sich einseitige Preiserhöhungen vor."&#10;„Aufrechnung mit Gegenforderungen ist ausgeschlossen."&#10;„Es gilt ausschließlich Gerichtsstand München.""></textarea>
+    <button class="btn" onclick="check()">Klauseln prüfen</button>
+    <div class="hint">Nur Mustererkennung — keine Rechtsberatung. Erkennung gemäß AGB-Recht (BGB).</div>
+  </div>
+
+  <div class="results" id="results"></div>
+
+  <footer>AGB-Reader · engine: agb-reader-mcp (open source, 25 Tests) · <b>Niemand liest AGB — jetzt übernimmt das der Rechner.</b></footer>
+</div>
+
+<script>
+// Pattern catalog — BGB §§ 308/309 red flags + common unfair clauses
+// NOTE: German closing quotes inside strings are written as \u201C to avoid breaking JS strings
+const RULES = [
+  {p:/einseitige[^.]*preis(änderung|erhöhung|anpassung)/i, par:"§ 309 Nr. 1 BGB", t:"Einseitige Preiserhöhung", why:"Preisänderungen nur mit ausdrücklicher Vereinbarung und bei berechtigtem Grund zulässig.", ex:'Beispiel: \u201eDer Anbieter kann die Preise jederzeit anpassen.\u201c → unwirksam'},
+  {p:/aufrechnung[^.]*ausgeschlossen|aufrechnungsverbot/i, par:"§ 309 Nr. 3 BGB", t:"Aufrechnungsverbot", why:"Aufrechnung mit unbestrittenen oder rechtskräftig festgestellten Forderungen darf nicht ausgeschlossen werden.", ex:'Beispiel: \u201eDie Aufrechnung ist ausgeschlossen.\u201c → unwirksam'},
+  {p:/gerichtsstand[^.]*(münchen|berlin|hamburg|frankfurt|köln|ort des|sitz des|am sitz)/i, par:"§ 305c BGB", t:"Überraschender Gerichtsstand", why:"Gerichtsstand weit weg vom Verbraucherwohnsitz ist überraschend und unwirksam — Verbraucher klagen am eigenen Wohnsitz.", ex:'Beispiel: \u201eGerichtsstand ist München.\u201c bei einem Berliner Kunden → unwirksam'},
+  {p:/pauschal[^.]*(storn|gebühr|schadenersatz)|storno(pauschale|gebühr)/i, par:"§ 309 Nr. 5 BGB", t:"Pauschaler Schadenersatz", why:"Pauschalierter Schadenersatz nur zulässig, wenn er nachweislich angemessen ist und der Kunde das Nachsehen hat.", ex:'Beispiel: \u201eBei Stornierung wird pauschal 50 % berechnet.\u201c → prüfen'},
+  {p:/h[äa]ftung[^.]*(ausgeschlossen|beschr[äa]nkt)|keine haftung|ohne haftung/i, par:"§ 309 Nr. 7 BGB", t:"Haftungsausschluss", why:"Haftung für Vorsatz, grobe Fahrlässigkeit, Körper/ Leben/Gesundheit und wesentliche Vertragspflichten darf nicht ausgeschlossen werden.", ex:'Beispiel: \u201eJede Haftung wird ausgeschlossen.\u201c → unwirksam'},
+  {p:/lieferfrist[^.]*unverbindlich|liefertermin[^.]*unverbindlich/i, par:"§ 308 Nr. 1 BGB", t:"Unverbindliche Lieferfrist", why:"Der Verwender darf sich nicht einseitig von zugesagten Fristen lösen — unbestimmte Fristen sind unwirksam.", ex:'Beispiel: \u201eLiefertermine sind unverbindlich.\u201c → unwirksam'},
+  {p:/r[üu]cktrittsrecht[^.]*(ausschließlich|nur dem)|nur dem verk[äa]ufer/i, par:"§ 308 Nr. 3 BGB", t:"Einseitiges Rücktrittsrecht", why:"Rücktrittsrecht darf nicht nur dem Unternehmen vorbehalten sein.", ex:'Beispiel: \u201eDer Verkäufer kann vom Vertrag zurücktreten, der Käufer nicht.\u201c → unwirksam'},
+  {p:/vertragsstrafe|konventionalstrafe/i, par:"§ 309 Nr. 6 BGB", t:"Vertragsstrafe", why:"Vertragsstrafen bei Zahlungsverzug oder Abnahme sind gegenüber Verbrauchern unzulässig.", ex:'Beispiel: \u201eBei Zahlungsverzug wird eine Vertragsstrafe von 5 % fällig.\u201c → unwirksam'},
+  {p:/einseitig[^.]*(ändern|anpassen|modifizieren)|kann jederzeit[^.]*(ändern|anpassen)/i, par:"§ 308 Nr. 4 BGB", t:"Einseitige Vertragsänderung", why:"Leistungs- und Preisanpassungen nur mit nachvollziehbarem Grund und Kündigungsrecht des Kunden.", ex:'Beispiel: \u201eWir können die Bedingungen jederzeit ändern.\u201c → unwirksam'},
+  {p:/abtretung[^.]*(ausgeschlossen|bedarf der zustimmung)|keine abtretung/i, par:"§ 309 Nr. 10 BGB", t:"Abtretungsverbot", why:"Abtretung von Geldforderungen darf dem Verbraucher nicht verboten werden.", ex:'Beispiel: \u201eForderungen dürfen nicht abgetreten werden.\u201c → unwirksam'},
+  {p:/widerrufsrecht[^.]*(ausgeschlossen|erlischt)|kein widerrufsrecht/i, par:"§ 312g BGB", t:"Widerruf eingeschränkt", why:"Das gesetzliche Widerrufsrecht kann bei Verbraucherverträgen nicht pauschal ausgeschlossen werden.", ex:'Beispiel: \u201eEin Widerruf ist ausgeschlossen.\u201c → prüfen'},
+  {p:/nachweis[^.]*(ausschließlich durch|nur durch|ausschließlich der verk[äa]ufer)/i, par:"§ 309 Nr. 12 BGB", t:"Beweislast umgekehrt", why:"Die Beweislast darf nicht zu Lasten des Verbrauchers verschoben werden.", ex:'Beispiel: \u201eDer Kunde muss nachweisen, dass…\u201c → unwirksam'},
+  {p:/schriftform[^.]*(ausschließlich|nur)|nur schriftlich gültig/i, par:"§ 309 Nr. 13 BGB", t:"Erschwerte Form", why:"Schriftformerfordernisse für Erklärungen des Kunden dürfen nicht schwerer sein als für das Unternehmen.", ex:'Beispiel: \u201eÄnderungen bedürfen der Schriftform des Verkäufers.\u201c → unwirksam'},
+];
+function esc(s){return String(s??"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;");}
+function check(){
+  const text=document.getElementById("agb").value;
+  const box=document.getElementById("results");
+  if(!text.trim()){ box.className="results show"; box.innerHTML=`<div class="summary warn"><b>Leer:</b> Bitte AGB einfügen.</div>`; return; }
+  const hits=RULES.filter(r=>r.p.test(text)).map(r=>{
+    const m=text.match(r.p); const s=Math.max(0,(m?.index||0)-60);
+    return {...r, ctx: text.slice(s, s+220).replace(/\s+/g," ").trim()};
+  });
+  box.innerHTML="";
+  if(hits.length){
+    box.innerHTML+=`<div class="summary warn"><b>${hits.length} auffällige Klausel${hits.length>1?"n":""} gefunden.</b> Nicht alles davon ist automatisch unwirksam — aber es lohnt sich, genau hinzusehen.</div>`;
+    hits.forEach(h=>{
+      box.innerHTML+=`<div class="hit"><div class="h"><span class="t">${esc(h.t)}</span><span class="par">${esc(h.par)}</span></div>
+        <div class="why"><b>Warum:</b> ${esc(h.why)}</div>
+        <div class="ex">${esc(h.ex)}</div>
+        <div class="ex" style="border-color:var(--border);color:var(--body)">„…${esc(h.ctx)}…"</div></div>`;
+    });
+  }else{
+    box.innerHTML+=`<div class="summary ok"><b>Keine der bekannten Verbotsklauseln gefunden.</b> Das heißt nicht, dass alles zulässig ist — nur dass kein Muster aus unserem Katalog (§§ 308/309 BGB) zutrifft.</div>`;
+  }
+  box.className="results show";
+}
+</script>
+</body>
+</html>
