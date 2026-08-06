@@ -227,3 +227,80 @@ You said **both** — good, that's the right call, and it's why the game needs a
 
 ---
 *Director's note: I did not touch a line of `src/`. Engineer implements, human merges.*
+
+---
+---
+
+# 🎬 THIRD PASS — the layer nobody has looked at yet
+
+*Passes 1 and 2 covered the weapon economy (kill the carbine, stamina, guard/reflect, server authority). Nothing has changed in `src/` since — HEAD is still `0bd23bd`. So this pass deliberately goes somewhere else: **the body**. Not what you hold, but what other people can SEE you holding, and what your legs can do about it.*
+
+## VISION
+
+Class-based PvP is a **reading** game before it is a reflex game. In Nostale you know the fight the instant the other silhouette resolves. BlaKeks has beautiful weapons that literally nobody else in the match can see — and legs that can only walk, sprint or crouch. Until a remote player's blade glows across the field and until my legs can commit to a direction and *dodge*, "saber = movement + timing" and "projectiles = positioning + prediction" are slogans, not mechanics. Both weapon families need the same two things from outside the weapon files: **a readable third-person presence** and **a movement verb worth predicting.**
+
+## WHAT I CHALLENGE
+
+**5. Remote players are unarmed mannequins. `src/entities/remote.js` has no weapon at all.**
+The whole file's visual state is `this.hp`, `this.label = makeLabel(name)` at `y = 2.25`, and a `_veil` fade (lines 38–43, 111). There is no held model, no hand attachment, no `weaponId` in the state the remote reconstructs. `src/entities/avatar.js` contains zero references to a hand prop — I grepped for `weapon|hold|hand|prop` and got one docstring comment about animation clips. So: the Verdant Blade's three nested glow shells, its `PointLight(SABER.color, 0, 9, 2)` and its ribbon trail (`saber.js:99–121`) exist **only in the local player's first-person view**. Eight friends in a match, and not one of them can tell whether the person running at them is holding a Leaf Blade or a Petal Bow. This is the single biggest hole in the "class identity" ambition from Pass 2 — you can halve the loadout to force a lane, and it still won't be readable, because there's nothing on the body to read.
+
+**6. `src/entities/player.js` has no dodge, and therefore projectiles cannot actually be dodged.**
+`SPEEDS = { walk: 5.4, sprint: 8.6, crouch: 2.7, swim: 3.1 }` (line 10) and that is the entire movement vocabulary. `this.sprinting` is just `ShiftLeft` held (line 161). `tools.js` sells the pivot as "you can see it coming and dodge" — but with an 8.6 m/s ceiling and no burst of lateral speed, a `petalbow` petal at `speed: 62` covers 20m in 0.32s. You cannot walk out of that. The dodge the design doc promises is not implemented anywhere. Meanwhile `src/shared/items.js` outsources the entire feeling of mobility to a *pickup* — `dash: { duration: 7, effect: { speedScale: 1.5 } }`. Movement excitement should be a button you own, not a crate you find.
+
+**7. `src/shared/conditions.js` is doing the job that the match loop should be doing.**
+Seven modifiers — Nightfall, Fog Bank, Low Gravity, Rush, One Life, Scarcity, Overgrown — and they're good, cheap variety. But they're *pre-round dressing*: rolled up front and joined with `·` in a label (line 117). Nothing happens **during** a round to create the arena moment. There is no shrinking play area beat, no mid-round objective, no "last 30 seconds" pressure. Smash has the ledge, Splatoon has the final-minute turf frenzy, Quake has the armour timer. BlaKeks has a timer that runs out. The variety is in the *setup*, not the *story*.
+
+## THE ONE BIG IDEA — **Show the weapon, give them a Dodge Roll**
+
+One session. Two changes. Both weapon families get first-class treatment from the movement/readability layer.
+
+**A. Third-person weapon attachment.** Add `weaponId` to the per-player network state and mount the real model on the remote avatar's right hand:
+- Ranged → `buildToolModel(id)` already returns a `group` (`tools.js:177`); it just needs a world-scale variant instead of the 0.4–0.5 view-model scale.
+- Melee → instantiate a lightweight `Saber` in "world mode": full 1.55-unit blade, ignition driven by whether the remote is holding it, `PointLight` intensity halved for perf, trail enabled only while their swing flag is set.
+- **This is the readability payoff:** a lit green blade at 40m says *back up*. A drawn Petal Bow says *break line of sight*. That single visual is what makes the Pass-2 RPS legible instead of theoretical.
+
+**B. Dodge Roll (double-tap A/D/S, or `Ctrl`+direction).** A 0.35s burst to ~14 m/s lateral, with **0.12s of i-frames at the start** and a 0.45s recovery where you cannot dodge again.
+- **For the projectile player:** this is the answer to a lunging saber. Positioning becomes a live skill instead of a starting position.
+- **For the saber player:** the dodge *is* the approach tool. Roll through the petal, arrive in reach. Saber = movement + timing, finally literally true.
+- Cost it from the **same stamina pool as the saber guard** (Pass 2, Directive 2) if Mikel answers "shared" below — that makes every roll a swing you didn't take, and it is the tightest version of this system.
+
+Nothing here needs new art. `buildToolModel` and `Saber` already exist; `player.js` already has a velocity integrator and a `speedScale`.
+
+## STUDIO DIRECTIVES
+
+### Directive 1 — Weapon on the body (P0)
+**Files:** `src/entities/remote.js`, `src/entities/avatar.js`, `src/modes/match-mode.js` (state emit), `src/net/client.js` if the state packet needs a field
+- Add `w` (weapon id) and `sw` (swing/fire flag) to the per-player snapshot alongside the existing `hp`/`alive`.
+- `remote.js`: create a `handAnchor` `Object3D` on the avatar's right arm; on `w` change, dispose the old model and mount `buildToolModel(w)` at world scale (~1.0) or a `Saber` with `wantIgnite: true` for `leafblade`.
+- Respect `_veil`: a veiled player's weapon must fade with them (reuse the line 111 visibility gate).
+**Acceptance:** in a 2-client `tools/mptest.mjs` run, client A swaps to the Leaf Blade and client B sees a lit green blade in A's hand within one snapshot; swapping to `petalbow` swaps the visible model; a veiled player shows no weapon; frame time in an 8-bot match does not regress more than 1ms.
+
+### Directive 2 — Dodge Roll (P0)
+**Files:** `src/entities/player.js`, `src/core/input.js`, `src/ui/ui.js`
+- `input.js`: detect double-tap (<0.28s) on `KeyA`/`KeyD`/`KeyS`, and `ControlLeft`+direction as an accessibility alias.
+- `player.js`: `dodge(dir)` → 0.35s at ~14 m/s along `dir`, `this.iframes = 0.12`, `this.dodgeCooldown = 0.45`, blocked while crouching/swimming/staggered. Expose `iframes` so the hit path can ignore damage.
+- `ui.js`: a thin cooldown pip under the crosshair. No number.
+**Acceptance:** double-tapping A visibly launches the player sideways ~4.5m; a `petalbow` shot timed into the first 0.12s deals no damage; you cannot chain-dodge (second input inside 0.45s is ignored); the roll works identically while holding any of the five tools.
+
+### Directive 3 — The Last Thirty (P1)
+**Files:** `src/shared/match.js`, `src/shared/regions.js`, `src/ui/ui.js`
+- At `timeLeft <= 30` in a `tactical` round, emit a `finale` event: play area contracts toward a single region from `regions.js`, all charge regen ×1.4, and everyone outside the shrinking area takes 4 soak/sec.
+- UI: the timer turns and pulses; a one-line callout — "THE LAST THIRTY".
+**Acceptance:** rounds that would have ended in a stalemate now force contact; the contraction is server-authoritative and identical on all clients; a player who ignores it is bubbled within ~25s; the existing round-end and rematch flow is unchanged.
+
+## PERSONAL CHALLENGE FOR MIKEL
+
+Pass 2 asked you whether Guard is universal or melee-only. Here is the one this pass creates, and it is the more consequential of the two:
+
+> **Does the Dodge Roll spend the same resource as the saber?**
+>
+> **Shared pool** (roll, swing and guard all drain one bar): every fight becomes a budget. A saber player who rolls in has less left to swing with; a ranged player who panic-rolls twice is defenceless. It is tense, it is legible, and it makes both families play the *same* mental game with different tools — which is the cleanest possible answer to your "BOTH" call.
+>
+> **Free roll on a flat cooldown**: the game is faster, friendlier, and eight tipsy friends will have more fun on night one — but the ceiling is lower and the roll stops being a decision.
+>
+> **My call: shared.** But I want you to say it out loud before the engineer starts Directive 2, because it decides whether `Stamina` lives on the saber or on `player.js`.
+>
+> And the dare: **let me see other people's weapons before you balance another number.** Every tuning argument this studio has had today has been about numbers nobody in the match can perceive. Readability first — then balance means something.
+
+---
+*Director's note, third pass: still zero lines of `src/` touched. Files read this pass: `src/entities/remote.js`, `src/entities/avatar.js`, `src/entities/player.js`, `src/shared/conditions.js`, `src/shared/items.js`, `src/shared/match.js`.*
