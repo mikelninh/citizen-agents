@@ -1,0 +1,39 @@
+{
+  "date": "2026-08-06",
+  "changes": 5,
+  "benefits_touched": ["Wohngeld", "Bürgergeld/Grundsicherung (SGB II)", "Elterngeld", "Kindergeld"],
+  "highlights": [
+    "Wohngeld-Neuordnung im Kabinett: Formel-Koeffizient C wird gesenkt -> niedrigere Auszahlungen; Freibeträge (u.a. Pflegebedarf) geändert. Noch nicht in Kraft.",
+    "Haushalt 2026: Wohngeld-Ansatz um 150,13 Mio. EUR über dem Regierungsentwurf angehoben.",
+    "Neue Grundsicherung ab 01.07.2026: gestaffelte Sanktionen entfallen, direkt 30 % für 3 Monate; ab 3 versäumten Terminen vollständiger Leistungsverlust inkl. Wohnkosten.",
+    "Elterngeld-Entwurf (Prien): Basiselterngeld 14 -> 12 Monate, 3 Partnermonate, ElterngeldPlus 28 -> 24 Monate, Partnerschaftsbonus gestrichen, Min 300 -> 330 EUR, Max 1.800 -> 1.900 EUR; Einkommensgrenze bleibt 175.000 EUR.",
+    "Kindergeld seit 01.01.2026 bei 259 EUR/Kind/Monat; geplante Stufenerhöhung Richtung 272 EUR und antragslose Auszahlung."
+  ],
+  "sources": [
+    "https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796",
+    "https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf",
+    "https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform",
+    "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+    "https://www.bundestag.de/presse/hib/kurzmeldungen-1127152",
+    "https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460",
+    "https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen",
+    "https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition",
+    "https://www.tagesschau.de/inland/prien-elterngeld-102.html",
+    "https://www.elterngeld.net/elterngeld-kuerzung.html",
+    "https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810",
+    "https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen",
+    "https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/benefit-watch-2026-08-06",
+    "targeted web research on Wohngeld, Bürgergeld/Grundsicherung, Elterngeld, Kindergeld",
+    "wrote agent-digests/benefit-watch-2026-08-06.md",
+    "wrote agent-logs/benefit-watch-2026-08-06.json",
+    "committed and pushed branch",
+    "opened PR for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/benefit-watch-2026-08-06"
+}
