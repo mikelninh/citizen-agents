@@ -1,0 +1,81 @@
+{
+  "date": "2026-08-06",
+  "repo": "bla-keks-world",
+  "branch": "studio/qa-2026-08-06-dodge",
+  "under_test": {
+    "pr": 4,
+    "title": "Dodge Roll (double-tap burst + i-frames)",
+    "head": "studio/engineer-2026-08-06-dodge",
+    "files_changed": [
+      "src/core/input.js",
+      "src/entities/player.js",
+      "src/modes/match-mode.js",
+      "src/ui/styles.css",
+      "src/ui/ui.js",
+      "tools/dodgetest.mjs"
+    ]
+  },
+  "build_passed": true,
+  "build_output_tail": "56 modules transformed; dist/assets/index-Cm5FVEUJ.js 927.63 kB (gzip 255.73 kB); built in 5.40s; exit 0",
+  "server_booted": true,
+  "server_output": "Bla Keks World server on :8787 (local http://localhost:8787, lan http://192.168.0.7:8787); HTTP GET / -> 200; no throw over 8s uptime; killed cleanly",
+  "tests_run": [
+    { "name": "npm install --no-audit --no-fund", "result": "pass", "detail": "97 packages" },
+    { "name": "npm run build", "result": "pass" },
+    { "name": "node tools/dodgetest.mjs", "result": "pass", "detail": "6/6 assertions: single tap no dodge, double tap <0.28s dodges, endFrame clears, triple tap not a second dodge, 1s apart no dodge, A-then-D no dodge" },
+    { "name": "curl localhost:8787", "result": "pass", "detail": "HTTP 200" }
+  ],
+  "issues_found": [
+    {
+      "severity": "HIGH",
+      "file": "src/modes/match-mode.js",
+      "issue": "I-frames do not exist in multiplayer. Damage is shooter-authoritative: _onProjectileHit returns early when item.owner !== this.localId ('the owner reports it') and the shooter emits {type:'hit'}. The new `hittable` filter only removes the LOCAL player from the LOCAL client's target set, so it only blocks bot shots (host-simulated) and self-hits. A human opponent's client has no knowledge of your player.iframes and will happily resolve and report a hit mid-roll. The headline property of the headline feature is single-player-only.",
+      "suggestion": "Make invulnerability authoritative where damage is applied. Either (a) include an `inv` flag in _localReport() and have the sim/room drop 'hit' requests whose target reported inv within the last ~150ms, or (b) validate in the hit handler against the last received remote state. Option (a) is the smaller diff and matches the existing report plumbing."
+    },
+    {
+      "severity": "MEDIUM",
+      "file": "src/modes/match-mode.js",
+      "issue": "The filtered list is passed to _driveBots(dt, st, hittable), which builds ctx.targets from it. For the 0.12s of i-frames the local player vanishes from every bot's target list entirely — not just from hit resolution but from perception, chase and hide-spot avoidance. Bots may drop aim, re-target, or path away and then snap back, which reads as an AI stutter caused by the victim's dodge.",
+      "suggestion": "Pass the unfiltered `parts` to _driveBots and enforce invulnerability only at the point of damage (the ctx.onHit / onTag callbacks), so bot perception is unchanged."
+    },
+    {
+      "severity": "MEDIUM",
+      "file": "src/entities/player.js",
+      "issue": "dodge() has no grounded check. Crouching, swimming, frozen and cooldown are all refused, but an airborne player can double-tap into a 14 m/s horizontal air burst that overwrites vel.x/vel.z entirely, ignoring the ACCEL.air/FRICTION.air model. Chained with the 0.8s total lockout this gives a repeatable air-mobility tool that was almost certainly not the design intent for a committed ground roll.",
+      "suggestion": "Add `if (!this.grounded) return false;` to dodge(), or gate air dodges to one per airtime with an explicit reduced speed."
+    },
+    {
+      "severity": "MEDIUM",
+      "file": "src/modes/match-mode.js",
+      "issue": "Inconsistent i-frame coverage in hide & seek. _hideSeekLocal is called with the unfiltered `parts`, and a bot seeker's tag goes through ctx.onTag using the filtered list — so a bot cannot tag you mid-roll but a human seeker can, and your own tag reach is unaffected. Dodging is a real defensive tech against AI and a no-op against people, in the same mode.",
+      "suggestion": "Decide explicitly whether the roll should dodge tags at all, then apply that rule in one place for both bots and humans (same fix as the HIGH issue)."
+    },
+    {
+      "severity": "LOW",
+      "file": "src/entities/player.js",
+      "issue": "Entering water cancels dodgeTime but leaves dodgeCooldown at its full 0.8s and leaves iframes running. A roll clipped by a puddle costs the full cooldown for a fraction of the distance.",
+      "suggestion": "On the water cancel, also clamp dodgeCooldown down to DODGE.cooldown so the player is not punished for terrain."
+    },
+    {
+      "severity": "LOW",
+      "file": "src/ui/ui.js",
+      "issue": "The dodge pip renders only inside the `h.crosshair && h.alive !== false` branch, so it disappears whenever the crosshair is hidden (e.g. hide-phase / non-combat states) even though the roll is still available. Minor readability gap, not a functional bug.",
+      "suggestion": "Emit the pip alongside the crosshair block rather than nested inside it, if the roll is usable in those states."
+    }
+  ],
+  "verified_correct": [
+    "Yaw-to-world direction math in _dodgeInput matches the engine convention (forward = (-sin, -cos), right = (cos, -sin)); W/A/S/D and arrow keys map to the correct world directions.",
+    "Input.doubleTapped_ is cleared in endFrame() alongside justPressed, so no stale edge signal leaks across frames; the _lastTapAt sentinel (-9) correctly prevents a triple tap becoming two dodges.",
+    "reset() clears dodgeTime, dodgeCooldown and iframes, so respawn cannot inherit a live roll.",
+    "No new intervals, timers or listeners were added; no memory-leak surface in this diff.",
+    "dodgeCharge is clamped 0..1 and the UI re-clamps before rendering; no NaN path found."
+  ],
+  "untested": [
+    "Actual game feel — automated QA cannot judge whether 14 m/s / 0.35s / 0.12s i-frames / 0.45s cooldown is fun, readable or overpowered. This needs a human in a match.",
+    "Real multiplayer with 2+ human clients; the HIGH issue above was found by reading the netcode path, not by observing a live desync.",
+    "Whether the 0.12s i-frame window survives real network latency even after being made authoritative — at 80ms RTT the window is close to a single round trip.",
+    "Browser-side rendering: the dodge pip CSS and glow were reviewed as source, not rendered or screenshotted.",
+    "Interaction of the roll with terrain collision on the curved planet surface (steep slopes, cliff edges, launching off the world).",
+    "Controller/touch input paths, if any exist outside src/core/input.js keyboard handling."
+  ]
+}
