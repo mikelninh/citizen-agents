@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Die Wächter — warum du sie brauchst, was sie dir bringen</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236e5bff'/%3E%3Cstop offset='0.55' stop-color='%23ff6ec7'/%3E%3Cstop offset='1' stop-color='%23ffa26b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='48' height='48' rx='11' fill='url(%23g)'/%3E%3Cpath d='M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3Ccircle cx='24' cy='24' r='7.5' fill='%23fff'/%3E%3Cpath d='M20.5 24 L23 26.5 L27.8 21.4' stroke='%236e5bff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fdf9f2; --ink:#26242b; --ink2:#5a5560; --ink3:#a39dab;
+    --line:rgba(38,36,43,0.10); --line2:rgba(38,36,43,0.18);
+    --violet:#6e5bff; --rose:#ff6ec7; --peach:#ffa26b;
+    --green:#2e8b6d; --lemon:#c07f2a;
+    --grad:linear-gradient(115deg,#6e5bff 0%,#ff6ec7 55%,#ffa26b 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:rgba(255,110,199,0.22)}
+  .aurora{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .aurora .layer{position:absolute;inset:-20%;filter:blur(120px);animation:drift 38s ease-in-out infinite alternate}
+  .aurora .l1{background:radial-gradient(closest-side at 25% 18%,rgba(255,162,107,0.20),transparent 70%)}
+  .aurora .l2{background:radial-gradient(closest-side at 78% 30%,rgba(255,110,199,0.15),transparent 70%);animation-delay:-13s}
+  .aurora .l3{background:radial-gradient(closest-side at 55% 90%,rgba(110,91,255,0.13),transparent 70%);animation-delay:-26s}
+  @keyframes drift{0%{transform:translate(0,0) rotate(0) scale(1)}50%{transform:translate(3vw,2vh) rotate(1.2deg) scale(1.06)}100%{transform:translate(-2vw,3vh) rotate(-1deg) scale(1.1)}}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 36px;position:relative;z-index:1}
+
+  nav{display:flex;align-items:center;padding:30px 0;gap:28px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand .mark{width:36px;height:36px;border-radius:12px;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(255,110,199,0.35)}
+  .brand .mark svg{width:27px;height:27px}
+  .brand .word{font-size:17px;font-weight:600;letter-spacing:-0.3px;color:var(--ink)}
+  .brand .word em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav .links{margin-left:auto;display:flex;gap:8px;align-items:center}
+  nav .links a{color:var(--ink2);text-decoration:none;font-size:14px;padding:8px 14px;border-radius:999px;transition:all .18s}
+  nav .links a:hover{color:var(--ink);background:rgba(255,110,199,0.10)}
+  nav .links .pill{font-weight:500;color:#fff;background:var(--grad);padding:8px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(255,110,199,0.3)}
+
+  .hero{padding:80px 0 34px;max-width:860px}
+  .kicker{display:flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--violet);margin-bottom:26px;font-weight:500}
+  h1{font-size:clamp(42px,6.6vw,74px);font-weight:500;letter-spacing:-0.04em;line-height:1.02;margin-bottom:24px}
+  h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .dek{font-size:17.5px;font-weight:300;color:var(--ink2);max-width:620px;line-height:1.7}
+  .dek b{font-weight:500;color:var(--ink)}
+
+  /* WATCHER CARD — the 3-part structure */
+  .watcher{display:grid;grid-template-columns:70px 1fr;gap:22px;padding:34px 0;border-bottom:1px solid var(--line);position:relative}
+  .watcher .ic-box{width:64px;height:64px;border-radius:18px;background:var(--grad);display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 8px 22px rgba(255,110,199,0.3);flex-shrink:0}
+  .watcher .body .top{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;margin-bottom:6px}
+  .watcher .body .nm{font-size:24px;font-weight:500;letter-spacing:-0.02em}
+  .watcher .body .tag{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--green);border:1px solid rgba(46,139,109,0.35);border-radius:999px;padding:4px 12px;font-weight:500}
+  .watcher .body .tag.warn{color:var(--lemon);border-color:rgba(192,127,42,0.4)}
+  .watcher .body .why{font-size:15px;color:var(--ink2);font-weight:300;margin-bottom:14px;max-width:640px}
+  .watcher .body .why b{color:var(--ink);font-weight:500}
+  .watcher .body .why .hl{background:linear-gradient(120deg,rgba(255,110,199,0.15),rgba(255,162,107,0.15));padding:1px 6px;border-radius:4px;font-weight:500;color:var(--ink)}
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+  .col{padding:18px 20px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,0.6)}
+  .col .k{font-size:11px;letter-spacing:1.5px;text-transform:uppercase;color:var(--rose);font-weight:500;margin-bottom:8px}
+  .col .v{font-size:14px;color:var(--ink2);font-weight:300;line-height:1.6}
+  .col .v b{color:var(--ink);font-weight:500}
+  .col .v .pot{font-size:26px;font-weight:500;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;display:block;margin-bottom:4px}
+  .col a{color:var(--violet);font-weight:500;text-decoration:none;border-bottom:1px solid rgba(110,91,255,0.3)}
+  .col a:hover{border-color:var(--violet)}
+  .check{grid-column:1/-1;display:flex;align-items:center;gap:10px;margin-top:2px;padding:12px 18px;border-radius:12px;background:rgba(46,139,109,0.08);font-size:13.5px;color:var(--ink2)}
+  .check .n{width:22px;height:22px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:500;flex-shrink:0}
+  .check b{color:var(--ink);font-weight:500}
+
+  .note{margin-top:30px;padding:22px 0;border-top:1px solid var(--line);font-size:13.5px;color:var(--ink3);max-width:720px}
+  .note b{color:var(--ink);font-weight:500}
+  footer{padding:44px 0 70px;border-top:1px solid var(--line);color:var(--ink3);font-size:13px;text-align:center}
+  footer b{color:var(--ink);font-weight:500}
+  @media(max-width:640px){.wrap{padding:0 20px}.watcher{grid-template-columns:1fr}.cols{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="aurora"><div class="layer l1"></div><div class="layer l2"></div><div class="layer l3"></div></div>
+
+<div class="wrap">
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 48 48"><path d="M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="24" cy="24" r="7.5" fill="#fff"/><path d="M20.5 24 L23 26.5 L27.8 21.4" stroke="#6e5bff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="word">Citizen <em>Agents</em></span>
+    </a>
+    <div class="links">
+      <a class="pill" href="index.html">← Start</a>
+    </div>
+  </nav>
+
+  <div class="hero">
+    <div class="kicker">Die Wächter · Warum · Potenzial · Prüfen</div>
+    <h1>Wer dir <span class="serif">sofort helfen</span> kann.</h1>
+    <p class="dek">Kein Abstraktes: Jeder Wächter sagt dir in 30 Sekunden, <b>warum du ihn brauchst</b>, <b>was er dir jetzt bringen kann</b> — und wie du es <b>selbst prüfst</b>. Alle Zahlen mit Quelle, alle Prüf-Wege echt.</p>
+  </div>
+
+  <!-- 1. LEISTUNGS-WÄCHTER -->
+  <div class="watcher" id="leistung">
+    <div class="ic-box">🏛️</div>
+    <div class="body">
+      <div class="top"><span class="nm">Leistungs-Wächter</span><span class="tag">Jetzt prüfen</span></div>
+      <div class="why">Der meiste Bedarf in ganz Deutschland — <span class="hl">73 % der Menschen</span> hätten in einem Jahr mindestens einmal Anspruch auf eine staatliche Leistung. Und die meisten wissen es nicht: <b>50–87 % des Wohngelds bleiben ungenutzt</b>, 60–88 % des Kinderzuschlags.</div>
+      <div class="cols">
+        <div class="col"><div class="k">Dein Potenzial</div><div class="v"><span class="pot">€1 Mrd+</span>Wohngeld liegt jährlich unbeansprucht. Allein in deinem Haushalt: oft <b>€100–400/Monat</b>, die dir zustehen.</div></div>
+        <div class="col"><div class="k">Warum du</div><div class="v">Behörden sagen es dir nicht — sie <b>warten auf deinen Antrag</b>. Der Wächter erkennt Änderungen (Formel-Koeffizient, Freigrenzen) und sagt: „jetzt beantragen".</div></div>
+      </div>
+      <div class="check"><span class="n">1</span> <b>Prüfe deinen Anspruch:</b> <a href="rechte-profil.html">Rechte-Profil (5 Fragen, 30 Sekunden, lokal)</a> → <span class="n">2</span> Bei Treffer: <b>Antrag heute</b>, nicht nächste Woche — rückwirkend nur ab Antrag.</div>
+    </div>
+  </div>
+
+  <!-- 2. MIET-WÄCHTER -->
+  <div class="watcher" id="miet">
+    <div class="ic-box">🏠</div>
+    <div class="body">
+      <div class="top"><span class="nm">Miet-Wächter</span><span class="tag warn">Betrifft 58 %</span></div>
+      <div class="why">Deutschlands Druckpunkt Nummer eins: <span class="hl">84 % halten Mieten für überhöht</span>, 52 % der Mieter fühlen sich stark belastet, 15 % zahlen mehr als die Hälfte ihres Nettolohns fürs Wohnen. Und die Mietpreisbremse gilt — <b>wenn man sie kennt</b>.</div>
+      <div class="cols">
+        <div class="col"><div class="k">Dein Potenzial</div><div class="v"><span class="pot">bis zu 20 %</span>Minderung bei formellen Fehlern. Zu hohe Miete nachweisen: <b>Rückzahlung möglich</b>, wenn die ortsübliche Vergleichsmiete überschritten ist.</div></div>
+        <div class="col"><div class="k">Warum du</div><div class="v">Vermieter müssen sich an <b>§ 558 BGB</b> (Mieterhöhung), Mietpreisbremse und Kappungsgrenzen halten. 3 Monate Frist — wer sie verpasst, verliert.</div></div>
+      </div>
+      <div class="check"><span class="n">1</span> <b>Mieterhöhung bekommen?</b> <a href="https://gitlaw-xi.vercel.app/" target="_blank">GitLaw fragen: „§ 558 BGB"</a> → <span class="n">2</span> Erhöhung schriftlich widersprechen, wenn unbegründet. Frist: <b>bis zum Monatsende + 2 Monate</b>.</div>
+    </div>
+  </div>
+
+  <!-- 3. KONSUM-WÄCHTER -->
+  <div class="watcher" id="konsum">
+    <div class="ic-box">✈️</div>
+    <div class="body">
+      <div class="top"><span class="nm">Konsum-Wächter</span><span class="tag">Jetzt prüfen</span></div>
+      <div class="why">Jedes Jahr bleiben <span class="hl">€4–5 Mrd Fluggastrechte unbeansprucht</span> — Airlines zahlen bei Erstanträgen oft gar nicht oder zu wenig. Dazu: 14 Tage Widerruf beim Online-Kauf, unwirksame Klauseln in jedem zweiten Vertrag.</div>
+      <div class="cols">
+        <div class="col"><div class="k">Dein Potenzial</div><div class="v"><span class="pot">€250–600</span>pro verspätetem/gestrichenem Flug (EU261). 30 Sekunden Check, fertige Forderung, Frist 3 Jahre + Jahresende.</div></div>
+        <div class="col"><div class="k">Warum du</div><div class="v">„Außergewöhnliche Umstände" ist die häufigste <b>Ausrede</b> — der EuGH hat sie eng begrenzt. Dein Recht besteht, wenn du es einforderst.</div></div>
+      </div>
+      <div class="check"><span class="n">1</span> <b>Flug verspätet?</b> <a href="eu261.html">EU261-Rechner (30 Sekunden)</a> → <span class="n">2</span> Forderung mit <b>§-Zitat</b> an die Airline — <a href="agb-reader.html">AGB-Reader</a> prüft parallel deine Verträge.</div>
+    </div>
+  </div>
+
+  <!-- 4. FRISTEN-WÄCHTER -->
+  <div class="watcher" id="fristen">
+    <div class="ic-box">⏰</div>
+    <div class="body">
+      <div class="top"><span class="nm">Fristen-Wächter</span><span class="tag warn">Verpasst = verloren</span></div>
+      <div class="why">Fast jedes Recht hat eine Frist: <b>Widerspruch 1 Monat</b>, Einspruch gegen Steuerbescheid 1 Monat, Mieterhöhung 3 Monate, EU261 3 Jahre. Wer die Frist verpasst, verliert das Recht — <b>auch wenn es berechtigt war</b>.</div>
+      <div class="cols">
+        <div class="col"><div class="k">Dein Potenzial</div><div class="v"><span class="pot">0 € verloren</span>Ein Bescheid, eine Mahnung, eine Kündigung — und der Wächter sagt: <b>„Frist endet am 14.09. — Entwurf ist fertig."</b> Kein verlorenes Recht mehr.</div></div>
+        <div class="col"><div class="k">Warum du</div><div class="v">Behörden kalkulieren damit: <b>ein Großteil der Widersprüche</b> kommt zu spät. Wer fristgerecht widerspricht, gewinnt oft — einfach durchs Einhalten.</div></div>
+      </div>
+      <div class="check"><span class="n">1</span> Bescheid bekommen? <b>Datum eintragen</b> → <span class="n">2</span> Widerspruch <b>heute abschicken</b> (reicht formlos, muss nur fristgerecht sein) — Begründung kann nachgereicht werden.</div>
+    </div>
+  </div>
+
+  <!-- 5. RECHTS-WÄCHTER -->
+  <div class="watcher" id="recht">
+    <div class="ic-box">⚖️</div>
+    <div class="body">
+      <div class="top"><span class="nm">Rechts-Wächter</span><span class="tag">Jetzt prüfen</span></div>
+      <div class="why"><span class="hl">5.942 Bundesgesetze</span> — und keiner kennt sie. Aber jede Woche ändert sich eines, das <b>dich</b> betrifft: Miete, Arbeit, Steuer, Familie. Der Wächter liest das Kleingedruckte, damit du es nicht musst.</div>
+      <div class="cols">
+        <div class="col"><div class="k">Dein Potenzial</div><div class="v"><span class="pot">31 Musterbriefe</span>jede Rechtsfrage beantwortet mit Quelle. Statt 2–4 h Recherche: 30 Sekunden, mit dem genauen §.</div></div>
+        <div class="col"><div class="k">Warum du</div><div class="v">„Das Gesetz hat sich geändert — für dich bedeutet das…" — <b>bevor</b> es dich trifft, nicht danach.</div></div>
+      </div>
+      <div class="check"><span class="n">1</span> <b>Frag GitLaw:</b> <a href="gitlaw-im-einsatz.html">echter Demo-Lauf — 4 Fragen, 4 Antworten</a> → <span class="n">2</span> Bei Änderungen: Wächter meldet <b>per Digest</b>, was für dich relevant ist.</div>
+    </div>
+  </div>
+
+  <!-- 6. GELD-WÄCHTER -->
+  <div class="watcher" id="geld">
+    <div class="ic-box">💶</div>
+    <div class="body">
+      <div class="top"><span class="nm">Geld-Wächter</span><span class="tag warn">Dein Steuergeld</span></div>
+      <div class="why"><span class="hl">476,5 Mrd € Bundeshaushalt</span> — und Fördertöpfe, die niemand abruft. Wer weiß, wohin sein Geld fließt und welche Förderung ihn betrifft, ist kein Bittsteller mehr.</div>
+      <div class="cols">
+        <div class="col"><div class="k">Dein Potenzial</div><div class="v"><span class="pot">€ Mrd offen</span>Förderungen, Zuschüsse, Steuer-Vorteile, die <b>du nicht kennst</b>: Wohngeld, KfW, BAFA, Länderprogramme. Der Wächter matcht deine Lage auf offene Töpfe.</div></div>
+        <div class="col"><div class="k">Warum du</div><div class="v">Subventionen gehen an die, die <b>wissen, dass es sie gibt</b>. Transparenz ist der erste Schritt — und genau dafür ist der Wächter da.</div></div>
+      </div>
+      <div class="check"><span class="n">1</span> <b>Was dir zusteht:</b> <a href="rechte-profil.html">Rechte-Profil</a> → <span class="n">2</span> <b>Wohin dein Geld fließt:</b> Money-Flow-Digest im <a href="dashboard.html">Dashboard</a>.</div>
+    </div>
+  </div>
+
+  <div class="note"><b>Warum diese Reihenfolge?</b> Sie kommt aus der <a href="simulation.html" style="color:var(--violet)">Simulation von 10.000 Bürgern</a>: Leistungs-Wächter 73 %, Miet-Wächter 58 %, Konsum 42 %, Fristen ~30 % … Der Bedarf ist real gemessen — nicht geraten. Alle Prozentwerte mit Quelle (SoVD, Allensbach/Zeit, EuGH-Rechtsprechung).</div>
+
+  <footer>
+    Wir beobachten. Wir verifizieren. Du entscheidest.<br>
+    Berlin · Open Source · <b>kostenlos für alle</b>
+  </footer>
+</div>
+
+</body>
+</html>
