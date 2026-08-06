@@ -1,0 +1,65 @@
+{
+  "date": "2026-08-06",
+  "repo": "bla-keks-world",
+  "branch": "studio/qa-2026-08-06",
+  "under_test": {
+    "pr": 2,
+    "branch": "studio/engineer-2026-08-06",
+    "commit": "aeee374",
+    "title": "Bots fire real projectiles; retire the carbine module",
+    "diff_stat": "7 files, +340 / -183 (src/modes/botbrain.js, src/modes/match-mode.js, src/modes/weapons/trace.js new, src/modes/weapon.js deleted, tools/aimtest.mjs new)"
+  },
+  "build_passed": true,
+  "build_tail": "dist/assets/index-BzAa7uC4.js 926.21 kB | gzip: 255.27 kB; only the pre-existing >500kB chunk warning; built in 1.68s",
+  "server_booted": true,
+  "server_output": "\ud83c\udf6a Bla Keks World server on :8787 / local http://localhost:8787 / lan http://192.168.0.7:8787",
+  "tests_run": [
+    {"cmd": "npm install --no-audit --no-fund", "result": "added 97 packages in 3s"},
+    {"cmd": "npm run build", "result": "PASS"},
+    {"cmd": "node tools/aimtest.mjs", "result": "PASS \u2014 8/8 ok, exit 0"},
+    {"cmd": "curl http://localhost:8787/", "result": "HTTP 200"}
+  ],
+  "static_checks_passed": [
+    "_v / _v2 module scratch vectors are declared (botbrain.js:18-19) and botShoot passes _v2.clone() as the out param, so no aliasing corruption",
+    "dt and rng are destructured from ctx in tacticalBrain (botbrain.js:161); c.rng is the seeded rng, used consistently",
+    "no dangling imports of the deleted src/modes/weapon.js anywhere in src/, server/ or index.html",
+    "this.bots is initialised in Mode (src/modes/mode.js:18), so match-mode.js:1086 find() is safe",
+    "every BOT_TOOLS id ('splatter','bubbler','confetti','petalbow') exists in TOOLS with speed/gravity/radius/color/soak/projectile/rate",
+    "room.js setInterval at :46 is cleared at :231 \u2014 no new timer leak introduced",
+    "bot hit reporting is single-path: botbrain no longer calls onHit for shooting, only _onProjectileHit reports, so no double damage"
+  ],
+  "issues_found": [
+    {
+      "severity": "MEDIUM",
+      "file": "src/modes/botbrain.js (tacticalBrain fire gate) + src/modes/match-mode.js:_botShoot",
+      "issue": "Bots pay no resource cost. A player's shot is gated by charge.ready with per-tool cost/regen (match-mode.js:1016-1023), but a bot only waits tool.rate. Splat Blaster rate 0.1s gives a bot up to ~10 shots/s x 9 soak = ~90 soak/s sustained forever; a human on the same tool is throttled to roughly 6/s by cost 0.055 vs regen 0.34. Bots out-sustain players ~1.7x on the stream tool.",
+      "suggestion": "Give each bot a Charge from weapons/tools.js and gate botShoot on charge.ready + charge.use(), or as a one-liner stopgap scale fireCooldown by Math.max(1, tool.cost / tool.regen)."
+    },
+    {
+      "severity": "LOW",
+      "file": "src/modes/match-mode.js:761 and src/modes/botbrain.js:158",
+      "issue": "The ctx.onHit callback is still supplied and still documented in the tacticalBrain JSDoc, but no brain calls it any more now that shooting goes through spawnShot. Dead surface that invites someone to re-add a second damage path.",
+      "suggestion": "Delete the onHit entry from the ctx object and from the JSDoc block; keep onTag."
+    },
+    {
+      "severity": "LOW",
+      "file": "src/modes/botbrain.js:trackVelocity",
+      "issue": "bot._track is keyed by target id and never pruned, so entries for disconnected or dead players persist for the bot's lifetime.",
+      "suggestion": "Bounded at <=8 players per room so this is not a practical leak, but clear bot._track on round reset for tidiness."
+    },
+    {
+      "severity": "LOW",
+      "file": "src/modes/botbrain.js:BOT_TOOLS",
+      "issue": "Bots are ranged-only \u2014 leafblade is deliberately excluded. Against the director's BOTH directive, offline and 2v2 practice never teaches a player how to read or counter an incoming saber.",
+      "suggestion": "Next session: a melee bot archetype that closes distance and swings, so the rock-paper-scissors loop is playable solo."
+    }
+  ],
+  "untested": [
+    "Actual combat feel \u2014 whether led shots read as fair, whether projectiles are dodgeable in motion. Automated QA cannot playtest feel.",
+    "Multiplayer: no second client was connected, so host-authority for bot hits over the wire was reviewed statically only, never exercised.",
+    "Whether bots visibly hold the tool they now fire (no rendered-model check was possible headless).",
+    "Explore mode was not run in a browser; it builds and shares no changed files, but was not visually confirmed.",
+    "Difficulty tuning of aimError (1 - accuracy) * 3.2 \u2014 no data on hit rates against a real strafing human."
+  ],
+  "verdict": "SHIP WITH NOTES"
+}
