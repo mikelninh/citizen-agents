@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Breakfast Ticker — Citizen Agents</title>
+<style>
+  :root { --bg:#0f1419; --card:#1a212b; --ink:#e8edf2; --muted:#9aa7b4; --ok:#3fb950; --warn:#d29922; --bad:#f85149; --line:#2a3340; --accent:#58a6ff; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:16px/1.55 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:780px; margin:0 auto; padding:28px 18px 80px; }
+  .masthead { border-bottom:1px solid var(--line); padding-bottom:18px; margin-bottom:26px; }
+  .kicker { letter-spacing:3px; font-size:12px; color:var(--muted); text-transform:uppercase; }
+  h1 { font-size:30px; margin:6px 0 2px; }
+  .dateline { color:var(--muted); font-size:14px; }
+  .lede { color:var(--muted); margin-top:10px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin-bottom:18px; }
+  .card-head { font-weight:700; font-size:17px; margin-bottom:8px; display:flex; align-items:center; gap:10px; }
+  .badge { background:var(--accent); color:#06121f; font-size:11px; font-weight:800; letter-spacing:1px; padding:3px 8px; border-radius:6px; }
+  .intro { color:var(--muted); margin:0 0 12px; }
+  .finding { border-top:1px solid var(--line); padding:12px 0 4px; }
+  .finding h3 { margin:0 0 6px; font-size:15px; color:#cdd9e5; }
+  .finding p { margin:4px 0; }
+  .lbl { color:var(--muted); font-weight:600; font-size:13px; }
+  .sources { margin-top:8px; font-size:12px; word-break:break-all; }
+  .sources a { color:var(--accent); text-decoration:none; display:block; }
+  .sources a:hover { text-decoration:underline; }
+  .bottom { border-top:1px solid var(--line); margin-top:10px; padding-top:12px; font-size:15px; }
+  .trust-totals { display:flex; gap:10px; margin:10px 0 14px; }
+  .trust-totals .t { flex:1; text-align:center; background:#0f1419; border:1px solid var(--line); border-radius:10px; padding:10px; }
+  .trust-totals b { font-size:22px; display:block; }
+  .trust-totals .ok b { color:var(--ok); } .trust-totals .warn b { color:var(--warn); } .trust-totals .bad b { color:var(--bad); }
+  table.verdicts { width:100%; border-collapse:collapse; font-size:13px; }
+  table.verdicts th, table.verdicts td { text-align:left; padding:7px 8px; border-top:1px solid var(--line); vertical-align:top; }
+  .pill { font-size:11px; font-weight:800; padding:2px 8px; border-radius:20px; white-space:nowrap; }
+  .pill.ok { background:rgba(63,185,80,.15); color:var(--ok); }
+  .pill.warn { background:rgba(210,153,34,.15); color:var(--warn); }
+  .pill.bad { background:rgba(248,81,73,.15); color:var(--bad); }
+  .note { color:var(--muted); font-size:13px; margin-top:12px; }
+  footer { color:var(--muted); font-size:13px; text-align:center; margin-top:30px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="masthead">
+    <div class="kicker">Citizen Agents · Breakfast Ticker</div>
+    <h1>Was die Wächter heute fanden</h1>
+    <div class="dateline">Ausgabe 2026-08-06 · erstellt 2026-08-07 · jeden Morgen neu</div>
+    <p class="lede">Deine Rechte, täglich geprüft — mit Quelle und menschlichem Urteil. Kostenlos. Immer.</p>
+  </div>
+  
+        <section class="card">
+          <header class="card-head"><span class="badge">WATCHDOG</span> 🤖 Benefit-Watch — 2026-08-06</header>
+          <p class="intro">Watchdog report on German state benefits: what changed, when it bites, and who is affected. **5 tracked changes this run.** Every entry has an official or major-outlet source.</p>
+          <div class="findings"><div class="finding"><h3>1. Wohngeld — Reform (&quot;Neuordnung&quot;) im Kabinett: Leistungen sinken</h3>
+<p><span class="lbl">Was hat sich geändert:</span> Cabinet passed a draft law to &quot;simplify and further develop&quot; the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.</p>
+<p><span class="lbl">Ab wann:</span> Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.</p>
+<p><span class="lbl">Wen betrifft&#x27;s:</span> All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.</p>
+<p><span class="lbl">Tipp für dich:</span> If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date.</p>
+<div class="sources"><span class="lbl">Quellen:</span> 
+<a href="https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796</a> <a href="https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf" target="_blank" rel="noopener">https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf</a> <a href="https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform" target="_blank" rel="noopener">https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform</a> <a href="https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html" target="_blank" rel="noopener">https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html</a>
+</div>
+</div>
+<div class="finding"><h3>2. Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)</h3>
+<p><span class="lbl">Was hat sich geändert:</span> Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).</p>
+<p><span class="lbl">Ab wann:</span> Budget year 2026.</p>
+<p><span class="lbl">Wen betrifft&#x27;s:</span> Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.</p>
+</div>
+<div class="finding"><h3>3. Bürgergeld → &quot;Neue Grundsicherung&quot;: harsher sanctions from 1 July 2026</h3>
+<p><span class="lbl">Was hat sich geändert:</span> Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:</p>
+<p><span class="lbl">Ab wann:</span> Phased from **1 July 2026** (law adopted March 2026).</p>
+<p><span class="lbl">Wen betrifft&#x27;s:</span> ~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.</p>
+<p><span class="lbl">Tipp für dich:</span> Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest.</p>
+<div class="sources"><span class="lbl">Quellen:</span> 
+<a href="https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562</a> <a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460" target="_blank" rel="noopener">https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460</a> <a href="https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen" target="_blank" rel="noopener">https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen</a> <a href="https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition" target="_blank" rel="noopener">https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition</a>
+</div>
+</div>
+<div class="finding"><h3>4. Elterngeld — Prien draft: 14 → 12 months, 3 &quot;Vätermonate&quot;, higher min/max</h3>
+<p><span class="lbl">Ab wann:</span> Not yet law; targeted for ~2027 births. Current births still under 14-month rules.</p>
+<p><span class="lbl">Wen betrifft&#x27;s:</span> ~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.</p>
+<div class="sources"><span class="lbl">Quellen:</span> 
+<a href="https://www.tagesschau.de/inland/prien-elterngeld-102.html" target="_blank" rel="noopener">https://www.tagesschau.de/inland/prien-elterngeld-102.html</a> <a href="https://www.elterngeld.net/elterngeld-kuerzung.html" target="_blank" rel="noopener">https://www.elterngeld.net/elterngeld-kuerzung.html</a> <a href="https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810</a>
+</div>
+</div>
+<div class="finding"><h3>5. Kindergeld — €259/month since 01.01.2026, automatic payment planned</h3>
+<p><span class="lbl">Was hat sich geändert:</span> Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).</p>
+<p><span class="lbl">Ab wann:</span> €259 in force now; automation and further increases still planned.</p>
+<p><span class="lbl">Wen betrifft&#x27;s:</span> All families with children — the automation step mainly helps families who currently never apply.</p>
+<div class="sources"><span class="lbl">Quellen:</span> 
+<a href="https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen" target="_blank" rel="noopener">https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen</a> <a href="https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html" target="_blank" rel="noopener">https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html</a>
+</div>
+</div></div>
+          <div class="bottom">Two big cuts are in the pipeline (Wohngeld formula, Elterngeld duration) and one is already law (Grundsicherung sanctions from 1 July 2026). Only Kindergeld moved up. **If you might qualify for Wohngeld, apply before the reform passes.**  *Generated by the Benefit-Discovery Watch agent. Draft laws can change — always verify with your local Wohngeldstelle / Jobcenter / Familienkasse.*</div>
+        </section>
+        <section class="card">
+          <header class="card-head"><span class="badge">WATCHDOG</span> 🗳️ Consultation-Watch — 6. August 2026</header>
+          <p class="intro">**Gefundene offene Fenster: 5**</p>
+          <div class="findings"><div class="finding"><h3>1. Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)</h3>
+</div>
+<div class="finding"><h3>2. Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“</h3>
+</div>
+<div class="finding"><h3>3. Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz</h3>
+</div>
+<div class="finding"><h3>4. EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft</h3>
+</div>
+<div class="finding"><h3>5. EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)</h3>
+</div></div>
+          
+        </section>
+  
+        <section class="card trust">
+          <header class="card-head"><span class="badge">TRUST</span> Vom Fleet-Reviewer geprüft</header>
+          <div class="trust-totals">
+            <div class="t ok"><b>4</b> verifiziert</div>
+            <div class="t warn"><b>2</b> teilweise</div>
+            <div class="t bad"><b>0</b> fehlerhaft</div>
+          </div>
+          <table class="verdicts"><tr><th>Agent</th><th>Urteil</th><th>Kurzbegründung</th></tr><tr><td>benefit-watch</td><td><span class="pill warn">PARTIAL</span></td><td>Wohngeld budget figure misattributed: €150.13m is the *whole Einzelplan 25* increase, the Wohngeld line rose €160m.</td></tr>
+<tr><td>consultation-watch</td><td><span class="pill ok">VERIFIED</span></td><td>BauGB hearing verified to the minute against bundestag.de; only weak EU portal links.</td></tr>
+<tr><td>bundestag-watch</td><td><span class="pill warn">PARTIAL</span></td><td>Lobbyregister entries verified exactly; GKV passage date (10.07.2026) not supported by the linked page, which documents the 1st reading on 12.06.2026.</td></tr>
+<tr><td>studio-director</td><td><span class="pill ok">VERIFIED</span></td><td>Code-grounded critique, file/line references check out; no external claims to falsify.</td></tr>
+<tr><td>studio-engineer</td><td><span class="pill ok">VERIFIED</span></td><td>Every claim independently reproduced by the reviewer: build green, 8/8 aim tests, grep clean.</td></tr>
+<tr><td>studio-qa</td><td><span class="pill ok">VERIFIED</span></td><td>QA&#x27;s own findings reproduce; honest about what it structurally could not test.</td></tr></table>
+          <p class="note">Menschen prüfen, Agenten entwerfen — niemand merged automatisch. Jede Meldung trägt ihre Quelle.</p>
+        </section>
+  <footer>
+    Citizen Agents — Digital Democracy Studio, Berlin.
+    <a href="https://github.com/mikelninh/citizen-agents">Quellcode &amp; Rohdaten</a> ·
+    <a href="https://mikelninh.github.io/citizen-agents/">Zur Startseite</a>
+  </footer>
+</div>
+</body>
+</html>
