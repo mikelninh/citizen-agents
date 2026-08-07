@@ -76,5 +76,9 @@ Ergänzend: https://www.zeit.de/news/2026-07/09/eu-gerichtshof-staerkt-widerrufs
 - **BVerfG, mündliche Verhandlung 13. Oktober 2026:** „Erbschaftsteuer — Verschonung von Betriebsvermögen". Quelle: https://www.bundesverfassungsgericht.de/
 - **EuGH, Schlussanträge 16. Juli 2026 (C-524/24, Brenner-/Inntalautobahn):** Generalanwalt hält österreichische Fahrverbote für unionsrechtswidrig — relevant für Transitreisende. Quelle: https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260111de.pdf
 
+## Durchsuchte Primärquellen
+- BVerfG Entscheidungen & Pressemitteilungen: https://www.bundesverfassungsgericht.de/
+- EuGH Pressemitteilungen: https://curia.europa.eu/site/jcms/d2_5158/de/pressemitteilungen
+
 ---
 *Automatisch erstellt vom court-watch-Agenten. Keine Rechtsberatung. Alle Angaben sind vor Verwendung anhand der Primärquelle zu prüfen.*
