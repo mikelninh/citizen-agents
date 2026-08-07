@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-07",
+  "items": 5,
+  "lobby_entries": 2,
+  "subsidies_eur": "~6.2-6.3 Mrd. EUR/Jahr EU-Agrarmittel für Deutschland (GAP 2023-2027); Anteil Tierhaltung aus öffentlichen Aggregaten nicht trennbar",
+  "highlights": [
+    "Tierhaltungskennzeichnung erneut verschoben: Pflicht erst ab 1. Januar 2027 (2. THKG-Änderungsgesetz, BT-Drs. 21/3292, beschlossen 26.01.2026); 3. Änderungsgesetz in Arbeit",
+    "GAP: rund 6,2-6,3 Mrd. EUR/Jahr EU-Mittel für Deutschland 2023-2027; Umschichtungssatz Säule 1 -> Säule 2 nur 15 % (2026, UBA)",
+    "Klima: 34,6 Mio. t CO2-Äq. direkte Emissionen aus Tierhaltung 2025 = 64,5 % der Landwirtschaftsemissionen, 5,3 % der Gesamtemissionen Deutschlands (UBA)",
+    "Antibiotika: Abgabemenge 1.706 t (2011) -> 1.144 t (2024), rund -67 %; DUH kritisiert, dass Menge nichts über Reserveantibiotika/Resistenzen aussagt",
+    "Lobby: Deutscher Bauernverband ca. 4,4 Mio. EUR Lobbyaufwand im Lobbyregister; Selbstauskünfte in Spannen, nur begrenzt vergleichbar"
+  ],
+  "sources": [
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw03-de-tierhaltungskennzeichnungsgesetz-1134328",
+    "https://dserver.bundestag.de/btd/21/032/2103292.pdf",
+    "https://www.provieh.de/2026/01/staatliche-tierhaltungskennzeichnung-erneut-verschoben/",
+    "https://www.bmleh.de/SharedDocs/Gesetzestexte/DE/21-WP/3-AETierHaltKennzG.html",
+    "https://www.bmleh.de/DE/themen/landwirtschaft/eu-agrarpolitik-und-foerderung/gap/gap_node.html",
+    "https://www.agrarzahlungen.de/agrarfonds/eu-agrarfonds",
+    "https://www.europarl.europa.eu/topics/de/article/20211118STO17609/agrarpolitik-der-eu-in-zahlen-infografik",
+    "https://www.umweltbundesamt.de/themen/landwirtschaft/landwirtschaft-umweltfreundlich-gestalten/fragen-antworten-zur-europaeischen-agrarfoerderung",
+    "https://www.bund.net/themen/landwirtschaft/eu-agrarpolitik/",
+    "https://www.umweltbundesamt.de/daten/umweltzustand-trends/land-forstwirtschaft/beitrag-der-landwirtschaft-zu-den-treibhausgas",
+    "https://www.umweltbundesamt.de/daten/umweltzustand-trends/klima/treibhausgas-emissionen-in-deutschland",
+    "https://www.thuenen.de/de/themenfelder/klima-und-luft/emissionsinventare-buchhaltung-fuer-den-klimaschutz/treibhausgas-emissionen-aus-der-landwirtschaft",
+    "https://www.bmleh.de/DE/themen/tiere/tierarzneimittel/lagebild-antibiotikaeinsatz-bei-tieren-2024.html",
+    "https://www.bvl.bund.de/DE/Arbeitsbereiche/05_Tierarzneimittel/01_Aufgaben/05_AufgAntibiotikaResistenz/02_ErfassungVerbrauchsmengen/ErfassungVerbrauchsmengen_node.html",
+    "https://www.duh.de/informieren/landwirtschaft-und-ernaehrung/antibiotika-in-der-massentierhaltung/",
+    "https://www.lobbyregister.bundestag.de/",
+    "https://www.agrarheute.com/politik/lobbyregister-zeigt-staerke-umweltlobby-beim-bundestag-602040",
+    "https://www.tagesschau.de/inland/lobbyregister-bericht-100.html"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/meat-dairy-2026-08-07",
+    "web research: Bundestag/BMLEH policy, GAP subsidies, UBA/Thünen emissions, BVL/DUH antibiotics, Lobbyregister",
+    "wrote agent-digests/meat-dairy-2026-08-07.md",
+    "wrote agent-logs/meat-dairy-2026-08-07.json",
+    "committed and pushed branch",
+    "opened pull request (no merge — human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/meat-dairy-2026-08-07"
+}
