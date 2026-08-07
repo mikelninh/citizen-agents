@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-07",
+  "directives_found": 6,
+  "deadlines_coming": 0,
+  "late": 6,
+  "highlights": [
+    "JI-Richtlinie (EU) 2016/680: mit Gruenden versehene Stellungnahme am 08.07.2026 - Deutschland hat 8 Jahre nach Fristablauf immer noch keine Umsetzungsmassnahmen fuer die Datenverarbeitung durch die Bundespolizei erlassen. Naechster Schritt: EuGH + Geldbussen.",
+    "European Accessibility Act (EU) 2019/882: zusaetzliche mit Gruenden versehene Stellungnahme im Maerz 2026 - Umsetzungsluecken bei Barrierefreiheit bestehen 4 Jahre nach Frist weiter.",
+    "Trinkwasserrichtlinie (EU) 2020/2184: Aufforderungsschreiben Maerz 2026 - u.a. oeffentlicher Zugang zu Wasserueberwachungsdaten nicht ordnungsgemaess umgesetzt.",
+    "EPBD (EU) 2024/1275: nationaler Gebaeudesanierungsplan bis 31.12.2025 nicht vorgelegt, Mahnschreiben Maerz 2026.",
+    "Entgelttransparenzrichtlinie (EU) 2023/970: Frist 07.06.2026 verpasst - nur 4 von 27 Mitgliedstaaten waren puenktlich, Deutschland nicht darunter."
+  ],
+  "sources": [
+    "https://germany.representation.ec.europa.eu/news/umsetzung-von-eu-recht-drei-verfahren-gegen-deutschland-2026-03-11_de",
+    "https://germany.representation.ec.europa.eu/nachrichten-und-veranstaltungen/pressemitteilungen/vertragsverletzungsverfahren-kommission-leitet-drei-fallen-rechtliche-schritte-gegen-deutschland-ein-2026-07-08_de",
+    "https://ec.europa.eu/commission/presscorner/detail/de/inf_26_1376",
+    "https://ec.europa.eu/commission/presscorner/detail/de/inf_26_431",
+    "https://ec.europa.eu/implementing-eu-law/transposition-directives/en",
+    "https://ec.europa.eu/atwork/applying-eu-law/infringements-proceedings/infringement_decisions/?lang_code=de",
+    "https://blog.dciconsult.com/the-transposition-deadline-has-passed",
+    "https://www.gleisslutz.com/en/know-how/stricter-criminal-sanctions-law-germanys-transposition-eu-sanctions-directive",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32019L0882",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32020L2184",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024L1275",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32016L0680",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32023L0970",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32024L1226"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/directive-watch-2026-08-07",
+    "targeted research: EU infringement decisions vs Germany (Mar + Jul 2026), Commission transposition scoreboard, transposition trackers",
+    "wrote citizen digest agent-digests/directive-watch-2026-08-07.md",
+    "wrote structured log agent-logs/directive-watch-2026-08-07.json",
+    "committed, pushed branch, opened PR for human review (no merge)"
+  ],
+  "notes": "deadlines_coming reported as 0 because no German transposition deadline in the window 2026-08-07 to 2027-02-03 could be verified from a primary source this run; no estimate substituted. Commission scoreboard percentages are rendered client-side and could not be scraped.",
+  "repo": "citizen-agents",
+  "branch": "agent/directive-watch-2026-08-07"
+}
