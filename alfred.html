@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alfred — Dein Morgen-Briefing</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236e5bff'/%3E%3Cstop offset='0.55' stop-color='%23ff6ec7'/%3E%3Cstop offset='1' stop-color='%23ffa26b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='48' height='48' rx='11' fill='url(%23g)'/%3E%3Cpath d='M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3Ccircle cx='24' cy='24' r='7.5' fill='%23fff'/%3E%3Cpath d='M20.5 24 L23 26.5 L27.8 21.4' stroke='%236e5bff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#fdf9f2; --ink:#26242b; --ink2:#5a5560; --ink3:#a39dab;
+    --line:rgba(38,36,43,0.10); --line2:rgba(38,36,43,0.18);
+    --violet:#6e5bff; --rose:#ff6ec7; --peach:#ffa26b;
+    --green:#2e8b6d; --lemon:#c07f2a;
+    --grad:linear-gradient(115deg,#6e5bff 0%,#ff6ec7 55%,#ffa26b 100%);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  ::selection{background:rgba(255,110,199,0.22)}
+  .aurora{position:fixed;inset:0;pointer-events:none;z-index:0}
+  .aurora .layer{position:absolute;inset:-20%;filter:blur(120px);animation:drift 38s ease-in-out infinite alternate}
+  .aurora .l1{background:radial-gradient(closest-side at 25% 18%,rgba(255,162,107,0.20),transparent 70%)}
+  .aurora .l2{background:radial-gradient(closest-side at 78% 30%,rgba(255,110,199,0.15),transparent 70%);animation-delay:-13s}
+  .aurora .l3{background:radial-gradient(closest-side at 55% 90%,rgba(110,91,255,0.13),transparent 70%);animation-delay:-26s}
+  @keyframes drift{0%{transform:translate(0,0) rotate(0) scale(1)}50%{transform:translate(3vw,2vh) rotate(1.2deg) scale(1.06)}100%{transform:translate(-2vw,3vh) rotate(-1deg) scale(1.1)}}
+  .wrap{max-width:880px;margin:0 auto;padding:0 36px;position:relative;z-index:1}
+
+  nav{display:flex;align-items:center;padding:28px 0;gap:28px}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand .mark{width:36px;height:36px;border-radius:12px;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(255,110,199,0.35)}
+  .brand .mark svg{width:27px;height:27px}
+  .brand .word{font-size:17px;font-weight:600;letter-spacing:-0.3px;color:var(--ink)}
+  .brand .word em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  nav .links{margin-left:auto;display:flex;gap:8px;align-items:center}
+  nav .links a{color:var(--ink2);text-decoration:none;font-size:14px;padding:8px 14px;border-radius:999px;transition:all .18s}
+  nav .links a:hover{color:var(--ink);background:rgba(255,110,199,0.10)}
+  nav .links .pill{font-weight:500;color:#fff;background:var(--grad);padding:8px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(255,110,199,0.3)}
+
+  /* ALFRED STAGE */
+  .stage{display:flex;align-items:center;gap:44px;padding:44px 0 10px;flex-wrap:wrap}
+  .avatar{position:relative;width:150px;height:150px;flex-shrink:0}
+  .avatar .halo{position:absolute;inset:-26px;border-radius:50%;background:radial-gradient(closest-side,rgba(255,110,199,0.25),transparent 75%);filter:blur(16px);animation:pulse 4s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:0.7;transform:scale(1)}50%{opacity:1;transform:scale(1.06)}}
+  .avatar .ring{position:absolute;inset:-8px;border-radius:50%;border:1.5px dashed rgba(110,91,255,0.35);animation:spin 22s linear infinite}
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .avatar .eye{width:150px;height:150px;position:relative;z-index:2}
+  .avatar .eye .pupil{transition:transform .12s ease-out}
+  .avatar .lid{position:absolute;left:0;right:0;height:0;background:var(--paper);z-index:5;transition:height .16s ease}
+  .avatar .lid.top{top:0;border-bottom:2px solid var(--ink)}
+  .avatar .lid.bot{bottom:0;border-top:2px solid var(--ink)}
+  .avatar.blink .lid{height:52%}
+  .avatar.speaking .ring{border-style:solid;border-color:var(--green);animation-duration:1.6s}
+  .avatar.speaking .halo{background:radial-gradient(closest-side,rgba(46,139,109,0.3),transparent 75%)}
+  .speech{margin-top:14px;font-size:12px;color:var(--green);font-weight:500;min-height:18px;letter-spacing:0.5px}
+
+  .greeting{flex:1;min-width:260px}
+  .greeting .time{font-size:15px;color:var(--ink3);font-weight:300}
+  .greeting h1{font-size:clamp(34px,5vw,54px);font-weight:500;letter-spacing:-0.03em;line-height:1.05;margin:6px 0 10px}
+  .greeting h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .greeting .sub{font-size:15px;color:var(--ink2);font-weight:300;max-width:440px}
+  .greeting .controls{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+  .greeting .controls button{font-size:13.5px;font-weight:500;padding:11px 22px;border-radius:999px;border:none;cursor:pointer;transition:all .18s;font-family:inherit}
+  .btn-speak{color:#fff;background:var(--grad);box-shadow:0 6px 18px rgba(255,110,199,0.3)}
+  .btn-speak:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(255,110,199,0.4)}
+  .btn-speak.playing{background:var(--green);box-shadow:0 6px 18px rgba(46,139,109,0.3)}
+  .btn-refresh{color:var(--ink2);background:transparent;border:1.5px solid var(--line2)!important}
+  .btn-refresh:hover{color:var(--ink);border-color:var(--ink3)!important}
+
+  /* BRIEFING SECTIONS */
+  .briefing{padding:26px 0 0}
+  .sec{margin-top:34px}
+  .sec-head{display:flex;align-items:baseline;gap:14px;margin-bottom:10px}
+  .sec-head .n{font-family:'Newsreader',serif;font-style:italic;font-size:19px;color:var(--rose)}
+  .sec-head .rule{flex:1;height:1px;background:var(--line)}
+  .sec-head .status{font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink3)}
+  .sec-head .status.live{color:var(--green)}
+  .items{border-top:1px solid var(--line)}
+  .item{display:grid;grid-template-columns:56px 1fr;gap:16px;padding:18px 4px;border-bottom:1px solid var(--line);align-items:baseline}
+  .item .when{font-size:12px;color:var(--ink3);font-weight:300}
+  .item .t{font-size:15.5px;font-weight:500}
+  .item .t .badge{font-size:9.5px;letter-spacing:1.2px;text-transform:uppercase;padding:2px 8px;border-radius:999px;margin-left:8px;vertical-align:2px;font-weight:500}
+  .badge.v{color:var(--green);border:1px solid rgba(46,139,109,0.4)}
+  .badge.p{color:var(--lemon);border:1px solid rgba(192,127,42,0.4)}
+  .item .d{font-size:13px;color:var(--ink2);font-weight:300;margin-top:3px;line-height:1.55}
+  .item .src{font-size:10.5px;color:var(--ink3);margin-top:6px}
+  .item .src b{color:var(--violet);font-weight:500}
+
+  .empty{padding:22px 4px;border-bottom:1px solid var(--line);font-size:14px;color:var(--ink3);font-weight:300}
+  .empty b{color:var(--ink);font-weight:500}
+
+  footer{padding:44px 0 70px;color:var(--ink3);font-size:13px;text-align:center}
+  footer b{color:var(--ink);font-weight:500}
+  @media(max-width:640px){.wrap{padding:0 20px}.stage{gap:26px}.avatar{width:110px;height:110px}.avatar .eye{width:110px;height:110px}}
+</style>
+</head>
+<body>
+<div class="aurora"><div class="layer l1"></div><div class="layer l2"></div><div class="layer l3"></div></div>
+
+<div class="wrap">
+  <nav>
+    <a class="brand" href="index.html">
+      <span class="mark"><svg viewBox="0 0 48 48"><path d="M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="24" cy="24" r="7.5" fill="#fff"/><path d="M20.5 24 L23 26.5 L27.8 21.4" stroke="#6e5bff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="word">Citizen <em>Agents</em></span>
+    </a>
+    <div class="links">
+      <a class="pill" href="index.html">← Start</a>
+    </div>
+  </nav>
+
+  <div class="stage">
+    <div class="avatar" id="avatar">
+      <div class="halo"></div>
+      <div class="ring"></div>
+      <svg class="eye" viewBox="0 0 150 90">
+        <defs><linearGradient id="eg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#6e5bff"/><stop offset="0.55" stop-color="#ff6ec7"/><stop offset="1" stop-color="#ffa26b"/></linearGradient></defs>
+        <path d="M8 45 C28 16 122 16 142 45 C122 74 28 74 8 45 Z" fill="#fff" stroke="rgba(38,36,43,0.3)" stroke-width="2.5"/>
+        <circle class="pupil" cx="75" cy="45" r="17" fill="url(#eg)"/>
+        <circle cx="82" cy="38" r="5" fill="#fff" opacity="0.85"/>
+      </svg>
+      <div class="lid top"></div>
+      <div class="lid bot"></div>
+    </div>
+    <div class="greeting">
+      <div class="time" id="clock">—</div>
+      <h1 id="greeting">Guten Morgen<span class="serif">, Mikel.</span></h1>
+      <div class="sub" id="subline">Dein Alfred wacht schon. Hier ist, was die Nacht gebracht hat.</div>
+      <div class="controls">
+        <button class="btn-speak" id="btnSpeak" onclick="speakBriefing()">🔊 Vorlesen</button>
+        <button class="btn-refresh" onclick="loadBriefing()">↻ Neu laden</button>
+      </div>
+      <div class="speech" id="speechStatus"></div>
+    </div>
+  </div>
+
+  <div class="briefing">
+    <div class="sec" id="night-sec">
+      <div class="sec-head"><span class="n">Während du schliefst</span><div class="rule"></div><span class="status" id="night-status">lädt…</span></div>
+      <div class="items" id="night-items"><div class="empty">Alfred liest die Wächter-Protokolle…</div></div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><span class="n">Fristen, die dir gehören</span><div class="rule"></div></div>
+      <div class="items" id="deadline-items"></div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-head"><span class="n">Dein Tag</span><div class="rule"></div></div>
+      <div class="items" id="day-items"></div>
+    </div>
+  </div>
+
+  <footer>
+    Alfred · dein persönlicher Wächter · <b>„Guten Morgen. Es wurde auf dich aufgepasst."</b><br>
+    Daten live von den Wächter-Protokollen · alles Open Source
+  </footer>
+</div>
+
+<script>
+// ---------- UHRZEIT & GRUSS ----------
+function tick(){
+  const now = new Date();
+  const h = now.getHours();
+  const time = now.toLocaleTimeString("de-DE",{hour:"2-digit",minute:"2-digit"});
+  const date = now.toLocaleDateString("de-DE",{weekday:"long",day:"numeric",month:"long",year:"numeric"});
+  document.getElementById("clock").textContent = time + " · " + date;
+  let g;
+  if(h < 5) g = "Noch wach";
+  else if(h < 11) g = "Guten Morgen";
+  else if(h < 18) g = "Guten Tag";
+  else g = "Guten Abend";
+  document.getElementById("greeting").innerHTML = g + '<span class="serif">, Mikel.</span>';
+}
+setInterval(tick, 15000); tick();
+
+// ---------- BLINZELN ----------
+const avatar = document.getElementById("avatar");
+setInterval(()=>{
+  avatar.classList.add("blink");
+  setTimeout(()=>avatar.classList.remove("blink"), 170);
+}, 4200);
+
+// ---------- NACHT-BRIEFING (echte Digests von GitHub) ----------
+const DIGESTS = [
+  { url:"https://raw.githubusercontent.com/mikelninh/citizen-agents/main/agent-digests/benefit-watch-2026-08-06.md", label:"Leistungen" },
+  { url:"https://raw.githubusercontent.com/mikelninh/citizen-agents/main/agent-digests/consultation-2026-08-06.md", label:"Beteiligung" },
+  { url:"https://raw.githubusercontent.com/mikelninh/faireint-bundestag/main/agent-digests/bundestag-watch-2026-08-06.md", label:"Bundestag" },
+];
+
+function md2html(t){
+  // tiny markdown smoother: bold, italics, list dashes, line breaks
+  return t
+    .replace(/\*\*([^*]+)\*\*/g, "<b>$1</b>")
+    .replace(/\*([^*]+)\*/g, "<i>$1</i>")
+    .replace(/^- /gm, "· ")
+    .replace(/\*\*What changed:\*\*\s*/gi, "")
+    .replace(/\*\*What changed\*\*\s*/gi, "")
+    .replace(/What changed:\s*/gi, "")
+    .replace(/^- \*\*(What changed):\*\*\s*/gi, "")
+    .replace(/\n/g, " ")
+    .slice(0, 260);
+}
+
+function parseDigest(md){
+  // extract ## sections: title + first meaningful line
+  const items = [];
+  const lines = md.split("\n");
+  let cur = null;
+  for(const line of lines){
+    if(line.startsWith("## ")){
+      if(cur) items.push(cur);
+      cur = { t: md2html(line.replace(/^##\s*/,"").replace(/^\d+\.\s*/,"")), d:"", src:"" };
+    } else if(cur && line.trim() && !line.startsWith("#") && !line.startsWith("|") && !line.startsWith("---")){
+      if(!cur.d) cur.d = md2html(line.trim().replace(/^\*\*[-–]?\s*/,""));
+      else if(!cur.src && line.includes("http")) cur.src = line.trim().replace(/^[-–*]*\s*/,"").replace(/\*\*/g,"").replace(/^[-–*]*\s*/,"").replace(/^(Quelle|Source|Quellen)[:\s-]*/i,"").slice(0,150);
+    }
+  }
+  if(cur) items.push(cur);
+  return items.slice(0,4);
+}
+
+async function loadBriefing(){
+  const status = document.getElementById("night-status");
+  const itemsEl = document.getElementById("night-items");
+  status.textContent = "lädt…"; status.className = "status";
+  const all = [];
+  for(const d of DIGESTS){
+    try{
+      const res = await fetch(d.url);
+      if(!res.ok) throw new Error(res.status);
+      const md = await res.text();
+      parseDigest(md).forEach(i=>{ i.srcLabel = d.label; all.push(i); });
+    }catch(e){
+      all.push({ t:"Quelle nicht erreichbar", d:"Alfred konnte " + d.label + " nicht laden (" + e.message + ").", srcLabel:d.label });
+    }
+  }
+  status.textContent = all.length + " Meldungen · live"; status.className = "status live";
+  if(all.length === 0){
+    itemsEl.innerHTML = '<div class="empty"><b>Alles ruhig.</b> Alfred hat nichts Neues gefunden — genau wie erhofft.</div>';
+  } else {
+    itemsEl.innerHTML = all.map(i=>`
+      <div class="item">
+        <div class="when">${i.srcLabel||""}</div>
+        <div>
+          <div class="t">${i.t}<span class="badge v">✓ live</span></div>
+          ${i.d?`<div class="d">${i.d}</div>`:""}
+          ${i.src?`<div class="src"><b>Quelle:</b> ${i.src}</div>`:""}
+        </div>
+      </div>`).join("");
+  }
+}
+
+// ---------- FRISTEN & TAG (aus den Digests abgeleitet + Platzhalter) ----------
+function loadDay(){
+  const dl = document.getElementById("deadline-items");
+  dl.innerHTML = [
+    { t:"BauGB-Anhörung — Stellungnahme möglich", d:"Fenster offen. 10 Minuten genügen. (aus dem Consultation-Digest)", when:"bis 23.09.2026" },
+    { t:"Wohngeld-Änderung: wer nahe der Grenze ist, sollte jetzt beantragen", d:"Formel-Koeffizient C sinkt — Anspruch wird nach Antrag bewertet.", when:"jetzt" },
+  ].map(i=>`<div class="item"><div class="when">${i.when}</div><div><div class="t">${i.t}</div><div class="d">${i.d}</div></div></div>`).join("");
+
+  const di = document.getElementById("day-items");
+  const now = new Date();
+  const day = now.getDay();
+  di.innerHTML = [
+    { t:"☀️ Heute ist ein guter Tag für einen Antrag", d:"Die meisten Behörden sind erreichbar. Ein Anruf klärt mehr als drei Stunden Suchen.", when:"immer" },
+    { t:"💊 Medikamente? Prüf den BfArM-Lieferengpass", d:"Pharma-Supply Watch findet Alternativen, falls etwas fehlt.", when:"bei Bedarf" },
+  ].map(i=>`<div class="item"><div class="when">${i.when}</div><div><div class="t">${i.t}</div><div class="d">${i.d}</div></div></div>`).join("");
+}
+
+// ---------- SPRACHAUSGABE ----------
+let speaking = false;
+function speakBriefing(){
+  const btn = document.getElementById("btnSpeak");
+  const status = document.getElementById("speechStatus");
+  if(!("speechSynthesis" in window)){
+    status.textContent = "Sprachausgabe wird von diesem Browser nicht unterstützt.";
+    return;
+  }
+  if(speaking){ window.speechSynthesis.cancel(); speaking=false; btn.classList.remove("playing"); btn.textContent="🔊 Vorlesen"; return; }
+  const now = new Date();
+  const h = now.getHours();
+  const gruss = h<5 ? "Noch wach" : h<11 ? "Guten Morgen" : h<18 ? "Guten Tag" : "Guten Abend";
+  const items = document.querySelectorAll("#night-items .item .t");
+  const headlines = [...items].slice(0,3).map(e=>e.textContent.replace("✓ live","").trim());
+  let text = gruss + ", Mikel. " + now.toLocaleDateString("de-DE",{weekday:"long",day:"numeric",month:"long"}) + ". ";
+  if(headlines.length){ text += "Während du geschlafen hast: " + headlines.join(". ") + ". "; }
+  else { text += "Die Nacht war ruhig. Nichts Neues von den Wächtern. "; }
+  text += "Dein Alfred.";
+  const u = new SpeechSynthesisUtterance(text);
+  u.lang = "de-DE";
+  u.rate = 1.0;
+  u.onstart = ()=>{ speaking=true; btn.classList.add("playing"); btn.textContent="⏹ Stopp"; status.textContent="Alfred spricht…"; avatar.classList.add("speaking"); };
+  u.onend = ()=>{ speaking=false; btn.classList.remove("playing"); btn.textContent="🔊 Vorlesen"; status.textContent=""; avatar.classList.remove("speaking"); };
+  u.onerror = ()=>{ speaking=false; btn.classList.remove("playing"); btn.textContent="🔊 Vorlesen"; status.textContent="Sprache fehlgeschlagen."; avatar.classList.remove("speaking"); };
+  window.speechSynthesis.speak(u);
+}
+
+// ---------- START ----------
+loadBriefing();
+loadDay();
+</script>
+</body>
+</html>
