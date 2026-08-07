@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-07",
+  "items": 5,
+  "license_values_eur": "13,870,000,000 (H1 2026 total approvals; 9.6bn war weapons / 4.3bn other)",
+  "destinations": ["Ukraine (2.5bn EUR)", "USA (1.6bn EUR)", "Netherlands", "Czechia", "Lithuania", "Israel (~800m EUR)", "Latvia (~500m EUR)", "Norway", "Estonia", "Slovenia"],
+  "highlights": [
+    "H1 2026 arms export approvals hit a record 13.87bn EUR - roughly four times the year-earlier period",
+    "Ukraine is the single largest recipient at 2.5bn EUR and counts formally as a third country; third countries total 4.9bn EUR",
+    "Share going to EU/NATO and equivalent partners fell from 83% to about 60% (approx. 9bn EUR)",
+    "Israel ranks 6th with nearly 800m EUR; Amnesty calls resumed transfers reckless and unlawful, Bundesverfassungsgericht dismissed a constitutional complaint as inadmissible in 2026",
+    "Rüstungsexportkontrollgesetz still not enacted (BT-Drs. 20/14658 confirms it was dropped); Bundestag has no veto over export licences"
+  ],
+  "sources": [
+    "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/07/20260715-ruestungsexportpolitik-1-halbjahr-2026.html",
+    "https://www.n-tv.de/politik/Deutschland-vervierfacht-Genehmigungen-fuer-Ruestungsexporte-id31089357.html",
+    "https://www.zeit.de/politik/ausland/2026-07/ruestungsexporte-bundesregierung-anstieg-kriegswaffen-genehmigungen",
+    "https://www.deutschlandfunk.de/deutsche-ruestungsexporte-steigen-im-ersten-halbjahr-2026-auf-neuen-rekordwert-108.html",
+    "https://www.amnesty.org/en/latest/news/2025/11/germany-arms-transfers-to-israel-reckless-unlawful-and-risks-complicity-in-israels-international-crimes/",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-011.html",
+    "https://www.ecchr.eu/fall/keine-deutschen-waffen-nach-israel/",
+    "https://www.bundestag.de/presse/hib/kurzmeldungen-1042802",
+    "https://www.lto.de/recht/hintergruende/h/ruestung-waffen-export-kontrolle-gesetz-ampel-auswaertiges-amt-gruene-wirtschaftsministerium",
+    "https://blog.prif.org/en/2026/04/01/blinded-by-the-zeitenwende-ruestungsexportpolitik-falsch-gemacht/"
+  ],
+  "actions_taken": [
+    "fresh clone of citizen-agents",
+    "created branch agent/arms-export-2026-08-07",
+    "web research on BMWE H1 2026 figures, Bundestag oversight, Israel controversy",
+    "wrote digest + log",
+    "committed, pushed, opened PR (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/arms-export-2026-08-07"
+}
