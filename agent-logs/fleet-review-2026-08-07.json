@@ -1,0 +1,17 @@
+{
+  "date": "2026-08-07",
+  "agents_reviewed": 0,
+  "verified": 0,
+  "partial": 0,
+  "failed": 0,
+  "issues": [],
+  "notes": "Nothing to review. No branches, commits or PRs dated 2026-08-07 on citizen-agents, bla-keks-world, faireint-bundestag, gitlaw, pmm-mcp, safevoice or flight-rights-mcp. Latest activity across the fleet is 2026-08-06, already covered by fleet-review-2026-08-06. Guardrail check across repos: no agent merged anything - all 2026-08-06 PRs (hub #7/#8, game #1-#5, faireint-bundestag #1) remain OPEN and awaiting human review.",
+  "open_prs_awaiting_human": [
+    "citizen-agents#7 studio-engineer-2026-08-06",
+    "citizen-agents#8 studio-qa-2026-08-06-dodge",
+    "bla-keks-world#1..#5 studio director/engineer/qa 2026-08-06",
+    "faireint-bundestag#1 bundestag-watch-2026-08-06"
+  ],
+  "repo": "citizen-agents",
+  "branch": "studio/fleet-review-2026-08-07"
+}
