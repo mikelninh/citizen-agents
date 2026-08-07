@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-07",
+  "changes": 3,
+  "benefits_touched": ["Wohngeld", "Ganztagsbetreuung (GaFöG)", "Kindergeld/Kinderzuschlag (Bezug im WoGG-Entwurf)"],
+  "highlights": [
+    "Wohngeld-Kürzungsgesetz: Kabinettsbeschluss 06.07.2026, Inkrafttreten geplant 01.01.2027 — Einsparung 1,5 Mrd. € (2027) / 2 Mrd. € ab 2028",
+    "Drei Kürzungshebel bestätigt: Dynamisierung ausgesetzt, Heizkostenkomponente halbiert, Wohngeldformel verschärft; Haushalte mit 50–60 €/Monat fallen ganz raus",
+    "Neufestlegung der Mietenstufen im Referentenentwurf: Anteil Stufe I 27,9 % → 25,6 %, Stufe V 6,0 % → 8,7 %",
+    "NEU IN KRAFT: Rechtsanspruch auf Ganztagsbetreuung für Grundschulkinder seit 01.08.2026, jahrgangsweise ab Klasse 1",
+    "Bestandsschutz: bestehende Wohngeldbescheide bleiben gültig — Antrag/Weiterbewilligung vor 01.01.2027 lohnt sich"
+  ],
+  "sources": [
+    "https://www.haufe.de/immobilien/wirtschaft-politik/wohngeld-bundesregierung-denkt-ueber-erhoehungen-nach_84342_417752.html",
+    "https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796",
+    "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+    "https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf",
+    "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/kinderbetreuung/ganztagsbetreuung/ganztagsausbau-geht-kontinuierlich-voran-133604",
+    "https://www.tagesschau.de/inland/gesellschaft/ganztagsbetreuung-grundschule-start-100.html",
+    "https://www.recht-auf-ganztag.de/gb/eltern/recht-auf-ganztag-was-eltern-wissen-muessen-234172",
+    "https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/benefit-watch-2026-08-07",
+    "Targeted research on Wohngeld, Elterngeld, Bürgergeld/Grundsicherung, Kindergeld and family entitlements",
+    "Deduplicated against agent-digests/benefit-watch-2026-08-06.md — only new/updated items reported",
+    "Wrote digest + JSON log, committed and pushed branch, opened PR (no merge)"
+  ],
+  "unchanged_since_previous_run": [
+    "Grundsicherung sanctions in force since 01.07.2026",
+    "Elterngeld reform draft (14→12 months) still in Ressortabstimmung, Einkommensgrenze 175.000 €",
+    "Kindergeld 259 €/Kind/Monat seit 01.01.2026"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/benefit-watch-2026-08-07"
+}
