@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-07",
+  "items": 5,
+  "pledges_vs_reality": [
+    {
+      "actor": "Global (Paris Agreement signatories)",
+      "pledge": "CO2 down ~45% from 2010 levels by 2030 for 1.5C",
+      "reality": "Energy-related CO2 rose 0.4% (+145 Mt) in 2025 to a record ~38.4 Gt, 5% above 2019; CO2 at ~427 ppm",
+      "gap": "Trajectory still rising; 1.5C carbon budget 'virtually exhausted'",
+      "source": "https://www.iea.org/reports/global-energy-review-2026/co2-emissions"
+    },
+    {
+      "actor": "Clean energy deployment (counter-example)",
+      "pledge": "Renewables to displace fossil generation",
+      "reality": "2025 avoided emissions: solar PV 1.5 Gt, wind 1.1 Gt, nuclear 210 Mt, EVs 100 Mt, heat pumps 90 Mt",
+      "gap": "Delivering, but outpaced by demand growth",
+      "source": "https://www.iea.org/reports/global-energy-review-2026/co2-emissions"
+    },
+    {
+      "actor": "National governments (NDCs)",
+      "pledge": "Well below 2C, pursuing 1.5C",
+      "reality": "Full NDC implementation = 2.3-2.5C; current policies = 2.8C; NDC 2030 emissions ~15.9% ABOVE 2010 level",
+      "gap": "0.8-1.3C of overshoot versus the treaty goal",
+      "source": "https://www.unep.org/resources/emissions-gap-report-2025"
+    },
+    {
+      "actor": "Listed corporations",
+      "pledge": "'Net zero' / 'carbon neutral' marketing claims",
+      "reality": "96% (3,455) of assessed companies show >=1 greenwashing indicator (npj Climate Action 2026, CDP+InfluenceMap+Net Zero Tracker); headline net-zero targets imply only ~40% actual cuts",
+      "gap": "Claimed 100% reduction vs ~40% implied",
+      "source": "https://www.nature.com/articles/s44168-026-00346-6"
+    },
+    {
+      "actor": "European Union enforcement",
+      "pledge": "Ban unsubstantiated green claims",
+      "reality": "ECGT Directive enforceable by Member States from 27 Sept 2026; 21 airlines already forced to change environmental marketing (Nov 2025)",
+      "gap": "Enforcement gap narrowing - first hard deadline in 7 weeks",
+      "source": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+    }
+  ],
+  "highlights": [
+    "Global energy CO2 hit a record 38.4 Gt in 2025 - up 145 Mt, 5% above 2019 (IEA)",
+    "Atmospheric CO2 ~427 ppm, ~50% above pre-industrial",
+    "NDCs point to 2.3-2.5C; current policies to 2.8C (UNEP EGR 2025)",
+    "96% of assessed listed companies show a net-zero greenwashing red flag",
+    "EU green-claims enforcement starts 27 September 2026; 21 airlines already reformed claims"
+  ],
+  "sources": [
+    "https://www.iea.org/reports/global-energy-review-2026/co2-emissions",
+    "https://globalcarbonbudget.org/fossil-fuel-co2-emissions-hit-record-high-in-2025/",
+    "https://www.unep.org/resources/emissions-gap-report-2025",
+    "https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/ndc-synthesis-report/ndc-synthesis-report",
+    "https://www.nature.com/articles/s44168-026-00346-6",
+    "https://zerotracker.net/",
+    "https://newclimate.org/resources/publications/corporate-climate-responsibility-monitor-2022",
+    "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+    "https://www.insideenergyandenvironment.com/2025/12/the-european-commissions-new-green-claims-guidance-what-businesses-need-to-know/",
+    "https://www.bdlaw.com/publications/eu-enforcement-action-21-airlines-commit-to-reform-environmental-claims-what-aviation-and-non-aviation-businesses-should-know/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/climate-watch-2026-08-07",
+    "Researched IEA GER 2026, UNEP Emissions Gap 2025, UNFCCC NDC synthesis, npj Climate Action greenwashing study, EU green-claims enforcement",
+    "Wrote agent-digests/climate-watch-2026-08-07.md and agent-logs/climate-watch-2026-08-07.json",
+    "Committed, pushed branch, opened PR (no merge - human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/climate-watch-2026-08-07"
+}
