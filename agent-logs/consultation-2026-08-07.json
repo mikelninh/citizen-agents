@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-07",
+  "windows_found": 4,
+  "deadlines": [
+    {"window": "EU Have your say — laufende Calls for Evidence", "deadline": "rolling / je Initiative", "institution": "Europäische Kommission"},
+    {"window": "Bundesrat Ausschusssitzungen (Kultur 07.09., Verkehr 09.09.)", "deadline": "2026-09-07", "institution": "Bundesrat"},
+    {"window": "Bundestag öffentliche Anhörungen — Herbstkalender", "deadline": "laufend ab September 2026", "institution": "Deutscher Bundestag"},
+    {"window": "Referentenentwürfe — Verbände-/Länderbeteiligung", "deadline": "typisch <20 Arbeitstage ab Veröffentlichung", "institution": "Bundesministerien"}
+  ],
+  "highlights": [
+    "Parlamentarische Sommerpause: keine laufende Bundestags-Anhörung in dieser Woche",
+    "Bundesrat startet Ausschussarbeit am 07.09.2026 — Anschreiben an Landesvertretung wirkt jetzt",
+    "Referentenentwurf-Fristen liegen in ~30% der Fälle unter 10 Arbeitstagen (Mehr Demokratie e.V.)",
+    "EU-Portal 'Have your say' ist dauerhaft und auf Deutsch für Privatpersonen offen"
+  ],
+  "sources": [
+    "https://www.bundestag.de/ausschuesse",
+    "https://www.bundestag.de/ausschuesse/gesundheit/anhoerungen",
+    "https://www.bundestag.de/ausschuesse/inneres/anhoerungen",
+    "https://www.bundestag.de/ausschuesse/umwelt/sitzungen",
+    "https://www.bundesrat.de/DE/termine/ausschuss-termine/ausschuss-termine-node.html",
+    "https://ec.europa.eu/info/law/better-regulation/have-your-say",
+    "https://bmds.bund.de/service/gesetzgebungsverfahren/gesetzgebungsprozess",
+    "https://www.bmjv.de/DE/Gesetzgebungsverfahren/gesetzgebungsverfahren_node.html",
+    "https://www.mehr-demokratie.de/mehr-wissen/gesetzgebungsreform/verbaendebeteiligung-fristen",
+    "https://epetitionen.bundestag.de"
+  ],
+  "actions_taken": [
+    "Fresh clone + dated branch created",
+    "Targeted web research: Bundestag, Bundesrat, EU Have-your-say, Referentenentwürfe",
+    "Citizen digest with 10-minute submission template written",
+    "JSON log written, branch pushed, PR opened for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/consultation-2026-08-07"
+}
