@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-07",
+  "items": 5,
+  "anomalies": 4,
+  "total_value_eur": null,
+  "highlights": [
+    "Bundestag beschliesst Vergabebeschleunigungsgesetz: Direktvergabe ohne Ausschreibung bis 50.000 EUR",
+    "Freihaendige Vergabe bei Bauleistungen von 10.000 auf 100.000 EUR netto angehoben (§ 3a VOB/A, seit 01.01.2026)",
+    "NRW: § 75a GO NRW streicht kommunale Vergabegrundsaetze - Transparenzverlust bei freiberuflichen Leistungen",
+    "Bundesrechnungshof prueft KfW-Auftragsvergabe: Stichprobe 30 Vergabevorgaenge in 18 Laendern",
+    "UVgO-Reform: Konsultationsfrist des BMWE laeuft bis 28.08.2026"
+  ],
+  "sources": [
+    "https://vergabeblog.de/2026-04-24/bundestag-ja-zur-vereinfachung-und-digitalisierung-von-vergabeverfahren/",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw17-de-vergaben-1166782",
+    "https://subreport.de/blog/vergaberecht-2026-neue-spielraeume-neue-unsicherheiten/",
+    "https://www.haufe.de/oeffentlicher-dienst/haushalt-finanzen/neues-im-vergaberecht_146_664510.html",
+    "https://www.bundesrechnungshof.de/SharedDocs/Downloads/DE/Berichte/2026/kfw-zusammenarbeit-3-volltext.pdf",
+    "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Dossier/oeffentliche-auftraege-und-vergabe.html"
+  ],
+  "actions_taken": [
+    "fresh_clone",
+    "branch_created",
+    "web_research_5_queries",
+    "digest_written",
+    "log_written",
+    "commit_and_push",
+    "pull_request_opened"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/procurement-2026-08-07"
+}
