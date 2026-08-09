@@ -25,3 +25,7 @@ jobs:
           assert any('future' in x.lower() for x in p['fitness']['hard_gates']), 'historical replay needs future-leak gate'
           print('Gauntlet contract OK:', p['system'])
           PY
+      - name: Compile historical replay harness
+        run: python -m py_compile gauntlet/run_replay_harness.py
+      - name: Enforce replay mechanics
+        run: python gauntlet/run_replay_harness.py
