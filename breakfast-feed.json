@@ -14,6 +14,9 @@
       "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
       "who_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
       "citizen_tip": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date.",
+      "why": "",
+      "how": "",
+      "deadline": "",
       "sources": [
         "https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796",
         "https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf",
@@ -36,7 +39,12 @@
       "effective": "Budget year 2026.",
       "who_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
       "citizen_tip": "",
-      "sources": [],
+      "why": "",
+      "how": "",
+      "deadline": "",
+      "sources": [
+        "https://www.bundestag.de/presse/hib/kurzmeldungen-1127152"
+      ],
       "tags": [
         "wohngeld",
         "bauen_mieten"
@@ -52,6 +60,9 @@
       "effective": "Phased from **1 July 2026** (law adopted March 2026).",
       "who_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
       "citizen_tip": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest.",
+      "why": "",
+      "how": "",
+      "deadline": "",
       "sources": [
         "https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562",
         "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460",
@@ -73,6 +84,9 @@
       "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
       "who_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
       "citizen_tip": "",
+      "why": "",
+      "how": "",
+      "deadline": "",
       "sources": [
         "https://www.tagesschau.de/inland/prien-elterngeld-102.html",
         "https://www.elterngeld.net/elterngeld-kuerzung.html",
@@ -92,6 +106,9 @@
       "effective": "€259 in force now; automation and further increases still planned.",
       "who_affected": "All families with children — the automation step mainly helps families who currently never apply.",
       "citizen_tip": "",
+      "why": "",
+      "how": "",
+      "deadline": "",
       "sources": [
         "https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen",
         "https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html"
@@ -110,7 +127,13 @@
       "effective": "",
       "who_affected": "",
       "citizen_tip": "",
-      "sources": [],
+      "why": "Das Baugesetzbuch entscheidet, wie schnell und wo gebaut werden darf — Mieten, Nachverdichtung, Grünflächen, Beteiligungsrechte vor Ort.",
+      "how": "Anhörungen sind öffentlich (Livestream auf bundestag.de). Bürger:innen können keine formale Stellungnahme einreichen, aber: (a) Anliegen per E-Mail an die Ausschussmitglieder des eigenen Wahlkreises, (b) Petition über den Petitionsausschuss (epetitionen.bundestag.de).",
+      "deadline": "Mittwoch, 23. September 2026, 16:30 Uhr (30. Sitzung)",
+      "sources": [
+        "https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096",
+        "https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf"
+      ],
       "tags": [
         "bauen_mieten",
         "reise"
@@ -126,7 +149,12 @@
       "effective": "",
       "who_affected": "",
       "citizen_tip": "",
-      "sources": [],
+      "why": "Insolvenzabsicherung von Pauschalreisen, Verbraucherrechte bei Reiseabbruch, Zukunft stationärer Reisebüros.",
+      "how": "Öffentliche Sitzung; Eingaben über Ausschussmitglieder oder Petition.",
+      "deadline": "23. September 2026",
+      "sources": [
+        "https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen"
+      ],
       "tags": [
         "bauen_mieten",
         "reise"
@@ -140,7 +168,12 @@
       "effective": "",
       "who_affected": "",
       "citizen_tip": "",
-      "sources": [],
+      "why": "Verbraucherschutzthemen betreffen praktisch jeden Haushalt (Verträge, Abos, Inkasso, digitale Dienste).",
+      "how": "Öffentliche Anhörung, Tagesordnung erscheint ca. 1–2 Wochen vorher; danach gezielt MdB anschreiben.",
+      "deadline": "14. Oktober 2026",
+      "sources": [
+        "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen"
+      ],
       "tags": [
         "bauen_mieten"
       ],
@@ -153,7 +186,13 @@
       "effective": "",
       "who_affected": "",
       "citizen_tip": "",
-      "sources": [],
+      "why": "Quantencomputer betreffen künftig Verschlüsselung, also Bankdaten, Gesundheitsdaten und Kommunikation aller Bürger:innen.",
+      "how": "Fragebogen direkt auf dem Portal „Have your say“ — jede Person in der EU darf teilnehmen, kein Verband nötig. Registrierung mit EU-Login (5 Minuten).",
+      "deadline": "",
+      "sources": [
+        "https://ec.europa.eu/info/law/better-regulation/",
+        "https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026"
+      ],
       "tags": [
         "eu",
         "lobby"
@@ -167,7 +206,13 @@
       "effective": "",
       "who_affected": "",
       "citizen_tip": "",
-      "sources": [],
+      "why": "Chips stecken in Auto, Heizung, Handy — Lieferkettenkrisen treffen Verbraucherpreise unmittelbar.",
+      "how": "„Have your say“-Portal, offen für Einzelpersonen.",
+      "deadline": "",
+      "sources": [
+        "https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/",
+        "https://ec.europa.eu/info/law/better-regulation/"
+      ],
       "tags": [
         "eu",
         "reise"
