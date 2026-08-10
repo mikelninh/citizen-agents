@@ -1,0 +1,39 @@
+{
+  "date": "2026-08-10",
+  "windows_found": 7,
+  "deadlines": [
+    "2026-08-28 — EU: Removing expired rules / third-country equivalence (draft delegated regulation)",
+    "2026-08-31 — EU: Organic farming, non-organic protein feed authorisations",
+    "2026-09-04 — EU: EU strategy on victims' rights",
+    "2026-09-04 — EU: School education, strengthening basic skills",
+    "2026-09-07 — EU: EU financial aid to Ukraine 2024-2025, evaluation",
+    "2026-09-25 — EU: Brexit Adjustment Reserve performance assessment",
+    "2026-10-05 — Bundestag: public hearing on knock-out drops (Recht und Verbraucherschutz)"
+  ],
+  "highlights": [
+    "Next deadline in 18 days: EU third-country equivalence rules (28 Aug 2026)",
+    "Two education/justice consultations close 4 Sep 2026 — high citizen relevance",
+    "Bundestag public hearing on K.-o.-Tropfen scheduled 5 Oct 2026; citizen route is ePetition or letter to committee members",
+    "No new German Referentenentwurf with an open comment deadline detected this run"
+  ],
+  "sources": [
+    "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives",
+    "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18955-EU-financial-aid-to-Ukraine-2024-2025-macro-financial-assistance-evaluation_en",
+    "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18194-EU-strategy-on-victims-rights_en",
+    "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16972-Brexit-Adjustment-Reserve-performance-assessment_en",
+    "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/17673-Organic-farming-authorisations-for-the-use-of-non-organic-protein-feed_en",
+    "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18655-Removing-expired-rules-Cross-reference-to-the-end-date-of-their-recognition-for-rules-for-equivalent-third-countries_en",
+    "https://www.bundestag.de/ausschuesse",
+    "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen/1194314-1194314",
+    "https://www.bundesrat.de/DE/bundesrat/ausschuesse/g/g-termine.html",
+    "https://www.bundeswirtschaftsministerium.de/Navigation/DE/Service/Stellungnahmen/Aktuelle-Gesetzgebungsverfahren/aktuelle-gesetzgebungsverfahren.html"
+  ],
+  "actions_taken": [
+    "Cloned repo and created branch agent/consultation-2026-08-10",
+    "Searched Bundestag committee pages, Bundesrat committee dates, BMWE legislative pipeline, EU Have Your Say",
+    "Wrote citizen digest with 7 windows and a reusable 10-minute submission template",
+    "Opened PR for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/consultation-2026-08-10"
+}
