@@ -141,7 +141,8 @@ function loadAndFilter(){
       const srcs = it.sources||[];
       if (srcs.length) srcs.forEach(s=> h += `<a href="${s}" target="_blank" rel="noopener">🔗 ${s}</a>`);
       else h += `<div class="nosrc">⚠️ Keine Quelle hinterlegt — mit Vorsicht genießen.</div>`;
-      h += `<div class="ask"><a href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen / Mehr erfahren</a></div>`;
+      const firstSrc = srcs.length ? srcs[0] : "https://github.com/mikelninh/citizen-agents";
+      h += `<div class="ask"><a href="${firstSrc}" target="_blank" rel="noopener">🔎 Mehr erfahren</a> · <a href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen</a></div>`;
       div.innerHTML = h;
       box.appendChild(div);
     });
