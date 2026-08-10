@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dein Wächter — Persönlicher Filter (Beta)</title>
+<style>
+  :root { --bg:#0e1320; --card:#192234; --ink:#eef3f9; --muted:#9fb0c3; --amber:#f0a429; --amber2:#ffd479; --teal:#39c5bb; --ok:#3fb950; --line:#2b3650; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:radial-gradient(1200px 500px at 50% -120px,#243152 0%,var(--bg) 60%); color:var(--ink);
+    font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; padding:26px 18px 80px; }
+  h1 { font-size:26px; margin:0 0 4px; background:linear-gradient(90deg,var(--amber2),var(--teal)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .kicker { letter-spacing:4px; font-size:11px; color:var(--amber2); text-transform:uppercase; font-weight:700; }
+  .note { color:var(--muted); font-size:13px; }
+  .panel { background:linear-gradient(180deg,var(--card),#141b2b); border:1px solid var(--line); border-radius:18px; padding:18px 20px; margin:18px 0; }
+  label { display:block; font-size:13px; color:var(--muted); margin:12px 0 4px; font-weight:600; }
+  input[type=text], select { width:100%; padding:11px 12px; border-radius:10px; border:1px solid var(--line);
+    background:#0e1320; color:var(--ink); font-size:15px; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
+  .chip { border:1px solid var(--line); background:#0e1320; color:var(--ink); padding:8px 12px; border-radius:20px; cursor:pointer; font-size:13px; user-select:none; }
+  .chip.on { background:var(--amber); color:#231603; border-color:var(--amber); font-weight:700; }
+  .row { display:flex; gap:10px; }
+  .row > div { flex:1; }
+  .btn { margin-top:14px; background:linear-gradient(90deg,var(--amber),var(--amber2)); color:#231603; border:0; padding:12px 16px;
+    border-radius:12px; font-weight:800; cursor:pointer; font-size:15px; }
+  .summary { margin:6px 0 14px; font-size:14px; color:var(--amber2); }
+  .item { border-top:1px solid var(--line); padding:12px 0; }
+  .item h3 { margin:0 0 6px; font-size:15px; color:#dbe6f3; }
+  .item .meta { font-size:12px; color:var(--muted); }
+  .item .tags { margin-top:6px; }
+  .item .tags span { display:inline-block; background:rgba(57,197,187,.15); color:var(--teal); font-size:11px; padding:2px 8px; border-radius:20px; margin:2px 4px 0 0; }
+  .item.match { background:rgba(240,164,41,.07); border-radius:10px; padding:12px; margin:8px 0; border:1px solid rgba(240,164,41,.25); }
+  .item a { color:#7cc4ff; font-size:12px; text-decoration:none; word-break:break-all; display:block; }
+  .badge { font-size:10px; background:var(--teal); color:#04201d; padding:2px 7px; border-radius:6px; font-weight:800; letter-spacing:1px; }
+  .priv { font-size:12px; color:var(--muted); border-top:1px dashed var(--line); margin-top:14px; padding-top:10px; }
+  footer { color:var(--muted); font-size:13px; text-align:center; margin-top:30px; }
+  footer a { color:#7cc4ff; }
+  .loading { color:var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="kicker">Citizen Agents · Dein Wächter (Beta)</div>
+  <h1>Was geht dich heute wirklich an?</h1>
+  <p class="note">Stell deinen Filter ein — alles bleibt in deinem Browser, nichts wird gespeichert oder hochgeladen.
+    Du siehst nur die Meldungen, die deine Situation treffen.</p>
+
+  <div class="panel">
+    <label for="plz">Postleitzahl (nur Bezirk, kein Identitäts-Match)</label>
+    <input type="text" id="plz" placeholder="z.B. 10115" maxlength="5" inputmode="numeric">
+
+    <label>Lebenslage (mehrfach wählbar)</label>
+    <div class="chips" id="life"></div>
+
+    <label>Themen, die dich interessieren</label>
+    <div class="chips" id="themes"></div>
+
+    <button class="btn" id="apply">Filter anwenden</button>
+    <p class="priv">🔒 Datenschutz: PLZ &amp; Auswahl werden nur lokal im Browser gespeichert (localStorage), nie an uns gesendet.
+      Der Filter läuft komplett auf deinem Gerät.</p>
+  </div>
+
+  <div class="panel">
+    <div class="summary" id="summary">Lade Ticker …</div>
+    <div id="results"><p class="loading">…</p></div>
+  </div>
+
+  <footer>
+    Citizen Agents — Digital Democracy Studio, Berlin.<br>
+    <a href="breakfast.html">Zum vollständigen Ticker</a> ·
+    <a href="https://github.com/mikelninh/citizen-agents">Quellcode</a>
+  </footer>
+</div>
+
+<script>
+const THEMES = ["wohngeld","elterngeld","kindergeld","buergergeld","bauen_mieten","eu","gerichte","lobby","reise"];
+const LIFE = ["Mieter:in","Eltern/Familie","Bürgergeld-Bezieher:in"];
+const THEME_LABEL = {wohngeld:"Wohngeld",elterngeld:"Elterngeld",kindergeld:"Kindergeld",buergergeld:"Bürgergeld",bauen_mieten:"Bauen & Mieten",eu:"EU",gerichte:"Gerichte",lobby:"Lobby",reise:"Reise & Flug"};
+
+let state = { plz:"", life:[], themes:[] };
+try { const s = JSON.parse(localStorage.getItem("dw_profile")); if (s) state = Object.assign(state, s); } catch(e){}
+
+function renderChips(){
+  const lc = document.getElementById("life");
+  LIFE.forEach(l=>{ const c=document.createElement("div"); c.className="chip"+(state.life.includes(l)?" on":""); c.textContent=l;
+    c.onclick=()=>{ c.classList.toggle("on"); state.life.includes(l)?state.life.splice(state.life.indexOf(l),1):state.life.push(l); }; lc.appendChild(c); });
+  const tc = document.getElementById("themes");
+  THEMES.forEach(t=>{ const c=document.createElement("div"); c.className="chip"+(state.themes.includes(t)?" on":""); c.textContent=THEME_LABEL[t]||t;
+    c.onclick=()=>{ c.classList.toggle("on"); state.themes.includes(t)?state.themes.splice(state.themes.indexOf(t),1):state.themes.push(t); }; tc.appendChild(c); });
+  document.getElementById("plz").value = state.plz || "";
+}
+renderChips();
+
+document.getElementById("apply").onclick = ()=>{
+  state.plz = document.getElementById("plz").value.trim();
+  localStorage.setItem("dw_profile", JSON.stringify(state));
+  loadAndFilter();
+};
+
+function loadAndFilter(){
+  fetch("breakfast-feed.json?t="+Date.now()).then(r=>r.json()).then(feed=>{
+    const items = feed.items || [];
+    const summary = document.getElementById("summary");
+    const box = document.getElementById("results");
+    // relevance: theme overlap OR life overlap
+    const matched = items.filter(it=>{
+      const tHit = it.tags.some(t=>state.themes.includes(t));
+      const lHit = it.life.some(l=>state.life.includes(l));
+      return tHit || lHit;
+    });
+    const total = items.length;
+    let head = `Heute ${total} Meldungen`;
+    if (state.themes.length || state.life.length) head += ` · ${matched.length} treffen deine Auswahl`;
+    if (feed.trust && (feed.trust.verified||feed.trust.partial)) head += ` · ${feed.trust.verified} verifiziert, ${feed.trust.partial} teilweise`;
+    summary.textContent = head;
+    box.innerHTML = "";
+    (matched.length?matched:items).forEach(it=>{
+      const div = document.createElement("div");
+      div.className = "item" + (matched.length && (it.tags.some(t=>state.themes.includes(t))||it.life.some(l=>state.life.includes(l)))?" match":"");
+      let h = `<h3><span class="badge">${feed.date}</span> ${it.headline}</h3>`;
+      if (it.what_changed) h += `<div class="meta">${it.what_changed}</div>`;
+      if (it.citizen_tip) h += `<div class="meta">💡 ${it.citizen_tip}</div>`;
+      if (it.tags.length) h += `<div class="tags">${it.tags.map(t=>`<span>${THEME_LABEL[t]||t}</span>`).join("")}</div>`;
+      (it.sources||[]).forEach(s=> h += `<a href="${s}" target="_blank" rel="noopener">${s}</a>`);
+      div.innerHTML = h;
+      box.appendChild(div);
+    });
+    if (!matched.length && (state.themes.length||state.life.length))
+      box.innerHTML = '<p class="note">Keine Treffer für deine Auswahl — unten alle Meldungen. Breiter filtern lohnt sich oft.</p>' + box.innerHTML;
+  }).catch(e=>{
+    document.getElementById("summary").textContent = "Feed nicht erreichbar.";
+    document.getElementById("results").innerHTML = '<p class="note">breakfast-feed.json fehlt. Bitte zuerst den Build ausführen.</p>';
+  });
+}
+loadAndFilter();
+</script>
+</body>
+</html>
