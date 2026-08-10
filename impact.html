@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Impact Dashboard — Citizen Agents</title>
+<meta name="description" content="Aggregated, machine-readable run logs from the Citizen Agents fleet.">
+<style>
+  :root{
+    --bg:#f5f3f1; --navy:#02083a; --blue:#0068e6; --card:#ffffff;
+    --line:#e6e2de; --muted:#5b6076;
+    --ok:#0e9f6e; --partial:#e0a325; --fail:#e0483c;
+    --radius:18px;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--navy);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--blue);text-decoration:none}
+  a:hover{text-decoration:underline}
+  .wrap{max-width:1080px;margin:0 auto;padding:56px 24px 96px}
+  header.hero{margin-bottom:44px}
+  .eyebrow{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);font-weight:650}
+  h1{font-size:clamp(34px,5vw,52px);line-height:1.08;letter-spacing:-.02em;margin:14px 0 12px;font-weight:720}
+  .lede{font-size:19px;color:var(--muted);max-width:62ch;margin:0}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);
+        padding:28px;box-shadow:0 1px 2px rgba(2,8,58,.04),0 10px 30px rgba(2,8,58,.04)}
+  section{margin-top:40px}
+  h2{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);
+     font-weight:650;margin:0 0 16px}
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:18px}
+  .stat .n{font-size:46px;font-weight:720;letter-spacing:-.03em;line-height:1}
+  .stat .l{color:var(--muted);font-size:14px;margin-top:8px}
+  .stat.ok .n{color:var(--ok)} .stat.partial .n{color:var(--partial)} .stat.fail .n{color:var(--fail)}
+  .bar{display:flex;height:14px;border-radius:99px;overflow:hidden;background:#ece8e4;margin:6px 0 18px}
+  .bar span{display:block;height:100%}
+  .legend{display:flex;gap:20px;flex-wrap:wrap;font-size:14px;color:var(--muted)}
+  .dot{display:inline-block;width:9px;height:9px;border-radius:99px;margin-right:7px;vertical-align:1px}
+  .chart{display:grid;gap:14px}
+  .row{display:grid;grid-template-columns:190px 1fr 52px;align-items:center;gap:14px}
+  .row .name{font-weight:600;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .track{background:#f0ece8;border-radius:99px;height:26px;overflow:hidden}
+  .fill{height:100%;border-radius:99px;background:linear-gradient(90deg,#0068e6,#4b95f5);
+        transition:width .7s cubic-bezier(.2,.7,.2,1)}
+  .row .v{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted);font-size:14px}
+  table{width:100%;border-collapse:collapse;font-size:15px}
+  th{text-align:left;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+     font-weight:650;padding:0 12px 12px 0;border-bottom:1px solid var(--line)}
+  td{padding:14px 12px 14px 0;border-bottom:1px solid var(--line);vertical-align:top}
+  tr:last-child td{border-bottom:0}
+  .pill{display:inline-block;font-size:12px;font-weight:650;letter-spacing:.04em;
+        padding:3px 10px;border-radius:99px;text-transform:uppercase}
+  .p-verified{background:#e6f6ef;color:#0b7d57}
+  .p-partial{background:#fdf3e0;color:#96690d}
+  .p-failed{background:#fdecea;color:#b3271c}
+  .p-unknown{background:#eeeae6;color:#5b6076}
+  .head{color:var(--muted);font-size:14px;max-width:52ch}
+  .mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:13px}
+  .note{color:var(--muted);font-size:14px;margin-top:14px}
+  .err{background:#fdecea;border-color:#f6c9c4;color:#8f261d}
+  footer{margin-top:56px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:22px}
+  .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+  @media(max-width:640px){.row{grid-template-columns:120px 1fr 44px}.wrap{padding:36px 16px 64px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">Citizen Agents</div>
+    <h1>Impact Dashboard</h1>
+    <p class="lede">Every autonomous run in this repo writes a machine-readable log to
+      <span class="mono">agent-logs/</span>. This page reads them all, live, and adds nothing
+      that isn't in the data.</p>
+  </header>
+
+  <div id="status" class="card" role="status">Loading run logs…</div>
+
+  <main id="app" hidden>
+    <section>
+      <h2>Aggregate</h2>
+      <div class="card">
+        <div class="stats" id="stats"></div>
+        <div style="margin-top:26px">
+          <div class="bar" id="statusbar"></div>
+          <div class="legend">
+            <span><i class="dot" style="background:var(--ok)"></i><b id="lg-v">0</b> verified</span>
+            <span><i class="dot" style="background:var(--partial)"></i><b id="lg-p">0</b> partial</span>
+            <span><i class="dot" style="background:var(--fail)"></i><b id="lg-f">0</b> failed</span>
+            <span><i class="dot" style="background:#cdc7c1"></i><b id="lg-u">0</b> unclassified</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>What we found this month <span id="monthlabel" style="text-transform:none;letter-spacing:0"></span></h2>
+      <div class="card">
+        <div class="chart" id="chart"></div>
+        <p class="note">Findings = countable items in each log (highlights, issues, critiques,
+          deadlines, directives, source checks, changes).</p>
+      </div>
+    </section>
+
+    <section>
+      <h2>Activity over time</h2>
+      <div class="card">
+        <div id="timeline"></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Runs</h2>
+      <div class="card" style="overflow-x:auto">
+        <table>
+          <thead><tr><th>Date</th><th>Agent</th><th>Status</th><th>Findings</th><th>Headline</th><th>Source</th></tr></thead>
+          <tbody id="runs"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Data: <a href="https://github.com/mikelninh/citizen-agents/tree/main/agent-logs">agent-logs/</a> ·
+    Regenerate the manifest with <span class="mono">python3 build_impact.py</span> ·
+    <span id="gen"></span>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var OWNER="mikelninh", REPO="citizen-agents", BRANCH="main", DIR="agent-logs";
+  var RAW="https://raw.githubusercontent.com/"+OWNER+"/"+REPO+"/"+BRANCH+"/"+DIR+"/";
+  var HTML="https://github.com/"+OWNER+"/"+REPO+"/blob/"+BRANCH+"/"+DIR+"/";
+  var FINDING_KEYS=["highlights","issues","issues_found","critiques","critique_titles",
+    "critique_ids","critique_targets","deadlines","changes","directives","source_checks",
+    "static_checks_passed","needs_human_eyes"];
+
+  function $(id){return document.getElementById(id);}
+  function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){
+    return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c];});}
+
+  function agentOf(name){
+    return name.replace(/\.json$/,"").replace(/-\d{4}-\d{2}-\d{2}.*$/,"") || "unknown";
+  }
+  function dateOf(name,d){
+    if(d && typeof d.date==="string") return d.date;
+    var m=/(\d{4}-\d{2}-\d{2})/.exec(name); return m?m[1]:null;
+  }
+  function findings(d){
+    var t=0;
+    FINDING_KEYS.forEach(function(k){
+      var v=d[k];
+      if(Array.isArray(v)) t+=v.length;
+      else if(typeof v==="number" && isFinite(v)) t+=v;
+    });
+    return t;
+  }
+  function statusOf(d){
+    if(typeof d.failed==="number" && d.failed>0) return "failed";
+    if(typeof d.verified==="number" && d.verified>0)
+      return (typeof d.partial==="number" && d.partial>0)?"partial":"verified";
+    if(typeof d.partial==="number" && d.partial>0) return "partial";
+    var blob=["verdict","status","result","outcome"].map(function(k){return d[k]||"";}).join(" ").toUpperCase();
+    if(/FAIL|BLOCK/.test(blob)) return "failed";
+    if(/PARTIAL|NOTES/.test(blob)) return "partial";
+    if(/VERIFIED|SHIP|PASS|\bOK\b/.test(blob)) return "verified";
+    if(d.build_passed===true) return "verified";
+    if(d.build_passed===false) return "failed";
+    if((d.issues_found&&d.issues_found.length)||(d.issues&&d.issues.length)) return "partial";
+    return Object.keys(d).length?"verified":"unknown";
+  }
+  function headlineOf(d){
+    return d.one_big_idea || d.verdict ||
+      (Array.isArray(d.highlights)&&d.highlights[0]) ||
+      (Array.isArray(d.critique_titles)&&d.critique_titles[0]) || "";
+  }
+  function sourcesOf(d){
+    if(Array.isArray(d.sources)) return d.sources.length;
+    if(typeof d.sources_fetched==="number") return d.sources_fetched;
+    return 0;
+  }
+
+  function fail(msg){
+    var s=$("status"); s.className="card err";
+    s.innerHTML=esc(msg)+' You can still browse the raw logs on '+
+      '<a href="'+HTML.replace("/blob/","/tree/")+'">GitHub</a>.';
+  }
+
+  function listFiles(){
+    // 1) prebuilt manifest (no rate limit, works offline) 2) GitHub contents API
+    return fetch(DIR+"/manifest.json",{cache:"no-cache"})
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .then(function(m){ return (m.runs||[]).map(function(r){return r.file;}); })
+      .catch(function(){
+        return fetch("https://api.github.com/repos/"+OWNER+"/"+REPO+"/contents/"+DIR+"?ref="+BRANCH)
+          .then(function(r){ if(!r.ok) throw new Error("GitHub API "+r.status); return r.json(); })
+          .then(function(a){
+            return a.filter(function(f){return f.type==="file" && /\.json$/.test(f.name) && f.name!=="manifest.json";})
+                    .map(function(f){return f.name;});
+          });
+      });
+  }
+
+  function loadOne(name){
+    return fetch(DIR+"/"+name,{cache:"no-cache"})
+      .then(function(r){ if(!r.ok) throw 0; return r.json(); })
+      .catch(function(){ return fetch(RAW+name).then(function(r){
+        if(!r.ok) throw new Error(name+": HTTP "+r.status); return r.json(); }); })
+      .then(function(d){
+        if(d===null||typeof d!=="object"||Array.isArray(d)) d={items:d};
+        return {file:name, agent:agentOf(name), date:dateOf(name,d),
+                status:statusOf(d), findings:findings(d), headline:headlineOf(d),
+                sources:sourcesOf(d), raw:d};
+      })
+      .catch(function(e){
+        return {file:name, agent:agentOf(name), date:dateOf(name,{}),
+                status:"unknown", findings:0, headline:"unreadable log ("+e.message+")",
+                sources:0, raw:{}};
+      });
+  }
+
+  function render(runs){
+    runs.sort(function(a,b){ return String(b.date||"").localeCompare(String(a.date||""))
+                                 || a.file.localeCompare(b.file); });
+
+    var totF=0, byAgent={}, byStatus={verified:0,partial:0,failed:0,unknown:0}, byDate={}, srcs=0;
+    runs.forEach(function(r){
+      totF+=r.findings; srcs+=r.sources;
+      byStatus[r.status]=(byStatus[r.status]||0)+1;
+      byAgent[r.agent]=(byAgent[r.agent]||0)+r.findings;
+      if(r.date) byDate[r.date]=(byDate[r.date]||0)+1;
+    });
+
+    var agents=Object.keys(byAgent).length;
+    $("stats").innerHTML=[
+      ["",runs.length,"runs logged"],
+      ["",totF,"findings"],
+      ["",agents,"agents active"],
+      ["",srcs,"sources checked"]
+    ].map(function(s){
+      return '<div class="stat '+s[0]+'"><div class="n">'+s[1]+'</div><div class="l">'+s[2]+'</div></div>';
+    }).join("");
+
+    var tot=runs.length||1, cols={verified:"var(--ok)",partial:"var(--partial)",failed:"var(--fail)",unknown:"#cdc7c1"};
+    $("statusbar").innerHTML=["verified","partial","failed","unknown"].map(function(k){
+      var w=(byStatus[k]||0)/tot*100;
+      return w? '<span style="width:'+w.toFixed(2)+'%;background:'+cols[k]+'" title="'+k+': '+byStatus[k]+'"></span>':"";
+    }).join("");
+    $("lg-v").textContent=byStatus.verified||0; $("lg-p").textContent=byStatus.partial||0;
+    $("lg-f").textContent=byStatus.failed||0;   $("lg-u").textContent=byStatus.unknown||0;
+
+    // ---- chart: findings per agent, current (latest) month
+    var months=runs.map(function(r){return (r.date||"").slice(0,7);}).filter(Boolean).sort();
+    var month=months[months.length-1]||"";
+    $("monthlabel").textContent = month? "· "+month : "";
+    var inMonth=runs.filter(function(r){return (r.date||"").slice(0,7)===month;});
+    var m={}; (inMonth.length?inMonth:runs).forEach(function(r){ m[r.agent]=(m[r.agent]||0)+r.findings; });
+    var pairs=Object.keys(m).map(function(k){return [k,m[k]];}).sort(function(a,b){return b[1]-a[1];});
+    var max=pairs.length?Math.max.apply(null,pairs.map(function(p){return p[1];})):1;
+    $("chart").innerHTML=pairs.map(function(p){
+      return '<div class="row"><div class="name" title="'+esc(p[0])+'">'+esc(p[0])+'</div>'+
+        '<div class="track"><div class="fill" style="width:'+(p[1]/(max||1)*100).toFixed(1)+'%"></div></div>'+
+        '<div class="v">'+p[1]+'</div></div>';
+    }).join("") || '<p class="note">No findings recorded yet.</p>';
+
+    // ---- timeline: runs per day, SVG
+    var days=Object.keys(byDate).sort();
+    if(days.length){
+      var w=Math.max(320,days.length*60), h=140, pad=26,
+          mx=Math.max.apply(null,days.map(function(d){return byDate[d];})),
+          bw=Math.min(48,(w-2*pad)/days.length-10);
+      var bars=days.map(function(d,i){
+        var x=pad+i*((w-2*pad)/days.length), bh=(byDate[d]/mx)*(h-2*pad);
+        return '<rect x="'+x.toFixed(1)+'" y="'+(h-pad-bh).toFixed(1)+'" width="'+bw.toFixed(1)+
+          '" height="'+bh.toFixed(1)+'" rx="5" fill="#0068e6"><title>'+esc(d)+': '+byDate[d]+' runs</title></rect>'+
+          '<text x="'+(x+bw/2).toFixed(1)+'" y="'+(h-pad-bh-7).toFixed(1)+'" text-anchor="middle" font-size="12" fill="#02083a" font-weight="650">'+byDate[d]+'</text>'+
+          '<text x="'+(x+bw/2).toFixed(1)+'" y="'+(h-8)+'" text-anchor="middle" font-size="11" fill="#5b6076">'+esc(d.slice(5))+'</text>';
+      }).join("");
+      $("timeline").innerHTML='<svg viewBox="0 0 '+w+' '+h+'" width="100%" height="'+h+
+        '" role="img" aria-label="Runs per day"><line x1="'+pad+'" y1="'+(h-pad)+'" x2="'+(w-pad)+
+        '" y2="'+(h-pad)+'" stroke="#e6e2de"/>'+bars+'</svg>';
+    } else { $("timeline").innerHTML='<p class="note">No dated runs.</p>'; }
+
+    $("runs").innerHTML=runs.map(function(r){
+      return '<tr><td class="mono">'+esc(r.date||"—")+'</td>'+
+        '<td><b>'+esc(r.agent)+'</b></td>'+
+        '<td><span class="pill p-'+r.status+'">'+r.status+'</span></td>'+
+        '<td>'+r.findings+'</td>'+
+        '<td class="head">'+esc(String(r.headline||"").slice(0,180))+'</td>'+
+        '<td><a href="'+HTML+encodeURIComponent(r.file)+'">log</a> · '+
+        '<a href="'+RAW+encodeURIComponent(r.file)+'">raw</a></td></tr>';
+    }).join("");
+
+    $("gen").textContent="Rendered "+new Date().toLocaleString();
+    $("status").hidden=true; $("app").hidden=false;
+  }
+
+  listFiles().then(function(files){
+    if(!files.length) return fail("No run logs found in agent-logs/.");
+    $("status").textContent="Loading "+files.length+" run logs…";
+    return Promise.all(files.map(loadOne)).then(render);
+  }).catch(function(e){ fail("Could not load run logs ("+e.message+")."); });
+})();
+</script>
+</body>
+</html>
