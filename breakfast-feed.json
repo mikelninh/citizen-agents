@@ -1,0 +1,178 @@
+{
+  "date": "2026-08-06",
+  "generated": "2026-08-10",
+  "trust": {
+    "verified": 4,
+    "partial": 2,
+    "failed": 0
+  },
+  "items": [
+    {
+      "watchdog": "2026-08-06",
+      "headline": "Wohngeld — Reform (\"Neuordnung\") im Kabinett: Leistungen sinken",
+      "what_changed": "Cabinet passed a draft law to \"simplify and further develop\" the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.",
+      "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
+      "who_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
+      "citizen_tip": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date.",
+      "sources": [
+        "https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796",
+        "https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf",
+        "https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform",
+        "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html"
+      ],
+      "tags": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life": [
+        "Mieter:in"
+      ]
+    },
+    {
+      "watchdog": "2026-08-06",
+      "headline": "Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)",
+      "what_changed": "Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).",
+      "effective": "Budget year 2026.",
+      "who_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
+      "citizen_tip": "",
+      "sources": [],
+      "tags": [
+        "wohngeld",
+        "bauen_mieten"
+      ],
+      "life": [
+        "Mieter:in"
+      ]
+    },
+    {
+      "watchdog": "2026-08-06",
+      "headline": "Bürgergeld → \"Neue Grundsicherung\": harsher sanctions from 1 July 2026",
+      "what_changed": "Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:",
+      "effective": "Phased from **1 July 2026** (law adopted March 2026).",
+      "who_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
+      "citizen_tip": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest.",
+      "sources": [
+        "https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562",
+        "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460",
+        "https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen",
+        "https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition"
+      ],
+      "tags": [
+        "buergergeld",
+        "eu"
+      ],
+      "life": [
+        "Bürgergeld-Bezieher:in"
+      ]
+    },
+    {
+      "watchdog": "2026-08-06",
+      "headline": "Elterngeld — Prien draft: 14 → 12 months, 3 \"Vätermonate\", higher min/max",
+      "what_changed": "",
+      "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
+      "who_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
+      "citizen_tip": "",
+      "sources": [
+        "https://www.tagesschau.de/inland/prien-elterngeld-102.html",
+        "https://www.elterngeld.net/elterngeld-kuerzung.html",
+        "https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810"
+      ],
+      "tags": [
+        "elterngeld"
+      ],
+      "life": [
+        "Eltern/Familie"
+      ]
+    },
+    {
+      "watchdog": "2026-08-06",
+      "headline": "Kindergeld — €259/month since 01.01.2026, automatic payment planned",
+      "what_changed": "Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).",
+      "effective": "€259 in force now; automation and further increases still planned.",
+      "who_affected": "All families with children — the automation step mainly helps families who currently never apply.",
+      "citizen_tip": "",
+      "sources": [
+        "https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen",
+        "https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html"
+      ],
+      "tags": [
+        "kindergeld"
+      ],
+      "life": [
+        "Eltern/Familie"
+      ]
+    },
+    {
+      "watchdog": "6. August 2026",
+      "headline": "Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)",
+      "what_changed": "",
+      "effective": "",
+      "who_affected": "",
+      "citizen_tip": "",
+      "sources": [],
+      "tags": [
+        "bauen_mieten",
+        "reise"
+      ],
+      "life": [
+        "Mieter:in"
+      ]
+    },
+    {
+      "watchdog": "6. August 2026",
+      "headline": "Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“",
+      "what_changed": "",
+      "effective": "",
+      "who_affected": "",
+      "citizen_tip": "",
+      "sources": [],
+      "tags": [
+        "bauen_mieten",
+        "reise"
+      ],
+      "life": []
+    },
+    {
+      "watchdog": "6. August 2026",
+      "headline": "Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz",
+      "what_changed": "",
+      "effective": "",
+      "who_affected": "",
+      "citizen_tip": "",
+      "sources": [],
+      "tags": [
+        "bauen_mieten"
+      ],
+      "life": []
+    },
+    {
+      "watchdog": "6. August 2026",
+      "headline": "EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft",
+      "what_changed": "",
+      "effective": "",
+      "who_affected": "",
+      "citizen_tip": "",
+      "sources": [],
+      "tags": [
+        "eu",
+        "lobby"
+      ],
+      "life": []
+    },
+    {
+      "watchdog": "6. August 2026",
+      "headline": "EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)",
+      "what_changed": "",
+      "effective": "",
+      "who_affected": "",
+      "citizen_tip": "",
+      "sources": [],
+      "tags": [
+        "eu",
+        "reise"
+      ],
+      "life": []
+    }
+  ]
+}
