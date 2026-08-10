@@ -73,17 +73,42 @@
   .live { display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--ok); margin-right:6px;
     box-shadow:0 0 0 0 rgba(26,127,75,.5); animation:pulse 2s infinite; vertical-align:middle; }
   @keyframes pulse { 0%{box-shadow:0 0 0 0 rgba(26,127,75,.5)} 70%{box-shadow:0 0 0 10px rgba(26,127,75,0)} 100%{box-shadow:0 0 0 0 rgba(26,127,75,0)} }
+  .topbar { display:flex; align-items:center; justify-content:space-between; padding:6px 2px 16px; }
+  .brand { display:flex; align-items:center; gap:9px; font-weight:700; color:var(--navy); font-size:15px; }
+  .brand-mark { width:22px; height:22px; flex:none; }
+  .lang-toggle { border:1px solid var(--line); background:#fff; color:var(--navy); font-weight:700; font-size:13px;
+    padding:7px 15px; border-radius:999px; cursor:pointer; transition:.15s; }
+  .lang-toggle:hover { border-color:var(--accent); color:var(--accent); }
+  .masthead { position:relative; text-align:center; padding:26px 0 30px; }
+  .masthead::before { content:""; position:absolute; left:-20px; right:-20px; top:-30px; height:260px;
+    background:radial-gradient(120% 100% at 50% 0, rgba(0,104,230,.09), transparent 70%); z-index:0; pointer-events:none; }
+  .masthead > * { position:relative; z-index:1; }
+  .tagline { color:var(--accent); font-size:15px; margin-top:12px; min-height:22px; font-style:italic; }
+  .finding { border-left:3px solid var(--accent); padding:14px 0 14px 16px; margin:16px 0; border-top:0; }
+  .finding h3 { font-size:16px; }
+  .srcchip { display:inline-block; background:var(--accent-soft); color:var(--accent); font-size:11px; padding:3px 10px; border-radius:999px; margin:3px 6px 0 0; word-break:break-all; }
+  .srcchip a { color:inherit; text-decoration:none; }
+  .srcchip a:hover { text-decoration:underline; }
 </style>
 </head>
-<body>
+<body data-latest="2026-08-06" data-today="2026-08-10">
 <div class="wrap">
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L21 6 V12 C21 17 17 21 12 22 C7 21 3 17 3 12 V6 Z" fill="#0068e6"/><path d="M8 12 l3 3 l5 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <span data-i18n="brand">Citizen Agents</span>
+    </div>
+    <button id="langToggle" class="lang-toggle" onclick="toggleLang()" data-i18n="lang_label">EN</button>
+  </header>
+
   <div class="masthead">
     <div class="coffee">{COFFEE}</div>
-    <div class="kicker">Citizen Agents · Breakfast Ticker</div>
-    <h1>Guten Morgen, Bürger:in.</h1>
-    <div class="dateline"><span class="live"></span>Ausgabe 2026-08-06 · erstellt 2026-08-10 · jeden Morgen frisch</div>
-    <div id="tag"></div>
+    <div class="kicker" data-i18n="hero_kicker">Breakfast Ticker</div>
+    <h1 data-i18n="hero_title">Guten Morgen, Bürger:in.</h1>
+    <div class="dateline"><span class="live"></span><span id="dateline"></span></div>
+    <div id="tag" class="tagline"></div>
   </div>
+
   
         <section class="card">
           <header class="card-head">
@@ -96,7 +121,7 @@
   <path d="M26 40 Q32 46 38 40" stroke="#1a212b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
   <path d="M20 18 l4 -6 l4 6 M40 18 l4 -6 l4 6" stroke="#7a4d12" stroke-width="2" fill="none"/>
   <circle cx="32" cy="9" r="3" fill="#ffd479" stroke="#7a4d12" stroke-width="1.5"/>
-</svg><div><span class="badge">WATCHDOG</span>
+</svg><div><span class="badge" data-i18n="badge_watchdog">WÄCHTER</span>
             <h2> 2026-08-06</h2></div></header>
           <p class="intro">Watchdog report on German state benefits: what changed, when it bites, and who is affected. **5 tracked changes this run.** Every entry has an official or major-outlet source.</p>
           <div class="findings"><div class="finding"><h3><span class="fnum">1</span> Wohngeld — Reform (&quot;Neuordnung&quot;) im Kabinett: Leistungen sinken</h3>
@@ -104,19 +129,19 @@
 <p><span class="lbl">Ab wann</span> Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.</p>
 <p><span class="lbl">Wen betrifft&#x27;s</span> All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.</p>
 <p><span class="lbl">Tipp für dich</span> If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date.</p>
-<div class="sources"><span class="lbl">Quellen:</span>
-<a href="https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796</a>
-<a href="https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf" target="_blank" rel="noopener">https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf</a>
-<a href="https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform" target="_blank" rel="noopener">https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform</a>
-<a href="https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html" target="_blank" rel="noopener">https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html</a>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796</a></span>
+<span class="srcchip"><a href="https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf" target="_blank" rel="noopener">https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf</a></span>
+<span class="srcchip"><a href="https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform" target="_blank" rel="noopener">https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform</a></span>
+<span class="srcchip"><a href="https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html" target="_blank" rel="noopener">https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html</a></span>
 </div>
 </div>
 <div class="finding"><h3><span class="fnum">2</span> Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)</h3>
 <p><span class="lbl">Was hat sich geändert</span> Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).</p>
 <p><span class="lbl">Ab wann</span> Budget year 2026.</p>
 <p><span class="lbl">Wen betrifft&#x27;s</span> Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.</p>
-<div class="sources"><span class="lbl">Quellen:</span>
-<a href="https://www.bundestag.de/presse/hib/kurzmeldungen-1127152" target="_blank" rel="noopener">https://www.bundestag.de/presse/hib/kurzmeldungen-1127152</a>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.bundestag.de/presse/hib/kurzmeldungen-1127152" target="_blank" rel="noopener">https://www.bundestag.de/presse/hib/kurzmeldungen-1127152</a></span>
 </div>
 </div>
 <div class="finding"><h3><span class="fnum">3</span> Bürgergeld → &quot;Neue Grundsicherung&quot;: harsher sanctions from 1 July 2026</h3>
@@ -124,29 +149,29 @@
 <p><span class="lbl">Ab wann</span> Phased from **1 July 2026** (law adopted March 2026).</p>
 <p><span class="lbl">Wen betrifft&#x27;s</span> ~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.</p>
 <p><span class="lbl">Tipp für dich</span> Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest.</p>
-<div class="sources"><span class="lbl">Quellen:</span>
-<a href="https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562</a>
-<a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460" target="_blank" rel="noopener">https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460</a>
-<a href="https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen" target="_blank" rel="noopener">https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen</a>
-<a href="https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition" target="_blank" rel="noopener">https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition</a>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562</a></span>
+<span class="srcchip"><a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460" target="_blank" rel="noopener">https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460</a></span>
+<span class="srcchip"><a href="https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen" target="_blank" rel="noopener">https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen</a></span>
+<span class="srcchip"><a href="https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition" target="_blank" rel="noopener">https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition</a></span>
 </div>
 </div>
 <div class="finding"><h3><span class="fnum">4</span> Elterngeld — Prien draft: 14 → 12 months, 3 &quot;Vätermonate&quot;, higher min/max</h3>
 <p><span class="lbl">Ab wann</span> Not yet law; targeted for ~2027 births. Current births still under 14-month rules.</p>
 <p><span class="lbl">Wen betrifft&#x27;s</span> ~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.</p>
-<div class="sources"><span class="lbl">Quellen:</span>
-<a href="https://www.tagesschau.de/inland/prien-elterngeld-102.html" target="_blank" rel="noopener">https://www.tagesschau.de/inland/prien-elterngeld-102.html</a>
-<a href="https://www.elterngeld.net/elterngeld-kuerzung.html" target="_blank" rel="noopener">https://www.elterngeld.net/elterngeld-kuerzung.html</a>
-<a href="https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810</a>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.tagesschau.de/inland/prien-elterngeld-102.html" target="_blank" rel="noopener">https://www.tagesschau.de/inland/prien-elterngeld-102.html</a></span>
+<span class="srcchip"><a href="https://www.elterngeld.net/elterngeld-kuerzung.html" target="_blank" rel="noopener">https://www.elterngeld.net/elterngeld-kuerzung.html</a></span>
+<span class="srcchip"><a href="https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810</a></span>
 </div>
 </div>
 <div class="finding"><h3><span class="fnum">5</span> Kindergeld — €259/month since 01.01.2026, automatic payment planned</h3>
 <p><span class="lbl">Was hat sich geändert</span> Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).</p>
 <p><span class="lbl">Ab wann</span> €259 in force now; automation and further increases still planned.</p>
 <p><span class="lbl">Wen betrifft&#x27;s</span> All families with children — the automation step mainly helps families who currently never apply.</p>
-<div class="sources"><span class="lbl">Quellen:</span>
-<a href="https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen" target="_blank" rel="noopener">https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen</a>
-<a href="https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html" target="_blank" rel="noopener">https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html</a>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen" target="_blank" rel="noopener">https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen</a></span>
+<span class="srcchip"><a href="https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html" target="_blank" rel="noopener">https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html</a></span>
 </div>
 </div></div>
           <div class="bottom">Two big cuts are in the pipeline (Wohngeld formula, Elterngeld duration) and one is already law (Grundsicherung sanctions from 1 July 2026). Only Kindergeld moved up. **If you might qualify for Wohngeld, apply before the reform passes.**  *Generated by the Benefit-Discovery Watch agent. Draft laws can change — always verify with your local Wohngeldstelle / Jobcenter / Familienkasse.*</div>
@@ -162,35 +187,35 @@
   <path d="M26 40 Q32 46 38 40" stroke="#1a212b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
   <path d="M20 18 l4 -6 l4 6 M40 18 l4 -6 l4 6" stroke="#7a4d12" stroke-width="2" fill="none"/>
   <circle cx="32" cy="9" r="3" fill="#ffd479" stroke="#7a4d12" stroke-width="1.5"/>
-</svg><div><span class="badge">WATCHDOG</span>
+</svg><div><span class="badge" data-i18n="badge_watchdog">WÄCHTER</span>
             <h2> 6. August 2026</h2></div></header>
           <p class="intro">**Gefundene offene Fenster: 5**</p>
           <div class="findings"><div class="finding"><h3><span class="fnum">1</span> Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)</h3>
-<div class="sources"><span class="lbl">Quellen:</span>
-<a href="https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096" target="_blank" rel="noopener">https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096</a>
-<a href="https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf" target="_blank" rel="noopener">https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf</a>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096" target="_blank" rel="noopener">https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096</a></span>
+<span class="srcchip"><a href="https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf" target="_blank" rel="noopener">https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf</a></span>
 </div>
 </div>
 <div class="finding"><h3><span class="fnum">2</span> Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“</h3>
-<div class="sources"><span class="lbl">Quellen:</span>
-<a href="https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen" target="_blank" rel="noopener">https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen</a>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen" target="_blank" rel="noopener">https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen</a></span>
 </div>
 </div>
 <div class="finding"><h3><span class="fnum">3</span> Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz</h3>
-<div class="sources"><span class="lbl">Quellen:</span>
-<a href="https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen" target="_blank" rel="noopener">https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen</a>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen" target="_blank" rel="noopener">https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen</a></span>
 </div>
 </div>
 <div class="finding"><h3><span class="fnum">4</span> EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft</h3>
-<div class="sources"><span class="lbl">Quellen:</span>
-<a href="https://ec.europa.eu/info/law/better-regulation/" target="_blank" rel="noopener">https://ec.europa.eu/info/law/better-regulation/</a>
-<a href="https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026" target="_blank" rel="noopener">https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026</a>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://ec.europa.eu/info/law/better-regulation/" target="_blank" rel="noopener">https://ec.europa.eu/info/law/better-regulation/</a></span>
+<span class="srcchip"><a href="https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026" target="_blank" rel="noopener">https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026</a></span>
 </div>
 </div>
 <div class="finding"><h3><span class="fnum">5</span> EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)</h3>
-<div class="sources"><span class="lbl">Quellen:</span>
-<a href="https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/" target="_blank" rel="noopener">https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/</a>
-<a href="https://ec.europa.eu/info/law/better-regulation/" target="_blank" rel="noopener">https://ec.europa.eu/info/law/better-regulation/</a>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/" target="_blank" rel="noopener">https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/</a></span>
+<span class="srcchip"><a href="https://ec.europa.eu/info/law/better-regulation/" target="_blank" rel="noopener">https://ec.europa.eu/info/law/better-regulation/</a></span>
 </div>
 </div></div>
           
@@ -207,12 +232,12 @@
   <path d="M26 40 Q32 46 38 40" stroke="#1a212b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
   <path d="M20 18 l4 -6 l4 6 M40 18 l4 -6 l4 6" stroke="#7a4d12" stroke-width="2" fill="none"/>
   <circle cx="32" cy="9" r="3" fill="#ffd479" stroke="#7a4d12" stroke-width="1.5"/>
-</svg><div><span class="badge trust-badge">TRUST</span>
-            <h2>Vom Fleet-Reviewer geprüft</h2></div></header>
+</svg><div><span class="badge trust-badge" data-i18n="badge_trust">VERTRAUEN</span>
+            <h2 data-i18n="trust_title">Vom Fleet-Reviewer geprüft</h2></div></header>
           <div class="trust-totals">
-            <div class="t ok"><b>4</b><span>verifiziert</span></div>
-            <div class="t warn"><b>2</b><span>teilweise</span></div>
-            <div class="t bad"><b>0</b><span>fehlerhaft</span></div>
+            <div class="t ok"><b>4</b><span data-i18n="t_verified">verifiziert</span></div>
+            <div class="t warn"><b>2</b><span data-i18n="t_partial">teilweise</span></div>
+            <div class="t bad"><b>0</b><span data-i18n="t_failed">fehlerhaft</span></div>
           </div>
           <table class="verdicts"><tr><th>Wächter</th><th>Urteil</th><th>Kurzbegründung</th></tr><tr><td><b>benefit-watch</b></td><td><span class="pill warn">PARTIAL</span></td><td>Wohngeld budget figure misattributed: €150.13m is the *whole Einzelplan 25* increase, the Wohngeld line rose €160m.</td></tr>
 <tr><td><b>consultation-watch</b></td><td><span class="pill ok">VERIFIED</span></td><td>BauGB hearing verified to the minute against bundestag.de; only weak EU portal links.</td></tr>
@@ -220,51 +245,109 @@
 <tr><td><b>studio-director</b></td><td><span class="pill ok">VERIFIED</span></td><td>Code-grounded critique, file/line references check out; no external claims to falsify.</td></tr>
 <tr><td><b>studio-engineer</b></td><td><span class="pill ok">VERIFIED</span></td><td>Every claim independently reproduced by the reviewer: build green, 8/8 aim tests, grep clean.</td></tr>
 <tr><td><b>studio-qa</b></td><td><span class="pill ok">VERIFIED</span></td><td>QA&#x27;s own findings reproduce; honest about what it structurally could not test.</td></tr></table>
-          <p class="note">Menschen prüfen, Agenten entwerfen — niemand merged automatisch. Jede Meldung trägt ihre Quelle.</p>
+          <p class="note" data-i18n="trust_note">Menschen prüfen, Agenten entwerfen — niemand merges automatisch. Jede Meldung trägt ihre Quelle.</p>
         </section>
   
         <section class="card support">
-          <header class="card-head">💛<div><span class="badge sup-badge">UNTERSTÜTZEN</span>
-            <h2>Kostenlos — und trotzdem nicht umsonst</h2></div></header>
-          <p class="intro">Der Ticker bleibt für immer gratis. Server, Review und neue Wächter laufen über freiwillige Unterstützung. So sieht die Aufteilung aus:</p>
+          <header class="card-head">💛<div><span class="badge sup-badge" data-i18n="badge_support">UNTERSTÜTZEN</span>
+            <h2 data-i18n="support_title">Kostenlos — und trotzdem nicht umsonst</h2></div></header>
+          <p class="intro" data-i18n="support_intro">Der Ticker bleibt für immer gratis. Server, Review und neue Wächter laufen über freiwillige Unterstützung. So sieht die Aufteilung aus:</p>
           <div class="tiers">
             <div class="tier free">
-              <h3>🆓 Jeder Bürger</h3>
-              <ul>
-                <li>Täglicher Breakfast Ticker</li>
-                <li>Alle Quellen verlinkt</li>
-                <li>Trust-Panel (menschlich geprüft)</li>
-                <li>Keine Anmeldung, keine Paywall</li>
-              </ul>
+              <h3 data-i18n="tier_free_title">🆓 Jeder Bürger</h3>
+              <ul id="tierFree"></ul>
             </div>
             <div class="tier pro">
-              <h3>⭐ "Dein Wächter" <span class="soon">in Planung</span></h3>
-              <ul>
-                <li>Persönliche Alarme nach PLZ &amp; Lebenslage</li>
-                <li>Tiefere Digests + Archiv-Suche</li>
-                <li>Früher Zugang zu neuen Wächtern</li>
-                <li>API für Journalist:innen &amp; NGOs</li>
-              </ul>
-              <div class="price">ab 3 € / Monat</div>
+              <h3><span data-i18n="tier_pro_title">⭐ „Dein Wächter"</span> <span class="soon" data-i18n="soon">in Planung</span></h3>
+              <ul id="tierPro"></ul>
+              <div class="price" data-i18n="price">ab 3 € / Monat</div>
             </div>
           </div>
           <div class="donate-row">
-            <a class="btn primary" href="https://github.com/sponsors/mikelninh" target="_blank" rel="noopener">☕ GitHub Sponsors (ab 1 €)</a>
-            <a class="btn ghost" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents%20f%C3%BCr%20Organisationen" target="_blank" rel="noopener">🤝 Für Organisationen &amp; NGOs</a>
+            <a class="btn primary" href="https://github.com/sponsors/mikelninh" target="_blank" rel="noopener" data-i18n="btn_sponsors">☕ GitHub Sponsors (ab 1 €)</a>
+            <a class="btn ghost" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents%20f%C3%BCr%20Organisationen" target="_blank" rel="noopener" data-i18n="btn_org">🤝 Für Organisationen &amp; NGOs</a>
           </div>
-          <p class="note">Kostenlos. Für immer. Finanziert durch Menschen, die es ernst meinen.</p>
+          <p class="note" data-i18n="support_note">Kostenlos. Für immer. Finanziert durch Menschen, die es ernst meinen.</p>
         </section>
+
   <footer>
-    Citizen Agents — Digital Democracy Studio, Berlin.<br>
-    <a href="https://github.com/mikelninh/citizen-agents">Quellcode &amp; Rohdaten</a> ·
-    <a href="https://mikelninh.github.io/citizen-agents/">Zur Startseite</a>
+    <span data-i18n="footer">Citizen Agents — Digital Democracy Studio, Berlin.</span><br>
+    <a href="https://github.com/mikelninh/citizen-agents" data-i18n="footer_src">Quellcode &amp; Rohdaten</a> ·
+    <a href="https://mikelninh.github.io/citizen-agents/" data-i18n="footer_home">Zur Startseite</a>
   </footer>
 </div>
 <script>
-  var tags = ["Frisch gebr\u00fcht aus \u00f6ffentlichen Quellen.", "Deine Rechte, t\u00e4glich gepr\u00fcft.", "Kein Bezahlschutz vor deinen Rechten.", "W\u00e4chter schlafen nicht \u2014 damit du ruhig schl\u00e4fst."];
-  var el = document.getElementById('tag');
-  var i = Math.floor(Math.random()*tags.length);
-  el.textContent = tags[i];
+  var I18N = {
+    de: {
+      brand:"Citizen Agents",
+      hero_kicker:"Breakfast Ticker",
+      hero_title:"Guten Morgen, Bürger:in.",
+      dateline:"Ausgabe {L} · erstellt {T} · jeden Morgen frisch",
+      badge_watchdog:"WÄCHTER", badge_trust:"VERTRAUEN", badge_support:"UNTERSTÜTZEN",
+      trust_title:"Vom Fleet-Reviewer geprüft",
+      t_verified:"verifiziert", t_partial:"teilweise", t_failed:"fehlerhaft",
+      trust_note:"Menschen prüfen, Agenten entwerfen — niemand merged automatisch. Jede Meldung trägt ihre Quelle.",
+      support_title:"Kostenlos — und trotzdem nicht umsonst",
+      support_intro:"Der Ticker bleibt für immer gratis. Server, Review und neue Wächter laufen über freiwillige Unterstützung. So sieht die Aufteilung aus:",
+      tier_free_title:"🆓 Jeder Bürger",
+      tier_free:["Täglicher Breakfast Ticker","Alle Quellen verlinkt","Trust-Panel (menschlich geprüft)","Keine Anmeldung, keine Paywall"],
+      tier_pro_title:'⭐ „Dein Wächter"',
+      soon:"in Planung",
+      tier_pro:["Persönliche Alarme nach PLZ &amp; Lebenslage","Tiefere Digests + Archiv-Suche","Früher Zugang zu neuen Wächtern","API für Journalist:innen &amp; NGOs"],
+      price:"ab 3 € / Monat",
+      btn_sponsors:"☕ GitHub Sponsors (ab 1 €)",
+      btn_org:"🤝 Für Organisationen &amp; NGOs",
+      support_note:"Kostenlos. Für immer. Finanziert durch Menschen, die es ernst meinen.",
+      footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
+      footer_src:"Quellcode &amp; Rohdaten",
+      footer_home:"Zur Startseite",
+      sources:"Quellen:",
+      lang_label:"EN",
+      tags:["Frisch gebrüht aus öffentlichen Quellen.","Deine Rechte, täglich geprüft.","Kein Bezahlschutz vor deinen Rechten.","Wächter schlafen nicht — damit du ruhig schläfst."]
+    },
+    en: {
+      brand:"Citizen Agents",
+      hero_kicker:"Breakfast Ticker",
+      hero_title:"Good morning, citizen.",
+      dateline:"Issue {L} · built {T} · fresh every morning",
+      badge_watchdog:"WATCHDOG", badge_trust:"TRUST", badge_support:"SUPPORT",
+      trust_title:"Reviewed by the Fleet Reviewer",
+      t_verified:"verified", t_partial:"partial", t_failed:"failed",
+      trust_note:"Humans review, agents draft — nothing merges automatically. Every item carries its source.",
+      support_title:"Free — and still not cheap",
+      support_intro:"The ticker stays free forever. Servers, review and new watchdogs run on voluntary support. Here's the split:",
+      tier_free_title:"🆓 Every citizen",
+      tier_free:["Daily Breakfast Ticker","All sources linked","Trust panel (human-reviewed)","No sign-up, no paywall"],
+      tier_pro_title:'⭐ "Your Watchdog"',
+      soon:"planned",
+      tier_pro:["Personal alerts by postcode &amp; situation","Deeper digests + archive search","Early access to new watchdogs","API for journalists &amp; NGOs"],
+      price:"from €3 / month",
+      btn_sponsors:"☕ GitHub Sponsors (from €1)",
+      btn_org:"🤝 For organisations &amp; NGOs",
+      support_note:"Free. Forever. Funded by people who mean it.",
+      footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
+      footer_src:"Source code &amp; raw data",
+      footer_home:"To the homepage",
+      sources:"Sources:",
+      lang_label:"DE",
+      tags:["Freshly brewed from public sources.","Your rights, checked daily.","No paywall in front of your rights.","Watchdogs don't sleep — so you can."]
+    }
+  };
+  function fillList(id, arr){ var u=document.getElementById(id); if(!u) return; u.innerHTML = arr.map(function(x){return '<li>'+x+'</li>';}).join(''); }
+  function applyLang(lang){
+    var d = I18N[lang] || I18N.de;
+    document.documentElement.lang = lang;
+    document.querySelectorAll('[data-i18n]').forEach(function(el){ var k=el.getAttribute('data-i18n'); if(d[k]!=null) el.textContent=d[k]; });
+    fillList('tierFree', d.tier_free);
+    fillList('tierPro', d.tier_pro);
+    var L=document.body.dataset.latest, T=document.body.dataset.today;
+    var dl=document.getElementById('dateline'); if(dl) dl.textContent=d.dateline.replace('{L}',L).replace('{T}',T);
+    var tg=document.getElementById('tag'); if(tg) tg.textContent=d.tags[Math.floor(Math.random()*d.tags.length)];
+    var lt=document.getElementById('langToggle'); if(lt) lt.textContent=d.lang_label;
+    try{ localStorage.setItem('ca_lang', lang); }catch(e){}
+  }
+  function toggleLang(){ var cur='de'; try{ cur=localStorage.getItem('ca_lang')||'de'; }catch(e){} applyLang(cur==='de'?'en':'de'); }
+  (function(){ var s='de'; try{ s=localStorage.getItem('ca_lang')||'de'; }catch(e){} applyLang(s); })();
 </script>
 </body>
 </html>
