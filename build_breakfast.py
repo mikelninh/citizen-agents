@@ -155,8 +155,8 @@ def domain(url):
     host = host[4:] if host.startswith("www.") else host
     if host.startswith("xn--"):
         try:
-            import codecs
-            return codecs.decode(host, "idna_codec").decode("utf-8")
+            import idna
+            return idna.decode(host)
         except Exception:
             pass
     return host
