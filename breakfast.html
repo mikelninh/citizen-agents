@@ -89,17 +89,25 @@
   .srcchip { display:inline-block; background:var(--accent-soft); color:var(--accent); font-size:11px; padding:3px 10px; border-radius:999px; margin:3px 6px 0 0; word-break:break-all; }
   .srcchip a { color:inherit; text-decoration:none; }
   .srcchip a:hover { text-decoration:underline; }
+  .lang-bar { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .lang-btn { border:1px solid var(--line); background:#fff; color:var(--muted); font-weight:700; font-size:12px;
+    padding:5px 11px; border-radius:999px; cursor:pointer; transition:.15s; }
+  .lang-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .lang-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .auto-note { font-size:11px; color:var(--warn); background:var(--warn-soft); padding:6px 10px; border-radius:10px; margin:10px 0 0; }
 </style>
 </head>
-<body data-latest="2026-08-06" data-today="2026-08-10">
+<body data-latest="2026-08-10" data-today="2026-08-10">
 <div class="wrap">
   <header class="topbar">
     <div class="brand">
       <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L21 6 V12 C21 17 17 21 12 22 C7 21 3 17 3 12 V6 Z" fill="#0068e6"/><path d="M8 12 l3 3 l5 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
       <span data-i18n="brand">Citizen Agents</span>
     </div>
-    <button id="langToggle" class="lang-toggle" onclick="toggleLang()" data-i18n="lang_label">EN</button>
+    <div class="lang-bar" id="langBar"></div>
   </header>
+
+  <div id="autoNote" class="auto-note" style="display:none"></div>
 
   <div class="masthead">
     <div class="coffee">{COFFEE}</div>
@@ -122,131 +130,96 @@
   <path d="M20 18 l4 -6 l4 6 M40 18 l4 -6 l4 6" stroke="#7a4d12" stroke-width="2" fill="none"/>
   <circle cx="32" cy="9" r="3" fill="#ffd479" stroke="#7a4d12" stroke-width="1.5"/>
 </svg><div><span class="badge" data-i18n="badge_watchdog">WÄCHTER</span>
-            <h2> 2026-08-06</h2></div></header>
-          <p class="intro">Watchdog report on German state benefits: what changed, when it bites, and who is affected. **5 tracked changes this run.** Every entry has an official or major-outlet source.</p>
-          <div class="findings"><div class="finding"><h3><span class="fnum">1</span> Wohngeld — Reform (&quot;Neuordnung&quot;) im Kabinett: Leistungen sinken</h3>
-<p><span class="lbl">Was hat sich geändert</span> Cabinet passed a draft law to &quot;simplify and further develop&quot; the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.</p>
-<p><span class="lbl">Ab wann</span> Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.</p>
-<p><span class="lbl">Wen betrifft&#x27;s</span> All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.</p>
-<p><span class="lbl">Tipp für dich</span> If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date.</p>
+            <h2> 2026-08-10</h2></div></header>
+          <p class="intro">Geldradar für Bürgerinnen und Bürger: **Leistungen, auf die du Anspruch hast, die aber massenhaft nicht abgerufen werden.** Jeder Eintrag nennt Quellen.</p>
+          <div class="findings"><div class="finding"><h3><span class="fnum">1</span> Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift</h3>
+<p><span class="lbl">Was hat sich geändert</span> Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (&quot;verdeckte Armut&quot;). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.</p>
+<p><span class="lbl">Ab wann</span> Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.</p>
+<p><span class="lbl">Wen betrifft&#x27;s</span> Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.</p>
+<p><span class="lbl">Tipp für dich</span> Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*</p>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
-<span class="srcchip"><a href="https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796</a></span>
-<span class="srcchip"><a href="https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf" target="_blank" rel="noopener">https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf</a></span>
-<span class="srcchip"><a href="https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform" target="_blank" rel="noopener">https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform</a></span>
+<span class="srcchip"><a href="https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html" target="_blank" rel="noopener">https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html</a></span>
 <span class="srcchip"><a href="https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html" target="_blank" rel="noopener">https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html</a></span>
+<span class="srcchip"><a href="https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html" target="_blank" rel="noopener">https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html</a></span>
 </div>
 </div>
-<div class="finding"><h3><span class="fnum">2</span> Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)</h3>
-<p><span class="lbl">Was hat sich geändert</span> Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).</p>
-<p><span class="lbl">Ab wann</span> Budget year 2026.</p>
-<p><span class="lbl">Wen betrifft&#x27;s</span> Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.</p>
+<div class="finding"><h3><span class="fnum">2</span> Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden</h3>
+<p><span class="lbl">Was hat sich geändert</span> Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.</p>
+<p><span class="lbl">Ab wann</span> Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.</p>
+<p><span class="lbl">Wen betrifft&#x27;s</span> Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.</p>
+<p><span class="lbl">Tipp für dich</span> Zuerst den kostenlosen &quot;KiZ-Lotse&quot; der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*</p>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
-<span class="srcchip"><a href="https://www.bundestag.de/presse/hib/kurzmeldungen-1127152" target="_blank" rel="noopener">https://www.bundestag.de/presse/hib/kurzmeldungen-1127152</a></span>
+<span class="srcchip"><a href="https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer" target="_blank" rel="noopener">https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer</a></span>
+<span class="srcchip"><a href="https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse" target="_blank" rel="noopener">https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse</a></span>
+<span class="srcchip"><a href="https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/" target="_blank" rel="noopener">https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/</a></span>
 </div>
 </div>
-<div class="finding"><h3><span class="fnum">3</span> Bürgergeld → &quot;Neue Grundsicherung&quot;: harsher sanctions from 1 July 2026</h3>
-<p><span class="lbl">Was hat sich geändert</span> Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:</p>
-<p><span class="lbl">Ab wann</span> Phased from **1 July 2026** (law adopted March 2026).</p>
-<p><span class="lbl">Wen betrifft&#x27;s</span> ~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.</p>
-<p><span class="lbl">Tipp für dich</span> Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest.</p>
+<div class="finding"><h3><span class="fnum">3</span> Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat</h3>
+<p><span class="lbl">Was hat sich geändert</span> Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.</p>
+<p><span class="lbl">Ab wann</span> Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.</p>
+<p><span class="lbl">Wen betrifft&#x27;s</span> Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.</p>
+<p><span class="lbl">Tipp für dich</span> Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*</p>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
-<span class="srcchip"><a href="https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562</a></span>
-<span class="srcchip"><a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460" target="_blank" rel="noopener">https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460</a></span>
-<span class="srcchip"><a href="https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen" target="_blank" rel="noopener">https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen</a></span>
-<span class="srcchip"><a href="https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition" target="_blank" rel="noopener">https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition</a></span>
+<span class="srcchip"><a href="https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket" target="_blank" rel="noopener">https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket</a></span>
+<span class="srcchip"><a href="https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe" target="_blank" rel="noopener">https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe</a></span>
+<span class="srcchip"><a href="https://www.service-bw.de/zufi/leistungen/1963" target="_blank" rel="noopener">https://www.service-bw.de/zufi/leistungen/1963</a></span>
 </div>
 </div>
-<div class="finding"><h3><span class="fnum">4</span> Elterngeld — Prien draft: 14 → 12 months, 3 &quot;Vätermonate&quot;, higher min/max</h3>
-<p><span class="lbl">Ab wann</span> Not yet law; targeted for ~2027 births. Current births still under 14-month rules.</p>
-<p><span class="lbl">Wen betrifft&#x27;s</span> ~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.</p>
+<div class="finding"><h3><span class="fnum">4</span> Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld</h3>
+<p><span class="lbl">Was hat sich geändert</span> Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.</p>
+<p><span class="lbl">Ab wann</span> Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).</p>
+<p><span class="lbl">Wen betrifft&#x27;s</span> Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.</p>
+<p><span class="lbl">Tipp für dich</span> Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*</p>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
-<span class="srcchip"><a href="https://www.tagesschau.de/inland/prien-elterngeld-102.html" target="_blank" rel="noopener">https://www.tagesschau.de/inland/prien-elterngeld-102.html</a></span>
-<span class="srcchip"><a href="https://www.elterngeld.net/elterngeld-kuerzung.html" target="_blank" rel="noopener">https://www.elterngeld.net/elterngeld-kuerzung.html</a></span>
-<span class="srcchip"><a href="https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810</a></span>
+<span class="srcchip"><a href="https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762" target="_blank" rel="noopener">https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762</a></span>
+<span class="srcchip"><a href="https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/" target="_blank" rel="noopener">https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/</a></span>
+<span class="srcchip"><a href="https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld" target="_blank" rel="noopener">https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld</a></span>
 </div>
 </div>
-<div class="finding"><h3><span class="fnum">5</span> Kindergeld — €259/month since 01.01.2026, automatic payment planned</h3>
-<p><span class="lbl">Was hat sich geändert</span> Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).</p>
-<p><span class="lbl">Ab wann</span> €259 in force now; automation and further increases still planned.</p>
-<p><span class="lbl">Wen betrifft&#x27;s</span> All families with children — the automation step mainly helps families who currently never apply.</p>
+<div class="finding"><h3><span class="fnum">5</span> Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt</h3>
+<p><span class="lbl">Was hat sich geändert</span> Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.</p>
+<p><span class="lbl">Ab wann</span> Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.</p>
+<p><span class="lbl">Wen betrifft&#x27;s</span> Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.</p>
+<p><span class="lbl">Tipp für dich</span> Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*</p>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
-<span class="srcchip"><a href="https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen" target="_blank" rel="noopener">https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen</a></span>
-<span class="srcchip"><a href="https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html" target="_blank" rel="noopener">https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html</a></span>
+<span class="srcchip"><a href="https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag" target="_blank" rel="noopener">https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag</a></span>
+<span class="srcchip"><a href="https://www.finanztip.de/freistellungsauftrag/" target="_blank" rel="noopener">https://www.finanztip.de/freistellungsauftrag/</a></span>
+</div>
+</div>
+<div class="finding"><h3><span class="fnum">6</span> Arbeitnehmer-Sparzulage &amp; Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht</h3>
+<p><span class="lbl">Was hat sich geändert</span> Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.</p>
+<p><span class="lbl">Ab wann</span> Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.</p>
+<p><span class="lbl">Wen betrifft&#x27;s</span> Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.</p>
+<p><span class="lbl">Tipp für dich</span> Im Arbeitsvertrag/Tarifvertrag nach &quot;vermögenswirksame Leistungen&quot; suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*</p>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage" target="_blank" rel="noopener">https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage</a></span>
+<span class="srcchip"><a href="https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie" target="_blank" rel="noopener">https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie</a></span>
+<span class="srcchip"><a href="https://www.mystipendium.de/geld/wohnungsbaupraemie" target="_blank" rel="noopener">https://www.mystipendium.de/geld/wohnungsbaupraemie</a></span>
+</div>
+</div>
+<div class="finding"><h3><span class="fnum">7</span> BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern</h3>
+<p><span class="lbl">Was hat sich geändert</span> Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.</p>
+<p><span class="lbl">Ab wann</span> Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.</p>
+<p><span class="lbl">Wen betrifft&#x27;s</span> Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.</p>
+<p><span class="lbl">Tipp für dich</span> Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*</p>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html" target="_blank" rel="noopener">https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html</a></span>
+<span class="srcchip"><a href="https://www.einstieg.com/studium/bafoeg-reform-2026.html" target="_blank" rel="noopener">https://www.einstieg.com/studium/bafoeg-reform-2026.html</a></span>
+</div>
+</div>
+<div class="finding"><h3><span class="fnum">8</span> Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)</h3>
+<p><span class="lbl">Was hat sich geändert</span> Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.</p>
+<p><span class="lbl">Ab wann</span> Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.</p>
+<p><span class="lbl">Wen betrifft&#x27;s</span> Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.</p>
+<p><span class="lbl">Tipp für dich</span> Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*</p>
+<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
+<span class="srcchip"><a href="https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900" target="_blank" rel="noopener">https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900</a></span>
+<span class="srcchip"><a href="https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat" target="_blank" rel="noopener">https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat</a></span>
 </div>
 </div></div>
-          <div class="bottom">Two big cuts are in the pipeline (Wohngeld formula, Elterngeld duration) and one is already law (Grundsicherung sanctions from 1 July 2026). Only Kindergeld moved up. **If you might qualify for Wohngeld, apply before the reform passes.**  *Generated by the Benefit-Discovery Watch agent. Draft laws can change — always verify with your local Wohngeldstelle / Jobcenter / Familienkasse.*</div>
-        </section>
-        <section class="card">
-          <header class="card-head">
-<svg class="mascot" viewBox="0 0 64 64" aria-hidden="true">
-  <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#ffd479"/><stop offset="1" stop-color="#f0a429"/></linearGradient></defs>
-  <path d="M32 4 L56 14 V34 C56 48 46 58 32 60 C18 58 8 48 8 34 V14 Z" fill="url(#g1)" stroke="#7a4d12" stroke-width="2"/>
-  <circle cx="24" cy="30" r="6" fill="#1a212b"/><circle cx="40" cy="30" r="6" fill="#1a212b"/>
-  <circle cx="26" cy="28" r="2" fill="#fff"/><circle cx="42" cy="28" r="2" fill="#fff"/>
-  <path d="M26 40 Q32 46 38 40" stroke="#1a212b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <path d="M20 18 l4 -6 l4 6 M40 18 l4 -6 l4 6" stroke="#7a4d12" stroke-width="2" fill="none"/>
-  <circle cx="32" cy="9" r="3" fill="#ffd479" stroke="#7a4d12" stroke-width="1.5"/>
-</svg><div><span class="badge" data-i18n="badge_watchdog">WÄCHTER</span>
-            <h2> 6. August 2026</h2></div></header>
-          <p class="intro">**Gefundene offene Fenster: 5**</p>
-          <div class="findings"><div class="finding"><h3><span class="fnum">1</span> Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)</h3>
-<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
-<span class="srcchip"><a href="https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096" target="_blank" rel="noopener">https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096</a></span>
-<span class="srcchip"><a href="https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf" target="_blank" rel="noopener">https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf</a></span>
-</div>
-</div>
-<div class="finding"><h3><span class="fnum">2</span> Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“</h3>
-<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
-<span class="srcchip"><a href="https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen" target="_blank" rel="noopener">https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen</a></span>
-</div>
-</div>
-<div class="finding"><h3><span class="fnum">3</span> Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz</h3>
-<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
-<span class="srcchip"><a href="https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen" target="_blank" rel="noopener">https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen</a></span>
-</div>
-</div>
-<div class="finding"><h3><span class="fnum">4</span> EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft</h3>
-<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
-<span class="srcchip"><a href="https://ec.europa.eu/info/law/better-regulation/" target="_blank" rel="noopener">https://ec.europa.eu/info/law/better-regulation/</a></span>
-<span class="srcchip"><a href="https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026" target="_blank" rel="noopener">https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026</a></span>
-</div>
-</div>
-<div class="finding"><h3><span class="fnum">5</span> EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)</h3>
-<div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
-<span class="srcchip"><a href="https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/" target="_blank" rel="noopener">https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/</a></span>
-<span class="srcchip"><a href="https://ec.europa.eu/info/law/better-regulation/" target="_blank" rel="noopener">https://ec.europa.eu/info/law/better-regulation/</a></span>
-</div>
-</div></div>
-          
+          <div class="bottom">Der teuerste Fehler ist **nicht** der falsche Antrag, sondern der nie gestellte. Wohngeld und Kinderzuschlag wirken erst ab Antragsmonat, Elterngeld nur drei Monate rückwirkend — jeder Monat Zögern ist bares Geld. Reihenfolge für heute: **1) KiZ-Lotse ausfüllen, 2) Wohngeldantrag einreichen, 3) Freistellungsauftrag prüfen.**  *Generated by the Benefit-Discovery Watch agent. Keine Rechtsberatung — verbindliche Auskunft geben Wohngeldstelle, Familienkasse, Jobcenter, Studierendenwerk und Finanzamt.*</div>
         </section>
   
-        <section class="card trust">
-          <header class="card-head">
-<svg class="mascot" viewBox="0 0 64 64" aria-hidden="true">
-  <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0" stop-color="#ffd479"/><stop offset="1" stop-color="#f0a429"/></linearGradient></defs>
-  <path d="M32 4 L56 14 V34 C56 48 46 58 32 60 C18 58 8 48 8 34 V14 Z" fill="url(#g1)" stroke="#7a4d12" stroke-width="2"/>
-  <circle cx="24" cy="30" r="6" fill="#1a212b"/><circle cx="40" cy="30" r="6" fill="#1a212b"/>
-  <circle cx="26" cy="28" r="2" fill="#fff"/><circle cx="42" cy="28" r="2" fill="#fff"/>
-  <path d="M26 40 Q32 46 38 40" stroke="#1a212b" stroke-width="2.5" fill="none" stroke-linecap="round"/>
-  <path d="M20 18 l4 -6 l4 6 M40 18 l4 -6 l4 6" stroke="#7a4d12" stroke-width="2" fill="none"/>
-  <circle cx="32" cy="9" r="3" fill="#ffd479" stroke="#7a4d12" stroke-width="1.5"/>
-</svg><div><span class="badge trust-badge" data-i18n="badge_trust">VERTRAUEN</span>
-            <h2 data-i18n="trust_title">Vom Fleet-Reviewer geprüft</h2></div></header>
-          <div class="trust-totals">
-            <div class="t ok"><b>4</b><span data-i18n="t_verified">verifiziert</span></div>
-            <div class="t warn"><b>2</b><span data-i18n="t_partial">teilweise</span></div>
-            <div class="t bad"><b>0</b><span data-i18n="t_failed">fehlerhaft</span></div>
-          </div>
-          <table class="verdicts"><tr><th>Wächter</th><th>Urteil</th><th>Kurzbegründung</th></tr><tr><td><b>benefit-watch</b></td><td><span class="pill warn">PARTIAL</span></td><td>Wohngeld budget figure misattributed: €150.13m is the *whole Einzelplan 25* increase, the Wohngeld line rose €160m.</td></tr>
-<tr><td><b>consultation-watch</b></td><td><span class="pill ok">VERIFIED</span></td><td>BauGB hearing verified to the minute against bundestag.de; only weak EU portal links.</td></tr>
-<tr><td><b>bundestag-watch</b></td><td><span class="pill warn">PARTIAL</span></td><td>Lobbyregister entries verified exactly; GKV passage date (10.07.2026) not supported by the linked page, which documents the 1st reading on 12.06.2026.</td></tr>
-<tr><td><b>studio-director</b></td><td><span class="pill ok">VERIFIED</span></td><td>Code-grounded critique, file/line references check out; no external claims to falsify.</td></tr>
-<tr><td><b>studio-engineer</b></td><td><span class="pill ok">VERIFIED</span></td><td>Every claim independently reproduced by the reviewer: build green, 8/8 aim tests, grep clean.</td></tr>
-<tr><td><b>studio-qa</b></td><td><span class="pill ok">VERIFIED</span></td><td>QA&#x27;s own findings reproduce; honest about what it structurally could not test.</td></tr></table>
-          <p class="note" data-i18n="trust_note">Menschen prüfen, Agenten entwerfen — niemand merges automatisch. Jede Meldung trägt ihre Quelle.</p>
-        </section>
   
         <section class="card support">
           <header class="card-head">💛<div><span class="badge sup-badge" data-i18n="badge_support">UNTERSTÜTZEN</span>
@@ -277,38 +250,42 @@
   </footer>
 </div>
 <script>
+  // Priority languages for Germany's affected communities.
+  // DE + EN are source-of-truth (watchdogs will produce these).
+  // TR, RU, AR, VI, PL are auto-translated — flagged honestly on screen.
+  var LANGS = [
+    {code:"de", label:"DE", auto:false},
+    {code:"en", label:"EN", auto:false},
+    {code:"tr", label:"TR", auto:true},
+    {code:"ru", label:"RU", auto:true},
+    {code:"ar", label:"AR", auto:true},
+    {code:"vi", label:"VI", auto:true},
+    {code:"pl", label:"PL", auto:true}
+  ];
   var I18N = {
     de: {
-      brand:"Citizen Agents",
-      hero_kicker:"Breakfast Ticker",
-      hero_title:"Guten Morgen, Bürger:in.",
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Guten Morgen, Bürger:in.",
       dateline:"Ausgabe {L} · erstellt {T} · jeden Morgen frisch",
       badge_watchdog:"WÄCHTER", badge_trust:"VERTRAUEN", badge_support:"UNTERSTÜTZEN",
       trust_title:"Vom Fleet-Reviewer geprüft",
       t_verified:"verifiziert", t_partial:"teilweise", t_failed:"fehlerhaft",
-      trust_note:"Menschen prüfen, Agenten entwerfen — niemand merged automatisch. Jede Meldung trägt ihre Quelle.",
+      trust_note:"Menschen prüfen, Agenten entwerfen — niemand merges automatisch. Jede Meldung trägt ihre Quelle.",
       support_title:"Kostenlos — und trotzdem nicht umsonst",
       support_intro:"Der Ticker bleibt für immer gratis. Server, Review und neue Wächter laufen über freiwillige Unterstützung. So sieht die Aufteilung aus:",
       tier_free_title:"🆓 Jeder Bürger",
       tier_free:["Täglicher Breakfast Ticker","Alle Quellen verlinkt","Trust-Panel (menschlich geprüft)","Keine Anmeldung, keine Paywall"],
-      tier_pro_title:'⭐ „Dein Wächter"',
-      soon:"in Planung",
+      tier_pro_title:'⭐ „Dein Wächter"', soon:"in Planung",
       tier_pro:["Persönliche Alarme nach PLZ &amp; Lebenslage","Tiefere Digests + Archiv-Suche","Früher Zugang zu neuen Wächtern","API für Journalist:innen &amp; NGOs"],
       price:"ab 3 € / Monat",
-      btn_sponsors:"☕ GitHub Sponsors (ab 1 €)",
-      btn_org:"🤝 Für Organisationen &amp; NGOs",
+      btn_sponsors:"☕ GitHub Sponsors (ab 1 €)", btn_org:"🤝 Für Organisationen &amp; NGOs",
       support_note:"Kostenlos. Für immer. Finanziert durch Menschen, die es ernst meinen.",
       footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
-      footer_src:"Quellcode &amp; Rohdaten",
-      footer_home:"Zur Startseite",
-      sources:"Quellen:",
-      lang_label:"EN",
+      footer_src:"Quellcode &amp; Rohdaten", footer_home:"Zur Startseite",
+      sources:"Quellen:", auto_flag:"Automatisch übersetzt — bitte mit der offiziellen Quelle abgleichen.",
       tags:["Frisch gebrüht aus öffentlichen Quellen.","Deine Rechte, täglich geprüft.","Kein Bezahlschutz vor deinen Rechten.","Wächter schlafen nicht — damit du ruhig schläfst."]
     },
     en: {
-      brand:"Citizen Agents",
-      hero_kicker:"Breakfast Ticker",
-      hero_title:"Good morning, citizen.",
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Good morning, citizen.",
       dateline:"Issue {L} · built {T} · fresh every morning",
       badge_watchdog:"WATCHDOG", badge_trust:"TRUST", badge_support:"SUPPORT",
       trust_title:"Reviewed by the Fleet Reviewer",
@@ -318,24 +295,139 @@
       support_intro:"The ticker stays free forever. Servers, review and new watchdogs run on voluntary support. Here's the split:",
       tier_free_title:"🆓 Every citizen",
       tier_free:["Daily Breakfast Ticker","All sources linked","Trust panel (human-reviewed)","No sign-up, no paywall"],
-      tier_pro_title:'⭐ "Your Watchdog"',
-      soon:"planned",
+      tier_pro_title:'⭐ "Your Watchdog"', soon:"planned",
       tier_pro:["Personal alerts by postcode &amp; situation","Deeper digests + archive search","Early access to new watchdogs","API for journalists &amp; NGOs"],
       price:"from €3 / month",
-      btn_sponsors:"☕ GitHub Sponsors (from €1)",
-      btn_org:"🤝 For organisations &amp; NGOs",
+      btn_sponsors:"☕ GitHub Sponsors (from €1)", btn_org:"🤝 For organisations &amp; NGOs",
       support_note:"Free. Forever. Funded by people who mean it.",
       footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
-      footer_src:"Source code &amp; raw data",
-      footer_home:"To the homepage",
-      sources:"Sources:",
-      lang_label:"DE",
+      footer_src:"Source code &amp; raw data", footer_home:"To the homepage",
+      sources:"Sources:", auto_flag:"Automatically translated — please verify against the official source.",
       tags:["Freshly brewed from public sources.","Your rights, checked daily.","No paywall in front of your rights.","Watchdogs don't sleep — so you can."]
+    },
+    tr: {
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Günaydın, vatandaş.",
+      dateline:"Sayı {L} · {T} tarihinde hazırlandı · her sabah taze",
+      badge_watchdog:"BEKÇİ", badge_trust:"GÜVEN", badge_support:"DESTEK",
+      trust_title:"Fleet Reviewer tarafından incelendi",
+      t_verified:"doğrulandı", t_partial:"kısmen", t_failed:"hatalı",
+      trust_note:"İnsanlar inceler, ajanlar taslak hazırlar — hiçbiri otomatik birleştirilmez. Her kaydın kaynağı belirtilir.",
+      support_title:"Ücretsiz — ama yine de bedava değil",
+      support_intro:"Ticker sonsuza dek ücretsiz kalır. Sunucular, inceleme ve yeni bekçiler gönüllü destekle yürür. Bölünme şöyle:",
+      tier_free_title:"🆓 Her vatandaş",
+      tier_free:["Günlük Breakfast Ticker","Tüm kaynaklar bağlantılı","Güven paneli (insan inceledi)","Kayıt yok, ödeme duvarı yok"],
+      tier_pro_title:'⭐ "Senin Bekçin"', soon:"planlama aşamasında",
+      tier_pro:["Posta kodu ve yaşam durumuna göre kişisel uyarılar","Daha derin özetler + arşiv arama","Yeni bekçilere erken erişim","Gazeteciler ve STK'lar için API"],
+      price:"aylık 3 €'dan",
+      btn_sponsors:"☕ GitHub Sponsors (1 €'dan)", btn_org:"🤝 Kurumlar ve STK'lar için",
+      support_note:"Ücretsiz. Sonsuza dek. Bunu ciddiye alan insanlar tarafından finanse edilir.",
+      footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
+      footer_src:"Kaynak kodu ve ham veri", footer_home:"Ana sayfaya",
+      sources:"Kaynaklar:", auto_flag:"Otomatik çevrilmiştir — lütfen resmi kaynakla karşılaştırın.",
+      tags:["Taze kamu kaynaklarından demlendi.","Hakların her gün incelenir.","Haklarının önünde ödeme duvarı yok.","Bekçiler uyumaz — sen rahat uyu."]
+    },
+    ru: {
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Доброе утро, гражданин.",
+      dateline:"Выпуск {L} · создан {T} · свежий каждое утро",
+      badge_watchdog:"СТРАЖ", badge_trust:"ДОВЕРИЕ", badge_support:"ПОДДЕРЖКА",
+      trust_title:"Проверено Fleet Reviewer",
+      t_verified:"подтверждено", t_partial:"частично", t_failed:"ошибка",
+      trust_note:"Люди проверяют, агенты составляют черновики — ничего не сливается автоматически. У каждой записи указан источник.",
+      support_title:"Бесплатно — но не бесполезно",
+      support_intro:"Тикер остаётся бесплатным навсегда. Серверы, проверка и новые стражи работают на добровольной поддержке. Вот как это распределяется:",
+      tier_free_title:"🆓 Каждый гражданин",
+      tier_free:["Ежедневный Breakfast Ticker","Все источники по ссылкам","Панель доверия (проверено человеком)","Без регистрации, без платного доступа"],
+      tier_pro_title:'⭐ «Твой страж»', soon:"в планах",
+      tier_pro:["Персональные уведомления по индексу и ситуации","Более глубокие дайджесты + поиск по архиву","Ранний доступ к новым стражам","API для журналистов и НКО"],
+      price:"от 3 € / месяц",
+      btn_sponsors:"☕ GitHub Sponsors (от 1 €)", btn_org:"🤝 Для организаций и НКО",
+      support_note:"Бесплатно. Навсегда. Финансируется людьми, которые относятся к этому серьёзно.",
+      footer:"Citizen Agents — Digital Democracy Studio, Берлин.",
+      footer_src:"Исходный код и сырые данные", footer_home:"На главную",
+      sources:"Источники:", auto_flag:"Переведено автоматически — пожалуйста, сверьтесь с официальным источником.",
+      tags:["Свежезаварено из открытых источников.","Ваши права проверяются ежедневно.","Перед вашими правами нет платной стены.","Стражи не спят — спите спокойно."]
+    },
+    ar: {
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"صباح الخير، أيها المواطن.",
+      dateline:"العدد {L} · أُعد في {T} · طازج كل صباح",
+      badge_watchdog:"حارس", badge_trust:"ثقة", badge_support:"دعم",
+      trust_title:"تمت المراجعة بواسطة Fleet Reviewer",
+      t_verified:"مؤكد", t_partial:"جزئي", t_failed:"خطأ",
+      trust_note:"البشر يراجعون، والوكلاء يصيغون — لا شيء يُدمج تلقائياً. كل مدخل له مصدره.",
+      support_title:"مجاني — ولكنه ليس بلا ثمن",
+      support_intro:"يبقى التيكر مجانياً للأبد. الخوادم والمراجعة والحراس الجدد تعمل بالدعم التطوعي. إليك التوزيع:",
+      tier_free_title:"🆓 كل مواطن",
+      tier_free:["تيكر الإفطار اليومي","كل المصادر مرتبطة","لوحة الثقة (راجعها إنسان)","بدون تسجيل، بدون جدار دفع"],
+      tier_pro_title:'⭐ «حارسك»', soon:"قيد التخطيط",
+      tier_pro:["تنبيهات شخصية حسب الرمز البريدي والوضع","ملخصات أعمق + بحث في الأرشيف","وصول مبكر للحراس الجدد","واجهة برمجة للصحفيين والمنظمات"],
+      price:"من 3 € / شهر",
+      btn_sponsors:"☕ GitHub Sponsors (من 1 €)", btn_org:"🤝 للمنظمات والجمعيات",
+      support_note:"مجاني. للأبد. يُموَّل من أناس يأخذون الأمر بجدية.",
+      footer:"Citizen Agents — استوديو الديمقراطية الرقمية، برلين.",
+      footer_src:"الكود المصدري والبيانات الخام", footer_home:"إلى الصفحة الرئيسية",
+      sources:"المصادر:", auto_flag:"تُرجم آلياً — يرجى التحقق من المصدر الرسمي.",
+      tags:["مُعدّ طازجاً من مصادر عامة.","حقوقك تُراجع يومياً.","لا جدار دفع أمام حقوقك.","الحراس لا ينامون — لترقد بسلام."]
+    },
+    vi: {
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Chào buổi sáng, công dân.",
+      dateline:"Số {L} · lập ngày {T} · tươi mới mỗi sáng",
+      badge_watchdog:"CANH GÁC", badge_trust:"TIN CẬY", badge_support:"HỖ TRỢ",
+      trust_title:"Được Fleet Reviewer kiểm duyệt",
+      t_verified:"đã xác minh", t_partial:"một phần", t_failed:"lỗi",
+      trust_note:"Con người xem xét, tác nhân soạn thảo — không có gì tự động hợp nhất. Mỗi mục đều ghi rõ nguồn.",
+      support_title:"Miễn phí — nhưng không phải không tốn kém",
+      support_intro:"Bản tin luôn miễn phí mãi mãi. Máy chủ, kiểm duyệt và các canh gác mới chạy bằng sự hỗ trợ tự nguyện. Cách phân bổ như sau:",
+      tier_free_title:"🆓 Mọi công dân",
+      tier_free:["Bản tin Breakfast hàng ngày","Tất cả nguồn được liên kết","Bảng tin cậy (do người xem xét)","Không đăng ký, không tường phí"],
+      tier_pro_title:'⭐ «Người canh gác của bạn»', soon:"đang lên kế hoạch",
+      tier_pro:["Cảnh báo cá nhân theo mã bưu chính & hoàn cảnh","Bản tóm tắt sâu hơn + tìm kiếm lưu trữ","Truy cập sớm các canh gác mới","API cho nhà báo & NGO"],
+      price:"từ 3 € / tháng",
+      btn_sponsors:"☕ GitHub Sponsors (từ 1 €)", btn_org:"🤝 Dành cho tổ chức & NGO",
+      support_note:"Miễn phí. Mãi mãi. Được tài trợ bởi những người nghiêm túc.",
+      footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
+      footer_src:"Mã nguồn & dữ liệu thô", footer_home:"Về trang chủ",
+      sources:"Nguồn:", auto_flag:"Được dịch tự động — vui lòng đối chiếu với nguồn chính thức.",
+      tags:["Ủớp tươi từ nguồn công khai.","Quyền của bạn được kiểm tra hàng ngày.","Không có tường phí trước quyền của bạn.","Canh gác không ngủ — để bạn ngủ ngon."]
+    },
+    pl: {
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Dzień dobry, obywatelu.",
+      dateline:"Wydanie {L} · utworzono {T} · świeże każdego ranka",
+      badge_watchdog:"STRAŻNIK", badge_trust:"ZAUFANIE", badge_support:"WSPARCIE",
+      trust_title:"Sprawdzone przez Fleet Reviewer",
+      t_verified:"potwierdzone", t_partial:"częściowo", t_failed:"błąd",
+      trust_note:"Ludzie sprawdzają, agenty redagują — nic nie jest scalane automatycznie. Każdy wpis ma podane źródło.",
+      support_title:"Bezpłatne — ale nie za darmo",
+      support_intro:"Ticker pozostaje bezpłatny na zawsze. Serwery, przegląd i nowi strażnicy działają dzięki dobrowolnemu wsparciu. Oto podział:",
+      tier_free_title:"🆓 Każdy obywatel",
+      tier_free:["Codzienny Breakfast Ticker","Wszystkie źródła podlinkowane","Panel zaufania (przeglądane przez człowieka)","Bez rejestracji, bez paywalla"],
+      tier_pro_title:'⭐ „Twój Strażnik”', soon:"w planach",
+      tier_pro:["Osobiste alerty według kodu pocztowego i sytuacji","Głębsze skróty + wyszukiwanie w archiwum","Wczesny dostęp do nowych strażników","API dla dziennikarzy i NGO"],
+      price:"od 3 € / miesiąc",
+      btn_sponsors:"☕ GitHub Sponsors (od 1 €)", btn_org:"🤝 Dla organizacji i NGO",
+      support_note:"Bezpłatne. Na zawsze. Finansowane przez ludzi, którzy traktują to poważnie.",
+      footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
+      footer_src:"Kod źródłowy i surowe dane", footer_home:"Strona główna",
+      sources:"Źródła:", auto_flag:"Przetłumaczono automatycznie — proszę zweryfikować ze źródłem oficjalnym.",
+      tags:["Świeżo zaparzone z publicznych źródeł.","Twoje prawa sprawdzane codziennie.","Przed twoimi prawami nie ma paywalla.","Strażnicy nie śpią — ty śpij spokojnie."]
     }
   };
   function fillList(id, arr){ var u=document.getElementById(id); if(!u) return; u.innerHTML = arr.map(function(x){return '<li>'+x+'</li>';}).join(''); }
+  function buildLangBar(){
+    var bar=document.getElementById('langBar'); if(!bar) return;
+    bar.innerHTML='';
+    LANGS.forEach(function(L){
+      var b=document.createElement('button');
+      b.className='lang-btn'+( (getLang()===L.code)?' active':'' );
+      b.textContent=L.label;
+      b.onclick=function(){ setLang(L.code); };
+      bar.appendChild(b);
+    });
+  }
+  function getLang(){ try{ return localStorage.getItem('ca_lang')||'de'; }catch(e){ return 'de'; } }
+  function setLang(code){ try{ localStorage.setItem('ca_lang', code); }catch(e){} applyLang(code); }
   function applyLang(lang){
     var d = I18N[lang] || I18N.de;
+    var meta = LANGS.find(function(L){return L.code===lang;}) || {auto:false};
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-i18n]').forEach(function(el){ var k=el.getAttribute('data-i18n'); if(d[k]!=null) el.textContent=d[k]; });
     fillList('tierFree', d.tier_free);
@@ -343,11 +435,11 @@
     var L=document.body.dataset.latest, T=document.body.dataset.today;
     var dl=document.getElementById('dateline'); if(dl) dl.textContent=d.dateline.replace('{L}',L).replace('{T}',T);
     var tg=document.getElementById('tag'); if(tg) tg.textContent=d.tags[Math.floor(Math.random()*d.tags.length)];
-    var lt=document.getElementById('langToggle'); if(lt) lt.textContent=d.lang_label;
-    try{ localStorage.setItem('ca_lang', lang); }catch(e){}
+    var an=document.getElementById('autoNote');
+    if(an){ if(meta.auto){ an.style.display='block'; an.textContent='⚠️ '+d.auto_flag; } else { an.style.display='none'; } }
+    buildLangBar();
   }
-  function toggleLang(){ var cur='de'; try{ cur=localStorage.getItem('ca_lang')||'de'; }catch(e){} applyLang(cur==='de'?'en':'de'); }
-  (function(){ var s='de'; try{ s=localStorage.getItem('ca_lang')||'de'; }catch(e){} applyLang(s); })();
+  (function(){ applyLang(getLang()); })();
 </script>
 </body>
 </html>
