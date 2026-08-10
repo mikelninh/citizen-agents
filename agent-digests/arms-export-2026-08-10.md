@@ -12,7 +12,7 @@ Alle Angaben mit Quelle. Kein Merge durch den Agenten, nur Vorschlag zur Prüfun
   12,8 Mrd. € Einzelausfuhrgenehmigungen, 1,1 Mrd. € Meldewerte zu Allgemeinen Genehmigungen.
 - **Wer entscheidet:** Bundesregierung (Bundessicherheitsrat / Bundesministerium für Wirtschaft und Energie), Einzelfallprüfung.
 - **Warum wichtig:** Das ist bereits im Halbjahr mehr als im gesamten Jahr 2025 (13,11 Mrd. €). Rüstungsexporte sind eine politische Entscheidung ohne vorherige Parlamentsabstimmung.
-- **Quelle:** https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/07/20260715-ruestungsexportpolitik-1-halbjahr-2026.html
+- **Quellen:** https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/07/20260715-ruestungsexportpolitik-1-halbjahr-2026.html · https://www.deutschlandfunk.de/deutsche-ruestungsexporte-steigen-im-ersten-halbjahr-2026-auf-neuen-rekordwert-102.html
 
 ## 2. Hauptempfänger: Ukraine (2,5 Mrd. €), USA (1,6 Mrd. €)
 
