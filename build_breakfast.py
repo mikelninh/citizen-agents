@@ -152,7 +152,14 @@ def verdict_class(v):
 def domain(url):
     m = re.match(r"https?://([^/]+)", url)
     host = m.group(1) if m else url
-    return host[4:] if host.startswith("www.") else host
+    host = host[4:] if host.startswith("www.") else host
+    if host.startswith("xn--"):
+        try:
+            import codecs
+            return codecs.decode(host, "idna_codec").decode("utf-8")
+        except Exception:
+            pass
+    return host
 
 
 def render_finding(f):
