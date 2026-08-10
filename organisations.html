@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Für Organisationen — Citizen Agents</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg:#f5f3f1; --card:#ffffff; --ink:#202020; --navy:#02083a; --muted:#5b6472; --accent:#0068e6; --accent-soft:#e8f0ff; --ok:#1a7f4b; --ok-soft:#e6f4ec; --warn:#9a6400; --warn-soft:#fdf3e0; --bad:#c4322b; --bad-soft:#fdeaea; --line:#e7e3df; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.6 "Onest",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  .wrap { max-width:820px; margin:0 auto; padding:36px 20px 96px; }
+  .topbar { display:flex; align-items:center; justify-content:space-between; padding:6px 2px 16px; }
+  .brand { display:flex; align-items:center; gap:9px; font-weight:700; color:var(--navy); font-size:15px; }
+  .brand-mark { width:22px; height:22px; flex:none; }
+  .masthead { text-align:center; padding:20px 0 28px; }
+  .masthead::before { content:""; position:absolute; left:-20px; right:-20px; top:-30px; height:240px;
+    background:radial-gradient(120% 100% at 50% 0, rgba(0,104,230,.09), transparent 70%); z-index:-1; }
+  .masthead { position:relative; }
+  .kicker { letter-spacing:3px; font-size:11px; color:var(--accent); text-transform:uppercase; font-weight:700; }
+  h1 { font-size:34px; margin:10px 0 6px; color:var(--navy); letter-spacing:-.5px; }
+  .intro { color:var(--muted); font-size:16px; margin-top:10px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:20px;
+    padding:24px 26px; margin:20px 0; box-shadow:0 6px 22px rgba(2,8,58,.05); }
+  .card h2 { margin:0 0 10px; font-size:20px; color:var(--navy); }
+  .card h3 { margin:18px 0 8px; font-size:16px; color:var(--navy); }
+  .card p { color:var(--ink); }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; margin:14px 0; }
+  .feature { background:var(--bg); border:1px solid var(--line); border-radius:14px; padding:16px 18px; }
+  .feature b { color:var(--navy); }
+  .price { font-size:30px; font-weight:800; color:var(--accent); }
+  .price small { font-size:14px; color:var(--muted); font-weight:500; }
+  ul.clean { padding-left:18px; color:var(--ink); }
+  ul.clean li { margin:6px 0; }
+  .btn { display:inline-block; padding:13px 22px; border-radius:999px; font-weight:700; text-decoration:none; font-size:15px; transition:.15s; }
+  .btn.primary { background:var(--accent); color:#fff; }
+  .btn.ghost { background:#fff; color:var(--navy); border:1px solid var(--line); }
+  .btn:hover { transform:translateY(-1px); }
+  .row { display:flex; gap:12px; flex-wrap:wrap; margin-top:8px; }
+  .disclosure { background:var(--ok-soft); border:1px solid #bfe3cd; border-radius:14px; padding:16px 18px; margin-top:8px; }
+  .disclosure b { color:var(--ok); }
+  pre.code { background:#0e1320; color:#cfe3ff; padding:14px 16px; border-radius:12px; overflow:auto; font-size:13px; }
+  footer { color:var(--muted); font-size:13px; text-align:center; margin-top:36px; }
+  footer a { color:var(--accent); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L21 6 V12 C21 17 17 21 12 22 C7 21 3 17 3 12 V6 Z" fill="#0068e6"/><path d="M8 12 l3 3 l5 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <span>Citizen Agents</span>
+    </div>
+    <a class="btn ghost" href="https://mikelninh.github.io/citizen-agents/breakfast.html">← Zum Ticker</a>
+  </header>
+
+  <div class="masthead">
+    <div class="kicker">Für Organisationen</div>
+    <h1>Strukturierte Bürgerrechts-Daten für Ihr Team</h1>
+    <p class="intro">Citizen Agents überwacht täglich, was sich in den Rechten von Bürger:innen ändert — Gesetze, Leistungen, Anhörungen, Gerichtsurteile. Sie erhalten das als saubere, maschinenlesbare Feeds. Kein Scoop, keine Panik — nur verifizierte Fakten mit Quelle.</p>
+  </div>
+
+  <section class="card">
+    <h2>Wer profitiert?</h2>
+    <div class="grid">
+      <div class="feature"><b>Verbraucherzentralen & NGOs</b><br>Frühe Warnungen zu Leistungsänderungen (Wohngeld, Bürgergeld, Elterngeld) direkt in die Beratung.</div>
+      <div class="feature"><b>Legal-Tech & Compliance</b><br>Strukturierte Feeds für EU-Verbraucherschutz, DSA, CSRD, Lobbyregister — immer aktuell.</div>
+      <div class="feature"><b>Journalist:innen</b><br>Recherche-Feed mit Quellen-Links; keine Paywall, voller Rohdaten-Zugriff.</div>
+      <div class="feature"><b>Kommunen & Behörden</b><br>Bürgernahe Aufbereitung dessen, was oben beschlossen wird.</div>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>Was Sie bekommen</h2>
+    <ul class="clean">
+      <li><b>Live-Feed (JSON):</b> <code>breakfast-feed.json</code> — alle Meldungen mit Tags, Quellen, Verifikationsstatus.</li>
+      <li><b>Run-Logs (JSON):</b> <code>agent-logs/*.json</code> — vollständige, maschinenlesbare Wach-Protokolle.</li>
+      <li><b>Trust-Panel:</b> jede Meldung vom Fleet-Reviewer geprüft (verifiziert / teilweise / fehlerhaft).</li>
+      <li><b>API-Zugang:</b> geplantes, dokumentiertes Endpoint für automatische Einbindung.</li>
+    </ul>
+    <h3>Beispiel — Feed abrufen</h3>
+    <pre class="code">curl -L https://mikelninh.github.io/citizen-agents/breakfast-feed.json</pre>
+  </section>
+
+  <section class="card">
+    <h2>Lizenz & Preise</h2>
+    <div class="grid">
+      <div class="feature">
+        <h3>🆓 Open Data</h3>
+        <div class="price">0 €</div>
+        <p>Für NGOs, Journalist:innen, Forschung. CC-BY — Quelle nennen, weitergeben.</p>
+      </div>
+      <div class="feature">
+        <h3>⭐ Business License</h3>
+        <div class="price">ab 49 €<small> / Monat</small></div>
+        <p>API-Zugang, SLA, keine Quellen-Nennung nötig, Prioritäts-Feeds für Ihre Themen.</p>
+        <div class="row"><a class="btn primary" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents%20Business%20License">Anfragen</a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="disclosure">
+    <b>Transparenz-Versprechen.</b> Citizen Agents bleibt unabhängig. Jede Branchen-Partnerschaft (auch aus der Krypto- oder Finanzwirtschaft) wird offen auf dieser Seite ausgewiesen. Wir verkaufen keine Nutzerdaten und nehmen kein Geld für veränderte Berichterstattung an.
+  </div>
+
+  <section class="card">
+    <h2>Kontakt</h2>
+    <p>Interesse an einem Feed für Ihre Themen? Schreiben Sie uns — wir richten einen priorisierten Kanal ein.</p>
+    <div class="row">
+      <a class="btn primary" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents%20f%C3%BCr%20Organisationen">🤝 hallo.chupi@gmail.com</a>
+      <a class="btn ghost" href="https://github.com/mikelninh/citizen-agents">Quellcode & Rohdaten</a>
+    </div>
+  </section>
+
+  <footer>
+    Citizen Agents — Digital Democracy Studio, Berlin.<br>
+    <a href="https://mikelninh.github.io/citizen-agents/">Zur Startseite</a>
+  </footer>
+</div>
+</body>
+</html>
