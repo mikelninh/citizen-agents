@@ -350,6 +350,12 @@ TEMPLATE = """<!DOCTYPE html>
   .srcchip { display:inline-block; background:var(--accent-soft); color:var(--accent); font-size:11px; padding:3px 10px; border-radius:999px; margin:3px 6px 0 0; word-break:break-all; }
   .srcchip a { color:inherit; text-decoration:none; }
   .srcchip a:hover { text-decoration:underline; }
+  .lang-bar { display:flex; flex-wrap:wrap; gap:6px; align-items:center; }
+  .lang-btn { border:1px solid var(--line); background:#fff; color:var(--muted); font-weight:700; font-size:12px;
+    padding:5px 11px; border-radius:999px; cursor:pointer; transition:.15s; }
+  .lang-btn:hover { border-color:var(--accent); color:var(--accent); }
+  .lang-btn.active { background:var(--accent); color:#fff; border-color:var(--accent); }
+  .auto-note { font-size:11px; color:var(--warn); background:var(--warn-soft); padding:6px 10px; border-radius:10px; margin:10px 0 0; }
 </style>
 </head>
 <body data-latest="{LATEST}" data-today="{TODAY}">
@@ -359,8 +365,10 @@ TEMPLATE = """<!DOCTYPE html>
       <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L21 6 V12 C21 17 17 21 12 22 C7 21 3 17 3 12 V6 Z" fill="#0068e6"/><path d="M8 12 l3 3 l5 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
       <span data-i18n="brand">Citizen Agents</span>
     </div>
-    <button id="langToggle" class="lang-toggle" onclick="toggleLang()" data-i18n="lang_label">EN</button>
+    <div class="lang-bar" id="langBar"></div>
   </header>
+
+  <div id="autoNote" class="auto-note" style="display:none"></div>
 
   <div class="masthead">
     <div class="coffee">{COFFEE}</div>
@@ -381,38 +389,42 @@ TEMPLATE = """<!DOCTYPE html>
   </footer>
 </div>
 <script>
+  // Priority languages for Germany's affected communities.
+  // DE + EN are source-of-truth (watchdogs will produce these).
+  // TR, RU, AR, VI, PL are auto-translated — flagged honestly on screen.
+  var LANGS = [
+    {code:"de", label:"DE", auto:false},
+    {code:"en", label:"EN", auto:false},
+    {code:"tr", label:"TR", auto:true},
+    {code:"ru", label:"RU", auto:true},
+    {code:"ar", label:"AR", auto:true},
+    {code:"vi", label:"VI", auto:true},
+    {code:"pl", label:"PL", auto:true}
+  ];
   var I18N = {
     de: {
-      brand:"Citizen Agents",
-      hero_kicker:"Breakfast Ticker",
-      hero_title:"Guten Morgen, Bürger:in.",
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Guten Morgen, Bürger:in.",
       dateline:"Ausgabe {L} · erstellt {T} · jeden Morgen frisch",
       badge_watchdog:"WÄCHTER", badge_trust:"VERTRAUEN", badge_support:"UNTERSTÜTZEN",
       trust_title:"Vom Fleet-Reviewer geprüft",
       t_verified:"verifiziert", t_partial:"teilweise", t_failed:"fehlerhaft",
-      trust_note:"Menschen prüfen, Agenten entwerfen — niemand merged automatisch. Jede Meldung trägt ihre Quelle.",
+      trust_note:"Menschen prüfen, Agenten entwerfen — niemand merges automatisch. Jede Meldung trägt ihre Quelle.",
       support_title:"Kostenlos — und trotzdem nicht umsonst",
       support_intro:"Der Ticker bleibt für immer gratis. Server, Review und neue Wächter laufen über freiwillige Unterstützung. So sieht die Aufteilung aus:",
       tier_free_title:"🆓 Jeder Bürger",
       tier_free:["Täglicher Breakfast Ticker","Alle Quellen verlinkt","Trust-Panel (menschlich geprüft)","Keine Anmeldung, keine Paywall"],
-      tier_pro_title:'⭐ „Dein Wächter"',
-      soon:"in Planung",
+      tier_pro_title:'⭐ „Dein Wächter"', soon:"in Planung",
       tier_pro:["Persönliche Alarme nach PLZ &amp; Lebenslage","Tiefere Digests + Archiv-Suche","Früher Zugang zu neuen Wächtern","API für Journalist:innen &amp; NGOs"],
       price:"ab 3 € / Monat",
-      btn_sponsors:"☕ GitHub Sponsors (ab 1 €)",
-      btn_org:"🤝 Für Organisationen &amp; NGOs",
+      btn_sponsors:"☕ GitHub Sponsors (ab 1 €)", btn_org:"🤝 Für Organisationen &amp; NGOs",
       support_note:"Kostenlos. Für immer. Finanziert durch Menschen, die es ernst meinen.",
       footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
-      footer_src:"Quellcode &amp; Rohdaten",
-      footer_home:"Zur Startseite",
-      sources:"Quellen:",
-      lang_label:"EN",
+      footer_src:"Quellcode &amp; Rohdaten", footer_home:"Zur Startseite",
+      sources:"Quellen:", auto_flag:"Automatisch übersetzt — bitte mit der offiziellen Quelle abgleichen.",
       tags:["Frisch gebrüht aus öffentlichen Quellen.","Deine Rechte, täglich geprüft.","Kein Bezahlschutz vor deinen Rechten.","Wächter schlafen nicht — damit du ruhig schläfst."]
     },
     en: {
-      brand:"Citizen Agents",
-      hero_kicker:"Breakfast Ticker",
-      hero_title:"Good morning, citizen.",
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Good morning, citizen.",
       dateline:"Issue {L} · built {T} · fresh every morning",
       badge_watchdog:"WATCHDOG", badge_trust:"TRUST", badge_support:"SUPPORT",
       trust_title:"Reviewed by the Fleet Reviewer",
@@ -422,24 +434,139 @@ TEMPLATE = """<!DOCTYPE html>
       support_intro:"The ticker stays free forever. Servers, review and new watchdogs run on voluntary support. Here's the split:",
       tier_free_title:"🆓 Every citizen",
       tier_free:["Daily Breakfast Ticker","All sources linked","Trust panel (human-reviewed)","No sign-up, no paywall"],
-      tier_pro_title:'⭐ "Your Watchdog"',
-      soon:"planned",
+      tier_pro_title:'⭐ "Your Watchdog"', soon:"planned",
       tier_pro:["Personal alerts by postcode &amp; situation","Deeper digests + archive search","Early access to new watchdogs","API for journalists &amp; NGOs"],
       price:"from €3 / month",
-      btn_sponsors:"☕ GitHub Sponsors (from €1)",
-      btn_org:"🤝 For organisations &amp; NGOs",
+      btn_sponsors:"☕ GitHub Sponsors (from €1)", btn_org:"🤝 For organisations &amp; NGOs",
       support_note:"Free. Forever. Funded by people who mean it.",
       footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
-      footer_src:"Source code &amp; raw data",
-      footer_home:"To the homepage",
-      sources:"Sources:",
-      lang_label:"DE",
+      footer_src:"Source code &amp; raw data", footer_home:"To the homepage",
+      sources:"Sources:", auto_flag:"Automatically translated — please verify against the official source.",
       tags:["Freshly brewed from public sources.","Your rights, checked daily.","No paywall in front of your rights.","Watchdogs don't sleep — so you can."]
+    },
+    tr: {
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Günaydın, vatandaş.",
+      dateline:"Sayı {L} · {T} tarihinde hazırlandı · her sabah taze",
+      badge_watchdog:"BEKÇİ", badge_trust:"GÜVEN", badge_support:"DESTEK",
+      trust_title:"Fleet Reviewer tarafından incelendi",
+      t_verified:"doğrulandı", t_partial:"kısmen", t_failed:"hatalı",
+      trust_note:"İnsanlar inceler, ajanlar taslak hazırlar — hiçbiri otomatik birleştirilmez. Her kaydın kaynağı belirtilir.",
+      support_title:"Ücretsiz — ama yine de bedava değil",
+      support_intro:"Ticker sonsuza dek ücretsiz kalır. Sunucular, inceleme ve yeni bekçiler gönüllü destekle yürür. Bölünme şöyle:",
+      tier_free_title:"🆓 Her vatandaş",
+      tier_free:["Günlük Breakfast Ticker","Tüm kaynaklar bağlantılı","Güven paneli (insan inceledi)","Kayıt yok, ödeme duvarı yok"],
+      tier_pro_title:'⭐ "Senin Bekçin"', soon:"planlama aşamasında",
+      tier_pro:["Posta kodu ve yaşam durumuna göre kişisel uyarılar","Daha derin özetler + arşiv arama","Yeni bekçilere erken erişim","Gazeteciler ve STK'lar için API"],
+      price:"aylık 3 €'dan",
+      btn_sponsors:"☕ GitHub Sponsors (1 €'dan)", btn_org:"🤝 Kurumlar ve STK'lar için",
+      support_note:"Ücretsiz. Sonsuza dek. Bunu ciddiye alan insanlar tarafından finanse edilir.",
+      footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
+      footer_src:"Kaynak kodu ve ham veri", footer_home:"Ana sayfaya",
+      sources:"Kaynaklar:", auto_flag:"Otomatik çevrilmiştir — lütfen resmi kaynakla karşılaştırın.",
+      tags:["Taze kamu kaynaklarından demlendi.","Hakların her gün incelenir.","Haklarının önünde ödeme duvarı yok.","Bekçiler uyumaz — sen rahat uyu."]
+    },
+    ru: {
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Доброе утро, гражданин.",
+      dateline:"Выпуск {L} · создан {T} · свежий каждое утро",
+      badge_watchdog:"СТРАЖ", badge_trust:"ДОВЕРИЕ", badge_support:"ПОДДЕРЖКА",
+      trust_title:"Проверено Fleet Reviewer",
+      t_verified:"подтверждено", t_partial:"частично", t_failed:"ошибка",
+      trust_note:"Люди проверяют, агенты составляют черновики — ничего не сливается автоматически. У каждой записи указан источник.",
+      support_title:"Бесплатно — но не бесполезно",
+      support_intro:"Тикер остаётся бесплатным навсегда. Серверы, проверка и новые стражи работают на добровольной поддержке. Вот как это распределяется:",
+      tier_free_title:"🆓 Каждый гражданин",
+      tier_free:["Ежедневный Breakfast Ticker","Все источники по ссылкам","Панель доверия (проверено человеком)","Без регистрации, без платного доступа"],
+      tier_pro_title:'⭐ «Твой страж»', soon:"в планах",
+      tier_pro:["Персональные уведомления по индексу и ситуации","Более глубокие дайджесты + поиск по архиву","Ранний доступ к новым стражам","API для журналистов и НКО"],
+      price:"от 3 € / месяц",
+      btn_sponsors:"☕ GitHub Sponsors (от 1 €)", btn_org:"🤝 Для организаций и НКО",
+      support_note:"Бесплатно. Навсегда. Финансируется людьми, которые относятся к этому серьёзно.",
+      footer:"Citizen Agents — Digital Democracy Studio, Берлин.",
+      footer_src:"Исходный код и сырые данные", footer_home:"На главную",
+      sources:"Источники:", auto_flag:"Переведено автоматически — пожалуйста, сверьтесь с официальным источником.",
+      tags:["Свежезаварено из открытых источников.","Ваши права проверяются ежедневно.","Перед вашими правами нет платной стены.","Стражи не спят — спите спокойно."]
+    },
+    ar: {
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"صباح الخير، أيها المواطن.",
+      dateline:"العدد {L} · أُعد في {T} · طازج كل صباح",
+      badge_watchdog:"حارس", badge_trust:"ثقة", badge_support:"دعم",
+      trust_title:"تمت المراجعة بواسطة Fleet Reviewer",
+      t_verified:"مؤكد", t_partial:"جزئي", t_failed:"خطأ",
+      trust_note:"البشر يراجعون، والوكلاء يصيغون — لا شيء يُدمج تلقائياً. كل مدخل له مصدره.",
+      support_title:"مجاني — ولكنه ليس بلا ثمن",
+      support_intro:"يبقى التيكر مجانياً للأبد. الخوادم والمراجعة والحراس الجدد تعمل بالدعم التطوعي. إليك التوزيع:",
+      tier_free_title:"🆓 كل مواطن",
+      tier_free:["تيكر الإفطار اليومي","كل المصادر مرتبطة","لوحة الثقة (راجعها إنسان)","بدون تسجيل، بدون جدار دفع"],
+      tier_pro_title:'⭐ «حارسك»', soon:"قيد التخطيط",
+      tier_pro:["تنبيهات شخصية حسب الرمز البريدي والوضع","ملخصات أعمق + بحث في الأرشيف","وصول مبكر للحراس الجدد","واجهة برمجة للصحفيين والمنظمات"],
+      price:"من 3 € / شهر",
+      btn_sponsors:"☕ GitHub Sponsors (من 1 €)", btn_org:"🤝 للمنظمات والجمعيات",
+      support_note:"مجاني. للأبد. يُموَّل من أناس يأخذون الأمر بجدية.",
+      footer:"Citizen Agents — استوديو الديمقراطية الرقمية، برلين.",
+      footer_src:"الكود المصدري والبيانات الخام", footer_home:"إلى الصفحة الرئيسية",
+      sources:"المصادر:", auto_flag:"تُرجم آلياً — يرجى التحقق من المصدر الرسمي.",
+      tags:["مُعدّ طازجاً من مصادر عامة.","حقوقك تُراجع يومياً.","لا جدار دفع أمام حقوقك.","الحراس لا ينامون — لترقد بسلام."]
+    },
+    vi: {
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Chào buổi sáng, công dân.",
+      dateline:"Số {L} · lập ngày {T} · tươi mới mỗi sáng",
+      badge_watchdog:"CANH GÁC", badge_trust:"TIN CẬY", badge_support:"HỖ TRỢ",
+      trust_title:"Được Fleet Reviewer kiểm duyệt",
+      t_verified:"đã xác minh", t_partial:"một phần", t_failed:"lỗi",
+      trust_note:"Con người xem xét, tác nhân soạn thảo — không có gì tự động hợp nhất. Mỗi mục đều ghi rõ nguồn.",
+      support_title:"Miễn phí — nhưng không phải không tốn kém",
+      support_intro:"Bản tin luôn miễn phí mãi mãi. Máy chủ, kiểm duyệt và các canh gác mới chạy bằng sự hỗ trợ tự nguyện. Cách phân bổ như sau:",
+      tier_free_title:"🆓 Mọi công dân",
+      tier_free:["Bản tin Breakfast hàng ngày","Tất cả nguồn được liên kết","Bảng tin cậy (do người xem xét)","Không đăng ký, không tường phí"],
+      tier_pro_title:'⭐ «Người canh gác của bạn»', soon:"đang lên kế hoạch",
+      tier_pro:["Cảnh báo cá nhân theo mã bưu chính & hoàn cảnh","Bản tóm tắt sâu hơn + tìm kiếm lưu trữ","Truy cập sớm các canh gác mới","API cho nhà báo & NGO"],
+      price:"từ 3 € / tháng",
+      btn_sponsors:"☕ GitHub Sponsors (từ 1 €)", btn_org:"🤝 Dành cho tổ chức & NGO",
+      support_note:"Miễn phí. Mãi mãi. Được tài trợ bởi những người nghiêm túc.",
+      footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
+      footer_src:"Mã nguồn & dữ liệu thô", footer_home:"Về trang chủ",
+      sources:"Nguồn:", auto_flag:"Được dịch tự động — vui lòng đối chiếu với nguồn chính thức.",
+      tags:["Ủớp tươi từ nguồn công khai.","Quyền của bạn được kiểm tra hàng ngày.","Không có tường phí trước quyền của bạn.","Canh gác không ngủ — để bạn ngủ ngon."]
+    },
+    pl: {
+      brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Dzień dobry, obywatelu.",
+      dateline:"Wydanie {L} · utworzono {T} · świeże każdego ranka",
+      badge_watchdog:"STRAŻNIK", badge_trust:"ZAUFANIE", badge_support:"WSPARCIE",
+      trust_title:"Sprawdzone przez Fleet Reviewer",
+      t_verified:"potwierdzone", t_partial:"częściowo", t_failed:"błąd",
+      trust_note:"Ludzie sprawdzają, agenty redagują — nic nie jest scalane automatycznie. Każdy wpis ma podane źródło.",
+      support_title:"Bezpłatne — ale nie za darmo",
+      support_intro:"Ticker pozostaje bezpłatny na zawsze. Serwery, przegląd i nowi strażnicy działają dzięki dobrowolnemu wsparciu. Oto podział:",
+      tier_free_title:"🆓 Każdy obywatel",
+      tier_free:["Codzienny Breakfast Ticker","Wszystkie źródła podlinkowane","Panel zaufania (przeglądane przez człowieka)","Bez rejestracji, bez paywalla"],
+      tier_pro_title:'⭐ „Twój Strażnik”', soon:"w planach",
+      tier_pro:["Osobiste alerty według kodu pocztowego i sytuacji","Głębsze skróty + wyszukiwanie w archiwum","Wczesny dostęp do nowych strażników","API dla dziennikarzy i NGO"],
+      price:"od 3 € / miesiąc",
+      btn_sponsors:"☕ GitHub Sponsors (od 1 €)", btn_org:"🤝 Dla organizacji i NGO",
+      support_note:"Bezpłatne. Na zawsze. Finansowane przez ludzi, którzy traktują to poważnie.",
+      footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
+      footer_src:"Kod źródłowy i surowe dane", footer_home:"Strona główna",
+      sources:"Źródła:", auto_flag:"Przetłumaczono automatycznie — proszę zweryfikować ze źródłem oficjalnym.",
+      tags:["Świeżo zaparzone z publicznych źródeł.","Twoje prawa sprawdzane codziennie.","Przed twoimi prawami nie ma paywalla.","Strażnicy nie śpią — ty śpij spokojnie."]
     }
   };
   function fillList(id, arr){ var u=document.getElementById(id); if(!u) return; u.innerHTML = arr.map(function(x){return '<li>'+x+'</li>';}).join(''); }
+  function buildLangBar(){
+    var bar=document.getElementById('langBar'); if(!bar) return;
+    bar.innerHTML='';
+    LANGS.forEach(function(L){
+      var b=document.createElement('button');
+      b.className='lang-btn'+( (getLang()===L.code)?' active':'' );
+      b.textContent=L.label;
+      b.onclick=function(){ setLang(L.code); };
+      bar.appendChild(b);
+    });
+  }
+  function getLang(){ try{ return localStorage.getItem('ca_lang')||'de'; }catch(e){ return 'de'; } }
+  function setLang(code){ try{ localStorage.setItem('ca_lang', code); }catch(e){} applyLang(code); }
   function applyLang(lang){
     var d = I18N[lang] || I18N.de;
+    var meta = LANGS.find(function(L){return L.code===lang;}) || {auto:false};
     document.documentElement.lang = lang;
     document.querySelectorAll('[data-i18n]').forEach(function(el){ var k=el.getAttribute('data-i18n'); if(d[k]!=null) el.textContent=d[k]; });
     fillList('tierFree', d.tier_free);
@@ -447,11 +574,11 @@ TEMPLATE = """<!DOCTYPE html>
     var L=document.body.dataset.latest, T=document.body.dataset.today;
     var dl=document.getElementById('dateline'); if(dl) dl.textContent=d.dateline.replace('{L}',L).replace('{T}',T);
     var tg=document.getElementById('tag'); if(tg) tg.textContent=d.tags[Math.floor(Math.random()*d.tags.length)];
-    var lt=document.getElementById('langToggle'); if(lt) lt.textContent=d.lang_label;
-    try{ localStorage.setItem('ca_lang', lang); }catch(e){}
+    var an=document.getElementById('autoNote');
+    if(an){ if(meta.auto){ an.style.display='block'; an.textContent='⚠️ '+d.auto_flag; } else { an.style.display='none'; } }
+    buildLangBar();
   }
-  function toggleLang(){ var cur='de'; try{ cur=localStorage.getItem('ca_lang')||'de'; }catch(e){} applyLang(cur==='de'?'en':'de'); }
-  (function(){ var s='de'; try{ s=localStorage.getItem('ca_lang')||'de'; }catch(e){} applyLang(s); })();
+  (function(){ applyLang(getLang()); })();
 </script>
 </body>
 </html>"""
