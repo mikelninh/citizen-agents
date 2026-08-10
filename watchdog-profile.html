@@ -32,6 +32,10 @@
   .item .tags span { display:inline-block; background:rgba(57,197,187,.15); color:var(--teal); font-size:11px; padding:2px 8px; border-radius:20px; margin:2px 4px 0 0; }
   .item.match { background:rgba(240,164,41,.07); border-radius:10px; padding:12px; margin:8px 0; border:1px solid rgba(240,164,41,.25); }
   .item a { color:#7cc4ff; font-size:12px; text-decoration:none; word-break:break-all; display:block; }
+  .why { font-size:12px; color:var(--amber2); font-weight:700; margin:2px 0 6px; }
+  .nosrc { font-size:12px; color:var(--warn); margin:6px 0; }
+  .ask { margin-top:8px; font-size:13px; }
+  .ask a { color:var(--teal); font-weight:700; display:inline; }
   .badge { font-size:10px; background:var(--teal); color:#04201d; padding:2px 7px; border-radius:6px; font-weight:800; letter-spacing:1px; }
   .priv { font-size:12px; color:var(--muted); border-top:1px dashed var(--line); margin-top:14px; padding-top:10px; }
   footer { color:var(--muted); font-size:13px; text-align:center; margin-top:30px; }
@@ -103,26 +107,36 @@ function loadAndFilter(){
     const items = feed.items || [];
     const summary = document.getElementById("summary");
     const box = document.getElementById("results");
-    // relevance: theme overlap OR life overlap
-    const matched = items.filter(it=>{
-      const tHit = it.tags.some(t=>state.themes.includes(t));
-      const lHit = it.life.some(l=>state.life.includes(l));
-      return tHit || lHit;
-    });
+    const whyFor = (it)=>{
+      const reasons = [];
+      it.tags.forEach(t=>{ if(state.themes.includes(t)) reasons.push("Thema: "+(THEME_LABEL[t]||t)); });
+      it.life.forEach(l=>{ if(state.life.includes(l)) reasons.push("Lebenslage: "+l); });
+      return reasons;
+    };
+    const matched = items.filter(it=> whyFor(it).length>0);
     const total = items.length;
-    let head = `Heute ${total} Meldungen`;
-    if (state.themes.length || state.life.length) head += ` · ${matched.length} treffen deine Auswahl`;
-    if (feed.trust && (feed.trust.verified||feed.trust.partial)) head += ` · ${feed.trust.verified} verifiziert, ${feed.trust.partial} teilweise`;
+    let head = "Heute "+total+" Meldungen";
+    if (state.themes.length || state.life.length) head += " · "+matched.length+" treffen deine Auswahl";
+    if (feed.trust && (feed.trust.verified||feed.trust.partial)) head += " · "+feed.trust.verified+" verifiziert, "+feed.trust.partial+" teilweise";
     summary.textContent = head;
     box.innerHTML = "";
     (matched.length?matched:items).forEach(it=>{
+      const reasons = whyFor(it);
+      const isMatch = matched.length && reasons.length>0;
       const div = document.createElement("div");
-      div.className = "item" + (matched.length && (it.tags.some(t=>state.themes.includes(t))||it.life.some(l=>state.life.includes(l)))?" match":"");
+      div.className = "item" + (isMatch?" match":"");
       let h = `<h3><span class="badge">${feed.date}</span> ${it.headline}</h3>`;
+      if (isMatch) h += `<div class="why">✓ Warum das dich angeht: ${reasons.join(" · ")}</div>`;
       if (it.what_changed) h += `<div class="meta">${it.what_changed}</div>`;
+      if (it.why) h += `<div class="meta">📌 ${it.why}</div>`;
+      if (it.deadline) h += `<div class="meta">📅 ${it.deadline}</div>`;
+      if (it.how) h += `<div class="meta">🤝 ${it.how}</div>`;
       if (it.citizen_tip) h += `<div class="meta">💡 ${it.citizen_tip}</div>`;
       if (it.tags.length) h += `<div class="tags">${it.tags.map(t=>`<span>${THEME_LABEL[t]||t}</span>`).join("")}</div>`;
-      (it.sources||[]).forEach(s=> h += `<a href="${s}" target="_blank" rel="noopener">${s}</a>`);
+      const srcs = it.sources||[];
+      if (srcs.length) srcs.forEach(s=> h += `<a href="${s}" target="_blank" rel="noopener">🔗 ${s}</a>`);
+      else h += `<div class="nosrc">⚠️ Keine Quelle hinterlegt — mit Vorsicht genießen.</div>`;
+      h += `<div class="ask"><a href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen / Mehr erfahren</a></div>`;
       div.innerHTML = h;
       box.appendChild(div);
     });
