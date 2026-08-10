@@ -274,7 +274,7 @@
       support_intro:"Der Ticker bleibt für immer gratis. Server, Review und neue Wächter laufen über freiwillige Unterstützung. So sieht die Aufteilung aus:",
       tier_free_title:"🆓 Jeder Bürger",
       tier_free:["Täglicher Breakfast Ticker","Alle Quellen verlinkt","Trust-Panel (menschlich geprüft)","Keine Anmeldung, keine Paywall"],
-      tier_pro_title:'⭐ „Dein Wächter"', soon:"in Planung",
+      tier_pro_title:'⭐ „Dein Wächter“', soon:"in Planung",
       tier_pro:["Persönliche Alarme nach PLZ &amp; Lebenslage","Tiefere Digests + Archiv-Suche","Früher Zugang zu neuen Wächtern","API für Journalist:innen &amp; NGOs"],
       price:"ab 3 € / Monat",
       btn_sponsors:"☕ GitHub Sponsors (ab 1 €)", btn_org:"🤝 Für Organisationen &amp; NGOs",
@@ -291,7 +291,7 @@
       trust_title:"Reviewed by the Fleet Reviewer",
       t_verified:"verified", t_partial:"partial", t_failed:"failed",
       trust_note:"Humans review, agents draft — nothing merges automatically. Every item carries its source.",
-      support_title:"Free — and still not cheap",
+      support_title:"Free — but not without cost",
       support_intro:"The ticker stays free forever. Servers, review and new watchdogs run on voluntary support. Here's the split:",
       tier_free_title:"🆓 Every citizen",
       tier_free:["Daily Breakfast Ticker","All sources linked","Trust panel (human-reviewed)","No sign-up, no paywall"],
@@ -379,7 +379,7 @@
       support_intro:"Bản tin luôn miễn phí mãi mãi. Máy chủ, kiểm duyệt và các canh gác mới chạy bằng sự hỗ trợ tự nguyện. Cách phân bổ như sau:",
       tier_free_title:"🆓 Mọi công dân",
       tier_free:["Bản tin Breakfast hàng ngày","Tất cả nguồn được liên kết","Bảng tin cậy (do người xem xét)","Không đăng ký, không tường phí"],
-      tier_pro_title:'⭐ «Người canh gác của bạn»', soon:"đang lên kế hoạch",
+      tier_pro_title:'⭐ „Người canh gác của bạn“', soon:"đang lên kế hoạch",
       tier_pro:["Cảnh báo cá nhân theo mã bưu chính & hoàn cảnh","Bản tóm tắt sâu hơn + tìm kiếm lưu trữ","Truy cập sớm các canh gác mới","API cho nhà báo & NGO"],
       price:"từ 3 € / tháng",
       btn_sponsors:"☕ GitHub Sponsors (từ 1 €)", btn_org:"🤝 Dành cho tổ chức & NGO",
@@ -387,7 +387,7 @@
       footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
       footer_src:"Mã nguồn & dữ liệu thô", footer_home:"Về trang chủ",
       sources:"Nguồn:", auto_flag:"Được dịch tự động — vui lòng đối chiếu với nguồn chính thức.",
-      tags:["Ủớp tươi từ nguồn công khai.","Quyền của bạn được kiểm tra hàng ngày.","Không có tường phí trước quyền của bạn.","Canh gác không ngủ — để bạn ngủ ngon."]
+      tags:["Pha tươi từ nguồn công khai.","Quyền của bạn được kiểm tra hàng ngày.","Không có tường phí trước quyền của bạn.","Canh gác không ngủ — để bạn ngủ ngon."]
     },
     pl: {
       brand:"Citizen Agents", hero_kicker:"Breakfast Ticker", hero_title:"Dzień dobry, obywatelu.",
@@ -395,7 +395,7 @@
       badge_watchdog:"STRAŻNIK", badge_trust:"ZAUFANIE", badge_support:"WSPARCIE",
       trust_title:"Sprawdzone przez Fleet Reviewer",
       t_verified:"potwierdzone", t_partial:"częściowo", t_failed:"błąd",
-      trust_note:"Ludzie sprawdzają, agenty redagują — nic nie jest scalane automatycznie. Każdy wpis ma podane źródło.",
+      trust_note:"Ludzie sprawdzają, agenci redagują — nic nie jest scalane automatycznie. Każdy wpis ma podane źródło.",
       support_title:"Bezpłatne — ale nie za darmo",
       support_intro:"Ticker pozostaje bezpłatny na zawsze. Serwery, przegląd i nowi strażnicy działają dzięki dobrowolnemu wsparciu. Oto podział:",
       tier_free_title:"🆓 Każdy obywatel",
@@ -429,6 +429,7 @@
     var d = I18N[lang] || I18N.de;
     var meta = LANGS.find(function(L){return L.code===lang;}) || {auto:false};
     document.documentElement.lang = lang;
+    document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
     document.querySelectorAll('[data-i18n]').forEach(function(el){ var k=el.getAttribute('data-i18n'); if(d[k]!=null) el.textContent=d[k]; });
     fillList('tierFree', d.tier_free);
     fillList('tierPro', d.tier_pro);
