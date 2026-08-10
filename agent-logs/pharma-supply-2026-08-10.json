@@ -1,0 +1,83 @@
+{
+  "date": "2026-08-10",
+  "shortages_found": 520,
+  "top_shortages": [
+    {
+      "product": "Cefotaxim-saar 1 g / 2 g Pulver zur Injektions-/Infusionslösung",
+      "active_ingredient": "Cefotaxim-Natrium",
+      "atc": "J01DD01",
+      "shortage_since": "2026-09-01",
+      "expected_end": "2026-11-30",
+      "reason": "Produktionsproblem",
+      "hospital_relevant": true,
+      "alternative": "Andere Cephalosporine 3. Generation (z. B. Ceftriaxon), ärztliche Entscheidung",
+      "source": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "product": "Seroquel Prolong 300 mg Retardtabletten",
+      "active_ingredient": "Quetiapinfumarat",
+      "atc": "N05AH04",
+      "shortage_since": "2026-08-07",
+      "expected_end": "2026-10-07",
+      "reason": "Sonstige",
+      "hospital_relevant": false,
+      "alternative": "Generisches Quetiapin retard; Apothekenaustausch nach ALBVVG erlaubt",
+      "source": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "product": "Oxygesic injekt 10 mg/ml",
+      "active_ingredient": "Oxycodonhydrochlorid",
+      "atc": "N02AA05",
+      "shortage_since": "2026-08-10",
+      "expected_end": "2026-08-31",
+      "reason": "Produktionsproblem",
+      "hospital_relevant": true,
+      "alternative": "Andere Opioid-Injektionslösungen, klinische Entscheidung",
+      "source": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "product": "Propranolol PUREN 10 mg / 40 mg Filmtabletten",
+      "active_ingredient": "Propranololhydrochlorid",
+      "atc": "C07AA05",
+      "shortage_since": "2026-07-20",
+      "expected_end": "2026-10-05",
+      "reason": "Produktionsproblem",
+      "hospital_relevant": true,
+      "alternative": "Propranolol anderer Hersteller",
+      "source": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "product": "Versorgungsmängel mit BfArM-Maßnahmen: Ifosfamid, Depotpenicillin, Salbutamol, Acetylsalicylsäure",
+      "active_ingredient": "diverse",
+      "atc": null,
+      "shortage_since": "laufend",
+      "expected_end": "offen",
+      "reason": "Versorgungsmangel, offizielle Gegenmaßnahmen des BfArM",
+      "hospital_relevant": true,
+      "alternative": "Therapieempfehlungen und Ausnahmegenehmigungen des BfArM",
+      "source": "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/_node.html"
+    }
+  ],
+  "highlights": [
+    "520 offene Lieferengpassmeldungen in der BfArM-Datenbank (Stand 10.08.2026)",
+    "Neu am 10.08.2026: Antibiotikum Cefotaxim (Klinik) ab 01.09. bis 30.11.2026 wegen Produktionsproblem",
+    "Psychopharmakon Quetiapin (Seroquel Prolong 300 mg) bis Anfang Oktober knapp",
+    "BfArM aktualisierte am 04.08.2026 die ALBVVG-Dringlichkeitsliste, am 03.08.2026 die Listen versorgungskritischer Wirkstoffe",
+    "Anhaltende Versorgungsmängel bei Ifosfamid (Krebs), Depotpenicillin und Salbutamol-Inhalatoren"
+  ],
+  "sources": [
+    "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/_node.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/ALBVVG/_artikel.html",
+    "https://www.tagesschau.de/wirtschaft/unternehmen/lieferengpaesse-medikamente-pharmaindustrie-100.html",
+    "https://www.deutschlandfunk.de/apothekerverband-warnt-vor-arzneimittel-engpaessen-100.html"
+  ],
+  "actions_taken": [
+    "BfArM-/PharmNet-Lieferengpassdatenbank abgefragt",
+    "Neue Meldungen vom 10.08.2026 extrahiert und priorisiert",
+    "Bürgerlesbares Digest erstellt",
+    "Branch committed und PR geöffnet (kein Merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/pharma-supply-2026-08-10"
+}
