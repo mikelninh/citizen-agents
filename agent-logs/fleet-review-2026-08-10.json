@@ -1,0 +1,75 @@
+{
+  "date": "2026-08-10",
+  "agents_reviewed": 4,
+  "verified": 2,
+  "partial": 2,
+  "failed": 0,
+  "blockers": 0,
+  "agents": {
+    "truth-watch": "PARTIAL",
+    "consultation-watch": "PARTIAL",
+    "meat-dairy": "VERIFIED",
+    "climate-watch": "VERIFIED"
+  },
+  "highlights": [
+    "4 of ~13 fleet agents produced artifacts today; 0 BLOCKERS, 0 FAILED, nothing merged",
+    "All 4 agents stayed strictly inside agent-digests/ and agent-logs/ (merge-base diff = 2 files each)",
+    "truth-watch log is missing the required 'highlights' field",
+    "consultation item 3 (school education) cites the victims'-rights URL - unsourced deadline",
+    "Two consultation PRs (#25, #28) add identical file paths - merge conflict, close #25",
+    "climate-watch 96% greenwashing figure is a verbatim match to the npj Climate Action abstract"
+  ],
+  "issues": [
+    {"agent": "truth-watch", "severity": "HIGH", "issue": "agent-logs/truth-watch-2026-08-10.json is missing the required 'highlights' field (uses 'narratives'/'debunks' instead)"},
+    {"agent": "truth-watch", "severity": "LOW", "issue": "DSA press release IP/26/1579 is dated 9 July 2026; digest and log state 10 July 2026"},
+    {"agent": "truth-watch", "severity": "LOW", "issue": "Three AFP Fact Check URLs return HTTP 403 to automated clients - item 5 could not be verified this run"},
+    {"agent": "consultation-watch", "severity": "HIGH", "issue": "Item 3 'Schulbildung - Basiskompetenzen staerken' cites the EU victims'-rights initiative URL (18194); its 04.09.2026 deadline is therefore unsourced"},
+    {"agent": "consultation-watch", "severity": "MEDIUM", "issue": "PRs #25 and #28 both add agent-digests/consultation-2026-08-10.md and the matching log - merge conflict; #25 should be closed in favour of #28"},
+    {"agent": "consultation-watch", "severity": "LOW", "issue": "Item 7 is a Bundestag committee hearing, not an open citizen consultation window, but is counted in the '7 Beteiligungsfenster' headline"},
+    {"agent": "meat-dairy", "severity": "LOW", "issue": "'Drs. 21/327 passed 26 June 2025' not confirmable on the cited textarchiv page, which documents the first reading on 6 June 2025"},
+    {"agent": "meat-dairy", "severity": "LOW", "issue": "The ~562 t 2024 antibiotics figure is cited to a BVL press release covering the 2023 figures"},
+    {"agent": "climate-watch", "severity": "LOW", "issue": "UNEP Emissions Gap Report 2025 URL returns HTTP 403 to automated clients - the 2.3-2.5C / 2.8C figures are unverified this run"},
+    {"agent": "climate-watch", "severity": "LOW", "issue": "The ~36-40% footprint-cut claim rests on 2022/2023 NewClimate and Carbon Market Watch material presented alongside 2026 data"},
+    {"agent": "fleet", "severity": "LOW", "issue": "All four branches were cut from a stale main, so the PR diffs show spurious deletions of build_impact.py, impact.html, watchdog-profile.html and breakfast-feed.json; merge-base diffs are clean, but agents should rebase before pushing"}
+  ],
+  "source_checks": [
+    {"url": "https://correctiv.org/faktencheck/2026/08/07/nein-die-fifa-hat-argentinien-im-juli-nicht-offiziell-von-der-wm-2030-ausgeschlossen/", "status": 200, "result": "OK"},
+    {"url": "https://correctiv.org/faktencheck/2026/08/06/5-000-neue-moscheen-fuer-spanien-tiktok-account-streut-unbelegte-geruechte/", "status": 200, "result": "OK"},
+    {"url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1579", "status": 200, "result": "OK - date off by one day"},
+    {"url": "https://factcheck.afp.com/doc.afp.com.C46B6WF", "status": 403, "result": "BOT-BLOCKED"},
+    {"url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18655-Removing-expired-rules-Cross-reference-to-the-end-date-of-their-recognition-for-rules-for-equivalent-third-countries_en", "status": 200, "result": "OK - feedback 31 Jul - 28 Aug 2026 confirmed"},
+    {"url": "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/18194-EU-strategy-on-victims-rights_en", "status": 200, "result": "MISMATCH as used for digest item 3"},
+    {"url": "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen/1194314-1194314", "status": 200, "result": "OK - hearing 5 Oct 2026, 14-16h confirmed"},
+    {"url": "https://www.bundestag.de/dokumente/textarchiv/2026/kw03-de-tierhaltungskennzeichnungsgesetz-1134328", "status": 200, "result": "OK - all key facts confirmed"},
+    {"url": "https://dserver.bundestag.de/btd/21/032/2103292.pdf", "status": 200, "result": "OK"},
+    {"url": "https://www.lobbyregister.bundestag.de/suche/R002175/50843", "status": 200, "result": "OK"},
+    {"url": "https://www.nature.com/articles/s44168-026-00346-6", "status": 200, "result": "OK - 96% figure verbatim in abstract"},
+    {"url": "https://www.iea.org/reports/global-energy-review-2026/co2-emissions", "status": 200, "result": "OK"},
+    {"url": "https://globalcarbonbudget.org/fossil-fuel-co2-emissions-hit-record-high-in-2025/", "status": 200, "result": "OK"},
+    {"url": "https://www.unep.org/resources/emissions-gap-report-2025", "status": 403, "result": "BOT-BLOCKED"},
+    {"url": "https://www.bvl.bund.de/SharedDocs/Pressemitteilungen/05_tierarzneimittel/2024/PM_Abgabemengen_Antibiotika_Tiermedizin_2023.html", "status": 200, "result": "OK - but covers 2023 figures"}
+  ],
+  "guardrails": {
+    "merges_detected": 0,
+    "out_of_scope_files": 0,
+    "note": "All reviewed branches touched only agent-digests/ and agent-logs/ relative to their merge-base"
+  },
+  "not_run_today": [
+    "algorithm-watch", "arms-export", "benefit-watch", "court-watch", "directive-watch",
+    "pharma-supply", "procurement", "revolving-door", "treaty-watch",
+    "bundestag-watch (faireint-bundestag)", "law-watch (gitlaw)", "money-flow (pmm-mcp)",
+    "abuse-safety (safevoice)", "eu-rights (flight-rights-mcp)",
+    "studio-director", "studio-engineer", "studio-qa"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Listed hub branches and open PRs; checked faireint-bundestag, gitlaw, pmm-mcp, safevoice, flight-rights-mcp for artifacts dated 2026-08-10",
+    "Guardrail check via git diff against merge-base for each of the 4 branches",
+    "Parsed all 4 agent logs and checked required fields",
+    "Live-fetched 15 source URLs (HTTP status) and read 7 pages in full to confirm claims",
+    "Wrote agent-digests/fleet-review-2026-08-10.md and agent-logs/fleet-review-2026-08-10.json",
+    "Opened PR for human review (NOT merged, no other agent's files touched)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "studio/fleet-review-2026-08-10"
+}
