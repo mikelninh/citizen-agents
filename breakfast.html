@@ -9,154 +9,214 @@
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --bg:#f5f3f1; --card:#ffffff; --ink:#171a21; --navy:#02083a; --muted:#5b6472;
-    --accent:#0068e6; --accent-soft:#e8f0ff; --ok:#1a7f4b; --ok-soft:#e6f4ec;
-    --warn:#9a6400; --warn-soft:#fdf3e0; --bad:#c4322b; --bad-soft:#fdeaea;
+    --bg:#f5f3f1; --card:#ffffff; --ink:#161a22; --navy:#02083a; --muted:#4f5866;
+    --accent:#0068e6; --accent-soft:#e8f0ff; --ok:#166b40; --ok-soft:#e6f4ec;
+    --warn:#845400; --warn-soft:#fdf3e0; --bad:#b32a24; --bad-soft:#fdeaea;
     --line:#e7e3df; --line-soft:#f0edea;
     --radius:20px; --radius-sm:14px;
+    --measure:74ch;
     --shadow:0 1px 2px rgba(2,8,58,.04), 0 10px 30px rgba(2,8,58,.06);
+    --shadow-lift:0 2px 6px rgba(2,8,58,.06), 0 16px 40px rgba(2,8,58,.10);
   }
   *{ box-sizing:border-box; }
-  html{ -webkit-text-size-adjust:100%; }
+  html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:88px; }
   body{ margin:0; background:var(--bg); color:var(--ink);
-    font:17px/1.65 "Onest",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font:17px/1.72 "Onest",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     -webkit-font-smoothing:antialiased; }
   a{ color:var(--accent); }
   :focus-visible{ outline:3px solid var(--accent); outline-offset:2px; border-radius:6px; }
-  .wrap{ max-width:800px; margin:0 auto; padding:20px 20px 96px; }
+  .wrap{ max-width:820px; margin:0 auto; padding:0 20px 96px; }
+  .skip{ position:absolute; inset-inline-start:-9999px; top:0; background:#fff; color:var(--navy);
+    padding:10px 18px; border-radius:0 0 12px 0; font-weight:700; z-index:60; }
+  .skip:focus{ inset-inline-start:0; }
 
-  /* topbar */
-  .topbar{ display:flex; align-items:center; justify-content:space-between; gap:14px;
-    flex-wrap:wrap; padding:10px 0 6px; }
+  /* sticky topbar + language bar */
+  .topbar{ position:sticky; top:0; z-index:50; display:flex; align-items:center;
+    justify-content:space-between; gap:12px; flex-wrap:wrap;
+    padding:10px 0 10px; margin-bottom:2px;
+    background:rgba(245,243,241,.86); backdrop-filter:saturate(150%) blur(10px);
+    -webkit-backdrop-filter:saturate(150%) blur(10px);
+    border-bottom:1px solid transparent; transition:border-color .2s; }
+  .topbar::after{ content:""; position:absolute; inset-inline:-20px; bottom:0; height:1px;
+    background:linear-gradient(90deg,transparent,var(--line),transparent); }
   .brand{ display:flex; align-items:center; gap:10px; font-weight:700; color:var(--navy);
     font-size:15px; letter-spacing:-.2px; }
   .brand-mark{ width:24px; height:24px; flex:none; }
 
-  /* language bar */
-  .lang-bar{ display:flex; flex-wrap:wrap; gap:6px; align-items:center;
-    background:#fff; border:1px solid var(--line); border-radius:999px; padding:4px; box-shadow:var(--shadow); }
+  .lang-bar{ display:flex; flex-wrap:nowrap; overflow-x:auto; gap:4px; align-items:center;
+    background:#fff; border:1px solid var(--line); border-radius:999px; padding:4px;
+    box-shadow:var(--shadow); scrollbar-width:none; max-width:100%; }
+  .lang-bar::-webkit-scrollbar{ display:none; }
   .lang-btn{ border:0; background:transparent; color:var(--muted); font:inherit; font-weight:700;
-    font-size:12.5px; letter-spacing:.4px; padding:6px 12px; border-radius:999px; cursor:pointer;
-    transition:background .15s, color .15s; }
+    font-size:12.5px; letter-spacing:.6px; padding:7px 13px; border-radius:999px; cursor:pointer;
+    white-space:nowrap; transition:background .15s, color .15s; }
   .lang-btn:hover{ background:var(--accent-soft); color:var(--accent); }
   .lang-btn.active{ background:var(--accent); color:#fff; }
 
   /* auto translation note */
-  .auto-note{ font-size:13.5px; line-height:1.5; color:var(--warn); background:var(--warn-soft);
+  .auto-note{ font-size:14px; line-height:1.6; color:var(--warn); background:var(--warn-soft);
     border:1px solid #f0dcb4; border-inline-start:4px solid var(--warn);
-    padding:12px 16px; border-radius:var(--radius-sm); margin:14px 0 0; }
+    padding:13px 18px; border-radius:var(--radius-sm); margin:16px 0 0; }
 
   /* hero */
-  .masthead{ position:relative; text-align:center; padding:34px 0 30px; }
-  .masthead::before{ content:""; position:absolute; inset:-40px -24px auto -24px; height:300px;
+  .masthead{ position:relative; text-align:center; padding:40px 0 34px; }
+  .masthead::before{ content:""; position:absolute; inset:-40px -24px auto -24px; height:320px;
     background:radial-gradient(120% 100% at 50% 0, rgba(0,104,230,.10), transparent 72%);
     z-index:0; pointer-events:none; }
   .masthead > *{ position:relative; z-index:1; }
-  .coffee, .coffee svg{ width:60px; height:60px; display:block; margin:0 auto 14px; }
+  .coffee, .coffee svg{ width:62px; height:62px; display:block; margin:0 auto 16px; }
   .steam{ animation:rise 3s ease-in-out infinite; }
   .steam.s2{ animation-delay:.6s; }
   @keyframes rise{ 0%{opacity:0;transform:translateY(4px)} 40%{opacity:.8} 100%{opacity:0;transform:translateY(-6px)} }
-  .kicker{ letter-spacing:2.4px; font-size:11px; color:var(--accent); text-transform:uppercase; font-weight:800; }
-  h1{ font-size:clamp(30px,6vw,42px); line-height:1.12; margin:12px 0 12px; color:var(--navy); letter-spacing:-1px; font-weight:800; }
+  .kicker{ letter-spacing:2.6px; font-size:11.5px; color:var(--accent); text-transform:uppercase; font-weight:800; }
+  h1{ font-size:clamp(34px,7vw,52px); line-height:1.06; margin:14px 0 16px; color:var(--navy);
+    letter-spacing:-1.4px; font-weight:800; text-wrap:balance; }
   .dateline{ display:inline-flex; align-items:center; gap:8px; color:var(--muted); font-size:14px;
-    background:#fff; border:1px solid var(--line); border-radius:999px; padding:6px 14px; box-shadow:var(--shadow); }
-  .tagline{ color:var(--navy); opacity:.85; font-size:16px; margin-top:16px; min-height:24px; font-style:italic; }
+    background:#fff; border:1px solid var(--line); border-radius:999px; padding:7px 16px; box-shadow:var(--shadow); }
+  .tagline{ color:var(--navy); opacity:.85; font-size:17px; margin:18px auto 0; max-width:44ch;
+    min-height:26px; font-style:italic; text-wrap:balance; }
   .live{ display:inline-block; width:8px; height:8px; border-radius:50%; background:var(--ok); flex:none;
-    box-shadow:0 0 0 0 rgba(26,127,75,.5); animation:pulse 2s infinite; }
-  @keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(26,127,75,.5)} 70%{box-shadow:0 0 0 9px rgba(26,127,75,0)} 100%{box-shadow:0 0 0 0 rgba(26,127,75,0)} }
-  @media (prefers-reduced-motion:reduce){ .live,.steam{ animation:none; } }
+    box-shadow:0 0 0 0 rgba(22,107,64,.5); animation:pulse 2s infinite; }
+  @keyframes pulse{ 0%{box-shadow:0 0 0 0 rgba(22,107,64,.5)} 70%{box-shadow:0 0 0 9px rgba(22,107,64,0)} 100%{box-shadow:0 0 0 0 rgba(22,107,64,0)} }
 
   /* cards */
   .card{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
-    padding:26px 28px; margin:22px 0; box-shadow:var(--shadow); }
-  .card-head{ display:flex; align-items:center; gap:14px; margin-bottom:14px; }
-  .card-head h2{ margin:6px 0 0; font-size:21px; line-height:1.25; color:var(--navy); letter-spacing:-.4px; }
-  .mascot{ width:42px; height:42px; flex:none; }
+    padding:34px 36px; margin:26px 0; box-shadow:var(--shadow); }
+  .card-head{ display:flex; align-items:center; gap:16px; margin-bottom:18px; }
+  .card-head h2{ margin:8px 0 0; font-size:24px; line-height:1.22; color:var(--navy); letter-spacing:-.6px; }
+  .mascot{ width:44px; height:44px; flex:none; }
   .badge{ display:inline-block; background:var(--accent-soft); color:var(--accent); font-size:10.5px;
-    font-weight:800; letter-spacing:1.2px; padding:4px 11px; border-radius:999px; text-transform:uppercase; }
+    font-weight:800; letter-spacing:1.4px; padding:4px 11px; border-radius:999px; text-transform:uppercase; }
   .trust-badge{ background:#e9ebf5; color:var(--navy); }
-  .sup-badge{ background:#fde7ef; color:#b23a68; }
-  .intro{ color:var(--muted); margin:0 0 8px; font-size:16px; }
+  .sup-badge{ background:#fde7ef; color:#a13360; }
+  .intro{ color:var(--muted); margin:0 0 8px; font-size:16.5px; max-width:var(--measure); }
+
+  /* jump nav / table of contents */
+  .toc{ background:var(--bg); border:1px solid var(--line); border-radius:var(--radius-sm);
+    padding:16px 18px; margin:18px 0 6px; }
+  .toc-h{ margin:0 0 10px; font-size:11px; font-weight:800; letter-spacing:1.4px;
+    text-transform:uppercase; color:var(--muted); }
+  .toc-list{ list-style:none; margin:0; padding:0; display:grid; gap:2px; }
+  .toc-list a{ display:flex; gap:10px; align-items:baseline; text-decoration:none; color:var(--navy);
+    padding:7px 10px; border-radius:10px; font-size:15px; line-height:1.45; transition:background .15s, color .15s; }
+  .toc-list a:hover{ background:var(--accent-soft); color:var(--accent); }
+  .tocnum{ flex:none; font-weight:800; font-size:12px; color:var(--accent);
+    min-width:1.4em; text-align:center; }
+  .toctxt{ overflow-wrap:anywhere; }
 
   /* findings */
-  .findings{ margin-top:6px; }
-  .finding{ border-top:1px solid var(--line-soft); padding:22px 0 6px; }
-  .finding:first-child{ border-top:0; padding-top:8px; }
-  .finding h3{ margin:0 0 12px; font-size:18px; line-height:1.35; color:var(--navy);
-    display:flex; gap:10px; align-items:baseline; font-weight:700; letter-spacing:-.3px; }
+  .findings{ margin-top:10px; display:grid; gap:14px; }
+  .finding{ position:relative; border:1px solid var(--line-soft); border-radius:var(--radius-sm);
+    border-inline-start:4px solid var(--accent-soft);
+    background:#fff; padding:24px 26px; scroll-margin-top:96px;
+    transition:border-color .18s, box-shadow .18s, transform .18s; }
+  .finding:hover{ border-inline-start-color:var(--accent); box-shadow:var(--shadow); }
+  .finding:target{ border-inline-start-color:var(--accent); box-shadow:0 0 0 3px rgba(0,104,230,.12); }
+  .finding:focus{ outline:none; }
+  .finding h3{ margin:0 0 16px; font-size:20px; line-height:1.3; color:var(--navy);
+    display:flex; gap:12px; align-items:baseline; font-weight:700; letter-spacing:-.4px;
+    max-width:var(--measure); text-wrap:balance; }
   .fnum{ background:var(--navy); color:#fff; font-size:12px; font-weight:800; border-radius:999px;
-    padding:2px 10px; flex:none; }
-  .flist{ margin:0; display:grid; gap:10px; }
+    padding:3px 11px; flex:none; }
+  .flist{ margin:0; display:grid; gap:14px; max-width:var(--measure); }
   .flist .frow{ display:block; }
-  .lbl{ display:block; color:var(--muted); font-weight:700; font-size:11px; letter-spacing:1px;
-    text-transform:uppercase; margin-bottom:2px; }
-  .fval{ display:block; line-height:1.6; }
-  .sources{ margin-top:16px; }
-  .sources .lbl{ margin-bottom:6px; }
+  .lbl{ display:block; color:var(--muted); font-weight:700; font-size:11px; letter-spacing:1.4px;
+    text-transform:uppercase; margin-bottom:3px; }
+  .fval{ display:block; line-height:1.7; }
+  .sources{ margin-top:20px; padding-top:16px; border-top:1px dashed var(--line); }
+  .sources .lbl{ margin-bottom:8px; }
   .srcchip{ display:inline-block; margin:0 6px 6px 0; }
+  [dir="rtl"] .srcchip{ margin:0 0 6px 6px; }
   .srcchip a{ display:inline-block; background:var(--bg); border:1px solid var(--line); color:var(--navy);
-    font-size:12.5px; font-weight:600; padding:5px 12px; border-radius:999px; text-decoration:none;
+    font-size:12.5px; font-weight:600; padding:6px 13px; border-radius:999px; text-decoration:none;
     transition:.15s; max-width:100%; overflow-wrap:anywhere; }
   .srcchip a:hover{ border-color:var(--accent); color:var(--accent); background:var(--accent-soft); }
-  .factions{ display:flex; flex-wrap:wrap; gap:10px; margin-top:14px; }
-  .bottom{ border-top:1px solid var(--line-soft); margin-top:18px; padding-top:16px;
-    font-size:16px; color:var(--navy); }
+  .factions{ display:flex; flex-wrap:wrap; gap:10px; margin-top:18px; }
+  .bottom{ border-top:1px solid var(--line-soft); margin-top:24px; padding-top:20px;
+    font-size:17px; line-height:1.7; color:var(--navy); max-width:var(--measure); }
 
   /* trust */
-  .trust-totals{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:16px 0 20px; }
+  .trust-totals{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:20px 0 24px; }
   .trust-totals .t{ text-align:center; background:var(--bg); border:1px solid var(--line);
-    border-radius:var(--radius-sm); padding:16px 8px; }
-  .trust-totals b{ font-size:28px; display:block; line-height:1.1; color:var(--navy); }
-  .trust-totals span{ font-size:12px; color:var(--muted); }
+    border-radius:var(--radius-sm); padding:20px 10px; }
+  .trust-totals b{ font-size:32px; display:block; line-height:1.1; color:var(--navy); }
+  .trust-totals span{ font-size:12px; color:var(--muted); letter-spacing:.4px; }
   .trust-totals .ok b{ color:var(--ok); } .trust-totals .warn b{ color:var(--warn); } .trust-totals .bad b{ color:var(--bad); }
-  .table-scroll{ overflow-x:auto; }
-  table.verdicts{ width:100%; border-collapse:collapse; font-size:14px; }
-  table.verdicts th, table.verdicts td{ text-align:start; padding:11px 10px; border-top:1px solid var(--line-soft); vertical-align:top; }
-  table.verdicts th{ color:var(--muted); font-weight:700; font-size:11px; letter-spacing:1px; text-transform:uppercase; border-top:0; }
+  .table-scroll{ overflow-x:auto; border:1px solid var(--line-soft); border-radius:var(--radius-sm); }
+  table.verdicts{ width:100%; border-collapse:collapse; font-size:14.5px; }
+  table.verdicts th, table.verdicts td{ text-align:start; padding:13px 14px; border-top:1px solid var(--line-soft); vertical-align:top; }
+  table.verdicts th{ color:var(--muted); font-weight:700; font-size:11px; letter-spacing:1.2px;
+    text-transform:uppercase; border-top:0; background:var(--bg); }
   .pill{ display:inline-block; font-size:11px; font-weight:800; padding:3px 10px; border-radius:999px; white-space:nowrap; }
   .pill.ok{ background:var(--ok-soft); color:var(--ok); }
   .pill.warn{ background:var(--warn-soft); color:var(--warn); }
   .pill.bad{ background:var(--bad-soft); color:var(--bad); }
-  .note{ color:var(--muted); font-size:14px; margin-top:16px; }
+  .note{ color:var(--muted); font-size:14.5px; line-height:1.7; margin-top:20px; max-width:var(--measure); }
 
   /* support */
-  .tiers{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:16px; margin:18px 0; }
-  .tier{ background:var(--bg); border:1px solid var(--line); border-radius:var(--radius-sm); padding:20px 22px; }
-  .tier h3{ margin:0 0 12px; font-size:17px; color:var(--navy); }
+  .tiers{ display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:18px; margin:22px 0; }
+  .tier{ background:var(--bg); border:1px solid var(--line); border-radius:var(--radius-sm); padding:24px 26px; }
+  .tier h3{ margin:0 0 14px; font-size:18px; color:var(--navy); letter-spacing:-.3px; }
   .tier ul{ margin:0; padding-inline-start:20px; }
-  .tier li{ margin:8px 0; }
+  .tier li{ margin:10px 0; line-height:1.65; }
   .tier.pro{ background:#fff; border-color:var(--accent); box-shadow:0 0 0 3px rgba(0,104,230,.08); }
   .soon{ font-size:10px; background:var(--accent-soft); color:var(--accent); padding:3px 9px;
     border-radius:999px; vertical-align:middle; font-weight:800; letter-spacing:.5px; }
-  .price{ margin-top:14px; font-weight:800; color:var(--accent); }
-  .donate-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:10px; }
-  .btn{ display:inline-flex; align-items:center; gap:8px; padding:12px 20px; border-radius:999px;
+  .price{ margin-top:16px; font-weight:800; color:var(--accent); }
+  .donate-row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
+  .btn{ display:inline-flex; align-items:center; gap:8px; padding:13px 22px; border-radius:999px;
     font-weight:700; text-decoration:none; font-size:14.5px; transition:.15s; border:1px solid transparent; }
   .btn.primary{ background:var(--accent); color:#fff; }
   .btn.primary:hover{ background:#0057c2; }
   .btn.ghost{ background:#fff; color:var(--navy); border-color:var(--line); }
   .btn.ghost:hover{ border-color:var(--accent); color:var(--accent); }
-  .btn.small{ padding:9px 16px; font-size:13.5px; }
+  .btn.small{ padding:9px 17px; font-size:13.5px; }
   .btn:hover{ transform:translateY(-1px); }
 
-  footer{ color:var(--muted); font-size:14px; text-align:center; margin-top:44px; line-height:1.9; }
+  /* back to top */
+  .totop{ position:fixed; inset-block-end:20px; inset-inline-end:20px; z-index:40;
+    background:#fff; color:var(--navy); border:1px solid var(--line); box-shadow:var(--shadow-lift);
+    width:46px; height:46px; border-radius:999px; display:flex; align-items:center; justify-content:center;
+    text-decoration:none; font-size:18px; font-weight:800; }
+  .totop:hover{ border-color:var(--accent); color:var(--accent); }
+
+  footer{ color:var(--muted); font-size:14.5px; text-align:center; margin-top:52px; line-height:2; }
   footer a{ color:var(--accent); text-decoration:none; }
   footer a:hover{ text-decoration:underline; }
+  .follow{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; align-items:center;
+    margin:0 0 16px; padding:14px 0; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .follow-label{ font-weight:700; color:var(--navy); font-size:13px; text-transform:uppercase; letter-spacing:.5px; }
+  .follow-btn{ display:inline-flex; align-items:center; gap:5px; padding:8px 15px; border-radius:999px;
+    background:#fff; border:1px solid var(--line); color:var(--navy); font-weight:700; font-size:13px; text-decoration:none; transition:.15s; }
+  .follow-btn:hover{ border-color:var(--accent); color:var(--accent); text-decoration:none; }
+  .follow-btn.soon{ opacity:.6; }
 
-  [dir="rtl"] .finding h3{ text-align:right; }
-  [dir="rtl"] .kicker, [dir="rtl"] .lbl{ letter-spacing:0; }
+  [dir="rtl"] .kicker, [dir="rtl"] .lbl, [dir="rtl"] .badge, [dir="rtl"] .toc-h{ letter-spacing:0; }
+  [dir="rtl"] h1, [dir="rtl"] .card-head h2, [dir="rtl"] .finding h3{ letter-spacing:0; }
 
-  @media (max-width:620px){
-    body{ font-size:16px; }
-    .wrap{ padding:12px 15px 72px; }
-    .card{ padding:20px 18px; border-radius:18px; }
-    .card-head{ gap:10px; }
+  @media (prefers-reduced-motion:reduce){
+    html{ scroll-behavior:auto; }
+    *,*::before,*::after{ animation:none !important; transition:none !important; }
+    .btn:hover{ transform:none; }
+  }
+
+  @media (max-width:640px){
+    body{ font-size:16.5px; }
+    .wrap{ padding:0 15px 90px; }
+    .card{ padding:22px 18px; border-radius:18px; }
+    .finding{ padding:18px 16px; }
+    .card-head{ gap:12px; }
+    .card-head h2{ font-size:21px; }
+    .masthead{ padding:26px 0 24px; }
     .trust-totals{ grid-template-columns:1fr; }
     .btn{ width:100%; justify-content:center; }
+    .totop{ inset-block-end:14px; inset-inline-end:14px; }
+    .brand span{ display:none; }
   }
 </style>
 </head>
 <body data-latest="2026-08-10" data-today="2026-08-10">
+<a class="skip" href="#main">Zum Inhalt springen</a>
 <div class="wrap">
   <header class="topbar">
     <div class="brand">
@@ -168,7 +228,7 @@
 
   <div id="autoNote" class="auto-note" role="status" style="display:none"></div>
 
-  <main>
+  <main id="main">
   <div class="masthead">
     <div class="coffee">{COFFEE}</div>
     <p class="kicker" data-i18n="hero_kicker">Breakfast Ticker</p>
@@ -192,7 +252,8 @@
 </svg><div><span class="badge" data-i18n="badge_watchdog">WÄCHTER</span>
             <h2> 2026-08-10</h2></div></header>
           <p class="intro">Geldradar für Bürgerinnen und Bürger: **Leistungen, auf die du Anspruch hast, die aber massenhaft nicht abgerufen werden.** Jeder Eintrag nennt Quellen.</p>
-          <div class="findings"><article class="finding"><h3><span class="fnum">1</span> <span>Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift</span></h3>
+          <nav class="toc" aria-label="Übersicht der Meldungen"><p class="toc-h">Auf einen Blick · 8</p><ol class="toc-list"><li><a href="#finding-0-1"><span class="tocnum">1</span><span class="toctxt">Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift</span></a></li><li><a href="#finding-0-2"><span class="tocnum">2</span><span class="toctxt">Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden</span></a></li><li><a href="#finding-0-3"><span class="tocnum">3</span><span class="toctxt">Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat</span></a></li><li><a href="#finding-0-4"><span class="tocnum">4</span><span class="toctxt">Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld</span></a></li><li><a href="#finding-0-5"><span class="tocnum">5</span><span class="toctxt">Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt</span></a></li><li><a href="#finding-0-6"><span class="tocnum">6</span><span class="toctxt">Arbeitnehmer-Sparzulage &amp; Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht</span></a></li><li><a href="#finding-0-7"><span class="tocnum">7</span><span class="toctxt">BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern</span></a></li><li><a href="#finding-0-8"><span class="tocnum">8</span><span class="toctxt">Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)</span></a></li></ol></nav>
+          <div class="findings"><article class="finding" id="finding-0-1" tabindex="-1" data-content="{&quot;de&quot;: {&quot;headline&quot;: &quot;Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift&quot;, &quot;rows&quot;: [[&quot;Was hat sich geändert&quot;, &quot;Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\&quot;verdeckte Armut\&quot;). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.&quot;], [&quot;Ab wann&quot;, &quot;Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.&quot;], [&quot;Wen betrifft&#x27;s&quot;, &quot;Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.&quot;], [&quot;Tipp für dich&quot;, &quot;Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*&quot;]]}}"><h3><span class="fnum" aria-hidden="true">1</span> <span class="fhead">Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift</span></h3>
 <div class="flist"><div class="frow"><span class="lbl">Was hat sich geändert</span><span class="fval">Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (&quot;verdeckte Armut&quot;). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.</span></div><div class="frow"><span class="lbl">Ab wann</span><span class="fval">Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.</span></div><div class="frow"><span class="lbl">Wen betrifft&#x27;s</span><span class="fval">Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.</span></div><div class="frow"><span class="lbl">Tipp für dich</span><span class="fval">Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*</span></div></div>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
 <span class="srcchip"><a href="https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html" target="_blank" rel="noopener" title="https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html">bmwsb.bund.de</a></span>
@@ -201,7 +262,7 @@
 </div>
 <div class="factions"><a class="btn primary small" href="https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html" target="_blank" rel="noopener">🔎 Mehr erfahren</a><a class="btn ghost small" href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen</a></div>
 </article>
-<article class="finding"><h3><span class="fnum">2</span> <span>Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden</span></h3>
+<article class="finding" id="finding-0-2" tabindex="-1" data-content="{&quot;de&quot;: {&quot;headline&quot;: &quot;Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden&quot;, &quot;rows&quot;: [[&quot;Was hat sich geändert&quot;, &quot;Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.&quot;], [&quot;Ab wann&quot;, &quot;Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.&quot;], [&quot;Wen betrifft&#x27;s&quot;, &quot;Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.&quot;], [&quot;Tipp für dich&quot;, &quot;Zuerst den kostenlosen \&quot;KiZ-Lotse\&quot; der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*&quot;]]}}"><h3><span class="fnum" aria-hidden="true">2</span> <span class="fhead">Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden</span></h3>
 <div class="flist"><div class="frow"><span class="lbl">Was hat sich geändert</span><span class="fval">Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.</span></div><div class="frow"><span class="lbl">Ab wann</span><span class="fval">Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.</span></div><div class="frow"><span class="lbl">Wen betrifft&#x27;s</span><span class="fval">Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.</span></div><div class="frow"><span class="lbl">Tipp für dich</span><span class="fval">Zuerst den kostenlosen &quot;KiZ-Lotse&quot; der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*</span></div></div>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
 <span class="srcchip"><a href="https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer" target="_blank" rel="noopener" title="https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer">arbeitsagentur.de</a></span>
@@ -210,7 +271,7 @@
 </div>
 <div class="factions"><a class="btn primary small" href="https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer" target="_blank" rel="noopener">🔎 Mehr erfahren</a><a class="btn ghost small" href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen</a></div>
 </article>
-<article class="finding"><h3><span class="fnum">3</span> <span>Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat</span></h3>
+<article class="finding" id="finding-0-3" tabindex="-1" data-content="{&quot;de&quot;: {&quot;headline&quot;: &quot;Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat&quot;, &quot;rows&quot;: [[&quot;Was hat sich geändert&quot;, &quot;Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.&quot;], [&quot;Ab wann&quot;, &quot;Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.&quot;], [&quot;Wen betrifft&#x27;s&quot;, &quot;Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.&quot;], [&quot;Tipp für dich&quot;, &quot;Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*&quot;]]}}"><h3><span class="fnum" aria-hidden="true">3</span> <span class="fhead">Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat</span></h3>
 <div class="flist"><div class="frow"><span class="lbl">Was hat sich geändert</span><span class="fval">Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.</span></div><div class="frow"><span class="lbl">Ab wann</span><span class="fval">Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.</span></div><div class="frow"><span class="lbl">Wen betrifft&#x27;s</span><span class="fval">Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.</span></div><div class="frow"><span class="lbl">Tipp für dich</span><span class="fval">Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*</span></div></div>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
 <span class="srcchip"><a href="https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket" target="_blank" rel="noopener" title="https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket">arbeitsagentur.de</a></span>
@@ -219,7 +280,7 @@
 </div>
 <div class="factions"><a class="btn primary small" href="https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket" target="_blank" rel="noopener">🔎 Mehr erfahren</a><a class="btn ghost small" href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen</a></div>
 </article>
-<article class="finding"><h3><span class="fnum">4</span> <span>Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld</span></h3>
+<article class="finding" id="finding-0-4" tabindex="-1" data-content="{&quot;de&quot;: {&quot;headline&quot;: &quot;Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld&quot;, &quot;rows&quot;: [[&quot;Was hat sich geändert&quot;, &quot;Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.&quot;], [&quot;Ab wann&quot;, &quot;Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).&quot;], [&quot;Wen betrifft&#x27;s&quot;, &quot;Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.&quot;], [&quot;Tipp für dich&quot;, &quot;Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*&quot;]]}}"><h3><span class="fnum" aria-hidden="true">4</span> <span class="fhead">Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld</span></h3>
 <div class="flist"><div class="frow"><span class="lbl">Was hat sich geändert</span><span class="fval">Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.</span></div><div class="frow"><span class="lbl">Ab wann</span><span class="fval">Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).</span></div><div class="frow"><span class="lbl">Wen betrifft&#x27;s</span><span class="fval">Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.</span></div><div class="frow"><span class="lbl">Tipp für dich</span><span class="fval">Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*</span></div></div>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
 <span class="srcchip"><a href="https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762" target="_blank" rel="noopener" title="https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762">familienportal.de</a></span>
@@ -228,7 +289,7 @@
 </div>
 <div class="factions"><a class="btn primary small" href="https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762" target="_blank" rel="noopener">🔎 Mehr erfahren</a><a class="btn ghost small" href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen</a></div>
 </article>
-<article class="finding"><h3><span class="fnum">5</span> <span>Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt</span></h3>
+<article class="finding" id="finding-0-5" tabindex="-1" data-content="{&quot;de&quot;: {&quot;headline&quot;: &quot;Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt&quot;, &quot;rows&quot;: [[&quot;Was hat sich geändert&quot;, &quot;Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.&quot;], [&quot;Ab wann&quot;, &quot;Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.&quot;], [&quot;Wen betrifft&#x27;s&quot;, &quot;Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.&quot;], [&quot;Tipp für dich&quot;, &quot;Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*&quot;]]}}"><h3><span class="fnum" aria-hidden="true">5</span> <span class="fhead">Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt</span></h3>
 <div class="flist"><div class="frow"><span class="lbl">Was hat sich geändert</span><span class="fval">Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.</span></div><div class="frow"><span class="lbl">Ab wann</span><span class="fval">Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.</span></div><div class="frow"><span class="lbl">Wen betrifft&#x27;s</span><span class="fval">Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.</span></div><div class="frow"><span class="lbl">Tipp für dich</span><span class="fval">Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*</span></div></div>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
 <span class="srcchip"><a href="https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag" target="_blank" rel="noopener" title="https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag">finanzamt.nrw.de</a></span>
@@ -236,7 +297,7 @@
 </div>
 <div class="factions"><a class="btn primary small" href="https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag" target="_blank" rel="noopener">🔎 Mehr erfahren</a><a class="btn ghost small" href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen</a></div>
 </article>
-<article class="finding"><h3><span class="fnum">6</span> <span>Arbeitnehmer-Sparzulage &amp; Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht</span></h3>
+<article class="finding" id="finding-0-6" tabindex="-1" data-content="{&quot;de&quot;: {&quot;headline&quot;: &quot;Arbeitnehmer-Sparzulage &amp; Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht&quot;, &quot;rows&quot;: [[&quot;Was hat sich geändert&quot;, &quot;Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.&quot;], [&quot;Ab wann&quot;, &quot;Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.&quot;], [&quot;Wen betrifft&#x27;s&quot;, &quot;Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.&quot;], [&quot;Tipp für dich&quot;, &quot;Im Arbeitsvertrag/Tarifvertrag nach \&quot;vermögenswirksame Leistungen\&quot; suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*&quot;]]}}"><h3><span class="fnum" aria-hidden="true">6</span> <span class="fhead">Arbeitnehmer-Sparzulage &amp; Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht</span></h3>
 <div class="flist"><div class="frow"><span class="lbl">Was hat sich geändert</span><span class="fval">Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.</span></div><div class="frow"><span class="lbl">Ab wann</span><span class="fval">Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.</span></div><div class="frow"><span class="lbl">Wen betrifft&#x27;s</span><span class="fval">Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.</span></div><div class="frow"><span class="lbl">Tipp für dich</span><span class="fval">Im Arbeitsvertrag/Tarifvertrag nach &quot;vermögenswirksame Leistungen&quot; suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*</span></div></div>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
 <span class="srcchip"><a href="https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage" target="_blank" rel="noopener" title="https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage">lbs.de</a></span>
@@ -245,7 +306,7 @@
 </div>
 <div class="factions"><a class="btn primary small" href="https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage" target="_blank" rel="noopener">🔎 Mehr erfahren</a><a class="btn ghost small" href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen</a></div>
 </article>
-<article class="finding"><h3><span class="fnum">7</span> <span>BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern</span></h3>
+<article class="finding" id="finding-0-7" tabindex="-1" data-content="{&quot;de&quot;: {&quot;headline&quot;: &quot;BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern&quot;, &quot;rows&quot;: [[&quot;Was hat sich geändert&quot;, &quot;Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.&quot;], [&quot;Ab wann&quot;, &quot;Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.&quot;], [&quot;Wen betrifft&#x27;s&quot;, &quot;Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.&quot;], [&quot;Tipp für dich&quot;, &quot;Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*&quot;]]}}"><h3><span class="fnum" aria-hidden="true">7</span> <span class="fhead">BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern</span></h3>
 <div class="flist"><div class="frow"><span class="lbl">Was hat sich geändert</span><span class="fval">Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.</span></div><div class="frow"><span class="lbl">Ab wann</span><span class="fval">Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.</span></div><div class="frow"><span class="lbl">Wen betrifft&#x27;s</span><span class="fval">Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.</span></div><div class="frow"><span class="lbl">Tipp für dich</span><span class="fval">Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*</span></div></div>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
 <span class="srcchip"><a href="https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html" target="_blank" rel="noopener" title="https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html">bafög.de</a></span>
@@ -253,7 +314,7 @@
 </div>
 <div class="factions"><a class="btn primary small" href="https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html" target="_blank" rel="noopener">🔎 Mehr erfahren</a><a class="btn ghost small" href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen</a></div>
 </article>
-<article class="finding"><h3><span class="fnum">8</span> <span>Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)</span></h3>
+<article class="finding" id="finding-0-8" tabindex="-1" data-content="{&quot;de&quot;: {&quot;headline&quot;: &quot;Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)&quot;, &quot;rows&quot;: [[&quot;Was hat sich geändert&quot;, &quot;Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.&quot;], [&quot;Ab wann&quot;, &quot;Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.&quot;], [&quot;Wen betrifft&#x27;s&quot;, &quot;Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.&quot;], [&quot;Tipp für dich&quot;, &quot;Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*&quot;]]}}"><h3><span class="fnum" aria-hidden="true">8</span> <span class="fhead">Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)</span></h3>
 <div class="flist"><div class="frow"><span class="lbl">Was hat sich geändert</span><span class="fval">Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.</span></div><div class="frow"><span class="lbl">Ab wann</span><span class="fval">Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.</span></div><div class="frow"><span class="lbl">Wen betrifft&#x27;s</span><span class="fval">Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.</span></div><div class="frow"><span class="lbl">Tipp für dich</span><span class="fval">Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*</span></div></div>
 <div class="sources"><span class="lbl" data-i18n="sources">Quellen:</span>
 <span class="srcchip"><a href="https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900" target="_blank" rel="noopener" title="https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900">bundesregierung.de</a></span>
@@ -289,11 +350,17 @@
   </main>
 
   <footer>
+    <div class="follow">
+      <span class="follow-label" data-i18n="follow_label">Folge uns:</span>
+      <a class="follow-btn" href="https://t.me/CitizenAgentsTicker" target="_blank" rel="noopener">📨 Telegram</a>
+      <a class="follow-btn soon" href="https://mikelninh.github.io/citizen-agents/" target="_blank" rel="noopener" data-i18n="follow_ig">📸 Instagram (bald)</a>
+    </div>
     <span data-i18n="footer">Citizen Agents — Digital Democracy Studio, Berlin.</span><br>
     <a href="https://github.com/mikelninh/citizen-agents" data-i18n="footer_src">Quellcode &amp; Rohdaten</a> ·
     <a href="https://mikelninh.github.io/citizen-agents/" data-i18n="footer_home">Zur Startseite</a>
   </footer>
 </div>
+<a class="totop" href="#main" aria-label="Nach oben">↑</a>
 <script>
   // Priority languages for Germany's affected communities.
   // DE + EN are source-of-truth (watchdogs will produce these).
@@ -326,6 +393,7 @@
       support_note:"Kostenlos. Für immer. Finanziert durch Menschen, die es ernst meinen.",
       footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
       footer_src:"Quellcode &amp; Rohdaten", footer_home:"Zur Startseite",
+      follow_label:"Folge uns:", follow_ig:"📸 Instagram (bald)",
       sources:"Quellen:", auto_flag:"Automatisch übersetzt — bitte mit der offiziellen Quelle abgleichen.",
       tags:["Frisch gebrüht aus öffentlichen Quellen.","Deine Rechte, täglich geprüft.","Kein Bezahlschutz vor deinen Rechten.","Wächter schlafen nicht — damit du ruhig schläfst."]
     },
@@ -346,7 +414,7 @@
       btn_sponsors:"☕ GitHub Sponsors (from €1)", btn_org:"🤝 For organisations &amp; NGOs",
       support_note:"Free. Forever. Funded by people who mean it.",
       footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
-      footer_src:"Source code &amp; raw data", footer_home:"To the homepage",
+      footer_src:"Source code &amp; raw data", footer_home:"To the homepage", follow_label:"Follow us:", follow_ig:"📸 Instagram (soon)",
       sources:"Sources:", auto_flag:"Automatically translated — please verify against the official source.",
       tags:["Freshly brewed from public sources.","Your rights, checked daily.","No paywall in front of your rights.","Watchdogs don't sleep — so you can."]
     },
@@ -367,7 +435,7 @@
       btn_sponsors:"☕ GitHub Sponsors (1 €'dan)", btn_org:"🤝 Kurumlar ve STK'lar için",
       support_note:"Ücretsiz. Sonsuza dek. Bunu ciddiye alan insanlar tarafından finanse edilir.",
       footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
-      footer_src:"Kaynak kodu ve ham veri", footer_home:"Ana sayfaya",
+      footer_src:"Kaynak kodu ve ham veri", footer_home:"Ana sayfaya", follow_label:"Bizi takip et:", follow_ig:"📸 Instagram (yakında)",
       sources:"Kaynaklar:", auto_flag:"Otomatik çevrilmiştir — lütfen resmi kaynakla karşılaştırın.",
       tags:["Taze kamu kaynaklarından demlendi.","Hakların her gün incelenir.","Haklarının önünde ödeme duvarı yok.","Bekçiler uyumaz — sen rahat uyu."]
     },
@@ -388,7 +456,7 @@
       btn_sponsors:"☕ GitHub Sponsors (от 1 €)", btn_org:"🤝 Для организаций и НКО",
       support_note:"Бесплатно. Навсегда. Финансируется людьми, которые относятся к этому серьёзно.",
       footer:"Citizen Agents — Digital Democracy Studio, Берлин.",
-      footer_src:"Исходный код и сырые данные", footer_home:"На главную",
+      footer_src:"Исходный код и сырые данные", footer_home:"На главную", follow_label:"Подписывайтесь:", follow_ig:"📸 Instagram (скоро)",
       sources:"Источники:", auto_flag:"Переведено автоматически — пожалуйста, сверьтесь с официальным источником.",
       tags:["Свежезаварено из открытых источников.","Ваши права проверяются ежедневно.","Перед вашими правами нет платной стены.","Стражи не спят — спите спокойно."]
     },
@@ -409,7 +477,7 @@
       btn_sponsors:"☕ GitHub Sponsors (من 1 €)", btn_org:"🤝 للمنظمات والجمعيات",
       support_note:"مجاني. للأبد. يُموَّل من أناس يأخذون الأمر بجدية.",
       footer:"Citizen Agents — استوديو الديمقراطية الرقمية، برلين.",
-      footer_src:"الكود المصدري والبيانات الخام", footer_home:"إلى الصفحة الرئيسية",
+      footer_src:"الكود المصدري والبيانات الخام", footer_home:"إلى الصفحة الرئيسية", follow_label:"تابعنا:", follow_ig:"📸 إنستغرام (قريباً)",
       sources:"المصادر:", auto_flag:"تُرجم آلياً — يرجى التحقق من المصدر الرسمي.",
       tags:["مُعدّ طازجاً من مصادر عامة.","حقوقك تُراجع يومياً.","لا جدار دفع أمام حقوقك.","الحراس لا ينامون — لترقد بسلام."]
     },
@@ -430,7 +498,7 @@
       btn_sponsors:"☕ GitHub Sponsors (từ 1 €)", btn_org:"🤝 Dành cho tổ chức & NGO",
       support_note:"Miễn phí. Mãi mãi. Được tài trợ bởi những người nghiêm túc.",
       footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
-      footer_src:"Mã nguồn & dữ liệu thô", footer_home:"Về trang chủ",
+      footer_src:"Mã nguồn & dữ liệu thô", footer_home:"Về trang chủ", follow_label:"Theo dõi chúng tôi:", follow_ig:"📸 Instagram (sớm)",
       sources:"Nguồn:", auto_flag:"Được dịch tự động — vui lòng đối chiếu với nguồn chính thức.",
       tags:["Pha tươi từ nguồn công khai.","Quyền của bạn được kiểm tra hàng ngày.","Không có tường phí trước quyền của bạn.","Canh gác không ngủ — để bạn ngủ ngon."]
     },
@@ -451,7 +519,7 @@
       btn_sponsors:"☕ GitHub Sponsors (od 1 €)", btn_org:"🤝 Dla organizacji i NGO",
       support_note:"Bezpłatne. Na zawsze. Finansowane przez ludzi, którzy traktują to poważnie.",
       footer:"Citizen Agents — Digital Democracy Studio, Berlin.",
-      footer_src:"Kod źródłowy i surowe dane", footer_home:"Strona główna",
+      footer_src:"Kod źródłowy i surowe dane", footer_home:"Strona główna", follow_label:"Śledź nas:", follow_ig:"📸 Instagram (wkrótce)",
       sources:"Źródła:", auto_flag:"Przetłumaczono automatycznie — proszę zweryfikować ze źródłem oficjalnym.",
       tags:["Świeżo zaparzone z publicznych źródeł.","Twoje prawa sprawdzane codziennie.","Przed twoimi prawami nie ma paywalla.","Strażnicy nie śpią — ty śpij spokojnie."]
     }
@@ -470,6 +538,30 @@
   }
   function getLang(){ try{ return localStorage.getItem('ca_lang')||'de'; }catch(e){ return 'de'; } }
   function setLang(code){ try{ localStorage.setItem('ca_lang', code); }catch(e){} applyLang(code); }
+  // ---- bilingual finding content --------------------------------------
+  // Each <article class="finding"> carries data-content = {"de":{headline,rows},
+  // "en":{...}}. EN is present only when the watchdog digest supplied an
+  // "### EN" block; otherwise we fall back to DE.
+  function applyContentLang(lang){
+    var want = (lang === 'en') ? 'en' : 'de';
+    document.querySelectorAll('article.finding[data-content]').forEach(function(art){
+      var pay;
+      try{ pay = JSON.parse(art.getAttribute('data-content')); }catch(e){ return; }
+      var c = pay[want] || pay.de; if(!c) return;
+      var h = art.querySelector('h3 .fhead'); if(h) h.textContent = c.headline;
+      var list = art.querySelector('.flist');
+      if(list && c.rows){
+        list.innerHTML = c.rows.map(function(r){
+          var lbl=document.createElement('span'); lbl.className='lbl'; lbl.textContent=r[0];
+          var val=document.createElement('span'); val.className='fval'; val.textContent=r[1];
+          var row=document.createElement('div'); row.className='frow';
+          row.appendChild(lbl); row.appendChild(val);
+          return row.outerHTML;
+        }).join('');
+      }
+      art.setAttribute('lang', pay[want] ? want : 'de');
+    });
+  }
   function applyLang(lang){
     var d = I18N[lang] || I18N.de;
     var meta = LANGS.find(function(L){return L.code===lang;}) || {auto:false};
@@ -483,6 +575,7 @@
     var tg=document.getElementById('tag'); if(tg) tg.textContent=d.tags[Math.floor(Math.random()*d.tags.length)];
     var an=document.getElementById('autoNote');
     if(an){ if(meta.auto){ an.style.display='block'; an.textContent='⚠️ '+d.auto_flag; } else { an.style.display='none'; } }
+    applyContentLang(lang);
     buildLangBar();
   }
   (function(){ applyLang(getLang()); })();
