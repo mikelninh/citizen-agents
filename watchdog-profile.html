@@ -8,72 +8,143 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-  :root { --bg:#f5f3f1; --card:#ffffff; --ink:#202020; --navy:#02083a; --muted:#5b6472; --accent:#0068e6; --accent-soft:#e8f0ff; --ok:#1a7f4b; --ok-soft:#e6f4ec; --warn:#9a6400; --warn-soft:#fdf3e0; --bad:#c4322b; --bad-soft:#fdeaea; --line:#e7e3df; }
-  * { box-sizing:border-box; }
-  body { margin:0; background:var(--bg); color:var(--ink);
-    font:16px/1.6 "Onest",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
-  .wrap { max-width:760px; margin:0 auto; padding:36px 20px 90px; }
-  h1 { font-size:30px; margin:0 0 4px; color:var(--navy); letter-spacing:-.5px; }
-  .kicker { letter-spacing:3px; font-size:11px; color:var(--accent); text-transform:uppercase; font-weight:700; }
-  .note { color:var(--muted); font-size:13px; }
-  .panel { background:var(--card); border:1px solid var(--line); border-radius:20px; padding:22px 24px; margin:18px 0; box-shadow:0 6px 22px rgba(2,8,58,.05); }
-  label { display:block; font-size:13px; color:var(--muted); margin:14px 0 4px; font-weight:600; }
-  input[type=text], select { width:100%; padding:12px 14px; border-radius:12px; border:1px solid var(--line);
-    background:#fff; color:var(--ink); font-size:15px; }
-  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:6px; }
-  .chip { border:1px solid var(--line); background:#fff; color:var(--ink); padding:9px 14px; border-radius:999px; cursor:pointer; font-size:13px; user-select:none; transition:.15s; }
-  .chip.on { background:var(--accent); color:#fff; border-color:var(--accent); font-weight:700; }
-  .row { display:flex; gap:10px; }
-  .row > div { flex:1; }
-  .btn { margin-top:16px; background:var(--accent); color:#fff; border:0; padding:13px 20px;
-    border-radius:999px; font-weight:800; cursor:pointer; font-size:15px; transition:.15s; }
-  .btn:hover { transform:translateY(-1px); }
-  .summary { margin:6px 0 14px; font-size:14px; color:var(--accent); font-weight:600; }
-  .item { border-top:1px solid var(--line); padding:14px 0; }
-  .item h3 { margin:0 0 6px; font-size:15px; color:var(--navy); }
-  .item .meta { font-size:13px; color:var(--muted); }
-  .item .tags { margin-top:6px; }
-  .item .tags span { display:inline-block; background:var(--accent-soft); color:var(--accent); font-size:11px; padding:2px 9px; border-radius:999px; margin:2px 4px 0 0; }
-  .item.match { background:var(--accent-soft); border-radius:14px; padding:14px; margin:8px 0; border:1px solid rgba(0,104,230,.2); }
-  .item a { color:var(--accent); font-size:12px; text-decoration:none; word-break:break-all; display:block; margin:2px 0; }
-  .item a:hover { text-decoration:underline; }
-  .why { font-size:12px; color:var(--accent); font-weight:700; margin:2px 0 6px; }
-  .nosrc { font-size:12px; color:var(--warn); background:var(--warn-soft); padding:8px 10px; border-radius:10px; margin:6px 0; }
-  .ask { margin-top:8px; font-size:13px; }
-  .ask a { color:var(--accent); font-weight:700; display:inline; }
-  .badge { font-size:10px; background:var(--navy); color:#fff; padding:2px 8px; border-radius:999px; font-weight:800; letter-spacing:1px; }
-  .priv { font-size:12px; color:var(--muted); border-top:1px dashed var(--line); margin-top:14px; padding-top:10px; }
-  footer { color:var(--muted); font-size:13px; text-align:center; margin-top:30px; }
-  footer a { color:#7cc4ff; }
-  .loading { color:var(--muted); }
+  :root{
+    --bg:#f5f3f1; --card:#ffffff; --ink:#171a21; --navy:#02083a; --muted:#5b6472;
+    --accent:#0068e6; --accent-soft:#e8f0ff; --ok:#1a7f4b; --ok-soft:#e6f4ec;
+    --warn:#9a6400; --warn-soft:#fdf3e0; --bad:#c4322b; --bad-soft:#fdeaea;
+    --line:#e7e3df; --line-soft:#f0edea; --radius:20px; --radius-sm:14px;
+    --shadow:0 1px 2px rgba(2,8,58,.04), 0 10px 30px rgba(2,8,58,.06);
+  }
+  *{ box-sizing:border-box; }
+  body{ margin:0; background:var(--bg); color:var(--ink);
+    font:17px/1.65 "Onest",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; }
+  :focus-visible{ outline:3px solid var(--accent); outline-offset:2px; border-radius:8px; }
+  .wrap{ max-width:800px; margin:0 auto; padding:20px 20px 90px; }
+
+  .topbar{ display:flex; align-items:center; justify-content:space-between; gap:12px;
+    flex-wrap:wrap; padding:10px 0 8px; }
+  .brand{ display:flex; align-items:center; gap:10px; font-weight:700; color:var(--navy); font-size:15px; }
+  .brand-mark{ width:24px; height:24px; flex:none; }
+
+  .masthead{ position:relative; text-align:center; padding:30px 0 26px; }
+  .masthead::before{ content:""; position:absolute; inset:-40px -24px auto -24px; height:280px;
+    background:radial-gradient(120% 100% at 50% 0, rgba(0,104,230,.10), transparent 72%); z-index:0; }
+  .masthead > *{ position:relative; z-index:1; }
+  .kicker{ letter-spacing:2.4px; font-size:11px; color:var(--accent); text-transform:uppercase; font-weight:800; margin:0; }
+  h1{ font-size:clamp(28px,5.6vw,38px); line-height:1.15; margin:12px 0 10px; color:var(--navy);
+    letter-spacing:-.9px; font-weight:800; }
+  .lede{ color:var(--muted); margin:0 auto; max-width:600px; }
+
+  .panel{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
+    padding:26px 28px; margin:22px 0; box-shadow:var(--shadow); }
+  .panel h2{ margin:0 0 4px; font-size:19px; color:var(--navy); letter-spacing:-.3px; }
+  .panel .sub{ color:var(--muted); font-size:14px; margin:0 0 8px; }
+  .field{ margin-top:22px; }
+  label{ display:block; font-size:11px; color:var(--muted); margin:0 0 8px; font-weight:700;
+    letter-spacing:1px; text-transform:uppercase; }
+  input[type=text]{ width:100%; padding:13px 16px; border-radius:var(--radius-sm); border:1px solid var(--line);
+    background:#fff; color:var(--ink); font:inherit; font-size:16px; transition:.15s; }
+  input[type=text]:focus{ border-color:var(--accent); }
+  .hint{ font-size:13px; color:var(--muted); margin:6px 0 0; }
+  .chips{ display:flex; flex-wrap:wrap; gap:8px; }
+  .chip{ border:1px solid var(--line); background:#fff; color:var(--navy); padding:9px 15px;
+    border-radius:999px; cursor:pointer; font-size:14px; font-weight:600; user-select:none; transition:.15s; }
+  .chip:hover{ border-color:var(--accent); color:var(--accent); }
+  .chip.on{ background:var(--accent); color:#fff; border-color:var(--accent); font-weight:700; }
+  .btn{ margin-top:24px; background:var(--accent); color:#fff; border:0; padding:14px 24px;
+    border-radius:999px; font:inherit; font-weight:800; cursor:pointer; font-size:15px; transition:.15s; }
+  .btn:hover{ background:#0057c2; transform:translateY(-1px); }
+  .priv{ font-size:13.5px; line-height:1.6; color:var(--muted); background:var(--bg);
+    border-radius:var(--radius-sm); margin-top:20px; padding:14px 16px; }
+
+  .summary{ margin:0 0 18px; font-size:14.5px; color:var(--accent); font-weight:700;
+    background:var(--accent-soft); border-radius:999px; padding:10px 18px; display:inline-block; }
+  .item{ border-top:1px solid var(--line-soft); padding:20px 0 6px; }
+  .item h3{ margin:0 0 10px; font-size:17.5px; line-height:1.35; color:var(--navy); letter-spacing:-.3px; }
+  .item .meta{ font-size:15.5px; line-height:1.6; margin:6px 0; }
+  .item .tags{ margin-top:12px; display:flex; flex-wrap:wrap; gap:6px; }
+  .item .tags span{ display:inline-block; background:var(--bg); border:1px solid var(--line);
+    color:var(--muted); font-size:12px; font-weight:600; padding:3px 11px; border-radius:999px; }
+  .item.match{ background:#fff; border:1px solid rgba(0,104,230,.28); box-shadow:0 0 0 3px rgba(0,104,230,.07);
+    border-radius:var(--radius-sm); padding:20px 22px; margin:14px 0; }
+  .item a{ color:var(--navy); font-size:12.5px; font-weight:600; text-decoration:none;
+    overflow-wrap:anywhere; display:inline-block; margin:6px 6px 0 0;
+    background:var(--bg); border:1px solid var(--line); padding:5px 12px; border-radius:999px; transition:.15s; }
+  .item a:hover{ border-color:var(--accent); color:var(--accent); background:var(--accent-soft); }
+  .why{ font-size:13.5px; color:var(--ok); background:var(--ok-soft); font-weight:700;
+    display:inline-block; padding:6px 13px; border-radius:999px; margin:0 0 10px; }
+  .nosrc{ font-size:13.5px; color:var(--warn); background:var(--warn-soft); border:1px solid #f0dcb4;
+    padding:10px 14px; border-radius:var(--radius-sm); margin:10px 0; }
+  .ask{ margin-top:14px; display:flex; flex-wrap:wrap; gap:10px; }
+  .ask a{ background:var(--accent); color:#fff; border-color:var(--accent); font-size:13.5px; padding:9px 17px; }
+  .ask a:hover{ background:#0057c2; color:#fff; }
+  .ask a:last-child{ background:#fff; color:var(--navy); border-color:var(--line); }
+  .ask a:last-child:hover{ color:var(--accent); border-color:var(--accent); }
+  .badge{ font-size:10.5px; background:#e9ebf5; color:var(--navy); padding:3px 10px; border-radius:999px;
+    font-weight:800; letter-spacing:.8px; margin-inline-end:8px; vertical-align:middle; }
+  .note{ color:var(--muted); font-size:14.5px; }
+  .loading{ color:var(--muted); }
+  footer{ color:var(--muted); font-size:14px; text-align:center; margin-top:40px; line-height:1.9; }
+  footer a{ color:var(--accent); text-decoration:none; }
+  footer a:hover{ text-decoration:underline; }
+
+  @media (max-width:620px){
+    body{ font-size:16px; }
+    .wrap{ padding:12px 15px 72px; }
+    .panel{ padding:20px 18px; border-radius:18px; }
+    .btn{ width:100%; }
+  }
 </style>
 </head>
 <body>
 <div class="wrap">
-  <div class="kicker">Citizen Agents · Dein Wächter (Beta)</div>
-  <h1>Was geht dich heute wirklich an?</h1>
-  <p class="note">Stell deinen Filter ein — alles bleibt in deinem Browser, nichts wird gespeichert oder hochgeladen.
-    Du siehst nur die Meldungen, die deine Situation treffen.</p>
+  <header class="topbar">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L21 6 V12 C21 17 17 21 12 22 C7 21 3 17 3 12 V6 Z" fill="#0068e6"/><path d="M8 12 l3 3 l5 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+      <span>Citizen Agents</span>
+    </div>
+    <a class="chip" href="breakfast.html">← Zum Ticker</a>
+  </header>
 
-  <div class="panel">
-    <label for="plz">Postleitzahl (nur Bezirk, kein Identitäts-Match)</label>
-    <input type="text" id="plz" placeholder="z.B. 10115" maxlength="5" inputmode="numeric">
+  <div class="masthead">
+    <p class="kicker">Dein Wächter · Beta</p>
+    <h1>Was geht dich heute wirklich an?</h1>
+    <p class="lede">Stell deinen Filter ein — alles bleibt in deinem Browser, nichts wird gespeichert oder hochgeladen.
+      Du siehst nur die Meldungen, die deine Situation treffen.</p>
+  </div>
 
-    <label>Lebenslage (mehrfach wählbar)</label>
-    <div class="chips" id="life"></div>
+  <main>
+  <section class="panel">
+    <h2>Dein Profil</h2>
+    <p class="sub">Drei Angaben genügen. Änderungen wirken sofort nach „Filter anwenden“.</p>
 
-    <label>Themen, die dich interessieren</label>
-    <div class="chips" id="themes"></div>
+    <div class="field">
+      <label for="plz">Postleitzahl</label>
+      <input type="text" id="plz" placeholder="z.B. 10115" maxlength="5" inputmode="numeric">
+      <p class="hint">Nur Bezirk, kein Identitäts-Match.</p>
+    </div>
+
+    <div class="field">
+      <label id="lifeLabel">Lebenslage (mehrfach wählbar)</label>
+      <div class="chips" id="life" role="group" aria-labelledby="lifeLabel"></div>
+    </div>
+
+    <div class="field">
+      <label id="themesLabel">Themen, die dich interessieren</label>
+      <div class="chips" id="themes" role="group" aria-labelledby="themesLabel"></div>
+    </div>
 
     <button class="btn" id="apply">Filter anwenden</button>
-    <p class="priv">🔒 Datenschutz: PLZ &amp; Auswahl werden nur lokal im Browser gespeichert (localStorage), nie an uns gesendet.
+    <p class="priv">🔒 <b>Datenschutz:</b> PLZ &amp; Auswahl werden nur lokal im Browser gespeichert (localStorage), nie an uns gesendet.
       Der Filter läuft komplett auf deinem Gerät.</p>
-  </div>
+  </section>
 
-  <div class="panel">
+  <section class="panel">
     <div class="summary" id="summary">Lade Ticker …</div>
     <div id="results"><p class="loading">…</p></div>
-  </div>
+  </section>
+  </main>
 
   <footer>
     Citizen Agents — Digital Democracy Studio, Berlin.<br>
@@ -139,10 +210,10 @@ function loadAndFilter(){
       if (it.citizen_tip) h += `<div class="meta">💡 ${it.citizen_tip}</div>`;
       if (it.tags.length) h += `<div class="tags">${it.tags.map(t=>`<span>${THEME_LABEL[t]||t}</span>`).join("")}</div>`;
       const srcs = it.sources||[];
-      if (srcs.length) srcs.forEach(s=> h += `<a href="${s}" target="_blank" rel="noopener">🔗 ${s}</a>`);
+      if (srcs.length) srcs.forEach(s=> h += `<a href="${s}" target="_blank" rel="noopener">🔗 ${(s.match(/^https?:\/\/([^\/]+)/)||[0,s])[1].replace(/^www\./,"")}</a>`);
       else h += `<div class="nosrc">⚠️ Keine Quelle hinterlegt — mit Vorsicht genießen.</div>`;
       const firstSrc = srcs.length ? srcs[0] : "https://github.com/mikelninh/citizen-agents";
-      h += `<div class="ask"><a href="${firstSrc}" target="_blank" rel="noopener">🔎 Mehr erfahren</a> · <a href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen</a></div>`;
+      h += `<div class="ask"><a href="${firstSrc}" target="_blank" rel="noopener">🔎 Mehr erfahren</a><a href="https://github.com/mikelninh/citizen-agents/discussions" target="_blank" rel="noopener">❓ Frage stellen</a></div>`;
       div.innerHTML = h;
       box.appendChild(div);
     });
