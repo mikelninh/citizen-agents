@@ -64,6 +64,14 @@ TOPICS = [
         ],
         "queries": ["Wohngeld 2026 Antrag Anspruch Wohngeldstelle", "Wohngeld Reform 2026 Kürzung Gesetzentwurf"],
         "money": "bis zu mehrere hundert Euro pro Monat",
+        "en": {
+            "headline": "Housing benefit — the biggest unclaimed pot of money: apply now before the reform bites",
+            "what": "Housing benefit (Wohngeld) is the classic unclaimed benefit: studies on non-take-up of social benefits show a substantial share of those entitled never apply ('hidden poverty'). At the same time, the cabinet decided a Wohngeld reform on 6 July 2026 that would cut the federal allocation from around €5bn to €3bn — so future claims will tend to be lower.",
+            "effective": "Housing benefit is application-ready now; the cutting reform is a draft bill, not yet in force. Housing benefit is paid from the month of application — not retroactively.",
+            "who": "Tenants and owners with low to medium income, pensioners, single parents, students without BAföG entitlement, apprentices in certain cases.",
+            "tip": "Submit the application this month at your local housing-benefit office — one day late costs a full month's payment. Apply even if unsure: the decision is free.",
+            "money": "up to several hundred euros per month",
+        },
     },
     {
         "id": "kinderzuschlag",
@@ -85,6 +93,14 @@ TOPICS = [
         ],
         "queries": ["Kinderzuschlag 2026 Höhe Antrag Familienkasse"],
         "money": "bis 297 € / Kind / Monat",
+        "en": {
+            "headline": "Child supplement (KiZ) — up to €297 per child per month, must be claimed separately",
+            "what": "The child supplement is a separate benefit from the Family Fund for parents who earn enough for themselves but not for their children. It is NOT paid automatically with child benefit and must be applied for separately — which is why it often goes unused. Max amount per DGB guide: €297 per child per month.",
+            "effective": "Apply anytime; approval usually for 6 months, then a follow-up application is needed.",
+            "who": "Working families and single parents with low income who do not receive citizen's benefit / the new basic security.",
+            "tip": "First fill in the free 'KiZ-Lotse' of the Federal Employment Agency (a few minutes) and apply online directly. Those who get KiZ automatically gain access to the education and participation package and are exempt from kindergarten fees.",
+            "money": "up to €297 / child / month",
+        },
     },
     {
         "id": "bildung-teilhabe",
@@ -104,6 +120,14 @@ TOPICS = [
         ],
         "queries": ["Bildung und Teilhabe Antrag 2026 Leistungen"],
         "money": "15 €/Monat Teilhabe + Schulbedarf + Mittagessen",
+        "en": {
+            "headline": "Education and participation (BuT) — school supplies, meals, €15/month club membership",
+            "what": "The education package covers school trips, school supplies, tutoring, and meals in daycare/school for children from low-income families, plus a flat €15/month for sport, leisure and cultural activities. Entitlement also exists for those receiving housing benefit or child supplement — exactly the group that often fails to apply.",
+            "effective": "Ongoing; applications are usually accepted only partially retroactively — apply promptly.",
+            "who": "Families receiving citizen's benefit / new basic security, housing benefit, child supplement or social assistance.",
+            "tip": "Apply at the Jobcenter or district/independent city — housing-benefit and KiZ recipients have a dedicated application form. Keep receipts (club fees, class trips).",
+            "money": "€15/month participation + school supplies + meals",
+        },
     },
     {
         "id": "elterngeld-frist",
@@ -122,6 +146,14 @@ TOPICS = [
         ],
         "queries": ["Elterngeld rückwirkend drei Monate Antrag Frist"],
         "money": "300–1.800 € pro verlorenem Monat",
+        "en": {
+            "headline": "Parental allowance — only 3 months retroactive: every late month is lost money",
+            "what": "Parental allowance is paid retroactively for at most the last three life-months before the application. Whoever delays the application loses the earlier months permanently — the most common avoidable financial loss for new parents.",
+            "effective": "Permanently applicable deadline (Federal Family Portal; ZBFS Bavaria).",
+            "who": "All parents after birth, especially those registering late or missing documents.",
+            "tip": "Apply immediately after birth, even incompletely — documents may be submitted later. The application date secures the entitlement.",
+            "money": "€300–1,800 per lost month",
+        },
     },
     {
         "id": "sparerpauschbetrag",
@@ -141,6 +173,14 @@ TOPICS = [
         ],
         "queries": ["Sparerpauschbetrag 2026 Freistellungsauftrag Höhe"],
         "money": "bis ca. 264 € Steuerersparnis pro Jahr (Single)",
+        "en": {
+            "headline": "Saver's allowance €1,000 — without a relief order the bank hands your money to the tax office",
+            "what": "Capital income stays tax-free up to €1,000 per year (€2,000 when jointly assessed). Without a relief order (Freistellungsauftrag), the bank still deducts around 25% withholding tax plus soli. The money isn't lost but must be clawed back via the tax return (Anlage KAP) — which many never do.",
+            "effective": "Applies continuously; relief orders take effect from issuance for the current calendar year.",
+            "who": "Anyone with savings accounts, fixed deposits, ETF savings plans or dividends — at current interest rates, even a modest savings balance can exceed the allowance.",
+            "tip": "Adjust the relief order at every bank/broker (combined total max €1,000/€2,000) and use Anlage KAP in your tax return if too much was withheld.",
+            "money": "up to ~€264 tax saving per year (single)",
+        },
     },
     {
         "id": "sparzulage-wop",
@@ -163,6 +203,14 @@ TOPICS = [
         ],
         "queries": ["Arbeitnehmersparzulage Wohnungsbauprämie 2026 Einkommensgrenzen"],
         "money": "bis ca. 123 € + 70 € staatliche Zulagen pro Jahr",
+        "en": {
+            "headline": "Employee savings allowance & homeownership premium — income limits raised sharply, many don't know",
+            "what": "The income limit for the employee savings allowance was raised massively: singles up to €40,000 taxable annual income (formerly €17,900), married couples double. The homeownership premium is available up to €35,000 (single) or €70,000 (couple). Those who get capital-forming benefits but never signed a VL contract leave employer AND state money on the table.",
+            "effective": "Current law; the savings allowance is set via the income-tax return, the homeownership premium is claimed annually via the provider.",
+            "who": "Employees entitled to capital-forming benefits (often in collective agreements), building savers, young savers.",
+            "tip": "Look for 'capital-forming benefits' in your employment/collective agreement, take out a VL contract and claim the allowance via Anlage VL in your tax return.",
+            "money": "up to ~€123 + €70 state allowances per year",
+        },
     },
     {
         "id": "bafoeg-studienstarthilfe",
@@ -182,6 +230,14 @@ TOPICS = [
         ],
         "queries": ["BAföG Studienstarthilfe 1000 Euro Antrag 2026"],
         "money": "1.000 € einmalig",
+        "en": {
+            "headline": "BAföG study start-up aid — €1,000 one-off, no means test of parents",
+            "what": "The study start-up aid is a one-off €1,000 grant for young people from financially weak households at the start of their studies. It is a grant (no repayment) and is meant to be independent of the classic BAföG approval process — yet it is claimed far less often than possible.",
+            "effective": "Apply around the start of studies; deadlines are tightly linked to the study start.",
+            "who": "First-semester students under 25 whose families receive social benefits (e.g. citizen's benefit, housing benefit, child supplement, BAB).",
+            "tip": "Apply at the responsible Studentenwerk — in parallel with the regular BAföG application, not instead of it. The application is worthwhile even with a thin BAföG entitlement.",
+            "money": "€1,000 one-off",
+        },
     },
     {
         "id": "heizkosten-energie",
@@ -204,6 +260,14 @@ TOPICS = [
         "queries": ["Heizkostenzuschuss 2026 Deutschland Antrag Wohngeld"],
         "money": "regional unterschiedlich",
         "uncertain": True,
+        "en": {
+            "headline": "Heating-cost and energy aid — partly automatic, partly application-only (check state programmes)",
+            "what": "The nationwide heating-cost subsidy was paid ex officio by the federal government and did not need to be applied for. Current relief, by contrast, runs mainly through state and municipal programmes and through hardship funds of energy suppliers — these require an application and have their own deadlines. The facts vary strongly by region; we explicitly flag this as uncertain.",
+            "effective": "Programmes differ by state/municipality; please check local deadlines.",
+            "who": "Housing-benefit, BAföG and Aufstieg-BAföG recipients, apprentices with BAB, households with energy debts.",
+            "tip": "If disconnection looms, contact the social service / consumer advice centre immediately: Jobcenters can take over energy debts as a loan. Additionally search your own federal state for a current heating-cost subsidy.",
+            "money": "varies by region",
+        },
     },
 ]
 
@@ -366,9 +430,24 @@ def render_markdown(findings, today, mode, stats):
         if live:
             amts = ", ".join(live[0]["euro_amounts_seen"][:4])
             L.append(f"- **Live-Check ({today}):** Quelle erreichbar, aktuell genannte Beträge: {amts}")
-        L.append("- **Sources:**")
+        L.append(f"- **Sources:**")
         for s in f["sources"]:
             L.append(f"  - {s}")
+        # Bilingual: English block (parser in build_breakfast.py understands ### EN)
+        en = f.get("en")
+        if en:
+            L.append("")
+            L.append("### EN")
+            if en.get("headline"):
+                L.append(f"- **Headline:** {en['headline']}")
+            if en.get("what"):
+                L.append(f"- **What changed:** {en['what']}")
+            if en.get("effective"):
+                L.append(f"- **Effective:** {en['effective']}")
+            if en.get("who"):
+                L.append(f"- **Who's affected:** {en['who']}")
+            if en.get("tip"):
+                L.append(f"- **Citizen tip:** {en['tip']} *(Größenordnung: {en.get('money', f['money'])})*")
         L.append("")
     L.append("---")
     L.append("")
