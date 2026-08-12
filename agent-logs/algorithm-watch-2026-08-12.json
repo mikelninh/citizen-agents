@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-12",
+  "agent": "algorithm-watch",
+  "repo": "citizen-agents",
+  "branch": "agent/algorithm-watch-2026-08-12",
+  "items": 4,
+  "systems": [
+    "EU AI Act (Regulation (EU) 2024/1689) — high-risk & transparency rules",
+    "Predictive policing systems (German police, justice, prisons)",
+    "SCHUFA credit scoring (Art. 22 GDPR, CJEU C-634/21)",
+    "Jobcenter / Bürgergeld automated benefit notices (SGB II/X)"
+  ],
+  "highlights": [
+    "EU Council & Parliament agreed (7 May 2026, 'Omnibus VII') to delay high-risk AI obligations to 2 Dec 2027 (standalone) and 2 Aug 2028 (product-embedded); new ban on non-consensual sexual/intimate content & CSAM.",
+    "EU AI Act Complaint Tool and Whistleblower Tool are already live (EU page last updated 3 Aug 2026) — citizens can report suspected violations now.",
+    "AlgorithmWatch 'Automating Injustice' report (28 Mar 2025) maps predictive-policing systems in Germany; individual criminal-risk prediction is banned under the AI Act but many systems reportedly lack a legal basis.",
+    "CJEU C-634/21 (7 Dec 2023): credit scores are automated decisions under Art. 22 GDPR — citizens may demand logic info and contest solely automated decisions.",
+    "Jobcenters received 501,667 appeals in 2025 (+78,310); 30–40% of appeals succeed, signalling frequent automated-notice errors; BVerfG 5 Nov 2019 limited blanket sanctions."
+  ],
+  "sources": [
+    "https://www.consilium.europa.eu/en/press/press-releases/2026/05/07/artificial-intelligence-council-and-parliament-agree-to-simplify-and-streamline-rules/",
+    "https://digital-strategy.ec.europa.eu/en/policies/ai-act-complaints-tool",
+    "https://digital-strategy.ec.europa.eu/en/policies/ai-act-whistleblower-tool",
+    "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "https://algorithmwatch.org/en/automating-injustice-predictive-policing-germany/",
+    "https://algorithmwatch.org/en/algorithmic-policing-explained",
+    "https://curia.europa.eu/juris/document/document.jsf?text=&docid=280426&doclang=EN",
+    "https://www.aoshearman.com/en/insights/ao-shearman-on-data/cjeu-rules-that-a-credit-score-constitutes-automated-decision-making-under-the-gdpr",
+    "https://infocuria.curia.europa.eu/tabs/redirect/juris/liste.jsf?num=C-634/21",
+    "https://www.arbeitsagentur.de/vor-ort/saarland/presse/2026-3-burgergeld-widerspruche-und-klagen-im-jahr-2025",
+    "https://www.neue-grundsicherung-hilfe.de/ratgeber/widerspruch/widerspruch-jobcenter-muster-fristen",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2019/11/ls20191105_1bvl000716.html"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents to temp dir",
+    "Created dated branch agent/algorithm-watch-2026-08-12",
+    "Web research: EU AI Act simplification (consilium), EU complaint/whistleblower tools (digital-strategy), AlgorithmWatch predictive policing, CJEU Schufa C-634/21, Jobcenter appeals data (Arbeitsagentur)",
+    "Wrote agent-digests/algorithm-watch-2026-08-12.md (4 citizen-readable items, DE+EN, all claims source-cited)",
+    "Wrote agent-logs/algorithm-watch-2026-08-12.json (schema: date/items/systems/highlights/sources/actions_taken/repo/branch)",
+    "Committed and pushed branch; opened PR against main (no self-merge)"
+  ],
+  "verification": {
+    "all_claims_source_cited": true,
+    "items_count": 4,
+    "token_budget": "low (2-5 items)"
+  }
+}
