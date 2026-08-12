@@ -30,7 +30,7 @@ The revised discovery rule uses:
 
 On this deliberately constructed regression fixture the candidate scores 100% precision/recall. **That is not a real-world accuracy claim.** The fixture was designed around these known failure modes.
 
-## Run
+## Run the deterministic regression
 
 ```bash
 python evaluate.py
@@ -38,6 +38,20 @@ python evaluate.py
 
 The script writes `results/baseline.json` and `results/candidate.json` and asserts that the candidate does not regress the fixture.
 
-## MatrAIx
+## Run a real MatrAIx cohort
 
-`matraix-task/` contains the browser-evaluation scaffold. Copy it into MatrAIx as `application/tasks/citizensim-wohngeld-discovery/`, register the web task, and begin with 10–20 personas before scaling.
+`matraix-task/` contains the browser-evaluation task. The repository also includes the manual GitHub Actions workflow `.github/workflows/citizensim-matraix.yml`.
+
+The workflow:
+
+1. checks out this branch
+2. clones the current MatrAIx repository
+3. installs the task as a Playwright web task
+4. samples a fixed cohort with seed `42`
+5. runs the cohort against the PR #39 Vercel preview
+6. uploads the MatrAIx `jobs/` output as a workflow artifact
+
+Before the first run, add an Actions repository secret named `OPENAI_API_KEY`.
+Then open **Actions → CitizenSim MatrAIx → Run workflow**. Start with `10` personas and the default `openai/gpt-4o-mini` model. Keep seed `42` fixed between product iterations so before/after comparisons use the same sampled citizens.
+
+Synthetic users are for stress testing and hypothesis generation. They do not replace legal validation or real-user research.
