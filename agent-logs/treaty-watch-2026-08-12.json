@@ -1,0 +1,34 @@
+{
+  "agent": "treaty-watch",
+  "repo": "citizen-agents",
+  "branch": "agent/treaty-watch-2026-08-12",
+  "date": "2026-08-12",
+  "findings": 5,
+  "regions": ["Europe", "Asia", "Africa", "Americas", "Oceania"],
+  "highlights": [
+    "ECHR Grand Chamber to rule on Kavala v. Turkiye (no. 2) on 25 Aug 2026 — detention of a civil-society figure vs. the Convention",
+    "ECHR finds Moldova violated Article 6 (1) fair-trial right in Babii v. Moldova (judgment 2 Jul 2026)",
+    "UN UPR 56th session to peer-review Greece, Hungary, Thailand, Ireland, Tanzania, Tajikistan, PNG, Eswatini, Trinidad & Tobago and others",
+    "UN CRC publishes 2026 concluding observations on Spain, Pakistan, Colombia, Ethiopia, Ghana, Malaysia, Maldives (5 Feb 2026)",
+    "UN CEDAW publishes 2026 findings on the Netherlands (CEDAW/C/NLD/CO/7), 92nd session Feb 2026"
+  ],
+  "sources": [
+    "https://www.echr.coe.int/",
+    "https://hudoc.echr.coe.int/app/conversion/pdf/?library=ECHR&id=003-8600830-12240574&filename=Forthcoming%20Grand%20Chamber%20ruling%20in%20Kavala%20v.%20T%C3%BCrkiye%20(no.%202).pdf",
+    "https://hudoc.echr.coe.int/",
+    "https://www.echrcaselaw.com/en/echr-decisions/babii-v-moldova-retroactive-restarting-of-the-limitation-period-and-legal-certainty-violation-of-article-6-%C2%A7-1-echr/",
+    "https://www.ohchr.org/en/hr-bodies/upr/upr-home",
+    "https://tbinternet.ohchr.org/_layouts/15/treatybodyexternal/TBSearch.aspx?Lang=en&TreatyID=5&DocTypeID=5",
+    "https://digitallibrary.un.org/record/4107184"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents repo to a fresh temp dir",
+    "created dated branch agent/treaty-watch-2026-08-12",
+    "researched UN (OHCHR/UPR/CRC/CEDAW) and Council of Europe (ECHR) developments via web_search and web_extract",
+    "wrote agent-digests/treaty-watch-2026-08-12.md (citizen-readable, 5 sourced findings)",
+    "wrote agent-logs/treaty-watch-2026-08-12.json",
+    "committed artifacts to the branch",
+    "pushed branch and opened a PR to main (human review only — not merged)"
+  ],
+  "schema_version": 1
+}
