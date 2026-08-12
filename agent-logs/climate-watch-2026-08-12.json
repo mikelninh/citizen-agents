@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-12",
+  "items": 5,
+  "pledges_vs_reality": [
+    {
+      "topic": "Global energy CO2 emissions",
+      "pledge": "Net-zero by 2050 (Paris Agreement)",
+      "reality": "38.4 Gt in 2025 (+145 Mt), record high, +5% vs 2019",
+      "gap": "Worsening",
+      "source": "https://www.iea.org/reports/global-energy-review-2026/co2-emissions"
+    },
+    {
+      "topic": "National NDCs to 2035",
+      "pledge": "1.5C-aligned emission cuts by 2035",
+      "reality": "17% (11-24%) cut vs 2019 projected; 35-55% needed",
+      "gap": "~2-3x too weak",
+      "source": "UNFCCC 2025 NDC Synthesis Report / UNEP Emissions Gap Report 2025"
+    },
+    {
+      "topic": "US climate leadership",
+      "pledge": "Paris net-zero by 2050",
+      "reality": "Ultimatum to IEA to drop net-zero; rollback of pollution rules",
+      "gap": "Retreat",
+      "source": "Reuters 2026-02-21"
+    },
+    {
+      "topic": "Corporate net-zero claims",
+      "pledge": "Net-zero / carbon neutral commitments",
+      "reality": "11% omit emission scopes, 10% lobby against climate; most claims misleading",
+      "gap": "Greenwashing",
+      "source": "Nature 2026 / Carbon Market Watch"
+    },
+    {
+      "topic": "EU/UK 2040 targets",
+      "pledge": "EU -90%, UK -87% by 2040",
+      "reality": "EU also easing ETS cuts / more free permits for industry",
+      "gap": "Ambition vs near-term delivery tension",
+      "source": "Reuters 2026"
+    }
+  ],
+  "highlights": [
+    "IEA: energy CO2 hit a record 38.4 Gt in 2025 (+145 Mt, +5% vs 2019).",
+    "UNFCCC NDCs deliver only a 17% cut vs the 35-55% needed by 2035.",
+    "US threatens to leave the IEA unless it drops net-zero scenarios.",
+    "2026 Nature study: 1 in 10 net-zero pledges omit key emission scopes.",
+    "EU locks in a 90% cut by 2040 but eases near-term industry carbon rules."
+  ],
+  "sources": [
+    "https://www.iea.org/reports/global-energy-review-2026/co2-emissions",
+    "https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/2025-ndc-synthesis-report",
+    "https://www.unep.org/resources/emissions-gap-report-2025",
+    "https://www.reuters.com/sustainability/sustainable-switch-climate-focus-us-issues-ultimatum-iea-over-net-zero-goals-2026-02-21/",
+    "https://www.nature.com/articles/s44168-026-00346-6",
+    "https://carbonmarketwatch.org/2023/03/09/zeroing-in-on-greenwashing-how-corporations-misuse-net-zero-pledges/",
+    "https://www.reuters.com/sustainability/cop/eu-countries-give-final-approval-2040-climate-target-90-emissions-cut-2026-03-05/",
+    "https://www.reuters.com/business/energy/britain-sets-87-emissions-reduction-target-2038-2042-period-2026-06-02/",
+    "https://www.reuters.com/business/environment/eu-make-carbon-market-more-flexible-industrial-companies-2026-07-08/"
+  ],
+  "actions_taken": [
+    "Cloned mikelninh/citizen-agents",
+    "Created branch agent/climate-watch-2026-08-12",
+    "Researched UNFCCC, IEA, Reuters, Nature, Carbon Market Watch",
+    "Wrote agent-digests/climate-watch-2026-08-12.md",
+    "Wrote agent-logs/climate-watch-2026-08-12.json",
+    "Committed and pushed branch",
+    "Opened pull request for human review (no merge performed)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/climate-watch-2026-08-12"
+}
