@@ -4,821 +4,6 @@
   "trust": {},
   "items": [
     {
-      "watchdog": "2026-08-10",
-      "sources": [
-        "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
-        "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
-        "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html"
-      ],
-      "tags": [
-        "wohngeld",
-        "bauen_mieten",
-        "eu"
-      ],
-      "life": [
-        "Mieter:in"
-      ],
-      "has_en": false,
-      "de": {
-        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
-        "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
-        "why": "",
-        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
-        "deadline": "",
-        "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
-        "how": "",
-        "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
-      },
-      "en": {
-        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
-        "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
-        "why": "",
-        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
-        "deadline": "",
-        "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
-        "how": "",
-        "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
-      },
-      "translations": {
-        "tr": {
-          "status": "mt",
-          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
-          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
-          "why": "",
-          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
-          "deadline": "",
-          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
-          "how": "",
-          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
-        },
-        "ru": {
-          "status": "mt",
-          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
-          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
-          "why": "",
-          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
-          "deadline": "",
-          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
-          "how": "",
-          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
-        },
-        "ar": {
-          "status": "mt",
-          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
-          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
-          "why": "",
-          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
-          "deadline": "",
-          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
-          "how": "",
-          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
-        },
-        "vi": {
-          "status": "mt",
-          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
-          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
-          "why": "",
-          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
-          "deadline": "",
-          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
-          "how": "",
-          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
-        },
-        "pl": {
-          "status": "mt",
-          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
-          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
-          "why": "",
-          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
-          "deadline": "",
-          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
-          "how": "",
-          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
-        }
-      },
-      "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
-      "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
-      "why": "",
-      "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
-      "deadline": "",
-      "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
-      "how": "",
-      "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
-    },
-    {
-      "watchdog": "2026-08-10",
-      "sources": [
-        "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
-        "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
-        "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/"
-      ],
-      "tags": [
-        "kindergeld",
-        "buergergeld",
-        "eu"
-      ],
-      "life": [
-        "Eltern/Familie",
-        "Bürgergeld-Bezieher:in"
-      ],
-      "has_en": false,
-      "de": {
-        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
-        "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
-        "why": "",
-        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
-        "deadline": "",
-        "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
-        "how": "",
-        "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
-      },
-      "en": {
-        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
-        "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
-        "why": "",
-        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
-        "deadline": "",
-        "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
-        "how": "",
-        "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
-      },
-      "translations": {
-        "tr": {
-          "status": "mt",
-          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
-          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
-          "why": "",
-          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
-          "deadline": "",
-          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
-          "how": "",
-          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
-        },
-        "ru": {
-          "status": "mt",
-          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
-          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
-          "why": "",
-          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
-          "deadline": "",
-          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
-          "how": "",
-          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
-        },
-        "ar": {
-          "status": "mt",
-          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
-          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
-          "why": "",
-          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
-          "deadline": "",
-          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
-          "how": "",
-          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
-        },
-        "vi": {
-          "status": "mt",
-          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
-          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
-          "why": "",
-          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
-          "deadline": "",
-          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
-          "how": "",
-          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
-        },
-        "pl": {
-          "status": "mt",
-          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
-          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
-          "why": "",
-          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
-          "deadline": "",
-          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
-          "how": "",
-          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
-        }
-      },
-      "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
-      "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
-      "why": "",
-      "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
-      "deadline": "",
-      "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
-      "how": "",
-      "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
-    },
-    {
-      "watchdog": "2026-08-10",
-      "sources": [
-        "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
-        "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
-        "https://www.service-bw.de/zufi/leistungen/1963"
-      ],
-      "tags": [
-        "wohngeld",
-        "buergergeld",
-        "bauen_mieten",
-        "eu"
-      ],
-      "life": [
-        "Mieter:in",
-        "Eltern/Familie",
-        "Bürgergeld-Bezieher:in"
-      ],
-      "has_en": false,
-      "de": {
-        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
-        "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
-        "why": "",
-        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
-        "deadline": "",
-        "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
-        "how": "",
-        "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
-      },
-      "en": {
-        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
-        "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
-        "why": "",
-        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
-        "deadline": "",
-        "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
-        "how": "",
-        "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
-      },
-      "translations": {
-        "tr": {
-          "status": "mt",
-          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
-          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
-          "why": "",
-          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
-          "deadline": "",
-          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
-          "how": "",
-          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
-        },
-        "ru": {
-          "status": "mt",
-          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
-          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
-          "why": "",
-          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
-          "deadline": "",
-          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
-          "how": "",
-          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
-        },
-        "ar": {
-          "status": "mt",
-          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
-          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
-          "why": "",
-          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
-          "deadline": "",
-          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
-          "how": "",
-          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
-        },
-        "vi": {
-          "status": "mt",
-          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
-          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
-          "why": "",
-          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
-          "deadline": "",
-          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
-          "how": "",
-          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
-        },
-        "pl": {
-          "status": "mt",
-          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
-          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
-          "why": "",
-          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
-          "deadline": "",
-          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
-          "how": "",
-          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
-        }
-      },
-      "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
-      "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
-      "why": "",
-      "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
-      "deadline": "",
-      "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
-      "how": "",
-      "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
-    },
-    {
-      "watchdog": "2026-08-10",
-      "sources": [
-        "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
-        "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
-        "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld"
-      ],
-      "tags": [
-        "elterngeld",
-        "eu"
-      ],
-      "life": [
-        "Eltern/Familie"
-      ],
-      "has_en": false,
-      "de": {
-        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
-        "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
-        "why": "",
-        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
-        "deadline": "",
-        "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
-        "how": "",
-        "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
-      },
-      "en": {
-        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
-        "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
-        "why": "",
-        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
-        "deadline": "",
-        "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
-        "how": "",
-        "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
-      },
-      "translations": {
-        "tr": {
-          "status": "mt",
-          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
-          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
-          "why": "",
-          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
-          "deadline": "",
-          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
-          "how": "",
-          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
-        },
-        "ru": {
-          "status": "mt",
-          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
-          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
-          "why": "",
-          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
-          "deadline": "",
-          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
-          "how": "",
-          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
-        },
-        "ar": {
-          "status": "mt",
-          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
-          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
-          "why": "",
-          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
-          "deadline": "",
-          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
-          "how": "",
-          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
-        },
-        "vi": {
-          "status": "mt",
-          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
-          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
-          "why": "",
-          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
-          "deadline": "",
-          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
-          "how": "",
-          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
-        },
-        "pl": {
-          "status": "mt",
-          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
-          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
-          "why": "",
-          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
-          "deadline": "",
-          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
-          "how": "",
-          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
-        }
-      },
-      "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
-      "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
-      "why": "",
-      "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
-      "deadline": "",
-      "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
-      "how": "",
-      "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
-    },
-    {
-      "watchdog": "2026-08-10",
-      "sources": [
-        "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
-        "https://www.finanztip.de/freistellungsauftrag/"
-      ],
-      "tags": [
-        "eu"
-      ],
-      "life": [],
-      "has_en": false,
-      "de": {
-        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
-        "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
-        "why": "",
-        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
-        "deadline": "",
-        "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
-        "how": "",
-        "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
-      },
-      "en": {
-        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
-        "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
-        "why": "",
-        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
-        "deadline": "",
-        "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
-        "how": "",
-        "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
-      },
-      "translations": {
-        "tr": {
-          "status": "mt",
-          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
-          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
-          "why": "",
-          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
-          "deadline": "",
-          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
-          "how": "",
-          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
-        },
-        "ru": {
-          "status": "mt",
-          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
-          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
-          "why": "",
-          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
-          "deadline": "",
-          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
-          "how": "",
-          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
-        },
-        "ar": {
-          "status": "mt",
-          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
-          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
-          "why": "",
-          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
-          "deadline": "",
-          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
-          "how": "",
-          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
-        },
-        "vi": {
-          "status": "mt",
-          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
-          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
-          "why": "",
-          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
-          "deadline": "",
-          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
-          "how": "",
-          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
-        },
-        "pl": {
-          "status": "mt",
-          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
-          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
-          "why": "",
-          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
-          "deadline": "",
-          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
-          "how": "",
-          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
-        }
-      },
-      "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
-      "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
-      "why": "",
-      "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
-      "deadline": "",
-      "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
-      "how": "",
-      "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
-    },
-    {
-      "watchdog": "2026-08-10",
-      "sources": [
-        "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
-        "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
-        "https://www.mystipendium.de/geld/wohnungsbaupraemie"
-      ],
-      "tags": [
-        "bauen_mieten",
-        "eu"
-      ],
-      "life": [
-        "Mieter:in"
-      ],
-      "has_en": false,
-      "de": {
-        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
-        "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
-        "why": "",
-        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
-        "deadline": "",
-        "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
-        "how": "",
-        "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
-      },
-      "en": {
-        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
-        "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
-        "why": "",
-        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
-        "deadline": "",
-        "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
-        "how": "",
-        "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
-      },
-      "translations": {
-        "tr": {
-          "status": "mt",
-          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
-          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
-          "why": "",
-          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
-          "deadline": "",
-          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
-          "how": "",
-          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
-        },
-        "ru": {
-          "status": "mt",
-          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
-          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
-          "why": "",
-          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
-          "deadline": "",
-          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
-          "how": "",
-          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
-        },
-        "ar": {
-          "status": "mt",
-          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
-          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
-          "why": "",
-          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
-          "deadline": "",
-          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
-          "how": "",
-          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
-        },
-        "vi": {
-          "status": "mt",
-          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
-          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
-          "why": "",
-          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
-          "deadline": "",
-          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
-          "how": "",
-          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
-        },
-        "pl": {
-          "status": "mt",
-          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
-          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
-          "why": "",
-          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
-          "deadline": "",
-          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
-          "how": "",
-          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
-        }
-      },
-      "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
-      "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
-      "why": "",
-      "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
-      "deadline": "",
-      "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
-      "how": "",
-      "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
-    },
-    {
-      "watchdog": "2026-08-10",
-      "sources": [
-        "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
-        "https://www.einstieg.com/studium/bafoeg-reform-2026.html"
-      ],
-      "tags": [
-        "wohngeld",
-        "buergergeld",
-        "bauen_mieten",
-        "eu"
-      ],
-      "life": [
-        "Mieter:in",
-        "Eltern/Familie",
-        "Bürgergeld-Bezieher:in"
-      ],
-      "has_en": false,
-      "de": {
-        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
-        "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
-        "why": "",
-        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
-        "deadline": "",
-        "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
-        "how": "",
-        "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
-      },
-      "en": {
-        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
-        "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
-        "why": "",
-        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
-        "deadline": "",
-        "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
-        "how": "",
-        "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
-      },
-      "translations": {
-        "tr": {
-          "status": "mt",
-          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
-          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
-          "why": "",
-          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
-          "deadline": "",
-          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
-          "how": "",
-          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
-        },
-        "ru": {
-          "status": "mt",
-          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
-          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
-          "why": "",
-          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
-          "deadline": "",
-          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
-          "how": "",
-          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
-        },
-        "ar": {
-          "status": "mt",
-          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
-          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
-          "why": "",
-          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
-          "deadline": "",
-          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
-          "how": "",
-          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
-        },
-        "vi": {
-          "status": "mt",
-          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
-          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
-          "why": "",
-          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
-          "deadline": "",
-          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
-          "how": "",
-          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
-        },
-        "pl": {
-          "status": "mt",
-          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
-          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
-          "why": "",
-          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
-          "deadline": "",
-          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
-          "how": "",
-          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
-        }
-      },
-      "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
-      "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
-      "why": "",
-      "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
-      "deadline": "",
-      "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
-      "how": "",
-      "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
-    },
-    {
-      "watchdog": "2026-08-10",
-      "sources": [
-        "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
-        "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat"
-      ],
-      "tags": [
-        "wohngeld",
-        "buergergeld",
-        "bauen_mieten"
-      ],
-      "life": [
-        "Mieter:in",
-        "Bürgergeld-Bezieher:in"
-      ],
-      "has_en": false,
-      "de": {
-        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
-        "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
-        "why": "",
-        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
-        "deadline": "",
-        "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
-        "how": "",
-        "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
-      },
-      "en": {
-        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
-        "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
-        "why": "",
-        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
-        "deadline": "",
-        "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
-        "how": "",
-        "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
-      },
-      "translations": {
-        "tr": {
-          "status": "mt",
-          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
-          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
-          "why": "",
-          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
-          "deadline": "",
-          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
-          "how": "",
-          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
-        },
-        "ru": {
-          "status": "mt",
-          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
-          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
-          "why": "",
-          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
-          "deadline": "",
-          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
-          "how": "",
-          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
-        },
-        "ar": {
-          "status": "mt",
-          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
-          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
-          "why": "",
-          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
-          "deadline": "",
-          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
-          "how": "",
-          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
-        },
-        "vi": {
-          "status": "mt",
-          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
-          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
-          "why": "",
-          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
-          "deadline": "",
-          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
-          "how": "",
-          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
-        },
-        "pl": {
-          "status": "mt",
-          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
-          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
-          "why": "",
-          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
-          "deadline": "",
-          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
-          "how": "",
-          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
-        }
-      },
-      "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
-      "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
-      "why": "",
-      "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
-      "deadline": "",
-      "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
-      "how": "",
-      "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
-    },
-    {
       "watchdog": "2026-08-12",
       "sources": [
         "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
@@ -1566,6 +751,821 @@
         "who_affected": "Housing-benefit, BAföG and Aufstieg-BAföG recipients, apprentices with BAB, households with energy debts.",
         "how": "",
         "citizen_tip": "If disconnection looms, contact the social service / consumer advice centre immediately: Jobcenters can take over energy debts as a loan. Additionally search your own federal state for a current heating-cost subsidy. *(Größenordnung: varies by region)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+          "why": "",
+          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+          "deadline": "",
+          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+          "how": "",
+          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+          "why": "",
+          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+          "deadline": "",
+          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+          "how": "",
+          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+          "why": "",
+          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+          "deadline": "",
+          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+          "how": "",
+          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+          "why": "",
+          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+          "deadline": "",
+          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+          "how": "",
+          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+          "why": "",
+          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+          "deadline": "",
+          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+          "how": "",
+          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+        }
+      },
+      "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+      "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+      "why": "",
+      "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+      "deadline": "",
+      "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+      "how": "",
+      "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+    },
+    {
+      "watchdog": "2026-08-10",
+      "sources": [
+        "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
+        "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+        "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html"
+      ],
+      "tags": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life": [
+        "Mieter:in"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+        "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+        "why": "",
+        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+        "deadline": "",
+        "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+        "how": "",
+        "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+      },
+      "en": {
+        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+        "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+        "why": "",
+        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+        "deadline": "",
+        "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+        "how": "",
+        "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+          "why": "",
+          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+          "deadline": "",
+          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+          "how": "",
+          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+          "why": "",
+          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+          "deadline": "",
+          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+          "how": "",
+          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+          "why": "",
+          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+          "deadline": "",
+          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+          "how": "",
+          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+          "why": "",
+          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+          "deadline": "",
+          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+          "how": "",
+          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+          "why": "",
+          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+          "deadline": "",
+          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+          "how": "",
+          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+        }
+      },
+      "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+      "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+      "why": "",
+      "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+      "deadline": "",
+      "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+      "how": "",
+      "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+    },
+    {
+      "watchdog": "2026-08-10",
+      "sources": [
+        "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
+        "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
+        "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/"
+      ],
+      "tags": [
+        "kindergeld",
+        "buergergeld",
+        "eu"
+      ],
+      "life": [
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+        "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+        "why": "",
+        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+        "deadline": "",
+        "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+        "how": "",
+        "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+      },
+      "en": {
+        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+        "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+        "why": "",
+        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+        "deadline": "",
+        "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+        "how": "",
+        "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+          "why": "",
+          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+          "deadline": "",
+          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+          "how": "",
+          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+          "why": "",
+          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+          "deadline": "",
+          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+          "how": "",
+          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+          "why": "",
+          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+          "deadline": "",
+          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+          "how": "",
+          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+          "why": "",
+          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+          "deadline": "",
+          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+          "how": "",
+          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+          "why": "",
+          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+          "deadline": "",
+          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+          "how": "",
+          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+        }
+      },
+      "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+      "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+      "why": "",
+      "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+      "deadline": "",
+      "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+      "how": "",
+      "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+    },
+    {
+      "watchdog": "2026-08-10",
+      "sources": [
+        "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
+        "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
+        "https://www.service-bw.de/zufi/leistungen/1963"
+      ],
+      "tags": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+        "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+        "why": "",
+        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+        "deadline": "",
+        "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+        "how": "",
+        "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+      },
+      "en": {
+        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+        "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+        "why": "",
+        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+        "deadline": "",
+        "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+        "how": "",
+        "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+          "why": "",
+          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+          "deadline": "",
+          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+          "how": "",
+          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+          "why": "",
+          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+          "deadline": "",
+          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+          "how": "",
+          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+          "why": "",
+          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+          "deadline": "",
+          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+          "how": "",
+          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+          "why": "",
+          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+          "deadline": "",
+          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+          "how": "",
+          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+          "why": "",
+          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+          "deadline": "",
+          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+          "how": "",
+          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+        }
+      },
+      "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+      "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+      "why": "",
+      "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+      "deadline": "",
+      "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+      "how": "",
+      "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+    },
+    {
+      "watchdog": "2026-08-10",
+      "sources": [
+        "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
+        "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
+        "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld"
+      ],
+      "tags": [
+        "elterngeld",
+        "eu"
+      ],
+      "life": [
+        "Eltern/Familie"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+        "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+        "why": "",
+        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+        "deadline": "",
+        "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+        "how": "",
+        "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+      },
+      "en": {
+        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+        "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+        "why": "",
+        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+        "deadline": "",
+        "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+        "how": "",
+        "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+          "why": "",
+          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+          "deadline": "",
+          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+          "how": "",
+          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+          "why": "",
+          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+          "deadline": "",
+          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+          "how": "",
+          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+          "why": "",
+          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+          "deadline": "",
+          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+          "how": "",
+          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+          "why": "",
+          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+          "deadline": "",
+          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+          "how": "",
+          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+          "why": "",
+          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+          "deadline": "",
+          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+          "how": "",
+          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+        }
+      },
+      "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+      "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+      "why": "",
+      "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+      "deadline": "",
+      "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+      "how": "",
+      "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+    },
+    {
+      "watchdog": "2026-08-10",
+      "sources": [
+        "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
+        "https://www.finanztip.de/freistellungsauftrag/"
+      ],
+      "tags": [
+        "eu"
+      ],
+      "life": [],
+      "has_en": false,
+      "de": {
+        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+        "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+        "why": "",
+        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+        "deadline": "",
+        "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+        "how": "",
+        "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+      },
+      "en": {
+        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+        "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+        "why": "",
+        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+        "deadline": "",
+        "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+        "how": "",
+        "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+          "why": "",
+          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+          "deadline": "",
+          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+          "how": "",
+          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+          "why": "",
+          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+          "deadline": "",
+          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+          "how": "",
+          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+          "why": "",
+          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+          "deadline": "",
+          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+          "how": "",
+          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+          "why": "",
+          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+          "deadline": "",
+          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+          "how": "",
+          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+          "why": "",
+          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+          "deadline": "",
+          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+          "how": "",
+          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+        }
+      },
+      "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+      "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+      "why": "",
+      "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+      "deadline": "",
+      "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+      "how": "",
+      "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+    },
+    {
+      "watchdog": "2026-08-10",
+      "sources": [
+        "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
+        "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
+        "https://www.mystipendium.de/geld/wohnungsbaupraemie"
+      ],
+      "tags": [
+        "bauen_mieten",
+        "eu"
+      ],
+      "life": [
+        "Mieter:in"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+        "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+        "why": "",
+        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+        "deadline": "",
+        "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+        "how": "",
+        "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+      },
+      "en": {
+        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+        "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+        "why": "",
+        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+        "deadline": "",
+        "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+        "how": "",
+        "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+          "why": "",
+          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+          "deadline": "",
+          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+          "how": "",
+          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+          "why": "",
+          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+          "deadline": "",
+          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+          "how": "",
+          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+          "why": "",
+          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+          "deadline": "",
+          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+          "how": "",
+          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+          "why": "",
+          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+          "deadline": "",
+          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+          "how": "",
+          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+          "why": "",
+          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+          "deadline": "",
+          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+          "how": "",
+          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+        }
+      },
+      "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+      "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+      "why": "",
+      "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+      "deadline": "",
+      "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+      "how": "",
+      "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+    },
+    {
+      "watchdog": "2026-08-10",
+      "sources": [
+        "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
+        "https://www.einstieg.com/studium/bafoeg-reform-2026.html"
+      ],
+      "tags": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+        "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+        "why": "",
+        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+        "deadline": "",
+        "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+        "how": "",
+        "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+      },
+      "en": {
+        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+        "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+        "why": "",
+        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+        "deadline": "",
+        "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+        "how": "",
+        "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+          "why": "",
+          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+          "deadline": "",
+          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+          "how": "",
+          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+          "why": "",
+          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+          "deadline": "",
+          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+          "how": "",
+          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+          "why": "",
+          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+          "deadline": "",
+          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+          "how": "",
+          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+          "why": "",
+          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+          "deadline": "",
+          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+          "how": "",
+          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+          "why": "",
+          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+          "deadline": "",
+          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+          "how": "",
+          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+        }
+      },
+      "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+      "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+      "why": "",
+      "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+      "deadline": "",
+      "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+      "how": "",
+      "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+    },
+    {
+      "watchdog": "2026-08-10",
+      "sources": [
+        "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
+        "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat"
+      ],
+      "tags": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten"
+      ],
+      "life": [
+        "Mieter:in",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+        "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+        "why": "",
+        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+        "deadline": "",
+        "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+        "how": "",
+        "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+      },
+      "en": {
+        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+        "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+        "why": "",
+        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+        "deadline": "",
+        "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+        "how": "",
+        "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
       },
       "translations": {
         "tr": {
