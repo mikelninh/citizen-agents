@@ -1,0 +1,9 @@
+{
+  "schemaVersion": "1.0",
+  "sources": [],
+  "dimensionFilters": {},
+  "sampling": {
+    "mode": "random",
+    "sampleSize": 50
+  }
+}
