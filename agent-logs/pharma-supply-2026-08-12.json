@@ -1,0 +1,73 @@
+{
+  "date": "2026-08-12",
+  "shortages_found": 5,
+  "top_shortages": [
+    {
+      "medication": "Kinder-Antibiotika-Säfte (antibiotikahaltige Säfte)",
+      "active_ingredient": "diverse Antibiotika (Atemwegsinfektionen)",
+      "shortage_since": "weiterhin bestehender Versorgungsmangel, BMG Juni-Bekanntgabe",
+      "expected_end": "offen",
+      "alternative": "Ersatz anderer Hersteller / Import meist verfügbar; kein genereller Mangel mehr",
+      "source": "https://www.fr.de/panorama/engpaessen-kommen-mehr-als-500-medikamente-knapp-auch-in-zukunft-kann-es-zu-zr-93897180.html"
+    },
+    {
+      "medication": "Acetylsalicylsäure i.v. (ASS intravenös)",
+      "active_ingredient": "Acetylsalicylsäure (ASS)",
+      "shortage_since": "aktueller Versorgungsmangel (Bundesanzeiger-Bekanntmachung BMG)",
+      "expected_end": "offen",
+      "alternative": "KEINE gleichwertige Therapie verfügbar (lebensbedrohliche Erkrankungen)",
+      "source": "https://www.fr.de/panorama/engpaessen-kommen-mehr-als-500-medikamente-knapp-auch-in-zukunft-kann-es-zu-zr-93897180.html"
+    },
+    {
+      "medication": "Psychopharmaka (Antipsychotika & Antidepressiva)",
+      "active_ingredient": "diverse (u.a. Olanzapin, Quetiapin)",
+      "shortage_since": "2025, andauernd (1.514 Meldungen / 1.041 Engpässe 2025)",
+      "expected_end": "langwierig (Antipsychotika Ø 230 Tage)",
+      "alternative": "Wirkstoffwechsel oft nicht möglich -> therapiegefährdend (~1 Mio. Patient:innen)",
+      "source": "https://www.zi.de/das-zi/medien/grafik-des-monats/detailansicht/januar-2026"
+    },
+    {
+      "medication": "Benzylpenicillin-Benzathin (spritzbar)",
+      "active_ingredient": "Benzylpenicillin-Benzathin",
+      "shortage_since": "Sonderregeln BMG wegen drohender kritischer Engpässe (Jan 2026)",
+      "expected_end": "befristete Sonderregelung",
+      "alternative": "erleichtertes Ausweichen auf importierte Produkte",
+      "source": "https://www.zi.de/das-zi/medien/grafik-des-monats/detailansicht/januar-2026"
+    },
+    {
+      "medication": "Blutdrucksenker & Blutfettsenker (Generika)",
+      "active_ingredient": "u.a. Nitrendipin, Lipidsenker",
+      "shortage_since": "anhaltend (Nitrendipin-Engpässe Jan 2026, Lipidsenker Ø 156 Tage)",
+      "expected_end": "offen",
+      "alternative": "oft anderer Hersteller/gleicher Wirkstoff verfügbar; Apothekenaustausch möglich",
+      "source": "https://www.tagesschau.de/wirtschaft/verbraucher/medikamente-pharma-100.html"
+    }
+  ],
+  "highlights": [
+    "BfArM/pharmnet: aktuell über 500 Arzneimittel (≈520–550) von Lieferengpässen betroffen.",
+    "Echter Versorgungsmangel nur bei ASS i.v. (keine Alternative) – lebensbedrohlich.",
+    "Kinder-Antibiotika-Säfte: kein genereller Mangel mehr, aber weiterhin Lücken.",
+    "Psychopharmaka besonders kritisch: ~1 Mio. Patient:innen, Ø 230 Tage Engpass.",
+    "EU 'Critical Medicines Act' Jan 2026 vom Parlament beschlossen – mehr EU-Produktion, Trilog läuft.",
+    "BfArM soll im Herbst verbessertes Frühwarnsystem bekommen."
+  ],
+  "sources": [
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/_node.html",
+    "https://www.fr.de/panorama/engpaessen-kommen-mehr-als-500-medikamente-knapp-auch-in-zukunft-kann-es-zu-zr-93897180.html",
+    "https://www.zi.de/das-zi/medien/grafik-des-monats/detailansicht/januar-2026",
+    "https://www.tagesschau.de/wirtschaft/verbraucher/medikamente-pharma-100.html",
+    "https://www.gelbe-liste.de/lieferengpaesse",
+    "https://www.aerzteblatt.de/news/eu-parlament-stimmt-fur-gesetz-gegen-arzneimittelengpasse-1b5c61f5-5275-48f5-a664-9b5acc1e7388"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/pharma-supply-2026-08-12",
+    "researched BfArM shortage list, news causes, politics, patient advice",
+    "wrote agent-digests/pharma-supply-2026-08-12.md",
+    "wrote agent-logs/pharma-supply-2026-08-12.json",
+    "commit + push branch",
+    "opened PR (no merge - human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/pharma-supply-2026-08-12"
+}
