@@ -23,6 +23,8 @@ def verifier_dir() -> Path:
 
 
 def facet(key, label, value, *, kind="categorical", role="primary"):
+    if kind == "categorical" and isinstance(value, bool):
+        value = "true" if value else "false"
     return {"key": key, "label": label, "role": role, "kind": kind, "value": value}
 
 
