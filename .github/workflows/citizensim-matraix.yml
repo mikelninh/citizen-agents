@@ -95,7 +95,6 @@ jobs:
 
       - name: Summarize job outputs
         if: always()
-        working-directory: matraix
         shell: bash
         run: |
           echo "## CitizenSim MatrAIx run" >> "$GITHUB_STEP_SUMMARY"
@@ -104,9 +103,11 @@ jobs:
           echo "- Model: $CITIZENSIM_MODEL" >> "$GITHUB_STEP_SUMMARY"
           echo "- Target: PR #39 Vercel preview" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
-          if [ -d jobs ]; then
+          if [ -d matraix/jobs ]; then
             echo "Generated job directories:" >> "$GITHUB_STEP_SUMMARY"
-            find jobs -maxdepth 1 -mindepth 1 -type d -printf '- `%f`\n' | sort >> "$GITHUB_STEP_SUMMARY" || true
+            find matraix/jobs -maxdepth 1 -mindepth 1 -type d -printf '- `%f`\n' | sort >> "$GITHUB_STEP_SUMMARY" || true
+          else
+            echo "No MatrAIx job directory was created." >> "$GITHUB_STEP_SUMMARY"
           fi
 
       - name: Upload MatrAIx results
