@@ -937,6 +937,12 @@ def build_feed(latest, digests, fr):
             tags, life = tag_text(blob)
             de = lang_block(f, "de")
             en = lang_block(f, "en") if has_en(f) else dict(de)
+            # translations: TR/RU/AR/VI/PL start as machine-translated (mt) and
+            # fall back to DE content. Curated (human) versions replace these
+            # when supplied — see LANGUAGE-CURATION.md.
+            translations = {}
+            for code in ("tr", "ru", "ar", "vi", "pl"):
+                translations[code] = {"status": "mt", **de}
             item = {
                 "watchdog": wd,
                 "sources": f["sources"],
@@ -945,6 +951,7 @@ def build_feed(latest, digests, fr):
                 "has_en": has_en(f),
                 "de": de,
                 "en": en,
+                "translations": translations,
             }
             # backward compatible flat fields = DE
             item.update(de)
@@ -954,16 +961,19 @@ def build_feed(latest, digests, fr):
 
 
 def main():
-    dates = latest_digest_dates()
-    if not dates:
+    all_dates = latest_digest_dates()
+    if not all_dates:
         print("No digests found.")
         return
+    # Collect digests from the most recent dates (up to 7 days back) so the
+    # ticker shows a full picture, not just the single latest run.
+    dates = all_dates[:7]
+    print(f"Using digest dates: {dates}")
     latest = dates[0]
-    print(f"Latest digest date: {latest}")
     digests = []
     for name in list_dir("agent-digests"):
         dm = re.search(r"(\d{4}-\d{2}-\d{2})", name)
-        if not dm or dm.group(1) != latest:
+        if not dm or dm.group(1) not in dates:
             continue
         if name.startswith("studio-") or name.startswith("fleet-review"):
             continue
