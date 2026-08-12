@@ -11,14 +11,20 @@ on:
         description: MatrAIx persona model
         required: true
         default: "openai/gpt-4o-mini"
+  push:
+    branches:
+      - agent/citizensim-wohngeld
 
 jobs:
   citizensim:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[run-matraix]')
     runs-on: ubuntu-latest
     timeout-minutes: 180
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       LLM_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      CITIZENSIM_SAMPLE_SIZE: ${{ inputs.sample_size || '10' }}
+      CITIZENSIM_MODEL: ${{ inputs.model || 'openai/gpt-4o-mini' }}
 
     steps:
       - name: Checkout Citizen Agents
@@ -67,9 +73,9 @@ jobs:
             --task application/tasks/citizensim-web-playwright_wohngeld \
             --execution-mode auto \
             --dataset persona/datasets/matraix-persona-dev-sample \
-            --sample-size "${{ inputs.sample_size }}" \
+            --sample-size "$CITIZENSIM_SAMPLE_SIZE" \
             --seed 42 \
-            --model-name "${{ inputs.model }}" \
+            --model-name "$CITIZENSIM_MODEL" \
             --name citizensim-wohngeld-ci | tee /tmp/citizensim-generate.log
 
           recipe=$(grep -oE 'configs/jobs/application-task-job-recipe/[^[:space:]]+\.yaml' /tmp/citizensim-generate.log | tail -1 || true)
@@ -93,9 +99,9 @@ jobs:
         shell: bash
         run: |
           echo "## CitizenSim MatrAIx run" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Sample size: ${{ inputs.sample_size }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Sample size: $CITIZENSIM_SAMPLE_SIZE" >> "$GITHUB_STEP_SUMMARY"
           echo "- Seed: 42" >> "$GITHUB_STEP_SUMMARY"
-          echo "- Model: ${{ inputs.model }}" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Model: $CITIZENSIM_MODEL" >> "$GITHUB_STEP_SUMMARY"
           echo "- Target: PR #39 Vercel preview" >> "$GITHUB_STEP_SUMMARY"
           echo "" >> "$GITHUB_STEP_SUMMARY"
           if [ -d jobs ]; then
