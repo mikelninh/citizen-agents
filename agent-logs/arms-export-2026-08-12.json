@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-12",
+  "items": 5,
+  "license_values_eur": "13.1 Mrd. EUR (2025 Gesamtjahr; vorlaeufig BMWE: ~12 Mrd. EUR)",
+  "destinations": [
+    "Ukraine (~2.3 Mrd. EUR)",
+    "Norwegen (~1.4 Mrd. EUR)",
+    "Schweden (~1.04 Mrd. EUR)",
+    "Tuerkei (~742 Mio. EUR)",
+    "Singapur (~709 Mio. EUR)",
+    "Vereinigtes Koenigreich (~596 Mio. EUR)",
+    "USA (~575 Mio. EUR)",
+    "Rumaenien (~342 Mio. EUR)",
+    "Daenemark (~241 Mio. EUR)",
+    "Italien (~236 Mio. EUR)",
+    "Israel (>=250 Mio. EUR, Schaetzung)"
+  ],
+  "highlights": [
+    "Rekordniveau 2025: ~13,1 Mrd. EUR genehmigt (Kriegswaffen 5,6 + sonstige 7,5 Mrd. EUR)",
+    "Ukraine Hauptempfaenger (~2,3 Mrd. EUR)",
+    "Tuerkei trotz Menschenrechtskritik ~742 Mio. EUR (Platz 4)",
+    "Israel-Exporte trotz Gaza-Krieg / ICJ-Verfahren; BVerfG weist Palaestinenser-Klage ab",
+    "Nur 12 Antraege abgelehnt (704.121 EUR) — Transparenzluecke bei AGG/Sammelgenehmigungen"
+  ],
+  "sources": [
+    "https://www.bundestag.de/presse/hib/kurzmeldungen-1155890",
+    "https://dserver.bundestag.de/btd/21/046/2104607.pdf",
+    "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/02/20260206-ruestungsexportpolitik-der-bundesregierung-im-jahr-2025.html",
+    "https://www.aa.com.tr/en/world/explainer-germany-s-criticism-of-israel-not-matched-by-arms-exports/4011547",
+    "https://www.zdfheute.de/politik/deutschland/bundesverfassungsgericht-entscheidung-israel-ruestung-export-100.html",
+    "https://aufschrei-waffenhandel.de/service/nachrichten/nachricht/ruestungsexporte-2025-doch-wieder-neuer-rekordwert"
+  ],
+  "actions_taken": [
+    "Frischer Clone von mikelninh/citizen-agents",
+    "Branch agent/arms-export-2026-08-12 erstellt",
+    "agent-digests/arms-export-2026-08-12.md geschrieben",
+    "agent-logs/arms-export-2026-08-12.json geschrieben",
+    "Commit + Push der Branch",
+    "PR gegen main eroeffnet (kein Merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/arms-export-2026-08-12"
+}
