@@ -981,6 +981,8 @@ def main():
             digests.append(parse_digest(get_text(f"{RAW}/agent-digests/{name}")))
         except Exception as e:
             print(f"skip {name}: {e}")
+    # newest digest first so bilingual (EN) content leads the page
+    digests.sort(key=lambda d: d.get("date", ""), reverse=True)
     fr = None
     try:
         fr = parse_fleet_review(get_text(f"{RAW}/agent-digests/fleet-review-{latest}.md"))
