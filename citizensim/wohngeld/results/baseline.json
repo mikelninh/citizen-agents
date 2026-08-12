@@ -1,0 +1,13 @@
+{
+  "test": "CitizenSim v1 / Wohngeld routing baseline",
+  "semantics": "Routing to an official Wohngeld check; not a legal eligibility determination.",
+  "n": 12,
+  "confusion_matrix": {"tp": 5, "fp": 3, "tn": 3, "fn": 1},
+  "metrics": {"precision": 0.625, "recall": 0.8333, "accuracy": 0.6667, "f1": 0.7143},
+  "failures": [
+    {"id":"p02","label":"Renter receiving housing-cost Grundsicherung/Bürgergeld","predicted_route":true,"should_route":false,"outcome":"FP"},
+    {"id":"p03","label":"Single student, BAföG-entitled","predicted_route":true,"should_route":false,"outcome":"FP"},
+    {"id":"p04","label":"Low-income owner-occupier","predicted_route":false,"should_route":true,"outcome":"FN"},
+    {"id":"p08","label":"Renter receiving Grundsicherung im Alter with housing costs","predicted_route":true,"should_route":false,"outcome":"FP"}
+  ]
+}

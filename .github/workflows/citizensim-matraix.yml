@@ -1,0 +1,121 @@
+name: CitizenSim MatrAIx
+
+on:
+  workflow_dispatch:
+    inputs:
+      sample_size:
+        description: Number of simulated citizens
+        required: true
+        default: "10"
+      model:
+        description: MatrAIx persona model
+        required: true
+        default: "openai/gpt-4o-mini"
+  push:
+    branches:
+      - agent/citizensim-wohngeld
+
+jobs:
+  citizensim:
+    if: github.event_name == 'workflow_dispatch' || contains(github.event.head_commit.message, '[run-matraix]')
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      LLM_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      CITIZENSIM_SAMPLE_SIZE: ${{ inputs.sample_size || '10' }}
+      CITIZENSIM_MODEL: ${{ inputs.model || 'openai/gpt-4o-mini' }}
+
+    steps:
+      - name: Checkout Citizen Agents
+        uses: actions/checkout@v4
+
+      - name: Require model API key
+        shell: bash
+        run: |
+          if [ -z "$OPENAI_API_KEY" ]; then
+            echo "Missing repository secret OPENAI_API_KEY. Add it under Settings → Secrets and variables → Actions, then rerun this workflow."
+            exit 1
+          fi
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Fetch MatrAIx
+        run: git clone --depth 1 https://github.com/MatrAIx-ai/MatrAIx-Persona-8B.git matraix
+
+      - name: Install MatrAIx
+        working-directory: matraix
+        run: |
+          uv venv --python 3.12
+          uv pip install -e .
+          uv pip install pytest pytest-asyncio httpx
+          uv pip install -e packages/playground
+          uv pip install -e packages/harbor-langsmith
+          uv pip install -e packages/rewardkit
+
+      - name: Install CitizenSim task
+        run: |
+          mkdir -p matraix/application/tasks/citizensim-web-playwright_wohngeld
+          cp -R citizensim/wohngeld/matraix-task/. matraix/application/tasks/citizensim-web-playwright_wohngeld/
+
+      - name: Generate fixed persona batch
+        working-directory: matraix
+        shell: bash
+        run: |
+          set -euo pipefail
+          uv run python application/scripts/generate_application_job.py \
+            --task application/tasks/citizensim-web-playwright_wohngeld \
+            --execution-mode auto \
+            --dataset persona/datasets/matraix-persona-dev-sample \
+            --sample-size "$CITIZENSIM_SAMPLE_SIZE" \
+            --seed 42 \
+            --model-name "$CITIZENSIM_MODEL" \
+            --name citizensim-wohngeld-ci | tee /tmp/citizensim-generate.log
+
+          recipe=$(grep -oE 'configs/jobs/application-task-job-recipe/[^[:space:]]+\.yaml' /tmp/citizensim-generate.log | tail -1 || true)
+          if [ -z "$recipe" ]; then
+            recipe=$(find configs/jobs/application-task-job-recipe -type f -name '*citizensim*wohngeld*.yaml' -printf '%T@ %p\n' | sort -nr | head -1 | cut -d' ' -f2-)
+          fi
+          if [ -z "$recipe" ] || [ ! -f "$recipe" ]; then
+            echo "Could not locate generated MatrAIx recipe"
+            exit 1
+          fi
+          echo "MATRIX_RECIPE=$recipe" >> "$GITHUB_ENV"
+          echo "Generated recipe: $recipe"
+
+      - name: Run MatrAIx cohort
+        working-directory: matraix
+        run: uv run harbor run -c "$MATRIX_RECIPE"
+
+      - name: Summarize job outputs
+        if: always()
+        shell: bash
+        run: |
+          echo "## CitizenSim MatrAIx run" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Sample size: $CITIZENSIM_SAMPLE_SIZE" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Seed: 42" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Model: $CITIZENSIM_MODEL" >> "$GITHUB_STEP_SUMMARY"
+          echo "- Target: PR #39 Vercel preview" >> "$GITHUB_STEP_SUMMARY"
+          echo "" >> "$GITHUB_STEP_SUMMARY"
+          if [ -d matraix/jobs ]; then
+            echo "Generated job directories:" >> "$GITHUB_STEP_SUMMARY"
+            find matraix/jobs -maxdepth 1 -mindepth 1 -type d -printf '- `%f`\n' | sort >> "$GITHUB_STEP_SUMMARY" || true
+          else
+            echo "No MatrAIx job directory was created." >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload MatrAIx results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: citizensim-matraix-${{ github.run_id }}
+          if-no-files-found: warn
+          path: |
+            matraix/jobs/
+            matraix/configs/jobs/application-task-job-recipe/*citizensim*wohngeld*.yaml
