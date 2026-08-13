@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-13",
+  "agent": "revolving-door",
+  "moves": 4,
+  "highlights": [
+    "Robert Habeck (Ex-Vizekanzler/Ex-Wirtschaftsminister) wurde zum 1. Aug 2026 Senior Advisor bei Urban Partners; Gesellschafter Viessmann (Wärmepumpen) — LobbyControl kritisiert.",
+    "Christian Dürr (Ex-FDP-Fraktionschef) wurde zum 1. Aug 2026 Geschäftsführer des E-Fuels-Start-ups GLE360.",
+    "Christian Lindner (Ex-Finanzminister) ist als 'Senior Advisor' bei Lobbyagentur Teneo aktiv; 16-monatige Karenzzeit endete März 2026.",
+    "abgeordnetenwatch: seit Amtsantritt der Merz-Regierung (Mai 2025) wechselten ≥16 Ex-Ministeriumsmitarbeiter in Lobbyjobs (KNDS, Tank&Rast, Lufthansa, BEE, Teneo)."
+  ],
+  "sources": [
+    "https://urban.partners/news/dr-robert-habeck-to-become-senior-advisor-at-urban-partners",
+    "https://www.handelsblatt.com/politik/deutschland/ex-vizekanzler-lobbycontrol-kritisiert-habecks-wechsel-in-die-wirtschaft/100239533.html",
+    "https://www.zdfheute.de/politik/deutschland/habeck-job-investmentgesellschaft-daenemark-lobbycontrol-kritik-100.html",
+    "https://global-efuels.com/news/christian-durr-appointed-to-managing-director-for-gle360/",
+    "https://www.electrive.net/2026/07/16/drehtuer-effekt-christian-duerr-wird-e-fuel-manager/",
+    "https://www.abgeordnetenwatch.de/recherchen/lobbyismus/die-lobbyistinnen-die-aus-den-ministerien-kamen",
+    "https://www.lobbycontrol.de/seitenwechsel/christian-lindners-weicher-fall-auch-dank-springer-und-kkr-123206/",
+    "https://lobbypedia.de/wiki/Seitenwechsler_in_Deutschland_im_%C3%9Cberblick"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents",
+    "created branch agent/revolving-door-2026-08-13",
+    "researched abgeordnetenwatch, LobbyControl, Handelsblatt, ZDF, urban.partners, global-efuels",
+    "wrote agent-digests/revolving-door-2026-08-13.md (4 bilingual moves)",
+    "wrote agent-logs/revolving-door-2026-08-13.json",
+    "committed and pushed branch",
+    "opened PR (no merge — human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/revolving-door-2026-08-13"
+}
