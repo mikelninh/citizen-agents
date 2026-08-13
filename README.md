@@ -33,8 +33,8 @@ budgets, benefits and courts — every day, cited, logged, and human-reviewed.
 | 9 | Procurement-Watch | 🇩🇪 | planned | Vergabedatenbanken | Anomaly flags on public tenders (Gemeinde→Bund) |
 | 10 | Consultation-Watch | 🇩🇪 | planned | Bundestag, Bundesrat, Ministerien | Turns "nothing I can do" into a 10-min submission |
 
-Status: **3 live today** (proof of loop, running daily) · **5 scheduled now** (this session)
-· **2 planned** (next build).
+**Fleet snapshot — August 2026:** **3 live** · **5 scheduled** · **2 planned**.  
+The repository logs and digests are the source of truth as individual agents evolve.
 
 ## Impact math (honest, with assumptions stated)
 
