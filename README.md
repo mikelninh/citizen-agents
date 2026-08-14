@@ -1,105 +1,65 @@
 # Citizen Agents 🌍
 
-**Free 24/7 watchdogs for every citizen.** Autonomous agents that watch parliaments, laws,
-budgets, benefits and courts — every day, cited, logged, and human-reviewed.
+**Open-source watchdog agents for public information — cited, logged and human-reviewed.**
 
-> **Recht auf dem Papier → Recht im Leben.**
+Citizen Agents monitors public sources and turns changes in laws, rights, budgets and institutions into inspectable digests rather than silent AI output.
 
-## The core promise (and the guardrails)
+**[Open the public portal](https://mikelninh.github.io/citizen-agents/)**
 
-| Promise | How it's enforced |
-|---|---|
-| Free for every citizen | Open source (AGPL/MIT), public repo, no account, GitHub Pages hosting = €0 |
-| Runs every day | Scheduled agents (cron), cloud-deployable 24/7 |
-| Grounded in reality | Every claim carries a source URL |
-| No hallucination-as-law | Agents **draft**; humans **review**; agents **never merge** |
-| Auditable | Every run writes `agent-logs/*.json` (machine-readable) + `agent-digests/*.md` (readable) + opens a PR |
+## The operating model
 
-**Verify it yourself:** [PR #1 on faireint-bundestag](https://github.com/mikelninh/faireint-bundestag/pull/1)
-— 5 findings, 9 cited sources, opened by an agent, waiting for human review. That is the whole model in one link.
-
-## The fleet (10 agents)
-
-| # | Agent | Level | Status | Watches | Impact potential |
-|---|---|---|---|---|---|
-| 1 | GitLaw Law-Watch | 🇩🇪 | **live** | BGBl, recht.bund.de | Never act on stale law — 5,936-law corpus |
-| 2 | Bundestag-Watch | 🇩🇪 | **live** | abgeordnetenwatch, Lobbyregister | ~2h/day monitoring saved per researcher; lobbying becomes public data |
-| 3 | EU Citizen-Rights Watch | 🇪🇺 | **live** | CJEU, EU-Kommission, airlines | Protects €4–5B/yr unclaimed EU261 |
-| 4 | Money-Flow Watch | 🇩🇪 | scheduled | Bundeshaushalt, Bundesrechnungshof | Accountability on €476.5B budget |
-| 5 | Benefit-Discovery Watch | 🇩🇪 | scheduled | WoGG, BEEG, SGB II | €1B+/yr unclaimed Wohngeld; 5–15h/family research → 1 question |
-| 6 | Directive-Deadline Watch | 🇪🇺 | scheduled | EUR-Lex, BMI | Ends Germany's silent late transposition |
-| 7 | Court-Watch | 🇩🇪 | scheduled | BVerfG, EuGH | Landmark rulings in plain language |
-| 8 | Abuse-Safety Watch | 🇩🇪 | scheduled | StGB, NetzDG, BNetzA | Keeps SafeVoice's 30s court-file route legally current |
-| 9 | Procurement-Watch | 🇩🇪 | planned | Vergabedatenbanken | Anomaly flags on public tenders (Gemeinde→Bund) |
-| 10 | Consultation-Watch | 🇩🇪 | planned | Bundestag, Bundesrat, Ministerien | Turns "nothing I can do" into a 10-min submission |
-
-**Fleet snapshot — August 2026:** **3 live** · **5 scheduled** · **2 planned**.  
-The repository logs and digests are the source of truth as individual agents evolve.
-
-## Impact math (honest, with assumptions stated)
-
-**Known unclaimed-money baselines (public figures):**
-- EU261 flight compensation: **€4–5B/yr unclaimed** — airlines pay ~40% of first claims only after pushback; brokers take 25–35% commission.
-- Wohngeld: **~800,000 eligible households don't claim** ≈ **€1B+/yr**.
-- SafeVoice: harassment-to-court-file goes from **~3 hours to ~30 seconds**.
-
-**Time returned to citizens (per interaction):**
-- Elterngeld research: **5–15 hours → 1 question** (deterministic BEEG engine, 38 tests).
-- Rights question (EU261, AGB, Wohngeld): **€25–200 lawyer consult → free, 30s, cited**.
-
-**What 24/7 costs (the honest part):**
-- GitHub Pages hosting: **€0** (static portal + logs).
-- Cloud VM for true always-on agent runtime (Hetzner CX): **~€5–10/month**.
-- Token cost per agent run: cents (bounded toolsets, targeted searches, daily cadence not per-minute).
-- Human review: **your time** — the real cost. This is a feature: no auto-merge ever.
-
-**Is 24/7-for-all worth it? Yes — with two honest conditions:**
-1. **Supply side** (agents + portal) is nearly free at the margin: €0–10/mo for unlimited citizens.
-2. **Demand side** is the real work: citizens must *find* it. Impact = reach × relevance.
-   Distribution (NGOs, Verbraucherzentrale, journalists, schools) is the next biggest win after the fleet is live.
-
-## How a run works
-
-```
-scheduler → agent runs (cron)
-  ├─ web research (cited sources only)
-  ├─ writes agent-digests/<date>.md   (citizen-readable)
-  ├─ writes agent-logs/<date>.json    (machine-readable)
-  ├─ opens PR (human review; never merges)
-  └─ pings Telegram (when wired)
-every run: log · digest · PR · ping — nothing silent
+```text
+public sources
+      ↓
+agent run
+      ↓
+cited findings
+      ↓
+structured log + readable digest
+      ↓
+pull request
+      ↓
+human review
 ```
 
-## Repo map
+Agents can research and prepare. **They do not silently publish or merge consequential claims.**
 
-```
-citizen-agents/          ← you are here (hub: portal + registry + hub digests)
-  index.html             free citizen portal (GitHub Pages)
-  agents.json            machine-readable fleet registry
-  agent-digests/         citizen-readable briefings per run
-  agent-logs/            structured JSON per run (audit)
-gitlaw/                  law corpus + explainers (Law-Watch home)
-faireint-bundestag/      lobby/vote tracking (Bundestag-Watch home)
-flight-rights-mcp/       EU261 + AGB (EU Rights-Watch home)
-pmm-mcp/                 budget mirror (Money-Flow Watch home)
-safevoice/               harassment → court file (Abuse-Safety home)
-civic-ai-mcp-toolkit/    the machine that builds machines (M1)
-```
+## What is implemented
 
-## Next biggest wins (ranked)
+The repository acts as a hub for a small fleet of public-interest agents, including work around:
 
-1. **Wire Telegram delivery** — citizens (and you) get the daily briefings pushed, not just filed.
-2. **Cloud 24/7 deploy** (Hetzner, ~€5/mo) — true always-on runtime, then the fleet scales to 10.
-3. **Benefit-Discovery Watch live** — the single biggest direct-money agent (€1B+ Wohngeld).
-4. **One distribution partner** (Verbraucherzentrale / NGO / journalist) — turns potential into impact.
-5. **Impact dashboard** — auto-aggregate `agent-logs/*.json` into a live "what we found this month" page.
+- changes in German law
+- citizen rights
+- public spending
+- benefits and public services
+- court and institutional updates
 
-## Principles (non-negotiable)
+Every run is designed to leave an audit trail with source URLs and machine-readable output.
 
-- Free for every citizen. Always.
-- Every claim carries a source URL.
-- Agents draft, humans review, nobody auto-merges.
-- Structured logs on every run.
-- Open source, no lock-in, no paywall.
+## Why this matters
 
-Built in Berlin. Open source wherever possible. — Digital Democracy Studio, 2026
+Public information is often technically available but practically difficult to follow. The goal is not to create another opaque AI news feed; it is to make important changes easier to notice **while keeping the evidence visible**.
+
+## Guardrails
+
+- every factual finding should point to a source
+- uncertain findings remain uncertain
+- agents draft; humans review
+- runs create logs rather than disappearing into chat history
+- no autonomous legal or governmental decisions
+- public-interest infrastructure should remain inspectable and reusable
+
+## Related systems
+
+- [GitLaw](https://github.com/mikelninh/gitlaw) — legal corpus, retrieval and citation verification
+- [Public Money MCP](https://github.com/mikelninh/pmm-mcp) — grounded federal-budget tools
+- [SafeVoice](https://github.com/mikelninh/safevoice) — evidence preparation for digital harassment
+- [Digital Democracy Studio](https://github.com/mikelninh/digital-democracy-studio) — broader civic-tech experiments
+
+## Status
+
+Working public prototype. Some agents and integrations are more mature than others; repository logs and code are the source of truth for what is actually running.
+
+---
+
+Built by [Michael Ninh](https://github.com/mikelninh) in Berlin.
