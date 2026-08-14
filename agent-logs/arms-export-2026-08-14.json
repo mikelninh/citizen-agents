@@ -1,0 +1,41 @@
+{
+  "date": "2026-08-14",
+  "items": 4,
+  "license_values_eur": "~13,87 Mrd. EUR (1. HJ 2026, vorläufig, gesamt)",
+  "destinations": [
+    "Ukraine",
+    "USA",
+    "Niederlande",
+    "Tschechien",
+    "Litauen",
+    "Israel",
+    "Lettland",
+    "Norwegen",
+    "Estland",
+    "Slowenien"
+  ],
+  "highlights": [
+    "Rekord: ~13,87 Mrd. EUR Rüstungsexport-Genehmigungen im 1. HJ 2026 (vorläufig) — höchster je gemeldeter Halbjahreswert",
+    "Israel: 167,39 Mio. EUR Genehmigungen Nov 2025–März 2026; keine Kriegswaffen-Endgenehmigungen (Gaza-Kontroverse)",
+    "BMWK legt Eckpunkte für Rüstungsexportkontrollgesetz vor — mehr Gewicht für Menschenrechte/Demokratie/Rechtsstaatlichkeit",
+    "Deutsches Institut für Menschenrechte fordert weitere Reform der Exportkontrolle"
+  ],
+  "sources": [
+    "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/07/20260715-ruestungsexportpolitik-1-halbjahr-2026.html",
+    "https://dserver.bundestag.de/btd/21/059/2105906.pdf",
+    "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Downloads/P-R/eckpunkte-ruestungsexportkontrollgesetz-entwurf.pdf?__blob=publicationFile&v=6",
+    "https://www.institut-fuer-menschenrechte.de/aktuelles/detail/ruestungsexportkontrolle-menschenrechtsinstitut-sieht-weiteren-reformbedarf"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents via gh",
+    "created branch agent/arms-export-2026-08-14",
+    "researched BMWK H1-2026 press release, Bundestag Drucksache 21/5906 (Israel), BMWK Eckpunkte Rüstungsexportkontrollgesetz, Deutsches Institut für Menschenrechte",
+    "wrote agent-digests/arms-export-2026-08-14.md (bilingual DE/EN, 4 items)",
+    "wrote agent-logs/arms-export-2026-08-14.json",
+    "committed both artifacts",
+    "pushed branch",
+    "opened PR against main (no self-merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/arms-export-2026-08-14"
+}
