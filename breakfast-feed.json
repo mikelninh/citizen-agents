@@ -1,8 +1,823 @@
 {
-  "date": "2026-08-12",
-  "generated": "2026-08-13",
+  "date": "2026-08-13",
+  "generated": "2026-08-15",
   "trust": {},
   "items": [
+    {
+      "watchdog": "2026-08-13",
+      "sources": [
+        "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
+        "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+        "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html"
+      ],
+      "tags": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life": [
+        "Mieter:in"
+      ],
+      "has_en": true,
+      "de": {
+        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+        "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+        "why": "",
+        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+        "deadline": "",
+        "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+        "how": "",
+        "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+      },
+      "en": {
+        "headline": "Housing benefit — the biggest unclaimed pot of money: apply now before the reform bites",
+        "what_changed": "Housing benefit (Wohngeld) is the classic unclaimed benefit: studies on non-take-up of social benefits show a substantial share of those entitled never apply ('hidden poverty'). At the same time, the cabinet decided a Wohngeld reform on 6 July 2026 that would cut the federal allocation from around €5bn to €3bn — so future claims will tend to be lower.",
+        "why": "",
+        "effective": "Housing benefit is application-ready now; the cutting reform is a draft bill, not yet in force. Housing benefit is paid from the month of application — not retroactively.",
+        "deadline": "",
+        "who_affected": "Tenants and owners with low to medium income, pensioners, single parents, students without BAföG entitlement, apprentices in certain cases.",
+        "how": "",
+        "citizen_tip": "Submit the application this month at your local housing-benefit office — one day late costs a full month's payment. Apply even if unsure: the decision is free. *(Größenordnung: up to several hundred euros per month)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+          "why": "",
+          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+          "deadline": "",
+          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+          "how": "",
+          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+          "why": "",
+          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+          "deadline": "",
+          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+          "how": "",
+          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+          "why": "",
+          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+          "deadline": "",
+          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+          "how": "",
+          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+          "why": "",
+          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+          "deadline": "",
+          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+          "how": "",
+          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+          "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+          "why": "",
+          "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+          "deadline": "",
+          "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+          "how": "",
+          "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+        }
+      },
+      "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+      "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+      "why": "",
+      "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+      "deadline": "",
+      "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+      "how": "",
+      "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*"
+    },
+    {
+      "watchdog": "2026-08-13",
+      "sources": [
+        "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
+        "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
+        "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/"
+      ],
+      "tags": [
+        "kindergeld",
+        "buergergeld",
+        "eu"
+      ],
+      "life": [
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "has_en": true,
+      "de": {
+        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+        "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+        "why": "",
+        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+        "deadline": "",
+        "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+        "how": "",
+        "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+      },
+      "en": {
+        "headline": "Child supplement (KiZ) — up to €297 per child per month, must be claimed separately",
+        "what_changed": "The child supplement is a separate benefit from the Family Fund for parents who earn enough for themselves but not for their children. It is NOT paid automatically with child benefit and must be applied for separately — which is why it often goes unused. Max amount per DGB guide: €297 per child per month.",
+        "why": "",
+        "effective": "Apply anytime; approval usually for 6 months, then a follow-up application is needed.",
+        "deadline": "",
+        "who_affected": "Working families and single parents with low income who do not receive citizen's benefit / the new basic security.",
+        "how": "",
+        "citizen_tip": "First fill in the free 'KiZ-Lotse' of the Federal Employment Agency (a few minutes) and apply online directly. Those who get KiZ automatically gain access to the education and participation package and are exempt from kindergarten fees. *(Größenordnung: up to €297 / child / month)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+          "why": "",
+          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+          "deadline": "",
+          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+          "how": "",
+          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+          "why": "",
+          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+          "deadline": "",
+          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+          "how": "",
+          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+          "why": "",
+          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+          "deadline": "",
+          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+          "how": "",
+          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+          "why": "",
+          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+          "deadline": "",
+          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+          "how": "",
+          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+          "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+          "why": "",
+          "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+          "deadline": "",
+          "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+          "how": "",
+          "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+        }
+      },
+      "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+      "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+      "why": "",
+      "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+      "deadline": "",
+      "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+      "how": "",
+      "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*"
+    },
+    {
+      "watchdog": "2026-08-13",
+      "sources": [
+        "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
+        "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
+        "https://www.service-bw.de/zufi/leistungen/1963"
+      ],
+      "tags": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "has_en": true,
+      "de": {
+        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+        "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+        "why": "",
+        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+        "deadline": "",
+        "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+        "how": "",
+        "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+      },
+      "en": {
+        "headline": "Education and participation (BuT) — school supplies, meals, €15/month club membership",
+        "what_changed": "The education package covers school trips, school supplies, tutoring, and meals in daycare/school for children from low-income families, plus a flat €15/month for sport, leisure and cultural activities. Entitlement also exists for those receiving housing benefit or child supplement — exactly the group that often fails to apply.",
+        "why": "",
+        "effective": "Ongoing; applications are usually accepted only partially retroactively — apply promptly.",
+        "deadline": "",
+        "who_affected": "Families receiving citizen's benefit / new basic security, housing benefit, child supplement or social assistance.",
+        "how": "",
+        "citizen_tip": "Apply at the Jobcenter or district/independent city — housing-benefit and KiZ recipients have a dedicated application form. Keep receipts (club fees, class trips). *(Größenordnung: €15/month participation + school supplies + meals)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+          "why": "",
+          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+          "deadline": "",
+          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+          "how": "",
+          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+          "why": "",
+          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+          "deadline": "",
+          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+          "how": "",
+          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+          "why": "",
+          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+          "deadline": "",
+          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+          "how": "",
+          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+          "why": "",
+          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+          "deadline": "",
+          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+          "how": "",
+          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+          "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+          "why": "",
+          "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+          "deadline": "",
+          "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+          "how": "",
+          "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+        }
+      },
+      "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+      "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+      "why": "",
+      "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+      "deadline": "",
+      "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+      "how": "",
+      "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*"
+    },
+    {
+      "watchdog": "2026-08-13",
+      "sources": [
+        "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
+        "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
+        "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld"
+      ],
+      "tags": [
+        "elterngeld",
+        "eu"
+      ],
+      "life": [
+        "Eltern/Familie"
+      ],
+      "has_en": true,
+      "de": {
+        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+        "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+        "why": "",
+        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+        "deadline": "",
+        "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+        "how": "",
+        "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+      },
+      "en": {
+        "headline": "Parental allowance — only 3 months retroactive: every late month is lost money",
+        "what_changed": "Parental allowance is paid retroactively for at most the last three life-months before the application. Whoever delays the application loses the earlier months permanently — the most common avoidable financial loss for new parents.",
+        "why": "",
+        "effective": "Permanently applicable deadline (Federal Family Portal; ZBFS Bavaria).",
+        "deadline": "",
+        "who_affected": "All parents after birth, especially those registering late or missing documents.",
+        "how": "",
+        "citizen_tip": "Apply immediately after birth, even incompletely — documents may be submitted later. The application date secures the entitlement. *(Größenordnung: €300–1,800 per lost month)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+          "why": "",
+          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+          "deadline": "",
+          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+          "how": "",
+          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+          "why": "",
+          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+          "deadline": "",
+          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+          "how": "",
+          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+          "why": "",
+          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+          "deadline": "",
+          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+          "how": "",
+          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+          "why": "",
+          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+          "deadline": "",
+          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+          "how": "",
+          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+          "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+          "why": "",
+          "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+          "deadline": "",
+          "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+          "how": "",
+          "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+        }
+      },
+      "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+      "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+      "why": "",
+      "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+      "deadline": "",
+      "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+      "how": "",
+      "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*"
+    },
+    {
+      "watchdog": "2026-08-13",
+      "sources": [
+        "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
+        "https://www.finanztip.de/freistellungsauftrag/"
+      ],
+      "tags": [
+        "eu"
+      ],
+      "life": [],
+      "has_en": true,
+      "de": {
+        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+        "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+        "why": "",
+        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+        "deadline": "",
+        "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+        "how": "",
+        "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+      },
+      "en": {
+        "headline": "Saver's allowance €1,000 — without a relief order the bank hands your money to the tax office",
+        "what_changed": "Capital income stays tax-free up to €1,000 per year (€2,000 when jointly assessed). Without a relief order (Freistellungsauftrag), the bank still deducts around 25% withholding tax plus soli. The money isn't lost but must be clawed back via the tax return (Anlage KAP) — which many never do.",
+        "why": "",
+        "effective": "Applies continuously; relief orders take effect from issuance for the current calendar year.",
+        "deadline": "",
+        "who_affected": "Anyone with savings accounts, fixed deposits, ETF savings plans or dividends — at current interest rates, even a modest savings balance can exceed the allowance.",
+        "how": "",
+        "citizen_tip": "Adjust the relief order at every bank/broker (combined total max €1,000/€2,000) and use Anlage KAP in your tax return if too much was withheld. *(Größenordnung: up to ~€264 tax saving per year (single))*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+          "why": "",
+          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+          "deadline": "",
+          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+          "how": "",
+          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+          "why": "",
+          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+          "deadline": "",
+          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+          "how": "",
+          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+          "why": "",
+          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+          "deadline": "",
+          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+          "how": "",
+          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+          "why": "",
+          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+          "deadline": "",
+          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+          "how": "",
+          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+          "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+          "why": "",
+          "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+          "deadline": "",
+          "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+          "how": "",
+          "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+        }
+      },
+      "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+      "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+      "why": "",
+      "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+      "deadline": "",
+      "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+      "how": "",
+      "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*"
+    },
+    {
+      "watchdog": "2026-08-13",
+      "sources": [
+        "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
+        "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
+        "https://www.mystipendium.de/geld/wohnungsbaupraemie"
+      ],
+      "tags": [
+        "bauen_mieten",
+        "eu"
+      ],
+      "life": [
+        "Mieter:in"
+      ],
+      "has_en": true,
+      "de": {
+        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+        "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+        "why": "",
+        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+        "deadline": "",
+        "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+        "how": "",
+        "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+      },
+      "en": {
+        "headline": "Employee savings allowance & homeownership premium — income limits raised sharply, many don't know",
+        "what_changed": "The income limit for the employee savings allowance was raised massively: singles up to €40,000 taxable annual income (formerly €17,900), married couples double. The homeownership premium is available up to €35,000 (single) or €70,000 (couple). Those who get capital-forming benefits but never signed a VL contract leave employer AND state money on the table.",
+        "why": "",
+        "effective": "Current law; the savings allowance is set via the income-tax return, the homeownership premium is claimed annually via the provider.",
+        "deadline": "",
+        "who_affected": "Employees entitled to capital-forming benefits (often in collective agreements), building savers, young savers.",
+        "how": "",
+        "citizen_tip": "Look for 'capital-forming benefits' in your employment/collective agreement, take out a VL contract and claim the allowance via Anlage VL in your tax return. *(Größenordnung: up to ~€123 + €70 state allowances per year)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+          "why": "",
+          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+          "deadline": "",
+          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+          "how": "",
+          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+          "why": "",
+          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+          "deadline": "",
+          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+          "how": "",
+          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+          "why": "",
+          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+          "deadline": "",
+          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+          "how": "",
+          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+          "why": "",
+          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+          "deadline": "",
+          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+          "how": "",
+          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+          "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+          "why": "",
+          "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+          "deadline": "",
+          "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+          "how": "",
+          "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+        }
+      },
+      "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+      "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+      "why": "",
+      "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+      "deadline": "",
+      "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+      "how": "",
+      "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*"
+    },
+    {
+      "watchdog": "2026-08-13",
+      "sources": [
+        "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
+        "https://www.einstieg.com/studium/bafoeg-reform-2026.html"
+      ],
+      "tags": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "has_en": true,
+      "de": {
+        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+        "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+        "why": "",
+        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+        "deadline": "",
+        "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+        "how": "",
+        "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+      },
+      "en": {
+        "headline": "BAföG study start-up aid — €1,000 one-off, no means test of parents",
+        "what_changed": "The study start-up aid is a one-off €1,000 grant for young people from financially weak households at the start of their studies. It is a grant (no repayment) and is meant to be independent of the classic BAföG approval process — yet it is claimed far less often than possible.",
+        "why": "",
+        "effective": "Apply around the start of studies; deadlines are tightly linked to the study start.",
+        "deadline": "",
+        "who_affected": "First-semester students under 25 whose families receive social benefits (e.g. citizen's benefit, housing benefit, child supplement, BAB).",
+        "how": "",
+        "citizen_tip": "Apply at the responsible Studentenwerk — in parallel with the regular BAföG application, not instead of it. The application is worthwhile even with a thin BAföG entitlement. *(Größenordnung: €1,000 one-off)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+          "why": "",
+          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+          "deadline": "",
+          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+          "how": "",
+          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+          "why": "",
+          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+          "deadline": "",
+          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+          "how": "",
+          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+          "why": "",
+          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+          "deadline": "",
+          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+          "how": "",
+          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+          "why": "",
+          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+          "deadline": "",
+          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+          "how": "",
+          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+          "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+          "why": "",
+          "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+          "deadline": "",
+          "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+          "how": "",
+          "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+        }
+      },
+      "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+      "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+      "why": "",
+      "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+      "deadline": "",
+      "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+      "how": "",
+      "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*"
+    },
+    {
+      "watchdog": "2026-08-13",
+      "sources": [
+        "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
+        "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat"
+      ],
+      "tags": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten"
+      ],
+      "life": [
+        "Mieter:in",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "has_en": true,
+      "de": {
+        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+        "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+        "why": "",
+        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+        "deadline": "",
+        "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+        "how": "",
+        "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+      },
+      "en": {
+        "headline": "Heating-cost and energy aid — partly automatic, partly application-only (check state programmes)",
+        "what_changed": "The nationwide heating-cost subsidy was paid ex officio by the federal government and did not need to be applied for. Current relief, by contrast, runs mainly through state and municipal programmes and through hardship funds of energy suppliers — these require an application and have their own deadlines. The facts vary strongly by region; we explicitly flag this as uncertain.",
+        "why": "",
+        "effective": "Programmes differ by state/municipality; please check local deadlines.",
+        "deadline": "",
+        "who_affected": "Housing-benefit, BAföG and Aufstieg-BAföG recipients, apprentices with BAB, households with energy debts.",
+        "how": "",
+        "citizen_tip": "If disconnection looms, contact the social service / consumer advice centre immediately: Jobcenters can take over energy debts as a loan. Additionally search your own federal state for a current heating-cost subsidy. *(Größenordnung: varies by region)*"
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+          "why": "",
+          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+          "deadline": "",
+          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+          "how": "",
+          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+          "why": "",
+          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+          "deadline": "",
+          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+          "how": "",
+          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+          "why": "",
+          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+          "deadline": "",
+          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+          "how": "",
+          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+          "why": "",
+          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+          "deadline": "",
+          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+          "how": "",
+          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+          "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+          "why": "",
+          "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+          "deadline": "",
+          "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+          "how": "",
+          "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+        }
+      },
+      "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+      "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+      "why": "",
+      "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+      "deadline": "",
+      "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+      "how": "",
+      "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+    },
     {
       "watchdog": "2026-08-12",
       "sources": [
@@ -1632,6 +2447,998 @@
       "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
       "how": "",
       "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*"
+    },
+    {
+      "watchdog": "2026-08-06",
+      "sources": [
+        "https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796",
+        "https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf",
+        "https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform",
+        "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html"
+      ],
+      "tags": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life": [
+        "Mieter:in"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Wohngeld — Reform (\"Neuordnung\") im Kabinett: Leistungen sinken",
+        "what_changed": "Cabinet passed a draft law to \"simplify and further develop\" the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.",
+        "why": "",
+        "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
+        "deadline": "",
+        "who_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
+        "how": "",
+        "citizen_tip": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date."
+      },
+      "en": {
+        "headline": "Wohngeld — Reform (\"Neuordnung\") im Kabinett: Leistungen sinken",
+        "what_changed": "Cabinet passed a draft law to \"simplify and further develop\" the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.",
+        "why": "",
+        "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
+        "deadline": "",
+        "who_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
+        "how": "",
+        "citizen_tip": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date."
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Wohngeld — Reform (\"Neuordnung\") im Kabinett: Leistungen sinken",
+          "what_changed": "Cabinet passed a draft law to \"simplify and further develop\" the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.",
+          "why": "",
+          "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
+          "deadline": "",
+          "who_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
+          "how": "",
+          "citizen_tip": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date."
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Wohngeld — Reform (\"Neuordnung\") im Kabinett: Leistungen sinken",
+          "what_changed": "Cabinet passed a draft law to \"simplify and further develop\" the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.",
+          "why": "",
+          "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
+          "deadline": "",
+          "who_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
+          "how": "",
+          "citizen_tip": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date."
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Wohngeld — Reform (\"Neuordnung\") im Kabinett: Leistungen sinken",
+          "what_changed": "Cabinet passed a draft law to \"simplify and further develop\" the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.",
+          "why": "",
+          "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
+          "deadline": "",
+          "who_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
+          "how": "",
+          "citizen_tip": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date."
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Wohngeld — Reform (\"Neuordnung\") im Kabinett: Leistungen sinken",
+          "what_changed": "Cabinet passed a draft law to \"simplify and further develop\" the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.",
+          "why": "",
+          "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
+          "deadline": "",
+          "who_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
+          "how": "",
+          "citizen_tip": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date."
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Wohngeld — Reform (\"Neuordnung\") im Kabinett: Leistungen sinken",
+          "what_changed": "Cabinet passed a draft law to \"simplify and further develop\" the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.",
+          "why": "",
+          "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
+          "deadline": "",
+          "who_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
+          "how": "",
+          "citizen_tip": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date."
+        }
+      },
+      "headline": "Wohngeld — Reform (\"Neuordnung\") im Kabinett: Leistungen sinken",
+      "what_changed": "Cabinet passed a draft law to \"simplify and further develop\" the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.",
+      "why": "",
+      "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
+      "deadline": "",
+      "who_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
+      "how": "",
+      "citizen_tip": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date."
+    },
+    {
+      "watchdog": "2026-08-06",
+      "sources": [
+        "https://www.bundestag.de/presse/hib/kurzmeldungen-1127152"
+      ],
+      "tags": [
+        "wohngeld",
+        "bauen_mieten"
+      ],
+      "life": [
+        "Mieter:in"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)",
+        "what_changed": "Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).",
+        "why": "",
+        "effective": "Budget year 2026.",
+        "deadline": "",
+        "who_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
+        "how": "",
+        "citizen_tip": ""
+      },
+      "en": {
+        "headline": "Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)",
+        "what_changed": "Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).",
+        "why": "",
+        "effective": "Budget year 2026.",
+        "deadline": "",
+        "who_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
+        "how": "",
+        "citizen_tip": ""
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)",
+          "what_changed": "Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).",
+          "why": "",
+          "effective": "Budget year 2026.",
+          "deadline": "",
+          "who_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)",
+          "what_changed": "Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).",
+          "why": "",
+          "effective": "Budget year 2026.",
+          "deadline": "",
+          "who_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)",
+          "what_changed": "Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).",
+          "why": "",
+          "effective": "Budget year 2026.",
+          "deadline": "",
+          "who_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)",
+          "what_changed": "Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).",
+          "why": "",
+          "effective": "Budget year 2026.",
+          "deadline": "",
+          "who_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)",
+          "what_changed": "Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).",
+          "why": "",
+          "effective": "Budget year 2026.",
+          "deadline": "",
+          "who_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
+          "how": "",
+          "citizen_tip": ""
+        }
+      },
+      "headline": "Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)",
+      "what_changed": "Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).",
+      "why": "",
+      "effective": "Budget year 2026.",
+      "deadline": "",
+      "who_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
+      "how": "",
+      "citizen_tip": ""
+    },
+    {
+      "watchdog": "2026-08-06",
+      "sources": [
+        "https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562",
+        "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460",
+        "https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen",
+        "https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition"
+      ],
+      "tags": [
+        "buergergeld",
+        "eu"
+      ],
+      "life": [
+        "Bürgergeld-Bezieher:in"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Bürgergeld → \"Neue Grundsicherung\": harsher sanctions from 1 July 2026",
+        "what_changed": "Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:",
+        "why": "",
+        "effective": "Phased from **1 July 2026** (law adopted March 2026).",
+        "deadline": "",
+        "who_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
+        "how": "",
+        "citizen_tip": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest."
+      },
+      "en": {
+        "headline": "Bürgergeld → \"Neue Grundsicherung\": harsher sanctions from 1 July 2026",
+        "what_changed": "Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:",
+        "why": "",
+        "effective": "Phased from **1 July 2026** (law adopted March 2026).",
+        "deadline": "",
+        "who_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
+        "how": "",
+        "citizen_tip": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest."
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Bürgergeld → \"Neue Grundsicherung\": harsher sanctions from 1 July 2026",
+          "what_changed": "Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:",
+          "why": "",
+          "effective": "Phased from **1 July 2026** (law adopted March 2026).",
+          "deadline": "",
+          "who_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
+          "how": "",
+          "citizen_tip": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest."
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Bürgergeld → \"Neue Grundsicherung\": harsher sanctions from 1 July 2026",
+          "what_changed": "Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:",
+          "why": "",
+          "effective": "Phased from **1 July 2026** (law adopted March 2026).",
+          "deadline": "",
+          "who_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
+          "how": "",
+          "citizen_tip": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest."
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Bürgergeld → \"Neue Grundsicherung\": harsher sanctions from 1 July 2026",
+          "what_changed": "Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:",
+          "why": "",
+          "effective": "Phased from **1 July 2026** (law adopted March 2026).",
+          "deadline": "",
+          "who_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
+          "how": "",
+          "citizen_tip": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest."
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Bürgergeld → \"Neue Grundsicherung\": harsher sanctions from 1 July 2026",
+          "what_changed": "Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:",
+          "why": "",
+          "effective": "Phased from **1 July 2026** (law adopted March 2026).",
+          "deadline": "",
+          "who_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
+          "how": "",
+          "citizen_tip": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest."
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Bürgergeld → \"Neue Grundsicherung\": harsher sanctions from 1 July 2026",
+          "what_changed": "Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:",
+          "why": "",
+          "effective": "Phased from **1 July 2026** (law adopted March 2026).",
+          "deadline": "",
+          "who_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
+          "how": "",
+          "citizen_tip": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest."
+        }
+      },
+      "headline": "Bürgergeld → \"Neue Grundsicherung\": harsher sanctions from 1 July 2026",
+      "what_changed": "Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:",
+      "why": "",
+      "effective": "Phased from **1 July 2026** (law adopted March 2026).",
+      "deadline": "",
+      "who_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
+      "how": "",
+      "citizen_tip": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest."
+    },
+    {
+      "watchdog": "2026-08-06",
+      "sources": [
+        "https://www.tagesschau.de/inland/prien-elterngeld-102.html",
+        "https://www.elterngeld.net/elterngeld-kuerzung.html",
+        "https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810"
+      ],
+      "tags": [
+        "elterngeld"
+      ],
+      "life": [
+        "Eltern/Familie"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Elterngeld — Prien draft: 14 → 12 months, 3 \"Vätermonate\", higher min/max",
+        "what_changed": "",
+        "why": "",
+        "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
+        "deadline": "",
+        "who_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
+        "how": "",
+        "citizen_tip": ""
+      },
+      "en": {
+        "headline": "Elterngeld — Prien draft: 14 → 12 months, 3 \"Vätermonate\", higher min/max",
+        "what_changed": "",
+        "why": "",
+        "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
+        "deadline": "",
+        "who_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
+        "how": "",
+        "citizen_tip": ""
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Elterngeld — Prien draft: 14 → 12 months, 3 \"Vätermonate\", higher min/max",
+          "what_changed": "",
+          "why": "",
+          "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
+          "deadline": "",
+          "who_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Elterngeld — Prien draft: 14 → 12 months, 3 \"Vätermonate\", higher min/max",
+          "what_changed": "",
+          "why": "",
+          "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
+          "deadline": "",
+          "who_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Elterngeld — Prien draft: 14 → 12 months, 3 \"Vätermonate\", higher min/max",
+          "what_changed": "",
+          "why": "",
+          "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
+          "deadline": "",
+          "who_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Elterngeld — Prien draft: 14 → 12 months, 3 \"Vätermonate\", higher min/max",
+          "what_changed": "",
+          "why": "",
+          "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
+          "deadline": "",
+          "who_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Elterngeld — Prien draft: 14 → 12 months, 3 \"Vätermonate\", higher min/max",
+          "what_changed": "",
+          "why": "",
+          "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
+          "deadline": "",
+          "who_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
+          "how": "",
+          "citizen_tip": ""
+        }
+      },
+      "headline": "Elterngeld — Prien draft: 14 → 12 months, 3 \"Vätermonate\", higher min/max",
+      "what_changed": "",
+      "why": "",
+      "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
+      "deadline": "",
+      "who_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
+      "how": "",
+      "citizen_tip": ""
+    },
+    {
+      "watchdog": "2026-08-06",
+      "sources": [
+        "https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen",
+        "https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html"
+      ],
+      "tags": [
+        "kindergeld"
+      ],
+      "life": [
+        "Eltern/Familie"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Kindergeld — €259/month since 01.01.2026, automatic payment planned",
+        "what_changed": "Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).",
+        "why": "",
+        "effective": "€259 in force now; automation and further increases still planned.",
+        "deadline": "",
+        "who_affected": "All families with children — the automation step mainly helps families who currently never apply.",
+        "how": "",
+        "citizen_tip": ""
+      },
+      "en": {
+        "headline": "Kindergeld — €259/month since 01.01.2026, automatic payment planned",
+        "what_changed": "Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).",
+        "why": "",
+        "effective": "€259 in force now; automation and further increases still planned.",
+        "deadline": "",
+        "who_affected": "All families with children — the automation step mainly helps families who currently never apply.",
+        "how": "",
+        "citizen_tip": ""
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Kindergeld — €259/month since 01.01.2026, automatic payment planned",
+          "what_changed": "Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).",
+          "why": "",
+          "effective": "€259 in force now; automation and further increases still planned.",
+          "deadline": "",
+          "who_affected": "All families with children — the automation step mainly helps families who currently never apply.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Kindergeld — €259/month since 01.01.2026, automatic payment planned",
+          "what_changed": "Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).",
+          "why": "",
+          "effective": "€259 in force now; automation and further increases still planned.",
+          "deadline": "",
+          "who_affected": "All families with children — the automation step mainly helps families who currently never apply.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Kindergeld — €259/month since 01.01.2026, automatic payment planned",
+          "what_changed": "Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).",
+          "why": "",
+          "effective": "€259 in force now; automation and further increases still planned.",
+          "deadline": "",
+          "who_affected": "All families with children — the automation step mainly helps families who currently never apply.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Kindergeld — €259/month since 01.01.2026, automatic payment planned",
+          "what_changed": "Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).",
+          "why": "",
+          "effective": "€259 in force now; automation and further increases still planned.",
+          "deadline": "",
+          "who_affected": "All families with children — the automation step mainly helps families who currently never apply.",
+          "how": "",
+          "citizen_tip": ""
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Kindergeld — €259/month since 01.01.2026, automatic payment planned",
+          "what_changed": "Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).",
+          "why": "",
+          "effective": "€259 in force now; automation and further increases still planned.",
+          "deadline": "",
+          "who_affected": "All families with children — the automation step mainly helps families who currently never apply.",
+          "how": "",
+          "citizen_tip": ""
+        }
+      },
+      "headline": "Kindergeld — €259/month since 01.01.2026, automatic payment planned",
+      "what_changed": "Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).",
+      "why": "",
+      "effective": "€259 in force now; automation and further increases still planned.",
+      "deadline": "",
+      "who_affected": "All families with children — the automation step mainly helps families who currently never apply.",
+      "how": "",
+      "citizen_tip": ""
+    },
+    {
+      "watchdog": "6. August 2026",
+      "sources": [
+        "https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096",
+        "https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf"
+      ],
+      "tags": [
+        "bauen_mieten",
+        "reise"
+      ],
+      "life": [
+        "Mieter:in"
+      ],
+      "has_en": false,
+      "de": {
+        "headline": "Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)",
+        "what_changed": "",
+        "why": "Das Baugesetzbuch entscheidet, wie schnell und wo gebaut werden darf — Mieten, Nachverdichtung, Grünflächen, Beteiligungsrechte vor Ort.",
+        "effective": "",
+        "deadline": "Mittwoch, 23. September 2026, 16:30 Uhr (30. Sitzung)",
+        "who_affected": "",
+        "how": "Anhörungen sind öffentlich (Livestream auf bundestag.de). Bürger:innen können keine formale Stellungnahme einreichen, aber: (a) Anliegen per E-Mail an die Ausschussmitglieder des eigenen Wahlkreises, (b) Petition über den Petitionsausschuss (epetitionen.bundestag.de).",
+        "citizen_tip": ""
+      },
+      "en": {
+        "headline": "Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)",
+        "what_changed": "",
+        "why": "Das Baugesetzbuch entscheidet, wie schnell und wo gebaut werden darf — Mieten, Nachverdichtung, Grünflächen, Beteiligungsrechte vor Ort.",
+        "effective": "",
+        "deadline": "Mittwoch, 23. September 2026, 16:30 Uhr (30. Sitzung)",
+        "who_affected": "",
+        "how": "Anhörungen sind öffentlich (Livestream auf bundestag.de). Bürger:innen können keine formale Stellungnahme einreichen, aber: (a) Anliegen per E-Mail an die Ausschussmitglieder des eigenen Wahlkreises, (b) Petition über den Petitionsausschuss (epetitionen.bundestag.de).",
+        "citizen_tip": ""
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)",
+          "what_changed": "",
+          "why": "Das Baugesetzbuch entscheidet, wie schnell und wo gebaut werden darf — Mieten, Nachverdichtung, Grünflächen, Beteiligungsrechte vor Ort.",
+          "effective": "",
+          "deadline": "Mittwoch, 23. September 2026, 16:30 Uhr (30. Sitzung)",
+          "who_affected": "",
+          "how": "Anhörungen sind öffentlich (Livestream auf bundestag.de). Bürger:innen können keine formale Stellungnahme einreichen, aber: (a) Anliegen per E-Mail an die Ausschussmitglieder des eigenen Wahlkreises, (b) Petition über den Petitionsausschuss (epetitionen.bundestag.de).",
+          "citizen_tip": ""
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)",
+          "what_changed": "",
+          "why": "Das Baugesetzbuch entscheidet, wie schnell und wo gebaut werden darf — Mieten, Nachverdichtung, Grünflächen, Beteiligungsrechte vor Ort.",
+          "effective": "",
+          "deadline": "Mittwoch, 23. September 2026, 16:30 Uhr (30. Sitzung)",
+          "who_affected": "",
+          "how": "Anhörungen sind öffentlich (Livestream auf bundestag.de). Bürger:innen können keine formale Stellungnahme einreichen, aber: (a) Anliegen per E-Mail an die Ausschussmitglieder des eigenen Wahlkreises, (b) Petition über den Petitionsausschuss (epetitionen.bundestag.de).",
+          "citizen_tip": ""
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)",
+          "what_changed": "",
+          "why": "Das Baugesetzbuch entscheidet, wie schnell und wo gebaut werden darf — Mieten, Nachverdichtung, Grünflächen, Beteiligungsrechte vor Ort.",
+          "effective": "",
+          "deadline": "Mittwoch, 23. September 2026, 16:30 Uhr (30. Sitzung)",
+          "who_affected": "",
+          "how": "Anhörungen sind öffentlich (Livestream auf bundestag.de). Bürger:innen können keine formale Stellungnahme einreichen, aber: (a) Anliegen per E-Mail an die Ausschussmitglieder des eigenen Wahlkreises, (b) Petition über den Petitionsausschuss (epetitionen.bundestag.de).",
+          "citizen_tip": ""
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)",
+          "what_changed": "",
+          "why": "Das Baugesetzbuch entscheidet, wie schnell und wo gebaut werden darf — Mieten, Nachverdichtung, Grünflächen, Beteiligungsrechte vor Ort.",
+          "effective": "",
+          "deadline": "Mittwoch, 23. September 2026, 16:30 Uhr (30. Sitzung)",
+          "who_affected": "",
+          "how": "Anhörungen sind öffentlich (Livestream auf bundestag.de). Bürger:innen können keine formale Stellungnahme einreichen, aber: (a) Anliegen per E-Mail an die Ausschussmitglieder des eigenen Wahlkreises, (b) Petition über den Petitionsausschuss (epetitionen.bundestag.de).",
+          "citizen_tip": ""
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)",
+          "what_changed": "",
+          "why": "Das Baugesetzbuch entscheidet, wie schnell und wo gebaut werden darf — Mieten, Nachverdichtung, Grünflächen, Beteiligungsrechte vor Ort.",
+          "effective": "",
+          "deadline": "Mittwoch, 23. September 2026, 16:30 Uhr (30. Sitzung)",
+          "who_affected": "",
+          "how": "Anhörungen sind öffentlich (Livestream auf bundestag.de). Bürger:innen können keine formale Stellungnahme einreichen, aber: (a) Anliegen per E-Mail an die Ausschussmitglieder des eigenen Wahlkreises, (b) Petition über den Petitionsausschuss (epetitionen.bundestag.de).",
+          "citizen_tip": ""
+        }
+      },
+      "headline": "Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)",
+      "what_changed": "",
+      "why": "Das Baugesetzbuch entscheidet, wie schnell und wo gebaut werden darf — Mieten, Nachverdichtung, Grünflächen, Beteiligungsrechte vor Ort.",
+      "effective": "",
+      "deadline": "Mittwoch, 23. September 2026, 16:30 Uhr (30. Sitzung)",
+      "who_affected": "",
+      "how": "Anhörungen sind öffentlich (Livestream auf bundestag.de). Bürger:innen können keine formale Stellungnahme einreichen, aber: (a) Anliegen per E-Mail an die Ausschussmitglieder des eigenen Wahlkreises, (b) Petition über den Petitionsausschuss (epetitionen.bundestag.de).",
+      "citizen_tip": ""
+    },
+    {
+      "watchdog": "6. August 2026",
+      "sources": [
+        "https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen"
+      ],
+      "tags": [
+        "bauen_mieten",
+        "reise"
+      ],
+      "life": [],
+      "has_en": false,
+      "de": {
+        "headline": "Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“",
+        "what_changed": "",
+        "why": "Insolvenzabsicherung von Pauschalreisen, Verbraucherrechte bei Reiseabbruch, Zukunft stationärer Reisebüros.",
+        "effective": "",
+        "deadline": "23. September 2026",
+        "who_affected": "",
+        "how": "Öffentliche Sitzung; Eingaben über Ausschussmitglieder oder Petition.",
+        "citizen_tip": ""
+      },
+      "en": {
+        "headline": "Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“",
+        "what_changed": "",
+        "why": "Insolvenzabsicherung von Pauschalreisen, Verbraucherrechte bei Reiseabbruch, Zukunft stationärer Reisebüros.",
+        "effective": "",
+        "deadline": "23. September 2026",
+        "who_affected": "",
+        "how": "Öffentliche Sitzung; Eingaben über Ausschussmitglieder oder Petition.",
+        "citizen_tip": ""
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“",
+          "what_changed": "",
+          "why": "Insolvenzabsicherung von Pauschalreisen, Verbraucherrechte bei Reiseabbruch, Zukunft stationärer Reisebüros.",
+          "effective": "",
+          "deadline": "23. September 2026",
+          "who_affected": "",
+          "how": "Öffentliche Sitzung; Eingaben über Ausschussmitglieder oder Petition.",
+          "citizen_tip": ""
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“",
+          "what_changed": "",
+          "why": "Insolvenzabsicherung von Pauschalreisen, Verbraucherrechte bei Reiseabbruch, Zukunft stationärer Reisebüros.",
+          "effective": "",
+          "deadline": "23. September 2026",
+          "who_affected": "",
+          "how": "Öffentliche Sitzung; Eingaben über Ausschussmitglieder oder Petition.",
+          "citizen_tip": ""
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“",
+          "what_changed": "",
+          "why": "Insolvenzabsicherung von Pauschalreisen, Verbraucherrechte bei Reiseabbruch, Zukunft stationärer Reisebüros.",
+          "effective": "",
+          "deadline": "23. September 2026",
+          "who_affected": "",
+          "how": "Öffentliche Sitzung; Eingaben über Ausschussmitglieder oder Petition.",
+          "citizen_tip": ""
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“",
+          "what_changed": "",
+          "why": "Insolvenzabsicherung von Pauschalreisen, Verbraucherrechte bei Reiseabbruch, Zukunft stationärer Reisebüros.",
+          "effective": "",
+          "deadline": "23. September 2026",
+          "who_affected": "",
+          "how": "Öffentliche Sitzung; Eingaben über Ausschussmitglieder oder Petition.",
+          "citizen_tip": ""
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“",
+          "what_changed": "",
+          "why": "Insolvenzabsicherung von Pauschalreisen, Verbraucherrechte bei Reiseabbruch, Zukunft stationärer Reisebüros.",
+          "effective": "",
+          "deadline": "23. September 2026",
+          "who_affected": "",
+          "how": "Öffentliche Sitzung; Eingaben über Ausschussmitglieder oder Petition.",
+          "citizen_tip": ""
+        }
+      },
+      "headline": "Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“",
+      "what_changed": "",
+      "why": "Insolvenzabsicherung von Pauschalreisen, Verbraucherrechte bei Reiseabbruch, Zukunft stationärer Reisebüros.",
+      "effective": "",
+      "deadline": "23. September 2026",
+      "who_affected": "",
+      "how": "Öffentliche Sitzung; Eingaben über Ausschussmitglieder oder Petition.",
+      "citizen_tip": ""
+    },
+    {
+      "watchdog": "6. August 2026",
+      "sources": [
+        "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen"
+      ],
+      "tags": [
+        "bauen_mieten"
+      ],
+      "life": [],
+      "has_en": false,
+      "de": {
+        "headline": "Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz",
+        "what_changed": "",
+        "why": "Verbraucherschutzthemen betreffen praktisch jeden Haushalt (Verträge, Abos, Inkasso, digitale Dienste).",
+        "effective": "",
+        "deadline": "14. Oktober 2026",
+        "who_affected": "",
+        "how": "Öffentliche Anhörung, Tagesordnung erscheint ca. 1–2 Wochen vorher; danach gezielt MdB anschreiben.",
+        "citizen_tip": ""
+      },
+      "en": {
+        "headline": "Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz",
+        "what_changed": "",
+        "why": "Verbraucherschutzthemen betreffen praktisch jeden Haushalt (Verträge, Abos, Inkasso, digitale Dienste).",
+        "effective": "",
+        "deadline": "14. Oktober 2026",
+        "who_affected": "",
+        "how": "Öffentliche Anhörung, Tagesordnung erscheint ca. 1–2 Wochen vorher; danach gezielt MdB anschreiben.",
+        "citizen_tip": ""
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz",
+          "what_changed": "",
+          "why": "Verbraucherschutzthemen betreffen praktisch jeden Haushalt (Verträge, Abos, Inkasso, digitale Dienste).",
+          "effective": "",
+          "deadline": "14. Oktober 2026",
+          "who_affected": "",
+          "how": "Öffentliche Anhörung, Tagesordnung erscheint ca. 1–2 Wochen vorher; danach gezielt MdB anschreiben.",
+          "citizen_tip": ""
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz",
+          "what_changed": "",
+          "why": "Verbraucherschutzthemen betreffen praktisch jeden Haushalt (Verträge, Abos, Inkasso, digitale Dienste).",
+          "effective": "",
+          "deadline": "14. Oktober 2026",
+          "who_affected": "",
+          "how": "Öffentliche Anhörung, Tagesordnung erscheint ca. 1–2 Wochen vorher; danach gezielt MdB anschreiben.",
+          "citizen_tip": ""
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz",
+          "what_changed": "",
+          "why": "Verbraucherschutzthemen betreffen praktisch jeden Haushalt (Verträge, Abos, Inkasso, digitale Dienste).",
+          "effective": "",
+          "deadline": "14. Oktober 2026",
+          "who_affected": "",
+          "how": "Öffentliche Anhörung, Tagesordnung erscheint ca. 1–2 Wochen vorher; danach gezielt MdB anschreiben.",
+          "citizen_tip": ""
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz",
+          "what_changed": "",
+          "why": "Verbraucherschutzthemen betreffen praktisch jeden Haushalt (Verträge, Abos, Inkasso, digitale Dienste).",
+          "effective": "",
+          "deadline": "14. Oktober 2026",
+          "who_affected": "",
+          "how": "Öffentliche Anhörung, Tagesordnung erscheint ca. 1–2 Wochen vorher; danach gezielt MdB anschreiben.",
+          "citizen_tip": ""
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz",
+          "what_changed": "",
+          "why": "Verbraucherschutzthemen betreffen praktisch jeden Haushalt (Verträge, Abos, Inkasso, digitale Dienste).",
+          "effective": "",
+          "deadline": "14. Oktober 2026",
+          "who_affected": "",
+          "how": "Öffentliche Anhörung, Tagesordnung erscheint ca. 1–2 Wochen vorher; danach gezielt MdB anschreiben.",
+          "citizen_tip": ""
+        }
+      },
+      "headline": "Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz",
+      "what_changed": "",
+      "why": "Verbraucherschutzthemen betreffen praktisch jeden Haushalt (Verträge, Abos, Inkasso, digitale Dienste).",
+      "effective": "",
+      "deadline": "14. Oktober 2026",
+      "who_affected": "",
+      "how": "Öffentliche Anhörung, Tagesordnung erscheint ca. 1–2 Wochen vorher; danach gezielt MdB anschreiben.",
+      "citizen_tip": ""
+    },
+    {
+      "watchdog": "6. August 2026",
+      "sources": [
+        "https://ec.europa.eu/info/law/better-regulation/",
+        "https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026"
+      ],
+      "tags": [
+        "eu",
+        "lobby"
+      ],
+      "life": [],
+      "has_en": false,
+      "de": {
+        "headline": "EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft",
+        "what_changed": "",
+        "why": "Quantencomputer betreffen künftig Verschlüsselung, also Bankdaten, Gesundheitsdaten und Kommunikation aller Bürger:innen.",
+        "effective": "",
+        "deadline": "",
+        "who_affected": "",
+        "how": "Fragebogen direkt auf dem Portal „Have your say“ — jede Person in der EU darf teilnehmen, kein Verband nötig. Registrierung mit EU-Login (5 Minuten).",
+        "citizen_tip": ""
+      },
+      "en": {
+        "headline": "EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft",
+        "what_changed": "",
+        "why": "Quantencomputer betreffen künftig Verschlüsselung, also Bankdaten, Gesundheitsdaten und Kommunikation aller Bürger:innen.",
+        "effective": "",
+        "deadline": "",
+        "who_affected": "",
+        "how": "Fragebogen direkt auf dem Portal „Have your say“ — jede Person in der EU darf teilnehmen, kein Verband nötig. Registrierung mit EU-Login (5 Minuten).",
+        "citizen_tip": ""
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft",
+          "what_changed": "",
+          "why": "Quantencomputer betreffen künftig Verschlüsselung, also Bankdaten, Gesundheitsdaten und Kommunikation aller Bürger:innen.",
+          "effective": "",
+          "deadline": "",
+          "who_affected": "",
+          "how": "Fragebogen direkt auf dem Portal „Have your say“ — jede Person in der EU darf teilnehmen, kein Verband nötig. Registrierung mit EU-Login (5 Minuten).",
+          "citizen_tip": ""
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft",
+          "what_changed": "",
+          "why": "Quantencomputer betreffen künftig Verschlüsselung, also Bankdaten, Gesundheitsdaten und Kommunikation aller Bürger:innen.",
+          "effective": "",
+          "deadline": "",
+          "who_affected": "",
+          "how": "Fragebogen direkt auf dem Portal „Have your say“ — jede Person in der EU darf teilnehmen, kein Verband nötig. Registrierung mit EU-Login (5 Minuten).",
+          "citizen_tip": ""
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft",
+          "what_changed": "",
+          "why": "Quantencomputer betreffen künftig Verschlüsselung, also Bankdaten, Gesundheitsdaten und Kommunikation aller Bürger:innen.",
+          "effective": "",
+          "deadline": "",
+          "who_affected": "",
+          "how": "Fragebogen direkt auf dem Portal „Have your say“ — jede Person in der EU darf teilnehmen, kein Verband nötig. Registrierung mit EU-Login (5 Minuten).",
+          "citizen_tip": ""
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft",
+          "what_changed": "",
+          "why": "Quantencomputer betreffen künftig Verschlüsselung, also Bankdaten, Gesundheitsdaten und Kommunikation aller Bürger:innen.",
+          "effective": "",
+          "deadline": "",
+          "who_affected": "",
+          "how": "Fragebogen direkt auf dem Portal „Have your say“ — jede Person in der EU darf teilnehmen, kein Verband nötig. Registrierung mit EU-Login (5 Minuten).",
+          "citizen_tip": ""
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft",
+          "what_changed": "",
+          "why": "Quantencomputer betreffen künftig Verschlüsselung, also Bankdaten, Gesundheitsdaten und Kommunikation aller Bürger:innen.",
+          "effective": "",
+          "deadline": "",
+          "who_affected": "",
+          "how": "Fragebogen direkt auf dem Portal „Have your say“ — jede Person in der EU darf teilnehmen, kein Verband nötig. Registrierung mit EU-Login (5 Minuten).",
+          "citizen_tip": ""
+        }
+      },
+      "headline": "EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft",
+      "what_changed": "",
+      "why": "Quantencomputer betreffen künftig Verschlüsselung, also Bankdaten, Gesundheitsdaten und Kommunikation aller Bürger:innen.",
+      "effective": "",
+      "deadline": "",
+      "who_affected": "",
+      "how": "Fragebogen direkt auf dem Portal „Have your say“ — jede Person in der EU darf teilnehmen, kein Verband nötig. Registrierung mit EU-Login (5 Minuten).",
+      "citizen_tip": ""
+    },
+    {
+      "watchdog": "6. August 2026",
+      "sources": [
+        "https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/",
+        "https://ec.europa.eu/info/law/better-regulation/"
+      ],
+      "tags": [
+        "eu",
+        "reise"
+      ],
+      "life": [],
+      "has_en": false,
+      "de": {
+        "headline": "EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)",
+        "what_changed": "",
+        "why": "Chips stecken in Auto, Heizung, Handy — Lieferkettenkrisen treffen Verbraucherpreise unmittelbar.",
+        "effective": "",
+        "deadline": "",
+        "who_affected": "",
+        "how": "„Have your say“-Portal, offen für Einzelpersonen.",
+        "citizen_tip": ""
+      },
+      "en": {
+        "headline": "EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)",
+        "what_changed": "",
+        "why": "Chips stecken in Auto, Heizung, Handy — Lieferkettenkrisen treffen Verbraucherpreise unmittelbar.",
+        "effective": "",
+        "deadline": "",
+        "who_affected": "",
+        "how": "„Have your say“-Portal, offen für Einzelpersonen.",
+        "citizen_tip": ""
+      },
+      "translations": {
+        "tr": {
+          "status": "mt",
+          "headline": "EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)",
+          "what_changed": "",
+          "why": "Chips stecken in Auto, Heizung, Handy — Lieferkettenkrisen treffen Verbraucherpreise unmittelbar.",
+          "effective": "",
+          "deadline": "",
+          "who_affected": "",
+          "how": "„Have your say“-Portal, offen für Einzelpersonen.",
+          "citizen_tip": ""
+        },
+        "ru": {
+          "status": "mt",
+          "headline": "EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)",
+          "what_changed": "",
+          "why": "Chips stecken in Auto, Heizung, Handy — Lieferkettenkrisen treffen Verbraucherpreise unmittelbar.",
+          "effective": "",
+          "deadline": "",
+          "who_affected": "",
+          "how": "„Have your say“-Portal, offen für Einzelpersonen.",
+          "citizen_tip": ""
+        },
+        "ar": {
+          "status": "mt",
+          "headline": "EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)",
+          "what_changed": "",
+          "why": "Chips stecken in Auto, Heizung, Handy — Lieferkettenkrisen treffen Verbraucherpreise unmittelbar.",
+          "effective": "",
+          "deadline": "",
+          "who_affected": "",
+          "how": "„Have your say“-Portal, offen für Einzelpersonen.",
+          "citizen_tip": ""
+        },
+        "vi": {
+          "status": "mt",
+          "headline": "EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)",
+          "what_changed": "",
+          "why": "Chips stecken in Auto, Heizung, Handy — Lieferkettenkrisen treffen Verbraucherpreise unmittelbar.",
+          "effective": "",
+          "deadline": "",
+          "who_affected": "",
+          "how": "„Have your say“-Portal, offen für Einzelpersonen.",
+          "citizen_tip": ""
+        },
+        "pl": {
+          "status": "mt",
+          "headline": "EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)",
+          "what_changed": "",
+          "why": "Chips stecken in Auto, Heizung, Handy — Lieferkettenkrisen treffen Verbraucherpreise unmittelbar.",
+          "effective": "",
+          "deadline": "",
+          "who_affected": "",
+          "how": "„Have your say“-Portal, offen für Einzelpersonen.",
+          "citizen_tip": ""
+        }
+      },
+      "headline": "EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)",
+      "what_changed": "",
+      "why": "Chips stecken in Auto, Heizung, Handy — Lieferkettenkrisen treffen Verbraucherpreise unmittelbar.",
+      "effective": "",
+      "deadline": "",
+      "who_affected": "",
+      "how": "„Have your say“-Portal, offen für Einzelpersonen.",
+      "citizen_tip": ""
     }
   ]
 }
