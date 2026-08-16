@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-16",
+  "items": 3,
+  "anomalies": 3,
+  "total_value_eur": null,
+  "highlights": [
+    "Vergabebeschleunigungsgesetz seit 01.07.2026 in Kraft: Direktaufträge des Bundes bis 50.000 EUR ohne Ausschreibung; Transparency International: 'Konjunkturprogramm für Korruption'",
+    "Losgrundsatz (§ 97a GWB) aufgeweicht: Verzicht auf Fach-/Teillose bei Sondervermögen-Infrastruktur und Verkehrsinfrastruktur aus 'zeitlichen Gründen'",
+    "Rechnungshof BW (Jahresbericht 2026, Beitrag 7, 16.07.2026): nur 2 von 67 Vergabeverstößen bei Fördermitteln führten zu einer Rückforderungsentscheidung",
+    "Bundesrechnungshof 2026: stichprobenhafte Prüfung der Auftragsvergabe durch die KfW"
+  ],
+  "sources": [
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw17-de-vergaben-1166782",
+    "https://www.wolterskluwer.com/de-de/expert-insights/vergaberecht-vergabebeschleunigungsgesetz-aenderungen",
+    "https://www.dtad.com/de/blog/ausschreibungen/kritik-an-der-vergabereform",
+    "https://www.transparency.de/aktuelles/detail/article/stellungnahme-der-ag-vergabe-vergabereform-im-koalitionsvertrag-ein-konjunkturprogramm-fuer-korruption-1-1",
+    "https://www.bundesregierung.de/breg-de/aktuelles/oeffentliche-vergabe-2376854",
+    "https://blog.cosinex.de/2026/08/07/rechnungshof-bw-vergaberecht-private-foerderempfaenger/",
+    "https://www.landtag-bw.de/resource/blob/647562/bd2fab81c935dc0fab7753b0922f8faf/18_0307_D.pdf",
+    "https://www.bundesrechnungshof.de/SharedDocs/Downloads/DE/Berichte/2026/kfw-zusammenarbeit-3-volltext.pdf"
+  ],
+  "actions_taken": [
+    "targeted web research on Vergabereform, Rechnungshof findings and award anomalies",
+    "wrote bilingual citizen digest agent-digests/procurement-2026-08-16.md",
+    "wrote log agent-logs/procurement-2026-08-16.json",
+    "committed and pushed branch, opened PR for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/procurement-2026-08-16"
+}
