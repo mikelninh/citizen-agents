@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-16",
+  "windows_found": 3,
+  "deadlines": [
+    "2026-08-27",
+    "2026-09-23",
+    "2026-10-16"
+  ],
+  "highlights": [
+    "BMUKN UVP-Anpassungsgesetz: Stellungnahme per E-Mail an GI2@bmukn.bund.de bis 27.08.2026.",
+    "Bundestag A24: Öffentliche Anhörung 'BauGB-Upgrade' am 23.09.2026, 16:30 Uhr; schriftliche Bürgerstellungnahmen möglich.",
+    "EU-Kommission: Konsultation zur künftigen Quantenstrategie bis 16.10.2026.",
+    "Hinweis: BMF Kassenpflicht-Verbandsanhörung am 13.08.2026 abgelaufen -> nicht als offen gezählt."
+  ],
+  "sources": [
+    "https://www.bundesumweltministerium.de/gesetz/referentenentwurf-eines-gesetzes-zur-anpassung-des-gesetzes-ueber-die-umweltvertraeglichkeitspruefung-an-unionsrechtliche-vorgaben-und-zur-reform-der-umweltvertraeglichkeitspruefung-bei-dem-umwelt-und-klimaschutz-dienenden-aenderungsvorhaben",
+    "https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096",
+    "https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/consultation-2026-08-16",
+    "researched Bundestag hearings, ministry Referentenentwürfe and EU consultations via web_search/web_extract",
+    "wrote agent-digests/consultation-2026-08-16.md (bilingual, 3 open windows + submission drafts)",
+    "wrote agent-logs/consultation-2026-08-16.json",
+    "committed and pushed branch agent/consultation-2026-08-16",
+    "opened PR against main (human review only; not merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/consultation-2026-08-16"
+}
