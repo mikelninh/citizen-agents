@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-16",
+  "items": 4,
+  "narratives": [
+    "Anti-Muslim/Islamophobic posts misrepresent old footage of a July 2025 lightning-sparked Quebec church fire as a 2026 arson by a Muslim immigrant",
+    "EU Commission preliminary finding: TikTok breaches DSA over minors' public-account safety defaults",
+    "EU Commission fines AliExpress EUR 550 million for DSA breaches on illegal/counterfeit product risk mitigation",
+    "AI-generated fake 'newspaper article' about the German Verfassungsschutz reform went viral via Telegram and an AfD politician"
+  ],
+  "debunks": [
+    "AFP Fact Check (Canada), 11 Aug 2026: the video shows the Saint-Ours, Quebec church that burned 17 Jul 2025 from a lightning strike; confirmed by the municipality and CBC/Radio-Canada",
+    "European Commission preliminary finding, 24 Jul 2026, under the DSA Guidelines on the protection of minors: TikTok must restrict minors' public-content visibility and stop For You Feed recommendations",
+    "European Commission penalty decision, 20 Jul 2026: EUR 550M fine for failing to diligently assess and mitigate risks of illegal/unsafe/counterfeit goods",
+    "CORRECTIV.Faktencheck, 24 Jul 2026 (rating 'Manipuliert'): image is generative AI with fabricated quotes and a fake dpa source; the real BMI draft applies only to terrorism/spionage via an independent control council and is not yet law"
+  ],
+  "sources": [
+    "https://factcheck.afp.com/doc.afp.com.C4CB8NQ",
+    "https://www.cbc.ca/news/canada/montreal/church-fire-saint-ours-1.7588167",
+    "https://www.ctvnews.ca/montreal/article/fire-tears-through-historic-saint-ours-church/",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminary-finds-tiktok-breach-digital-services-act-failing-ensure-safe-accounts-minors",
+    "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1679",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-fines-aliexpress-eu550-million-breaching-digital-services-act",
+    "https://www.techpolicy.press/europes-summer-of-digital-services-act-enforcement-targets-platform-design/",
+    "https://correctiv.org/faktencheck/gesellschaft/2026/07/24/zeitungsartikel-verfassungsschutz-ki-fake/",
+    "https://www.bmi.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/OESI2/NDRefG.pdf"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/truth-watch-2026-08-16",
+    "Researched fact-checker outputs (AFP Fact Check, CORRECTIV) and EU DSA enforcement news (digital-strategy.ec.europa.eu)",
+    "Wrote agent-digests/truth-watch-2026-08-16.md (4 items, bilingual DE+EN, each narrative paired with credible debunk and sources)",
+    "Wrote agent-logs/truth-watch-2026-08-16.json",
+    "Committed and pushed branch",
+    "Opened pull request for human review (no self-merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/truth-watch-2026-08-16"
+}
