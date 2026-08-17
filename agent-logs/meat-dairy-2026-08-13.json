@@ -1,0 +1,46 @@
+{
+  "agent": "meat-dairy-watch",
+  "title": "Meat & Dairy Watch",
+  "date": "2026-08-13",
+  "generated_at": "2026-08-13T13:25:00+02:00",
+  "country": "DE/EU",
+  "focus": "meat and dairy industry lobbying, subsidies, policy, science",
+  "items": 5,
+  "lobby_entries": 5,
+  "subsidies_eur": "6.2 Mrd EUR/Jahr (EU-GAP DE, 2023-2027)",
+  "highlights": [
+    "DBV lists 26 legislative initiatives in Bundestag lobby register, opposing Animal Welfare Act reform and stricter emissions rules (R002175)",
+    "State livestock-labelling in force 10.02.2026, full rollout delayed to 01.01.2027, four tiers become five",
+    "EU CAP: ~6.2bn EUR/year to Germany; meat+milk got >10x the fruit/veg direct payments; 15% of payments to 0.6% of farms",
+    "UBA: agriculture 60.8 Mt CO2e in 2025 (9.4% of DE total); cattle/pig methane + manure dominate",
+    "Copa-Cogeca EU lobbying 700-800k EUR (2024), EDA 100-200k EUR; German vet antibiotic sales rose to 562 t in 2024"
+  ],
+  "sources": [
+    "https://www.lobbyregister.bundestag.de/suche/R002175",
+    "https://www.lobbyregister.bundestag.de/suche/R001609",
+    "https://www.ble.de/DE/Themen/Ernaehrung-Lebensmittel/Tierhaltungskennzeichnung/Tierhaltungskennzeichnung_node.html",
+    "https://www.bmleh.de/DE/themen/tiere/tierschutz/tierhaltungskennzeichnung/tierhaltungskennzeichnung_node.html",
+    "https://www.bmleh.de/DE/themen/landwirtschaft/eu-agrarpolitik-und-foerderung/gap/gap-nationale-umsetzung.html",
+    "https://www.bund.net/themen/landwirtschaft/eu-agrarpolitik/",
+    "https://www.agrarheute.com/politik/zuendstoff-fuer-tierhalter-ngo-attackiert-gap-foerderung-fuer-fleisch-milch-639290",
+    "https://www.umweltbundesamt.de/themen/landwirtschaft/landwirtschaft-umweltfreundlich-gestalten/klimaschutz-in-der-landwirtschaft",
+    "https://www.umweltbundesamt.de/daten/umweltzustand-trends/land-forstwirtschaft/beitrag-der-landwirtschaft-zu-den-treibhausgas",
+    "https://www.lobbyfacts.eu/datacard/european-agri-cooperatives?rid=09586631237-74",
+    "https://www.lobbyfacts.eu/datacard/european-dairy-association-aisbl?rid=42967152383-63",
+    "https://www.bvl.bund.de/SharedDocs/Pressemitteilungen/05_tierarzneimittel/2025/PM_Abgabemengen_Antibiotika_Tiermedizin_2024.html",
+    "https://www.bmleh.de/DE/themen/tiere/tierarzneimittel/lagebild-antibiotikaeinsatz-bei-tieren-2024.html"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "create dated branch agent/meat-dairy-2026-08-13",
+    "web research: Bundestag lobby register, EU transparency register, GAP subsidies, UBA emissions, veterinary antibiotics",
+    "write bilingual digest agent-digests/meat-dairy-2026-08-13.md",
+    "write log agent-logs/meat-dairy-2026-08-13.json",
+    "git add, commit digest + log",
+    "git push branch to origin",
+    "open PR against main (human review only; not merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/meat-dairy-2026-08-13",
+  "guardrail": "read-only watchdog: commits and opens PR only; never merges, force-pushes, or deletes branches"
+}
