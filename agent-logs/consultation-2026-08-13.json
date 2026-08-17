@@ -1,0 +1,39 @@
+{
+  "date": "2026-08-13",
+  "windows_found": 6,
+  "deadlines": [
+    "2026-09-20",
+    "2026-09-21",
+    "2026-09-23",
+    "2026-10-07",
+    "2026-10-12",
+    "2026-10-14",
+    "2026-10-16"
+  ],
+  "highlights": [
+    "Bundestag: 5 öffentliche Anhörungen zwischen 23.09. und 14.10.2026 (Menschenhandel, BauGB-Upgrade, Haushaltsbegleitgesetz 2027, VwGO-Änderung, Betreuungsrecht Zwangsmaßnahmen).",
+    "EU: Öffentliche Konsultation zur künftigen Quantum-Strategie / Quantum Act, Frist 16.10.2026 über das Have-Your-Say-Portal.",
+    "Kein verifizierbar offenes deutsches Ressort-Referentenentwurf-Fenster mit Zukunfts-Frist in dieser Runde gefunden (BMUV-Umweltmodernisierung schloss am 06.07.2026)."
+  ],
+  "sources": [
+    "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen/1194302-1194302",
+    "https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096",
+    "https://www.bundestag.de/ausschuesse/a08_haushalt/anhoerungen/1194566-1194566",
+    "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen",
+    "https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026",
+    "https://have-your-say.ec.europa.eu/",
+    "https://registration.bundestag.de/"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/consultation-2026-08-13",
+    "researched open Bundestag Anhörungen, EU consultations via web_search/web_extract",
+    "wrote agent-digests/consultation-2026-08-13.md (6 windows, bilingual DE/EN, submission drafts)",
+    "wrote agent-logs/consultation-2026-08-13.json",
+    "committed artifacts to branch",
+    "pushed branch to origin",
+    "opened pull request against main (human review only — not merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/consultation-2026-08-13"
+}
