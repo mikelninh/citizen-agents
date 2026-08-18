@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-14",
+  "items": 4,
+  "systems": [
+    "EU AI Act (Regulation (EU) 2024/1689) — high-risk obligations, in force 2 Aug 2026",
+    "Prohibited AI practices (Art. 5) — social scoring, emotion recognition, real-time biometric ID",
+    "SCHUFA credit scoring — automated individual decision-making (Art. 22 GDPR / CJEU C-634/21), AI Act high-risk",
+    "Predictive policing software (Hesse/Hamburg) — struck down by German Constitutional Court"
+  ],
+  "highlights": [
+    "EU AI Act high-risk rules + AI Office enforcement live from 2 August 2026 (official page updated 3 Aug 2026).",
+    "Nine prohibited practices (Art. 5) including social scoring and emotion recognition have been banned since 2 Feb 2025.",
+    "CJEU C-634/21: SCHUFA credit-score creation is automated decision-making under Art. 22 GDPR; SCHUFA cut criteria from ~250 to 12 on 17 Mar 2026; creditworthiness AI is high-risk from Aug 2026.",
+    "German Constitutional Court (16 Feb 2023) declared Hesse/Hamburg predictive-policing software unconstitutional."
+  ],
+  "sources": [
+    "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "https://artificialintelligenceact.eu/article/5/",
+    "https://infocuria.curia.europa.eu/tabs/redirect/juris/liste.jsf?num=C-634/21",
+    "https://legal.pwc.de/en/news/articles/the-2026-schufa-score-reforms-and-implications-for-financial-services-firms",
+    "https://lawandtech.ie/german-says-no-to-predictive-policing-the-rule-of-law-challenges-posed-by-algorithms/",
+    "https://www.euractiv.com/news/german-constitutional-court-strikes-down-predictive-algorithms-for-policing/"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created dated branch agent/algorithm-watch-2026-08-14",
+    "researched EU AI Act, Art. 5 prohibitions, SCHUFA/CJEU, predictive policing via web (official EU + primary sources)",
+    "wrote agent-digests/algorithm-watch-2026-08-14.md (bilingual DE/EN)",
+    "wrote agent-logs/algorithm-watch-2026-08-14.json",
+    "committed artifacts to branch",
+    "pushed branch to origin",
+    "opened PR against main (human review only — not merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/algorithm-watch-2026-08-14"
+}
