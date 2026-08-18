@@ -1,0 +1,75 @@
+{
+  "date": "2026-08-14",
+  "shortages_found": 520,
+  "top_shortages": [
+    {
+      "medication": "Salbutamol (pulmonal)",
+      "active_ingredient": "Salbutamol",
+      "shortage_since": "laufend (BfArM Versorgungsmangel)",
+      "expected_end": "nicht genannt",
+      "alternative": "andere kurzwirkende Beta-2-Sympathomimetika, ärztliche Umstellung",
+      "source": "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/_node.html"
+    },
+    {
+      "medication": "Pantoprazol Micro Labs 40 mg",
+      "active_ingredient": "Pantoprazol-Natrium-Sesquihydrat",
+      "shortage_since": "2026-07-03",
+      "expected_end": "2026-08-11",
+      "alternative": "andere Pantoprazol-Hersteller / Omeprazol (aut idem)",
+      "source": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medication": "Cefotaxim-Natrium Infusionslösung",
+      "active_ingredient": "Cefotaxim",
+      "shortage_since": "gemeldet (KKH-relevant: ja)",
+      "expected_end": "nicht genannt",
+      "alternative": "andere Cephalosporine, BfArM-Importgestattung",
+      "source": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medication": "Acetylsalicylsäure i.v.",
+      "active_ingredient": "Acetylsalicylsäure",
+      "shortage_since": "Versorgungsmangel § 79 Abs. 5 AMG",
+      "expected_end": "befristete Importe (BfArM-Update 2026-08-10)",
+      "alternative": "importierte Präparate § 79 Abs. 5 AMG, ärztliche Umstellung",
+      "source": "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/Massnahmen-des-BfArM/_artikel.html"
+    },
+    {
+      "medication": "HEPLISAV B / Priorix-Tetra (Impfstoffe)",
+      "active_ingredient": "Hepatitis-B-Impfstoff / Kombinations-Lebendimpfstoff",
+      "shortage_since": "2026-07-15",
+      "expected_end": "nicht genannt",
+      "alternative": "andere Hepatitis-B- / Kombinationsimpfstoffe (ärztlich)",
+      "source": "https://www.gelbe-liste.de/lieferengpaesse"
+    }
+  ],
+  "highlights": [
+    "BfArM-Datenbank zählt aktuell 520 gemeldete Lieferengpässe (Aug 2026).",
+    "ALBVVG: Dringlichkeitsliste § 129 Abs. 2b SGB V und Kinderarzneimittel-Liste am 04.08.2026 veröffentlicht.",
+    "EU-Parlament stimmte am 20.01.2026 für ein Gesetz gegen Arzneimittelengpässe (mehr EU-Eigenproduktion).",
+    "Hauptursachen laut tagesschau: Produktionsprobleme, Preisdruck bei Generika, Konzentration in wenigen Großfabriken.",
+    "Patientenrecht: aut-simile-Austausch bei Engpass in Absprache mit dem Arzt möglich."
+  ],
+  "sources": [
+    "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/_node.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/Massnahmen-des-BfArM/_artikel.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/ALBVVG/_artikel.html",
+    "https://www.gelbe-liste.de/lieferengpaesse",
+    "https://www.tagesschau.de/wirtschaft/verbraucher/medikamente-pharma-100.html",
+    "https://www.aerzteblatt.de/news/eu-parlament-stimmt-fur-gesetz-gegen-arzneimittelengpasse-1b5c61f5-5275-48f5-a664-9b5acc1e7388",
+    "https://www.pharmazeutische-zeitung.de/hilfestellung-fuer-den-austausch-117130/"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/pharma-supply-2026-08-14",
+    "researched BfArM, PharmNet, gelbe-liste, tagesschau, Ärzteblatt",
+    "wrote agent-digests/pharma-supply-2026-08-14.md (bilingual)",
+    "wrote agent-logs/pharma-supply-2026-08-14.json",
+    "committed artifacts",
+    "pushed branch",
+    "opened PR (human review only — no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/pharma-supply-2026-08-14"
+}
