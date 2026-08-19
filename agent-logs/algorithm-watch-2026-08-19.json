@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-19",
+  "items": 5,
+  "systems": [
+    "EU AI Act Art. 50 Transparenzpflichten (KI-Kennzeichnung)",
+    "EU AI Act Art. 5 verbotene KI-Praktiken (Emotionserkennung, biometrisches Scraping, Echtzeit-Gesichtserkennung)",
+    "Predictive Policing Deutschland (Polizei/Justiz)",
+    "SCHUFA Bonitäts-Scoring (automatisierte Entscheidung, Art. 22 DSGVO)",
+    "Jobcenter / Bundesagentur für Arbeit KI-Automatisierung (Leistungs-/Sanktionsentscheidungen)"
+  ],
+  "highlights": [
+    "EU AI Act Transparenzpflichten (Art. 50) greifen am 2. August 2026; Bürger müssen über KI-Kontakt informiert werden.",
+    "Verbotene KI-Praktiken (Art. 5) sind seit 2. Februar 2025 rechtskräftig — u.a. Emotionserkennung am Arbeitsplatz verboten.",
+    "AlgorithmWatch (2025) warnt: Predictive Policing in Deutschland verstärkt Diskriminierung.",
+    "EuGH (C-634/21, 7.12.2023): SCHUFA-Scoring ist automatisierte Entscheidung nach Art. 22 DSGVO — Auskunfts- und Widerspruchsrecht.",
+    "Bundesagentur für Arbeit investiert 2025 fast 1 Mrd. EUR in KI/Automatisierung bei Jobcentern; AI-Act-Hochrisiko-Regeln ab 2.12.2027."
+  ],
+  "sources": [
+    "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+    "https://artificialintelligenceact.eu/article/50/",
+    "https://artificialintelligenceact.eu/article/5/",
+    "https://algorithmwatch.org/en/automating-injustice-predictive-policing-germany/",
+    "https://www.e-rechtsanwaelte.de/dsgvo/eugh-urteil-schufa-scoring-und-art-22-dsgvo/",
+    "https://table.media/berlin/analyse/jobcenter-app-und-mehr-was-die-bundesagentur-fuer-arbeit-fuer-2025-plant"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "checked out branch agent/algorithm-watch-2026-08-19",
+    "researched EU AI Act, German deployments, corporate automated decisions, failures",
+    "wrote agent-digests/algorithm-watch-2026-08-19.md (5 bilingual items)",
+    "wrote agent-logs/algorithm-watch-2026-08-19.json",
+    "committed both artifacts to the dated branch",
+    "opened a PR against main (human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/algorithm-watch-2026-08-19"
+}
