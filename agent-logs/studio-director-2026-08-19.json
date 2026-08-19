@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-19",
+  "role": "studio-director",
+  "repo": "bla-keks-world",
+  "branch": "studio/director-2026-08-19",
+  "files_read": [
+    "experiences/little-planet/src/modes/match-mode.js",
+    "experiences/little-planet/src/modes/weapon.js",
+    "experiences/little-planet/src/modes/weapons/saber.js",
+    "experiences/little-planet/src/modes/weapons/projectiles.js",
+    "experiences/little-planet/src/modes/weapons/tools.js",
+    "experiences/little-planet/src/modes/botbrain.js",
+    "experiences/little-planet/src/shared/match.js",
+    "experiences/little-planet/src/shared/items.js",
+    "experiences/little-planet/server/room.js",
+    "README.md",
+    "agent-digests/studio-director-2026-08-14.md"
+  ],
+  "prior_brief": "studio/director-2026-08-14",
+  "prior_directives_landed": false,
+  "combat_commits_since_prior": 0,
+  "evidence_frozen_combat": "git log --since=2026-08-14 on match-mode.js, tools.js, saber.js, botbrain.js, weapon.js, shared/match.js returns no commits; all post-08-14 work is duel/ Battle Arena (v0.32 truth pass).",
+  "critiques": 4,
+  "critique_summary": [
+    "1. Saber still one-tap: tools.js:75 leafblade.soak=100, match-mode.js:982 applies stats.soak=100 -> instant down; saber.js:24 SABER.damage=68 dead; hud() 1206-1208 still hides HP as soak. (Unchanged since 08-14 #1)",
+    "2. Bots still hitscan: botbrain.js:238-256 traceShot + WEAPON.damage; weapon.js WEAPON/Magazine/buildViewModel dead for player, only feeds bot. (Unchanged since 08-14 #2)",
+    "3. NEW: PvP effort diverted to duel/ Battle Arena; little-planet tactical (only BOTH home) has zero combat commits this fortnight per git log + README:57-63.",
+    "4. NEW: No shared resource still; lead's 'ammo/heat vs stamina' unanswered 2 weeks on; Charge regen makes all ranged spammable, saber has no stamina/movement commitment/whiff punish (tools.js:99-120, saber.js:27 reach 3.4)."
+  ],
+  "one_big_idea": "Ship bot/player unification FIRST (old D3): rewrite botShoot to use the real soak kit + reusable Projectiles pool, delete weapon.js hitscan path. This makes soak/stamina balance observable in bot duels, which is why D1/D2 have stalled for two weeks. ~40 lines, gates everything else.",
+  "directives": [
+    {
+      "id": "D1",
+      "priority": "gate",
+      "files": ["experiences/little-planet/src/modes/botbrain.js"],
+      "change": "botShoot (238-256): replace hitscan WEAPON carbine with real soak tools (TOOLS/statsFor) spawning a real Projectiles shot applying stats.soak, gated by Charge; delete weapon.js WEAPON/traceShot import.",
+      "acceptance": "Bot shot is visible, dodgeable, applies soak matching tools.js; traceShot/WEAPON.damage no longer referenced in bot path; weapon.js Magazine/buildViewModel deletable without break."
+    },
+    {
+      "id": "D2",
+      "priority": "high",
+      "files": ["experiences/little-planet/src/shared/match.js", "experiences/little-planet/src/modes/weapons/tools.js", "experiences/little-planet/src/modes/match-mode.js", "experiences/little-planet/src/modes/weapons/saber.js"],
+      "change": "_hit -> accumulate soak (down at 100 via makeBubble); leafblade.soak 100->34; add shared Stamina; saber swing = commitment (root + punishable recovery, blocked at empty stamina, perfect-timing bonus in Saber.hits 0.25-0.45).",
+      "acceptance": "Full-HP enemy needs >=3 saber hits; HUD soak 0-100 honest (no secret HP); empty-stamina swing fails loudly; whiff shows punishable opening."
+    },
+    {
+      "id": "D3",
+      "priority": "high",
+      "files": ["experiences/little-planet/src/modes/weapons/tools.js", "experiences/little-planet/src/shared/match.js"],
+      "change": "Make petalbow the explicit anti-saber tool (long reach, high soak, slow fire); add small out-of-combat soak regen (only Medkit heals today).",
+      "acceptance": "Saber beats splatter only by closing; petalbow beats saber by spacing; no single action one-shots; ~3s out of combat recovers some soak."
+    }
+  ],
+  "challenge_for_mikel": "Is experiences/little-planet/ Tactical the canonical BOTH home? Yes -> assign one engineer to D1 this week. No -> say so and I redirect the saber+projectile vision into duel/arena/. The saber is a one-tap kill because nobody owns the BOTH surface; also decide Soak-or-HP and the ammo/heat-vs-stamina resource.",
+  "guardrail": "read-only director: only agent-digests/ and agent-logs/ added in game repo; no src/ server/ index.html package.json modified."
+}
