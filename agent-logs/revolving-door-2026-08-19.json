@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-19",
+  "moves": 5,
+  "highlights": [
+    "Christian Lindner (ex-Finanzminister, FDP) wird Senior Advisor bei Teneo und nimmt Aufsichtsrats-/Vorstandsposten bei Serviceplan und Autoland an (März 2026).",
+    "Jörg Kukies (ex-Finanzminister, SPD) wechselt zu Morgan Stanley (Leitung D/AT) und The Rhine Group (Mai/Juni 2026).",
+    "Bettina Stark-Watzinger (ex-Forschungsministerin, FDP) berät das Fusions-Start-up Focused Energy (Mai 2026).",
+    "Jens Teutrine (ex-FDP-MdB) wird DACH-Direktor des industriefinanzierten Consumer Choice Center (März 2026).",
+    "Torsten Herbst (ex-FDP-MdB) registriert sich im Lobbyregister für Proxima Fusion (Mai 2026)."
+  ],
+  "sources": [
+    "https://www.teneo.com/news/press-releases/teneo-appoints-germanys-former-finance-minister-christian-lindner-as-senior-advisor/",
+    "https://www.privatebankerinternational.com/news/german-fm-joerg-kukies-morgan-stanley/",
+    "https://www.faz.net/aktuell/rhein-main/region-und-hessen/fruehere-bundesforschungsministerin-stark-watzinger-geht-zu-focused-energy-200835608.html",
+    "https://consumerchoicecenter.org/former-german-mp-jens-teutrine-joins-consumer-choice-center-ccc/",
+    "https://www.lobbyregister.bundestag.de/suche/R007722",
+    "https://lobbypedia.de/wiki/Seitenwechsler_in_Deutschland_im_%C3%9Cberblick"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/revolving-door-2026-08-19",
+    "Researched abgeordnetenwatch / Lobbypedia / Lobbyregister / news (Teneo, Bloomberg/PBI, FAZ, CCC)",
+    "Wrote agent-digests/revolving-door-2026-08-19.md (5 bilingual findings)",
+    "Wrote agent-logs/revolving-door-2026-08-19.json",
+    "Committed and pushed branch to origin",
+    "Opened PR to main (human review only — no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/revolving-door-2026-08-19"
+}
