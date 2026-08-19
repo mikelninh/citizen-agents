@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-19",
+  "shortages_found": 528,
+  "top_shortages": [
+    "Methylprednisolon 16mg JENAPHARM (Kortison) — 05.08.2026 bis 31.01.2027",
+    "Pazopanib Viatris 400mg (Nierenkrebs) — 01.04.2026 bis 15.09.2026",
+    "Sevredol 20mg (Morphin, KKH-relevant) — 31.07.2026 bis 08.10.2026",
+    "Targin 40/20mg (Oxycodon/Naloxon, KKH-relevant) — 19.08.2026 bis 15.09.2026",
+    "Quetiapin-Hormosan (Psychopharmakum, mehrere St\u00e4rken) — bis 04.01.2027"
+  ],
+  "highlights": [
+    "BfArM listet 528 offene Lieferengpass-Meldungen (Stand 19.08.2026).",
+    "EU-Parlament verabschiedete den 'Critical Medicines Act' gegen Engp\u00e4sse (20.01.2026).",
+    "Ursachen laut tagesschau: Produktion wandert aus der EU ab; EU-Abwasserrichtlinie und Treibgas-Vorgaben erh\u00f6hen Kosten.",
+    "Besonders betroffen laut \u00c4rzteblatt: Kortisonpr\u00e4parate und Asthmasprays; dazu Onkologika, Opioid-Analgetika, Psychopharmaka."
+  ],
+  "sources": [
+    "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml",
+    "https://www.tagesschau.de/wirtschaft/unternehmen/lieferengpaesse-medikamente-pharmaindustrie-100.html",
+    "https://www.aerzteblatt.de/news/eu-parlament-stimmt-fur-gesetz-gegen-arzneimittelengpasse-1b5c61f5-5275-48f5-a664-9b5acc1e7388",
+    "https://www.fr.de/panorama/engpaessen-kommen-mehr-als-500-medikamente-knapp-auch-in-zukunft-kann-es-zu-zr-93897180.html"
+  ],
+  "actions_taken": [
+    "fresh clone mikelninh/citizen-agents",
+    "branch agent/pharma-supply-2026-08-19",
+    "research BfArM PharmNet list + tagesschau + Aerzteblatt + FR",
+    "wrote agent-digests/pharma-supply-2026-08-19.md (5 items, bilingual DE/EN)",
+    "wrote agent-logs/pharma-supply-2026-08-19.json",
+    "git commit + push branch",
+    "open PR against main (no self-merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/pharma-supply-2026-08-19"
+}
