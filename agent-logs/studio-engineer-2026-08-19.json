@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-19",
+  "changes": [
+    {
+      "file": "experiences/little-planet/src/modes/botbrain.js",
+      "what": "Replaced the legacy hitscan carbine in botShoot with the player soak kit. Bots now lazily pick a ranged tool (statsFor) and a Charge, gate firing on Charge.ready, and spawn a REAL visible projectile via c.spawnProjectile applying stats.soak (9-52). Removed the WEAPON/traceShot import.",
+      "why": "Director D1 (the gate). Bots were a third, invisible archetype firing a hitscan carbine no player owns, which made soak/stamina unobservable. Now bots fight with the same kit you do, so the PvP loop is finally watchable/testable."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/match-mode.js",
+      "what": "Added spawnProjectile:(o)=>this.projectiles.spawn(o) to the bot context in _driveBots, and extended _onProjectileHit so bot-owned projectiles apply their soak damage (same path as the local player) instead of being deferred as 'remote'.",
+      "why": "Director D1 wiring. Without this the bot's projectile would render but deal no damage."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/weapon.js",
+      "what": "Deleted the dead hitscan code: WEAPON config, traceShot, raySphere, Magazine class, buildViewModel. Kept only applySpread (shared by player and bot aim).",
+      "why": "Director D1 acceptance: 'weapon.js's Magazine/buildViewModel can be deleted without breaking the build.' The carbine was bot-only dead combat code masquerading as a feature."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/weapons/tools.js",
+      "what": "leafblade.soak 100 -> 34.",
+      "why": "Director D2 (partial): kills the recurring 'saber is a one-tap kill' critique. A full-HP enemy now needs >=3 clean saber hits to go down, matching the existing 100-hp/soak model. Stamina/whiff-punish (rest of D2) deferred until D1 makes the loop observable, per the director's own reasoning."
+    }
+  ],
+  "build_passed": true,
+  "build_command": "cd experiences/little-planet && npm install && npm run build",
+  "build_modules": 56,
+  "directives_done": ["D1", "D2-leafblade-soak"],
+  "repo": "bla-keks-world",
+  "branch": "studio/engineer-2026-08-19"
+}
