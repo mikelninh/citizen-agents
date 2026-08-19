@@ -1,0 +1,70 @@
+{
+  "date": "2026-08-19",
+  "items": 5,
+  "pledges_vs_reality": [
+    {
+      "actor": "Global (all Paris Agreement signatories + 3000+ corporates)",
+      "pledge": "Net zero / Paris-aligned emission cuts",
+      "reality": "Energy-related CO2 rose ~145 Mt in 2025 to a record 38.4 Gt, 5% above 2019",
+      "gap_number": "+145 Mt in 2025; record 38.4 Gt",
+      "source": "https://www.iea.org/reports/global-energy-review-2026/co2-emissions"
+    },
+    {
+      "actor": "National governments (NDCs)",
+      "pledge": "Official 2030 and 2035 NDC targets",
+      "reality": "Target gap 26-29 Gt CO2e (2030) and 26-31 Gt CO2e (2035); implementation gap 29-32 Gt (2030) and 31-37 Gt (2035) vs 1.5C pathway of 27 Gt (2030) / 21 Gt (2035)",
+      "gap_number": "26-31 Gt CO2e target gap in 2035",
+      "source": "https://climateactiontracker.org/global/emissions-gaps/"
+    },
+    {
+      "actor": "UK Government",
+      "pledge": "2030 NDC: at least -68% vs 1990; Net Zero by 2050",
+      "reality": "Emissions fell 1.8% in 2025 to 407 MtCO2e (-50% vs 1990), but CCC finds a significant gap between the CBGDP plan and the 2030 NDC; pace of reduction must almost double. Surface transport emissions +2.7% in 2025; electricity supply emissions did not fall",
+      "gap_number": "407 MtCO2e in 2025; -1.8% y/y; pace must nearly double",
+      "source": "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026-report-to-parliament/"
+    },
+    {
+      "actor": "Oil and gas majors (incl. BP, API, IETA)",
+      "pledge": "Net-zero targets supported by carbon credits",
+      "reality": "Over USD 273 million spent 2005-2026 lobbying to weaken California and US federal carbon market oversight and dilute anti-greenwashing rules",
+      "gap_number": "USD 273 million lobbying 2005-2026",
+      "source": "https://carbonmarketwatch.org/2026/06/17/oil-spill-2-fossil-fuel-interests-pollute-us-carbon-market-rules/"
+    },
+    {
+      "actor": "3600+ corporates with net-zero pledges",
+      "pledge": "Corporate net-zero / carbon-neutrality claims",
+      "reality": "96% (3,455 companies) show at least one greenwashing indicator: long horizons, offset reliance, incomplete accounting",
+      "gap_number": "96% / 3,455 companies flagged",
+      "source": "https://www.nature.com/articles/s44168-026-00346-6"
+    }
+  ],
+  "highlights": [
+    "IEA: energy CO2 at record 38.4 Gt in 2025 (+145 Mt), 5% above 2019",
+    "Climate Action Tracker: 26-31 Gt CO2e still missing in 2035 even if all pledges are met",
+    "UK CCC (24 Jun 2026): emissions 407 MtCO2e, but 2030 NDC gap significant; pace must nearly double",
+    "Carbon Market Watch Oil Spill 2: USD 273m fossil lobbying against anti-greenwashing rules",
+    "npj Climate Action study: 96% of companies show at least one greenwashing red flag"
+  ],
+  "sources": [
+    "https://www.iea.org/reports/global-energy-review-2026/co2-emissions",
+    "https://www.iea.org/reports/global-energy-review-2025/co2-emissions",
+    "https://climateactiontracker.org/global/emissions-gaps/",
+    "https://climateactiontracker.org/publications/warming-projections-global-update-2025/",
+    "https://www.unep.org/resources/emissions-gap-report-2025",
+    "https://www.theccc.org.uk/publication/progress-in-reducing-emissions-2026-report-to-parliament/",
+    "https://carbonmarketwatch.org/2026/06/17/oil-spill-2-fossil-fuel-interests-pollute-us-carbon-market-rules/",
+    "https://carbonmarketwatch.org/publications/oil-spill-2/",
+    "https://www.nature.com/articles/s44168-026-00346-6",
+    "https://climateclaimswatch.org/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/climate-watch-2026-08-19",
+    "Researched IEA, Climate Action Tracker, UK CCC, Carbon Market Watch, npj Climate Action",
+    "Wrote bilingual (DE/EN) digest agent-digests/climate-watch-2026-08-19.md",
+    "Wrote log agent-logs/climate-watch-2026-08-19.json",
+    "Committed and pushed branch; opened PR for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/climate-watch-2026-08-19"
+}
