@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-20",
+  "windows_found": 3,
+  "deadlines": [
+    "2026-09-23 — EU EIT call for evidence (Have your say)",
+    "rolling — Bundestag public committee hearings (register per session)",
+    "varies — BMWE ongoing legislative procedures / draft bills"
+  ],
+  "highlights": [
+    "EU consultation on the future of the European Institute of Innovation and Technology (EIT) open until 23 Sep 2026",
+    "Bundestag committees running public hearings (health, environment, justice) with rolling citizen registration",
+    "BMWE actively publishing draft bills for consultation as of 18 Aug 2026"
+  ],
+  "sources": [
+    "https://ec.europa.eu/info/law/better-regulation/",
+    "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/commission-seeks-feedback-future-european-innovation-act-2025-07-09_en",
+    "https://www.bundestag.de/ausschuesse",
+    "https://www.bundestag.de/ausschuesse/gesundheit/anhoerungen",
+    "https://www.bundestag.de/ausschuesse/umwelt/sitzungen",
+    "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen",
+    "https://www.bundeswirtschaftsministerium.de/Navigation/DE/Service/Stellungnahmen/Aktuelle-Gesetzgebungsverfahren/aktuelle-gesetzgebungsverfahren.html",
+    "https://www.bundesumweltministerium.de/gesetz/referentenentwurf-eines-dritten-gesetzes-zur-aenderung-des-brennstoffemissions-handelsgesetzes"
+  ],
+  "actions_taken": [
+    "Fresh clone of citizen-agents",
+    "Created branch agent/consultation-2026-08-20",
+    "Researched Bundestag hearings, EU Have Your Say, and German ministry draft bills",
+    "Wrote bilingual digest and JSON log",
+    "Committed, pushed branch and opened PR for human review"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/consultation-2026-08-20"
+}
