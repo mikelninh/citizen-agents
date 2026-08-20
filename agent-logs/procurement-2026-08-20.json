@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-20",
+  "items": 6,
+  "anomalies": 5,
+  "total_value_eur": null,
+  "highlights": [
+    "Rechnungshof BW (Drucksache 18/307): 60 % Vergabefehler bei 111 geprueften, oeffentlich gefoerderten Baumasnahmen (2016-2023); Gesamtvolumen ~3,9 Mrd. EUR, ~670 Mio. EUR Landesmittel, Rueckforderung nur in 2 von 67 Faellen. [ANOMALIE HOCH]",
+    "Bundesrechnungshof kritisiert gelockerte Vergabepraxis: >80 % freihaendige Vergabe bei Dienstleistung/Lieferung, Wettbewerb/Transparenz eingeschraenkt; mehrere Laender verlaengern weiter. [ANOMALIE MITTEL]",
+    "Vergabebeschleunigungsgesetz 2026 in Kraft (Bundestag 23.04.2026, Drs. 21/1934 / 21/5525): schnellere, einfachere Vergabe = hoeheres Korruptionsrisiko. [HINWEIS]",
+    "Neue EU-Schwellenwerte ab 01.01.2026 (VO (EU) 2025/2150-2152): Bau 5.404.000 EUR, Liefer/Dienst zentral 140.000, uebrige 216.000, Sektoren 432.000 EUR. [INFO]",
+    "Berliner Vergabegesetz (28.07.2026): hoehere Wertgrenzen + strengere Tariftreue; IHK kritisiert. [HINWEIS]",
+    "Preispruefstatistik 2025 (17.08.2026): >25 % der geprueften oeffentlichen Auftraege mit Rechnungskuerzungen/Rueckforderungen. [ANOMALIE HOCH]"
+  ],
+  "sources": [
+    "https://blog.cosinex.de/2026/08/07/rechnungshof-bw-vergaberecht-private-foerderempfaenger/",
+    "https://www.landtag-bw.de/resource/blob/647562/bd2fab81c935dc0fab7753b0922f8faf/18_0307_D.pdf",
+    "https://www.deutschlandfunk.de/bundesrechnungshof-kritisiert-gelockerte-vergabepraxis-100.html",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw17-de-vergaben-1166782",
+    "https://vergabeblog.de/2026-04-24/bundestag-ja-zur-vereinfachung-und-digitalisierung-von-vergabeverfahren/",
+    "https://www.vergabe24.de/service/news/eu-schwellenwerte-2026-oeffentliche-vergabe/",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/?uri=CELEX%3A32025R2152",
+    "https://www.vergabe24.de/service/news/berliner-vergabegesetz-wertgrenzen/",
+    "https://www.vergabe24.de/service/news/preispruefstatistik-rechnungskuerzungen-oeffentliche-auftraege/"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/procurement-2026-08-20",
+    "targeted web research on procurement news, Rechnungshof findings and EU/Bund/Land threshold changes",
+    "wrote agent-digests/procurement-2026-08-20.md (bilingual DE/EN, 6 items, 5 anomaly flags)",
+    "wrote agent-logs/procurement-2026-08-20.json",
+    "committed and pushed branch",
+    "opened PR for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/procurement-2026-08-20"
+}
