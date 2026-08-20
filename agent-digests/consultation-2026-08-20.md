@@ -25,7 +25,7 @@ Offene Beteiligungsfenster für Bürgerinnen und Bürger. Jedes Fenster braucht 
 - **Effective:** Feedback informs an upcoming EU proposal.
 - **Deadline:** 23 September 2026.
 - **Who's affected:** All EU citizens, students, founders, universities and regions.
-- **How:** Via the "Have your say" portal (https://ec.europa.eu/info/law/better-regulation/) — register with an EU login and fill in the feedback form. Anyone may take part.
+- **How:** Via the Commission's "Have your say" portal (see sources) — register with an EU login and fill in the feedback form. Anyone may take part.
 - **Citizen tip:** As an EU citizen I welcome the public debate on the future of the EIT. Innovation should benefit not only large firms but also small start-ups, universities and regions away from big cities. I would like simpler, more transparent application procedures so people without a large administrative apparatus can take part. It is also important to me that innovation funding is tied to social value — such as climate protection, health and digital participation. Please make sure the results are publicly accessible. I support stronger involvement of citizens in innovation decisions.
 
 ---
