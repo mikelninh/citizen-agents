@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-21",
+  "repo": "blakeks-world",
+  "branch": "studio/qa-2026-08-21",
+  "target_branch_tested": "studio/engineer-2026-08-19",
+  "build_passed": true,
+  "build_command": "cd experiences/little-planet && npm install --no-audit --no-fund && npm run build",
+  "build_modules": 56,
+  "build_output_tail": "dist/assets/index-BzpUUyRi.js 925.42 kB (gzip 254.94 kB); vite built in 2.99s; exit 0 (only the >500kB chunk-size warning, non-blocking)",
+  "server_booted": true,
+  "server_command": "node server/node.js (experiences/little-planet)",
+  "server_output": "🍪 Bla Keks World server on :8787 — http://localhost:8787 ; HTTP 200 on GET /",
+  "tests_run": [],
+  "tests_note": "experiences/little-planet has no `npm test` script. Root repo `npm test` (babylon/phaser game: check/check:duel/check:arena/check:units/build) was NOT executed — the change is confined to experiences/little-planet and root deps were not installed in this ephemeral environment.",
+  "issues_found": [
+    {
+      "severity": "HIGH",
+      "file": "experiences/little-planet/src/modes/match-mode.js",
+      "location": "_onProjectileHit — bot-owned branch (~line 1070)",
+      "issue": "The engineer's D1 made bots fire real c.spawnProjectile shots, but _onProjectileHit now applies those hits via `this._request({ type: 'hit', target: target.id, damage: item.damage })` with NO fromBotId. The old c.onHit callback passed `b.netId` as the second arg; the new path drops it. Consequences: (1) OFFLINE solo/2p-vs-bots: _request → sim.request('local', evt), so the bot's hit resolves with shooter = local player. Because match.js assigns teams by join order (local player = blue, i=0) and a red bot's shot on the blue player is now a same-team pair, _hit() returns early on `target.team === shooter.team` — BOT PROJECTILES DO ZERO DAMAGE TO THE HUMAN IN SOLO PLAY. (2) Bot-vs-bot downs instead increment the human's `kills` (shooter.kills++ on local). (3) ONLINE (host): _request → net.event(evt) instead of net.botEvent(item.owner, evt), so the server credits the kill to the host and validates against the wrong author.",
+      "suggestion": "In the bot-owned branch pass item.owner as the second arg, exactly like the removed callback did: `this._request({ type: 'hit', target: target.id, damage: item.damage }, item.owner);` (guard it to the `ownerIsBot` case). This yields offline sim.request(item.owner, …) and online net.botEvent(item.owner, …), restoring correct attribution and unblocking bot damage to the player. One-line fix."
+    },
+    {
+      "severity": "MEDIUM",
+      "file": "experiences/little-planet/src/modes/match-mode.js",
+      "location": "_onProjectileHit / projectiles.update across clients",
+      "issue": "ownerIsBot is true on EVERY client (bots live in this.bots everywhere). If bot projectiles are replicated to clients (not host-only), each client that simulates a bot projectile independently calls _request for the same hit, which could apply/emit the down multiple times and fire multiple net.events.",
+      "suggestion": "Confirm bot projectiles are spawned/owned only on the host. On non-host clients, treat bot-owned projectiles like remote-human shots (draw only, owner reports), or have the server reconcile duplicate hit events. Requires a real 2+ client networked playtest to confirm."
+    },
+    {
+      "severity": "LOW",
+      "file": "experiences/little-planet/src/modes/match-mode.js (line ~762) & botbrain.js (doc)",
+      "location": "bot context `onHit`",
+      "issue": "The bot context still defines `onHit: (b, target, damage) => this._request({...}, b.netId)`, but botShoot no longer calls c.onHit (it now uses c.spawnProjectile). Harmless dead code / stale contract.",
+      "suggestion": "Remove onHit from the bot context (and its doc comment) now that the projectile pipeline handles bot damage."
+    }
+  ],
+  "untested": [
+    "Actual gameplay feel / combat readability (automated QA cannot playtest).",
+    "Multi-client networked match — the fromBotId fix (HIGH) is unverified in a real 2+ player session; bot-projectile attribution and the MEDIUM double-application risk need a networked playtest.",
+    "Root repo `npm test` suite (babylon/phaser game: check / check:duel / check:arena / check:units / build) — deps not installed here; change is confined to experiences/little-planet.",
+    "Whether bots now actually threaten the player once the fromBotId fix lands (depends on the fix)."
+  ],
+  "verdict": "HOLD"
+}
