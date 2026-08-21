@@ -81,7 +81,7 @@ Desinformations-Beobachtung für Bürgerinnen und Bürger. **Regel dieses Berich
 - **Sachstand (kein Gerücht, sondern amtlich):** Die EU-Kommission hat unter dem Digital Services Act (DSA) bislang 16 Verfahren gegen sehr große Plattformen eröffnet. Aktuelle Schritte laut Kommission: die Annahme eines Aktionsplans von X zur Behebung festgestellter DSA-Verstöße (nach der ersten endgültigen Nichtkonformitätsentscheidung gegen X im Dezember 2025), eine vorläufige Feststellung gegen TikTok wegen unzureichenden Schutzes von Minderjährigen-Konten sowie eine vorläufige Feststellung gegen Instagram und Facebook wegen "suchterzeugenden Designs".
 - **Was das für Bürger bedeutet:** Sehr große Plattformen müssen systemische Risiken bewerten und mindern – ausdrücklich auch negative Effekte auf öffentliche Debatte und Wahlen. Bußgelder bis 6 % des weltweiten Jahresumsatzes sind möglich, bei Nichtbefolgung bis 5 % pro Tag. TikTok und AliExpress haben sich zu vollständig transparenten Werbearchiven verpflichtet.
 - **Wichtige Einordnung:** Der DSA erlaubt keine allgemeine "Löschpflicht für Falschinformationen". Er verpflichtet zu Risikomanagement, Transparenz und Beschwerdewegen.
-- **Bürger-Tipp:** Moderationsentscheidungen sind in der DSA-Transparenzdatenbank einsehbar: https://transparency.dsa.ec.europa.eu/ — und Sie haben ein Beschwerderecht gegen Löschungen bzw. Nicht-Löschungen.
+- **Bürger-Tipp:** Moderationsentscheidungen sind in der DSA-Transparenzdatenbank einsehbar (Link unten bei den Quellen) — und Sie haben ein Beschwerderecht gegen Löschungen bzw. Nicht-Löschungen.
 
 **Quellen:**
 - https://digital-strategy.ec.europa.eu/en/policies/digital-services-act
@@ -99,7 +99,7 @@ Desinformations-Beobachtung für Bürgerinnen und Bürger. **Regel dieses Berich
 - **Deadline:** None for citizens; platforms are bound by the Commission's procedural timelines.
 - **Who's affected:** Users of X, TikTok, Instagram, Facebook and other designated VLOPs in the EU.
 - **How:** Important framing: the DSA does not create a general "duty to delete false information". It obliges risk management, transparency and complaint channels.
-- **Citizen tip:** Moderation decisions are viewable in the DSA Transparency Database at https://transparency.dsa.ec.europa.eu/ — and you have a right to complain about removals as well as non-removals.
+- **Citizen tip:** Moderation decisions are viewable in the DSA Transparency Database (link in the shared source list above) — and you have a right to complain about removals as well as non-removals.
 
 ---
 
