@@ -1,0 +1,99 @@
+{
+  "date": "2026-08-21",
+  "items": 5,
+  "pledges_vs_reality": [
+    {
+      "id": 1,
+      "topic": "IEA energy CO2 emissions 2025",
+      "pledge": "States and corporations pledge net zero; global energy CO2 was to fall.",
+      "reality": "Energy-related CO2 rose ~145 Mt to a record ~38.4 Gt, 5% above 2019; gas +85 Mt drove growth.",
+      "metric": "+145 Mt to 38.4 Gt; +5% vs 2019",
+      "sources": [
+        "https://www.iea.org/reports/global-energy-review-2026/co2-emissions",
+        "https://www.iea.org/reports/global-energy-review-2026"
+      ]
+    },
+    {
+      "id": 2,
+      "topic": "UNEP Emissions Gap Report 2025",
+      "pledge": "Paris goal: limit warming to 1.5C via NDCs.",
+      "reality": "Full NDC implementation => 2.3-2.5C; current policies => 2.8C. New NDCs barely moved the needle (0.1C method, 0.1C US exit). UNFCCC synthesis: +16% emissions by 2030 vs 2010.",
+      "metric": "2.3-2.5C full NDC; 2.8C current policy; +16% by 2030",
+      "sources": [
+        "https://www.unep.org/resources/emissions-gap-report-2025",
+        "https://www.wri.org/insights/assessing-2025-ndcs",
+        "https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/2025-ndc-synthesis-report"
+      ]
+    },
+    {
+      "id": 3,
+      "topic": "EU ECGT greenwashing directive",
+      "pledge": "Crack down on vague green claims.",
+      "reality": "Directive (EU) 2024/825 applies from 27 Sep 2026; generic claims ('green','eco') banned without proven performance; fines up to 10% turnover.",
+      "metric": "Effective 27 Sep 2026; up to 10% turnover fine",
+      "sources": [
+        "https://climatejargonbuster.ie/kb/greenwashing-directive/",
+        "https://www.aoshearman.com/en/insights/green-claims-under-the-microscope-new-rules-for-eu-and-noneu-businesses",
+        "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+      ]
+    },
+    {
+      "id": 4,
+      "topic": "COP30 Belem outcome",
+      "pledge": "Close the ambition gap at COP30.",
+      "reality": "119 countries (74% emissions) submitted new NDCs; Global Mutirao + Belem Mission to 1.5 launched, but focus on implementation, not tighter binding targets. Adaptation finance goal tripled.",
+      "metric": "119 countries / 74% emissions; adaptation finance x3",
+      "sources": [
+        "https://www.wri.org/insights/cop30-outcomes-next-steps",
+        "https://www.c2es.org/document/key-negotiations-related-outcomes-of-the-un-climate-conference-in-belem/",
+        "https://unfccc.int/cop30"
+      ]
+    },
+    {
+      "id": 5,
+      "topic": "Corporate net-zero pledges (Carbon Market Watch)",
+      "pledge": "24 major corporations claim credible net-zero / carbon-neutral paths.",
+      "reality": "Plan only 36% real footprint cut by net-zero date; neutrality claims cover <2-3% of actual emissions (Microsoft, Apple, DHL <2%).",
+      "metric": "36% planned cut; <2-3% coverage of neutrality claims",
+      "sources": [
+        "https://carbonmarketwatch.org/2023/03/09/zeroing-in-on-greenwashing-how-corporations-misuse-net-zero-pledges/",
+        "https://climateclaimswatch.org/",
+        "https://www.nature.com/articles/s44168-026-00346-6"
+      ]
+    }
+  ],
+  "highlights": [
+    "IEA: global energy CO2 hit a record ~38.4 Gt in 2025, still rising despite net-zero pledges.",
+    "UNEP: full NDC implementation still leaves us at 2.3-2.5C; current policies 2.8C.",
+    "EU greenwashing ban (ECGT) takes effect 27 Sep 2026 with fines up to 10% turnover.",
+    "COP30 produced implementation tools but left the ambition gap open; 119 countries submitted NDCs.",
+    "Carbon Market Watch: 24 firms plan only 36% real cuts, hiding the rest behind offsets."
+  ],
+  "sources": [
+    "https://www.iea.org/reports/global-energy-review-2026/co2-emissions",
+    "https://www.iea.org/reports/global-energy-review-2026",
+    "https://www.unep.org/resources/emissions-gap-report-2025",
+    "https://www.wri.org/insights/assessing-2025-ndcs",
+    "https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/2025-ndc-synthesis-report",
+    "https://climatejargonbuster.ie/kb/greenwashing-directive/",
+    "https://www.aoshearman.com/en/insights/green-claims-under-the-microscope-new-rules-for-eu-and-noneu-businesses",
+    "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+    "https://www.wri.org/insights/cop30-outcomes-next-steps",
+    "https://www.c2es.org/document/key-negotiations-related-outcomes-of-the-un-climate-conference-in-belem/",
+    "https://unfccc.int/cop30",
+    "https://carbonmarketwatch.org/2023/03/09/zeroing-in-on-greenwashing-how-corporations-misuse-net-zero-pledges/",
+    "https://climateclaimswatch.org/",
+    "https://www.nature.com/articles/s44168-026-00346-6"
+  ],
+  "actions_taken": [
+    "Cloned mikelninh/citizen-agents to temp dir",
+    "Created branch agent/climate-watch-2026-08-21",
+    "Researched IEA, UNEP, UNFCCC, EU ECGT, COP30, Carbon Market Watch via web",
+    "Wrote agent-digests/climate-watch-2026-08-21.md (bilingual DE/EN, 5 items)",
+    "Wrote agent-logs/climate-watch-2026-08-21.json",
+    "Committed and pushed branch",
+    "Opened PR against main (human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/climate-watch-2026-08-21"
+}
