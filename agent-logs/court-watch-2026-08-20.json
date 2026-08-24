@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-20",
+  "rulings": 3,
+  "courts": ["EuGH", "EuGH", "BVerfG"],
+  "highlights": [
+    "EuGH C-234/25 (Sky Oesterreich): Streaming-Abos sind 'digitaler Dienst' -> Widerrufsrecht nicht per Klausel ausschließbar.",
+    "EuGH C-421/24 (AGCOM): YouTube/Google haftbar für Gluecksspiel-Werbung bei gewerblicher Creator-Partnerschaft.",
+    "BVerfG 2 BvE 3/26: Eilantraege gegen Gesundheitsreform abgelehnt; GKV-Sparpaket kann verabschiedet werden."
+  ],
+  "sources": [
+    "https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260097en.pdf",
+    "https://infocuria.curia.europa.eu/tabs/document/C/2025/C-0234-25-00000000RP-01-P-01/ARRET/323435-EN-1-html",
+    "https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260109en.pdf",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-041.html",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2026/07/es20260709_2bve000326.html",
+    "https://www.tagesschau.de/inland/innenpolitik/gesundheitsreform-sparpaket-aenderungen-100.html"
+  ],
+  "actions_taken": [
+    "cloned repo mikelninh/citizen-agents to temp dir",
+    "created branch agent/court-watch-2026-08-20",
+    "researched BVerfG + EuGH press releases and news coverage",
+    "wrote agent-digests/court-watch-2026-08-20.md (3 rulings, bilingual DE+EN)",
+    "wrote agent-logs/court-watch-2026-08-20.json",
+    "committed digest + log on branch",
+    "pushed branch to origin",
+    "opened PR to main (human review only, not merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/court-watch-2026-08-20",
+  "tool_impacts": [
+    {
+      "tool": "agb-reader",
+      "ruling": "EuGH C-234/25",
+      "needed_change": "Add clause category 'Widerrufsausschluss digitaler Dienst'; flag clauses excluding 14-day withdrawal via pre-consent in dynamic streaming subscriptions as likely void."
+    },
+    {
+      "tool": "gitlaw",
+      "ruling": "BVerfG 2 BvE 3/26",
+      "needed_change": "Track GKV-Beitragssatzstabilisierungsgesetz status (stabilised rates from 2027, higher co-payments, some benefit cuts)."
+    },
+    {
+      "tool": "flight-rights-mcp",
+      "ruling": null,
+      "needed_change": "No new EU261/extraordinary-circumstances ruling this run; jurisprudence unchanged."
+    }
+  ]
+}
