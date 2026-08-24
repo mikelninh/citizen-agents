@@ -1,0 +1,39 @@
+{
+  "agent": "meat-dairy",
+  "title": "Meat-Dairy Watch",
+  "date": "2026-08-20",
+  "repo": "citizen-agents",
+  "branch": "agent/meat-dairy-2026-08-20",
+  "items": 5,
+  "lobby_entries": 2,
+  "subsidies_eur": "6.5 Mrd. EUR (GAP 2023/2024, DE, ~300.000 Beguenstigte); ~35 Mrd. EUR gesamt 2023-2027",
+  "highlights": [
+    "BMV (R001861) aktualisierte Lobbyregister-Eintrag am 30.06.2026 und lobbyt gegen das 3. Tierhaltungskennzeichnungs-aenderungsgesetz; Copa-Cogeca EU-Lobby 1,6 Mio. EUR / 530 Treffen.",
+    "GAP: ~6,5 Mrd. EUR/Jahr fliessen nach Deutschland (2023/2024), ~35 Mrd. EUR gesamt 2023-2027.",
+    "Tierhaltungskennzeichnung fuer frisches Schweinefleisch startet erst am 1. Maerz 2026 (Frist erneut verlaengert).",
+    "UBA: Tierhaltung = ~35,5 Mio. t CO2-aeq (68 % der Agrar-Emissionen, ~5,3 % der dt. Treibhausgase); Landwirtschaft gesamt 8,2 %.",
+    "Antibiotika-Verkauf in Tierhaltung 1.706 t (2011) -> 1.144 t (2024), -67 %; Reserveantibiotika-Anteil laut DUH ~20 % (stagnierend)."
+  ],
+  "sources": [
+    "https://www.lobbyregister.bundestag.de/suche/R001861",
+    "https://www.euinsider.eu/news/eu-agricultural-lobbying-brussels",
+    "https://www.desmog.com/2022/01/25/eu-investigating-agribusiness-lobby-group-copa-cogeca-over-potential-transparency-breach/",
+    "https://www.bmleh.de/SharedDocs/Pressemitteilungen/DE/2025/043-agrarzahlungen.html",
+    "https://www.dvs-gap-netzwerk.de/foerderung/gemeinsame-agrarpolitik-der-eu-2023-2027/die-gap-2023-2027/",
+    "https://www.bmleh.de/SharedDocs/Pressemitteilungen/DE/2025/041-tierhaltungskennzeichnung.html",
+    "https://www.umweltbundesamt.de/themen/landwirtschaft/umweltfreundlich-gestalten/fragen-antworten-zu-tierhaltung-ernaehrung",
+    "https://www.umweltbundesamt.de/themen/landwirtschaft/landwirtschaft-umweltfreundlich-gestalten/klimaschutz-in-der-landwirtschaft",
+    "https://www.bmleh.de/DE/themen/tiere/tierarzneimittel/lagebild-antibiotikaeinsatz-bei-tieren-2024.html",
+    "https://www.duh.de/informieren/landwirtschaft-und-ernaehrung/antibiotika-in-der-massentierhaltung/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/meat-dairy-2026-08-20",
+    "Researched lobbying (Lobbyregister BMV R001861, EU Transparency Register Copa-Cogeca), subsidies (GAP DE), policy (Tierhaltungskennzeichnung), science (UBA emissions, antibiotics)",
+    "Wrote agent-digests/meat-dairy-2026-08-20.md (5 bilingual findings)",
+    "Wrote agent-logs/meat-dairy-2026-08-20.json",
+    "Committed digest + log on branch agent/meat-dairy-2026-08-20",
+    "Pushed branch to origin",
+    "Opened PR against main (human review only; no self-merge)"
+  ]
+}
