@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-20",
+  "items": 4,
+  "narratives": [
+    "Russische 'Matryoshka'-Desinformation mit gefakten BBC/ARD-Videos gegen deutsche Politiker vor Landtagswahlen",
+    "AliExpress verkauft illegal/unsichere/falsche Ware ohne DSA-Risikopruefung; TikTok-Minderjaehrige mit oeffentlichen Konten",
+    "Verschwörung: HAARP-Anlage in Alaska habe Japan-Erdbeben (28.07.2026) ausgeloest",
+    "Smart Meter / 'Directed Energy Weapons' haetten Spokane-Waldbraende (Aug 2026) verursacht"
+  ],
+  "debunks": [
+    "Vier deutsche Sicherheitsquellen (Reuters) bestaetigen zentrale russische Steuerung; Vorwuerfe gegen Politiker erfunden; Russische Botschaft bestreitet",
+    "EU-Kommission: AliExpress 550 Mio. EUR Strafe (20.07.2026) + TikTok vorlaeufige Feststellungen zu Minderjaehrigenschutz (24.07.2026) - beides DSA-Verstoss",
+    "JMA/USGS: natuerliche strike-slip-Verwerfung; HAARP-Direktorin + Seismologen: keine kausale Verbindung, ~6.500 km Entfernung",
+    "NWS extreme Feuerbedingungen; Brandstiftungs-Verdaechtiger festgenommen; Feuer-Experten: keine Belege fuer Smart-Meter/DEW; Avista dementiert"
+  ],
+  "sources": [
+    "https://www.reuters.com/world/russia-steps-up-disinformation-campaigns-ahead-german-elections-security-sources-2026-08-05/",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-fines-aliexpress-eu550-million-breaching-digital-services-act",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminary-finds-tiktok-breach-digital-services-act-failing-ensure-safe-accounts-minors",
+    "https://digital-strategy.ec.europa.eu/en/policies/digital-services-act",
+    "https://factcheck.afp.com/doc.afp.com.C3YL7NR",
+    "https://factcheck.afp.com/doc.afp.com.C4CR6WE"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/truth-watch-2026-08-20",
+    "researched IFCN/AFP/Correctiv/dpa/Full Fact fact-checks and EU DSA enforcement",
+    "wrote agent-digests/truth-watch-2026-08-20.md (4 items, DE+EN, each with debunk+source)",
+    "wrote agent-logs/truth-watch-2026-08-20.json",
+    "committed artifacts",
+    "pushed branch agent/truth-watch-2026-08-20",
+    "opened PR against main (human review only; no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/truth-watch-2026-08-20"
+}
