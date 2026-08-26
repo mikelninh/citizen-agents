@@ -1,0 +1,63 @@
+{
+  "date": "2026-08-21",
+  "items": 5,
+  "narratives": [
+    "TikTok video claims Chancellor Merz called a vote of confidence and snap elections are coming (Germany)",
+    "Crime statistics allegedly show Berlin is more criminal than all of Poland",
+    "Fabricated quote: Merkel admitted bringing migrants to Germany to stop right-wing extremists; plus forged Tagesschau report on alleged Russian involvement in the Berlin CSD attack",
+    "Recycled disaster footage: Philippines/Taiwan videos passed off as Indonesia earthquake; Venezuela video passed off as August 2026 Colombia quake",
+    "AI fakes: video of Abdul El-Sayed calling Israel 'colonizers'; video of a SpaceX collision with the Moon"
+  ],
+  "debunks": [
+    "CORRECTIV.Faktencheck 2026-08-20: video misleadingly edited and out of context; no confidence vote, no snap elections",
+    "CORRECTIV.Faktencheck 2026-08-18: Polish and German crime statistics use different recording methods; direct comparison is inadmissible and does not support the claim",
+    "CORRECTIV.Faktencheck 2026-08-12: Merkel never made this statement, quote is fabricated/distorted. CORRECTIV 2026-07-29: the Tagesschau report is a forgery",
+    "AFP Fact Check 2026-08-18: footage originates in other countries or is months-to-a-year old and recycled",
+    "AFP Fact Check 2026-08-17 and 2026-08-07: El-Sayed video is an AI fake; SpaceX Moon collision video is fabricated"
+  ],
+  "policy_context": [
+    "EU Commission has opened 16 DSA proceedings against very large platforms so far",
+    "Commission accepted X's action plan to terminate DSA breaches, following the first final non-compliance decision against X in December 2025",
+    "Preliminary finding against TikTok for failing to ensure safe accounts for minors",
+    "Preliminary finding against Instagram and Facebook over addictive design",
+    "TikTok and AliExpress committed to fully transparent advertising repositories",
+    "Fines up to 6% of worldwide annual turnover; up to 5% per day for non-compliance",
+    "DSA imposes risk management, transparency and complaint channels - not a general duty to delete false information",
+    "CORRECTIV 2026-06-12: X chatbot Grok and Community Notes both wrongly treated an AI-generated fake as genuine"
+  ],
+  "sources": [
+    "https://correctiv.org/faktencheck/2026/08/20/dobrindt-video-aus-dem-kontext-gerissen-keine-vertrauensfrage-von-merz/",
+    "https://correctiv.org/faktencheck/2026/08/18/statistiken-belegen-nicht-dass-berlin-krimineller-ist-als-polen/",
+    "https://correctiv.org/faktencheck/politik/2026/08/12/nein-merkel-sagte-nicht-sie-habe-migranten-ins-land-geholt-um-rechtsextreme-zu-stoppen/",
+    "https://correctiv.org/faktencheck/2026/07/29/csd-anschlag-tagesschau-meldung-zu-angeblicher-russischer-beteiligung-ist-gefaelscht/",
+    "https://correctiv.org/faktencheck/2026/06/12/usa-botschaft-in-kiew-wurde-nicht-evakuiert-grok-und-community-notes-liegen-bei-ki-fake-falsch/",
+    "https://correctiv.org/faktencheck/",
+    "https://factcheck.afp.com/",
+    "https://factcheck.afp.com/doc.afp.com.C4TW2KE",
+    "https://factcheck.afp.com/doc.afp.com.C4U73NR",
+    "https://factcheck.afp.com/doc.afp.com.C4VJ363",
+    "https://factcheck.afp.com/doc.afp.com.C46B6WF",
+    "https://digital-strategy.ec.europa.eu/en/policies/digital-services-act",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminary-finds-tiktok-breach-digital-services-act-failing-ensure-safe-accounts-minors",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminarily-finds-addictive-design-instagram-and-facebook-breach-digital-services-act",
+    "https://digital-strategy.ec.europa.eu/en/policies/dsa-impact-platforms",
+    "https://transparency.dsa.ec.europa.eu/",
+    "https://eulawanalysis.blogspot.com/2026/02/digital-services-act-summary-and-links.html"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/truth-watch-2026-08-21",
+    "Researched CORRECTIV.Faktencheck, AFP Fact Check and EU digital-strategy DSA enforcement pages",
+    "Wrote bilingual (DE + EN) citizen digest to agent-digests/truth-watch-2026-08-21.md",
+    "Wrote machine log to agent-logs/truth-watch-2026-08-21.json",
+    "Committed and pushed branch",
+    "Opened pull request for human review - NOT merged"
+  ],
+  "guardrails": {
+    "every_narrative_paired_with_debunk": true,
+    "merged_by_agent": false,
+    "files_touched_outside_allowed_dirs": false
+  },
+  "repo": "citizen-agents",
+  "branch": "agent/truth-watch-2026-08-21"
+}
