@@ -9,14 +9,23 @@ on:
       - democracy-radar.html
       - replay-signals.json
       - missed-opportunities.html
+      - backtest-archive.json
+      - backtest-core.mjs
+      - example-organisations.json
+      - organisation-backtest.html
+      - delivery-contract.json
+      - delivery.html
+      - agent-digests/**
       - impact-core.mjs
       - organisation-impact.html
       - tools/build-org-intelligence.mjs
       - tools/build-democracy-radar.mjs
+      - tools/build-backtest-archive.mjs
       - tools/org-intelligence.test.mjs
       - tools/impact-core.test.mjs
       - tools/democracy-radar.test.mjs
       - tools/historical-replay.test.mjs
+      - tools/operational-awareness.test.mjs
       - api/v1/**
       - organisations.html
       - alerts.html
@@ -33,14 +42,23 @@ on:
       - democracy-radar.html
       - replay-signals.json
       - missed-opportunities.html
+      - backtest-archive.json
+      - backtest-core.mjs
+      - example-organisations.json
+      - organisation-backtest.html
+      - delivery-contract.json
+      - delivery.html
+      - agent-digests/**
       - impact-core.mjs
       - organisation-impact.html
       - tools/build-org-intelligence.mjs
       - tools/build-democracy-radar.mjs
+      - tools/build-backtest-archive.mjs
       - tools/org-intelligence.test.mjs
       - tools/impact-core.test.mjs
       - tools/democracy-radar.test.mjs
       - tools/historical-replay.test.mjs
+      - tools/operational-awareness.test.mjs
       - api/v1/**
       - organisations.html
       - alerts.html
@@ -64,8 +82,10 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
+      - name: Build rolling operational-awareness archive
+        run: node tools/build-backtest-archive.mjs
       - name: Test intelligence + usefulness contracts
-        run: node --test tools/org-intelligence.test.mjs tools/impact-core.test.mjs tools/democracy-radar.test.mjs tools/historical-replay.test.mjs
+        run: node --test tools/org-intelligence.test.mjs tools/impact-core.test.mjs tools/democracy-radar.test.mjs tools/historical-replay.test.mjs tools/operational-awareness.test.mjs
       - name: Build Civic Intelligence API
         run: node tools/build-org-intelligence.mjs
       - name: Build combined Democracy Radar API
@@ -86,6 +106,12 @@ jobs:
           test -s democracy-radar.html
           test -s replay-signals.json
           test -s missed-opportunities.html
+          test -s backtest-archive.json
+          test -s backtest-core.mjs
+          test -s example-organisations.json
+          test -s organisation-backtest.html
+          test -s delivery-contract.json
+          test -s delivery.html
           grep -q 'citizen-intelligence/1.0' api/v1/changes.json
           grep -q 'citizen-democracy-radar/1.0' api/v1/radar.json
           grep -q 'external_or_consequential_action' api/v1/radar.json
@@ -99,20 +125,26 @@ jobs:
           grep -q 'no_inferred_misses' replay-signals.json
           grep -q 'Bewertungen bleiben' missed-opportunities.html
           grep -q '<b>lokal</b>' missed-opportunities.html
+          grep -q 'citizen-operational-awareness-archive/1.0' backtest-archive.json
+          grep -q 'no_claim_of_90_day_coverage' backtest-archive.json
+          grep -q 'Operational Awareness Backtest' organisation-backtest.html
+          grep -q 'Kolleg:in challengen' organisation-backtest.html
+          grep -q 'zero_setup_claim_only_for' delivery-contract.json
+          grep -q 'X / @CitizenAgentsBot' delivery.html
           grep -q 'Proof of usefulness' organisation-impact.html
           grep -q 'Know what matters' democracy-radar.html
           grep -q 'coverage_complete' democracy-signals.json
           grep -q 'programme_budgets_are_not_customer_value' impact-core.mjs
           grep -q 'guaranteed_roi: false' impact-core.mjs
-      - name: Commit generated API snapshot when source data changed
+      - name: Commit generated API + backtest snapshots when source data changed
         if: github.event_name != 'pull_request'
         run: |
-          if [ -z "$(git status --porcelain -- api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml api/v1/radar.json api/v1/radar.ndjson api/v1/watchdogs.json)" ]; then
+          if [ -z "$(git status --porcelain -- api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml api/v1/radar.json api/v1/radar.ndjson api/v1/watchdogs.json backtest-archive.json)" ]; then
             echo 'Generated outputs already current.'
             exit 0
           fi
           git config user.name 'citizen-agents-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml api/v1/radar.json api/v1/radar.ndjson api/v1/watchdogs.json
-          git commit -m 'chore: refresh democracy radar API snapshot [skip ci]'
+          git add api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml api/v1/radar.json api/v1/radar.ndjson api/v1/watchdogs.json backtest-archive.json
+          git commit -m 'chore: refresh civic intelligence snapshots [skip ci]'
           git push origin HEAD:${GITHUB_REF_NAME}
