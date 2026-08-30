@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mikelninh.github.io/citizen-agents/api/v1/authority-handoff.schema.json",
+  "title": "Citizen Agents → OCN Authority Handoff",
+  "description": "Citizen Agents supplies evidence and a suggested next action. It never grants authority for consequential execution.",
+  "type": "object",
+  "required": ["schema_version", "change_id", "principal_context", "proposed_action", "evidence", "default_authority"],
+  "properties": {
+    "schema_version": { "const": "citizen-ocn-handoff/1.0" },
+    "change_id": { "type": "string", "pattern": "^chg_[a-f0-9]{16}$" },
+    "principal_context": {
+      "type": "object",
+      "description": "Supplied by the consuming organisation; Citizen Agents does not infer identity or entitlement from a public feed."
+    },
+    "proposed_action": {
+      "type": "object",
+      "required": ["purpose", "description"],
+      "properties": {
+        "purpose": { "type": "string" },
+        "description": { "type": "string" },
+        "target_system": { "type": ["string", "null"] }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["sources"],
+      "properties": {
+        "sources": { "type": "array", "items": { "type": "string", "format": "uri" } },
+        "verification_status": { "type": "string" }
+      }
+    },
+    "default_authority": {
+      "type": "object",
+      "required": ["information_read", "prepare_internal", "external_or_consequential_action"],
+      "properties": {
+        "information_read": { "const": "ALLOW" },
+        "prepare_internal": { "const": "ALLOW" },
+        "external_or_consequential_action": { "const": "APPROVAL" }
+      }
+    }
+  }
+}
