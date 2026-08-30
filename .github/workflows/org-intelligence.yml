@@ -97,7 +97,8 @@ jobs:
           grep -q '2-Minuten Replay starten' intelligence-proof.html
           grep -q 'citizen-historical-replay/1.0' replay-signals.json
           grep -q 'no_inferred_misses' replay-signals.json
-          grep -q 'Bewertungen bleiben lokal' missed-opportunities.html
+          grep -q 'Bewertungen bleiben' missed-opportunities.html
+          grep -q '<b>lokal</b>' missed-opportunities.html
           grep -q 'Proof of usefulness' organisation-impact.html
           grep -q 'Know what matters' democracy-radar.html
           grep -q 'coverage_complete' democracy-signals.json
