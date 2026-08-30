@@ -15,6 +15,9 @@ on:
       - organisation-backtest.html
       - delivery-contract.json
       - delivery.html
+      - self-opportunity-profile.json
+      - self-opportunities.json
+      - founder-opportunity-radar.html
       - agent-digests/**
       - impact-core.mjs
       - organisation-impact.html
@@ -48,6 +51,9 @@ on:
       - organisation-backtest.html
       - delivery-contract.json
       - delivery.html
+      - self-opportunity-profile.json
+      - self-opportunities.json
+      - founder-opportunity-radar.html
       - agent-digests/**
       - impact-core.mjs
       - organisation-impact.html
@@ -112,6 +118,9 @@ jobs:
           test -s organisation-backtest.html
           test -s delivery-contract.json
           test -s delivery.html
+          test -s self-opportunity-profile.json
+          test -s self-opportunities.json
+          test -s founder-opportunity-radar.html
           grep -q 'citizen-intelligence/1.0' api/v1/changes.json
           grep -q 'citizen-democracy-radar/1.0' api/v1/radar.json
           grep -q 'external_or_consequential_action' api/v1/radar.json
@@ -131,6 +140,10 @@ jobs:
           grep -q 'Kolleg:in challengen' organisation-backtest.html
           grep -q 'zero_setup_claim_only_for' delivery-contract.json
           grep -q 'X / @CitizenAgentsBot' delivery.html
+          grep -q 'citizen-self-opportunity-profile/1.0' self-opportunity-profile.json
+          grep -q 'citizen-self-opportunities/1.0' self-opportunities.json
+          grep -q 'Founder Opportunity Radar' founder-opportunity-radar.html
+          grep -q 'no_revenue_claim_until_contract_or_payment' self-opportunity-profile.json
           grep -q 'Proof of usefulness' organisation-impact.html
           grep -q 'Know what matters' democracy-radar.html
           grep -q 'coverage_complete' democracy-signals.json
