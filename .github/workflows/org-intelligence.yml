@@ -1,15 +1,25 @@
 name: org-intelligence
 
 on:
-  push:
-    branches:
-      - main
-      - feat/org-intelligence-monetization
+  pull_request:
     paths:
       - breakfast-feed.json
       - tools/build-org-intelligence.mjs
       - tools/org-intelligence.test.mjs
-      - api/v1/openapi.yaml
+      - api/v1/**
+      - organisations.html
+      - alerts.html
+      - reliability.html
+      - intelligence-proof.html
+      - .github/workflows/org-intelligence.yml
+  push:
+    branches:
+      - main
+    paths:
+      - breakfast-feed.json
+      - tools/build-org-intelligence.mjs
+      - tools/org-intelligence.test.mjs
+      - api/v1/**
       - organisations.html
       - alerts.html
       - reliability.html
@@ -28,7 +38,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.ref_name }}
+          ref: ${{ github.event_name == 'pull_request' && github.event.pull_request.head.sha || github.ref_name }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
@@ -46,7 +56,11 @@ jobs:
           grep -q 'external_or_consequential_action' api/v1/changes.json
           grep -q 'Intelligence Proof' organisations.html
           grep -q 'keine Nutzerdaten' organisations.html
+          grep -q 'citizen_intelligence_proof' intelligence-proof.html
+          grep -q 'explicitFollowupConsent' intelligence-proof.html
+          grep -q 'company01-lead-intake' intelligence-proof.html
       - name: Commit generated API snapshot when feed changed
+        if: github.event_name != 'pull_request'
         run: |
           if [ -z "$(git status --porcelain -- api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml)" ]; then
             echo 'Generated outputs already current.'
