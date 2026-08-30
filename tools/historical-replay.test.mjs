@@ -37,8 +37,9 @@ test('lead-day claims are deterministic calendar-day differences', () => {
 test('instant-value UX leads with replay and keeps proof detail secondary', () => {
   assert.match(proofHtml, /2-Minuten Replay starten/);
   assert.match(proofHtml, /Findet Citizen Agents Dinge/);
-  assert.match(proofHtml, /details/);
+  assert.match(proofHtml, /<details>/);
   assert.match(replayHtml, /hätten wir wahrscheinlich verpasst/);
-  assert.match(replayHtml, /Bewertungen bleiben lokal/);
+  assert.match(replayHtml, /Bewertungen bleiben/);
+  assert.match(replayHtml, /<b>lokal<\/b>/);
   assert.match(replayHtml, /Kein behaupteter ROI/);
 });
