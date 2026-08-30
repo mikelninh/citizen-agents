@@ -4,8 +4,16 @@ on:
   pull_request:
     paths:
       - breakfast-feed.json
+      - democracy-signals.json
+      - watchdog-registry.json
+      - democracy-radar.html
+      - impact-core.mjs
+      - organisation-impact.html
       - tools/build-org-intelligence.mjs
+      - tools/build-democracy-radar.mjs
       - tools/org-intelligence.test.mjs
+      - tools/impact-core.test.mjs
+      - tools/democracy-radar.test.mjs
       - api/v1/**
       - organisations.html
       - alerts.html
@@ -17,8 +25,16 @@ on:
       - main
     paths:
       - breakfast-feed.json
+      - democracy-signals.json
+      - watchdog-registry.json
+      - democracy-radar.html
+      - impact-core.mjs
+      - organisation-impact.html
       - tools/build-org-intelligence.mjs
+      - tools/build-democracy-radar.mjs
       - tools/org-intelligence.test.mjs
+      - tools/impact-core.test.mjs
+      - tools/democracy-radar.test.mjs
       - api/v1/**
       - organisations.html
       - alerts.html
@@ -42,32 +58,48 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Test intelligence contract
-        run: node --test tools/org-intelligence.test.mjs
-      - name: Build API, NDJSON, health and RSS outputs
+      - name: Test intelligence + usefulness contracts
+        run: node --test tools/org-intelligence.test.mjs tools/impact-core.test.mjs tools/democracy-radar.test.mjs
+      - name: Build Civic Intelligence API
         run: node tools/build-org-intelligence.mjs
+      - name: Build combined Democracy Radar API
+        run: node tools/build-democracy-radar.mjs
       - name: Verify public product surfaces
         run: |
           test -s api/v1/changes.json
           test -s api/v1/health.json
           test -s api/v1/changes.ndjson
           test -s api/v1/changes.xml
+          test -s api/v1/radar.json
+          test -s api/v1/radar.ndjson
+          test -s api/v1/watchdogs.json
+          test -s impact-core.mjs
+          test -s organisation-impact.html
+          test -s democracy-signals.json
+          test -s watchdog-registry.json
+          test -s democracy-radar.html
           grep -q 'citizen-intelligence/1.0' api/v1/changes.json
-          grep -q 'external_or_consequential_action' api/v1/changes.json
+          grep -q 'citizen-democracy-radar/1.0' api/v1/radar.json
+          grep -q 'external_or_consequential_action' api/v1/radar.json
           grep -q 'Intelligence Proof' organisations.html
           grep -q 'keine Nutzerdaten' organisations.html
           grep -q 'citizen_intelligence_proof' intelligence-proof.html
           grep -q 'explicitFollowupConsent' intelligence-proof.html
           grep -q 'company01-lead-intake' intelligence-proof.html
-      - name: Commit generated API snapshot when feed changed
+          grep -q 'Proof of usefulness' organisation-impact.html
+          grep -q 'Know what matters' democracy-radar.html
+          grep -q 'coverage_complete' democracy-signals.json
+          grep -q 'programme_budgets_are_not_customer_value' impact-core.mjs
+          grep -q 'guaranteed_roi: false' impact-core.mjs
+      - name: Commit generated API snapshot when source data changed
         if: github.event_name != 'pull_request'
         run: |
-          if [ -z "$(git status --porcelain -- api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml)" ]; then
+          if [ -z "$(git status --porcelain -- api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml api/v1/radar.json api/v1/radar.ndjson api/v1/watchdogs.json)" ]; then
             echo 'Generated outputs already current.'
             exit 0
           fi
           git config user.name 'citizen-agents-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml
-          git commit -m 'chore: refresh civic intelligence API snapshot [skip ci]'
+          git add api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml api/v1/radar.json api/v1/radar.ndjson api/v1/watchdogs.json
+          git commit -m 'chore: refresh democracy radar API snapshot [skip ci]'
           git push origin HEAD:${GITHUB_REF_NAME}

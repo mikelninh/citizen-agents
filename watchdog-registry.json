@@ -1,0 +1,99 @@
+{
+  "schema_version": "citizen-watchdog-registry/1.0",
+  "updated_on": "2026-08-30",
+  "principle": "Watch what people and public-interest organisations can still act on before the window closes.",
+  "families": [
+    {
+      "id": "rights_money",
+      "name": "Rights & Money",
+      "icon": "💶",
+      "status": "ACTIVE",
+      "primary_users": ["citizens", "social_advice", "consumer_ngos", "benefits_platforms"],
+      "must_know": "Changes to benefits, taxes, housing, work, family support and deadlines where late knowledge can cost money or rights.",
+      "monetisation": "Citizen layer free; organisations pay for targeted scopes, workflow integration and measured miss prevention.",
+      "sources": [
+        {"name":"Bundesministerien / Bundesagentur / official service portals","url":"https://www.bundesregierung.de/","capture_mode":"EXISTING_WATCHDOG_FLEET"}
+      ]
+    },
+    {
+      "id": "democracy_action_window",
+      "name": "Democracy Action Window",
+      "icon": "⏰",
+      "status": "ACTIVE_CURATED",
+      "primary_users": ["ngos", "associations", "citizens", "policy_teams"],
+      "must_know": "Public hearings, consultations, registration and statement deadlines while influence is still possible.",
+      "monetisation": "High-value NGO monitor: never miss a relevant hearing, consultation or submission window.",
+      "sources": [
+        {"name":"Deutscher Bundestag — Ausschüsse","url":"https://www.bundestag.de/ausschuesse","capture_mode":"OFFICIAL_SOURCE_CURATED"}
+      ]
+    },
+    {
+      "id": "funding_radar",
+      "name": "Funding Radar",
+      "icon": "💰",
+      "status": "ACTIVE_CURATED",
+      "primary_users": ["ngos", "foundations", "municipalities", "research_teams"],
+      "must_know": "Relevant grants and calls with eligibility, programme budget and deadlines.",
+      "monetisation": "A single surfaced grant opportunity can justify a full-year subscription; paid value is matching, deadlines, evidence and workflow delivery, not access to public calls.",
+      "sources": [
+        {"name":"European Commission — Funding & Tenders / CERV","url":"https://commission.europa.eu/funding-tenders_en","capture_mode":"OFFICIAL_SOURCE_CURATED"}
+      ]
+    },
+    {
+      "id": "rights_courts",
+      "name": "Rights & Courts",
+      "icon": "⚖️",
+      "status": "ACTIVE_CURATED",
+      "primary_users": ["citizens", "legal_ngos", "legaltech", "journalists"],
+      "must_know": "New judgments that materially change or clarify rights and obligations.",
+      "monetisation": "Organisations pay for topic-specific impact mapping and integration; citizen access stays free.",
+      "sources": [
+        {"name":"Bundesverfassungsgericht","url":"https://www.bundesverfassungsgericht.de/","capture_mode":"OFFICIAL_SOURCE_CURATED"}
+      ]
+    },
+    {
+      "id": "power_influence",
+      "name": "Power & Influence",
+      "icon": "🏛️",
+      "status": "ACTIVE_CURATED",
+      "primary_users": ["ngos", "journalists", "public_affairs", "researchers"],
+      "must_know": "Who is trying to change which rule, which positions are being submitted and which draft or law is affected.",
+      "monetisation": "Paid impact and influence graphs, custom issue scopes, alerts and exports.",
+      "sources": [
+        {"name":"Lobbyregister beim Deutschen Bundestag","url":"https://www.lobbyregister.bundestag.de/inhalte-der-interessenvertretung","capture_mode":"OFFICIAL_SOURCE_CURATED"}
+      ]
+    },
+    {
+      "id": "participation_radar",
+      "name": "Elections, Petitions & Participation",
+      "icon": "🗳️",
+      "status": "ACTIVE_CURATED",
+      "primary_users": ["citizens", "civil_society", "campaigns", "media"],
+      "must_know": "Election dates, petition signature windows and other concrete participation opportunities.",
+      "monetisation": "Citizen alerts stay free; organisations pay for mission-specific monitoring, outreach timing and integration.",
+      "sources": [
+        {"name":"Die Bundeswahlleiterin","url":"https://www.bundeswahlleiterin.de/service/wahltermine.html","capture_mode":"OFFICIAL_SOURCE_CURATED"},
+        {"name":"Petitionen des Deutschen Bundestages","url":"https://epetitionen.bundestag.de/","capture_mode":"OFFICIAL_SOURCE_CURATED"}
+      ]
+    },
+    {
+      "id": "promises_laws_votes",
+      "name": "Promises → Laws → Votes",
+      "icon": "📜",
+      "status": "SCHEMA_READY",
+      "primary_users": ["citizens", "journalists", "watchdog_ngos", "researchers"],
+      "must_know": "Track a public promise or proposal through draft, amendment, committee, vote and final law.",
+      "monetisation": "Public accountability is free; organisations pay for custom issue graphs, historical deltas and API delivery.",
+      "sources": [
+        {"name":"Deutscher Bundestag — Dokumente und Abstimmungen","url":"https://www.bundestag.de/","capture_mode":"NEXT_AUTOMATION_TARGET"}
+      ]
+    }
+  ],
+  "truth_boundary": {
+    "coverage_complete": false,
+    "automated_families": ["rights_money"],
+    "curated_live_families": ["democracy_action_window", "funding_radar", "rights_courts", "power_influence", "participation_radar"],
+    "schema_ready_families": ["promises_laws_votes"],
+    "note": "ACTIVE_CURATED means current records are verified against official sources but harvesting is not yet claimed to be complete or fully autonomous."
+  }
+}
