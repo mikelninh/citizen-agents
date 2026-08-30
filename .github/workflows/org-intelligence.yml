@@ -1,0 +1,59 @@
+name: org-intelligence
+
+on:
+  push:
+    branches:
+      - main
+      - feat/org-intelligence-monetization
+    paths:
+      - breakfast-feed.json
+      - tools/build-org-intelligence.mjs
+      - tools/org-intelligence.test.mjs
+      - api/v1/openapi.yaml
+      - organisations.html
+      - alerts.html
+      - reliability.html
+      - intelligence-proof.html
+      - .github/workflows/org-intelligence.yml
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test intelligence contract
+        run: node --test tools/org-intelligence.test.mjs
+      - name: Build API, NDJSON, health and RSS outputs
+        run: node tools/build-org-intelligence.mjs
+      - name: Verify public product surfaces
+        run: |
+          test -s api/v1/changes.json
+          test -s api/v1/health.json
+          test -s api/v1/changes.ndjson
+          test -s api/v1/changes.xml
+          grep -q 'citizen-intelligence/1.0' api/v1/changes.json
+          grep -q 'external_or_consequential_action' api/v1/changes.json
+          grep -q 'Intelligence Proof' organisations.html
+          grep -q 'keine Nutzerdaten' organisations.html
+      - name: Commit generated API snapshot when feed changed
+        run: |
+          if git diff --quiet -- api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml; then
+            echo 'Generated outputs already current.'
+            exit 0
+          fi
+          git config user.name 'citizen-agents-bot'
+          git config user.email 'actions@users.noreply.github.com'
+          git add api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml
+          git commit -m 'chore: refresh civic intelligence API snapshot [skip ci]'
+          git push origin HEAD:${GITHUB_REF_NAME}
