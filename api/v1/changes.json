@@ -1,0 +1,2651 @@
+{
+  "schema_version": "citizen-intelligence-collection/1.0",
+  "generated_from": "2026-08-30",
+  "count": 58,
+  "items": [
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_f2c35ccef668f793",
+      "observed_on": "2026-08-30",
+      "topics": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+        "summary": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
+          "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+          "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-30",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_89e16e4ff40863d1",
+      "observed_on": "2026-08-30",
+      "topics": [
+        "kindergeld",
+        "buergergeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+        "summary": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
+          "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-30",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_692f7c7c1a52f437",
+      "observed_on": "2026-08-30",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+        "summary": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
+          "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
+          "https://www.service-bw.de/zufi/leistungen/1963"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-30",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_889ead34060c9305",
+      "observed_on": "2026-08-30",
+      "topics": [
+        "elterngeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie"
+      ],
+      "change": {
+        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+        "summary": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
+          "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
+          "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-30",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_36bfc4341cc501f6",
+      "observed_on": "2026-08-30",
+      "topics": [
+        "eu"
+      ],
+      "life_situations": [],
+      "change": {
+        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+        "summary": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
+          "https://www.finanztip.de/freistellungsauftrag/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-30",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_ebb285445144746c",
+      "observed_on": "2026-08-30",
+      "topics": [
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+        "summary": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
+          "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
+          "https://www.mystipendium.de/geld/wohnungsbaupraemie"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-30",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_6a2736901d5a4f77",
+      "observed_on": "2026-08-30",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+        "summary": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
+          "https://www.einstieg.com/studium/bafoeg-reform-2026.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-30",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_3e2f64d37209f9e7",
+      "observed_on": "2026-08-30",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+        "summary": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
+          "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-30",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_f2c35ccef668f793",
+      "observed_on": "2026-08-21",
+      "topics": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+        "summary": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
+          "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+          "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-21",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_89e16e4ff40863d1",
+      "observed_on": "2026-08-21",
+      "topics": [
+        "kindergeld",
+        "buergergeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+        "summary": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
+          "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-21",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_692f7c7c1a52f437",
+      "observed_on": "2026-08-21",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+        "summary": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
+          "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
+          "https://www.service-bw.de/zufi/leistungen/1963"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-21",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_889ead34060c9305",
+      "observed_on": "2026-08-21",
+      "topics": [
+        "elterngeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie"
+      ],
+      "change": {
+        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+        "summary": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
+          "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
+          "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-21",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_36bfc4341cc501f6",
+      "observed_on": "2026-08-21",
+      "topics": [
+        "eu"
+      ],
+      "life_situations": [],
+      "change": {
+        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+        "summary": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
+          "https://www.finanztip.de/freistellungsauftrag/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-21",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_ebb285445144746c",
+      "observed_on": "2026-08-21",
+      "topics": [
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+        "summary": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
+          "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
+          "https://www.mystipendium.de/geld/wohnungsbaupraemie"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-21",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_6a2736901d5a4f77",
+      "observed_on": "2026-08-21",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+        "summary": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
+          "https://www.einstieg.com/studium/bafoeg-reform-2026.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-21",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_3e2f64d37209f9e7",
+      "observed_on": "2026-08-21",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+        "summary": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
+          "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-21",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_f2c35ccef668f793",
+      "observed_on": "2026-08-20",
+      "topics": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+        "summary": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
+          "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+          "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-20",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_89e16e4ff40863d1",
+      "observed_on": "2026-08-20",
+      "topics": [
+        "kindergeld",
+        "buergergeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+        "summary": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
+          "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-20",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_692f7c7c1a52f437",
+      "observed_on": "2026-08-20",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+        "summary": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
+          "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
+          "https://www.service-bw.de/zufi/leistungen/1963"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-20",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_889ead34060c9305",
+      "observed_on": "2026-08-20",
+      "topics": [
+        "elterngeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie"
+      ],
+      "change": {
+        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+        "summary": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
+          "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
+          "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-20",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_36bfc4341cc501f6",
+      "observed_on": "2026-08-20",
+      "topics": [
+        "eu"
+      ],
+      "life_situations": [],
+      "change": {
+        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+        "summary": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
+          "https://www.finanztip.de/freistellungsauftrag/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-20",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_ebb285445144746c",
+      "observed_on": "2026-08-20",
+      "topics": [
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+        "summary": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
+          "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
+          "https://www.mystipendium.de/geld/wohnungsbaupraemie"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-20",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_6a2736901d5a4f77",
+      "observed_on": "2026-08-20",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+        "summary": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
+          "https://www.einstieg.com/studium/bafoeg-reform-2026.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-20",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_3e2f64d37209f9e7",
+      "observed_on": "2026-08-20",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+        "summary": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
+          "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-20",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_f2c35ccef668f793",
+      "observed_on": "2026-08-13",
+      "topics": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+        "summary": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
+          "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+          "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-13",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_89e16e4ff40863d1",
+      "observed_on": "2026-08-13",
+      "topics": [
+        "kindergeld",
+        "buergergeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+        "summary": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
+          "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-13",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_692f7c7c1a52f437",
+      "observed_on": "2026-08-13",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+        "summary": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
+          "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
+          "https://www.service-bw.de/zufi/leistungen/1963"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-13",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_889ead34060c9305",
+      "observed_on": "2026-08-13",
+      "topics": [
+        "elterngeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie"
+      ],
+      "change": {
+        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+        "summary": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
+          "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
+          "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-13",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_36bfc4341cc501f6",
+      "observed_on": "2026-08-13",
+      "topics": [
+        "eu"
+      ],
+      "life_situations": [],
+      "change": {
+        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+        "summary": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
+          "https://www.finanztip.de/freistellungsauftrag/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-13",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_ebb285445144746c",
+      "observed_on": "2026-08-13",
+      "topics": [
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+        "summary": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
+          "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
+          "https://www.mystipendium.de/geld/wohnungsbaupraemie"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-13",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_6a2736901d5a4f77",
+      "observed_on": "2026-08-13",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+        "summary": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
+          "https://www.einstieg.com/studium/bafoeg-reform-2026.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-13",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_3e2f64d37209f9e7",
+      "observed_on": "2026-08-13",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+        "summary": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
+          "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-13",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_f2c35ccef668f793",
+      "observed_on": "2026-08-12",
+      "topics": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+        "summary": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
+          "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+          "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-12",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_89e16e4ff40863d1",
+      "observed_on": "2026-08-12",
+      "topics": [
+        "kindergeld",
+        "buergergeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+        "summary": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
+          "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-12",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_692f7c7c1a52f437",
+      "observed_on": "2026-08-12",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+        "summary": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
+          "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
+          "https://www.service-bw.de/zufi/leistungen/1963"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-12",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_889ead34060c9305",
+      "observed_on": "2026-08-12",
+      "topics": [
+        "elterngeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie"
+      ],
+      "change": {
+        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+        "summary": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
+          "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
+          "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-12",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_36bfc4341cc501f6",
+      "observed_on": "2026-08-12",
+      "topics": [
+        "eu"
+      ],
+      "life_situations": [],
+      "change": {
+        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+        "summary": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
+          "https://www.finanztip.de/freistellungsauftrag/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-12",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_ebb285445144746c",
+      "observed_on": "2026-08-12",
+      "topics": [
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+        "summary": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
+          "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
+          "https://www.mystipendium.de/geld/wohnungsbaupraemie"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-12",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_6a2736901d5a4f77",
+      "observed_on": "2026-08-12",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+        "summary": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
+          "https://www.einstieg.com/studium/bafoeg-reform-2026.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-12",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_3e2f64d37209f9e7",
+      "observed_on": "2026-08-12",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+        "summary": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
+          "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-12",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_f2c35ccef668f793",
+      "observed_on": "2026-08-10",
+      "topics": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+        "summary": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+        "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts. *(Größenordnung: bis zu mehrere hundert Euro pro Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
+          "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+          "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-10",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_89e16e4ff40863d1",
+      "observed_on": "2026-08-10",
+      "topics": [
+        "kindergeld",
+        "buergergeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+        "summary": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+        "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit. *(Größenordnung: bis 297 € / Kind / Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
+          "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
+          "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-10",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_692f7c7c1a52f437",
+      "observed_on": "2026-08-10",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+        "summary": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+        "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben. *(Größenordnung: 15 €/Monat Teilhabe + Schulbedarf + Mittagessen)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
+          "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
+          "https://www.service-bw.de/zufi/leistungen/1963"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-10",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_889ead34060c9305",
+      "observed_on": "2026-08-10",
+      "topics": [
+        "elterngeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Eltern/Familie"
+      ],
+      "change": {
+        "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+        "summary": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+        "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch. *(Größenordnung: 300–1.800 € pro verlorenem Monat)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
+          "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
+          "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-10",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_36bfc4341cc501f6",
+      "observed_on": "2026-08-10",
+      "topics": [
+        "eu"
+      ],
+      "life_situations": [],
+      "change": {
+        "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+        "summary": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+        "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde. *(Größenordnung: bis ca. 264 € Steuerersparnis pro Jahr (Single))*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
+          "https://www.finanztip.de/freistellungsauftrag/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-10",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_ebb285445144746c",
+      "observed_on": "2026-08-10",
+      "topics": [
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+        "summary": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+        "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen. *(Größenordnung: bis ca. 123 € + 70 € staatliche Zulagen pro Jahr)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
+          "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
+          "https://www.mystipendium.de/geld/wohnungsbaupraemie"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-10",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_6a2736901d5a4f77",
+      "observed_on": "2026-08-10",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Eltern/Familie",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+        "summary": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+        "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag. *(Größenordnung: 1.000 € einmalig)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
+          "https://www.einstieg.com/studium/bafoeg-reform-2026.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-10",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_3e2f64d37209f9e7",
+      "observed_on": "2026-08-10",
+      "topics": [
+        "wohngeld",
+        "buergergeld",
+        "bauen_mieten"
+      ],
+      "life_situations": [
+        "Mieter:in",
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+        "summary": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+        "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen. *(Größenordnung: regional unterschiedlich)*",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
+          "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-10",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_f5c47b14332075cb",
+      "observed_on": "2026-08-06",
+      "topics": [
+        "wohngeld",
+        "bauen_mieten",
+        "eu"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Wohngeld — Reform (\"Neuordnung\") im Kabinett: Leistungen sinken",
+        "summary": "Cabinet passed a draft law to \"simplify and further develop\" the Wohngeldgesetz. The Wohngeld formula coefficient **C is being adjusted downward**, which *reduces* payouts; Freibeträge change, notably for people with care needs (Pflegebedarf). Framed as budget stabilisation + bureaucracy reduction.",
+        "effective": "Draft stage (Referentenentwurf → Kabinett). Not yet in force — watch the Bundestag reading.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "All ~1.9m Wohngeld households, especially low-income renters and care-dependent claimants near the cut-off.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "If you are close to the eligibility edge, **apply now** under current rules — entitlement is assessed at application date.",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 4,
+        "sources": [
+          "https://www.bundesregierung.de/breg-de/aktuelles/neuordnung-wohngeld-2445796",
+          "https://www.bmwsb.bund.de/SharedDocs/gesetzgebungsverfahren/DE/Downloads/referentenentwuerfe/wohngeldnovelle-2026.pdf",
+          "https://www.sovd.de/aktuelles/meldung/stellungnahme-referentenentwurf-wohngeld-reform",
+          "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-06",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_481157113979b8cd",
+      "observed_on": "2026-08-06",
+      "topics": [
+        "wohngeld",
+        "bauen_mieten"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Wohngeld — Haushalt 2026: Ansatz erhöht (+€150.13m)",
+        "summary": "Bundestag budget committee raised the 2026 Wohngeld budget line by **€150.13m** above the government draft (Einzelplan 25).",
+        "effective": "Budget year 2026.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "Signals capacity for continued payouts despite the cut-oriented reform — no direct change to individual entitlement.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "",
+        "action_available": false,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "NOT_APPLICABLE",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "SOURCE_BACKED",
+        "source_count": 1,
+        "sources": [
+          "https://www.bundestag.de/presse/hib/kurzmeldungen-1127152"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-06",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_6a43954619ccd224",
+      "observed_on": "2026-08-06",
+      "topics": [
+        "buergergeld",
+        "eu"
+      ],
+      "life_situations": [
+        "Bürgergeld-Bezieher:in"
+      ],
+      "change": {
+        "headline": "Bürgergeld → \"Neue Grundsicherung\": harsher sanctions from 1 July 2026",
+        "summary": "Bürgergeld is renamed and restructured into the **neue Grundsicherung** (SGB II). Key points:",
+        "effective": "Phased from **1 July 2026** (law adopted March 2026).",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "~5.5 million recipients. Highest risk: people in high-rent cities (stricter KdU checks) and anyone who misses mail/appointments.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "Always answer Jobcenter letters and cancel appointments in writing with a reason — the new rules punish no-shows fastest.",
+        "action_available": true,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "APPROVAL",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 4,
+        "sources": [
+          "https://www.bundesregierung.de/breg-de/aktuelles/neue-grundsicherung-2399562",
+          "https://www.bundestag.de/dokumente/textarchiv/2026/kw10-de-grundsicherung-1150460",
+          "https://www.verdi.de/politik-gesellschaft/buergergeldgrundsicherung-2026-anspruch-voraussetzungen",
+          "https://www.zeit.de/politik/deutschland/2026-03/buergergeld-grundsicherung-reform-koalition"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-06",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_81a24f05ba1c4e91",
+      "observed_on": "2026-08-06",
+      "topics": [
+        "elterngeld"
+      ],
+      "life_situations": [
+        "Eltern/Familie"
+      ],
+      "change": {
+        "headline": "Elterngeld — Prien draft: 14 → 12 months, 3 \"Vätermonate\", higher min/max",
+        "summary": "",
+        "effective": "Not yet law; targeted for ~2027 births. Current births still under 14-month rules.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "~1.61m Elterngeld recipients/yr (1.19m women, 417k men). Couples splitting leave unequally lose the most.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "",
+        "action_available": false,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "NOT_APPLICABLE",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 3,
+        "sources": [
+          "https://www.tagesschau.de/inland/prien-elterngeld-102.html",
+          "https://www.elterngeld.net/elterngeld-kuerzung.html",
+          "https://www.bundesregierung.de/breg-de/aktuelles/neuregelung-elterngeld-2268810"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-06",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_4ea99d1ae1fdb927",
+      "observed_on": "2026-08-06",
+      "topics": [
+        "kindergeld"
+      ],
+      "life_situations": [
+        "Eltern/Familie"
+      ],
+      "change": {
+        "headline": "Kindergeld — €259/month since 01.01.2026, automatic payment planned",
+        "summary": "Kindergeld rose to **€259 per child/month** on **1 Jan 2026** (from €255). Coalition plans a two-stage rise toward **~€272**, plus **abolition of the application** (automatic payment via tax-ID linkage).",
+        "effective": "€259 in force now; automation and further increases still planned.",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "All families with children — the automation step mainly helps families who currently never apply.",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "",
+        "action_available": false,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "NOT_APPLICABLE",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.smartunterhalt.de/ratgeber/gesetzesaenderungen/elterngeld-2026-ausblick-geplante-aenderungen",
+          "https://www.sparkasse.de/aktuelles/reformen-eltern-2026.html"
+        ]
+      },
+      "provenance": {
+        "watchdog": "2026-08-06",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_6a90201c1fdbf727",
+      "observed_on": "6. August 2026",
+      "topics": [
+        "bauen_mieten",
+        "reise"
+      ],
+      "life_situations": [
+        "Mieter:in"
+      ],
+      "change": {
+        "headline": "Bundestag: Öffentliche Anhörung „BauGB-Upgrade“ (Baugesetzbuch)",
+        "summary": "",
+        "effective": "",
+        "deadline": "Mittwoch, 23. September 2026, 16:30 Uhr (30. Sitzung)"
+      },
+      "impact": {
+        "who_is_affected": "",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "",
+        "action_available": false,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "NOT_APPLICABLE",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096",
+          "https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf"
+        ]
+      },
+      "provenance": {
+        "watchdog": "6. August 2026",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_14eaf2b317a7d51b",
+      "observed_on": "6. August 2026",
+      "topics": [
+        "bauen_mieten",
+        "reise"
+      ],
+      "life_situations": [],
+      "change": {
+        "headline": "Bundestag: Anhörung „Situation der Reisebüros und Reiseveranstalter“",
+        "summary": "",
+        "effective": "",
+        "deadline": "23. September 2026"
+      },
+      "impact": {
+        "who_is_affected": "",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "",
+        "action_available": false,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "NOT_APPLICABLE",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "SOURCE_BACKED",
+        "source_count": 1,
+        "sources": [
+          "https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen"
+        ]
+      },
+      "provenance": {
+        "watchdog": "6. August 2026",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_48e18700f407fefc",
+      "observed_on": "6. August 2026",
+      "topics": [
+        "bauen_mieten"
+      ],
+      "life_situations": [],
+      "change": {
+        "headline": "Bundestag: Öffentliche Anhörung Recht und Verbraucherschutz",
+        "summary": "",
+        "effective": "",
+        "deadline": "14. Oktober 2026"
+      },
+      "impact": {
+        "who_is_affected": "",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "",
+        "action_available": false,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "NOT_APPLICABLE",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "SOURCE_BACKED",
+        "source_count": 1,
+        "sources": [
+          "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen"
+        ]
+      },
+      "provenance": {
+        "watchdog": "6. August 2026",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_23aa91c2f305331d",
+      "observed_on": "6. August 2026",
+      "topics": [
+        "eu",
+        "lobby"
+      ],
+      "life_situations": [],
+      "change": {
+        "headline": "EU: Öffentliche Konsultation zu Europas Quantentechnologie-Zukunft",
+        "summary": "",
+        "effective": "",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "",
+        "action_available": false,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "NOT_APPLICABLE",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://ec.europa.eu/info/law/better-regulation/",
+          "https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026"
+        ]
+      },
+      "provenance": {
+        "watchdog": "6. August 2026",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    },
+    {
+      "schema_version": "citizen-intelligence/1.0",
+      "id": "chg_a21781ef422bc951",
+      "observed_on": "6. August 2026",
+      "topics": [
+        "eu",
+        "reise"
+      ],
+      "life_situations": [],
+      "change": {
+        "headline": "EU: Konsultationen zum Halbleiter-Ökosystem / Joint Undertakings (Horizon Europe)",
+        "summary": "",
+        "effective": "",
+        "deadline": ""
+      },
+      "impact": {
+        "who_is_affected": "",
+        "criticality": "UNASSESSED"
+      },
+      "actionability": {
+        "recommended_action": "",
+        "action_available": false,
+        "authority": {
+          "information_read": "ALLOW",
+          "external_or_consequential_action": "NOT_APPLICABLE",
+          "rule": "Citizen Agents may suggest what to review. OCN/Company 01 or the consuming organisation decides whether an agent may actually act."
+        }
+      },
+      "evidence": {
+        "verification_status": "MULTI_SOURCE",
+        "source_count": 2,
+        "sources": [
+          "https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/",
+          "https://ec.europa.eu/info/law/better-regulation/"
+        ]
+      },
+      "provenance": {
+        "watchdog": "6. August 2026",
+        "source_feed": "breakfast-feed.json",
+        "generated_feed_date": "2026-08-30"
+      }
+    }
+  ],
+  "health": {
+    "item_count": 58,
+    "items_with_sources": 58,
+    "source_coverage_pct": 100,
+    "multi_source_pct": 94.8,
+    "items_with_recommended_action": 50,
+    "criticality_assessed_pct": 0,
+    "note": "Health reports measured structure/provenance only. It does not claim completeness of all legal or policy changes."
+  }
+}
