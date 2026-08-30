@@ -40,12 +40,21 @@ function keywordHits(change, profile) {
   return [...needles].filter((token) => haystack.has(token));
 }
 
+function utcDay(value) {
+  const text = String(value || '');
+  const match = /^(\d{4})-(\d{2})-(\d{2})/.exec(text);
+  if (match) return Date.UTC(Number(match[1]), Number(match[2]) - 1, Number(match[3]));
+  const parsed = new Date(text);
+  if (!Number.isFinite(parsed.getTime())) return NaN;
+  return Date.UTC(parsed.getUTCFullYear(), parsed.getUTCMonth(), parsed.getUTCDate());
+}
+
 function daysUntil(dateString, asOf) {
   if (!dateString) return null;
-  const target = new Date(`${dateString}T23:59:59Z`).getTime();
-  const base = new Date(asOf || new Date().toISOString()).getTime();
+  const target = utcDay(dateString);
+  const base = utcDay(asOf || new Date().toISOString());
   if (!Number.isFinite(target) || !Number.isFinite(base)) return null;
-  return Math.ceil((target - base) / 86400000);
+  return Math.round((target - base) / 86400000);
 }
 
 export function scoreChange(change, profile = {}, options = {}) {
