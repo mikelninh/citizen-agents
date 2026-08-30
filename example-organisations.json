@@ -1,0 +1,50 @@
+{
+  "schema_version": "citizen-example-organisations/1.0",
+  "truth_boundary": "Profiles use only publicly stated missions/topics. Matching a signal does not mean the organisation missed it.",
+  "organisations": [
+    {
+      "id": "vzbv",
+      "name": "Verbraucherzentrale Bundesverband (vzbv)",
+      "kind": "consumer_ngo",
+      "mission": "Verbraucherschutz und Verbraucherpolitik in Digitalem, Energie und Bauen, Finanzmarkt, Gesundheit und Pflege, Mobilität, Nachhaltigkeit, Recht und Handel.",
+      "topics": ["consumer","digital","energy","housing","finance","health","rights","regulation"],
+      "jurisdictions": ["DE","EU"],
+      "audiences": ["consumers"],
+      "public_profile_source": "https://www.vzbv.de/politik/schwerpunktthemen",
+      "miss_status": "UNKNOWN_UNTIL_REVIEWED"
+    },
+    {
+      "id": "bitkom",
+      "name": "Bitkom e. V.",
+      "kind": "industry_association",
+      "mission": "Politische und rechtliche Rahmenbedingungen für die Digitalwirtschaft, darunter KI, Daten, digitale Souveränität, Infrastruktur, Regulierung und digitale Transformation.",
+      "topics": ["digital","ai","data","cloud","regulation","public_sector","industry","research"],
+      "jurisdictions": ["DE","EU"],
+      "audiences": ["technology_companies","public_affairs"],
+      "public_profile_source": "https://www.bitkom.org/Themen/Politik",
+      "miss_status": "UNKNOWN_UNTIL_REVIEWED"
+    },
+    {
+      "id": "dgb",
+      "name": "Deutscher Gewerkschaftsbund (DGB)",
+      "kind": "trade_union_confederation",
+      "mission": "Interessen von Beschäftigten in Arbeit, Sozialrecht, Gesundheit und Pflege, Sozialstaat, Teilhabe, Gleichstellung und wirtschaftlicher Transformation.",
+      "topics": ["labour","social","health","benefits","pensions","democracy","housing","climate"],
+      "jurisdictions": ["DE","EU"],
+      "audiences": ["workers","public_affairs"],
+      "public_profile_source": "https://www.dgb.de/politik/arbeit-und-soziales/",
+      "miss_status": "UNKNOWN_UNTIL_REVIEWED"
+    },
+    {
+      "id": "proasyl",
+      "name": "PRO ASYL",
+      "kind": "human_rights_ngo",
+      "mission": "Menschenrechte und Schutz von Flüchtlingen in Deutschland und Europa; Aufklärung und Einmischung in flüchtlingspolitische und menschenrechtliche Gesetzgebungsverfahren.",
+      "topics": ["human_rights","asylum","refugees","migration","democracy","eu","law"],
+      "jurisdictions": ["DE","EU"],
+      "audiences": ["refugees","human_rights","public_affairs"],
+      "public_profile_source": "https://www.proasyl.de/einsatz-fuer-fluechtlingsrechte/",
+      "miss_status": "UNKNOWN_UNTIL_REVIEWED"
+    }
+  ]
+}
