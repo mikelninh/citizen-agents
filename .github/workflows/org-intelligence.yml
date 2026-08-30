@@ -48,7 +48,7 @@ jobs:
           grep -q 'keine Nutzerdaten' organisations.html
       - name: Commit generated API snapshot when feed changed
         run: |
-          if git diff --quiet -- api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml; then
+          if [ -z "$(git status --porcelain -- api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml)" ]; then
             echo 'Generated outputs already current.'
             exit 0
           fi
