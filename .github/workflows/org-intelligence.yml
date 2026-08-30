@@ -7,6 +7,8 @@ on:
       - democracy-signals.json
       - watchdog-registry.json
       - democracy-radar.html
+      - replay-signals.json
+      - missed-opportunities.html
       - impact-core.mjs
       - organisation-impact.html
       - tools/build-org-intelligence.mjs
@@ -14,6 +16,7 @@ on:
       - tools/org-intelligence.test.mjs
       - tools/impact-core.test.mjs
       - tools/democracy-radar.test.mjs
+      - tools/historical-replay.test.mjs
       - api/v1/**
       - organisations.html
       - alerts.html
@@ -28,6 +31,8 @@ on:
       - democracy-signals.json
       - watchdog-registry.json
       - democracy-radar.html
+      - replay-signals.json
+      - missed-opportunities.html
       - impact-core.mjs
       - organisation-impact.html
       - tools/build-org-intelligence.mjs
@@ -35,6 +40,7 @@ on:
       - tools/org-intelligence.test.mjs
       - tools/impact-core.test.mjs
       - tools/democracy-radar.test.mjs
+      - tools/historical-replay.test.mjs
       - api/v1/**
       - organisations.html
       - alerts.html
@@ -59,7 +65,7 @@ jobs:
         with:
           node-version: 22
       - name: Test intelligence + usefulness contracts
-        run: node --test tools/org-intelligence.test.mjs tools/impact-core.test.mjs tools/democracy-radar.test.mjs
+        run: node --test tools/org-intelligence.test.mjs tools/impact-core.test.mjs tools/democracy-radar.test.mjs tools/historical-replay.test.mjs
       - name: Build Civic Intelligence API
         run: node tools/build-org-intelligence.mjs
       - name: Build combined Democracy Radar API
@@ -78,6 +84,8 @@ jobs:
           test -s democracy-signals.json
           test -s watchdog-registry.json
           test -s democracy-radar.html
+          test -s replay-signals.json
+          test -s missed-opportunities.html
           grep -q 'citizen-intelligence/1.0' api/v1/changes.json
           grep -q 'citizen-democracy-radar/1.0' api/v1/radar.json
           grep -q 'external_or_consequential_action' api/v1/radar.json
@@ -86,6 +94,10 @@ jobs:
           grep -q 'citizen_intelligence_proof' intelligence-proof.html
           grep -q 'explicitFollowupConsent' intelligence-proof.html
           grep -q 'company01-lead-intake' intelligence-proof.html
+          grep -q '2-Minuten Replay starten' intelligence-proof.html
+          grep -q 'citizen-historical-replay/1.0' replay-signals.json
+          grep -q 'no_inferred_misses' replay-signals.json
+          grep -q 'Bewertungen bleiben lokal' missed-opportunities.html
           grep -q 'Proof of usefulness' organisation-impact.html
           grep -q 'Know what matters' democracy-radar.html
           grep -q 'coverage_complete' democracy-signals.json
