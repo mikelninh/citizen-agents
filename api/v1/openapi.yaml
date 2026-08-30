@@ -1,0 +1,94 @@
+openapi: 3.1.0
+info:
+  title: Citizen Agents Intelligence API
+  version: 1.0.0
+  description: >-
+    Versioned, source-backed civic intelligence derived from Citizen Agents public monitoring.
+    The public GitHub Pages endpoints are best-effort static snapshots, not a contracted SLA.
+servers:
+  - url: https://mikelninh.github.io/citizen-agents/api/v1
+paths:
+  /changes.json:
+    get:
+      summary: Full normalized civic-intelligence collection
+      responses:
+        '200':
+          description: Current normalized collection
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Collection'
+  /latest.json:
+    get:
+      summary: Current change records as an array
+      responses:
+        '200':
+          description: Current change array
+  /health.json:
+    get:
+      summary: Measured structural and provenance health
+      responses:
+        '200':
+          description: Health metrics; does not claim coverage completeness
+  /changes.ndjson:
+    get:
+      summary: NDJSON export for pipelines
+      responses:
+        '200':
+          description: One change object per line
+  /changes.xml:
+    get:
+      summary: RSS 2.0 feed for alert readers
+      responses:
+        '200':
+          description: RSS feed
+components:
+  schemas:
+    Collection:
+      type: object
+      required: [schema_version, generated_from, count, items, health]
+      properties:
+        schema_version:
+          const: citizen-intelligence-collection/1.0
+        generated_from:
+          type: string
+        count:
+          type: integer
+          minimum: 0
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Change'
+        health:
+          type: object
+    Change:
+      type: object
+      required: [schema_version, id, change, impact, actionability, evidence, provenance]
+      properties:
+        schema_version:
+          const: citizen-intelligence/1.0
+        id:
+          type: string
+          pattern: '^chg_[a-f0-9]{16}$'
+        observed_on:
+          type: string
+        topics:
+          type: array
+          items: { type: string }
+        life_situations:
+          type: array
+          items: { type: string }
+        change:
+          type: object
+          required: [headline, summary, effective, deadline]
+        impact:
+          type: object
+          description: Impact fields deliberately avoid invented legal certainty or severity.
+        actionability:
+          type: object
+          description: Suggested next action plus authority boundary. Consequential execution is never authorized by Citizen Agents itself.
+        evidence:
+          type: object
+          required: [verification_status, source_count, sources]
+        provenance:
+          type: object

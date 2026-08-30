@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mikelninh.github.io/citizen-agents/api/v1/webhook.schema.json",
+  "title": "Citizen Agents Intelligence Match Webhook",
+  "type": "object",
+  "required": ["event", "schema_version", "subscription_id", "change", "authority_hint"],
+  "properties": {
+    "event": { "const": "citizen_intelligence.change.matched" },
+    "schema_version": { "const": "citizen-intelligence/1.0" },
+    "subscription_id": { "type": "string", "minLength": 1 },
+    "change": {
+      "type": "object",
+      "required": ["id", "change", "evidence", "actionability"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^chg_[a-f0-9]{16}$" },
+        "change": { "type": "object" },
+        "impact": { "type": "object" },
+        "evidence": { "type": "object" },
+        "actionability": { "type": "object" }
+      }
+    },
+    "authority_hint": {
+      "type": "object",
+      "required": ["information_read", "external_or_consequential_action"],
+      "properties": {
+        "information_read": { "const": "ALLOW" },
+        "external_or_consequential_action": { "enum": ["APPROVAL", "NOT_APPLICABLE"] }
+      }
+    }
+  }
+}

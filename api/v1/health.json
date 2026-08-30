@@ -1,0 +1,11 @@
+{
+  "schema_version": "citizen-intelligence-health/1.0",
+  "generated_from": "2026-08-30",
+  "item_count": 58,
+  "items_with_sources": 58,
+  "source_coverage_pct": 100,
+  "multi_source_pct": 94.8,
+  "items_with_recommended_action": 50,
+  "criticality_assessed_pct": 0,
+  "note": "Health reports measured structure/provenance only. It does not claim completeness of all legal or policy changes."
+}

@@ -1,190 +1,23 @@
-<!DOCTYPE html>
-<html lang="de">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Für Organisationen — Citizen Agents</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#f5f3f1; --card:#ffffff; --ink:#161a22; --navy:#02083a; --muted:#4f5866;
-    --accent:#0068e6; --accent-soft:#e8f0ff; --ok:#166b40; --ok-soft:#e6f4ec;
-    --warn:#845400; --warn-soft:#fdf3e0; --bad:#b32a24; --bad-soft:#fdeaea;
-    --line:#e7e3df; --line-soft:#f0edea; --radius:20px; --radius-sm:14px; --measure:74ch;
-    --shadow:0 1px 2px rgba(2,8,58,.04), 0 10px 30px rgba(2,8,58,.06);
-    --shadow-lift:0 2px 6px rgba(2,8,58,.06), 0 16px 40px rgba(2,8,58,.10);
-  }
-  *{ box-sizing:border-box; }
-  html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; scroll-padding-top:88px; }
-  body{ margin:0; background:var(--bg); color:var(--ink);
-    font:17px/1.72 "Onest",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    -webkit-font-smoothing:antialiased; }
-  :focus-visible{ outline:3px solid var(--accent); outline-offset:2px; border-radius:8px; }
-  .wrap{ max-width:820px; margin:0 auto; padding:0 20px 96px; }
-  .skip{ position:absolute; inset-inline-start:-9999px; top:0; background:#fff; color:var(--navy);
-    padding:10px 18px; border-radius:0 0 12px 0; font-weight:700; z-index:60; }
-  .skip:focus{ inset-inline-start:0; }
-
-  .topbar{ position:sticky; top:0; z-index:50; display:flex; align-items:center;
-    justify-content:space-between; gap:12px; flex-wrap:wrap; padding:10px 0;
-    background:rgba(245,243,241,.86); backdrop-filter:saturate(150%) blur(10px);
-    -webkit-backdrop-filter:saturate(150%) blur(10px); }
-  .topbar::after{ content:""; position:absolute; inset-inline:-20px; bottom:0; height:1px;
-    background:linear-gradient(90deg,transparent,var(--line),transparent); }
-  .brand{ display:flex; align-items:center; gap:10px; font-weight:700; color:var(--navy); font-size:15px; }
-  .brand-mark{ width:24px; height:24px; flex:none; }
-
-  .masthead{ position:relative; text-align:center; padding:40px 0 30px; }
-  .masthead::before{ content:""; position:absolute; inset:-40px -24px auto -24px; height:300px;
-    background:radial-gradient(120% 100% at 50% 0, rgba(0,104,230,.10), transparent 72%); z-index:0; }
-  .masthead > *{ position:relative; z-index:1; }
-  .kicker{ letter-spacing:2.6px; font-size:11.5px; color:var(--accent); text-transform:uppercase; font-weight:800; }
-  h1{ font-size:clamp(32px,6.4vw,46px); line-height:1.08; margin:14px 0 10px; color:var(--navy);
-    letter-spacing:-1.2px; font-weight:800; text-wrap:balance; }
-  .intro{ color:var(--muted); font-size:17px; line-height:1.75; margin-top:14px; max-width:62ch; margin-inline:auto; }
-
-  /* section jump nav */
-  .secnav{ display:flex; gap:8px; justify-content:center; flex-wrap:wrap; margin-top:24px; }
-  .secnav a{ background:#fff; border:1px solid var(--line); color:var(--navy); text-decoration:none;
-    font-size:14px; font-weight:700; padding:8px 16px; border-radius:999px; transition:.15s; }
-  .secnav a:hover{ border-color:var(--accent); color:var(--accent); }
-
-  .card{ background:var(--card); border:1px solid var(--line); border-radius:var(--radius);
-    padding:34px 36px; margin:26px 0; box-shadow:var(--shadow); scroll-margin-top:92px; }
-  .card h2{ margin:0 0 14px; font-size:23px; color:var(--navy); letter-spacing:-.5px; line-height:1.25; }
-  .card h3{ margin:22px 0 10px; font-size:17px; color:var(--navy); letter-spacing:-.2px; }
-  .card p{ color:var(--ink); max-width:var(--measure); }
-  .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:18px; margin:20px 0; }
-  .feature{ background:var(--bg); border:1px solid var(--line); border-inline-start:4px solid var(--accent-soft);
-    border-radius:var(--radius-sm); padding:22px 24px; line-height:1.7; transition:.18s; }
-  .feature:hover{ border-inline-start-color:var(--accent); box-shadow:var(--shadow); }
-  .feature b{ color:var(--navy); }
-  .feature h3{ margin-top:0; }
-  .price{ font-size:32px; font-weight:800; color:var(--accent); line-height:1.2; }
-  .price small{ font-size:14px; color:var(--muted); font-weight:500; }
-  ul.clean{ padding-inline-start:20px; color:var(--ink); max-width:var(--measure); }
-  ul.clean li{ margin:10px 0; line-height:1.7; }
-  code{ background:var(--bg); border:1px solid var(--line-soft); border-radius:6px; padding:1px 6px; font-size:.9em; }
-  .btn{ display:inline-block; padding:13px 24px; border-radius:999px; font-weight:700;
-    text-decoration:none; font-size:15px; transition:.15s; border:1px solid transparent; }
-  .btn.primary{ background:var(--accent); color:#fff; }
-  .btn.primary:hover{ background:#0057c2; }
-  .btn.ghost{ background:#fff; color:var(--navy); border-color:var(--line); }
-  .btn.ghost:hover{ border-color:var(--accent); color:var(--accent); }
-  .btn:hover{ transform:translateY(-1px); }
-  .row{ display:flex; gap:12px; flex-wrap:wrap; margin-top:12px; }
-  .disclosure{ background:var(--ok-soft); border:1px solid #bfe3cd; border-inline-start:4px solid var(--ok);
-    border-radius:var(--radius-sm); padding:20px 22px; margin:26px 0; line-height:1.75; max-width:none; }
-  .disclosure b{ color:var(--ok); }
-  pre.code{ background:#0e1320; color:#cfe3ff; padding:16px 18px; border-radius:12px; overflow:auto; font-size:13.5px; }
-  .totop{ position:fixed; inset-block-end:20px; inset-inline-end:20px; z-index:40; background:#fff;
-    color:var(--navy); border:1px solid var(--line); box-shadow:var(--shadow-lift); width:46px; height:46px;
-    border-radius:999px; display:flex; align-items:center; justify-content:center; text-decoration:none;
-    font-size:18px; font-weight:800; }
-  .totop:hover{ border-color:var(--accent); color:var(--accent); }
-  footer{ color:var(--muted); font-size:14.5px; text-align:center; margin-top:48px; line-height:2; }
-  footer a{ color:var(--accent); text-decoration:none; }
-  footer a:hover{ text-decoration:underline; }
-
-  @media (prefers-reduced-motion:reduce){
-    html{ scroll-behavior:auto; }
-    *,*::before,*::after{ animation:none !important; transition:none !important; }
-    .btn:hover{ transform:none; }
-  }
-  @media (max-width:640px){
-    body{ font-size:16.5px; }
-    .wrap{ padding:0 15px 90px; }
-    .card{ padding:22px 18px; }
-    .btn{ width:100%; text-align:center; }
-    .totop{ inset-block-end:14px; inset-inline-end:14px; }
-    .brand span{ display:none; }
-  }
-</style>
-</head>
-<body>
-<a class="skip" href="#inhalt">Zum Inhalt springen</a>
-<div class="wrap">
-  <header class="topbar">
-    <div class="brand">
-      <svg class="brand-mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L21 6 V12 C21 17 17 21 12 22 C7 21 3 17 3 12 V6 Z" fill="#0068e6"/><path d="M8 12 l3 3 l5 -6" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
-      <span>Citizen Agents</span>
-    </div>
-    <a class="btn ghost" href="https://mikelninh.github.io/citizen-agents/breakfast.html">← Zum Ticker</a>
-  </header>
-
-  <div class="masthead">
-    <p class="kicker">Für Organisationen</p>
-    <h1>Strukturierte Bürgerrechts-Daten für Ihr Team</h1>
-    <p class="intro">Citizen Agents überwacht täglich, was sich in den Rechten von Bürger:innen ändert — Gesetze, Leistungen, Anhörungen, Gerichtsurteile. Sie erhalten das als saubere, maschinenlesbare Feeds. Kein Scoop, keine Panik — nur verifizierte Fakten mit Quelle.</p>
-    <nav class="secnav" aria-label="Abschnitte">
-      <a href="#profit">Wer profitiert</a>
-      <a href="#daten">Was Sie bekommen</a>
-      <a href="#preise">Lizenz &amp; Preise</a>
-      <a href="#kontakt">Kontakt</a>
-    </nav>
-  </div>
-
-  <main id="inhalt">
-  <section class="card" id="profit">
-    <h2>Wer profitiert?</h2>
-    <div class="grid">
-      <div class="feature"><b>Verbraucherzentralen & NGOs</b><br>Frühe Warnungen zu Leistungsänderungen (Wohngeld, Bürgergeld, Elterngeld) direkt in die Beratung.</div>
-      <div class="feature"><b>Legal-Tech & Compliance</b><br>Strukturierte Feeds für EU-Verbraucherschutz, DSA, CSRD, Lobbyregister — immer aktuell.</div>
-      <div class="feature"><b>Journalist:innen</b><br>Recherche-Feed mit Quellen-Links; keine Paywall, voller Rohdaten-Zugriff.</div>
-      <div class="feature"><b>Kommunen & Behörden</b><br>Bürgernahe Aufbereitung dessen, was oben beschlossen wird.</div>
-    </div>
-  </section>
-
-  <section class="card" id="daten">
-    <h2>Was Sie bekommen</h2>
-    <ul class="clean">
-      <li><b>Live-Feed (JSON):</b> <code>breakfast-feed.json</code> — alle Meldungen mit Tags, Quellen, Verifikationsstatus.</li>
-      <li><b>Run-Logs (JSON):</b> <code>agent-logs/*.json</code> — vollständige, maschinenlesbare Wach-Protokolle.</li>
-      <li><b>Trust-Panel:</b> jede Meldung vom Fleet-Reviewer geprüft (verifiziert / teilweise / fehlerhaft).</li>
-      <li><b>API-Zugang:</b> geplantes, dokumentiertes Endpoint für automatische Einbindung.</li>
-    </ul>
-    <h3>Beispiel — Feed abrufen</h3>
-    <pre class="code">curl -L https://mikelninh.github.io/citizen-agents/breakfast-feed.json</pre>
-  </section>
-
-  <section class="card" id="preise">
-    <h2>Lizenz &amp; Preise</h2>
-    <div class="grid">
-      <div class="feature">
-        <h3>🆓 Open Data</h3>
-        <div class="price">0 €</div>
-        <p>Für NGOs, Journalist:innen, Forschung. CC-BY — Quelle nennen, weitergeben.</p>
-      </div>
-      <div class="feature">
-        <h3>⭐ Business License</h3>
-        <div class="price">ab 49 €<small> / Monat</small></div>
-        <p>API-Zugang, SLA, keine Quellen-Nennung nötig, Prioritäts-Feeds für Ihre Themen.</p>
-        <div class="row"><a class="btn primary" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents%20Business%20License">Anfragen</a></div>
-      </div>
-    </div>
-  </section>
-
-  <div class="disclosure">
-    <b>Transparenz-Versprechen.</b> Citizen Agents bleibt unabhängig. Jede Branchen-Partnerschaft (auch aus der Krypto- oder Finanzwirtschaft) wird offen auf dieser Seite ausgewiesen. Wir verkaufen keine Nutzerdaten und nehmen kein Geld für veränderte Berichterstattung an.
-  </div>
-
-  <section class="card" id="kontakt">
-    <h2>Kontakt</h2>
-    <p>Interesse an einem Feed für Ihre Themen? Schreiben Sie uns — wir richten einen priorisierten Kanal ein.</p>
-    <div class="row">
-      <a class="btn primary" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents%20f%C3%BCr%20Organisationen">🤝 hallo.chupi@gmail.com</a>
-      <a class="btn ghost" href="https://github.com/mikelninh/citizen-agents">Quellcode & Rohdaten</a>
-    </div>
-  </section>
-  </main>
-
-  <footer>
-    Citizen Agents — Digital Democracy Studio, Berlin.<br>
-    <a href="https://mikelninh.github.io/citizen-agents/">Zur Startseite</a>
-  </footer>
-</div>
-<a class="totop" href="#inhalt" aria-label="Nach oben">↑</a>
-</body>
-</html>
+<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Citizen Agents Intelligence — Für Organisationen</title><style>:root{--bg:#f5f3f1;--card:#fff;--ink:#161a22;--navy:#02083a;--muted:#4f5866;--accent:#0068e6;--line:#e7e3df;--ok:#166b40;--oksoft:#e6f4ec;--warn:#845400;--warnsoft:#fdf3e0}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16.5px/1.68 Inter,system-ui,-apple-system,sans-serif}.wrap{max-width:1040px;margin:auto;padding:24px 20px 90px}.nav{display:flex;justify-content:space-between;align-items:center;gap:16px}.nav a{color:var(--accent);text-decoration:none}.hero{padding:58px 0 30px;max-width:880px}.k{font-size:11px;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);font-weight:850}h1{font-size:clamp(42px,7vw,74px);line-height:.98;letter-spacing:-.055em;color:var(--navy);margin:14px 0 20px}.lede{font-size:20px;color:var(--muted);max-width:790px}.cta{display:flex;gap:10px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;padding:12px 18px;border-radius:999px;background:var(--accent);color:#fff!important;text-decoration:none!important;font-weight:800}.btn.ghost{background:#fff;color:var(--navy)!important;border:1px solid var(--line)}.strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:22px 0 48px}.strip div,.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:0 8px 28px rgba(2,8,58,.045)}.strip div{padding:17px}.strip b{display:block;font-size:20px;color:var(--navy)}.strip span{font-size:12px;color:var(--muted)}.section{margin-top:52px}.section h2{font-size:31px;letter-spacing:-.035em;color:var(--navy);margin:0 0 8px}.section>p{color:var(--muted);max-width:780px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:18px}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:18px}.card{padding:23px}.card h3{margin:5px 0 8px;color:var(--navy)}.card p{color:var(--muted)}.price{font-size:33px;font-weight:850;color:var(--accent);letter-spacing:-.04em}.price small{font-size:13px;color:var(--muted);font-weight:500}.list{padding-left:18px}.list li{margin:8px 0}.code{background:#101725;color:#d8eaff;border-radius:14px;padding:16px;overflow:auto;font:13px/1.5 ui-monospace,SFMono-Regular,monospace}.truth{background:var(--oksoft);border-left:4px solid var(--ok)}.warn{background:var(--warnsoft);border-left:4px solid var(--warn)}.tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--accent);font-weight:850;margin-bottom:8px}.footer{margin-top:70px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:13px}@media(max-width:760px){.strip,.grid,.grid3{grid-template-columns:1fr}.footer{display:block}}</style></head><body><div class="wrap"><nav class="nav"><b>Citizen Agents / Intelligence</b><div><a href="breakfast.html">Ticker</a> · <a href="watchdog-profile.html">Dein Wächter</a></div></nav><main><section class="hero"><div class="k">Civic intelligence for organisations</div><h1>What changed?<br>Who is affected?<br>What can they do now?</h1><p class="lede">Citizen Agents verwandelt öffentliche Gesetze, Leistungen, Anhörungen und Entscheidungen in <b>quellenbasierte, maschinenlesbare Change Intelligence</b> — mit Impact, betroffenen Gruppen, nächstem sinnvollen Schritt und Provenienz.</p><div class="cta"><a class="btn" href="intelligence-proof.html">14-Tage Intelligence Proof · 490 €</a><a class="btn ghost" href="api/v1/changes.json">Open API v1 ansehen</a><a class="btn ghost" href="alerts.html">Alert Builder testen</a></div></section><div class="strip"><div><b>Open Data</b><span>öffentlicher Feed bleibt kostenlos</span></div><div><b>Stable IDs</b><span>versionierte Change Records</span></div><div><b>Evidence</b><span>Quelle + Verifikationsstatus</span></div><div><b>Authority-aware</b><span>Action ≠ Permission</span></div></div><section class="section"><h2>Der Value ist nicht „noch ein Newsfeed“.</h2><p>Teams zahlen, wenn Citizen Agents ihnen echte Monitoring-Arbeit abnimmt: relevante Änderung erkennen, Betroffenheit einordnen, Quelle prüfen und das Signal in den bestehenden Workflow bringen.</p><div class="grid"><div class="card"><span class="tag">NGO / Beratung</span><h3>Änderungen schneller in die Beratung bringen</h3><p>Wohngeld, Kinderzuschlag, Sozialleistungen und Bürgerrechte als priorisierte, nachvollziehbare Hinweise statt manueller Quellenrunden.</p></div><div class="card"><span class="tag">LegalTech / Compliance</span><h3>Source-backed Change Data</h3><p>Versionierte Records für interne Research-, RAG- und Case-Workflows — mit stabilen IDs, Quellen und Actionability.</p></div><div class="card"><span class="tag">Kommunen / Behörden</span><h3>Von Beschluss zu Bürgerwirkung</h3><p>Nicht nur „was beschlossen wurde“, sondern welche Gruppen betroffen sind und welche Information oder Vorbereitung jetzt nötig ist.</p></div><div class="card"><span class="tag">Media / Research</span><h3>Recherche ohne Black Box</h3><p>Rohdaten, Quellenlinks, Verifikationsstatus und maschinenlesbare Exporte bleiben prüfbar.</p></div></div></section><section class="section"><h2>Heute bereits nutzbar</h2><div class="grid3"><div class="card"><h3>JSON / NDJSON</h3><p>Versionierte Civic-Intelligence-Records für Software und Datenpipelines.</p><a href="api/v1/changes.json">changes.json →</a></div><div class="card"><h3>RSS Alerts</h3><p>Ohne Integration sofort in bestehende Feed-/Monitoring-Tools abonnierbar.</p><a href="api/v1/changes.xml">RSS →</a></div><div class="card"><h3>OpenAPI</h3><p>Dokumentierter Vertrag statt undokumentiertem Feed-Scraping.</p><a href="api/v1/openapi.yaml">openapi.yaml →</a></div><div class="card"><h3>Alert Builder</h3><p>Themen und Lebenslagen lokal filtern; Polling-/Webhook-Vertrag exportieren.</p><a href="alerts.html">Alerts →</a></div><div class="card"><h3>Reliability</h3><p>Source Coverage und strukturelle Health werden gemessen; keine erfundene Vollständigkeit.</p><a href="reliability.html">Reliability →</a></div><div class="card"><h3>OCN-ready</h3><p>Citizen Agents schlägt Actions vor; externe oder folgenreiche Ausführung bleibt `APPROVAL`, bis OCN/Organisation sie delegiert.</p><a href="alerts.html">Authority contract →</a></div></div><h3>Beispiel</h3><pre class="code">{
+  "id": "chg_…",
+  "change": { "headline": "…", "effective": "…" },
+  "impact": { "who_is_affected": "…", "criticality": "UNASSESSED" },
+  "actionability": {
+    "recommended_action": "…",
+    "authority": {
+      "information_read": "ALLOW",
+      "external_or_consequential_action": "APPROVAL"
+    }
+  },
+  "evidence": { "verification_status": "MULTI_SOURCE", "sources": ["…"] }
+}</pre></section><section class="section"><h2>Beweisen, bevor Sie abonnieren</h2><div class="card truth"><div class="price">490 € <small>netto · einmalig · 14 Tage</small></div><h3>Citizen Intelligence Proof</h3><p>3–5 echte Themen, Ihr heutiger Monitoring-Ablauf und ein Reviewer. Wir messen Alert Precision, kritische Misses, Time-to-Signal, Analyst-Minuten, Source Quality und Integrationsfehler. Danach gibt es eine klare <b>KEEP / STOP</b>-Empfehlung. Kein automatisches Abo.</p><div class="cta"><a class="btn" href="intelligence-proof.html">Proof ansehen</a></div></div></section><section class="section" id="preise"><h2>Preise nach geliefertem Service — nicht nach versteckten Daten.</h2><div class="grid"><div class="card"><span class="tag">Public good</span><h3>Open Data</h3><div class="price">0 €</div><ul class="list"><li>öffentlicher Breakfast Feed</li><li>API-v1 Snapshot</li><li>RSS + Quellen</li><li>für NGOs, Medien, Forschung</li></ul></div><div class="card"><span class="tag">Founding</span><h3>Monitor</h3><div class="price">ab 249 € <small>/ Monat</small></div><ul class="list"><li>3–5 priorisierte Themen/Scopes</li><li>kundenspezifischer Change Feed</li><li>Alert-Regeln + Briefing</li><li>monatlicher Coverage-/Miss-Review</li></ul></div><div class="card"><span class="tag">Integration</span><h3>Intelligence API</h3><div class="price">ab 499 € <small>/ Monat</small></div><ul class="list"><li>versionierte JSON/NDJSON-Schnittstelle</li><li>Custom Scopes + Delta-Feed</li><li>Integrationssupport</li><li>kommerzielle Nutzung / vereinbarte Lizenz</li></ul></div><div class="card"><span class="tag">Operational</span><h3>Enterprise Intelligence</h3><div class="price">ab 1.500 € <small>/ Monat</small></div><ul class="list"><li>Webhooks + Workflow Integration</li><li>Custom Intelligence / Taxonomie</li><li>vertragliches SLA</li><li>OCN/Company-01 Authority-Handoff</li><li>dedizierte Reviews / Support</li></ul></div></div><div class="card warn"><b>Truth boundary:</b> Der kostenlose GitHub-Pages-Feed hat kein Uptime-/Push-SLA. Garantierte Latenz, Retries, Support und Coverage werden erst im bezahlten Hosted-Vertrag zugesichert. Wir verkaufen keine ungeprüfte „99,9 %“-Behauptung.</div></section><section class="section"><h2>Warum dafür zahlen, wenn öffentliche Daten frei sind?</h2><p>Weil die teure Arbeit nicht das Herunterladen eines Gesetzes ist. Die teure Arbeit ist: <b>hundert Quellen beobachten → Änderung erkennen → Relevanz filtern → Betroffene bestimmen → Quelle prüfen → nächsten Schritt vorbereiten → in das eigene System bringen → nichts Kritisches verpassen.</b></p><div class="card"><pre class="code">PUBLIC SOURCES
+    ↓
+Citizen Agents
+change → impact → affected → action → evidence
+    ↓
+alerts / API / custom intelligence
+    ↓
+OCN / organisation
+ALLOW / APPROVAL / BLOCK
+    ↓
+CRM · case system · briefing · citizen service · agent</pre></div></section><div class="card truth"><b>Transparenz-Versprechen.</b> Citizen Agents verkauft keine Nutzerdaten. Persönliche Watchdog-Profile bleiben clientseitig. Branchen-Partnerschaften dürfen weder Verifikationsstatus noch redaktionelle Bewertung kaufen.</div><section class="section"><h2>Design Partner werden</h2><p>Wenn Ihr Team heute Gesetze, Leistungen oder Behördenentscheidungen manuell überwacht, nehmen wir einen echten Scope und messen zwei Wochen lang, ob Citizen Agents diese Arbeit zuverlässig reduziert.</p><div class="cta"><a class="btn" href="mailto:hallo.chupi@gmail.com?subject=Citizen%20Agents%20Intelligence%20Proof">Intelligence Proof anfragen</a><a class="btn ghost" href="https://github.com/mikelninh/citizen-agents">Quellcode & Rohdaten</a></div></section></main><footer class="footer"><span>Citizen Agents · Digital Democracy Studio · Berlin</span><span>Open public layer · Paid reliability & integration layer</span></footer></div></body></html>
