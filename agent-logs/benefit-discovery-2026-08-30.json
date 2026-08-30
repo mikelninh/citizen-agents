@@ -1,0 +1,495 @@
+{
+  "agent": "benefit-discovery",
+  "title": "Benefit-Discovery Watch",
+  "date": "2026-08-30",
+  "generated_at": "2026-08-30T15:17:56.833581+02:00",
+  "research_mode": "live-verify",
+  "country": "DE",
+  "focus": "unclaimed monetary entitlements",
+  "item_count": 8,
+  "verification": {
+    "sources_checked": 21,
+    "sources_reachable": 20
+  },
+  "schema_version": 1,
+  "items": [
+    {
+      "id": "wohngeld",
+      "headline": "Wohngeld — der größte ungehobene Geldtopf: jetzt beantragen, bevor die Reform greift",
+      "what_changed": "Wohngeld ist der Klassiker unter den nicht abgerufenen Leistungen: Studien zur Nichtinanspruchnahme von Sozialleistungen zeigen, dass ein erheblicher Teil der Berechtigten nie einen Antrag stellt (\"verdeckte Armut\"). Gleichzeitig hat das Kabinett am 6. Juli 2026 eine Wohngeldreform beschlossen, die den Bundesansatz von rund 5 auf 3 Mrd. Euro senken soll — künftige Anträge fallen also tendenziell niedriger aus.",
+      "effective": "Wohngeld ist jetzt beantragbar; die Kürzungsreform ist Gesetzentwurf, noch nicht in Kraft. Wohngeld wird ab dem Monat der Antragstellung gezahlt — nicht rückwirkend.",
+      "who_affected": "Mieterinnen und Mieter sowie Eigentümer mit kleinem bis mittlerem Einkommen, Rentner, Alleinerziehende, Studierende ohne BAföG-Anspruch, Azubis in bestimmten Fällen.",
+      "citizen_tip": "Antrag noch in diesem Monat bei der örtlichen Wohngeldstelle einreichen — ein Tag zu spät kostet einen ganzen Monatsbetrag. Auch bei Unsicherheit einreichen: der Bescheid kostet nichts.",
+      "money_scale": "bis zu mehrere hundert Euro pro Monat",
+      "uncertain": false,
+      "live_hits": 0,
+      "sources": [
+        "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
+        "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+        "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html"
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.bmwsb.bund.de/DE/wohnen/wohngeld/wohngeld-plus/wohngeld-plus_node.html",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "190 Euro",
+            "370 Euro",
+            "1,20 Euro",
+            "0,40 Euro",
+            "822 Euro",
+            "157 Euro",
+            "979 Euro",
+            "822,00 Euro"
+          ],
+          "change_signals": [
+            "Reform",
+            "ab 1.",
+            "beantrag",
+            "erhöht",
+            "rückwirkend",
+            "steigt",
+            "Änderung"
+          ]
+        },
+        {
+          "url": "https://www.tagesschau.de/inland/gesellschaft/wohngeld-kuerzung-faq-100.html",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "290 Euro",
+            "300 Euro",
+            "60.000 Euro",
+            "190 Euro",
+            "30 Euro"
+          ],
+          "change_signals": [
+            "Reform",
+            "beantrag",
+            "erhöht"
+          ]
+        },
+        {
+          "url": "https://www.bmas.de/DE/Service/Publikationen/Forschungsberichte/fb-668-bestandsaufnahme-nichtinanspruchnahme-sozialleistungen.html",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [],
+          "change_signals": [
+            "Reform",
+            "Änderung"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kinderzuschlag",
+      "headline": "Kinderzuschlag (KiZ) — bis 297 € pro Kind und Monat, muss extra beantragt werden",
+      "what_changed": "Der Kinderzuschlag ist eine eigene Leistung der Familienkasse für Eltern, die zwar genug für sich selbst verdienen, aber nicht für ihre Kinder. Er wird **nicht** automatisch mit dem Kindergeld ausgezahlt, sondern muss gesondert beantragt werden — deshalb bleibt er häufig ungenutzt. Höchstbetrag laut DGB-Ratgeber: 297 € je Kind und Monat.",
+      "effective": "Laufend beantragbar; Bewilligung in der Regel für 6 Monate, danach Folgeantrag nötig.",
+      "who_affected": "Erwerbstätige Familien und Alleinerziehende mit kleinem Einkommen, die kein Bürgergeld/keine neue Grundsicherung beziehen.",
+      "citizen_tip": "Zuerst den kostenlosen \"KiZ-Lotse\" der Bundesagentur für Arbeit ausfüllen (wenige Minuten) und direkt online beantragen. Wer KiZ bekommt, hat automatisch Zugang zum Bildungs- und Teilhabepaket und ist von Kita-Gebühren befreit.",
+      "money_scale": "bis 297 € / Kind / Monat",
+      "uncertain": false,
+      "live_hits": 0,
+      "sources": [
+        "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
+        "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
+        "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/"
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kinderzuschlag-anspruch-hoehe-dauer",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "900 Euro",
+            "600 Euro",
+            "297 Euro",
+            "55.000 Euro",
+            "70.000 Euro",
+            "15.000 Euro"
+          ],
+          "change_signals": [
+            "Frist",
+            "beantrag",
+            "rückwirkend",
+            "Änderung"
+          ]
+        },
+        {
+          "url": "https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag-verstehen/kiz-lotse",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [],
+          "change_signals": [
+            "erhöht",
+            "Änderung"
+          ]
+        },
+        {
+          "url": "https://www.dgb.de/service/ratgeber/kinderzuschlag-und-kindergrundsicherung/",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "95.000 Euro",
+            "297 Euro",
+            "259 Euro",
+            "556 Euro",
+            "700 Euro",
+            "950 Euro",
+            "15 €",
+            "1.233 Euro"
+          ],
+          "change_signals": [
+            "Frist",
+            "beantrag",
+            "erhöht",
+            "rückwirkend",
+            "steigt"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bildung-teilhabe",
+      "headline": "Bildung und Teilhabe (BuT) — Schulbedarf, Mittagessen, 15 € Vereinsbeitrag pro Monat",
+      "what_changed": "Das Bildungspaket übernimmt für Kinder aus Familien mit kleinem Einkommen Schulausflüge, Schulbedarf, Lernförderung, Mittagessen in Kita/Schule sowie pauschal 15 € pro Monat für Sport-, Freizeit- und Kulturangebote. Anspruch besteht u. a. auch bei Wohngeld- oder Kinderzuschlagsbezug — genau diese Gruppe beantragt es oft nicht.",
+      "effective": "Laufend; Anträge werden meist nur begrenzt rückwirkend anerkannt — zeitnah stellen.",
+      "who_affected": "Familien mit Bürgergeld/neuer Grundsicherung, Wohngeld, Kinderzuschlag oder Sozialhilfe.",
+      "citizen_tip": "Antrag beim Jobcenter bzw. Landkreis/kreisfreier Stadt stellen — Wohngeld- und KiZ-Empfänger haben ein eigenes Antragsformular. Belege (Vereinsbeitrag, Klassenfahrt) aufheben.",
+      "money_scale": "15 €/Monat Teilhabe + Schulbedarf + Mittagessen",
+      "uncertain": false,
+      "live_hits": 0,
+      "sources": [
+        "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
+        "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
+        "https://www.service-bw.de/zufi/leistungen/1963"
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.arbeitsagentur.de/familie-und-kinder/informationen-zum-bildungspaket",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "15 Euro"
+          ],
+          "change_signals": [
+            "beantrag"
+          ]
+        },
+        {
+          "url": "https://www.familienratgeber.de/rechte-leistungen/geld/leistungen-fuer-bildung-und-teilhabe",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "195 Euro",
+            "65 Euro",
+            "130 Euro",
+            "585 Euro",
+            "15 Euro"
+          ],
+          "change_signals": [
+            "beantrag"
+          ]
+        },
+        {
+          "url": "https://www.service-bw.de/zufi/leistungen/1963",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [],
+          "change_signals": []
+        }
+      ]
+    },
+    {
+      "id": "elterngeld-frist",
+      "headline": "Elterngeld — nur 3 Monate rückwirkend: jeder verspätete Monat ist verlorenes Geld",
+      "what_changed": "Elterngeld wird maximal für die letzten **drei** Lebensmonate vor Antragstellung rückwirkend gezahlt. Wer den Antrag verschleppt, verliert die davorliegenden Monate endgültig — das ist der häufigste vermeidbare Geldverlust junger Eltern.",
+      "effective": "Dauerhaft geltende Frist (Familienportal des Bundes; ZBFS Bayern).",
+      "who_affected": "Alle Eltern nach der Geburt, insbesondere bei später Anmeldung oder fehlenden Unterlagen.",
+      "citizen_tip": "Antrag sofort nach der Geburt einreichen, auch unvollständig — Nachweise dürfen nachgereicht werden. Das Antragsdatum sichert den Anspruch.",
+      "money_scale": "300–1.800 € pro verlorenem Monat",
+      "uncertain": false,
+      "live_hits": 0,
+      "sources": [
+        "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
+        "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
+        "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld"
+      ],
+      "source_checks": [
+        {
+          "url": "https://familienportal.de/familienportal/familienleistungen/elterngeld/faq/wie-kann-ich-elterngeld-beantragen--124762",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [],
+          "change_signals": [
+            "ab 1.",
+            "beantrag",
+            "rückwirkend",
+            "Änderung"
+          ]
+        },
+        {
+          "url": "https://www.zbfs.bayern.de/familienleistungen/elterngeld/faq/voraussetzungen_und_antrag/",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "200.000 Euro",
+            "175.000 Euro"
+          ],
+          "change_signals": [
+            "Frist",
+            "beantrag"
+          ]
+        },
+        {
+          "url": "https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld",
+          "ok": false,
+          "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1028)>"
+        }
+      ]
+    },
+    {
+      "id": "sparerpauschbetrag",
+      "headline": "Sparerpauschbetrag 1.000 € — ohne Freistellungsauftrag verschenkt die Bank dein Geld ans Finanzamt",
+      "what_changed": "Kapitalerträge bleiben bis 1.000 € pro Jahr steuerfrei (2.000 € bei Zusammenveranlagung). Ohne erteilten Freistellungsauftrag zieht die Bank trotzdem rund 25 % Abgeltungsteuer plus Soli ab. Das Geld ist nicht verloren, muss aber über die Steuererklärung (Anlage KAP) zurückgeholt werden — was viele nie tun.",
+      "effective": "Gilt fortlaufend; Freistellungsaufträge wirken ab Erteilung für das laufende Kalenderjahr.",
+      "who_affected": "Alle mit Tagesgeld, Festgeld, ETF-Sparplan oder Dividenden — bei aktuellen Zinsen reicht schon ein mittleres Tagesgeldguthaben, um den Freibetrag zu reißen.",
+      "citizen_tip": "Freistellungsauftrag bei jeder Bank/Broker anpassen (Summe über alle Institute max. 1.000 €/2.000 €) und in der Steuererklärung die Anlage KAP nutzen, falls bereits zu viel einbehalten wurde.",
+      "money_scale": "bis ca. 264 € Steuerersparnis pro Jahr (Single)",
+      "uncertain": false,
+      "live_hits": 0,
+      "sources": [
+        "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
+        "https://www.finanztip.de/freistellungsauftrag/"
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.finanzamt.nrw.de/steuerinfos/privatpersonen/einkuenfte-aus-kapitalvermoegen/sparerpauschbetrag-freistellungsauftrag",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "1.000 Euro",
+            "2.000 Euro",
+            "801 Euro",
+            "1.602 Euro",
+            "0 Euro"
+          ],
+          "change_signals": [
+            "Frist",
+            "Reform",
+            "beantrag",
+            "erhöht",
+            "Änderung"
+          ]
+        },
+        {
+          "url": "https://www.finanztip.de/freistellungsauftrag/",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "1.000 Euro"
+          ],
+          "change_signals": [
+            "Frist",
+            "beantrag",
+            "Änderung"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sparzulage-wop",
+      "headline": "Arbeitnehmer-Sparzulage & Wohnungsbauprämie — Einkommensgrenzen stark angehoben, viele wissen es nicht",
+      "what_changed": "Die Einkommensgrenze für die Arbeitnehmer-Sparzulage wurde massiv angehoben: Alleinstehende bis 40.000 € zu versteuerndem Jahreseinkommen (früher 17.900 €), Verheiratete entsprechend doppelt. Die Wohnungsbauprämie gibt es bis 35.000 € (Single) bzw. 70.000 € (Paare). Wer vermögenswirksame Leistungen bekommt, aber nie einen VL-Vertrag abgeschlossen hat, lässt Arbeitgeber- **und** Staatsgeld liegen.",
+      "effective": "Geltende Rechtslage; Sparzulage wird mit der Einkommensteuererklärung festgesetzt, Wohnungsbauprämie jährlich über den Anbieter beantragt.",
+      "who_affected": "Arbeitnehmerinnen und Arbeitnehmer mit Anspruch auf vermögenswirksame Leistungen (oft im Tarifvertrag), Bausparer, junge Sparer.",
+      "citizen_tip": "Im Arbeitsvertrag/Tarifvertrag nach \"vermögenswirksame Leistungen\" suchen, VL-Vertrag abschließen und die Sparzulage über Anlage VL in der Steuererklärung geltend machen.",
+      "money_scale": "bis ca. 123 € + 70 € staatliche Zulagen pro Jahr",
+      "uncertain": false,
+      "live_hits": 0,
+      "sources": [
+        "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
+        "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
+        "https://www.mystipendium.de/geld/wohnungsbaupraemie"
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.lbs.de/bausparen/staatliche-foerderung/arbeitnehmer-sparzulage",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "470 Euro",
+            "940 Euro",
+            "43 Euro",
+            "86 Euro",
+            "40.000 Euro",
+            "17.900 Euro",
+            "35.800 Euro",
+            "80.000 Euro"
+          ],
+          "change_signals": [
+            "Frist",
+            "Reform",
+            "beantrag",
+            "erhöht",
+            "rückwirkend",
+            "Änderung"
+          ]
+        },
+        {
+          "url": "https://www.wuestenrot.de/bausparen/staatliche-foerderungen/wohnungsbaupraemie",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "70 Euro",
+            "140 Euro",
+            "700 €",
+            "1.400 €",
+            "70 €",
+            "140 €",
+            "50 Euro",
+            "35.000 Euro"
+          ],
+          "change_signals": [
+            "Frist",
+            "beantrag",
+            "rückwirkend",
+            "steigt"
+          ]
+        },
+        {
+          "url": "https://www.mystipendium.de/geld/wohnungsbaupraemie",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "100 Euro",
+            "10,00 Euro",
+            "35.000 €",
+            "70.000 €",
+            "700 €",
+            "1.400 €",
+            "70,00 €",
+            "140,00 €"
+          ],
+          "change_signals": [
+            "Frist",
+            "beantrag",
+            "rückwirkend",
+            "Änderung"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bafoeg-studienstarthilfe",
+      "headline": "BAföG-Studienstarthilfe — 1.000 € einmalig, ohne Vermögensprüfung der Eltern",
+      "what_changed": "Die Studienstarthilfe ist ein einmaliger Zuschuss von 1.000 € für junge Menschen aus finanziell schwachen Haushalten zum Studienstart. Sie ist ein Zuschuss (keine Rückzahlung) und unabhängig vom klassischen BAföG-Bewilligungsverfahren gedacht — sie wird deutlich seltener abgerufen als möglich.",
+      "effective": "Beantragung rund um den Studienbeginn; Fristen sind eng an den Studienstart gekoppelt.",
+      "who_affected": "Studienanfängerinnen und -anfänger unter 25, deren Familien Sozialleistungen (z. B. Bürgergeld, Wohngeld, Kinderzuschlag, BAB) beziehen.",
+      "citizen_tip": "Antrag beim zuständigen Studierendenwerk stellen — parallel zum regulären BAföG-Antrag, nicht stattdessen. Auch bei knappem BAföG-Anspruch lohnt der Antrag.",
+      "money_scale": "1.000 € einmalig",
+      "uncertain": false,
+      "live_hits": 0,
+      "sources": [
+        "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
+        "https://www.einstieg.com/studium/bafoeg-reform-2026.html"
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.xn--bafg-7qa.de/bafoeg/de/verbesserte-leistungen/dasneuebafoeg_node.html",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "1.000 Euro",
+            "360 Euro",
+            "380 Euro",
+            "934 Euro",
+            "58 Euro",
+            "992 Euro"
+          ],
+          "change_signals": [
+            "Reform",
+            "beantrag",
+            "erhöht",
+            "steigt",
+            "Änderung"
+          ]
+        },
+        {
+          "url": "https://www.einstieg.com/studium/bafoeg-reform-2026.html",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "380 Euro",
+            "440 Euro",
+            "60 Euro",
+            "1.000 Euro",
+            "2.540 Euro",
+            "603 Euro",
+            "7.236 Euro"
+          ],
+          "change_signals": [
+            "Frist",
+            "Reform",
+            "erhöht",
+            "steigt",
+            "Änderung"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heizkosten-energie",
+      "headline": "Heizkosten- und Energiehilfen — teils automatisch, teils nur auf Antrag (Landesprogramme prüfen)",
+      "what_changed": "Der bundesweite Heizkostenzuschuss wurde laut Bundesregierung von Amts wegen ausgezahlt, musste also nicht beantragt werden. Aktuelle Entlastungen laufen dagegen überwiegend über **Landes- und Kommunalprogramme** sowie über Härtefallfonds der Energieversorger — diese erfordern einen Antrag und haben eigene Fristen. Hier ist die Faktenlage regional sehr unterschiedlich; wir kennzeichnen das ausdrücklich als unsicher.",
+      "effective": "Programme laufen je nach Bundesland/Kommune unterschiedlich; Fristen bitte lokal prüfen.",
+      "who_affected": "Wohngeld-, BAföG- und Aufstiegs-BAföG-Beziehende, Azubis mit BAB, Haushalte mit Energieschulden.",
+      "citizen_tip": "Bei drohender Sperre sofort den Sozialdienst/die Verbraucherzentrale kontaktieren: Jobcenter können Energieschulden als Darlehen übernehmen. Zusätzlich das eigene Bundesland nach einem aktuellen Heizkostenzuschuss durchsuchen.",
+      "money_scale": "regional unterschiedlich",
+      "uncertain": true,
+      "live_hits": 0,
+      "sources": [
+        "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
+        "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat"
+      ],
+      "source_checks": [
+        {
+          "url": "https://www.bundesregierung.de/breg-de/aktuelles/heizkostenzuschuss-2144900",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "345 Euro",
+            "415 Euro",
+            "540 Euro",
+            "100 Euro"
+          ],
+          "change_signals": [
+            "Reform",
+            "beantrag"
+          ]
+        },
+        {
+          "url": "https://www.mein-nebenkostenrechner.de/ratgeber/heizkostenzuschuss-2026-wer-anspruch-hat",
+          "ok": true,
+          "http_status": 200,
+          "euro_amounts_seen": [
+            "415 €",
+            "540 €",
+            "100 €",
+            "345 €",
+            "7,90 €"
+          ],
+          "change_signals": [
+            "Frist",
+            "Reform",
+            "beantrag"
+          ]
+        }
+      ]
+    }
+  ],
+  "digest_path": "agent-digests/benefit-discovery-2026-08-30.md",
+  "log_path": "agent-logs/benefit-discovery-2026-08-30.json"
+}
