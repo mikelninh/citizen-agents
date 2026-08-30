@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-30",
+  "moves": 4,
+  "highlights": [
+    "Robert Habeck (ex-Vice Chancellor) joins Urban Partners as Senior Advisor effective 1 Aug 2026; Lobbycontrol warns of conflict of interest (Viessmann/heat-pump link).",
+    "Christian Lindner (ex-Finance Minister) becomes deputy CEO of Autoland AG (early 2026) plus supervisory boards at Serviceplan Group, Börse Stuttgart, Lhoist Germany.",
+    "Katherina Reiche (CDU) — reverse revolving door: from Westenergie (E.ON gas/strom) CEO to Federal Economics Minister; Lobbycontrol accuses her of favoring gas companies.",
+    "Kevin Kühnert (ex-SPD Secretary-General) joins Finanzwende e.V. as lobbying lead for alternative financial policy (2026)."
+  ],
+  "sources": [
+    "https://www.zdfheute.de/politik/deutschland/habeck-job-investmentgesellschaft-daenemark-lobbycontrol-kritik-100.html",
+    "https://urban.partners/news/dr-robert-habeck-to-become-senior-advisor-at-urban-partners",
+    "https://www.zeit.de/politik/deutschland/2026-07/robert-habeck-berater-investmentgesellschaft-wirtschaft-gxe",
+    "https://www.autohaus.de/nachrichten/autohandel/autoland-ag-in-der-offensive-christian-lindner-kommt-an-bord-3733887",
+    "https://www.tagesschau.de/wirtschaft/unternehmen/lindner-autoland-ag-100.html",
+    "https://de.wikipedia.org/wiki/Christian_Lindner",
+    "https://www.handelsblatt.com/unternehmen/mittelstand/familienunternehmer/christian-lindner-zu-meiner-freiheit-gehoert-dass-ich-ins-machen-verliebt-bin-01/100207915.html",
+    "https://www.zdfheute.de/politik/deutschland/katherina-reiche-lobby-gas-politix-100.html",
+    "https://taz.de/Nach-Rueckzug-aus-der-Politik/!6137204/",
+    "https://www.focus.de/politik/deutschland/neuer-job-fuer-kevin-kuehnert-ex-spd-general-wird-lobbyist-bei-buergerbewegung_df10af9b-6cd9-4f17-ab53-eae6439fac97.html"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents to temp dir",
+    "created branch agent/revolving-door-2026-08-30",
+    "researched 4 verifiable moves via web_search/web_extract",
+    "wrote agent-digests/revolving-door-2026-08-30.md (bilingual DE/EN)",
+    "wrote agent-logs/revolving-door-2026-08-30.json",
+    "committed both artifacts",
+    "pushed branch agent/revolving-door-2026-08-30",
+    "opened PR (no merge — human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/revolving-door-2026-08-30"
+}
