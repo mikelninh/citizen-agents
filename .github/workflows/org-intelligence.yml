@@ -4,8 +4,11 @@ on:
   pull_request:
     paths:
       - breakfast-feed.json
+      - impact-core.mjs
+      - organisation-impact.html
       - tools/build-org-intelligence.mjs
       - tools/org-intelligence.test.mjs
+      - tools/impact-core.test.mjs
       - api/v1/**
       - organisations.html
       - alerts.html
@@ -17,8 +20,11 @@ on:
       - main
     paths:
       - breakfast-feed.json
+      - impact-core.mjs
+      - organisation-impact.html
       - tools/build-org-intelligence.mjs
       - tools/org-intelligence.test.mjs
+      - tools/impact-core.test.mjs
       - api/v1/**
       - organisations.html
       - alerts.html
@@ -43,7 +49,7 @@ jobs:
         with:
           node-version: 22
       - name: Test intelligence contract
-        run: node --test tools/org-intelligence.test.mjs
+        run: node --test tools/org-intelligence.test.mjs tools/impact-core.test.mjs
       - name: Build API, NDJSON, health and RSS outputs
         run: node tools/build-org-intelligence.mjs
       - name: Verify public product surfaces
@@ -52,6 +58,8 @@ jobs:
           test -s api/v1/health.json
           test -s api/v1/changes.ndjson
           test -s api/v1/changes.xml
+          test -s impact-core.mjs
+          test -s organisation-impact.html
           grep -q 'citizen-intelligence/1.0' api/v1/changes.json
           grep -q 'external_or_consequential_action' api/v1/changes.json
           grep -q 'Intelligence Proof' organisations.html
@@ -59,6 +67,9 @@ jobs:
           grep -q 'citizen_intelligence_proof' intelligence-proof.html
           grep -q 'explicitFollowupConsent' intelligence-proof.html
           grep -q 'company01-lead-intake' intelligence-proof.html
+          grep -q 'Proof of usefulness' organisation-impact.html
+          grep -q 'estimated_hours_saved' impact-core.mjs
+          grep -q 'guaranteed_roi: false' impact-core.mjs
       - name: Commit generated API snapshot when feed changed
         if: github.event_name != 'pull_request'
         run: |
