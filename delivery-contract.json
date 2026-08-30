@@ -1,0 +1,24 @@
+{
+  "schema_version": "citizen-alert-delivery/1.0",
+  "principle": "Generate one evidence-backed alert once, then route it to any approved channel without changing the watchdog logic.",
+  "channels": [
+    {"id":"web","label":"Web","status":"AVAILABLE_NOW","setup":"ZERO_SETUP","delivery":"pull","notes":"Public radar/backtest pages."},
+    {"id":"rss","label":"RSS / Atom","status":"AVAILABLE_NOW","setup":"ZERO_SETUP","delivery":"pull","notes":"Works with feed readers and many automation tools."},
+    {"id":"api","label":"JSON / NDJSON API","status":"AVAILABLE_NOW","setup":"ZERO_SETUP","delivery":"pull","notes":"Machine-readable public layer."},
+    {"id":"webhook","label":"Generic webhook","status":"CONTRACT_READY","setup":"CONNECT_ONCE","delivery":"push","notes":"Hosted outbound retry/DLQ worker still required for SLA-grade push."},
+    {"id":"email","label":"Email","status":"ADAPTER_READY","setup":"CONNECT_ONCE","delivery":"push","notes":"Needs a hosted mail provider/account before autonomous delivery can be claimed."},
+    {"id":"telegram","label":"Telegram","status":"ADAPTER_READY","setup":"CONNECT_ONCE","delivery":"push","notes":"Requires bot token plus target chat/channel once; Telegram Bot API supports HTTP message delivery."},
+    {"id":"slack","label":"Slack","status":"ADAPTER_READY","setup":"ONE_CLICK_OAUTH_TARGET","delivery":"push","notes":"Best production path is a Slack App/OAuth install; workspace approval may be required."},
+    {"id":"x","label":"X","status":"ADAPTER_READY_POLICY_GATED","setup":"CONNECT_ONCE","delivery":"post_reply","notes":"Requires approved X developer use, API credentials, bot disclosure and automation-policy compliance. No spam/bulk outreach."}
+  ],
+  "alert_envelope": {
+    "required": ["id","headline","why_it_matters","source_urls","observed_at","audience_scope","authority"],
+    "authority": {"read":"ALLOW","external_or_consequential_action":"APPROVAL"},
+    "feedback_actions": ["useful","already_knew","would_have_missed","not_relevant","action_taken"]
+  },
+  "truth_boundary": {
+    "zero_setup_claim_only_for": ["web","rss","api"],
+    "hosted_push_sla_claimed": false,
+    "x_autonomous_reply_without_consent": false
+  }
+}
