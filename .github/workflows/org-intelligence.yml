@@ -24,6 +24,7 @@ on:
       - discovered-ted-opportunities.json
       - founder-opportunity-radar.html
       - revenue-os.html
+      - action-packs/**
       - agent-digests/**
       - impact-core.mjs
       - organisation-impact.html
@@ -69,6 +70,7 @@ on:
       - discovered-ted-opportunities.json
       - founder-opportunity-radar.html
       - revenue-os.html
+      - action-packs/**
       - agent-digests/**
       - impact-core.mjs
       - organisation-impact.html
@@ -152,6 +154,9 @@ jobs:
           test -s discovered-ted-opportunities.json
           test -s founder-opportunity-radar.html
           test -s revenue-os.html
+          test -s action-packs/dataport-social-benefits-2026.md
+          test -s action-packs/bsi-praki-2026.md
+          test -s action-packs/berliner-startup-stipendium-2026.md
           test -s agent-digests/founder-opportunity-digest.md
           grep -q 'citizen-intelligence/1.0' api/v1/changes.json
           grep -q 'citizen-democracy-radar/1.0' api/v1/radar.json
@@ -181,6 +186,9 @@ jobs:
           grep -q 'citizen-ted-discovery/1.0' discovered-ted-opportunities.json
           grep -q 'Founder Opportunity Radar' founder-opportunity-radar.html
           grep -q 'Opportunity →' revenue-os.html
+          grep -q 'SUBCONTRACT / PARTNER-FIRST' action-packs/dataport-social-benefits-2026.md
+          grep -q 'PARTNER-FIRST' action-packs/bsi-praki-2026.md
+          grep -q 'DIRECT APPLICATION' action-packs/berliner-startup-stipendium-2026.md
           grep -q 'no_revenue_claim_until_contract_or_payment' self-opportunity-profile.json
           grep -q 'Proof of usefulness' organisation-impact.html
           grep -q 'Know what matters' democracy-radar.html
