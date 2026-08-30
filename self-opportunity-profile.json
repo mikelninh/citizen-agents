@@ -1,0 +1,58 @@
+{
+  "schema_version": "citizen-self-opportunity-profile/1.0",
+  "name": "Citizen Agents / Michael Ninh",
+  "location": ["Berlin", "Germany", "EU"],
+  "mission": "Build trustworthy AI systems that reduce administrative burden, improve access to rights and opportunities, strengthen civic capacity, and turn public information into useful action.",
+  "revenue_goals": [
+    "self-serve SaaS revenue",
+    "public-sector contracts",
+    "paid pilots",
+    "grants and non-dilutive funding",
+    "partnership and licensing revenue",
+    "API and intelligence subscriptions"
+  ],
+  "capabilities": [
+    "agentic AI",
+    "LLM evaluation",
+    "AI safety and reliability",
+    "retrieval augmented generation",
+    "document AI",
+    "public-sector workflow automation",
+    "benefits and social services",
+    "healthcare AI prototypes",
+    "legal AI",
+    "civic intelligence",
+    "monitoring and alerts",
+    "evidence and provenance",
+    "human approval workflows",
+    "FastAPI",
+    "Python",
+    "React",
+    "TypeScript",
+    "MCP"
+  ],
+  "products": [
+    {"id":"citizen-agents","name":"Citizen Agents","tags":["civic intelligence","monitoring","funding","policy","public sector","evidence"]},
+    {"id":"digital-worker-factory","name":"Digital Worker Factory / OpsPilot","tags":["agentic AI","workflow automation","public sector","SME","human approval"]},
+    {"id":"careos","name":"CareOS","tags":["healthcare","hospital","document AI","clinical workflow"]},
+    {"id":"safetrace","name":"SafeTrace / Master Proof","tags":["entity resolution","evidence","risk","public sector","research"]},
+    {"id":"gitlaw","name":"GitLaw","tags":["legal AI","RAG","citations","compliance"]},
+    {"id":"care-abundance","name":"CARE / Public Service systems","tags":["social benefits","public administration","rights","welfare","civic tech"]}
+  ],
+  "wanted_opportunity_types": [
+    "customer",
+    "tender",
+    "grant",
+    "accelerator",
+    "partnership",
+    "distribution",
+    "licensing",
+    "API buyer"
+  ],
+  "truth_boundary": {
+    "fit_is_recommendation_not_eligibility": true,
+    "procurement_requirements_must_be_checked": true,
+    "grant_eligibility_must_be_checked": true,
+    "no_revenue_claim_until_contract_or_payment": true
+  }
+}
