@@ -1,0 +1,8 @@
+{
+  "schema_version": "citizen-ted-discovery/1.0",
+  "generated_at": "2026-08-30T00:00:00.000Z",
+  "query": "seed; scheduled workflow refreshes from official TED Search API",
+  "coverage_complete": false,
+  "items": [],
+  "truth_boundary": "Automated keyword discovery from official TED Search API. A candidate is not a qualified opportunity until requirements are reviewed."
+}
