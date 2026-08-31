@@ -4,6 +4,8 @@
 
 Citizen Agents monitors public sources and turns changes in laws, rights, money, democratic action windows and institutions into inspectable intelligence rather than silent AI output.
 
+**[Founder Control Center](https://mikelninh.github.io/citizen-agents/control-center.html)**  
+**[Revenue Opportunity OS](https://mikelninh.github.io/citizen-agents/revenue-os.html)**  
 **[Open the public portal](https://mikelninh.github.io/citizen-agents/)**  
 **[Democracy Radar](https://mikelninh.github.io/citizen-agents/democracy-radar.html)**  
 **[For organisations](https://mikelninh.github.io/citizen-agents/organisations.html)**
@@ -60,6 +62,8 @@ The exported evidence report measures observed usefulness and explicitly leaves 
 - combined Democracy Radar API (`api/v1/radar.json`, generated in CI)
 - organisation Impact Graph and local usefulness evidence
 - alerts, reliability surface and 14-day Intelligence Proof
+- self-dogfood Revenue Opportunity OS with proof matching, route selection, partner mapping and outcome tracking
+- Founder Control Center for today priorities, revenue pipeline, opportunity radar, reusable proofs, partner leverage and coverage health
 - Company 01 intake for opted-in paid proofs
 
 ## Guardrails
