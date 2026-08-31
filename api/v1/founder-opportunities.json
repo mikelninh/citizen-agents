@@ -1,8 +1,8 @@
 {
   "schema_version": "citizen-founder-opportunity-api/1.0",
-  "generated_at": "2026-08-31T10:16:00.999Z",
+  "generated_at": "2026-08-31T13:55:50.305Z",
   "discovery": {
-    "ted_generated_at": "2026-08-31T10:16:00.346Z",
+    "ted_generated_at": "2026-08-31T13:55:49.678Z",
     "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260801 SORT BY publication-date DESC"
   },
   "profile": {

@@ -1,5 +1,5 @@
 # Founder Opportunity Digest
-Generated: 2026-08-31T10:16:00.999Z
+Generated: 2026-08-31T13:55:50.305Z
 Open: **35** · Qualified: **13** · Automated new: **35** · Partner-route: **4** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Dataport — KI-Assistenzsystem Sozialleistungen

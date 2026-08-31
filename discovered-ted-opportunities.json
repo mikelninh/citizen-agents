@@ -1,6 +1,6 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-08-31T10:16:00.346Z",
+  "generated_at": "2026-08-31T13:55:49.678Z",
   "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260801 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
