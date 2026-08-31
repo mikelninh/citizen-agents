@@ -1,5 +1,5 @@
 {
-  "schema_version": "citizen-proof-catalog/1.1",
+  "schema_version": "citizen-proof-catalog/1.0",
   "generated_on": "2026-08-31",
   "truth_boundary": "Engineering proof maturity and production readiness are separate signals. Neither is a certification or customer reference unless explicitly stated. Production stages are sourced from production-readiness.json.",
   "proofs": [
