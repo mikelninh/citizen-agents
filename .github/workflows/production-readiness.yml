@@ -1,0 +1,47 @@
+name: production-readiness
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - production-readiness.json
+      - production-readiness.html
+      - .github/workflows/production-readiness.yml
+  pull_request:
+    paths:
+      - production-readiness.json
+      - production-readiness.html
+      - .github/workflows/production-readiness.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  truth-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Validate readiness source
+        run: |
+          node - <<'NODE'
+          const fs=require('fs');
+          const d=JSON.parse(fs.readFileSync('production-readiness.json','utf8'));
+          if(!String(d.schema_version).startsWith('citizen-production-readiness/')) throw new Error('bad schema');
+          if(!Array.isArray(d.systems)||d.systems.length!==8) throw new Error('expected eight systems');
+          const ids=new Set(d.systems.map(x=>x.id)); if(ids.size!==d.systems.length) throw new Error('duplicate system id');
+          const care=d.systems.find(x=>x.id==='careos'); if(care?.stage!=='BLOCKED_FOR_PRODUCTION') throw new Error('CareOS production block must remain explicit');
+          for(const s of d.systems){
+            if(s.stage==='PRODUCTION_READY' && (s.engineering_gaps?.length||s.cannot_close_without_external_evidence?.length)) throw new Error(`${s.id} cannot be production ready with open gates`);
+            if(typeof s.score!=='number'||s.score<0||s.score>100) throw new Error(`bad score ${s.id}`);
+          }
+          NODE
+      - name: Validate public surface truth labels
+        run: |
+          test -s production-readiness.html
+          grep -q 'Working proof ≠ production ready' production-readiness.html
+          grep -q 'Needs external evidence' production-readiness.html
+          grep -q 'PRODUCTION_READY' production-readiness.html
