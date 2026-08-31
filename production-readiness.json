@@ -1,0 +1,135 @@
+{
+  "schema_version": "citizen-production-readiness/1.0",
+  "generated_on": "2026-08-31",
+  "truth_boundary": "Production readiness is a release claim, not a synonym for a working demo. Scores are internal prioritisation signals. External clinical, legal, institutional, security and integration evidence cannot be created by code alone.",
+  "gate_model": {
+    "critical_gates": [
+      "identity_and_access",
+      "tenant_or_scope_isolation",
+      "durable_persistence",
+      "audit_and_provenance",
+      "observability_and_slos",
+      "security_and_secret_handling",
+      "retention_deletion_and_backup",
+      "deployment_rollback_and_recovery",
+      "domain_validation",
+      "real_world_integration_evidence"
+    ],
+    "stages": [
+      "PUBLIC_READ_ONLY_READY",
+      "CONTROLLED_PILOT_READY",
+      "CONTROLLED_PRODUCTION_CANDIDATE",
+      "PRODUCTION_READY",
+      "SHADOW_PILOT_ONLY",
+      "EVALUATED_COMPONENT_ONLY",
+      "BLOCKED_FOR_PRODUCTION"
+    ],
+    "production_ready_rule": "PRODUCTION_READY requires every critical engineering gate plus product-specific external evidence. A high score alone never grants the label."
+  },
+  "systems": [
+    {
+      "id": "citizen-agents",
+      "name": "Citizen Agents",
+      "stage": "PUBLIC_READ_ONLY_READY",
+      "score": 67,
+      "production_claim_allowed": "Only for the current public read-only, non-sensitive information surface; not for a multi-tenant B2B monitoring service.",
+      "engineering_strengths": ["public static deployment", "source-backed signals", "CI release gates", "human approval boundary", "security policy", "machine-readable APIs"],
+      "engineering_gaps": ["multi-tenant identity and access", "durable customer configuration/state", "hosted push retry/idempotency and delivery SLO", "operational incident/rollback runbook for paid service", "measured source coverage completeness"],
+      "external_gaps": ["customer validation for alert usefulness and delivery expectations"],
+      "close_now": ["production tenant/auth contract", "delivery idempotency/retry contract", "SLO/incident/backup runbook", "coverage health gate"],
+      "cannot_close_without_external_evidence": ["measured real-customer usefulness", "complete source coverage claim"],
+      "sources": ["https://github.com/mikelninh/citizen-agents", "https://mikelninh.github.io/citizen-agents/"]
+    },
+    {
+      "id": "digital-worker-factory",
+      "name": "Digital Worker Factory / OpsPilot",
+      "stage": "CONTROLLED_PILOT_READY",
+      "score": 72,
+      "production_claim_allowed": false,
+      "engineering_strengths": ["capability registry", "fail-closed policy gates", "human approval", "audit traces", "replayable evals", "provider adapters", "live model release gate"],
+      "engineering_gaps": ["standard production tenant/actor context", "durable external audit sink", "idempotent execution boundary", "queue/retry/dead-letter semantics", "secrets/KMS contract", "service health/SLO/backup/restore and rollback contract"],
+      "external_gaps": ["real customer workflow accuracy", "provider-specific production reliability", "security review for each customer environment"],
+      "close_now": ["shared production boundary wrapper", "redacted durable audit interface", "idempotency contract", "health/readiness contract", "retention policy and runbook"],
+      "cannot_close_without_external_evidence": ["real customer task accuracy", "customer-system integration reliability"],
+      "sources": ["https://github.com/mikelninh/digital-worker-factory", "https://mikelninh.github.io/agents/"]
+    },
+    {
+      "id": "care-public-service",
+      "name": "CARE / Public Service systems",
+      "stage": "SHADOW_PILOT_ONLY",
+      "score": 42,
+      "production_claim_allowed": false,
+      "engineering_strengths": ["deterministic routing and guarantee engines", "synthetic stress tests", "fail-closed evidence handling", "explicit policy boundaries"],
+      "engineering_gaps": ["production identity and authority integrations", "durable case/receipt infrastructure", "operational monitoring and correction workflows", "official-system adapters"],
+      "external_gaps": ["real advisory/municipal partner", "representative household data", "verified delivery receipts", "legal/institutional authority", "real-world fiscal and workflow validation"],
+      "close_now": ["shadow-pilot data contract", "case audit/receipt schema", "privacy/minimisation controls", "pilot observability and evidence ledger"],
+      "cannot_close_without_external_evidence": ["formal entitlement authority", "real-world outcomes", "national affordability", "municipal/service integration"],
+      "sources": ["https://github.com/mikelninh/care-abundance-mission"]
+    },
+    {
+      "id": "gitlaw",
+      "name": "GitLaw",
+      "stage": "CONTROLLED_PILOT_READY",
+      "score": 79,
+      "production_claim_allowed": false,
+      "engineering_strengths": ["authenticated pilot boundary", "hybrid retrieval", "deterministic citation verification", "browser E2E", "privacy/authority fail-closed tests", "MCP/API CI"],
+      "engineering_gaps": ["production SLO/incident/backup/restore evidence", "broader tenant/system integration proof", "operational monitoring against real pilot traffic"],
+      "external_gaps": ["broader evaluation with legal professionals on anonymised matters", "real law-firm vendor/system reliability", "professional security/privacy review for deployment context"],
+      "close_now": ["operational SLO/runbook", "backup/restore drill contract", "pilot telemetry/quality dashboard", "deployment readiness manifest"],
+      "cannot_close_without_external_evidence": ["complete legal-answer accuracy", "real law-firm workflow validation", "vendor integration reliability"],
+      "sources": ["https://github.com/mikelninh/gitlaw", "https://mikelninh.github.io/gitlaw/"]
+    },
+    {
+      "id": "safetrace-master-proof",
+      "name": "SafeTrace / Master Proof",
+      "stage": "EVALUATED_COMPONENT_ONLY",
+      "score": 46,
+      "production_claim_allowed": false,
+      "engineering_strengths": ["entity-resolution/evidence evaluation concept", "precision/recall-oriented proof framing", "source attribution"],
+      "engineering_gaps": ["no dedicated deployable product repository identified", "stable API/service contract", "identity/access", "durable persistence", "observability", "deployment/recovery", "versioned release artifact"],
+      "external_gaps": ["live customer entity-resolution corpus and acceptance criteria"],
+      "close_now": ["extract into a named versioned service/package", "publish deterministic benchmark dataset and API contract", "add CI/release manifest"],
+      "cannot_close_without_external_evidence": ["customer-specific entity-resolution quality and threshold acceptance"],
+      "sources": []
+    },
+    {
+      "id": "careos",
+      "name": "CareOS",
+      "stage": "BLOCKED_FOR_PRODUCTION",
+      "score": 34,
+      "production_claim_allowed": false,
+      "engineering_strengths": ["source-linked lifecycle/provenance", "patient-local graph", "bounded agent authority", "degraded/offline/recovery behavior", "FHIR/ISiK research paths", "Docker/Helm scaffold", "adversarial tests"],
+      "engineering_gaps": ["clinical-production identity/security deployment", "production PHI operations", "real KIS/LIS transport integrations", "multi-hospital operations and recovery evidence"],
+      "external_gaps": ["frozen holdout recall is 26.32% with 100% review-case burden", "clinician paired sessions", "hospital IT capability manifest", "independent privacy/security/clinical review", "approved sandbox/shadow workflow", "regulatory evidence where applicable"],
+      "close_now": ["fresh-development-data frontier work", "clinician study tooling", "hospital discovery/preflight tooling", "privacy/security review pack", "shadow-pilot telemetry"],
+      "cannot_close_without_external_evidence": ["clinical validation", "real hospital integration", "production PHI approval", "repeatability across hospitals", "regulatory approval/certification"],
+      "sources": ["https://github.com/mikelninh/care-os"]
+    },
+    {
+      "id": "pruefpilot",
+      "name": "PrüfPilot",
+      "stage": "CONTROLLED_PRODUCTION_CANDIDATE",
+      "score": 69,
+      "production_claim_allowed": false,
+      "engineering_strengths": ["FastAPI typed contracts", "real PDF intake", "SQLite persistence boundary", "health endpoint", "request IDs/security headers", "Docker deployment", "prompt-injection isolation", "human approval tests"],
+      "engineering_gaps": ["SSO/RBAC and tenant isolation", "durable Postgres/object storage instead of serverless ephemeral storage", "asynchronous processing/idempotency", "production observability/SLOs", "retention/deletion and backup workflows", "remove wildcard CORS in production", "DMS/funding-system adapters"],
+      "external_gaps": ["security review", "qualified reviewer validation", "labelled real evaluation corpus", "production integration evidence"],
+      "close_now": ["fail-closed production config gate", "API-key/RBAC pilot auth", "tenant-scoped persistence contract", "structured audit/telemetry", "retention/deletion endpoints", "readiness endpoint", "production CORS policy"],
+      "cannot_close_without_external_evidence": ["qualified reviewer validation", "real DMS/funding-system integration", "production accuracy"],
+      "sources": ["https://github.com/mikelninh/pruefpilot", "https://pruefpilot-v5-api.vercel.app/api/docs"]
+    },
+    {
+      "id": "casepilot",
+      "name": "CasePilot Reliability",
+      "stage": "EVALUATED_COMPONENT_ONLY",
+      "score": 49,
+      "production_claim_allowed": false,
+      "engineering_strengths": ["completion integrity", "tool compliance", "escalation", "loop detection", "trace replay", "evaluation framing"],
+      "engineering_gaps": ["no dedicated standalone deployable product repository identified", "versioned SDK/service contract", "persistent run store", "tenant/auth boundary", "production telemetry", "release/deployment target"],
+      "external_gaps": ["live agent workflow baselines and customer acceptance thresholds"],
+      "close_now": ["extract reliability layer into a versioned package inside Digital Worker Factory", "standard run/eval schema", "CI regression gate", "telemetry contract"],
+      "cannot_close_without_external_evidence": ["real-workflow reliability lift", "customer-specific error/latency thresholds"],
+      "sources": ["https://github.com/mikelninh/digital-worker-factory"]
+    }
+  ]
+}
