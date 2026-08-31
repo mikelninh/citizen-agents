@@ -5,6 +5,7 @@
 Citizen Agents monitors public sources and turns changes in laws, rights, money, democratic action windows and institutions into inspectable intelligence rather than silent AI output.
 
 **[Founder Control Center](https://mikelninh.github.io/citizen-agents/control-center.html)**  
+**[Production Readiness](https://mikelninh.github.io/citizen-agents/production-readiness.html)**  
 **[Revenue Opportunity OS](https://mikelninh.github.io/citizen-agents/revenue-os.html)**  
 **[Open the public portal](https://mikelninh.github.io/citizen-agents/)**  
 **[Democracy Radar](https://mikelninh.github.io/citizen-agents/democracy-radar.html)**  
@@ -64,6 +65,7 @@ The exported evidence report measures observed usefulness and explicitly leaves 
 - alerts, reliability surface and 14-day Intelligence Proof
 - self-dogfood Revenue Opportunity OS with proof matching, route selection, partner mapping and outcome tracking
 - Founder Control Center for today priorities, revenue pipeline, opportunity radar, reusable proofs, partner leverage and coverage health
+- evidence-backed Production Readiness surface separating engineering proof from external validation gates
 - Company 01 intake for opted-in paid proofs
 
 ## Guardrails
@@ -72,6 +74,7 @@ The exported evidence report measures observed usefulness and explicitly leaves 
 - uncertain findings remain uncertain
 - no completeness claim until coverage is measured
 - programme budgets are not presented as customer value
+- working proof is not treated as production readiness
 - agents draft; humans review
 - no autonomous legal or governmental decisions
 - public-interest infrastructure remains inspectable and reusable
@@ -85,7 +88,7 @@ The exported evidence report measures observed usefulness and explicitly leaves 
 
 ## Status
 
-Working public prototype moving toward Civic Intelligence Infrastructure. Automation maturity differs by watchdog family; repository logs, registry status and code are the source of truth for what is actually automated versus currently curated.
+Working public prototype moving toward Civic Intelligence Infrastructure. Automation maturity differs by watchdog family; repository logs, registry status and code are the source of truth for what is actually automated versus currently curated. Production readiness is tracked separately in `production-readiness.json` and the Production Readiness surface; no system receives a production label from a demo/eval score alone.
 
 ---
 
