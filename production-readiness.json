@@ -1,5 +1,5 @@
 {
-  "schema_version": "citizen-production-readiness/1.0",
+  "schema_version": "citizen-production-readiness/1.1",
   "generated_on": "2026-08-31",
   "truth_boundary": "Production readiness is a release claim, not a synonym for a working demo. Scores are internal prioritisation signals. External clinical, legal, institutional, security and integration evidence cannot be created by code alone.",
   "gate_model": {
@@ -44,13 +44,13 @@
       "id": "digital-worker-factory",
       "name": "Digital Worker Factory / OpsPilot",
       "stage": "CONTROLLED_PILOT_READY",
-      "score": 72,
+      "score": 78,
       "production_claim_allowed": false,
-      "engineering_strengths": ["capability registry", "fail-closed policy gates", "human approval", "audit traces", "replayable evals", "provider adapters", "live model release gate"],
-      "engineering_gaps": ["standard production tenant/actor context", "durable external audit sink", "idempotent execution boundary", "queue/retry/dead-letter semantics", "secrets/KMS contract", "service health/SLO/backup/restore and rollback contract"],
+      "engineering_strengths": ["capability registry", "fail-closed policy gates", "human approval", "replayable evals", "provider adapters", "live model release gate", "mandatory production tenant/actor/request context", "cross-tenant guard", "effectful-execution idempotency contract", "secret-redacted structured audit contract", "fail-closed engineering-readiness evaluator"],
+      "engineering_gaps": ["durable external audit sink implementation", "durable idempotency implementation", "queue/retry/dead-letter semantics", "secrets/KMS deployment binding", "service health/SLO evidence", "retention/deletion implementation", "backup/restore drill", "deployment rollback evidence"],
       "external_gaps": ["real customer workflow accuracy", "provider-specific production reliability", "security review for each customer environment"],
-      "close_now": ["shared production boundary wrapper", "redacted durable audit interface", "idempotency contract", "health/readiness contract", "retention policy and runbook"],
-      "cannot_close_without_external_evidence": ["real customer task accuracy", "customer-system integration reliability"],
+      "close_now": ["bind production boundary to one concrete HausPilot runtime", "durable audit/idempotency adapters", "health/readiness endpoint", "retention + incident + backup/restore runbooks"],
+      "cannot_close_without_external_evidence": ["real customer task accuracy", "customer-system integration reliability", "customer security acceptance"],
       "sources": ["https://github.com/mikelninh/digital-worker-factory", "https://mikelninh.github.io/agents/"]
     },
     {
@@ -109,13 +109,13 @@
       "id": "pruefpilot",
       "name": "PrüfPilot",
       "stage": "CONTROLLED_PRODUCTION_CANDIDATE",
-      "score": 69,
+      "score": 76,
       "production_claim_allowed": false,
-      "engineering_strengths": ["FastAPI typed contracts", "real PDF intake", "SQLite persistence boundary", "health endpoint", "request IDs/security headers", "Docker deployment", "prompt-injection isolation", "human approval tests"],
-      "engineering_gaps": ["SSO/RBAC and tenant isolation", "durable Postgres/object storage instead of serverless ephemeral storage", "asynchronous processing/idempotency", "production observability/SLOs", "retention/deletion and backup workflows", "remove wildcard CORS in production", "DMS/funding-system adapters"],
+      "engineering_strengths": ["FastAPI typed contracts", "real PDF intake", "health endpoint", "request IDs/security headers", "Docker deployment", "prompt-injection isolation", "human approval tests", "production API principal/tenant binding", "production-only strict CORS", "tenant-scoped mutable storage schema", "fail-closed /api/ready gate", "tests proving SQLite is not production-durable"],
+      "engineering_gaps": ["external durable Postgres/object storage", "asynchronous processing/idempotency for long-running work", "production observability/SLO evidence", "retention/deletion implementation", "backup/restore drill", "rollback evidence", "DMS/funding-system adapters"],
       "external_gaps": ["security review", "qualified reviewer validation", "labelled real evaluation corpus", "production integration evidence"],
-      "close_now": ["fail-closed production config gate", "API-key/RBAC pilot auth", "tenant-scoped persistence contract", "structured audit/telemetry", "retention/deletion endpoints", "readiness endpoint", "production CORS policy"],
-      "cannot_close_without_external_evidence": ["qualified reviewer validation", "real DMS/funding-system integration", "production accuracy"],
+      "close_now": ["wire external durable persistence", "structured audit/telemetry sink", "retention/deletion workflow", "backup/restore test", "async/idempotent job path"],
+      "cannot_close_without_external_evidence": ["qualified reviewer validation", "real DMS/funding-system integration", "production accuracy", "external security acceptance"],
       "sources": ["https://github.com/mikelninh/pruefpilot", "https://pruefpilot-v5-api.vercel.app/api/docs"]
     },
     {
