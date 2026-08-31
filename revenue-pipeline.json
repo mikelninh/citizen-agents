@@ -1,0 +1,14 @@
+{
+  "schema_version": "citizen-revenue-pipeline/1.0",
+  "updated_on": "2026-08-30",
+  "truth_boundary": "Pipeline value is not revenue. Revenue is only recorded for WON opportunities with evidence of award, contract or payment.",
+  "records": [
+    {"opportunity_id":"opp_bsi_praki_2026","status":"FOUND","decision":"PENDING","owner":"founder","next_action":"Review full suitability and procurement requirements, then choose direct-bid vs partner-first route.","outcome_revenue_eur":null,"outcome_evidence":null},
+    {"opportunity_id":"opp_dataport_social_benefits_2026","status":"FOUND","decision":"PENDING","owner":"founder","next_action":"Qualify partner-first route and package CARE/Public Service proof for a credible prime contractor.","outcome_revenue_eur":null,"outcome_evidence":null},
+    {"opportunity_id":"opp_bss_vi_2026","status":"FOUND","decision":"PENDING","owner":"founder","next_action":"Check founder/team eligibility and prepare one focused Citizen Agents application story.","outcome_revenue_eur":null,"outcome_evidence":null},
+    {"opportunity_id":"opp_cerv_charter_2026","status":"FOUND","decision":"PENDING","owner":"founder","next_action":"Find an eligible civil-society consortium and offer Citizen Agents as a technical work-package partner.","outcome_revenue_eur":null,"outcome_evidence":null},
+    {"opportunity_id":"opp_horizon_democracy_2026","status":"FOUND","decision":"PENDING","owner":"founder","next_action":"Find an existing consortium with an exact topic fit; do not lead a new consortium this late.","outcome_revenue_eur":null,"outcome_evidence":null},
+    {"opportunity_id":"opp_reaktor_batch9_2026","status":"FOUND","decision":"PENDING","owner":"founder","next_action":"Check team/full-time eligibility immediately; otherwise close as not eligible.","outcome_revenue_eur":null,"outcome_evidence":null},
+    {"opportunity_id":"missed_agentic_ai_hub_round2","status":"MONITOR","decision":"NEXT_ROUND","owner":"founder","next_action":"Track future cohorts and procurement paths; retain as dogfood blind-spot benchmark.","outcome_revenue_eur":null,"outcome_evidence":null}
+  ]
+}

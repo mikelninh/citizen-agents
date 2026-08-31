@@ -1,0 +1,52 @@
+{
+  "schema_version": "citizen-opportunity-partner-map/1.0",
+  "generated_on": "2026-08-30",
+  "truth_boundary": "These are candidate partners to qualify, not claims that they will bid, partner, or buy. Outreach requires human approval.",
+  "candidates": [
+    {
+      "id":"msg-public-sector",
+      "name":"msg Public Sector",
+      "fit_for":["opp_dataport_social_benefits_2026","opp_bsi_praki_2026"],
+      "why_candidate":"Public-sector AI and agentic process automation are explicit parts of its current German administration offering; it also offers AI systems around social-law knowledge and document workflows.",
+      "our_wedge":"Offer CARE/Public Service and CasePilot as an evidence-rich social-benefits or agent-reliability module rather than competing on full-stack delivery.",
+      "qualification_questions":["Are they pursuing the opportunity?","Would a specialist evaluated module improve their offer?","Can our proof be integrated under their architecture and compliance model?"],
+      "sources":["https://www.msg.group/de/events/oev-symposium-nrw-2026/","https://www.msg.group/de/branchen/public-sector/loesungen-fuer-die-digitale-verwaltung/"]
+    },
+    {
+      "id":"capgemini-public-sector",
+      "name":"Capgemini Public Sector Germany",
+      "fit_for":["opp_dataport_social_benefits_2026","opp_bsi_praki_2026"],
+      "why_candidate":"Capgemini publicly works on modular and agent-based AI for German administration, including the SPARK initiative and public-sector AI-agent architecture.",
+      "our_wedge":"Position our human-approval, replayability, source-evidence and benefit-domain proofs as a small specialist work package that can accelerate a larger delivery.",
+      "qualification_questions":["Is there an existing bid or account team?","Which proof gap is expensive for them to build internally?","Can we enter as subcontractor, technology component or rapid proof partner?"],
+      "sources":["https://www.capgemini.com/de-de/solutions/spark-api-oeffentlich-verfuegbare-und-modulare-ki-fuer-die-verwaltung/","https://www.capgemini.com/de-de/insights/research/architecting-ai-agents-in-the-public-sector/"]
+    },
+    {
+      "id":"adesso-public-sector",
+      "name":"adesso Public Sector",
+      "fit_for":["opp_dataport_social_benefits_2026","opp_bsi_praki_2026"],
+      "why_candidate":"adesso's 2026 public-sector portfolio explicitly includes Agentic AI, public-administration AI and projects across federal, state and municipal government.",
+      "our_wedge":"Sell a narrow evaluated specialist module: benefits workflow evidence, reliability evaluation, provenance or human-approval orchestration.",
+      "qualification_questions":["Are they already serving the buyer or adjacent authorities?","Would our ready-made evaluation/proof layer shorten proposal delivery?","What supplier onboarding is required?"],
+      "sources":["https://www.adesso.de/de/branchen/oeffentliche-verwaltung/public-broschuere.jsp","https://www.adesso.de/de/branchen/oeffentliche-verwaltung/ki/uebersicht.jsp"]
+    },
+    {
+      "id":"materna-public-sector",
+      "name":"Materna Public Sector",
+      "fit_for":["opp_dataport_social_benefits_2026","opp_bsi_praki_2026"],
+      "why_candidate":"Materna works with German federal authorities including BSI and is part of the SPARK administration-AI ecosystem, integrating AI-supported workflows into government IT landscapes.",
+      "our_wedge":"Offer reliability/evidence and social-benefit workflow proof as a specialist component under an established public-sector integrator.",
+      "qualification_questions":["Is there a relevant BSI/Dataport account team?","Which evidence, AI-assurance or domain component is missing?","Can we contribute through a subcontract or consortium role?"],
+      "sources":["https://www.materna.de/branchen/public-sector/","https://www.materna.de/newshub/presse/behoerden-ki-spark-materna-gruppe-unterstuetzt-verwaltungen-bei-der-beschleunigung-von-genehmigungsverfahren/"]
+    },
+    {
+      "id":"t-systems-public-sector",
+      "name":"T-Systems Public Sector",
+      "fit_for":["opp_dataport_social_benefits_2026","opp_bsi_praki_2026"],
+      "why_candidate":"T-Systems is actively positioning sovereign AI/cloud infrastructure and AI use in German municipal and public-sector environments.",
+      "our_wedge":"Complement infrastructure with an inspectable application/evaluation layer rather than compete on hosting or enterprise platform scope.",
+      "qualification_questions":["Is a specialist application layer useful to a larger platform offer?","What security/supplier requirements would apply?","Can we prove differentiation in under one week?"],
+      "sources":["https://www.t-systems.com/de/de/insights/newsroom/experten-blogs/ki-in-kommunen-wo-liegt-der-groesste-hebel-1203720","https://www.t-systems.com/de/de/insights/newsroom/news/t-systems-bringt-souveraene-cloud-infrastruktur-in-die-deutsche-verwaltung-1170058"]
+    }
+  ]
+}

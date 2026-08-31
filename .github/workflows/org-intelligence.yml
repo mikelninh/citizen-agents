@@ -9,14 +9,36 @@ on:
       - democracy-radar.html
       - replay-signals.json
       - missed-opportunities.html
+      - backtest-archive.json
+      - backtest-core.mjs
+      - example-organisations.json
+      - organisation-backtest.html
+      - delivery-contract.json
+      - delivery.html
+      - self-opportunity-profile.json
+      - self-opportunities.json
+      - proof-catalog.json
+      - opportunity-core.mjs
+      - revenue-pipeline.json
+      - partner-map.json
+      - discovered-ted-opportunities.json
+      - founder-opportunity-radar.html
+      - revenue-os.html
+      - action-packs/**
+      - agent-digests/**
       - impact-core.mjs
       - organisation-impact.html
       - tools/build-org-intelligence.mjs
       - tools/build-democracy-radar.mjs
+      - tools/build-backtest-archive.mjs
+      - tools/build-founder-opportunities.mjs
+      - tools/discover-ted-opportunities.mjs
       - tools/org-intelligence.test.mjs
       - tools/impact-core.test.mjs
       - tools/democracy-radar.test.mjs
       - tools/historical-replay.test.mjs
+      - tools/operational-awareness.test.mjs
+      - tools/opportunity-core.test.mjs
       - api/v1/**
       - organisations.html
       - alerts.html
@@ -33,14 +55,36 @@ on:
       - democracy-radar.html
       - replay-signals.json
       - missed-opportunities.html
+      - backtest-archive.json
+      - backtest-core.mjs
+      - example-organisations.json
+      - organisation-backtest.html
+      - delivery-contract.json
+      - delivery.html
+      - self-opportunity-profile.json
+      - self-opportunities.json
+      - proof-catalog.json
+      - opportunity-core.mjs
+      - revenue-pipeline.json
+      - partner-map.json
+      - discovered-ted-opportunities.json
+      - founder-opportunity-radar.html
+      - revenue-os.html
+      - action-packs/**
+      - agent-digests/**
       - impact-core.mjs
       - organisation-impact.html
       - tools/build-org-intelligence.mjs
       - tools/build-democracy-radar.mjs
+      - tools/build-backtest-archive.mjs
+      - tools/build-founder-opportunities.mjs
+      - tools/discover-ted-opportunities.mjs
       - tools/org-intelligence.test.mjs
       - tools/impact-core.test.mjs
       - tools/democracy-radar.test.mjs
       - tools/historical-replay.test.mjs
+      - tools/operational-awareness.test.mjs
+      - tools/opportunity-core.test.mjs
       - api/v1/**
       - organisations.html
       - alerts.html
@@ -64,12 +108,20 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Test intelligence + usefulness contracts
-        run: node --test tools/org-intelligence.test.mjs tools/impact-core.test.mjs tools/democracy-radar.test.mjs tools/historical-replay.test.mjs
+      - name: Discover active TED AI opportunities
+        if: github.event_name != 'pull_request'
+        continue-on-error: true
+        run: node tools/discover-ted-opportunities.mjs
+      - name: Build rolling operational-awareness archive
+        run: node tools/build-backtest-archive.mjs
+      - name: Test intelligence + usefulness + opportunity contracts
+        run: node --test tools/org-intelligence.test.mjs tools/impact-core.test.mjs tools/democracy-radar.test.mjs tools/historical-replay.test.mjs tools/operational-awareness.test.mjs tools/opportunity-core.test.mjs
       - name: Build Civic Intelligence API
         run: node tools/build-org-intelligence.mjs
       - name: Build combined Democracy Radar API
         run: node tools/build-democracy-radar.mjs
+      - name: Build Founder Opportunity API + digest
+        run: node tools/build-founder-opportunities.mjs
       - name: Verify public product surfaces
         run: |
           test -s api/v1/changes.json
@@ -79,6 +131,7 @@ jobs:
           test -s api/v1/radar.json
           test -s api/v1/radar.ndjson
           test -s api/v1/watchdogs.json
+          test -s api/v1/founder-opportunities.json
           test -s impact-core.mjs
           test -s organisation-impact.html
           test -s democracy-signals.json
@@ -86,8 +139,28 @@ jobs:
           test -s democracy-radar.html
           test -s replay-signals.json
           test -s missed-opportunities.html
+          test -s backtest-archive.json
+          test -s backtest-core.mjs
+          test -s example-organisations.json
+          test -s organisation-backtest.html
+          test -s delivery-contract.json
+          test -s delivery.html
+          test -s self-opportunity-profile.json
+          test -s self-opportunities.json
+          test -s proof-catalog.json
+          test -s opportunity-core.mjs
+          test -s revenue-pipeline.json
+          test -s partner-map.json
+          test -s discovered-ted-opportunities.json
+          test -s founder-opportunity-radar.html
+          test -s revenue-os.html
+          test -s action-packs/dataport-social-benefits-2026.md
+          test -s action-packs/bsi-praki-2026.md
+          test -s action-packs/berliner-startup-stipendium-2026.md
+          test -s agent-digests/founder-opportunity-digest.md
           grep -q 'citizen-intelligence/1.0' api/v1/changes.json
           grep -q 'citizen-democracy-radar/1.0' api/v1/radar.json
+          grep -q 'citizen-founder-opportunity-api/1.0' api/v1/founder-opportunities.json
           grep -q 'external_or_consequential_action' api/v1/radar.json
           grep -q 'Intelligence Proof' organisations.html
           grep -q 'keine Nutzerdaten' organisations.html
@@ -99,20 +172,39 @@ jobs:
           grep -q 'no_inferred_misses' replay-signals.json
           grep -q 'Bewertungen bleiben' missed-opportunities.html
           grep -q '<b>lokal</b>' missed-opportunities.html
+          grep -q 'citizen-operational-awareness-archive/1.0' backtest-archive.json
+          grep -q 'no_claim_of_90_day_coverage' backtest-archive.json
+          grep -q 'Operational Awareness Backtest' organisation-backtest.html
+          grep -q 'Kolleg:in challengen' organisation-backtest.html
+          grep -q 'zero_setup_claim_only_for' delivery-contract.json
+          grep -q 'X / @CitizenAgentsBot' delivery.html
+          grep -q 'citizen-self-opportunity-profile/1.0' self-opportunity-profile.json
+          grep -q 'citizen-self-opportunities/1.0' self-opportunities.json
+          grep -q 'citizen-proof-catalog/1.0' proof-catalog.json
+          grep -q 'citizen-revenue-pipeline/1.0' revenue-pipeline.json
+          grep -q 'citizen-opportunity-partner-map/1.0' partner-map.json
+          grep -q 'citizen-ted-discovery/1.0' discovered-ted-opportunities.json
+          grep -q 'Founder Opportunity Radar' founder-opportunity-radar.html
+          grep -q 'Opportunity →' revenue-os.html
+          grep -q 'SUBCONTRACT / PARTNER-FIRST' action-packs/dataport-social-benefits-2026.md
+          grep -q 'PARTNER-FIRST' action-packs/bsi-praki-2026.md
+          grep -q 'DIRECT APPLICATION' action-packs/berliner-startup-stipendium-2026.md
+          grep -q 'no_revenue_claim_until_contract_or_payment' self-opportunity-profile.json
           grep -q 'Proof of usefulness' organisation-impact.html
           grep -q 'Know what matters' democracy-radar.html
           grep -q 'coverage_complete' democracy-signals.json
           grep -q 'programme_budgets_are_not_customer_value' impact-core.mjs
           grep -q 'guaranteed_roi: false' impact-core.mjs
-      - name: Commit generated API snapshot when source data changed
+      - name: Commit generated intelligence + opportunity snapshots when changed
         if: github.event_name != 'pull_request'
         run: |
-          if [ -z "$(git status --porcelain -- api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml api/v1/radar.json api/v1/radar.ndjson api/v1/watchdogs.json)" ]; then
+          TRACKED='api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml api/v1/radar.json api/v1/radar.ndjson api/v1/watchdogs.json api/v1/founder-opportunities.json backtest-archive.json discovered-ted-opportunities.json agent-digests/founder-opportunity-digest.md'
+          if [ -z "$(git status --porcelain -- $TRACKED)" ]; then
             echo 'Generated outputs already current.'
             exit 0
           fi
           git config user.name 'citizen-agents-bot'
           git config user.email 'actions@users.noreply.github.com'
-          git add api/v1/changes.json api/v1/latest.json api/v1/health.json api/v1/changes.ndjson api/v1/changes.xml api/v1/radar.json api/v1/radar.ndjson api/v1/watchdogs.json
-          git commit -m 'chore: refresh democracy radar API snapshot [skip ci]'
+          git add $TRACKED
+          git commit -m 'chore: refresh civic + revenue opportunity snapshots [skip ci]'
           git push origin HEAD:${GITHUB_REF_NAME}

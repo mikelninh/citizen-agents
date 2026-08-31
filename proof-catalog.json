@@ -1,0 +1,79 @@
+{
+  "schema_version": "citizen-proof-catalog/1.0",
+  "generated_on": "2026-08-30",
+  "truth_boundary": "Readiness and proof coverage are internal planning signals, not certifications or customer references unless explicitly stated.",
+  "proofs": [
+    {
+      "id": "citizen-agents",
+      "name": "Citizen Agents",
+      "readiness": "WORKING_PUBLIC_PROTOTYPE",
+      "capabilities": ["civic intelligence", "monitoring", "alerts", "funding radar", "policy", "public sector", "evidence", "provenance", "action windows", "source-backed signals"],
+      "domains": ["government", "civil society", "public affairs", "funding", "rights"],
+      "evidence": ["https://github.com/mikelninh/citizen-agents", "https://mikelninh.github.io/citizen-agents/"],
+      "limitations": ["coverage is not yet exhaustive", "hosted push delivery is not yet SLA-backed"]
+    },
+    {
+      "id": "digital-worker-factory",
+      "name": "Digital Worker Factory / OpsPilot",
+      "readiness": "WORKING_PROOF_SYSTEM",
+      "capabilities": ["agentic AI", "workflow automation", "human approval", "tool compliance", "replayability", "audit", "public sector", "case workflows", "MCP"],
+      "domains": ["public administration", "SME operations", "legal", "property management"],
+      "evidence": ["https://github.com/mikelninh/digital-worker-factory"],
+      "limitations": ["customer-specific integrations require implementation", "external actions remain approval-gated"]
+    },
+    {
+      "id": "care-public-service",
+      "name": "CARE / Public Service systems",
+      "readiness": "WORKING_PROTOTYPES",
+      "capabilities": ["social benefits", "Wohngeld", "Grundsicherung", "public administration", "rights", "eligibility", "evidence", "human approval", "citizen workflows", "document AI"],
+      "domains": ["social services", "welfare", "public administration", "civic tech"],
+      "evidence": ["https://github.com/mikelninh/care-abundance-mission", "https://github.com/mikelninh/public-service-passport"],
+      "limitations": ["not a production Fachverfahren", "formal administrative decisions must remain with authorised authorities"]
+    },
+    {
+      "id": "safetrace-master-proof",
+      "name": "SafeTrace / Master Proof",
+      "readiness": "EVALUATED_PROOF",
+      "capabilities": ["entity resolution", "evidence", "provenance", "retrieval", "evaluation", "risk", "source attribution", "precision", "recall", "research"],
+      "domains": ["public sector", "compliance", "research", "investigations"],
+      "evidence": [],
+      "limitations": ["specific deployment and source connectors depend on use case"]
+    },
+    {
+      "id": "gitlaw",
+      "name": "GitLaw",
+      "readiness": "WORKING_PROOF_SYSTEM",
+      "capabilities": ["legal AI", "RAG", "citations", "citation verification", "legal corpus", "compliance", "human approval", "retrieval"],
+      "domains": ["legal", "regulation", "public sector"],
+      "evidence": ["https://github.com/mikelninh/gitlaw"],
+      "limitations": ["not legal advice", "writes and consequential actions require human approval"]
+    },
+    {
+      "id": "careos",
+      "name": "CareOS",
+      "readiness": "WORKING_SYNTHETIC_PROTOTYPE",
+      "capabilities": ["healthcare AI", "document AI", "clinical workflow", "provenance", "contradiction detection", "human review", "patient workflow"],
+      "domains": ["healthcare", "hospital", "infectiology"],
+      "evidence": ["https://github.com/mikelninh/careos"],
+      "limitations": ["synthetic/test data only unless explicitly approved", "not a medical device"]
+    },
+    {
+      "id": "pruefpilot",
+      "name": "PrüfPilot",
+      "readiness": "WORKING_DOCUMENT_AI_PROOF",
+      "capabilities": ["document AI", "structured extraction", "review workflow", "evidence", "quality checks", "FastAPI"],
+      "domains": ["grant administration", "document review", "public sector"],
+      "evidence": ["https://github.com/mikelninh/pruefpilot-document-ai"],
+      "limitations": ["domain configuration and production integrations required"]
+    },
+    {
+      "id": "casepilot",
+      "name": "CasePilot Reliability",
+      "readiness": "WORKING_RELIABILITY_PROOF",
+      "capabilities": ["agent reliability", "completion integrity", "tool compliance", "escalation", "loop detection", "trace replay", "evaluation"],
+      "domains": ["agentic AI", "enterprise automation", "public sector"],
+      "evidence": [],
+      "limitations": ["proof layer rather than standalone production workflow"]
+    }
+  ]
+}
