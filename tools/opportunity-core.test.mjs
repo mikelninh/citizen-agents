@@ -48,3 +48,13 @@ test('expired opportunities cannot be qualified live opportunities',()=>{
   assert.equal(q.qualified,false);
   assert.equal(q.route,'MONITOR_NEXT_ROUND');
 });
+
+test('founder control center keeps decision, revenue, proof and health layers in one surface',()=>{
+  const html=fs.readFileSync('control-center.html','utf8');
+  for(const marker of ['Founder Control Center','Today · decision first','Revenue pulse','Opportunity radar','Decision queue','Revenue pipeline','Proof inventory','Partner leverage','Coverage & system health']){
+    assert.ok(html.includes(marker),`missing control-center marker: ${marker}`);
+  }
+  assert.ok(html.includes("citizen-revenue-os/v1"),'control center must share Revenue OS local CRM state');
+  assert.ok(html.includes('Observed revenue'),'control center must preserve revenue truth boundary');
+  assert.ok(html.includes('External action requires approval'),'control center must preserve approval boundary');
+});
