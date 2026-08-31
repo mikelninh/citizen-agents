@@ -1,79 +1,95 @@
 {
-  "schema_version": "citizen-proof-catalog/1.0",
-  "generated_on": "2026-08-30",
-  "truth_boundary": "Readiness and proof coverage are internal planning signals, not certifications or customer references unless explicitly stated.",
+  "schema_version": "citizen-proof-catalog/1.1",
+  "generated_on": "2026-08-31",
+  "truth_boundary": "Engineering proof maturity and production readiness are separate signals. Neither is a certification or customer reference unless explicitly stated. Production stages are sourced from production-readiness.json.",
   "proofs": [
     {
       "id": "citizen-agents",
       "name": "Citizen Agents",
-      "readiness": "WORKING_PUBLIC_PROTOTYPE",
+      "readiness": "WORKING_PUBLIC_PROTOTYPE·PROD_PUBLIC_READ_ONLY_READY",
+      "engineering_readiness": "WORKING_PUBLIC_PROTOTYPE",
+      "production_stage": "PUBLIC_READ_ONLY_READY",
       "capabilities": ["civic intelligence", "monitoring", "alerts", "funding radar", "policy", "public sector", "evidence", "provenance", "action windows", "source-backed signals"],
       "domains": ["government", "civil society", "public affairs", "funding", "rights"],
       "evidence": ["https://github.com/mikelninh/citizen-agents", "https://mikelninh.github.io/citizen-agents/"],
-      "limitations": ["coverage is not yet exhaustive", "hosted push delivery is not yet SLA-backed"]
+      "limitations": ["coverage is not yet exhaustive", "hosted push delivery is not yet SLA-backed", "multi-tenant B2B production boundary is not yet complete"]
     },
     {
       "id": "digital-worker-factory",
       "name": "Digital Worker Factory / OpsPilot",
-      "readiness": "WORKING_PROOF_SYSTEM",
+      "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
+      "engineering_readiness": "WORKING_PROOF_SYSTEM",
+      "production_stage": "CONTROLLED_PILOT_READY",
       "capabilities": ["agentic AI", "workflow automation", "human approval", "tool compliance", "replayability", "audit", "public sector", "case workflows", "MCP"],
       "domains": ["public administration", "SME operations", "legal", "property management"],
       "evidence": ["https://github.com/mikelninh/digital-worker-factory"],
-      "limitations": ["customer-specific integrations require implementation", "external actions remain approval-gated"]
+      "limitations": ["customer-specific integrations require implementation", "external actions remain approval-gated", "durable production audit/idempotency/ops infrastructure still required"]
     },
     {
       "id": "care-public-service",
       "name": "CARE / Public Service systems",
-      "readiness": "WORKING_PROTOTYPES",
+      "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
+      "engineering_readiness": "WORKING_PROTOTYPES",
+      "production_stage": "SHADOW_PILOT_ONLY",
       "capabilities": ["social benefits", "Wohngeld", "Grundsicherung", "public administration", "rights", "eligibility", "evidence", "human approval", "citizen workflows", "document AI"],
       "domains": ["social services", "welfare", "public administration", "civic tech"],
       "evidence": ["https://github.com/mikelninh/care-abundance-mission", "https://github.com/mikelninh/public-service-passport"],
-      "limitations": ["not a production Fachverfahren", "formal administrative decisions must remain with authorised authorities"]
+      "limitations": ["not a production Fachverfahren", "formal administrative decisions must remain with authorised authorities", "real institutional and delivery evidence is required"]
     },
     {
       "id": "safetrace-master-proof",
       "name": "SafeTrace / Master Proof",
-      "readiness": "EVALUATED_PROOF",
+      "readiness": "EVALUATED_PROOF·PROD_EVALUATED_COMPONENT_ONLY",
+      "engineering_readiness": "EVALUATED_PROOF",
+      "production_stage": "EVALUATED_COMPONENT_ONLY",
       "capabilities": ["entity resolution", "evidence", "provenance", "retrieval", "evaluation", "risk", "source attribution", "precision", "recall", "research"],
       "domains": ["public sector", "compliance", "research", "investigations"],
       "evidence": [],
-      "limitations": ["specific deployment and source connectors depend on use case"]
+      "limitations": ["specific deployment and source connectors depend on use case", "no dedicated standalone production service identified yet"]
     },
     {
       "id": "gitlaw",
       "name": "GitLaw",
-      "readiness": "WORKING_PROOF_SYSTEM",
+      "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
+      "engineering_readiness": "WORKING_PROOF_SYSTEM",
+      "production_stage": "CONTROLLED_PILOT_READY",
       "capabilities": ["legal AI", "RAG", "citations", "citation verification", "legal corpus", "compliance", "human approval", "retrieval"],
       "domains": ["legal", "regulation", "public sector"],
-      "evidence": ["https://github.com/mikelninh/gitlaw"],
-      "limitations": ["not legal advice", "writes and consequential actions require human approval"]
+      "evidence": ["https://github.com/mikelninh/gitlaw", "https://mikelninh.github.io/gitlaw/"],
+      "limitations": ["not legal advice", "writes and consequential actions require human approval", "broader real-law-firm validation and operating evidence remain required"]
     },
     {
       "id": "careos",
       "name": "CareOS",
-      "readiness": "WORKING_SYNTHETIC_PROTOTYPE",
+      "readiness": "WORKING_SYNTHETIC_PROTOTYPE·PROD_BLOCKED_FOR_PRODUCTION",
+      "engineering_readiness": "WORKING_SYNTHETIC_PROTOTYPE",
+      "production_stage": "BLOCKED_FOR_PRODUCTION",
       "capabilities": ["healthcare AI", "document AI", "clinical workflow", "provenance", "contradiction detection", "human review", "patient workflow"],
       "domains": ["healthcare", "hospital", "infectiology"],
-      "evidence": ["https://github.com/mikelninh/careos"],
-      "limitations": ["synthetic/test data only unless explicitly approved", "not a medical device"]
+      "evidence": ["https://github.com/mikelninh/care-os", "https://mikelninh.github.io/careos/"],
+      "limitations": ["synthetic/deidentified research only", "not for clinical use", "production G1 is explicitly blocked", "real clinical and hospital evidence required"]
     },
     {
       "id": "pruefpilot",
       "name": "PrüfPilot",
-      "readiness": "WORKING_DOCUMENT_AI_PROOF",
+      "readiness": "WORKING_DOCUMENT_AI_PROOF·PROD_CONTROLLED_PRODUCTION_CANDIDATE",
+      "engineering_readiness": "WORKING_DOCUMENT_AI_PROOF",
+      "production_stage": "CONTROLLED_PRODUCTION_CANDIDATE",
       "capabilities": ["document AI", "structured extraction", "review workflow", "evidence", "quality checks", "FastAPI"],
       "domains": ["grant administration", "document review", "public sector"],
-      "evidence": ["https://github.com/mikelninh/pruefpilot-document-ai"],
-      "limitations": ["domain configuration and production integrations required"]
+      "evidence": ["https://github.com/mikelninh/pruefpilot", "https://pruefpilot-v5-api.vercel.app/api/docs"],
+      "limitations": ["external durable storage and production operations evidence remain required", "qualified reviewer/security/integration validation remains external"]
     },
     {
       "id": "casepilot",
       "name": "CasePilot Reliability",
-      "readiness": "WORKING_RELIABILITY_PROOF",
+      "readiness": "WORKING_RELIABILITY_PROOF·PROD_EVALUATED_COMPONENT_ONLY",
+      "engineering_readiness": "WORKING_RELIABILITY_PROOF",
+      "production_stage": "EVALUATED_COMPONENT_ONLY",
       "capabilities": ["agent reliability", "completion integrity", "tool compliance", "escalation", "loop detection", "trace replay", "evaluation"],
       "domains": ["agentic AI", "enterprise automation", "public sector"],
-      "evidence": [],
-      "limitations": ["proof layer rather than standalone production workflow"]
+      "evidence": ["https://github.com/mikelninh/digital-worker-factory"],
+      "limitations": ["proof layer rather than standalone production workflow", "versioned runtime package and live operating thresholds still required"]
     }
   ]
 }
