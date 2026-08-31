@@ -1,8 +1,1307 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-08-30T00:00:00.000Z",
-  "query": "seed; scheduled workflow refreshes from official TED Search API",
+  "generated_at": "2026-08-31T08:59:06.299Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260801 SORT BY publication-date DESC",
   "coverage_complete": false,
-  "items": [],
+  "items": [
+    {
+      "id": "ted_597131_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvertrag Software, AI & Digital Services (SAID)",
+      "deadline": "2026-08-10T12:00:00+02:00",
+      "buyer_or_program": "Dataport AöR",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/597131-2026"
+      ],
+      "ted": {
+        "publication_number": "597131-2026",
+        "publication_date": "2026-08-31+02:00",
+        "cpv": [
+          "72000000",
+          "72000000",
+          "72000000",
+          "72000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_596026_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Veranstaltung von Seminaren – 10017643-Personal Data Protection Centre-Support Plan",
+      "deadline": "2026-09-21T23:59:59+02:00",
+      "buyer_or_program": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/596026-2026"
+      ],
+      "ted": {
+        "publication_number": "596026-2026",
+        "publication_date": "2026-08-28+02:00",
+        "cpv": [
+          "79951000",
+          "79951000"
+        ]
+      }
+    },
+    {
+      "id": "ted_588427_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Installation von Sanitäreinrichtungen – Beschaffung einer \"didaktischen Schulungswand\" - Anschlussarbeiten: Sanitärarbeiten(Los 3)",
+      "deadline": null,
+      "buyer_or_program": "Handwerkskammer der Pfalz",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/588427-2026"
+      ],
+      "ted": {
+        "publication_number": "588427-2026",
+        "publication_date": "2026-08-26+02:00",
+        "cpv": [
+          "45332400",
+          "45332000",
+          "45332400",
+          "45332000"
+        ]
+      }
+    },
+    {
+      "id": "ted_588537_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – HIL Internetseite",
+      "deadline": "2026-08-28T23:59:59+02:00",
+      "buyer_or_program": "HIL Heeresinstandsetzungslogistik GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/588537-2026"
+      ],
+      "ted": {
+        "publication_number": "588537-2026",
+        "publication_date": "2026-08-26+02:00",
+        "cpv": [
+          "72000000",
+          "72200000",
+          "72000000",
+          "72200000"
+        ]
+      }
+    },
+    {
+      "id": "ted_587912_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – KI im Secure Software Development Life Cycle (KISDL)",
+      "deadline": "2026-09-11T23:59:00+02:00",
+      "buyer_or_program": "Bundesamt für Sicherheit in der Informationstechnik",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 58,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/587912-2026"
+      ],
+      "ted": {
+        "publication_number": "587912-2026",
+        "publication_date": "2026-08-26+02:00",
+        "cpv": [
+          "72000000",
+          "72000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_585906_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Lehrmittel und -geräte – Beschaffung einer \"didaktischen Schulungswand\" - Los 2",
+      "deadline": null,
+      "buyer_or_program": "Handwerkskammer der Pfalz",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/585906-2026"
+      ],
+      "ted": {
+        "publication_number": "585906-2026",
+        "publication_date": "2026-08-25+02:00",
+        "cpv": [
+          "39162200",
+          "32322000",
+          "39162200",
+          "32322000"
+        ]
+      }
+    },
+    {
+      "id": "ted_584743_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Elektronische Ausstattung – Beschaffung einer \"didaktischen Schulungswand\" - Zubehör (Los 5)",
+      "deadline": null,
+      "buyer_or_program": "Handwerkskammer der Pfalz",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/584743-2026"
+      ],
+      "ted": {
+        "publication_number": "584743-2026",
+        "publication_date": "2026-08-25+02:00",
+        "cpv": [
+          "31710000",
+          "31710000"
+        ]
+      }
+    },
+    {
+      "id": "ted_584449_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Projekt 1000 - \"Agentic AI: Prüfanforderungen für LLM-basierte agentische künstliche Intelligenz (PRAKI)\"",
+      "deadline": null,
+      "buyer_or_program": "Bundesamt für Sicherheit in der Informationstechnik",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 90,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/584449-2026"
+      ],
+      "ted": {
+        "publication_number": "584449-2026",
+        "publication_date": "2026-08-25+02:00",
+        "cpv": [
+          "72000000",
+          "72000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_584113_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Server – Vergebener Auftrag - Lieferung eines GPU-Servers",
+      "deadline": null,
+      "buyer_or_program": "Hochschule Offenburg",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/584113-2026"
+      ],
+      "ted": {
+        "publication_number": "584113-2026",
+        "publication_date": "2026-08-24+02:00",
+        "cpv": [
+          "48820000",
+          "48820000"
+        ]
+      }
+    },
+    {
+      "id": "ted_581337_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Systemberatung – Application Management",
+      "deadline": "2026-09-18T12:00:00+02:00",
+      "buyer_or_program": "BEW Berliner Energie und Wärme GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/581337-2026"
+      ],
+      "ted": {
+        "publication_number": "581337-2026",
+        "publication_date": "2026-08-24+02:00",
+        "cpv": [
+          "72246000",
+          "72222200",
+          "72222300",
+          "72224100",
+          "72246000",
+          "72246000",
+          "72246000",
+          "72246000",
+          "72246000",
+          "72246000",
+          "72246000"
+        ]
+      }
+    },
+    {
+      "id": "ted_575139_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System (Vorinformation Partnering Event)",
+      "deadline": null,
+      "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH (Cyberagentur)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 90,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/575139-2026"
+      ],
+      "ted": {
+        "publication_number": "575139-2026",
+        "publication_date": "2026-08-19+02:00",
+        "cpv": [
+          "73000000",
+          "73000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_575118_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Lösungsumsetzung der SET Inno Tandems",
+      "deadline": null,
+      "buyer_or_program": "Deutsche Energie Agentur",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 70,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/575118-2026"
+      ],
+      "ted": {
+        "publication_number": "575118-2026",
+        "publication_date": "2026-08-19+02:00",
+        "cpv": [
+          "73000000",
+          "73000000",
+          "73000000",
+          "73000000",
+          "73000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_574548_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Sicherheitssoftwarepaket – Extended Detection & Response (XDR) – Lösung",
+      "deadline": null,
+      "buyer_or_program": "Klinikum Esslingen GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 58,
+      "product_matches": [
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/574548-2026"
+      ],
+      "ted": {
+        "publication_number": "574548-2026",
+        "publication_date": "2026-08-19+02:00",
+        "cpv": [
+          "48730000",
+          "72261000",
+          "72267000",
+          "48820000",
+          "30211300",
+          "30200000"
+        ]
+      }
+    },
+    {
+      "id": "ted_569980_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Verfassern – Rahmenvertrag Erstellung von DAAD-Veröffentlichungen (Print-, Online- und Multimedia): Konzeption, Redaktion, Gestaltung, Lektorat, Übersetzung, Satz etc.",
+      "deadline": null,
+      "buyer_or_program": "Deutscher Akademischer Austauschdienst e. V.",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/569980-2026"
+      ],
+      "ted": {
+        "publication_number": "569980-2026",
+        "publication_date": "2026-08-18+02:00",
+        "cpv": [
+          "92312210",
+          "79822500",
+          "92110000",
+          "92312210",
+          "79822500",
+          "92110000"
+        ]
+      }
+    },
+    {
+      "id": "ted_567844_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – HIL Internetseite",
+      "deadline": "2026-08-28T23:59:59+02:00",
+      "buyer_or_program": "HIL Heeresinstandsetzungslogistik GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/567844-2026"
+      ],
+      "ted": {
+        "publication_number": "567844-2026",
+        "publication_date": "2026-08-17+02:00",
+        "cpv": [
+          "72000000",
+          "72200000",
+          "72000000",
+          "72200000"
+        ]
+      }
+    },
+    {
+      "id": "ted_568012_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Installation von Elektroanlagen – Beschaffung einer \"didaktischen Schulungswand\" - Anschlussarbeiten: Elektroarbeiten (Los 4)",
+      "deadline": null,
+      "buyer_or_program": "Handwerkskammer der Pfalz",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/568012-2026"
+      ],
+      "ted": {
+        "publication_number": "568012-2026",
+        "publication_date": "2026-08-17+02:00",
+        "cpv": [
+          "45311000",
+          "45311000"
+        ]
+      }
+    },
+    {
+      "id": "ted_566509_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Beratung im Bereich Projektleitung – Projektleitung zur Einführung eines DMS",
+      "deadline": null,
+      "buyer_or_program": "Kassenärztliche Vereinigung Baden-Württemberg",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/566509-2026"
+      ],
+      "ted": {
+        "publication_number": "566509-2026",
+        "publication_date": "2026-08-17+02:00",
+        "cpv": [
+          "72224000",
+          "48311100",
+          "72224100",
+          "72224200",
+          "72224000",
+          "48311100",
+          "72224100",
+          "72224200"
+        ]
+      }
+    },
+    {
+      "id": "ted_565844_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Personalschulung – Rahmenvereinbarung zur Durchführung von Mitarbeitertrainings und -seminaren",
+      "deadline": null,
+      "buyer_or_program": "DFS Deutsche Flugsicherung GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/565844-2026"
+      ],
+      "ted": {
+        "publication_number": "565844-2026",
+        "publication_date": "2026-08-14+02:00",
+        "cpv": [
+          "79632000",
+          "80522000",
+          "80522000",
+          "80522000",
+          "80522000",
+          "80522000"
+        ]
+      }
+    },
+    {
+      "id": "ted_563439_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Supercomputer – Rahmenvereinbarung - Hochleistungsrechner",
+      "deadline": "2026-08-31T23:59:59+02:00",
+      "buyer_or_program": "Universitätsklinikum Aachen AöR",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems",
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems, CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/563439-2026"
+      ],
+      "ted": {
+        "publication_number": "563439-2026",
+        "publication_date": "2026-08-14+02:00",
+        "cpv": [
+          "30211100",
+          "30211100"
+        ]
+      }
+    },
+    {
+      "id": "ted_561106_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Rundfunk- und Fernsehgeräte, Kommunikations- und Fernmeldeanlagen und Zubehör – Modernisierung der Infrastruktur des Videostudios im Multimedialabor am Standort Amberg",
+      "deadline": null,
+      "buyer_or_program": "Ostbayerische Technische Hochschule (OTH) Amberg-Weiden, Standort Amberg",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/561106-2026"
+      ],
+      "ted": {
+        "publication_number": "561106-2026",
+        "publication_date": "2026-08-13+02:00",
+        "cpv": [
+          "32000000",
+          "32000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_558065_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – DE_376 Configurable Regional AI Modelling Capability",
+      "deadline": null,
+      "buyer_or_program": "European Centre for Medium Range Weather Forecasts (ECMWF)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/558065-2026"
+      ],
+      "ted": {
+        "publication_number": "558065-2026",
+        "publication_date": "2026-08-12+02:00",
+        "cpv": [
+          "73000000",
+          "73000000",
+          "72000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_559137_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Allgemeine Managementberatung – Erbringung von Beratungsleistungen zur Organisationsstruktur von Germany Trade and Invest",
+      "deadline": "2026-09-02T23:59:59+02:00",
+      "buyer_or_program": "Germany Trade and Invest Gesellschaft für Außenwirtschaft und Standortmarketing mbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/559137-2026"
+      ],
+      "ted": {
+        "publication_number": "559137-2026",
+        "publication_date": "2026-08-12+02:00",
+        "cpv": [
+          "79411000",
+          "79411100",
+          "79411000",
+          "79411100"
+        ]
+      }
+    },
+    {
+      "id": "ted_554472_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Vergabe eines Rahmenvertrages \"Digitale Transformation\"",
+      "deadline": "2026-08-26T23:59:59+02:00",
+      "buyer_or_program": "Vergabe eines Rahmenvertrages \"Digitale Transformation\"",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/554472-2026"
+      ],
+      "ted": {
+        "publication_number": "554472-2026",
+        "publication_date": "2026-08-11+02:00",
+        "cpv": [
+          "72000000",
+          "72224000",
+          "72266000",
+          "72000000",
+          "72224000",
+          "72266000"
+        ]
+      }
+    },
+    {
+      "id": "ted_550823_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Sicherheits- und Gesundheitsschutz Koordination (SiGeKO)",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Zentrum für Luft-und Raumfahrt e. V. | TI-ZVM",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 58,
+      "product_matches": [
+        "CARE / Public Service systems",
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems, CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/550823-2026"
+      ],
+      "ted": {
+        "publication_number": "550823-2026",
+        "publication_date": "2026-08-10+02:00",
+        "cpv": [
+          "71300000",
+          "71300000",
+          "71300000",
+          "71300000"
+        ]
+      }
+    },
+    {
+      "id": "ted_552834_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Supercomputer – Rahmenvereinbarung - Hochleistungsrechner",
+      "deadline": "2026-08-31T23:59:59+02:00",
+      "buyer_or_program": "Universitätsklinikum Aachen AöR",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems",
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems, CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/552834-2026"
+      ],
+      "ted": {
+        "publication_number": "552834-2026",
+        "publication_date": "2026-08-10+02:00",
+        "cpv": [
+          "30211100",
+          "30211100"
+        ]
+      }
+    },
+    {
+      "id": "ted_551466_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvertrag Software, AI & Digital Services (SAID)",
+      "deadline": "2026-08-10T12:00:00+02:00",
+      "buyer_or_program": "Dataport AöR",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/551466-2026"
+      ],
+      "ted": {
+        "publication_number": "551466-2026",
+        "publication_date": "2026-08-10+02:00",
+        "cpv": [
+          "72000000",
+          "72000000",
+          "72000000",
+          "72000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_552501_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Branchenspezifisches Softwarepaket – Kodiersoftware für fallbegleitende und automatisierte Kodierung",
+      "deadline": null,
+      "buyer_or_program": "Medizinische Universität Lausitz - Carl Thiem",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/552501-2026"
+      ],
+      "ted": {
+        "publication_number": "552501-2026",
+        "publication_date": "2026-08-10+02:00",
+        "cpv": [
+          "48100000",
+          "48180000",
+          "48100000",
+          "48180000"
+        ]
+      }
+    },
+    {
+      "id": "ted_547915_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen in den Bereichen Erholung, Kultur und Sport – Betrieb des Deutschen Museums Bonn-Organisation und Umsetzung von Bildungsangeboten",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Museum von Meisterwerken der Naturwissenschaft und Technik (AdöR)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/547915-2026"
+      ],
+      "ted": {
+        "publication_number": "547915-2026",
+        "publication_date": "2026-08-07+02:00",
+        "cpv": [
+          "92000000",
+          "92521000",
+          "92000000",
+          "79620000",
+          "75121000"
+        ]
+      }
+    },
+    {
+      "id": "ted_549482_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen für Unternehmen: Recht, Marketing, Consulting, Einstellungen, Druck und Sicherheit – RV Full Service Marketing MPS",
+      "deadline": null,
+      "buyer_or_program": "Max-Planck-Gesellschaft z.F.d.W. Generalverwaltung",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 58,
+      "product_matches": [
+        "CARE / Public Service systems",
+        "GitLaw"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems, GitLaw. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/549482-2026"
+      ],
+      "ted": {
+        "publication_number": "549482-2026",
+        "publication_date": "2026-08-07+02:00",
+        "cpv": [
+          "79000000",
+          "79340000",
+          "79000000",
+          "79340000"
+        ]
+      }
+    },
+    {
+      "id": "ted_548393_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Rundfunk- und Fernsehgeräte, Kommunikations- und Fernmeldeanlagen und Zubehör – Modernisierung der Infrastruktur des Videostudios im Multimedialabor am Standort Amberg",
+      "deadline": null,
+      "buyer_or_program": "Ostbayerische Technische Hochschule (OTH) Amberg-Weiden, Standort Amberg",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/548393-2026"
+      ],
+      "ted": {
+        "publication_number": "548393-2026",
+        "publication_date": "2026-08-07+02:00",
+        "cpv": [
+          "32000000",
+          "32000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_543805_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Maschinen, Material und Zubehör für Büro und Computer, außer Möbeln und Softwarepaketen – HPC-Performancespeicher",
+      "deadline": null,
+      "buyer_or_program": "Universität Duisburg-Essen",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/543805-2026"
+      ],
+      "ted": {
+        "publication_number": "543805-2026",
+        "publication_date": "2026-08-06+02:00",
+        "cpv": [
+          "30000000",
+          "30236100",
+          "30000000",
+          "30236100"
+        ]
+      }
+    },
+    {
+      "id": "ted_533563_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Werbe- und Marketingdienstleistungen – Beschaffung einer Marketing-Agentur",
+      "deadline": null,
+      "buyer_or_program": "Kaufmännische Krankenkasse - KKH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 70,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof",
+        "CARE / Public Service systems",
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof, CARE / Public Service systems, CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/533563-2026"
+      ],
+      "ted": {
+        "publication_number": "533563-2026",
+        "publication_date": "2026-08-03+02:00",
+        "cpv": [
+          "79340000",
+          "79340000"
+        ]
+      }
+    },
+    {
+      "id": "ted_533818_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Server – Lieferung eines GPU-Servers",
+      "deadline": "2026-07-28T23:59:59+02:00",
+      "buyer_or_program": "Hochschule Offenburg",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/533818-2026"
+      ],
+      "ted": {
+        "publication_number": "533818-2026",
+        "publication_date": "2026-08-03+02:00",
+        "cpv": [
+          "48820000",
+          "48820000"
+        ]
+      }
+    },
+    {
+      "id": "ted_535172_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen in den Bereichen Erholung, Kultur und Sport – Betrieb des Deutschen Museums Bonn-Organisation und Umsetzung von Bildungsangeboten",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Museum von Meisterwerken der Naturwissenschaft und Technik (AdöR)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/535172-2026"
+      ],
+      "ted": {
+        "publication_number": "535172-2026",
+        "publication_date": "2026-08-03+02:00",
+        "cpv": [
+          "92000000",
+          "92521000",
+          "92000000",
+          "79620000",
+          "75121000"
+        ]
+      }
+    },
+    {
+      "id": "ted_533740_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Zentralrechner – Hochleistung GPU Server",
+      "deadline": null,
+      "buyer_or_program": "Einkauf und Vergabemanagement der SBK",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/533740-2026"
+      ],
+      "ted": {
+        "publication_number": "533740-2026",
+        "publication_date": "2026-08-03+02:00",
+        "cpv": [
+          "30211000",
+          "30211000"
+        ]
+      }
+    },
+    {
+      "id": "ted_534107_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Unterstützende Dienste für die öffentliche Verwaltung – Projektträgerschaft zur fachlichen und administrativen Umsetzung des Förderprogramms „Innovation und Infrastruktur für industrielle Künstliche Intelligenz“",
+      "deadline": null,
+      "buyer_or_program": "Bundesministerium für Wirtschaft und Energie",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 62,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/534107-2026"
+      ],
+      "ted": {
+        "publication_number": "534107-2026",
+        "publication_date": "2026-08-03+02:00",
+        "cpv": [
+          "75130000",
+          "79411100",
+          "73000000",
+          "75131000",
+          "75130000",
+          "75131000",
+          "79411100",
+          "73000000"
+        ]
+      }
+    }
+  ],
   "truth_boundary": "Automated keyword discovery from official TED Search API. A candidate is not a qualified opportunity until requirements are reviewed."
 }
