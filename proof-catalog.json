@@ -20,10 +20,10 @@
       "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
       "engineering_readiness": "WORKING_PROOF_SYSTEM",
       "production_stage": "CONTROLLED_PILOT_READY",
-      "capabilities": ["agentic AI", "workflow automation", "human approval", "tool compliance", "replayability", "audit", "public sector", "case workflows", "MCP"],
+      "capabilities": ["agentic AI", "workflow automation", "human approval", "tool compliance", "replayability", "audit", "tenant isolation", "idempotency", "job queue", "dead letter", "production readiness", "public sector", "case workflows", "MCP"],
       "domains": ["public administration", "SME operations", "legal", "property management"],
       "evidence": ["https://github.com/mikelninh/digital-worker-factory"],
-      "limitations": ["customer-specific integrations require implementation", "external actions remain approval-gated", "durable production audit/idempotency/ops infrastructure still required"]
+      "limitations": ["shared Production Platform v1 exists and is CI-tested", "each concrete product deployment still needs durable environment bindings and operating evidence", "external actions remain approval-gated"]
     },
     {
       "id": "care-public-service",
@@ -53,10 +53,10 @@
       "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
       "engineering_readiness": "WORKING_PROOF_SYSTEM",
       "production_stage": "CONTROLLED_PILOT_READY",
-      "capabilities": ["legal AI", "RAG", "citations", "citation verification", "legal corpus", "compliance", "human approval", "retrieval"],
+      "capabilities": ["legal AI", "RAG", "citations", "citation verification", "legal corpus", "compliance", "human approval", "retrieval", "Terraform", "AWS Fargate", "production operations"],
       "domains": ["legal", "regulation", "public sector"],
       "evidence": ["https://github.com/mikelninh/gitlaw", "https://mikelninh.github.io/gitlaw/"],
-      "limitations": ["not legal advice", "writes and consequential actions require human approval", "broader real-law-firm validation and operating evidence remain required"]
+      "limitations": ["not legal advice", "writes and consequential actions require human approval", "real law-firm validation, environment restore evidence and measured operating SLOs remain required"]
     },
     {
       "id": "careos",
@@ -75,10 +75,10 @@
       "readiness": "WORKING_DOCUMENT_AI_PROOF·PROD_CONTROLLED_PRODUCTION_CANDIDATE",
       "engineering_readiness": "WORKING_DOCUMENT_AI_PROOF",
       "production_stage": "CONTROLLED_PRODUCTION_CANDIDATE",
-      "capabilities": ["document AI", "structured extraction", "review workflow", "evidence", "quality checks", "FastAPI"],
+      "capabilities": ["document AI", "structured extraction", "review workflow", "evidence", "quality checks", "FastAPI", "Postgres", "tenant isolation", "idempotency", "durable audit", "job queue", "dead letter", "retention", "backup restore", "production readiness"],
       "domains": ["grant administration", "document review", "public sector"],
       "evidence": ["https://github.com/mikelninh/pruefpilot", "https://pruefpilot-v5-api.vercel.app/api/docs"],
-      "limitations": ["external durable storage and production operations evidence remain required", "qualified reviewer/security/integration validation remains external"]
+      "limitations": ["full durable Production Platform v1 path is integration-tested against Postgres 17 in CI", "the public/demo deployment is not evidence that a dedicated managed production environment is configured", "qualified reviewer/security/integration validation remains external"]
     },
     {
       "id": "casepilot",
@@ -89,7 +89,7 @@
       "capabilities": ["agent reliability", "completion integrity", "tool compliance", "escalation", "loop detection", "trace replay", "evaluation"],
       "domains": ["agentic AI", "enterprise automation", "public sector"],
       "evidence": ["https://github.com/mikelninh/digital-worker-factory"],
-      "limitations": ["proof layer rather than standalone production workflow", "versioned runtime package and live operating thresholds still required"]
+      "limitations": ["proof layer rather than standalone production workflow", "shared Production Platform v1 can host it but live operating thresholds still require evidence"]
     }
   ]
 }
