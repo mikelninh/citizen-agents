@@ -1,9 +1,44 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-08-31T13:55:49.678Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260801 SORT BY publication-date DESC",
+  "generated_at": "2026-09-01T11:42:05.416Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260802 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_600829_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Maschinen, Material und Zubehör für Büro und Computer, außer Möbeln und Softwarepaketen – HPC-Performancespeicher",
+      "deadline": null,
+      "buyer_or_program": "Universität Duisburg-Essen",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/600829-2026"
+      ],
+      "ted": {
+        "publication_number": "600829-2026",
+        "publication_date": "2026-09-01+02:00",
+        "cpv": [
+          "30000000",
+          "30236100",
+          "30000000",
+          "30236100"
+        ]
+      }
+    },
     {
       "id": "ted_597131_2026",
       "type": "tender_candidate",
