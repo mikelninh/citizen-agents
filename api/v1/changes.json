@@ -1,6 +1,6 @@
 {
   "schema_version": "citizen-intelligence-collection/1.0",
-  "generated_from": "2026-08-30",
+  "generated_from": "2026-09-01",
   "count": 58,
   "items": [
     {
@@ -46,7 +46,7 @@
       "provenance": {
         "watchdog": "2026-08-30",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -93,7 +93,7 @@
       "provenance": {
         "watchdog": "2026-08-30",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -142,7 +142,7 @@
       "provenance": {
         "watchdog": "2026-08-30",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -187,7 +187,7 @@
       "provenance": {
         "watchdog": "2026-08-30",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -228,7 +228,7 @@
       "provenance": {
         "watchdog": "2026-08-30",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -273,7 +273,7 @@
       "provenance": {
         "watchdog": "2026-08-30",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -321,7 +321,7 @@
       "provenance": {
         "watchdog": "2026-08-30",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -368,7 +368,7 @@
       "provenance": {
         "watchdog": "2026-08-30",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -414,7 +414,7 @@
       "provenance": {
         "watchdog": "2026-08-21",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -461,7 +461,7 @@
       "provenance": {
         "watchdog": "2026-08-21",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -510,7 +510,7 @@
       "provenance": {
         "watchdog": "2026-08-21",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -555,7 +555,7 @@
       "provenance": {
         "watchdog": "2026-08-21",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -596,7 +596,7 @@
       "provenance": {
         "watchdog": "2026-08-21",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -641,7 +641,7 @@
       "provenance": {
         "watchdog": "2026-08-21",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -689,7 +689,7 @@
       "provenance": {
         "watchdog": "2026-08-21",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -735,7 +735,7 @@
       "provenance": {
         "watchdog": "2026-08-21",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -781,7 +781,7 @@
       "provenance": {
         "watchdog": "2026-08-20",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -828,7 +828,7 @@
       "provenance": {
         "watchdog": "2026-08-20",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -877,7 +877,7 @@
       "provenance": {
         "watchdog": "2026-08-20",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -922,7 +922,7 @@
       "provenance": {
         "watchdog": "2026-08-20",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -963,7 +963,7 @@
       "provenance": {
         "watchdog": "2026-08-20",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1008,7 +1008,7 @@
       "provenance": {
         "watchdog": "2026-08-20",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1056,7 +1056,7 @@
       "provenance": {
         "watchdog": "2026-08-20",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1102,7 +1102,7 @@
       "provenance": {
         "watchdog": "2026-08-20",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1148,7 +1148,7 @@
       "provenance": {
         "watchdog": "2026-08-13",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1195,7 +1195,7 @@
       "provenance": {
         "watchdog": "2026-08-13",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1244,7 +1244,7 @@
       "provenance": {
         "watchdog": "2026-08-13",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1289,7 +1289,7 @@
       "provenance": {
         "watchdog": "2026-08-13",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1330,7 +1330,7 @@
       "provenance": {
         "watchdog": "2026-08-13",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1375,7 +1375,7 @@
       "provenance": {
         "watchdog": "2026-08-13",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1423,7 +1423,7 @@
       "provenance": {
         "watchdog": "2026-08-13",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1469,7 +1469,7 @@
       "provenance": {
         "watchdog": "2026-08-13",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1515,7 +1515,7 @@
       "provenance": {
         "watchdog": "2026-08-12",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1562,7 +1562,7 @@
       "provenance": {
         "watchdog": "2026-08-12",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1611,7 +1611,7 @@
       "provenance": {
         "watchdog": "2026-08-12",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1656,7 +1656,7 @@
       "provenance": {
         "watchdog": "2026-08-12",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1697,7 +1697,7 @@
       "provenance": {
         "watchdog": "2026-08-12",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1742,7 +1742,7 @@
       "provenance": {
         "watchdog": "2026-08-12",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1790,7 +1790,7 @@
       "provenance": {
         "watchdog": "2026-08-12",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1836,7 +1836,7 @@
       "provenance": {
         "watchdog": "2026-08-12",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1882,7 +1882,7 @@
       "provenance": {
         "watchdog": "2026-08-10",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1929,7 +1929,7 @@
       "provenance": {
         "watchdog": "2026-08-10",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -1978,7 +1978,7 @@
       "provenance": {
         "watchdog": "2026-08-10",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2023,7 +2023,7 @@
       "provenance": {
         "watchdog": "2026-08-10",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2064,7 +2064,7 @@
       "provenance": {
         "watchdog": "2026-08-10",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2109,7 +2109,7 @@
       "provenance": {
         "watchdog": "2026-08-10",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2157,7 +2157,7 @@
       "provenance": {
         "watchdog": "2026-08-10",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2203,7 +2203,7 @@
       "provenance": {
         "watchdog": "2026-08-10",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2250,7 +2250,7 @@
       "provenance": {
         "watchdog": "2026-08-06",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2293,7 +2293,7 @@
       "provenance": {
         "watchdog": "2026-08-06",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2339,7 +2339,7 @@
       "provenance": {
         "watchdog": "2026-08-06",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2383,7 +2383,7 @@
       "provenance": {
         "watchdog": "2026-08-06",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2426,7 +2426,7 @@
       "provenance": {
         "watchdog": "2026-08-06",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2470,7 +2470,7 @@
       "provenance": {
         "watchdog": "6. August 2026",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2511,7 +2511,7 @@
       "provenance": {
         "watchdog": "6. August 2026",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2551,7 +2551,7 @@
       "provenance": {
         "watchdog": "6. August 2026",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2593,7 +2593,7 @@
       "provenance": {
         "watchdog": "6. August 2026",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     },
     {
@@ -2635,7 +2635,7 @@
       "provenance": {
         "watchdog": "6. August 2026",
         "source_feed": "breakfast-feed.json",
-        "generated_feed_date": "2026-08-30"
+        "generated_feed_date": "2026-09-01"
       }
     }
   ],
