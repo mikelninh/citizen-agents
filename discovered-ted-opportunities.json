@@ -1,9 +1,46 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-02T11:21:59.884Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260803 SORT BY publication-date DESC",
+  "generated_at": "2026-09-03T08:35:38.483Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260804 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_608731_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – RV zur Erbringung von KI- Forschungs- und Beratungsleistungen im Bereich der Einsatzevaluation für alle Behörden im gesamten Ressort des Finanzministeriums des Landes NRW",
+      "deadline": null,
+      "buyer_or_program": "Rechenzentrum der Finanzverwaltung des Landes NRW",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/608731-2026"
+      ],
+      "ted": {
+        "publication_number": "608731-2026",
+        "publication_date": "2026-09-03+02:00",
+        "cpv": [
+          "72000000",
+          "75110000",
+          "72000000",
+          "75110000"
+        ]
+      }
+    },
     {
       "id": "ted_605512_2026",
       "type": "tender_candidate",
@@ -111,13 +148,13 @@
       }
     },
     {
-      "id": "ted_604590_2026",
+      "id": "ted_605777_2026",
       "type": "tender_candidate",
-      "headline": "Deutschland – Elektrizität, Heizung, Sonnen- und Kernenergie – Lieferung von Ökostrom inkl. Durchführung der Netznutzung als Portfolio-Modell (2027-2029)",
-      "deadline": null,
-      "buyer_or_program": "Esche Schümann Commichau für das Deutsche Forschungszentrum für Künstliche Intelligenz (DFKI)",
+      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)",
+      "deadline": "2026-09-16T00:00:00+02:00",
+      "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH",
       "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 62,
+      "fit_score": 78,
       "product_matches": [
         "Digital Worker Factory / OpsPilot",
         "SafeTrace / Master Proof"
@@ -135,14 +172,14 @@
       ],
       "source_status": "OFFICIAL_TED_API",
       "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/604590-2026"
+        "https://ted.europa.eu/de/notice/-/detail/605777-2026"
       ],
       "ted": {
-        "publication_number": "604590-2026",
+        "publication_number": "605777-2026",
         "publication_date": "2026-09-02+02:00",
         "cpv": [
-          "09300000",
-          "09300000"
+          "73000000",
+          "73000000"
         ]
       }
     },
@@ -196,13 +233,13 @@
       }
     },
     {
-      "id": "ted_605777_2026",
+      "id": "ted_604590_2026",
       "type": "tender_candidate",
-      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)",
-      "deadline": "2026-09-16T00:00:00+02:00",
-      "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH",
+      "headline": "Deutschland – Elektrizität, Heizung, Sonnen- und Kernenergie – Lieferung von Ökostrom inkl. Durchführung der Netznutzung als Portfolio-Modell (2027-2029)",
+      "deadline": null,
+      "buyer_or_program": "Esche Schümann Commichau für das Deutsche Forschungszentrum für Künstliche Intelligenz (DFKI)",
       "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 78,
+      "fit_score": 62,
       "product_matches": [
         "Digital Worker Factory / OpsPilot",
         "SafeTrace / Master Proof"
@@ -220,14 +257,14 @@
       ],
       "source_status": "OFFICIAL_TED_API",
       "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/605777-2026"
+        "https://ted.europa.eu/de/notice/-/detail/604590-2026"
       ],
       "ted": {
-        "publication_number": "605777-2026",
+        "publication_number": "604590-2026",
         "publication_date": "2026-09-02+02:00",
         "cpv": [
-          "73000000",
-          "73000000"
+          "09300000",
+          "09300000"
         ]
       }
     },
@@ -1412,192 +1449,6 @@
           "30236100",
           "30000000",
           "30236100"
-        ]
-      }
-    },
-    {
-      "id": "ted_533563_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Werbe- und Marketingdienstleistungen – Beschaffung einer Marketing-Agentur",
-      "deadline": null,
-      "buyer_or_program": "Kaufmännische Krankenkasse - KKH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 70,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof",
-        "CARE / Public Service systems",
-        "CareOS"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof, CARE / Public Service systems, CareOS. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/533563-2026"
-      ],
-      "ted": {
-        "publication_number": "533563-2026",
-        "publication_date": "2026-08-03+02:00",
-        "cpv": [
-          "79340000",
-          "79340000"
-        ]
-      }
-    },
-    {
-      "id": "ted_533818_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Server – Lieferung eines GPU-Servers",
-      "deadline": "2026-07-28T23:59:59+02:00",
-      "buyer_or_program": "Hochschule Offenburg",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/533818-2026"
-      ],
-      "ted": {
-        "publication_number": "533818-2026",
-        "publication_date": "2026-08-03+02:00",
-        "cpv": [
-          "48820000",
-          "48820000"
-        ]
-      }
-    },
-    {
-      "id": "ted_535172_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Dienstleistungen in den Bereichen Erholung, Kultur und Sport – Betrieb des Deutschen Museums Bonn-Organisation und Umsetzung von Bildungsangeboten",
-      "deadline": null,
-      "buyer_or_program": "Deutsches Museum von Meisterwerken der Naturwissenschaft und Technik (AdöR)",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/535172-2026"
-      ],
-      "ted": {
-        "publication_number": "535172-2026",
-        "publication_date": "2026-08-03+02:00",
-        "cpv": [
-          "92000000",
-          "92521000",
-          "92000000",
-          "79620000",
-          "75121000"
-        ]
-      }
-    },
-    {
-      "id": "ted_533740_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Zentralrechner – Hochleistung GPU Server",
-      "deadline": null,
-      "buyer_or_program": "Einkauf und Vergabemanagement der SBK",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/533740-2026"
-      ],
-      "ted": {
-        "publication_number": "533740-2026",
-        "publication_date": "2026-08-03+02:00",
-        "cpv": [
-          "30211000",
-          "30211000"
-        ]
-      }
-    },
-    {
-      "id": "ted_534107_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Unterstützende Dienste für die öffentliche Verwaltung – Projektträgerschaft zur fachlichen und administrativen Umsetzung des Förderprogramms „Innovation und Infrastruktur für industrielle Künstliche Intelligenz“",
-      "deadline": null,
-      "buyer_or_program": "Bundesministerium für Wirtschaft und Energie",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 62,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/534107-2026"
-      ],
-      "ted": {
-        "publication_number": "534107-2026",
-        "publication_date": "2026-08-03+02:00",
-        "cpv": [
-          "75130000",
-          "79411100",
-          "73000000",
-          "75131000",
-          "75130000",
-          "75131000",
-          "79411100",
-          "73000000"
         ]
       }
     }

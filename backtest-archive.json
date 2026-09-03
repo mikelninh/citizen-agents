@@ -1,6 +1,6 @@
 {
   "schema_version": "citizen-operational-awareness-archive/1.0",
-  "generated_on": "2026-08-30",
+  "generated_on": "2026-09-03",
   "target_window_days": 90,
   "evidence_window": {
     "start": "2026-08-06",
