@@ -3,24 +3,25 @@
   "project": "Citizen Agents",
   "north_star": "Give people and organisations timely, source-backed civic intelligence about rights, money, deadlines, participation windows and institutional change — with usefulness and coverage proven rather than assumed.",
   "achieved": [
-    {"title": "Public watchdog families, cited signal logs and Civic Intelligence APIs", "evidence": ["README.md", "watchdog-registry.json", "api/v1/"]},
-    {"title": "Organisation Impact Graph and 14-day Intelligence Proof", "evidence": ["README.md", "organisations.html"]},
-    {"title": "Founder Control Center, Revenue Opportunity OS and production-readiness separation", "evidence": ["README.md", "production-readiness.json"]}
+    {"title": "Public watchdog families, cited signal logs and Civic Intelligence APIs", "label": "Watchdogs + APIs", "evidence": ["README.md", "watchdog-registry.json", "api/v1/"]},
+    {"title": "Organisation Impact Graph and 14-day Intelligence Proof", "label": "Impact graph", "evidence": ["README.md", "organisations.html"]},
+    {"title": "Founder Control Center, Revenue Opportunity OS and production-readiness separation", "label": "Control center", "evidence": ["README.md", "production-readiness.json"]}
   ],
   "current": {
     "title": "Prove that organisations repeatedly act on intelligence they would otherwise miss",
+    "label": "Action proof",
     "status": "active",
     "outcome": "Move from a broad working prototype toward measured Civic Intelligence Infrastructure with real usefulness, coverage and willingness-to-pay evidence."
   },
   "next": [
-    {"title": "Run organisation Intelligence Proofs with measured usefulness outcomes", "why": "The key claim is not signal volume but whether relevant opportunities would otherwise have been missed and whether action followed."},
-    {"title": "Measure watchdog coverage and freshness instead of implying completeness", "why": "Trust depends on knowing both what the system sees and where blind spots remain."},
-    {"title": "Convert the strongest proof lane into repeatable paid organisation value", "why": "Revenue should follow demonstrated usefulness rather than generic AI ROI claims."}
+    {"title": "Run organisation Intelligence Proofs with measured usefulness outcomes", "label": "Intelligence proofs", "why": "The key claim is not signal volume but whether relevant opportunities would otherwise have been missed and whether action followed."},
+    {"title": "Measure watchdog coverage and freshness instead of implying completeness", "label": "Coverage + freshness", "why": "Trust depends on knowing both what the system sees and where blind spots remain."},
+    {"title": "Convert the strongest proof lane into repeatable paid organisation value", "label": "Paid value", "why": "Revenue should follow demonstrated usefulness rather than generic AI ROI claims."}
   ],
   "later": [
-    "Automate additional watchdog families to the same evidence standard as Rights & Money.",
-    "Connect Citizen Agents signals to bounded action infrastructure without letting the intelligence layer grant authority.",
-    "Grow toward reusable public-interest Civic Intelligence Infrastructure across jurisdictions."
+    {"title": "Automate additional watchdog families to the same evidence standard as Rights & Money.", "label": "More watchdogs"},
+    {"title": "Connect Citizen Agents signals to bounded action infrastructure without letting the intelligence layer grant authority.", "label": "Bounded actions"},
+    {"title": "Grow toward reusable public-interest Civic Intelligence Infrastructure across jurisdictions.", "label": "Civic infra"}
   ],
   "sources": ["README.md", "watchdog-registry.json", "production-readiness.json", "api/v1/"],
   "updated_at": "2026-09-03"
