@@ -1,0 +1,74 @@
+{
+  "date": "2026-09-03",
+  "moves": 5,
+  "highlights": [
+    {
+      "person": "Silvia Bender",
+      "party": "Bündnis 90/Die Grünen",
+      "from": "Staatssekretärin BMLEH (2021–2025)",
+      "to": "Selbständige Beraterin für EUTOP Europe GmbH (Lobbyagentur)",
+      "date_of_entry": "2026-09-02",
+      "lobbyregister_id": "R008201/85117",
+      "why_it_matters": "Ehemalige Staatssekretärin mit Ressort in Landwirtschaft/Umwelt/Klima wechselt zur Lobbyagentur Eutop, die 20+ weitere Ex-Abgeordnete beschäftigt. 21 Tätigkeitsbereiche im Register, darunter EU-Gesetzgebung, Klimaschutz. Keine offengelegten Lobby-Gespräche.",
+      "source_url": "https://www.lobbyregister.bundestag.de/suche/R008201/85117"
+    },
+    {
+      "person": "Udo Schiefner",
+      "party": "SPD",
+      "from": "Bundestagsabgeordneter, Vorsitzender Verkehrsausschuss",
+      "to": "Schiefner-Impuls GmbH; Lobbyarbeit für Eutop (Exxon Mobil, Edeka)",
+      "date_of_entry": "2025-02 (nach Bundestagswahl)",
+      "lobbyregister_id": "Eutop-Eintrag (Schiefner als Contractor)",
+      "why_it_matters": "Als Abgeordneter forderte er Lobbyregister-Transparenz. Nun selbst als Lobbyist für Industriesektoren, ohne Offenlegung eigener Kontakte."
+    },
+    {
+      "person": "Wolfgang Hellmich",
+      "party": "SPD",
+      "from": "Bundestagsabgeordneter, Verteidigungsausschuss, Sondervermögen Bundeswehr",
+      "to": "HC-Hellmich-Consulting; Auftraggeber Eutop Europe",
+      "date_of_entry": "2025 (nach Bundestagswahl)",
+      "lobbyregister_id": "Eutop-Eintrag (Hellmich als Contractor)",
+      "why_it_matters": "Ausschuss für Verteidigung und Rüstung wechselt zur Rüstungslobby. Beratungsschwerpunkt: Verteidigungspolitik, Rüstungsangelegenheiten."
+    },
+    {
+      "person": "Johannes Arlt",
+      "party": "SPD",
+      "from": "Bundestagsabgeordneter, Verteidigungsausschuss (bis März 2025)",
+      "to": "Lobbyarbeit für Stark Defence (Kampfdrohnen-Hersteller)",
+      "date_of_entry": "2025 (nach Austritt)",
+      "lobbyregister_id": "Stark Defence Eintrag",
+      "why_it_matters": "Verteidigungsausschuss-Abgeordneter wird Lobbyist für Hersteller von Kampfdrohnen, die auf Bundeswehr-Auftrag warten."
+    },
+    {
+      "person": "Dieter Janecek",
+      "party": "Bündnis 90/Die Grünen",
+      "from": "Bundestagsabgeordneter (Grüne), 12 Jahre Bundestag",
+      "to": "Public Affairs bei Flender GmbH (Maschinenbau)",
+      "date_of_entry": "2025-07",
+      "lobbyregister_id": "Flender GmbH Eintrag",
+      "why_it_matters": "Erste Public-Affairs-Stelle bei Flender mit Ex-Politiker. Janecek selbst bestätigte die unmittelbare Lobbyregister-Eintragung."
+    }
+  ],
+  "sources": [
+    "https://www.lobbyregister.bundestag.de/suche/R008201/85117",
+    "https://de.wikipedia.org/wiki/Silvia_Bender",
+    "https://www.lobbyregister.bundestag.de/",
+    "https://www.abgeordnetenwatch.de/recherchen/lobbyismus/das-sind-die-abgeordneten-die-vom-bundestag-in-den-lobbyismus-wechselten",
+    "https://www.abgeordnetenwatch.de/recherchen/lobbyismus/diese-liste-zeigt-fuer-wen-ueber-100-ex-politikerinnen-heute-arbeiten",
+    "https://www.zdf.de/thema/lobbyregister-bundestag-drehtuereffekt-bekannte-lobbyisten-100.html",
+    "https://www.tagesschau.de/inland/lobbyregister-bericht-100.html",
+    "https://www.lobbycontrol.de/aus-der-lobbywelt/deutsche-politiker-die-die-seiten-gewechselt-haben-auf-einen-blick-10535/",
+    "https://lobbypedia.de/wiki/Seitenwechsler_in_Deutschland_im_%C3%9Cberblick"
+  ],
+  "actions_taken": [
+    "Lobbyregister-Auswertung: neuester Eintrag Silvia Bender (R008201) am 02.09.2026",
+    "Recherche abgeordnetenwatch Lobbyliste 2025 (07/2025) für namentliche Moves 2025",
+    "Statistik ZDFheute (73 Ex-Abgeordnete als Lobbyisten) als Kontext eingetragen",
+    "5 verifizierte Moves dokumentiert: 1 frisch (Bender) + 4 aus Lobbyliste 2025",
+    "Artifacts erstellt: agent-digests/revolving-door-2026-09-03.md, agent-logs/revolving-door-2026-09-03.json",
+    "Branch agent/revolving-door-2026-09-03 erstellt und gemerged",
+    "PR zur menschlichen Review erstellt (NICHT gemerged — human-only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/revolving-door-2026-09-03"
+}
