@@ -437,7 +437,7 @@
     {
       "id": "arc_28dea293d27b5a8a",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-30",
+      "last_seen": "2026-09-03",
       "family": "rights_money",
       "topics": [
         "labour",
@@ -470,14 +470,15 @@
         "agent-digests/benefit-discovery-2026-08-13.md",
         "agent-digests/benefit-discovery-2026-08-20.md",
         "agent-digests/benefit-discovery-2026-08-21.md",
-        "agent-digests/benefit-discovery-2026-08-30.md"
+        "agent-digests/benefit-discovery-2026-08-30.md",
+        "agent-digests/benefit-discovery-2026-09-03.md"
       ],
       "extraction_mode": "ARCHIVE_SECTION"
     },
     {
       "id": "arc_652ea166677ebc34",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-30",
+      "last_seen": "2026-09-03",
       "family": "rights_money",
       "topics": [
         "social",
@@ -512,14 +513,15 @@
         "agent-digests/benefit-discovery-2026-08-13.md",
         "agent-digests/benefit-discovery-2026-08-20.md",
         "agent-digests/benefit-discovery-2026-08-21.md",
-        "agent-digests/benefit-discovery-2026-08-30.md"
+        "agent-digests/benefit-discovery-2026-08-30.md",
+        "agent-digests/benefit-discovery-2026-09-03.md"
       ],
       "extraction_mode": "ARCHIVE_SECTION"
     },
     {
       "id": "arc_90d6d69419dcda2c",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-30",
+      "last_seen": "2026-09-03",
       "family": "funding_radar",
       "topics": [
         "funding",
@@ -555,14 +557,15 @@
         "agent-digests/benefit-discovery-2026-08-13.md",
         "agent-digests/benefit-discovery-2026-08-20.md",
         "agent-digests/benefit-discovery-2026-08-21.md",
-        "agent-digests/benefit-discovery-2026-08-30.md"
+        "agent-digests/benefit-discovery-2026-08-30.md",
+        "agent-digests/benefit-discovery-2026-09-03.md"
       ],
       "extraction_mode": "ARCHIVE_SECTION"
     },
     {
       "id": "arc_67647bced714627d",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-30",
+      "last_seen": "2026-09-03",
       "family": "rights_money",
       "topics": [
         "social"
@@ -590,7 +593,8 @@
         "agent-digests/benefit-discovery-2026-08-13.md",
         "agent-digests/benefit-discovery-2026-08-20.md",
         "agent-digests/benefit-discovery-2026-08-21.md",
-        "agent-digests/benefit-discovery-2026-08-30.md"
+        "agent-digests/benefit-discovery-2026-08-30.md",
+        "agent-digests/benefit-discovery-2026-09-03.md"
       ],
       "extraction_mode": "ARCHIVE_SECTION"
     },
@@ -624,7 +628,7 @@
     {
       "id": "arc_5073838639c4689c",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-30",
+      "last_seen": "2026-09-03",
       "family": "rights_money",
       "topics": [
         "social",
@@ -658,14 +662,15 @@
         "agent-digests/benefit-discovery-2026-08-13.md",
         "agent-digests/benefit-discovery-2026-08-20.md",
         "agent-digests/benefit-discovery-2026-08-21.md",
-        "agent-digests/benefit-discovery-2026-08-30.md"
+        "agent-digests/benefit-discovery-2026-08-30.md",
+        "agent-digests/benefit-discovery-2026-09-03.md"
       ],
       "extraction_mode": "ARCHIVE_SECTION"
     },
     {
       "id": "arc_017af6837c8a4e34",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-30",
+      "last_seen": "2026-09-03",
       "family": "rights_money",
       "topics": [
         "social",
@@ -696,14 +701,15 @@
         "agent-digests/benefit-discovery-2026-08-13.md",
         "agent-digests/benefit-discovery-2026-08-20.md",
         "agent-digests/benefit-discovery-2026-08-21.md",
-        "agent-digests/benefit-discovery-2026-08-30.md"
+        "agent-digests/benefit-discovery-2026-08-30.md",
+        "agent-digests/benefit-discovery-2026-09-03.md"
       ],
       "extraction_mode": "ARCHIVE_SECTION"
     },
     {
       "id": "arc_a16af71d9de5f70b",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-30",
+      "last_seen": "2026-09-03",
       "family": "rights_money",
       "topics": [
         "consumer"
@@ -729,14 +735,15 @@
         "agent-digests/benefit-discovery-2026-08-13.md",
         "agent-digests/benefit-discovery-2026-08-20.md",
         "agent-digests/benefit-discovery-2026-08-21.md",
-        "agent-digests/benefit-discovery-2026-08-30.md"
+        "agent-digests/benefit-discovery-2026-08-30.md",
+        "agent-digests/benefit-discovery-2026-09-03.md"
       ],
       "extraction_mode": "ARCHIVE_SECTION"
     },
     {
       "id": "arc_f53a4fbae7e6f53f",
       "first_seen": "2026-08-10",
-      "last_seen": "2026-08-30",
+      "last_seen": "2026-09-03",
       "family": "rights_money",
       "topics": [
         "housing",
@@ -770,7 +777,8 @@
         "agent-digests/benefit-discovery-2026-08-13.md",
         "agent-digests/benefit-discovery-2026-08-20.md",
         "agent-digests/benefit-discovery-2026-08-21.md",
-        "agent-digests/benefit-discovery-2026-08-30.md"
+        "agent-digests/benefit-discovery-2026-08-30.md",
+        "agent-digests/benefit-discovery-2026-09-03.md"
       ],
       "extraction_mode": "ARCHIVE_SECTION"
     },
