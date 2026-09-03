@@ -1,0 +1,20 @@
+{
+  "schema": "mikel-harness-task-v0.1",
+  "task_id": "organisation-intelligence-proof",
+  "status": "in_progress",
+  "goal": "Build the measurable Organisation Intelligence Proof needed to show whether organisations act on source-backed civic intelligence they would otherwise miss.",
+  "sources": [".harness/roadmap.json", "README.md", "watchdog-registry.json", "production-readiness.json", "api/v1/"],
+  "outputs": ["proof instrumentation", "usefulness rubric", "missed-opportunity baseline", "action/outcome capture"],
+  "constraints": ["Do not imply complete coverage.", "Keep signals source-backed and uncertainty visible.", "No external sends or commitments without approval."],
+  "done_when": ["A repeatable Intelligence Proof flow exists.", "The flow measures whether a signal would otherwise have been missed and whether action followed.", "Coverage/freshness blind spots remain explicit."],
+  "forbidden": ["Completeness claims without evidence", "External commitments", "Autonomous consequential actions"],
+  "risk_class": "A2",
+  "approval_required": false,
+  "max_retries": 3,
+  "current_step": "build_proof_instrumentation",
+  "evidence": [],
+  "failures": [],
+  "uncertainties": ["Real willingness-to-pay and organisational usefulness still require external users after the proof flow is prepared."],
+  "next_owner": "builder",
+  "next_step": "Build the Organisation Intelligence Proof instrumentation and usefulness rubric, then prepare the first organisation-ready proof pack."
+}
