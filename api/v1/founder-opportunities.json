@@ -1,8 +1,8 @@
 {
   "schema_version": "citizen-founder-opportunity-api/1.0",
-  "generated_at": "2026-09-03T08:36:31.053Z",
+  "generated_at": "2026-09-03T11:18:33.645Z",
   "discovery": {
-    "ted_generated_at": "2026-09-03T08:36:30.497Z",
+    "ted_generated_at": "2026-09-03T11:18:33.160Z",
     "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260804 SORT BY publication-date DESC"
   },
   "profile": {
@@ -4526,7 +4526,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 16
+          "days": 15
         },
         "proof_matches": [
           {
@@ -8548,7 +8548,7 @@
         "route": "MONITOR_NEXT_ROUND",
         "deadline": {
           "state": "EXPIRED",
-          "days": -9
+          "days": -10
         },
         "proof_matches": [
           {
@@ -9435,7 +9435,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -23
+          "days": -24
         },
         "proof_matches": [
           {
@@ -9661,7 +9661,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -23
+          "days": -24
         },
         "proof_matches": [
           {
