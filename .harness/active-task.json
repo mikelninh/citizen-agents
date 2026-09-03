@@ -16,5 +16,15 @@
   "failures": [],
   "uncertainties": ["Real willingness-to-pay and organisational usefulness still require external users after the proof flow is prepared."],
   "next_owner": "builder",
-  "next_step": "Build the Organisation Intelligence Proof instrumentation and usefulness rubric, then prepare the first organisation-ready proof pack."
+  "next_step": "Build the Organisation Intelligence Proof instrumentation and usefulness rubric, then prepare the first organisation-ready proof pack.",
+  "decision_estimate": {
+    "scale": "1-5",
+    "impact": 4,
+    "urgency": 3,
+    "unlock_value": 4,
+    "effort": 3,
+    "confidence": 3.5,
+    "rationale": "The proof can convert civic intelligence infrastructure into a measurable user outcome, but external usefulness remains less certain than the strongest current proof opportunities.",
+    "source": "chief_estimate_v1"
+  }
 }
