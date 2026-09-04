@@ -1,0 +1,35 @@
+{
+  "date": "2026-09-01",
+  "items": 4,
+  "systems": [
+    "Predictive Policing — Polizei/Justiz/Gefängnisse (Deutschland)",
+    "KI-Modul Steuerveranlagung — Finanzverwaltung NRW (Pilotfinanzämter Brühl, Bielefeld-Außenstadt, Hamm, Lübbecke)",
+    "SCHUFA Kredit-Scoring — Deutschland/EU",
+    "EU AI Act Implementierungs-Meilensteine — EU-weit"
+  ],
+  "highlights": [
+    "AlgorithmWatch report March 2025: predictive policing systems in Germany operate without adequate legal basis; risk of discrimination amplification.",
+    "NRW becomes first German state to deploy KI in tax assessment (May 2025 pilot, 4 offices); expands automation of legal-effect decisions.",
+    "CJEU (SCHUFA Holding case): credit scoring qualifies as automated decision-making under Art. 22 GDPR — citizens can challenge.",
+    "EU AI Act: prohibitions live since 2 Feb 2025; transparency duties (Art. 50) from 2 Aug 2026; Annex III high-risk rules (credit, employment, benefits, insurance) from 2 Dec 2027."
+  ],
+  "sources": [
+    "https://algorithmwatch.org/en/automating-injustice-predictive-policing-germany/",
+    "https://www.finanzverwaltung.nrw.de/uebersicht-rubrik-aktuelles-und-presse/pressemitteilungen/nordrhein-westfalen-setzt-als-erstes",
+    "https://tech-litigation.com/the-first-judgment-on-article-22-gdpr-the-schufa-holding-case/",
+    "https://gdpr-info.eu/art-22-gdpr/",
+    "https://artificialintelligenceact.eu/implementation-timeline/",
+    "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai"
+  ],
+  "actions_taken": [
+    "cloned citizen-agents repo",
+    "created branch agent/algorithm-watch-2026-09-01",
+    "researched EU AI Act implementation status + German AI deployments + automated decision rights",
+    "wrote agent-digests/algorithm-watch-2026-09-01.md (4 items, bilingual DE/EN)",
+    "wrote agent-logs/algorithm-watch-2026-09-01.json",
+    "committed + pushed branch",
+    "opened PR (human review only — NOT merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/algorithm-watch-2026-09-01"
+}
