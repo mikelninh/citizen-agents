@@ -1,0 +1,33 @@
+{
+  "date": "2026-09-03",
+  "rulings": 3,
+  "courts": ["BVerfG", "EuGH"],
+  "highlights": [
+    "BVerfG 2 BvR 226/26: Court must not arbitrarily dismiss factual claims — E-Bike case shows prohibition of objective arbitrariness in civil litigation (Art. 3(1) GG)",
+    "EuGH C-526/24: Single GDPR access request can be abusive if filed not to learn about processing but to manufacture damages claims; good-faith requests remain protected",
+    "EuGH C-26/25 Bukla: Return bans based on classified intelligence must not break up EU-citizen families; authorities must show essential reasons and examine individual circumstances"
+  ],
+  "sources": [
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2026/08/rk20260805_2bvr022626.html",
+    "https://www.bverfg.de/e/rk20260805_2bvr022626",
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A62024CJ0526",
+    "https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260107de.pdf",
+    "https://www.heise.de/news/DSGVO-EuGH-schiebt-systematischen-Auskunftsmissbraeuchen-Riegel-vor-11217908.html",
+    "https://stiftungdatenschutz.org/veroeffentlichungen/datenschutzwoche/detailansicht/datenschutzwoche-vom-23-maerz-2026-690"
+  ],
+  "actions_taken": [
+    "clone repo",
+    "create branch agent/court-watch-2026-09-03",
+    "write digest agent-digests/court-watch-2026-09-03.md (bilingual DE/EN)",
+    "write log agent-logs/court-watch-2026-09-03.json",
+    "commit + push",
+    "open PR"
+  ],
+  "toolnotes": {
+    "agb-reader": "No direct impact on AGB clause checks; ruling is about constitutional procedural fairness.",
+    "flight-rights-mcp": "No direct EU261 impact; Bukla case relates to immigration/expulsion and family life, relevant context for mobility rights.",
+    "gitlaw": "C-526/24 is relevant for legal-tech jurisprudence on GDPR access rights and abuse; consider noting the new abuse standard in any DSGVO briefing tools."
+  },
+  "repo": "citizen-agents",
+  "branch": "agent/court-watch-2026-09-03"
+}
