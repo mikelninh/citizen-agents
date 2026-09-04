@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-30",
+  "directives_found": 7,
+  "deadlines_coming": 1,
+  "late": 5,
+  "on_time": 1,
+  "at_risk": 1,
+  "highlights": [
+    "Germany is subject to at least 5 open EU infringement procedures for late/incomplete transposition: Anti-SLAPP (EU 2024/1069), Capital Requirements Directive VI, Pay Transparency (EU 2023/970), Parent-Subsidiary dividend taxation (INFR(2026)2089), and the EU Sanctions Directive (EU 2024/1226, transposed late Feb 2026).",
+    "Platform Work Directive (EU 2024/2831) deadline 2 Dec 2026 is AT RISK — Germany still in consultation stage (April 2026).",
+    "Empowering Consumers Directive (EU 2024/825) was transposed on time via the Third UWG Amendment Act (BGBl. 2026 I Nr. 43); applies 27 Sep 2026."
+  ],
+  "directives": [
+    {"name": "Anti-SLAPP Directive (EU) 2024/1069", "deadline": "2026-05-07", "ministry": "BMJ", "status": "late", "infringement": "EC letter of formal notice 2026-07-15", "source": "https://eur-lex.europa.eu/eli/dir/2024/1069/oj"},
+    {"name": "Platform Work Directive (EU) 2024/2831", "deadline": "2026-12-02", "ministry": "BMAS", "status": "at_risk", "infringement": null, "source": "https://eur-lex.europa.eu/EN/legal-content/summary/working-conditions-in-platform-work.html"},
+    {"name": "Pay Transparency Directive (EU) 2023/970", "deadline": "2026-06-07", "ministry": "BMAS", "status": "late", "infringement": "deadline missed; only initial steps 2026-07-16", "source": "https://eur-lex.europa.eu/eli/dir/2023/970/oj"},
+    {"name": "Empowering Consumers Directive (EU) 2024/825", "deadline": "2026-03-27", "ministry": "BMJ", "status": "on_time", "infringement": null, "source": "https://eur-lex.europa.eu/eli/dir/2024/825/oj/eng"},
+    {"name": "Capital Requirements Directive VI amendment", "deadline": "2026-01-10", "ministry": "BMF", "status": "late", "infringement": "EC letter of formal notice 2026-03-27", "source": "https://ec.europa.eu/commission/presscorner/detail/en/inf_26_679"},
+    {"name": "Parent-Subsidiary Directive (dividend taxation)", "deadline": "conformity required", "ministry": "BMF", "status": "late", "infringement": "INFR(2026)2089, 2026-07-08", "source": "https://ec.europa.eu/commission/presscorner/detail/en/inf_26_1376"},
+    {"name": "EU Sanctions Directive (EU) 2024/1226", "deadline": "2025-05-20", "ministry": "BMJ", "status": "late", "infringement": "EC proceedings 2025-07; transposed late 2026-02-05", "source": "https://eur-lex.europa.eu/eli/dir/2024/1226/oj"}
+  ],
+  "sources": [
+    "https://eur-lex.europa.eu",
+    "https://ec.europa.eu/atwork/applying-eu-law/infringement-proceedings",
+    "https://ec.europa.eu/commission/presscorner/detail/en/inf_26_1380",
+    "https://ec.europa.eu/commission/presscorner/detail/en/inf_26_679",
+    "https://ec.europa.eu/commission/presscorner/detail/en/inf_26_1376",
+    "https://eapil.org/2026/07/16/commission-opens-infringement-proceedings-over-anti-slapp-directive-transposition/",
+    "https://www.regulationtomorrow.com/2026/03/commission-opens-infringement-procedures-against-member-states-for-failing-to-transpose-eu-directives/",
+    "https://www.taxathand.com/article/41500/European-Union/2026/European-Commission-publishes-July-2026-infringements-package",
+    "https://www.gleisslutz.com/en/know-how/stricter-criminal-sanctions-law-germanys-transposition-eu-sanctions-directive",
+    "https://intep.com/ratgeber/empco-richtlinie/",
+    "https://cxcglobal.com/blog/cxc-comply/eu-directive-platform-work-guide/",
+    "https://iuslaboris.com/insights/eu-pay-transparency-directive-which-countries-have-transposed/"
+  ],
+  "actions_taken": [
+    "Cloned mikelninh/citizen-agents",
+    "Created branch agent/directive-watch-2026-08-30",
+    "Researched EUR-Lex, EC infringement packages (Mar & Jul 2026) and legal analyses",
+    "Wrote agent-digests/directive-watch-2026-08-30.md (bilingual)",
+    "Wrote agent-logs/directive-watch-2026-08-30.json",
+    "Committed and pushed branch",
+    "Opened PR for human review (no self-merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/directive-watch-2026-08-30"
+}
