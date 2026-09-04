@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-30",
+  "changes": [
+    {
+      "file": "experiences/little-planet/src/modes/botbrain.js",
+      "what": "Replaced hitscan botShoot (traceShot) with a travelling soak projectile via Projectiles.spawn (team-coloured blob, speed 46, gravity 3, dmg 20, owner=bot.netId). Removed WEAPON/traceShot import.",
+      "why": "Director directive #1: unify bot combat into the same dodgeable soak model the player uses, so vs-bot and vs-friend PvP are identical."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/weapons/weapon.js",
+      "what": "Deleted orphaned hitscan exports (WEAPON, raySphere, traceShot, Magazine, buildViewModel); kept only applySpread.",
+      "why": "Director directive #1 acceptance (c): no code path references the ghost carbine anymore."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/match-mode.js",
+      "what": "Added projectiles to bot brain ctx; _onProjectileHit now reports bot-owned projectile hits via _request; created this.stamina in _initLoadout (leafblade no longer gets a soak Charge); drain stamina on sprint; gate saber swing on stamina; refill stamina in the refill effect; exposed stamina in hud(); guarded charges loops with ?..",
+      "why": "Director directives #1, #2, #3: one combat world, two resources, items serve both families."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/weapons/saber.js",
+      "what": "Added windLock state + wind() method; startSwing() refuses while winded; update() flickers the blade when winded.",
+      "why": "Director directive #2: a swing tried with no stamina whiffs and telegraphs instead of silently failing."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/weapons/tools.js",
+      "what": "Added STAMINA config + Stamina class (max 100, swingCost 34, sprintDrain 22/s, regen 30/s, swingLock 0.42s).",
+      "why": "Director directive #2: the saber's own distinct resource, shared with sprint."
+    },
+    {
+      "file": "experiences/little-planet/src/shared/items.js",
+      "what": "Renamed ammo -> surge (icon ⚡, 'Refill your soak-charge and stamina'), kept effect {refill:true}.",
+      "why": "Director directive #3: dead pickup now serves BOTH weapon families."
+    },
+    {
+      "file": "experiences/little-planet/src/ui/ui.js + styles.css",
+      "what": "Added a dedicated STAMINA HUD bar (distinct green); renamed orphaned .ammo CSS to .surge; minor comment fix.",
+      "why": "Director directive #2 acceptance (b): stamina must be visibly its own bar; kill 'ammo' string."
+    }
+  ],
+  "build_passed": true,
+  "directives_done": [
+    "1 - unify bot combat into the dodgeable soak projectile model (hitscan removed)",
+    "2 - saber now uses a distinct Stamina resource shared with sprint; winded whiff when empty",
+    "3 - ammo crate repurposed to surge, refilling both soak-charge and stamina; zero ammo refs left"
+  ],
+  "repo": "blakeks-world",
+  "branch": "studio/engineer-2026-08-30"
+}
