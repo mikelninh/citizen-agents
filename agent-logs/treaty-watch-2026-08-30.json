@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-30",
+  "findings": 4,
+  "regions": ["Europe/Türkiye", "Southeast Asia/Myanmar", "Caribbean/Haiti", "Europe/Italy"],
+  "highlights": [
+    "ECHR Grand Chamber (25 Aug 2026): Türkiye must release Osman Kavala immediately; conviction null and void under Convention law (Kavala v. Türkiye no. 2).",
+    "OHCHR report A/HRC/63/21 (25 Aug 2026): Myanmar human rights situation at new low — systematic violations against Rohingya, child labour from age six, 302 new rare-earth mining sites in Kachin (+149% since 2021), USD 1.4bn peak trade 2023.",
+    "OHCHR press briefing (28 Aug 2026): recent killings a stark reminder of persistent violence in Haiti.",
+    "ECHR Grand Chamber (7 Jul 2026): Italy violated Article 8 — parliamentary commission search seized personal data of 6,000+ people with no ex ante safeguard or ex post remedy (Grande Oriente d'Italia v. Italy)."
+  ],
+  "sources": [
+    "https://www.echr.coe.int/w/kavala-v.-t%C3%BCrkiye-no.-2-1",
+    "https://hudoc.echr.coe.int/eng-press?i=003-8614878-12265396",
+    "https://www.ohchr.org/en/press-releases/2026/08/human-rights-situation-myanmar-plummets-new-low-amid-unrelenting-violations",
+    "https://www.ohchr.org/en/documents/country-reports/ahrc6321-situation-human-rights-rohingya-muslims-and-other-minorities",
+    "https://www.ohchr.org/en/press-briefing-notes/2026/08/recent-killings-stark-reminder-persistent-violence-haiti",
+    "https://www.echr.coe.int/w/grande-oriente-d-italia-v.-italy",
+    "https://hudoc.echr.coe.int/app/conversion/pdf/?library=ECHR&id=003-8584502-12210439"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/treaty-watch-2026-08-30",
+    "Researched ECHR case-law page and OHCHR press releases",
+    "Wrote bilingual (DE/EN) digest agent-digests/treaty-watch-2026-08-30.md",
+    "Wrote log agent-logs/treaty-watch-2026-08-30.json",
+    "Committed and pushed branch; opened PR for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/treaty-watch-2026-08-30"
+}
