@@ -1,7 +1,7 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-04T11:21:31.152Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260805 SORT BY publication-date DESC",
+  "generated_at": "2026-09-05T10:38:31.197Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260806 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
     {
@@ -185,6 +185,42 @@
       }
     },
     {
+      "id": "ted_605777_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)",
+      "deadline": "2026-09-16T00:00:00+02:00",
+      "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 78,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/605777-2026"
+      ],
+      "ted": {
+        "publication_number": "605777-2026",
+        "publication_date": "2026-09-02+02:00",
+        "cpv": [
+          "73000000",
+          "73000000"
+        ]
+      }
+    },
+    {
       "id": "ted_604590_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Elektrizität, Heizung, Sonnen- und Kernenergie – Lieferung von Ökostrom inkl. Durchführung der Netznutzung als Portfolio-Modell (2027-2029)",
@@ -266,42 +302,6 @@
           "79310000",
           "79419000",
           "79416000"
-        ]
-      }
-    },
-    {
-      "id": "ted_605777_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)",
-      "deadline": "2026-09-16T00:00:00+02:00",
-      "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 78,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/605777-2026"
-      ],
-      "ted": {
-        "publication_number": "605777-2026",
-        "publication_date": "2026-09-02+02:00",
-        "cpv": [
-          "73000000",
-          "73000000"
         ]
       }
     },

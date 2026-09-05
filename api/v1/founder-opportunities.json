@@ -1,9 +1,9 @@
 {
   "schema_version": "citizen-founder-opportunity-api/1.0",
-  "generated_at": "2026-09-04T11:21:31.693Z",
+  "generated_at": "2026-09-05T10:38:31.577Z",
   "discovery": {
-    "ted_generated_at": "2026-09-04T11:21:31.152Z",
-    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260805 SORT BY publication-date DESC"
+    "ted_generated_at": "2026-09-05T10:38:31.197Z",
+    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260806 SORT BY publication-date DESC"
   },
   "profile": {
     "name": "Citizen Agents / Michael Ninh",
@@ -67,7 +67,7 @@
         "route": "SUBCONTRACT_OR_PARTNER",
         "deadline": {
           "state": "URGENT",
-          "days": 7
+          "days": 6
         },
         "proof_matches": [
           {
@@ -368,7 +368,7 @@
         "route": "PARTNER_FIRST",
         "deadline": {
           "state": "OPEN",
-          "days": 18
+          "days": 17
         },
         "proof_matches": [
           {
@@ -668,7 +668,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "SOON",
-          "days": 12
+          "days": 11
         },
         "proof_matches": [
           {
@@ -1110,7 +1110,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "SOON",
-          "days": 10
+          "days": 9
         },
         "proof_matches": [
           {
@@ -1331,7 +1331,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 12
+          "days": 11
         },
         "proof_matches": [
           {
@@ -1547,7 +1547,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "OPEN",
-          "days": 20
+          "days": 19
         },
         "proof_matches": [
           {
@@ -4061,12 +4061,12 @@
       "discovery_origin": "TED_AUTOMATED",
       "qualification": {
         "opportunity_id": "ted_587912_2026",
-        "qualification_score": 57,
+        "qualification_score": 58,
         "qualified": false,
         "route": "REVIEW",
         "deadline": {
-          "state": "SOON",
-          "days": 8
+          "state": "URGENT",
+          "days": 7
         },
         "proof_matches": [
           {
@@ -4159,10 +4159,10 @@
         "opportunity_id": "ted_587912_2026",
         "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – KI im Secure Software Development Life Cycle (KISDL)",
         "route": "REVIEW",
-        "qualification_score": 57,
+        "qualification_score": 58,
         "deadline": "2026-09-11T23:59:00+02:00",
         "buyer_or_program": "Bundesamt für Sicherheit in der Informationstechnik",
-        "why_now": "Deadline is within fourteen days.",
+        "why_now": "Deadline is within seven days.",
         "matching_proofs": [
           {
             "id": "care-public-service",
@@ -4297,7 +4297,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 14
+          "days": 13
         },
         "proof_matches": [
           {
@@ -4520,7 +4520,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 18
+          "days": 17
         },
         "proof_matches": [
           {
@@ -4746,7 +4746,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 25
+          "days": 24
         },
         "proof_matches": [
           {
@@ -4968,7 +4968,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 27
+          "days": 26
         },
         "proof_matches": [
           {
@@ -8545,7 +8545,7 @@
         "route": "MONITOR_NEXT_ROUND",
         "deadline": {
           "state": "EXPIRED",
-          "days": -11
+          "days": -12
         },
         "proof_matches": [
           {
@@ -8753,7 +8753,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -2
+          "days": -3
         },
         "proof_matches": [
           {
@@ -8973,7 +8973,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -3
+          "days": -4
         },
         "proof_matches": [
           {
@@ -9203,7 +9203,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -3
+          "days": -4
         },
         "proof_matches": [
           {
@@ -9434,7 +9434,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -1
+          "days": -2
         },
         "proof_matches": [
           {
@@ -9661,7 +9661,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -25
+          "days": -26
         },
         "proof_matches": [
           {
@@ -9887,7 +9887,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -25
+          "days": -26
         },
         "proof_matches": [
           {
@@ -10115,7 +10115,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -8
+          "days": -9
         },
         "proof_matches": [
           {
@@ -10339,7 +10339,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -6
+          "days": -7
         },
         "proof_matches": [
           {
@@ -10563,7 +10563,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -6
+          "days": -7
         },
         "proof_matches": [
           {
