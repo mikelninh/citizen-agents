@@ -1,7 +1,7 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-05T10:38:31.197Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260806 SORT BY publication-date DESC",
+  "generated_at": "2026-09-06T11:00:17.576Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260807 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
     {
@@ -79,43 +79,6 @@
       }
     },
     {
-      "id": "ted_605512_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Personalschulung – Rahmenvereinbarung zur Durchführung von Mitarbeitertrainings und -seminaren",
-      "deadline": null,
-      "buyer_or_program": "DFS Deutsche Flugsicherung GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/605512-2026"
-      ],
-      "ted": {
-        "publication_number": "605512-2026",
-        "publication_date": "2026-09-02+02:00",
-        "cpv": [
-          "79632000",
-          "80522000",
-          "80522000",
-          "80522000",
-          "80522000",
-          "80522000"
-        ]
-      }
-    },
-    {
       "id": "ted_604737_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – IT-Roadmap der Sächsischen Krankenhäuser und des Haus am Karswald: Ist-Analyse, Zielbild und Umsetzungskonzept",
@@ -185,18 +148,15 @@
       }
     },
     {
-      "id": "ted_605777_2026",
+      "id": "ted_605512_2026",
       "type": "tender_candidate",
-      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)",
-      "deadline": "2026-09-16T00:00:00+02:00",
-      "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH",
+      "headline": "Deutschland – Personalschulung – Rahmenvereinbarung zur Durchführung von Mitarbeitertrainings und -seminaren",
+      "deadline": null,
+      "buyer_or_program": "DFS Deutsche Flugsicherung GmbH",
       "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 78,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
       "blockers": [
         "Full procurement documents not yet reviewed",
         "Formal suitability, references and value not yet established"
@@ -209,14 +169,18 @@
       ],
       "source_status": "OFFICIAL_TED_API",
       "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/605777-2026"
+        "https://ted.europa.eu/de/notice/-/detail/605512-2026"
       ],
       "ted": {
-        "publication_number": "605777-2026",
+        "publication_number": "605512-2026",
         "publication_date": "2026-09-02+02:00",
         "cpv": [
-          "73000000",
-          "73000000"
+          "79632000",
+          "80522000",
+          "80522000",
+          "80522000",
+          "80522000",
+          "80522000"
         ]
       }
     },
@@ -302,6 +266,42 @@
           "79310000",
           "79419000",
           "79416000"
+        ]
+      }
+    },
+    {
+      "id": "ted_605777_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)",
+      "deadline": "2026-09-16T00:00:00+02:00",
+      "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 78,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/605777-2026"
+      ],
+      "ted": {
+        "publication_number": "605777-2026",
+        "publication_date": "2026-09-02+02:00",
+        "cpv": [
+          "73000000",
+          "73000000"
         ]
       }
     },
@@ -1451,41 +1451,6 @@
         "cpv": [
           "32000000",
           "32000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_543805_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Maschinen, Material und Zubehör für Büro und Computer, außer Möbeln und Softwarepaketen – HPC-Performancespeicher",
-      "deadline": null,
-      "buyer_or_program": "Universität Duisburg-Essen",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/543805-2026"
-      ],
-      "ted": {
-        "publication_number": "543805-2026",
-        "publication_date": "2026-08-06+02:00",
-        "cpv": [
-          "30000000",
-          "30236100",
-          "30000000",
-          "30236100"
         ]
       }
     }
