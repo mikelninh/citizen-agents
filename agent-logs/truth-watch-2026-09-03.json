@@ -1,0 +1,125 @@
+{
+  "date": "2026-09-03",
+  "items": 4,
+  "narratives": [
+    {
+      "id": 1,
+      "title_de": "Russland-Linkene Signal-Phishing-Kampagne zielt auf deutsche Ministerialbeamte und Journalist:innen",
+      "title_en": "Russian-linked Signal phishing campaign targets EU officials and journalists",
+      "narrative": "Massen-Phishing-Angriffe auf Signal-Nutzer:innen, darunter Regierungsvertreter:innen, Journalist:innen und Sicherheitsbeamte in Deutschland und abroad. Opfer werden zu 가짜 Support-Seiten geleitet, um Account-Zugangsdaten zu stehlen.",
+      "debunk_summary": "CORRECTIV-Untersuchung verfolgt digitale Spuren auf russische Aeza-Server und den Defisher-Tool-Set zurück. Signal support kommt nie über Drittwebseiten — echte Support-Anfragen nur über die offizielle App.",
+      "platform_policy_response": "Keine öffentliche Durchsetzungsmaßnahme von Signal bekannt. Nutzerrat: Klicke nicht auf unbekannte 'Signal Support'-Links.",
+      "active": true,
+      "urls": [
+        "https://correctiv.org/en/factcheck/2026/03/signal-phishing-hack-russland-defisher/",
+        "https://insightnews.media/russian-linked-signal-phishing-campaign-targets-european-politicians-and-security-officials/"
+      ]
+    },
+    {
+      "id": 2,
+      "title_de": "RT umgeht EU-Sanktionen: Neues X-Konto @RT_on_X sammelt 6 Millionen Views in fünf Tagen",
+      "title_en": "RT circumvents EU sanctions with new X account @RT_on_X — gains 6 million views in five days",
+      "narrative": "Nach dem EU-Sanctions-Ban auf RT (Russia Today) und Sputnik im März 2022 hat sich RT ein neues X-Konto (@RT_on_X) erstellt, das Inhalte russischer Staatsmedien nach Deutschland und in die EU liefert.",
+      "debunk_summary": "NewsGuard und EDMO/IDMO dokumentieren, dass @RT_on_X innerhalb von fünf Tagen 6 Mio. Aufrufe erreicht. EuGH klargestellt am 2.7.2026: RT-Verbot gilt auch für freie, spendengetriebene Websites.",
+      "platform_policy_response": "X/Twitter hat keine öffentliche Sperrmaßnahme bekannt gegeben. EU-Code der Praxis verpflichtet signierende Plattformen zu äquivalenten Gegenmaßnahmen.",
+      "active": true,
+      "urls": [
+        "https://edmo.eu/publications/rt-returns-to-x-russian-state-media-circumvents-sanctions-with-new-account-getting-6-million-views-in-five-days/",
+        "https://www.newsguardrealitycheck.com/p/rt-evades-sanctions",
+        "https://www.consilium.europa.eu/en/press/press-releases/2022/03/02/eu-imposes-sanctions-on-state-owned-outlets-rtrussia-today-and-sputnik-s-broadcasting-in-the-eu/",
+        "https://www.eunews.it/en/2026/07/02/ban-on-broadcasting-russia-today-the-eu-court-clarifies-that-it-also-applies-to-free-websites/",
+        "https://digital-strategy.ec.europa.eu/en/library/code-conduct-disinformation"
+      ]
+    },
+    {
+      "id": 3,
+      "title_de": "Operation Matryoshka / 'Operation Overload' — KI-generierte Fake-Videos zielen auf deutsche Wahlkandidat:innen",
+      "title_en": "Operation Matryoshka / 'Operation Overload' — AI-generated fake videos target German election candidates",
+      "narrative": "Russische Desinformationsoperation (Matryoshka/Operation Overload) verbreitet seit Sept. 2023 KI-generierte Fake-Videos auf X, Bluesky und TikTok, die deutschen Kandidat:innen falsche Skandale (Mord, Sexpartys, Notenbestechung) unterstellen — imitiert seriöse Medien (FAZ, Stern TV, ARD, Spiegel TV).",
+      "debunk_summary": "DW Fact Check hat 180+ Fake-Posts identifiziert. Polizei bestätigt: Eric Stehr (Linke) nicht in Mordermittlungen. Bauhaus-Universität Weimar bestätigt keine Sexpartys/Noten-Skandale. Videos sind KI-generiert, keine echten Aufnahmen.",
+      "platform_policy_response": "Teilweise Entfernung auf X/Bluesky/TikTok; neue Posts tauchen täglich auf (Werktage). Keine öffentliche Plattform-Durchsetzung.",
+      "active": true,
+      "urls": [
+        "https://www.dw.com/en/operation-overload-matryoshka-state-elections-local-elections-berlin-germany-russia/a-78193305",
+        "https://www.dw.com/en/hundreds-of-fake-posts-targeting-german-elections/svideo-78270870",
+        "https://www.dw.com/en/fact-check-ai-influencers-targeting-german-elections/video-71514325"
+      ]
+    },
+    {
+      "id": 4,
+      "title_de": "'Roska Bridge' — Russische Desinformation nutzt dezentrale Plattformen (Mastodon/Bluesky) für automatisierte Propagandawellen",
+      "title_en": "'Roska Bridge' — Russian disinformation exploits decentralized platforms (Mastodon/Bluesky) for automated propaganda waves",
+      "narrative": "Russische Informationsmanipulation-Infrastruktur (Roska Bridge/Portal Kombat) nutzt Brid.gy und andere Gateways, um automatisierte Propaganda-Wellen gleichzeitig über Mastodon und Bluesky zu cross-posten. Inhalte von EU-ge 제재를 받는 russischen Medien (Pravda, RT, Sputnik), verbreitet über hundedtritte automatische, KI-generierte Accounts.",
+      "debunk_summary": "CheckFirst-Untersuchung (Juli 2026) deckt technische Infrastruktur auf. Accounts erscheinen als 'Citizen-Content', sind aber koordinierte Inauthentische Verhaltensweise (CIB). Brid.gy kooperiert mit Bluesky, hat aber begrenzte Moderationsressourcen.",
+      "platform_policy_response": "Bluesky prüft den Fall — keine öffentliche Sperrmassnahme. Mastodon-Instanzen setzen auf manuelle Moderation, aber dezentrale Architektur erlaubt immer neue Instanzen. DSA gilt nicht direkt für dezentrale Netzwerke.",
+      "active": true,
+      "urls": [
+        "https://checkfirst.network/roska-bridge-how-a-pro-russian-ims-exploits-vulnerabilities-of-decentralised-platforms-to-spread-propaganda/",
+        "https://www.disinfo.eu/disinfo-update-15-07-2026/"
+      ]
+    }
+  ],
+  "debunks": [
+    {
+      "narrative_id": 1,
+      "source": "CORRECTIV-Faktencheck",
+      "summary_de": "CORRECTIV hat digitale Spuren der Phishing-Kampagne auf russische Aeza-Server und den Defisher-Tool-Set zurückverfolgt. Signal-Support kommt nie über Drittwebseiten.",
+      "source_urls": [
+        "https://correctiv.org/en/factcheck/2026/03/signal-phishing-hack-russland-defisher/"
+      ]
+    },
+    {
+      "narrative_id": 2,
+      "source": "NewsGuard + EDMO/IDMO",
+      "summary_de": "NewsGuard und EDMO/IDMO dokumentieren RT-Umgehung über @RT_on_X mit 6 Mio. Aufrufen in 5 Tagen. EuGH klarstellt: RT-Verbot gilt auch für freie Websites.",
+      "source_urls": [
+        "https://edmo.eu/publications/rt-returns-to-x-russian-state-media-circumvents-sanctions-with-new-account-getting-6-million-views-in-five-days/",
+        "https://www.newsguardrealitycheck.com/p/rt-evades-sanctions"
+      ]
+    },
+    {
+      "narrative_id": 3,
+      "source": "DW Fact Check",
+      "summary_de": "DW Fact Check hat 180+ Fake-Posts identifiziert. Polizei und Universitäten bestätigen: keine Mordermittlungen, keine Sexpartys, keine Noten-Skandale. Videos sind KI-generiert.",
+      "source_urls": [
+        "https://www.dw.com/en/operation-overload-matryoshka-state-elections-local-elections-berlin-germany-russia/a-78193305"
+      ]
+    },
+    {
+      "narrative_id": 4,
+      "source": "CheckFirst",
+      "summary_de": "CheckFirst-Untersuchung (Juli 2026) deckt Roska Bridge auf: automatisierte Cross-Posting-Wellen über Mastodon/Bluesky, gezielt von russischen Staatsmedien abgeleitete Inhalte.",
+      "source_urls": [
+        "https://checkfirst.network/roska-bridge-how-a-pro-russian-ims-exploits-vulnerabilities-of-decentralised-platforms-to-spread-propaganda/"
+      ]
+    }
+  ],
+  "sources": [
+    "https://correctiv.org/en/factcheck/2026/03/signal-phishing-hack-russland-defisher/",
+    "https://insightnews.media/russian-linked-signal-phishing-campaign-targets-european-politicians-and-security-officials/",
+    "https://edmo.eu/publications/rt-returns-to-x-russian-state-media-circumvents-sanctions-with-new-account-getting-6-million-views-in-five-days/",
+    "https://www.newsguardrealitycheck.com/p/rt-evades-sanctions",
+    "https://www.consilium.europa.eu/en/press/press-releases/2022/03/02/eu-imposes-sanctions-on-state-owned-outlets-rtrussia-today-and-sputnik-s-broadcasting-in-the-eu/",
+    "https://www.eunews.it/en/2026/07/02/ban-on-broadcasting-russia-today-the-eu-court-clarifies-that-it-also-applies-to-free-websites/",
+    "https://digital-strategy.ec.europa.eu/en/library/code-conduct-disinformation",
+    "https://www.dw.com/en/operation-overload-matryoshka-state-elections-local-elections-berlin-germany-russia/a-78193305",
+    "https://www.dw.com/en/hundreds-of-fake-posts-targeting-german-elections/svideo-78270870",
+    "https://www.dw.com/en/fact-check-ai-influencers-targeting-german-elections/video-71514325",
+    "https://checkfirst.network/roska-bridge-how-a-pro-russian-ims-exploits-vulnerabilities-of-decentralised-platforms-to-spread-propaganda/",
+    "https://www.disinfo.eu/disinfo-update-15-07-2026/",
+    "https://www.eu-digital-services-act.com/",
+    "https://www.cambridge.org/core/books/defeating-disinformation/platform-responsibility-in-the-european-union/AA3D55C57B0F6A7C18F5CAEF25146557",
+    "https://misinforeview.hks.harvard.edu/article/accountability-in-name-only-fact-checking-under-the-eus-code-of-practice-on-disinformation/"
+  ],
+  "actions_taken": [
+    "REPO clone: mikelninh/citizen-agents",
+    "BRANCH erstellt: agent/truth-watch-2026-09-03",
+    "DIGEST erstellt: agent-digests/truth-watch-2026-09-03.md (4 Items, de+en)",
+    "JSON LOG erstellt: agent-logs/truth-watch-2026-09-03.json",
+    "COMMIT + PUSH des Branches",
+    "PR erstellt: gh pr create --base main --head agent/truth-watch-2026-09-03"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/truth-watch-2026-09-03",
+  "status": "PR opened — human review required, DO NOT merge"
+}
