@@ -1,9 +1,86 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-08T11:22:39.433Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260809 SORT BY publication-date DESC",
+  "generated_at": "2026-09-09T11:26:58.813Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260810 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_621432_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Supercomputer – Rahmenvereinbarung - Hochleistungsrechner",
+      "deadline": "2026-09-08T23:59:59+02:00",
+      "buyer_or_program": "Universitätsklinikum Aachen AöR",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems",
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems, CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/621432-2026"
+      ],
+      "ted": {
+        "publication_number": "621432-2026",
+        "publication_date": "2026-09-09+02:00",
+        "cpv": [
+          "30211100",
+          "30211100"
+        ]
+      }
+    },
+    {
+      "id": "ted_622567_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Studie Zukunftsprojektion und Entwicklungspotentiale der Kultur- und Kreativwirtschaft 2037",
+      "deadline": "2026-09-29T23:59:00+02:00",
+      "buyer_or_program": "Bundesministerium für Wirtschaft und Energie",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/622567-2026"
+      ],
+      "ted": {
+        "publication_number": "622567-2026",
+        "publication_date": "2026-09-09+02:00",
+        "cpv": [
+          "73000000",
+          "75130000",
+          "79311400",
+          "72314000",
+          "72312100",
+          "73000000",
+          "75130000",
+          "79311400",
+          "72314000",
+          "72312100"
+        ]
+      }
+    },
     {
       "id": "ted_618833_2026",
       "type": "tender_candidate",
