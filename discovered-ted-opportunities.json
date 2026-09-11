@@ -1,7 +1,7 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-10T11:23:26.529Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260811 SORT BY publication-date DESC",
+  "generated_at": "2026-09-11T11:25:19.787Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260812 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
     {
@@ -1415,43 +1415,6 @@
           "73000000",
           "73000000",
           "72000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_559137_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Allgemeine Managementberatung – Erbringung von Beratungsleistungen zur Organisationsstruktur von Germany Trade and Invest",
-      "deadline": "2026-09-02T23:59:59+02:00",
-      "buyer_or_program": "Germany Trade and Invest Gesellschaft für Außenwirtschaft und Standortmarketing mbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/559137-2026"
-      ],
-      "ted": {
-        "publication_number": "559137-2026",
-        "publication_date": "2026-08-12+02:00",
-        "cpv": [
-          "79411000",
-          "79411100",
-          "79411000",
-          "79411100"
         ]
       }
     }
