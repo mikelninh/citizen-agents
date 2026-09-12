@@ -1,9 +1,9 @@
 {
   "schema_version": "citizen-founder-opportunity-api/1.0",
-  "generated_at": "2026-09-11T11:25:20.265Z",
+  "generated_at": "2026-09-12T10:50:35.620Z",
   "discovery": {
-    "ted_generated_at": "2026-09-11T11:25:19.787Z",
-    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260812 SORT BY publication-date DESC"
+    "ted_generated_at": "2026-09-12T10:50:35.155Z",
+    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260813 SORT BY publication-date DESC"
   },
   "profile": {
     "name": "Citizen Agents / Michael Ninh",
@@ -18,318 +18,18 @@
     ]
   },
   "metrics": {
-    "scanned": 44,
+    "scanned": 43,
     "curated": 7,
-    "automated_new_candidates": 37,
-    "open": 36,
-    "qualified": 12,
-    "partner_route": 4,
+    "automated_new_candidates": 36,
+    "open": 34,
+    "qualified": 11,
+    "partner_route": 3,
     "action_ready": 0,
     "won": 0,
     "observed_revenue_eur": 0,
-    "expired_blind_spot_candidates": 8
+    "expired_blind_spot_candidates": 9
   },
   "items": [
-    {
-      "id": "opp_dataport_social_benefits_2026",
-      "type": "tender_partner",
-      "headline": "Dataport — KI-Assistenzsystem Sozialleistungen",
-      "deadline": "2026-09-10T23:59:00+02:00",
-      "buyer_or_program": "Dataport AöR",
-      "potential": "Four-year framework for AI assistance in Wohngeld and Grundsicherung workflows",
-      "fit_score": 93,
-      "product_matches": [
-        "CARE / Public Service systems",
-        "Digital Worker Factory / OpsPilot",
-        "Citizen Agents"
-      ],
-      "why_fit": "The requested domain—social-benefit applications—overlaps strongly with CARE, public-service eligibility work, document AI and human-in-the-loop administrative workflows.",
-      "blockers": [
-        "Likely enterprise procurement requirements",
-        "Need full tender documents and references",
-        "Direct solo bid may be unrealistic"
-      ],
-      "action_pack": [
-        "Treat as partner opportunity first",
-        "Identify bidders/integrators serving Dataport and offer a specialist benefits-AI module",
-        "Prepare synthetic Wohngeld/Grundsicherung proof and compliance/evidence pack",
-        "Contact likely primes before deadline"
-      ],
-      "source_status": "PUBLIC_PROCUREMENT_SOURCE",
-      "sources": [
-        "https://auftragone.com/en/notices/ki-assistenzsystem-sozialleistungen-2026-1"
-      ],
-      "discovery_origin": "CURATED",
-      "qualification": {
-        "opportunity_id": "opp_dataport_social_benefits_2026",
-        "qualification_score": 95,
-        "qualified": true,
-        "route": "SUBCONTRACT_OR_PARTNER",
-        "deadline": {
-          "state": "CRITICAL",
-          "days": 0
-        },
-        "proof_matches": [
-          {
-            "proof_id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 100,
-            "hits": [
-              "care",
-              "public",
-              "service",
-              "social",
-              "benefits",
-              "wohngeld",
-              "grundsicherung",
-              "eligibility",
-              "evidence",
-              "human"
-            ],
-            "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "proof_id": "digital-worker-factory",
-            "name": "Digital Worker Factory / OpsPilot",
-            "score": 72,
-            "hits": [
-              "human",
-              "compliance",
-              "public",
-              "workflows"
-            ],
-            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "shared Production Platform v1 exists and is CI-tested",
-              "each concrete product deployment still needs durable environment bindings and operating evidence",
-              "external actions remain approval-gated"
-            ]
-          },
-          {
-            "proof_id": "citizen-agents",
-            "name": "Citizen Agents",
-            "score": 56,
-            "hits": [
-              "public",
-              "evidence"
-            ],
-            "readiness": "WORKING_PUBLIC_PROTOTYPE·PROD_PUBLIC_READ_ONLY_READY",
-            "evidence": [
-              "https://github.com/mikelninh/citizen-agents",
-              "https://mikelninh.github.io/citizen-agents/"
-            ],
-            "limitations": [
-              "coverage is not yet exhaustive",
-              "hosted push delivery is not yet SLA-backed",
-              "multi-tenant B2B production boundary is not yet complete"
-            ]
-          },
-          {
-            "proof_id": "safetrace-master-proof",
-            "name": "SafeTrace / Master Proof",
-            "score": 32,
-            "hits": [
-              "proof",
-              "evidence",
-              "public",
-              "compliance"
-            ],
-            "readiness": "EVALUATED_PROOF·PROD_EVALUATED_COMPONENT_ONLY",
-            "evidence": [],
-            "limitations": [
-              "specific deployment and source connectors depend on use case",
-              "no dedicated standalone production service identified yet"
-            ]
-          }
-        ],
-        "revenue_eur": null,
-        "revenue_claimed": false,
-        "truth_boundary": {
-          "fit_is_not_formal_eligibility": true,
-          "programme_or_tender_value_is_not_revenue": true,
-          "external_action_requires_human_approval": true
-        }
-      },
-      "action_pack_v1": {
-        "schema_version": "citizen-opportunity-action-pack/1.0",
-        "opportunity_id": "opp_dataport_social_benefits_2026",
-        "headline": "Dataport — KI-Assistenzsystem Sozialleistungen",
-        "route": "SUBCONTRACT_OR_PARTNER",
-        "qualification_score": 95,
-        "deadline": "2026-09-10T23:59:00+02:00",
-        "buyer_or_program": "Dataport AöR",
-        "why_now": "Deadline is within three days.",
-        "matching_proofs": [
-          {
-            "id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 100,
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "id": "digital-worker-factory",
-            "name": "Digital Worker Factory / OpsPilot",
-            "score": 72,
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "shared Production Platform v1 exists and is CI-tested",
-              "each concrete product deployment still needs durable environment bindings and operating evidence",
-              "external actions remain approval-gated"
-            ]
-          },
-          {
-            "id": "citizen-agents",
-            "name": "Citizen Agents",
-            "score": 56,
-            "evidence": [
-              "https://github.com/mikelninh/citizen-agents",
-              "https://mikelninh.github.io/citizen-agents/"
-            ],
-            "limitations": [
-              "coverage is not yet exhaustive",
-              "hosted push delivery is not yet SLA-backed",
-              "multi-tenant B2B production boundary is not yet complete"
-            ]
-          },
-          {
-            "id": "safetrace-master-proof",
-            "name": "SafeTrace / Master Proof",
-            "score": 32,
-            "evidence": [],
-            "limitations": [
-              "specific deployment and source connectors depend on use case",
-              "no dedicated standalone production service identified yet"
-            ]
-          }
-        ],
-        "blockers": [
-          "Likely enterprise procurement requirements",
-          "Need full tender documents and references",
-          "Direct solo bid may be unrealistic"
-        ],
-        "steps": [
-          "Treat as partner opportunity first",
-          "Identify bidders/integrators serving Dataport and offer a specialist benefits-AI module",
-          "Prepare synthetic Wohngeld/Grundsicherung proof and compliance/evidence pack",
-          "Contact likely primes before deadline"
-        ],
-        "next_action": "Treat as partner opportunity first",
-        "approval_gate": {
-          "required": true,
-          "reason": "Any external submission, outreach, bid or commitment is consequential."
-        },
-        "revenue_eur": null,
-        "truth_boundary": "No revenue is recorded until a contract, award or payment is evidenced."
-      },
-      "candidate_partners": [
-        {
-          "id": "msg-public-sector",
-          "name": "msg Public Sector",
-          "why_candidate": "Public-sector AI and agentic process automation are explicit parts of its current German administration offering; it also offers AI systems around social-law knowledge and document workflows.",
-          "our_wedge": "Offer CARE/Public Service and CasePilot as an evidence-rich social-benefits or agent-reliability module rather than competing on full-stack delivery.",
-          "qualification_questions": [
-            "Are they pursuing the opportunity?",
-            "Would a specialist evaluated module improve their offer?",
-            "Can our proof be integrated under their architecture and compliance model?"
-          ],
-          "sources": [
-            "https://www.msg.group/de/events/oev-symposium-nrw-2026/",
-            "https://www.msg.group/de/branchen/public-sector/loesungen-fuer-die-digitale-verwaltung/"
-          ]
-        },
-        {
-          "id": "capgemini-public-sector",
-          "name": "Capgemini Public Sector Germany",
-          "why_candidate": "Capgemini publicly works on modular and agent-based AI for German administration, including the SPARK initiative and public-sector AI-agent architecture.",
-          "our_wedge": "Position our human-approval, replayability, source-evidence and benefit-domain proofs as a small specialist work package that can accelerate a larger delivery.",
-          "qualification_questions": [
-            "Is there an existing bid or account team?",
-            "Which proof gap is expensive for them to build internally?",
-            "Can we enter as subcontractor, technology component or rapid proof partner?"
-          ],
-          "sources": [
-            "https://www.capgemini.com/de-de/solutions/spark-api-oeffentlich-verfuegbare-und-modulare-ki-fuer-die-verwaltung/",
-            "https://www.capgemini.com/de-de/insights/research/architecting-ai-agents-in-the-public-sector/"
-          ]
-        },
-        {
-          "id": "adesso-public-sector",
-          "name": "adesso Public Sector",
-          "why_candidate": "adesso's 2026 public-sector portfolio explicitly includes Agentic AI, public-administration AI and projects across federal, state and municipal government.",
-          "our_wedge": "Sell a narrow evaluated specialist module: benefits workflow evidence, reliability evaluation, provenance or human-approval orchestration.",
-          "qualification_questions": [
-            "Are they already serving the buyer or adjacent authorities?",
-            "Would our ready-made evaluation/proof layer shorten proposal delivery?",
-            "What supplier onboarding is required?"
-          ],
-          "sources": [
-            "https://www.adesso.de/de/branchen/oeffentliche-verwaltung/public-broschuere.jsp",
-            "https://www.adesso.de/de/branchen/oeffentliche-verwaltung/ki/uebersicht.jsp"
-          ]
-        },
-        {
-          "id": "materna-public-sector",
-          "name": "Materna Public Sector",
-          "why_candidate": "Materna works with German federal authorities including BSI and is part of the SPARK administration-AI ecosystem, integrating AI-supported workflows into government IT landscapes.",
-          "our_wedge": "Offer reliability/evidence and social-benefit workflow proof as a specialist component under an established public-sector integrator.",
-          "qualification_questions": [
-            "Is there a relevant BSI/Dataport account team?",
-            "Which evidence, AI-assurance or domain component is missing?",
-            "Can we contribute through a subcontract or consortium role?"
-          ],
-          "sources": [
-            "https://www.materna.de/branchen/public-sector/",
-            "https://www.materna.de/newshub/presse/behoerden-ki-spark-materna-gruppe-unterstuetzt-verwaltungen-bei-der-beschleunigung-von-genehmigungsverfahren/"
-          ]
-        },
-        {
-          "id": "t-systems-public-sector",
-          "name": "T-Systems Public Sector",
-          "why_candidate": "T-Systems is actively positioning sovereign AI/cloud infrastructure and AI use in German municipal and public-sector environments.",
-          "our_wedge": "Complement infrastructure with an inspectable application/evaluation layer rather than compete on hosting or enterprise platform scope.",
-          "qualification_questions": [
-            "Is a specialist application layer useful to a larger platform offer?",
-            "What security/supplier requirements would apply?",
-            "Can we prove differentiation in under one week?"
-          ],
-          "sources": [
-            "https://www.t-systems.com/de/de/insights/newsroom/experten-blogs/ki-in-kommunen-wo-liegt-der-groesste-hebel-1203720",
-            "https://www.t-systems.com/de/de/insights/newsroom/news/t-systems-bringt-souveraene-cloud-infrastruktur-in-die-deutsche-verwaltung-1170058"
-          ]
-        }
-      ],
-      "pipeline": {
-        "opportunity_id": "opp_dataport_social_benefits_2026",
-        "status": "FOUND",
-        "decision": "PENDING",
-        "owner": "founder",
-        "next_action": "Qualify partner-first route and package CARE/Public Service proof for a credible prime contractor.",
-        "outcome_revenue_eur": null,
-        "outcome_evidence": null
-      }
-    },
     {
       "id": "opp_bsi_praki_2026",
       "type": "tender",
@@ -368,7 +68,7 @@
         "route": "PARTNER_FIRST",
         "deadline": {
           "state": "SOON",
-          "days": 11
+          "days": 10
         },
         "proof_matches": [
           {
@@ -668,7 +368,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "URGENT",
-          "days": 5
+          "days": 4
         },
         "proof_matches": [
           {
@@ -1110,7 +810,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "CRITICAL",
-          "days": 3
+          "days": 2
         },
         "proof_matches": [
           {
@@ -1331,7 +1031,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "URGENT",
-          "days": 5
+          "days": 4
         },
         "proof_matches": [
           {
@@ -1547,7 +1247,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "SOON",
-          "days": 13
+          "days": 12
         },
         "proof_matches": [
           {
@@ -3823,7 +3523,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 17
+          "days": 16
         },
         "proof_matches": [
           {
@@ -4048,7 +3748,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "CRITICAL",
-          "days": 1
+          "days": 0
         },
         "proof_matches": [
           {
@@ -4270,7 +3970,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "CRITICAL",
-          "days": 1
+          "days": 0
         },
         "proof_matches": [
           {
@@ -4501,7 +4201,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "URGENT",
-          "days": 7
+          "days": 6
         },
         "proof_matches": [
           {
@@ -4724,7 +4424,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 11
+          "days": 10
         },
         "proof_matches": [
           {
@@ -4950,7 +4650,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 18
+          "days": 17
         },
         "proof_matches": [
           {
@@ -5180,7 +4880,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 19
+          "days": 18
         },
         "proof_matches": [
           {
@@ -5402,7 +5102,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 20
+          "days": 19
         },
         "proof_matches": [
           {
@@ -8051,57 +7751,60 @@
       }
     },
     {
-      "id": "ted_558065_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – DE_376 Configurable Regional AI Modelling Capability",
-      "deadline": null,
-      "buyer_or_program": "European Centre for Medium Range Weather Forecasts (ECMWF)",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "id": "opp_dataport_social_benefits_2026",
+      "type": "tender_partner",
+      "headline": "Dataport — KI-Assistenzsystem Sozialleistungen",
+      "deadline": "2026-09-10T23:59:00+02:00",
+      "buyer_or_program": "Dataport AöR",
+      "potential": "Four-year framework for AI assistance in Wohngeld and Grundsicherung workflows",
+      "fit_score": 93,
+      "product_matches": [
+        "CARE / Public Service systems",
+        "Digital Worker Factory / OpsPilot",
+        "Citizen Agents"
+      ],
+      "why_fit": "The requested domain—social-benefit applications—overlaps strongly with CARE, public-service eligibility work, document AI and human-in-the-loop administrative workflows.",
       "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
+        "Likely enterprise procurement requirements",
+        "Need full tender documents and references",
+        "Direct solo bid may be unrealistic"
       ],
       "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
+        "Treat as partner opportunity first",
+        "Identify bidders/integrators serving Dataport and offer a specialist benefits-AI module",
+        "Prepare synthetic Wohngeld/Grundsicherung proof and compliance/evidence pack",
+        "Contact likely primes before deadline"
       ],
-      "source_status": "OFFICIAL_TED_API",
+      "source_status": "PUBLIC_PROCUREMENT_SOURCE",
       "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/558065-2026"
+        "https://auftragone.com/en/notices/ki-assistenzsystem-sozialleistungen-2026-1"
       ],
-      "ted": {
-        "publication_number": "558065-2026",
-        "publication_date": "2026-08-12+02:00",
-        "cpv": [
-          "73000000",
-          "73000000",
-          "72000000"
-        ]
-      },
-      "discovery_origin": "TED_AUTOMATED",
+      "discovery_origin": "CURATED",
       "qualification": {
-        "opportunity_id": "ted_558065_2026",
-        "qualification_score": 50,
+        "opportunity_id": "opp_dataport_social_benefits_2026",
+        "qualification_score": 87,
         "qualified": false,
-        "route": "REVIEW",
+        "route": "SUBCONTRACT_OR_PARTNER",
         "deadline": {
-          "state": "NO_DEADLINE",
-          "days": null
+          "state": "EXPIRED",
+          "days": -1
         },
         "proof_matches": [
           {
             "proof_id": "care-public-service",
             "name": "CARE / Public Service systems",
-            "score": 29,
+            "score": 100,
             "hits": [
+              "care",
               "public",
+              "service",
+              "social",
+              "benefits",
+              "wohngeld",
+              "grundsicherung",
               "eligibility",
-              "approval"
+              "evidence",
+              "human"
             ],
             "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
             "evidence": [
@@ -8117,10 +7820,12 @@
           {
             "proof_id": "digital-worker-factory",
             "name": "Digital Worker Factory / OpsPilot",
-            "score": 21,
+            "score": 72,
             "hits": [
-              "approval",
-              "public"
+              "human",
+              "compliance",
+              "public",
+              "workflows"
             ],
             "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
             "evidence": [
@@ -8133,41 +7838,39 @@
             ]
           },
           {
-            "proof_id": "gitlaw",
-            "name": "GitLaw",
-            "score": 21,
+            "proof_id": "citizen-agents",
+            "name": "Citizen Agents",
+            "score": 56,
             "hits": [
-              "approval",
-              "public"
+              "public",
+              "evidence"
             ],
-            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
+            "readiness": "WORKING_PUBLIC_PROTOTYPE·PROD_PUBLIC_READ_ONLY_READY",
             "evidence": [
-              "https://github.com/mikelninh/gitlaw",
-              "https://mikelninh.github.io/gitlaw/"
+              "https://github.com/mikelninh/citizen-agents",
+              "https://mikelninh.github.io/citizen-agents/"
             ],
             "limitations": [
-              "not legal advice",
-              "writes and consequential actions require human approval",
-              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
+              "coverage is not yet exhaustive",
+              "hosted push delivery is not yet SLA-backed",
+              "multi-tenant B2B production boundary is not yet complete"
             ]
           },
           {
-            "proof_id": "pruefpilot",
-            "name": "PrüfPilot",
-            "score": 21,
+            "proof_id": "safetrace-master-proof",
+            "name": "SafeTrace / Master Proof",
+            "score": 32,
             "hits": [
-              "review",
-              "public"
+              "proof",
+              "evidence",
+              "public",
+              "compliance"
             ],
-            "readiness": "WORKING_DOCUMENT_AI_PROOF·PROD_CONTROLLED_PRODUCTION_CANDIDATE",
-            "evidence": [
-              "https://github.com/mikelninh/pruefpilot",
-              "https://pruefpilot-v5-api.vercel.app/api/docs"
-            ],
+            "readiness": "EVALUATED_PROOF·PROD_EVALUATED_COMPONENT_ONLY",
+            "evidence": [],
             "limitations": [
-              "full durable Production Platform v1 path is integration-tested against Postgres 17 in CI",
-              "the public/demo deployment is not evidence that a dedicated managed production environment is configured",
-              "qualified reviewer/security/integration validation remains external"
+              "specific deployment and source connectors depend on use case",
+              "no dedicated standalone production service identified yet"
             ]
           }
         ],
@@ -8181,18 +7884,18 @@
       },
       "action_pack_v1": {
         "schema_version": "citizen-opportunity-action-pack/1.0",
-        "opportunity_id": "ted_558065_2026",
-        "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – DE_376 Configurable Regional AI Modelling Capability",
-        "route": "REVIEW",
-        "qualification_score": 50,
-        "deadline": null,
-        "buyer_or_program": "European Centre for Medium Range Weather Forecasts (ECMWF)",
+        "opportunity_id": "opp_dataport_social_benefits_2026",
+        "headline": "Dataport — KI-Assistenzsystem Sozialleistungen",
+        "route": "SUBCONTRACT_OR_PARTNER",
+        "qualification_score": 87,
+        "deadline": "2026-09-10T23:59:00+02:00",
+        "buyer_or_program": "Dataport AöR",
         "why_now": "Opportunity is open.",
         "matching_proofs": [
           {
             "id": "care-public-service",
             "name": "CARE / Public Service systems",
-            "score": 29,
+            "score": 100,
             "evidence": [
               "https://github.com/mikelninh/care-abundance-mission",
               "https://github.com/mikelninh/public-service-passport"
@@ -8206,7 +7909,7 @@
           {
             "id": "digital-worker-factory",
             "name": "Digital Worker Factory / OpsPilot",
-            "score": 21,
+            "score": 72,
             "evidence": [
               "https://github.com/mikelninh/digital-worker-factory"
             ],
@@ -8217,45 +7920,42 @@
             ]
           },
           {
-            "id": "gitlaw",
-            "name": "GitLaw",
-            "score": 21,
+            "id": "citizen-agents",
+            "name": "Citizen Agents",
+            "score": 56,
             "evidence": [
-              "https://github.com/mikelninh/gitlaw",
-              "https://mikelninh.github.io/gitlaw/"
+              "https://github.com/mikelninh/citizen-agents",
+              "https://mikelninh.github.io/citizen-agents/"
             ],
             "limitations": [
-              "not legal advice",
-              "writes and consequential actions require human approval",
-              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
+              "coverage is not yet exhaustive",
+              "hosted push delivery is not yet SLA-backed",
+              "multi-tenant B2B production boundary is not yet complete"
             ]
           },
           {
-            "id": "pruefpilot",
-            "name": "PrüfPilot",
-            "score": 21,
-            "evidence": [
-              "https://github.com/mikelninh/pruefpilot",
-              "https://pruefpilot-v5-api.vercel.app/api/docs"
-            ],
+            "id": "safetrace-master-proof",
+            "name": "SafeTrace / Master Proof",
+            "score": 32,
+            "evidence": [],
             "limitations": [
-              "full durable Production Platform v1 path is integration-tested against Postgres 17 in CI",
-              "the public/demo deployment is not evidence that a dedicated managed production environment is configured",
-              "qualified reviewer/security/integration validation remains external"
+              "specific deployment and source connectors depend on use case",
+              "no dedicated standalone production service identified yet"
             ]
           }
         ],
         "blockers": [
-          "Full procurement documents not yet reviewed",
-          "Formal suitability, references and value not yet established"
+          "Likely enterprise procurement requirements",
+          "Need full tender documents and references",
+          "Direct solo bid may be unrealistic"
         ],
         "steps": [
-          "Open the official TED notice",
-          "Check scope, deadline, eligibility and references",
-          "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-          "Only after approval: prepare submission or partner outreach"
+          "Treat as partner opportunity first",
+          "Identify bidders/integrators serving Dataport and offer a specialist benefits-AI module",
+          "Prepare synthetic Wohngeld/Grundsicherung proof and compliance/evidence pack",
+          "Contact likely primes before deadline"
         ],
-        "next_action": "Open the official TED notice",
+        "next_action": "Treat as partner opportunity first",
         "approval_gate": {
           "required": true,
           "reason": "Any external submission, outreach, bid or commitment is consequential."
@@ -8263,12 +7963,89 @@
         "revenue_eur": null,
         "truth_boundary": "No revenue is recorded until a contract, award or payment is evidenced."
       },
-      "candidate_partners": [],
+      "candidate_partners": [
+        {
+          "id": "msg-public-sector",
+          "name": "msg Public Sector",
+          "why_candidate": "Public-sector AI and agentic process automation are explicit parts of its current German administration offering; it also offers AI systems around social-law knowledge and document workflows.",
+          "our_wedge": "Offer CARE/Public Service and CasePilot as an evidence-rich social-benefits or agent-reliability module rather than competing on full-stack delivery.",
+          "qualification_questions": [
+            "Are they pursuing the opportunity?",
+            "Would a specialist evaluated module improve their offer?",
+            "Can our proof be integrated under their architecture and compliance model?"
+          ],
+          "sources": [
+            "https://www.msg.group/de/events/oev-symposium-nrw-2026/",
+            "https://www.msg.group/de/branchen/public-sector/loesungen-fuer-die-digitale-verwaltung/"
+          ]
+        },
+        {
+          "id": "capgemini-public-sector",
+          "name": "Capgemini Public Sector Germany",
+          "why_candidate": "Capgemini publicly works on modular and agent-based AI for German administration, including the SPARK initiative and public-sector AI-agent architecture.",
+          "our_wedge": "Position our human-approval, replayability, source-evidence and benefit-domain proofs as a small specialist work package that can accelerate a larger delivery.",
+          "qualification_questions": [
+            "Is there an existing bid or account team?",
+            "Which proof gap is expensive for them to build internally?",
+            "Can we enter as subcontractor, technology component or rapid proof partner?"
+          ],
+          "sources": [
+            "https://www.capgemini.com/de-de/solutions/spark-api-oeffentlich-verfuegbare-und-modulare-ki-fuer-die-verwaltung/",
+            "https://www.capgemini.com/de-de/insights/research/architecting-ai-agents-in-the-public-sector/"
+          ]
+        },
+        {
+          "id": "adesso-public-sector",
+          "name": "adesso Public Sector",
+          "why_candidate": "adesso's 2026 public-sector portfolio explicitly includes Agentic AI, public-administration AI and projects across federal, state and municipal government.",
+          "our_wedge": "Sell a narrow evaluated specialist module: benefits workflow evidence, reliability evaluation, provenance or human-approval orchestration.",
+          "qualification_questions": [
+            "Are they already serving the buyer or adjacent authorities?",
+            "Would our ready-made evaluation/proof layer shorten proposal delivery?",
+            "What supplier onboarding is required?"
+          ],
+          "sources": [
+            "https://www.adesso.de/de/branchen/oeffentliche-verwaltung/public-broschuere.jsp",
+            "https://www.adesso.de/de/branchen/oeffentliche-verwaltung/ki/uebersicht.jsp"
+          ]
+        },
+        {
+          "id": "materna-public-sector",
+          "name": "Materna Public Sector",
+          "why_candidate": "Materna works with German federal authorities including BSI and is part of the SPARK administration-AI ecosystem, integrating AI-supported workflows into government IT landscapes.",
+          "our_wedge": "Offer reliability/evidence and social-benefit workflow proof as a specialist component under an established public-sector integrator.",
+          "qualification_questions": [
+            "Is there a relevant BSI/Dataport account team?",
+            "Which evidence, AI-assurance or domain component is missing?",
+            "Can we contribute through a subcontract or consortium role?"
+          ],
+          "sources": [
+            "https://www.materna.de/branchen/public-sector/",
+            "https://www.materna.de/newshub/presse/behoerden-ki-spark-materna-gruppe-unterstuetzt-verwaltungen-bei-der-beschleunigung-von-genehmigungsverfahren/"
+          ]
+        },
+        {
+          "id": "t-systems-public-sector",
+          "name": "T-Systems Public Sector",
+          "why_candidate": "T-Systems is actively positioning sovereign AI/cloud infrastructure and AI use in German municipal and public-sector environments.",
+          "our_wedge": "Complement infrastructure with an inspectable application/evaluation layer rather than compete on hosting or enterprise platform scope.",
+          "qualification_questions": [
+            "Is a specialist application layer useful to a larger platform offer?",
+            "What security/supplier requirements would apply?",
+            "Can we prove differentiation in under one week?"
+          ],
+          "sources": [
+            "https://www.t-systems.com/de/de/insights/newsroom/experten-blogs/ki-in-kommunen-wo-liegt-der-groesste-hebel-1203720",
+            "https://www.t-systems.com/de/de/insights/newsroom/news/t-systems-bringt-souveraene-cloud-infrastruktur-in-die-deutsche-verwaltung-1170058"
+          ]
+        }
+      ],
       "pipeline": {
-        "opportunity_id": "ted_558065_2026",
+        "opportunity_id": "opp_dataport_social_benefits_2026",
         "status": "FOUND",
         "decision": "PENDING",
-        "next_action": "Open the official TED notice",
+        "owner": "founder",
+        "next_action": "Qualify partner-first route and package CARE/Public Service proof for a credible prime contractor.",
         "outcome_revenue_eur": null,
         "outcome_evidence": null
       }
@@ -8309,7 +8086,7 @@
         "route": "MONITOR_NEXT_ROUND",
         "deadline": {
           "state": "EXPIRED",
-          "days": -18
+          "days": -19
         },
         "proof_matches": [
           {
@@ -8517,7 +8294,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -9
+          "days": -10
         },
         "proof_matches": [
           {
@@ -8737,7 +8514,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -10
+          "days": -11
         },
         "proof_matches": [
           {
@@ -8967,7 +8744,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -2
+          "days": -3
         },
         "proof_matches": [
           {
@@ -9197,7 +8974,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -2
+          "days": -3
         },
         "proof_matches": [
           {
@@ -9426,7 +9203,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -32
+          "days": -33
         },
         "proof_matches": [
           {
@@ -9652,7 +9429,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -13
+          "days": -14
         },
         "proof_matches": [
           {
@@ -9876,7 +9653,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -13
+          "days": -14
         },
         "proof_matches": [
           {
