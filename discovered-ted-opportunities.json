@@ -1,9 +1,44 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-13T11:55:54.837Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260814 SORT BY publication-date DESC",
+  "generated_at": "2026-09-14T12:52:24.132Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260815 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_629342_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Softwaretests – AIS Abnahmeprozess",
+      "deadline": "2026-10-05T23:59:59+02:00",
+      "buyer_or_program": "FWU Institut für Film und Bild in Wissenschaft und Unterricht gGmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/629342-2026"
+      ],
+      "ted": {
+        "publication_number": "629342-2026",
+        "publication_date": "2026-09-14+02:00",
+        "cpv": [
+          "72254000",
+          "72254000",
+          "72254000",
+          "72254000"
+        ]
+      }
+    },
     {
       "id": "ted_624283_2026",
       "type": "tender_candidate",
@@ -370,39 +405,6 @@
       }
     },
     {
-      "id": "ted_605034_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS",
-      "deadline": "2026-09-30T23:59:59+02:00",
-      "buyer_or_program": "Eberhard Karls Universität Tübingen",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/605034-2026"
-      ],
-      "ted": {
-        "publication_number": "605034-2026",
-        "publication_date": "2026-09-02+02:00",
-        "cpv": [
-          "30211100",
-          "30211100"
-        ]
-      }
-    },
-    {
       "id": "ted_604737_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – IT-Roadmap der Sächsischen Krankenhäuser und des Haus am Karswald: Ist-Analyse, Zielbild und Umsetzungskonzept",
@@ -435,6 +437,39 @@
         "cpv": [
           "72000000",
           "72000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_605034_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS",
+      "deadline": "2026-09-30T23:59:59+02:00",
+      "buyer_or_program": "Eberhard Karls Universität Tübingen",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/605034-2026"
+      ],
+      "ted": {
+        "publication_number": "605034-2026",
+        "publication_date": "2026-09-02+02:00",
+        "cpv": [
+          "30211100",
+          "30211100"
         ]
       }
     },
@@ -1275,79 +1310,6 @@
           "48311100",
           "72224100",
           "72224200"
-        ]
-      }
-    },
-    {
-      "id": "ted_563439_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Supercomputer – Rahmenvereinbarung - Hochleistungsrechner",
-      "deadline": "2026-08-31T23:59:59+02:00",
-      "buyer_or_program": "Universitätsklinikum Aachen AöR",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems",
-        "CareOS"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems, CareOS. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/563439-2026"
-      ],
-      "ted": {
-        "publication_number": "563439-2026",
-        "publication_date": "2026-08-14+02:00",
-        "cpv": [
-          "30211100",
-          "30211100"
-        ]
-      }
-    },
-    {
-      "id": "ted_565844_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Personalschulung – Rahmenvereinbarung zur Durchführung von Mitarbeitertrainings und -seminaren",
-      "deadline": null,
-      "buyer_or_program": "DFS Deutsche Flugsicherung GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/565844-2026"
-      ],
-      "ted": {
-        "publication_number": "565844-2026",
-        "publication_date": "2026-08-14+02:00",
-        "cpv": [
-          "79632000",
-          "80522000",
-          "80522000",
-          "80522000",
-          "80522000",
-          "80522000"
         ]
       }
     }
