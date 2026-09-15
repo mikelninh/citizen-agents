@@ -1,16 +1,16 @@
 # Founder Opportunity Digest
-Generated: 2026-09-14T12:52:24.646Z
-Open: **31** · Qualified: **11** · Automated new: **34** · Partner-route: **3** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-09-15T11:47:08.440Z
+Open: **30** · Qualified: **10** · Automated new: **34** · Partner-route: **3** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## BSI PRAKI — Prüfanforderungen für LLM-basierte Agentic AI
-**Origin:** CURATED · **Score:** 94/100 · **Route:** PARTNER_FIRST · **8d left** · **Pipeline:** FOUND
+**Origin:** CURATED · **Score:** 95/100 · **Route:** PARTNER_FIRST · **7d left** · **Pipeline:** FOUND
 **Why fit:** The tender asks for Agentic-AI use cases and test requirements. Existing work on tool compliance, human approval, replayability, evals, evidence and trust boundaries maps unusually well to the brief.
 **Best proof:** Digital Worker Factory / OpsPilot
 **First candidate partner to qualify:** msg Public Sector
 **Next action:** Review full suitability and procurement requirements, then choose direct-bid vs partner-first route.
 **Approval:** required before external action
 ## CERV 2026 Charter / Civic Space call
-**Origin:** CURATED · **Score:** 90/100 · **Route:** CONSORTIUM_PARTNER · **2d left** · **Pipeline:** FOUND
+**Origin:** CURATED · **Score:** 90/100 · **Route:** CONSORTIUM_PARTNER · **1d left** · **Pipeline:** FOUND
 **Why fit:** Citizen Agents' source-backed rights, democracy-window and civic-capacity infrastructure can fit as a technical partner in projects that strengthen civil-society capacity and practical access to rights.
 **Best proof:** Citizen Agents
 **Next action:** Find an eligible civil-society consortium and offer Citizen Agents as a technical work-package partner.
@@ -21,20 +21,14 @@ Open: **31** · Qualified: **11** · Automated new: **34** · Partner-route: **3
 **Best proof:** Digital Worker Factory / OpsPilot
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Berliner Startup Stipendium BSS VI
-**Origin:** CURATED · **Score:** 86/100 · **Route:** DIRECT_APPLICATION · **0d left** · **Pipeline:** FOUND
-**Why fit:** Berlin-based early startup work with a technology and societal-impact angle is closely aligned with Citizen Agents and trustworthy digital-worker infrastructure.
-**Best proof:** Citizen Agents
-**Next action:** Check founder/team eligibility and prepare one focused Citizen Agents application story.
-**Approval:** required before external action
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)
-**Origin:** TED_AUTOMATED · **Score:** 85/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 85/100 · **Route:** REVIEW · **1d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.
 **Best proof:** Digital Worker Factory / OpsPilot
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Horizon Europe 2026 — Democracy and Governance
-**Origin:** CURATED · **Score:** 82/100 · **Route:** CONSORTIUM_PARTNER · **10d left** · **Pipeline:** FOUND
+**Origin:** CURATED · **Score:** 82/100 · **Route:** CONSORTIUM_PARTNER · **9d left** · **Pipeline:** FOUND
 **Why fit:** Citizen Agents can be a technical demonstrator/data/evaluation work package for research consortia studying democratic governance, trust, rights and information integrity.
 **Best proof:** Citizen Agents
 **Next action:** Find an existing consortium with an exact topic fit; do not lead a new consortium this late.
@@ -75,6 +69,12 @@ Open: **31** · Qualified: **11** · Automated new: **34** · Partner-route: **3
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
+## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Beratungsleistungen für das Format Digi-Expert-kommunal für das Hessische Ministerium für Digitalisierung und Innovation in zwei Losen
+**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – RV zur Erbringung von KI- Forschungs- und Beratungsleistungen im Bereich der Einsatzevaluation für alle Behörden im gesamten Ressort des Finanzministeriums des Landes NRW
 **Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
@@ -88,7 +88,7 @@ Open: **31** · Qualified: **11** · Automated new: **34** · Partner-route: **3
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – Legal AI Workspace
-**Origin:** TED_AUTOMATED · **Score:** 64/100 · **Route:** REVIEW · **14d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 64/100 · **Route:** REVIEW · **13d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched GitLaw. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
