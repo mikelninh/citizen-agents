@@ -1,0 +1,53 @@
+{
+  "date": "2026-08-10",
+  "repo": "bla-keks-world",
+  "branch": "studio/director-2026-08-10",
+  "head_commit": "0bd23bd",
+  "files_read": [
+    "README.md",
+    "src/modes/match-mode.js",
+    "src/modes/weapon.js",
+    "src/modes/weapons/saber.js",
+    "src/modes/weapons/projectiles.js",
+    "src/modes/weapons/tools.js",
+    "src/modes/botbrain.js",
+    "src/shared/match.js",
+    "src/shared/items.js",
+    "server/room.js",
+    "src/entities/player.js"
+  ],
+  "critiques": 4,
+  "critique_titles": [
+    "Bots use dead hitscan carbine (weapon.js/traceShot) while players use dodgeable projectiles — two damage economies",
+    "Saber is a free third slot: per-weapon Charge means Q-swap refills, leafblade soak 100 in an 86-degree cone with no cost",
+    "MatchSim._hit validates only distance and a 120 clamp — no weapon, cooldown or charge authority; botEv spoofs sender",
+    "Melee has commitment but zero counterplay: no block/parry/dash, and right-mouse is unused while the blade is out"
+  ],
+  "one_big_idea": "The Duel Triangle: right-mouse GUARD on the saber deflects projectiles back at their owner (Guard beats Shot), swings break guard with a 0.9s stagger (Swing beats Guard), arcs zone the approach (Shot beats Approach) — plus one shared Focus meter across the loadout.",
+  "directives": [
+    {
+      "n": 1,
+      "title": "Unify the resource — one shared Focus meter",
+      "files": ["src/modes/weapons/tools.js", "src/modes/match-mode.js"],
+      "acceptance": "Q-spamming across slots yields no extra total shots; charge bar continuous across swaps; empty Focus blocks the blade swing"
+    },
+    {
+      "n": 2,
+      "title": "Ship the Duel Triangle — guard, deflect, guard-break",
+      "files": ["src/modes/weapons/saber.js", "src/modes/weapons/projectiles.js", "src/modes/match-mode.js"],
+      "acceptance": "Held guard bounces an incoming bubble and a deflected projectile can down its original owner; swing into a guard deals 0 damage and staggers 0.9s; guard drops at empty Focus"
+    },
+    {
+      "n": 3,
+      "title": "Delete the ghost carbine and give the server weapon authority",
+      "files": ["src/modes/botbrain.js", "src/modes/weapon.js", "src/shared/match.js", "server/room.js"],
+      "acceptance": "No references to traceShot/Magazine/WEAPON remain; a forged 120-damage leafblade hit from 20m is rejected; bot shots are dodgeable projectiles"
+    }
+  ],
+  "challenge_for_mikel": "Is the Verdant Blade a universal third slot or a CLASS? Commit to Blade vs Petal class picks at match start, or accept a soup where everyone holds everything. Director's vote: Blade vs Petal.",
+  "guardrails_respected": {
+    "source_untouched": true,
+    "merged": false,
+    "only_added": ["agent-digests/", "agent-logs/"]
+  }
+}
