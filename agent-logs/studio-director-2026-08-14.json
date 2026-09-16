@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-14",
+  "files_read": [
+    "README.md",
+    "experiences/little-planet/src/modes/match-mode.js",
+    "experiences/little-planet/src/modes/weapon.js",
+    "experiences/little-planet/src/modes/weapons/saber.js",
+    "experiences/little-planet/src/modes/weapons/projectiles.js",
+    "experiences/little-planet/src/modes/weapons/tools.js",
+    "experiences/little-planet/src/shared/items.js",
+    "experiences/little-planet/src/shared/match.js",
+    "experiences/little-planet/src/modes/botbrain.js",
+    "experiences/little-planet/server/room.js"
+  ],
+  "critiques": 4,
+  "directives": [
+    "D1: shared/match.js _hit -> accumulate soak, bubble-out at 100 (kill HP double-bookkeeping)",
+    "D2: saber.js + match-mode.js -> add Stamina; leafblade.soak 100->34; swing = commitment with whiff punish",
+    "D3: botbrain.js botShoot -> use real soak tools/saber, drop legacy hitscan WEAPON carbine"
+  ],
+  "challenge_for_mikel": "Soak or HP? Decide the single win condition (Splatoon-style soak/bubble-out vs HP deathmatch) so the saber tuning and D1/D2 can be built around it.",
+  "repo": "bla-keks-world",
+  "branch": "studio/director-2026-08-14"
+}
