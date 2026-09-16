@@ -1,0 +1,39 @@
+{
+  "date": "2026-09-01",
+  "files_read": [
+    "experiences/little-planet/README.md",
+    "experiences/little-planet/src/modes/match-mode.js",
+    "experiences/little-planet/src/modes/weapons/tools.js",
+    "experiences/little-planet/src/modes/weapons/saber.js",
+    "experiences/little-planet/src/modes/weapons/projectiles.js",
+    "experiences/little-planet/src/modes/weapon.js",
+    "experiences/little-planet/src/shared/match.js",
+    "experiences/little-planet/src/entities/avatar.js",
+    "experiences/little-planet/src/core/engine.js",
+    "experiences/little-planet/server/room.js"
+  ],
+  "critiques": 4,
+  "directives": [
+    {
+      "n": 1,
+      "title": "Saber gets a stamina resource (melee identity)",
+      "file": "src/modes/weapons/saber.js + src/modes/match-mode.js",
+      "acceptance": "Saber cannot swing when stamina below cost; whiff still costs stamina; stamina regens while not swinging; cooldown/recovery remains."
+    },
+    {
+      "n": 2,
+      "title": "Land the soak->bubble rule in match.js (shared rules, not client-only)",
+      "file": "src/shared/match.js",
+      "acceptance": "Soak field on players in MatchSim; soak drains on movement, holds on stillness; soaked->bubble terminal state for fixed duration; one terminal state at a time (bubble or HP-down, not both); offline and online run the same soak logic."
+    },
+    {
+      "n": 3,
+      "title": "README status table reflects both weapon families",
+      "file": "README.md",
+      "acceptance": "README lists Tactical FPS (hitscan carbine), Splat Brawl (projectiles, soak->bubble), and Melee Saber (stamina-gated swings) as distinct first-class combat systems; README no longer says PvP is only hitscan gunplay."
+    }
+  ],
+  "challenge_for_mikel": "Saber combat needs a resource — stamina or heat? And does the saber parry or not? Pick stamina over heat. Commit to the saber being a pacing/footwork weapon, not a damage-spike weapon. Drop the parry for now. Then the saber's identity is: you have 2-3 swings, you commit to each one, you recover and move. That's a melee fantasy. The projectile user's identity is: I'm loading 2-3 shots, predicting where you'll be, watching the arc. Both read clearly, both have a resource, both coexist.",
+  "repo": "bla-keks-world",
+  "branch": "studio/director-2026-09-01"
+}
