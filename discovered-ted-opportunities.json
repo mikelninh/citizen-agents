@@ -1,9 +1,118 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-15T11:47:07.875Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260816 SORT BY publication-date DESC",
+  "generated_at": "2026-09-16T11:39:10.873Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260817 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_637705_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – HIL Internetseite",
+      "deadline": "2026-08-28T23:59:59+02:00",
+      "buyer_or_program": "HIL Heeresinstandsetzungslogistik GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/637705-2026"
+      ],
+      "ted": {
+        "publication_number": "637705-2026",
+        "publication_date": "2026-09-16+02:00",
+        "cpv": [
+          "72000000",
+          "72200000",
+          "72000000",
+          "72200000"
+        ]
+      }
+    },
+    {
+      "id": "ted_638001_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Sicherheitssoftwarepaket – Extended Detection & Response (XDR) – Lösung",
+      "deadline": null,
+      "buyer_or_program": "Klinikum Esslingen GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 58,
+      "product_matches": [
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/638001-2026"
+      ],
+      "ted": {
+        "publication_number": "638001-2026",
+        "publication_date": "2026-09-16+02:00",
+        "cpv": [
+          "48730000",
+          "72261000",
+          "72267000",
+          "48820000",
+          "30211300",
+          "30200000"
+        ]
+      }
+    },
+    {
+      "id": "ted_636344_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Social Listening für Abteilung S (Sexualaufklärung, Verhütung und Familienplanung)",
+      "deadline": null,
+      "buyer_or_program": "Bundesinstitut für öffentliche Gesundheit (BIÖG)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/636344-2026"
+      ],
+      "ted": {
+        "publication_number": "636344-2026",
+        "publication_date": "2026-09-16+02:00",
+        "cpv": [
+          "72000000",
+          "72000000"
+        ]
+      }
+    },
     {
       "id": "ted_633195_2026",
       "type": "tender_candidate",
@@ -806,41 +915,6 @@
       }
     },
     {
-      "id": "ted_588537_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – HIL Internetseite",
-      "deadline": "2026-08-28T23:59:59+02:00",
-      "buyer_or_program": "HIL Heeresinstandsetzungslogistik GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/588537-2026"
-      ],
-      "ted": {
-        "publication_number": "588537-2026",
-        "publication_date": "2026-08-26+02:00",
-        "cpv": [
-          "72000000",
-          "72200000",
-          "72000000",
-          "72200000"
-        ]
-      }
-    },
-    {
       "id": "ted_587912_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – KI im Secure Software Development Life Cycle (KISDL)",
@@ -1202,41 +1276,6 @@
           "92312210",
           "79822500",
           "92110000"
-        ]
-      }
-    },
-    {
-      "id": "ted_567844_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – HIL Internetseite",
-      "deadline": "2026-08-28T23:59:59+02:00",
-      "buyer_or_program": "HIL Heeresinstandsetzungslogistik GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/567844-2026"
-      ],
-      "ted": {
-        "publication_number": "567844-2026",
-        "publication_date": "2026-08-17+02:00",
-        "cpv": [
-          "72000000",
-          "72200000",
-          "72000000",
-          "72200000"
         ]
       }
     },
