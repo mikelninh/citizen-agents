@@ -1,9 +1,9 @@
 {
   "schema_version": "citizen-founder-opportunity-api/1.0",
-  "generated_at": "2026-09-16T11:39:11.501Z",
+  "generated_at": "2026-09-17T11:45:38.520Z",
   "discovery": {
-    "ted_generated_at": "2026-09-16T11:39:10.873Z",
-    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260817 SORT BY publication-date DESC"
+    "ted_generated_at": "2026-09-17T11:45:38.122Z",
+    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260818 SORT BY publication-date DESC"
   },
   "profile": {
     "name": "Citizen Agents / Michael Ninh",
@@ -18,16 +18,16 @@
     ]
   },
   "metrics": {
-    "scanned": 42,
+    "scanned": 40,
     "curated": 7,
-    "automated_new_candidates": 35,
-    "open": 32,
-    "qualified": 10,
-    "partner_route": 3,
+    "automated_new_candidates": 33,
+    "open": 28,
+    "qualified": 8,
+    "partner_route": 2,
     "action_ready": 0,
     "won": 0,
     "observed_revenue_eur": 0,
-    "expired_blind_spot_candidates": 10
+    "expired_blind_spot_candidates": 12
   },
   "items": [
     {
@@ -68,7 +68,7 @@
         "route": "PARTNER_FIRST",
         "deadline": {
           "state": "URGENT",
-          "days": 6
+          "days": 5
         },
         "proof_matches": [
           {
@@ -332,228 +332,6 @@
       }
     },
     {
-      "id": "opp_cerv_charter_2026",
-      "type": "grant_partnership",
-      "headline": "CERV 2026 Charter / Civic Space call",
-      "deadline": "2026-09-15T17:00:00+02:00",
-      "buyer_or_program": "European Commission — CERV",
-      "potential": "€26m programme budget; grants for fundamental-rights and civic-space projects",
-      "fit_score": 82,
-      "product_matches": [
-        "Citizen Agents",
-        "CARE / Public Service systems",
-        "GitLaw"
-      ],
-      "why_fit": "Citizen Agents' source-backed rights, democracy-window and civic-capacity infrastructure can fit as a technical partner in projects that strengthen civil-society capacity and practical access to rights.",
-      "blockers": [
-        "A for-profit cannot coordinate this call; private non-profit coordinator required",
-        "Need a credible civil-society partner and proposal fit",
-        "Programme budget is not customer value"
-      ],
-      "action_pack": [
-        "Do not apply alone",
-        "Target 10 relevant NGOs/CSOs already preparing proposals",
-        "Offer Citizen Agents as technical work-package partner: monitoring, evidence, action windows and evaluation",
-        "Prepare one-page partner capability sheet"
-      ],
-      "source_status": "OFFICIAL_PROGRAM_SOURCE",
-      "sources": [
-        "https://www.cerv.at/teilnahme/calls.html"
-      ],
-      "discovery_origin": "CURATED",
-      "qualification": {
-        "opportunity_id": "opp_cerv_charter_2026",
-        "qualification_score": 90,
-        "qualified": true,
-        "route": "CONSORTIUM_PARTNER",
-        "deadline": {
-          "state": "CRITICAL",
-          "days": 0
-        },
-        "proof_matches": [
-          {
-            "proof_id": "citizen-agents",
-            "name": "Citizen Agents",
-            "score": 100,
-            "hits": [
-              "citizen",
-              "agents",
-              "civic",
-              "monitoring",
-              "evidence",
-              "action",
-              "windows",
-              "source",
-              "backed",
-              "civil"
-            ],
-            "readiness": "WORKING_PUBLIC_PROTOTYPE·PROD_PUBLIC_READ_ONLY_READY",
-            "evidence": [
-              "https://github.com/mikelninh/citizen-agents",
-              "https://mikelninh.github.io/citizen-agents/"
-            ],
-            "limitations": [
-              "coverage is not yet exhaustive",
-              "hosted push delivery is not yet SLA-backed",
-              "multi-tenant B2B production boundary is not yet complete"
-            ]
-          },
-          {
-            "proof_id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 72,
-            "hits": [
-              "rights",
-              "evidence",
-              "citizen",
-              "civic"
-            ],
-            "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "proof_id": "gitlaw",
-            "name": "GitLaw",
-            "score": 40,
-            "hits": [],
-            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
-            "evidence": [
-              "https://github.com/mikelninh/gitlaw",
-              "https://mikelninh.github.io/gitlaw/"
-            ],
-            "limitations": [
-              "not legal advice",
-              "writes and consequential actions require human approval",
-              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
-            ]
-          },
-          {
-            "proof_id": "safetrace-master-proof",
-            "name": "SafeTrace / Master Proof",
-            "score": 24,
-            "hits": [
-              "evidence",
-              "evaluation",
-              "source"
-            ],
-            "readiness": "EVALUATED_PROOF·PROD_EVALUATED_COMPONENT_ONLY",
-            "evidence": [],
-            "limitations": [
-              "specific deployment and source connectors depend on use case",
-              "no dedicated standalone production service identified yet"
-            ]
-          }
-        ],
-        "revenue_eur": null,
-        "revenue_claimed": false,
-        "truth_boundary": {
-          "fit_is_not_formal_eligibility": true,
-          "programme_or_tender_value_is_not_revenue": true,
-          "external_action_requires_human_approval": true
-        }
-      },
-      "action_pack_v1": {
-        "schema_version": "citizen-opportunity-action-pack/1.0",
-        "opportunity_id": "opp_cerv_charter_2026",
-        "headline": "CERV 2026 Charter / Civic Space call",
-        "route": "CONSORTIUM_PARTNER",
-        "qualification_score": 90,
-        "deadline": "2026-09-15T17:00:00+02:00",
-        "buyer_or_program": "European Commission — CERV",
-        "why_now": "Deadline is within three days.",
-        "matching_proofs": [
-          {
-            "id": "citizen-agents",
-            "name": "Citizen Agents",
-            "score": 100,
-            "evidence": [
-              "https://github.com/mikelninh/citizen-agents",
-              "https://mikelninh.github.io/citizen-agents/"
-            ],
-            "limitations": [
-              "coverage is not yet exhaustive",
-              "hosted push delivery is not yet SLA-backed",
-              "multi-tenant B2B production boundary is not yet complete"
-            ]
-          },
-          {
-            "id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 72,
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "id": "gitlaw",
-            "name": "GitLaw",
-            "score": 40,
-            "evidence": [
-              "https://github.com/mikelninh/gitlaw",
-              "https://mikelninh.github.io/gitlaw/"
-            ],
-            "limitations": [
-              "not legal advice",
-              "writes and consequential actions require human approval",
-              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
-            ]
-          },
-          {
-            "id": "safetrace-master-proof",
-            "name": "SafeTrace / Master Proof",
-            "score": 24,
-            "evidence": [],
-            "limitations": [
-              "specific deployment and source connectors depend on use case",
-              "no dedicated standalone production service identified yet"
-            ]
-          }
-        ],
-        "blockers": [
-          "A for-profit cannot coordinate this call; private non-profit coordinator required",
-          "Need a credible civil-society partner and proposal fit",
-          "Programme budget is not customer value"
-        ],
-        "steps": [
-          "Do not apply alone",
-          "Target 10 relevant NGOs/CSOs already preparing proposals",
-          "Offer Citizen Agents as technical work-package partner: monitoring, evidence, action windows and evaluation",
-          "Prepare one-page partner capability sheet"
-        ],
-        "next_action": "Do not apply alone",
-        "approval_gate": {
-          "required": true,
-          "reason": "Any external submission, outreach, bid or commitment is consequential."
-        },
-        "revenue_eur": null,
-        "truth_boundary": "No revenue is recorded until a contract, award or payment is evidenced."
-      },
-      "candidate_partners": [],
-      "pipeline": {
-        "opportunity_id": "opp_cerv_charter_2026",
-        "status": "FOUND",
-        "decision": "PENDING",
-        "owner": "founder",
-        "next_action": "Find an eligible civil-society consortium and offer Citizen Agents as a technical work-package partner.",
-        "outcome_revenue_eur": null,
-        "outcome_evidence": null
-      }
-    },
-    {
       "id": "ted_575139_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System (Vorinformation Partnering Event)",
@@ -777,229 +555,6 @@
       }
     },
     {
-      "id": "ted_605777_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)",
-      "deadline": "2026-09-16T00:00:00+02:00",
-      "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 78,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/605777-2026"
-      ],
-      "ted": {
-        "publication_number": "605777-2026",
-        "publication_date": "2026-09-02+02:00",
-        "cpv": [
-          "73000000",
-          "73000000"
-        ]
-      },
-      "discovery_origin": "TED_AUTOMATED",
-      "qualification": {
-        "opportunity_id": "ted_605777_2026",
-        "qualification_score": 85,
-        "qualified": true,
-        "route": "REVIEW",
-        "deadline": {
-          "state": "CRITICAL",
-          "days": 0
-        },
-        "proof_matches": [
-          {
-            "proof_id": "digital-worker-factory",
-            "name": "Digital Worker Factory / OpsPilot",
-            "score": 88,
-            "hits": [
-              "digital",
-              "worker",
-              "factory",
-              "opspilot",
-              "approval",
-              "public"
-            ],
-            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "shared Production Platform v1 exists and is CI-tested",
-              "each concrete product deployment still needs durable environment bindings and operating evidence",
-              "external actions remain approval-gated"
-            ]
-          },
-          {
-            "proof_id": "safetrace-master-proof",
-            "name": "SafeTrace / Master Proof",
-            "score": 67,
-            "hits": [
-              "safetrace",
-              "master",
-              "proof",
-              "public"
-            ],
-            "readiness": "EVALUATED_PROOF·PROD_EVALUATED_COMPONENT_ONLY",
-            "evidence": [],
-            "limitations": [
-              "specific deployment and source connectors depend on use case",
-              "no dedicated standalone production service identified yet"
-            ]
-          },
-          {
-            "proof_id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 29,
-            "hits": [
-              "public",
-              "eligibility",
-              "approval"
-            ],
-            "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "proof_id": "gitlaw",
-            "name": "GitLaw",
-            "score": 21,
-            "hits": [
-              "approval",
-              "public"
-            ],
-            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
-            "evidence": [
-              "https://github.com/mikelninh/gitlaw",
-              "https://mikelninh.github.io/gitlaw/"
-            ],
-            "limitations": [
-              "not legal advice",
-              "writes and consequential actions require human approval",
-              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
-            ]
-          }
-        ],
-        "revenue_eur": null,
-        "revenue_claimed": false,
-        "truth_boundary": {
-          "fit_is_not_formal_eligibility": true,
-          "programme_or_tender_value_is_not_revenue": true,
-          "external_action_requires_human_approval": true
-        }
-      },
-      "action_pack_v1": {
-        "schema_version": "citizen-opportunity-action-pack/1.0",
-        "opportunity_id": "ted_605777_2026",
-        "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)",
-        "route": "REVIEW",
-        "qualification_score": 85,
-        "deadline": "2026-09-16T00:00:00+02:00",
-        "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH",
-        "why_now": "Deadline is within three days.",
-        "matching_proofs": [
-          {
-            "id": "digital-worker-factory",
-            "name": "Digital Worker Factory / OpsPilot",
-            "score": 88,
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "shared Production Platform v1 exists and is CI-tested",
-              "each concrete product deployment still needs durable environment bindings and operating evidence",
-              "external actions remain approval-gated"
-            ]
-          },
-          {
-            "id": "safetrace-master-proof",
-            "name": "SafeTrace / Master Proof",
-            "score": 67,
-            "evidence": [],
-            "limitations": [
-              "specific deployment and source connectors depend on use case",
-              "no dedicated standalone production service identified yet"
-            ]
-          },
-          {
-            "id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 29,
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "id": "gitlaw",
-            "name": "GitLaw",
-            "score": 21,
-            "evidence": [
-              "https://github.com/mikelninh/gitlaw",
-              "https://mikelninh.github.io/gitlaw/"
-            ],
-            "limitations": [
-              "not legal advice",
-              "writes and consequential actions require human approval",
-              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
-            ]
-          }
-        ],
-        "blockers": [
-          "Full procurement documents not yet reviewed",
-          "Formal suitability, references and value not yet established"
-        ],
-        "steps": [
-          "Open the official TED notice",
-          "Check scope, deadline, eligibility and references",
-          "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-          "Only after approval: prepare submission or partner outreach"
-        ],
-        "next_action": "Open the official TED notice",
-        "approval_gate": {
-          "required": true,
-          "reason": "Any external submission, outreach, bid or commitment is consequential."
-        },
-        "revenue_eur": null,
-        "truth_boundary": "No revenue is recorded until a contract, award or payment is evidenced."
-      },
-      "candidate_partners": [],
-      "pipeline": {
-        "opportunity_id": "ted_605777_2026",
-        "status": "FOUND",
-        "decision": "PENDING",
-        "next_action": "Open the official TED notice",
-        "outcome_revenue_eur": null,
-        "outcome_evidence": null
-      }
-    },
-    {
       "id": "opp_horizon_democracy_2026",
       "type": "grant_partnership",
       "headline": "Horizon Europe 2026 — Democracy and Governance",
@@ -1030,12 +585,12 @@
       "discovery_origin": "CURATED",
       "qualification": {
         "opportunity_id": "opp_horizon_democracy_2026",
-        "qualification_score": 82,
+        "qualification_score": 83,
         "qualified": true,
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
-          "state": "SOON",
-          "days": 8
+          "state": "URGENT",
+          "days": 7
         },
         "proof_matches": [
           {
@@ -1129,10 +684,10 @@
         "opportunity_id": "opp_horizon_democracy_2026",
         "headline": "Horizon Europe 2026 — Democracy and Governance",
         "route": "CONSORTIUM_PARTNER",
-        "qualification_score": 82,
+        "qualification_score": 83,
         "deadline": "2026-09-23T17:00:00+02:00",
         "buyer_or_program": "European Commission — Horizon Europe Cluster 2",
-        "why_now": "Deadline is within fourteen days.",
+        "why_now": "Deadline is within seven days.",
         "matching_proofs": [
           {
             "id": "citizen-agents",
@@ -3312,7 +2867,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 12
+          "days": 11
         },
         "proof_matches": [
           {
@@ -3725,233 +3280,6 @@
       }
     },
     {
-      "id": "ted_574548_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Sicherheitssoftwarepaket – Extended Detection & Response (XDR) – Lösung",
-      "deadline": null,
-      "buyer_or_program": "Klinikum Esslingen GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 58,
-      "product_matches": [
-        "CareOS"
-      ],
-      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/574548-2026"
-      ],
-      "ted": {
-        "publication_number": "574548-2026",
-        "publication_date": "2026-08-19+02:00",
-        "cpv": [
-          "48730000",
-          "72261000",
-          "72267000",
-          "48820000",
-          "30211300",
-          "30200000"
-        ]
-      },
-      "discovery_origin": "TED_AUTOMATED",
-      "qualification": {
-        "opportunity_id": "ted_574548_2026",
-        "qualification_score": 63,
-        "qualified": false,
-        "route": "REVIEW",
-        "deadline": {
-          "state": "NO_DEADLINE",
-          "days": null
-        },
-        "proof_matches": [
-          {
-            "proof_id": "careos",
-            "name": "CareOS",
-            "score": 64,
-            "hits": [
-              "careos",
-              "detection",
-              "review"
-            ],
-            "readiness": "WORKING_SYNTHETIC_PROTOTYPE·PROD_BLOCKED_FOR_PRODUCTION",
-            "evidence": [
-              "https://github.com/mikelninh/care-os",
-              "https://mikelninh.github.io/careos/"
-            ],
-            "limitations": [
-              "synthetic/deidentified research only",
-              "not for clinical use",
-              "production G1 is explicitly blocked",
-              "real clinical and hospital evidence required"
-            ]
-          },
-          {
-            "proof_id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 29,
-            "hits": [
-              "public",
-              "eligibility",
-              "approval"
-            ],
-            "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "proof_id": "casepilot",
-            "name": "CasePilot Reliability",
-            "score": 21,
-            "hits": [
-              "detection",
-              "public"
-            ],
-            "readiness": "WORKING_RELIABILITY_PROOF·PROD_EVALUATED_COMPONENT_ONLY",
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "proof layer rather than standalone production workflow",
-              "shared Production Platform v1 can host it but live operating thresholds still require evidence"
-            ]
-          },
-          {
-            "proof_id": "digital-worker-factory",
-            "name": "Digital Worker Factory / OpsPilot",
-            "score": 21,
-            "hits": [
-              "approval",
-              "public"
-            ],
-            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "shared Production Platform v1 exists and is CI-tested",
-              "each concrete product deployment still needs durable environment bindings and operating evidence",
-              "external actions remain approval-gated"
-            ]
-          }
-        ],
-        "revenue_eur": null,
-        "revenue_claimed": false,
-        "truth_boundary": {
-          "fit_is_not_formal_eligibility": true,
-          "programme_or_tender_value_is_not_revenue": true,
-          "external_action_requires_human_approval": true
-        }
-      },
-      "action_pack_v1": {
-        "schema_version": "citizen-opportunity-action-pack/1.0",
-        "opportunity_id": "ted_574548_2026",
-        "headline": "Deutschland – Sicherheitssoftwarepaket – Extended Detection & Response (XDR) – Lösung",
-        "route": "REVIEW",
-        "qualification_score": 63,
-        "deadline": null,
-        "buyer_or_program": "Klinikum Esslingen GmbH",
-        "why_now": "Opportunity is open.",
-        "matching_proofs": [
-          {
-            "id": "careos",
-            "name": "CareOS",
-            "score": 64,
-            "evidence": [
-              "https://github.com/mikelninh/care-os",
-              "https://mikelninh.github.io/careos/"
-            ],
-            "limitations": [
-              "synthetic/deidentified research only",
-              "not for clinical use",
-              "production G1 is explicitly blocked",
-              "real clinical and hospital evidence required"
-            ]
-          },
-          {
-            "id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 29,
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "id": "casepilot",
-            "name": "CasePilot Reliability",
-            "score": 21,
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "proof layer rather than standalone production workflow",
-              "shared Production Platform v1 can host it but live operating thresholds still require evidence"
-            ]
-          },
-          {
-            "id": "digital-worker-factory",
-            "name": "Digital Worker Factory / OpsPilot",
-            "score": 21,
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "shared Production Platform v1 exists and is CI-tested",
-              "each concrete product deployment still needs durable environment bindings and operating evidence",
-              "external actions remain approval-gated"
-            ]
-          }
-        ],
-        "blockers": [
-          "Full procurement documents not yet reviewed",
-          "Formal suitability, references and value not yet established"
-        ],
-        "steps": [
-          "Open the official TED notice",
-          "Check scope, deadline, eligibility and references",
-          "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-          "Only after approval: prepare submission or partner outreach"
-        ],
-        "next_action": "Open the official TED notice",
-        "approval_gate": {
-          "required": true,
-          "reason": "Any external submission, outreach, bid or commitment is consequential."
-        },
-        "revenue_eur": null,
-        "truth_boundary": "No revenue is recorded until a contract, award or payment is evidenced."
-      },
-      "candidate_partners": [],
-      "pipeline": {
-        "opportunity_id": "ted_574548_2026",
-        "status": "FOUND",
-        "decision": "PENDING",
-        "next_action": "Open the official TED notice",
-        "outcome_revenue_eur": null,
-        "outcome_evidence": null
-      }
-    },
-    {
       "id": "ted_636344_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Social Listening für Abteilung S (Sexualaufklärung, Verhütung und Familienplanung)",
@@ -4227,7 +3555,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "CRITICAL",
-          "days": 2
+          "days": 1
         },
         "proof_matches": [
           {
@@ -4450,7 +3778,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "URGENT",
-          "days": 6
+          "days": 5
         },
         "proof_matches": [
           {
@@ -4676,7 +4004,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 13
+          "days": 12
         },
         "proof_matches": [
           {
@@ -4906,7 +4234,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 14
+          "days": 13
         },
         "proof_matches": [
           {
@@ -5123,12 +4451,12 @@
       "discovery_origin": "TED_AUTOMATED",
       "qualification": {
         "opportunity_id": "ted_605034_2026",
-        "qualification_score": 51,
+        "qualification_score": 53,
         "qualified": false,
         "route": "REVIEW",
         "deadline": {
-          "state": "OPEN",
-          "days": 15
+          "state": "SOON",
+          "days": 14
         },
         "proof_matches": [
           {
@@ -5221,10 +4549,10 @@
         "opportunity_id": "ted_605034_2026",
         "headline": "Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS",
         "route": "REVIEW",
-        "qualification_score": 51,
+        "qualification_score": 53,
         "deadline": "2026-09-30T23:59:59+02:00",
         "buyer_or_program": "Eberhard Karls Universität Tübingen",
-        "why_now": "Opportunity is open.",
+        "why_now": "Deadline is within fourteen days.",
         "matching_proofs": [
           {
             "id": "care-public-service",
@@ -5352,7 +4680,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 20
+          "days": 19
         },
         "proof_matches": [
           {
@@ -5527,6 +4855,228 @@
       "candidate_partners": [],
       "pipeline": {
         "opportunity_id": "ted_629342_2026",
+        "status": "FOUND",
+        "decision": "PENDING",
+        "next_action": "Open the official TED notice",
+        "outcome_revenue_eur": null,
+        "outcome_evidence": null
+      }
+    },
+    {
+      "id": "ted_642749_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Miniwettbewerb aus Rahmenvertrag AS260012 Rolle 1 Machine Learning Engineer",
+      "deadline": null,
+      "buyer_or_program": "BG-Phoenics GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/642749-2026"
+      ],
+      "ted": {
+        "publication_number": "642749-2026",
+        "publication_date": "2026-09-17+02:00",
+        "cpv": [
+          "72000000",
+          "72000000"
+        ]
+      },
+      "discovery_origin": "TED_AUTOMATED",
+      "qualification": {
+        "opportunity_id": "ted_642749_2026",
+        "qualification_score": 50,
+        "qualified": false,
+        "route": "REVIEW",
+        "deadline": {
+          "state": "NO_DEADLINE",
+          "days": null
+        },
+        "proof_matches": [
+          {
+            "proof_id": "care-public-service",
+            "name": "CARE / Public Service systems",
+            "score": 29,
+            "hits": [
+              "public",
+              "eligibility",
+              "approval"
+            ],
+            "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
+            "evidence": [
+              "https://github.com/mikelninh/care-abundance-mission",
+              "https://github.com/mikelninh/public-service-passport"
+            ],
+            "limitations": [
+              "not a production Fachverfahren",
+              "formal administrative decisions must remain with authorised authorities",
+              "real institutional and delivery evidence is required"
+            ]
+          },
+          {
+            "proof_id": "digital-worker-factory",
+            "name": "Digital Worker Factory / OpsPilot",
+            "score": 21,
+            "hits": [
+              "approval",
+              "public"
+            ],
+            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
+            "evidence": [
+              "https://github.com/mikelninh/digital-worker-factory"
+            ],
+            "limitations": [
+              "shared Production Platform v1 exists and is CI-tested",
+              "each concrete product deployment still needs durable environment bindings and operating evidence",
+              "external actions remain approval-gated"
+            ]
+          },
+          {
+            "proof_id": "gitlaw",
+            "name": "GitLaw",
+            "score": 21,
+            "hits": [
+              "approval",
+              "public"
+            ],
+            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
+            "evidence": [
+              "https://github.com/mikelninh/gitlaw",
+              "https://mikelninh.github.io/gitlaw/"
+            ],
+            "limitations": [
+              "not legal advice",
+              "writes and consequential actions require human approval",
+              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
+            ]
+          },
+          {
+            "proof_id": "pruefpilot",
+            "name": "PrüfPilot",
+            "score": 21,
+            "hits": [
+              "review",
+              "public"
+            ],
+            "readiness": "WORKING_DOCUMENT_AI_PROOF·PROD_CONTROLLED_PRODUCTION_CANDIDATE",
+            "evidence": [
+              "https://github.com/mikelninh/pruefpilot",
+              "https://pruefpilot-v5-api.vercel.app/api/docs"
+            ],
+            "limitations": [
+              "full durable Production Platform v1 path is integration-tested against Postgres 17 in CI",
+              "the public/demo deployment is not evidence that a dedicated managed production environment is configured",
+              "qualified reviewer/security/integration validation remains external"
+            ]
+          }
+        ],
+        "revenue_eur": null,
+        "revenue_claimed": false,
+        "truth_boundary": {
+          "fit_is_not_formal_eligibility": true,
+          "programme_or_tender_value_is_not_revenue": true,
+          "external_action_requires_human_approval": true
+        }
+      },
+      "action_pack_v1": {
+        "schema_version": "citizen-opportunity-action-pack/1.0",
+        "opportunity_id": "ted_642749_2026",
+        "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Miniwettbewerb aus Rahmenvertrag AS260012 Rolle 1 Machine Learning Engineer",
+        "route": "REVIEW",
+        "qualification_score": 50,
+        "deadline": null,
+        "buyer_or_program": "BG-Phoenics GmbH",
+        "why_now": "Opportunity is open.",
+        "matching_proofs": [
+          {
+            "id": "care-public-service",
+            "name": "CARE / Public Service systems",
+            "score": 29,
+            "evidence": [
+              "https://github.com/mikelninh/care-abundance-mission",
+              "https://github.com/mikelninh/public-service-passport"
+            ],
+            "limitations": [
+              "not a production Fachverfahren",
+              "formal administrative decisions must remain with authorised authorities",
+              "real institutional and delivery evidence is required"
+            ]
+          },
+          {
+            "id": "digital-worker-factory",
+            "name": "Digital Worker Factory / OpsPilot",
+            "score": 21,
+            "evidence": [
+              "https://github.com/mikelninh/digital-worker-factory"
+            ],
+            "limitations": [
+              "shared Production Platform v1 exists and is CI-tested",
+              "each concrete product deployment still needs durable environment bindings and operating evidence",
+              "external actions remain approval-gated"
+            ]
+          },
+          {
+            "id": "gitlaw",
+            "name": "GitLaw",
+            "score": 21,
+            "evidence": [
+              "https://github.com/mikelninh/gitlaw",
+              "https://mikelninh.github.io/gitlaw/"
+            ],
+            "limitations": [
+              "not legal advice",
+              "writes and consequential actions require human approval",
+              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
+            ]
+          },
+          {
+            "id": "pruefpilot",
+            "name": "PrüfPilot",
+            "score": 21,
+            "evidence": [
+              "https://github.com/mikelninh/pruefpilot",
+              "https://pruefpilot-v5-api.vercel.app/api/docs"
+            ],
+            "limitations": [
+              "full durable Production Platform v1 path is integration-tested against Postgres 17 in CI",
+              "the public/demo deployment is not evidence that a dedicated managed production environment is configured",
+              "qualified reviewer/security/integration validation remains external"
+            ]
+          }
+        ],
+        "blockers": [
+          "Full procurement documents not yet reviewed",
+          "Formal suitability, references and value not yet established"
+        ],
+        "steps": [
+          "Open the official TED notice",
+          "Check scope, deadline, eligibility and references",
+          "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+          "Only after approval: prepare submission or partner outreach"
+        ],
+        "next_action": "Open the official TED notice",
+        "approval_gate": {
+          "required": true,
+          "reason": "Any external submission, outreach, bid or commitment is consequential."
+        },
+        "revenue_eur": null,
+        "truth_boundary": "No revenue is recorded until a contract, award or payment is evidenced."
+      },
+      "candidate_partners": [],
+      "pipeline": {
+        "opportunity_id": "ted_642749_2026",
         "status": "FOUND",
         "decision": "PENDING",
         "next_action": "Open the official TED notice",
@@ -6877,456 +6427,6 @@
       }
     },
     {
-      "id": "ted_568012_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Installation von Elektroanlagen – Beschaffung einer \"didaktischen Schulungswand\" - Anschlussarbeiten: Elektroarbeiten (Los 4)",
-      "deadline": null,
-      "buyer_or_program": "Handwerkskammer der Pfalz",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/568012-2026"
-      ],
-      "ted": {
-        "publication_number": "568012-2026",
-        "publication_date": "2026-08-17+02:00",
-        "cpv": [
-          "45311000",
-          "45311000"
-        ]
-      },
-      "discovery_origin": "TED_AUTOMATED",
-      "qualification": {
-        "opportunity_id": "ted_568012_2026",
-        "qualification_score": 50,
-        "qualified": false,
-        "route": "REVIEW",
-        "deadline": {
-          "state": "NO_DEADLINE",
-          "days": null
-        },
-        "proof_matches": [
-          {
-            "proof_id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 29,
-            "hits": [
-              "public",
-              "eligibility",
-              "approval"
-            ],
-            "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "proof_id": "digital-worker-factory",
-            "name": "Digital Worker Factory / OpsPilot",
-            "score": 21,
-            "hits": [
-              "approval",
-              "public"
-            ],
-            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "shared Production Platform v1 exists and is CI-tested",
-              "each concrete product deployment still needs durable environment bindings and operating evidence",
-              "external actions remain approval-gated"
-            ]
-          },
-          {
-            "proof_id": "gitlaw",
-            "name": "GitLaw",
-            "score": 21,
-            "hits": [
-              "approval",
-              "public"
-            ],
-            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
-            "evidence": [
-              "https://github.com/mikelninh/gitlaw",
-              "https://mikelninh.github.io/gitlaw/"
-            ],
-            "limitations": [
-              "not legal advice",
-              "writes and consequential actions require human approval",
-              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
-            ]
-          },
-          {
-            "proof_id": "pruefpilot",
-            "name": "PrüfPilot",
-            "score": 21,
-            "hits": [
-              "review",
-              "public"
-            ],
-            "readiness": "WORKING_DOCUMENT_AI_PROOF·PROD_CONTROLLED_PRODUCTION_CANDIDATE",
-            "evidence": [
-              "https://github.com/mikelninh/pruefpilot",
-              "https://pruefpilot-v5-api.vercel.app/api/docs"
-            ],
-            "limitations": [
-              "full durable Production Platform v1 path is integration-tested against Postgres 17 in CI",
-              "the public/demo deployment is not evidence that a dedicated managed production environment is configured",
-              "qualified reviewer/security/integration validation remains external"
-            ]
-          }
-        ],
-        "revenue_eur": null,
-        "revenue_claimed": false,
-        "truth_boundary": {
-          "fit_is_not_formal_eligibility": true,
-          "programme_or_tender_value_is_not_revenue": true,
-          "external_action_requires_human_approval": true
-        }
-      },
-      "action_pack_v1": {
-        "schema_version": "citizen-opportunity-action-pack/1.0",
-        "opportunity_id": "ted_568012_2026",
-        "headline": "Deutschland – Installation von Elektroanlagen – Beschaffung einer \"didaktischen Schulungswand\" - Anschlussarbeiten: Elektroarbeiten (Los 4)",
-        "route": "REVIEW",
-        "qualification_score": 50,
-        "deadline": null,
-        "buyer_or_program": "Handwerkskammer der Pfalz",
-        "why_now": "Opportunity is open.",
-        "matching_proofs": [
-          {
-            "id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 29,
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "id": "digital-worker-factory",
-            "name": "Digital Worker Factory / OpsPilot",
-            "score": 21,
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "shared Production Platform v1 exists and is CI-tested",
-              "each concrete product deployment still needs durable environment bindings and operating evidence",
-              "external actions remain approval-gated"
-            ]
-          },
-          {
-            "id": "gitlaw",
-            "name": "GitLaw",
-            "score": 21,
-            "evidence": [
-              "https://github.com/mikelninh/gitlaw",
-              "https://mikelninh.github.io/gitlaw/"
-            ],
-            "limitations": [
-              "not legal advice",
-              "writes and consequential actions require human approval",
-              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
-            ]
-          },
-          {
-            "id": "pruefpilot",
-            "name": "PrüfPilot",
-            "score": 21,
-            "evidence": [
-              "https://github.com/mikelninh/pruefpilot",
-              "https://pruefpilot-v5-api.vercel.app/api/docs"
-            ],
-            "limitations": [
-              "full durable Production Platform v1 path is integration-tested against Postgres 17 in CI",
-              "the public/demo deployment is not evidence that a dedicated managed production environment is configured",
-              "qualified reviewer/security/integration validation remains external"
-            ]
-          }
-        ],
-        "blockers": [
-          "Full procurement documents not yet reviewed",
-          "Formal suitability, references and value not yet established"
-        ],
-        "steps": [
-          "Open the official TED notice",
-          "Check scope, deadline, eligibility and references",
-          "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-          "Only after approval: prepare submission or partner outreach"
-        ],
-        "next_action": "Open the official TED notice",
-        "approval_gate": {
-          "required": true,
-          "reason": "Any external submission, outreach, bid or commitment is consequential."
-        },
-        "revenue_eur": null,
-        "truth_boundary": "No revenue is recorded until a contract, award or payment is evidenced."
-      },
-      "candidate_partners": [],
-      "pipeline": {
-        "opportunity_id": "ted_568012_2026",
-        "status": "FOUND",
-        "decision": "PENDING",
-        "next_action": "Open the official TED notice",
-        "outcome_revenue_eur": null,
-        "outcome_evidence": null
-      }
-    },
-    {
-      "id": "ted_566509_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Beratung im Bereich Projektleitung – Projektleitung zur Einführung eines DMS",
-      "deadline": null,
-      "buyer_or_program": "Kassenärztliche Vereinigung Baden-Württemberg",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/566509-2026"
-      ],
-      "ted": {
-        "publication_number": "566509-2026",
-        "publication_date": "2026-08-17+02:00",
-        "cpv": [
-          "72224000",
-          "48311100",
-          "72224100",
-          "72224200",
-          "72224000",
-          "48311100",
-          "72224100",
-          "72224200"
-        ]
-      },
-      "discovery_origin": "TED_AUTOMATED",
-      "qualification": {
-        "opportunity_id": "ted_566509_2026",
-        "qualification_score": 50,
-        "qualified": false,
-        "route": "REVIEW",
-        "deadline": {
-          "state": "NO_DEADLINE",
-          "days": null
-        },
-        "proof_matches": [
-          {
-            "proof_id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 29,
-            "hits": [
-              "public",
-              "eligibility",
-              "approval"
-            ],
-            "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "proof_id": "digital-worker-factory",
-            "name": "Digital Worker Factory / OpsPilot",
-            "score": 21,
-            "hits": [
-              "approval",
-              "public"
-            ],
-            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "shared Production Platform v1 exists and is CI-tested",
-              "each concrete product deployment still needs durable environment bindings and operating evidence",
-              "external actions remain approval-gated"
-            ]
-          },
-          {
-            "proof_id": "gitlaw",
-            "name": "GitLaw",
-            "score": 21,
-            "hits": [
-              "approval",
-              "public"
-            ],
-            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
-            "evidence": [
-              "https://github.com/mikelninh/gitlaw",
-              "https://mikelninh.github.io/gitlaw/"
-            ],
-            "limitations": [
-              "not legal advice",
-              "writes and consequential actions require human approval",
-              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
-            ]
-          },
-          {
-            "proof_id": "pruefpilot",
-            "name": "PrüfPilot",
-            "score": 21,
-            "hits": [
-              "review",
-              "public"
-            ],
-            "readiness": "WORKING_DOCUMENT_AI_PROOF·PROD_CONTROLLED_PRODUCTION_CANDIDATE",
-            "evidence": [
-              "https://github.com/mikelninh/pruefpilot",
-              "https://pruefpilot-v5-api.vercel.app/api/docs"
-            ],
-            "limitations": [
-              "full durable Production Platform v1 path is integration-tested against Postgres 17 in CI",
-              "the public/demo deployment is not evidence that a dedicated managed production environment is configured",
-              "qualified reviewer/security/integration validation remains external"
-            ]
-          }
-        ],
-        "revenue_eur": null,
-        "revenue_claimed": false,
-        "truth_boundary": {
-          "fit_is_not_formal_eligibility": true,
-          "programme_or_tender_value_is_not_revenue": true,
-          "external_action_requires_human_approval": true
-        }
-      },
-      "action_pack_v1": {
-        "schema_version": "citizen-opportunity-action-pack/1.0",
-        "opportunity_id": "ted_566509_2026",
-        "headline": "Deutschland – Beratung im Bereich Projektleitung – Projektleitung zur Einführung eines DMS",
-        "route": "REVIEW",
-        "qualification_score": 50,
-        "deadline": null,
-        "buyer_or_program": "Kassenärztliche Vereinigung Baden-Württemberg",
-        "why_now": "Opportunity is open.",
-        "matching_proofs": [
-          {
-            "id": "care-public-service",
-            "name": "CARE / Public Service systems",
-            "score": 29,
-            "evidence": [
-              "https://github.com/mikelninh/care-abundance-mission",
-              "https://github.com/mikelninh/public-service-passport"
-            ],
-            "limitations": [
-              "not a production Fachverfahren",
-              "formal administrative decisions must remain with authorised authorities",
-              "real institutional and delivery evidence is required"
-            ]
-          },
-          {
-            "id": "digital-worker-factory",
-            "name": "Digital Worker Factory / OpsPilot",
-            "score": 21,
-            "evidence": [
-              "https://github.com/mikelninh/digital-worker-factory"
-            ],
-            "limitations": [
-              "shared Production Platform v1 exists and is CI-tested",
-              "each concrete product deployment still needs durable environment bindings and operating evidence",
-              "external actions remain approval-gated"
-            ]
-          },
-          {
-            "id": "gitlaw",
-            "name": "GitLaw",
-            "score": 21,
-            "evidence": [
-              "https://github.com/mikelninh/gitlaw",
-              "https://mikelninh.github.io/gitlaw/"
-            ],
-            "limitations": [
-              "not legal advice",
-              "writes and consequential actions require human approval",
-              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
-            ]
-          },
-          {
-            "id": "pruefpilot",
-            "name": "PrüfPilot",
-            "score": 21,
-            "evidence": [
-              "https://github.com/mikelninh/pruefpilot",
-              "https://pruefpilot-v5-api.vercel.app/api/docs"
-            ],
-            "limitations": [
-              "full durable Production Platform v1 path is integration-tested against Postgres 17 in CI",
-              "the public/demo deployment is not evidence that a dedicated managed production environment is configured",
-              "qualified reviewer/security/integration validation remains external"
-            ]
-          }
-        ],
-        "blockers": [
-          "Full procurement documents not yet reviewed",
-          "Formal suitability, references and value not yet established"
-        ],
-        "steps": [
-          "Open the official TED notice",
-          "Check scope, deadline, eligibility and references",
-          "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-          "Only after approval: prepare submission or partner outreach"
-        ],
-        "next_action": "Open the official TED notice",
-        "approval_gate": {
-          "required": true,
-          "reason": "Any external submission, outreach, bid or commitment is consequential."
-        },
-        "revenue_eur": null,
-        "truth_boundary": "No revenue is recorded until a contract, award or payment is evidenced."
-      },
-      "candidate_partners": [],
-      "pipeline": {
-        "opportunity_id": "ted_566509_2026",
-        "status": "FOUND",
-        "decision": "PENDING",
-        "next_action": "Open the official TED notice",
-        "outcome_revenue_eur": null,
-        "outcome_evidence": null
-      }
-    },
-    {
       "id": "opp_dataport_social_benefits_2026",
       "type": "tender_partner",
       "headline": "Dataport — KI-Assistenzsystem Sozialleistungen",
@@ -7363,7 +6463,7 @@
         "route": "SUBCONTRACT_OR_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -5
+          "days": -6
         },
         "proof_matches": [
           {
@@ -7627,6 +6727,228 @@
       }
     },
     {
+      "id": "opp_cerv_charter_2026",
+      "type": "grant_partnership",
+      "headline": "CERV 2026 Charter / Civic Space call",
+      "deadline": "2026-09-15T17:00:00+02:00",
+      "buyer_or_program": "European Commission — CERV",
+      "potential": "€26m programme budget; grants for fundamental-rights and civic-space projects",
+      "fit_score": 82,
+      "product_matches": [
+        "Citizen Agents",
+        "CARE / Public Service systems",
+        "GitLaw"
+      ],
+      "why_fit": "Citizen Agents' source-backed rights, democracy-window and civic-capacity infrastructure can fit as a technical partner in projects that strengthen civil-society capacity and practical access to rights.",
+      "blockers": [
+        "A for-profit cannot coordinate this call; private non-profit coordinator required",
+        "Need a credible civil-society partner and proposal fit",
+        "Programme budget is not customer value"
+      ],
+      "action_pack": [
+        "Do not apply alone",
+        "Target 10 relevant NGOs/CSOs already preparing proposals",
+        "Offer Citizen Agents as technical work-package partner: monitoring, evidence, action windows and evaluation",
+        "Prepare one-page partner capability sheet"
+      ],
+      "source_status": "OFFICIAL_PROGRAM_SOURCE",
+      "sources": [
+        "https://www.cerv.at/teilnahme/calls.html"
+      ],
+      "discovery_origin": "CURATED",
+      "qualification": {
+        "opportunity_id": "opp_cerv_charter_2026",
+        "qualification_score": 82,
+        "qualified": false,
+        "route": "CONSORTIUM_PARTNER",
+        "deadline": {
+          "state": "EXPIRED",
+          "days": -1
+        },
+        "proof_matches": [
+          {
+            "proof_id": "citizen-agents",
+            "name": "Citizen Agents",
+            "score": 100,
+            "hits": [
+              "citizen",
+              "agents",
+              "civic",
+              "monitoring",
+              "evidence",
+              "action",
+              "windows",
+              "source",
+              "backed",
+              "civil"
+            ],
+            "readiness": "WORKING_PUBLIC_PROTOTYPE·PROD_PUBLIC_READ_ONLY_READY",
+            "evidence": [
+              "https://github.com/mikelninh/citizen-agents",
+              "https://mikelninh.github.io/citizen-agents/"
+            ],
+            "limitations": [
+              "coverage is not yet exhaustive",
+              "hosted push delivery is not yet SLA-backed",
+              "multi-tenant B2B production boundary is not yet complete"
+            ]
+          },
+          {
+            "proof_id": "care-public-service",
+            "name": "CARE / Public Service systems",
+            "score": 72,
+            "hits": [
+              "rights",
+              "evidence",
+              "citizen",
+              "civic"
+            ],
+            "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
+            "evidence": [
+              "https://github.com/mikelninh/care-abundance-mission",
+              "https://github.com/mikelninh/public-service-passport"
+            ],
+            "limitations": [
+              "not a production Fachverfahren",
+              "formal administrative decisions must remain with authorised authorities",
+              "real institutional and delivery evidence is required"
+            ]
+          },
+          {
+            "proof_id": "gitlaw",
+            "name": "GitLaw",
+            "score": 40,
+            "hits": [],
+            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
+            "evidence": [
+              "https://github.com/mikelninh/gitlaw",
+              "https://mikelninh.github.io/gitlaw/"
+            ],
+            "limitations": [
+              "not legal advice",
+              "writes and consequential actions require human approval",
+              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
+            ]
+          },
+          {
+            "proof_id": "safetrace-master-proof",
+            "name": "SafeTrace / Master Proof",
+            "score": 24,
+            "hits": [
+              "evidence",
+              "evaluation",
+              "source"
+            ],
+            "readiness": "EVALUATED_PROOF·PROD_EVALUATED_COMPONENT_ONLY",
+            "evidence": [],
+            "limitations": [
+              "specific deployment and source connectors depend on use case",
+              "no dedicated standalone production service identified yet"
+            ]
+          }
+        ],
+        "revenue_eur": null,
+        "revenue_claimed": false,
+        "truth_boundary": {
+          "fit_is_not_formal_eligibility": true,
+          "programme_or_tender_value_is_not_revenue": true,
+          "external_action_requires_human_approval": true
+        }
+      },
+      "action_pack_v1": {
+        "schema_version": "citizen-opportunity-action-pack/1.0",
+        "opportunity_id": "opp_cerv_charter_2026",
+        "headline": "CERV 2026 Charter / Civic Space call",
+        "route": "CONSORTIUM_PARTNER",
+        "qualification_score": 82,
+        "deadline": "2026-09-15T17:00:00+02:00",
+        "buyer_or_program": "European Commission — CERV",
+        "why_now": "Opportunity is open.",
+        "matching_proofs": [
+          {
+            "id": "citizen-agents",
+            "name": "Citizen Agents",
+            "score": 100,
+            "evidence": [
+              "https://github.com/mikelninh/citizen-agents",
+              "https://mikelninh.github.io/citizen-agents/"
+            ],
+            "limitations": [
+              "coverage is not yet exhaustive",
+              "hosted push delivery is not yet SLA-backed",
+              "multi-tenant B2B production boundary is not yet complete"
+            ]
+          },
+          {
+            "id": "care-public-service",
+            "name": "CARE / Public Service systems",
+            "score": 72,
+            "evidence": [
+              "https://github.com/mikelninh/care-abundance-mission",
+              "https://github.com/mikelninh/public-service-passport"
+            ],
+            "limitations": [
+              "not a production Fachverfahren",
+              "formal administrative decisions must remain with authorised authorities",
+              "real institutional and delivery evidence is required"
+            ]
+          },
+          {
+            "id": "gitlaw",
+            "name": "GitLaw",
+            "score": 40,
+            "evidence": [
+              "https://github.com/mikelninh/gitlaw",
+              "https://mikelninh.github.io/gitlaw/"
+            ],
+            "limitations": [
+              "not legal advice",
+              "writes and consequential actions require human approval",
+              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
+            ]
+          },
+          {
+            "id": "safetrace-master-proof",
+            "name": "SafeTrace / Master Proof",
+            "score": 24,
+            "evidence": [],
+            "limitations": [
+              "specific deployment and source connectors depend on use case",
+              "no dedicated standalone production service identified yet"
+            ]
+          }
+        ],
+        "blockers": [
+          "A for-profit cannot coordinate this call; private non-profit coordinator required",
+          "Need a credible civil-society partner and proposal fit",
+          "Programme budget is not customer value"
+        ],
+        "steps": [
+          "Do not apply alone",
+          "Target 10 relevant NGOs/CSOs already preparing proposals",
+          "Offer Citizen Agents as technical work-package partner: monitoring, evidence, action windows and evaluation",
+          "Prepare one-page partner capability sheet"
+        ],
+        "next_action": "Do not apply alone",
+        "approval_gate": {
+          "required": true,
+          "reason": "Any external submission, outreach, bid or commitment is consequential."
+        },
+        "revenue_eur": null,
+        "truth_boundary": "No revenue is recorded until a contract, award or payment is evidenced."
+      },
+      "candidate_partners": [],
+      "pipeline": {
+        "opportunity_id": "opp_cerv_charter_2026",
+        "status": "FOUND",
+        "decision": "PENDING",
+        "owner": "founder",
+        "next_action": "Find an eligible civil-society consortium and offer Citizen Agents as a technical work-package partner.",
+        "outcome_revenue_eur": null,
+        "outcome_evidence": null
+      }
+    },
+    {
       "id": "missed_agentic_ai_hub_round2",
       "type": "missed_program",
       "headline": "Dogfood proof: BMDS / DigitalService Agentic AI Hub Round 2",
@@ -7662,7 +6984,7 @@
         "route": "MONITOR_NEXT_ROUND",
         "deadline": {
           "state": "EXPIRED",
-          "days": -23
+          "days": -24
         },
         "proof_matches": [
           {
@@ -7869,7 +7191,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -2
+          "days": -3
         },
         "proof_matches": [
           {
@@ -8048,6 +7370,229 @@
       }
     },
     {
+      "id": "ted_605777_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)",
+      "deadline": "2026-09-16T00:00:00+02:00",
+      "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 78,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/605777-2026"
+      ],
+      "ted": {
+        "publication_number": "605777-2026",
+        "publication_date": "2026-09-02+02:00",
+        "cpv": [
+          "73000000",
+          "73000000"
+        ]
+      },
+      "discovery_origin": "TED_AUTOMATED",
+      "qualification": {
+        "opportunity_id": "ted_605777_2026",
+        "qualification_score": 77,
+        "qualified": false,
+        "route": "REVIEW",
+        "deadline": {
+          "state": "EXPIRED",
+          "days": -1
+        },
+        "proof_matches": [
+          {
+            "proof_id": "digital-worker-factory",
+            "name": "Digital Worker Factory / OpsPilot",
+            "score": 88,
+            "hits": [
+              "digital",
+              "worker",
+              "factory",
+              "opspilot",
+              "approval",
+              "public"
+            ],
+            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
+            "evidence": [
+              "https://github.com/mikelninh/digital-worker-factory"
+            ],
+            "limitations": [
+              "shared Production Platform v1 exists and is CI-tested",
+              "each concrete product deployment still needs durable environment bindings and operating evidence",
+              "external actions remain approval-gated"
+            ]
+          },
+          {
+            "proof_id": "safetrace-master-proof",
+            "name": "SafeTrace / Master Proof",
+            "score": 67,
+            "hits": [
+              "safetrace",
+              "master",
+              "proof",
+              "public"
+            ],
+            "readiness": "EVALUATED_PROOF·PROD_EVALUATED_COMPONENT_ONLY",
+            "evidence": [],
+            "limitations": [
+              "specific deployment and source connectors depend on use case",
+              "no dedicated standalone production service identified yet"
+            ]
+          },
+          {
+            "proof_id": "care-public-service",
+            "name": "CARE / Public Service systems",
+            "score": 29,
+            "hits": [
+              "public",
+              "eligibility",
+              "approval"
+            ],
+            "readiness": "WORKING_PROTOTYPES·PROD_SHADOW_PILOT_ONLY",
+            "evidence": [
+              "https://github.com/mikelninh/care-abundance-mission",
+              "https://github.com/mikelninh/public-service-passport"
+            ],
+            "limitations": [
+              "not a production Fachverfahren",
+              "formal administrative decisions must remain with authorised authorities",
+              "real institutional and delivery evidence is required"
+            ]
+          },
+          {
+            "proof_id": "gitlaw",
+            "name": "GitLaw",
+            "score": 21,
+            "hits": [
+              "approval",
+              "public"
+            ],
+            "readiness": "WORKING_PROOF_SYSTEM·PROD_CONTROLLED_PILOT_READY",
+            "evidence": [
+              "https://github.com/mikelninh/gitlaw",
+              "https://mikelninh.github.io/gitlaw/"
+            ],
+            "limitations": [
+              "not legal advice",
+              "writes and consequential actions require human approval",
+              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
+            ]
+          }
+        ],
+        "revenue_eur": null,
+        "revenue_claimed": false,
+        "truth_boundary": {
+          "fit_is_not_formal_eligibility": true,
+          "programme_or_tender_value_is_not_revenue": true,
+          "external_action_requires_human_approval": true
+        }
+      },
+      "action_pack_v1": {
+        "schema_version": "citizen-opportunity-action-pack/1.0",
+        "opportunity_id": "ted_605777_2026",
+        "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Negative-Trust-Architekturen (Ne-Trust)",
+        "route": "REVIEW",
+        "qualification_score": 77,
+        "deadline": "2026-09-16T00:00:00+02:00",
+        "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH",
+        "why_now": "Opportunity is open.",
+        "matching_proofs": [
+          {
+            "id": "digital-worker-factory",
+            "name": "Digital Worker Factory / OpsPilot",
+            "score": 88,
+            "evidence": [
+              "https://github.com/mikelninh/digital-worker-factory"
+            ],
+            "limitations": [
+              "shared Production Platform v1 exists and is CI-tested",
+              "each concrete product deployment still needs durable environment bindings and operating evidence",
+              "external actions remain approval-gated"
+            ]
+          },
+          {
+            "id": "safetrace-master-proof",
+            "name": "SafeTrace / Master Proof",
+            "score": 67,
+            "evidence": [],
+            "limitations": [
+              "specific deployment and source connectors depend on use case",
+              "no dedicated standalone production service identified yet"
+            ]
+          },
+          {
+            "id": "care-public-service",
+            "name": "CARE / Public Service systems",
+            "score": 29,
+            "evidence": [
+              "https://github.com/mikelninh/care-abundance-mission",
+              "https://github.com/mikelninh/public-service-passport"
+            ],
+            "limitations": [
+              "not a production Fachverfahren",
+              "formal administrative decisions must remain with authorised authorities",
+              "real institutional and delivery evidence is required"
+            ]
+          },
+          {
+            "id": "gitlaw",
+            "name": "GitLaw",
+            "score": 21,
+            "evidence": [
+              "https://github.com/mikelninh/gitlaw",
+              "https://mikelninh.github.io/gitlaw/"
+            ],
+            "limitations": [
+              "not legal advice",
+              "writes and consequential actions require human approval",
+              "real law-firm validation, environment restore evidence and measured operating SLOs remain required"
+            ]
+          }
+        ],
+        "blockers": [
+          "Full procurement documents not yet reviewed",
+          "Formal suitability, references and value not yet established"
+        ],
+        "steps": [
+          "Open the official TED notice",
+          "Check scope, deadline, eligibility and references",
+          "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+          "Only after approval: prepare submission or partner outreach"
+        ],
+        "next_action": "Open the official TED notice",
+        "approval_gate": {
+          "required": true,
+          "reason": "Any external submission, outreach, bid or commitment is consequential."
+        },
+        "revenue_eur": null,
+        "truth_boundary": "No revenue is recorded until a contract, award or payment is evidenced."
+      },
+      "candidate_partners": [],
+      "pipeline": {
+        "opportunity_id": "ted_605777_2026",
+        "status": "FOUND",
+        "decision": "PENDING",
+        "next_action": "Open the official TED notice",
+        "outcome_revenue_eur": null,
+        "outcome_evidence": null
+      }
+    },
+    {
       "id": "opp_reaktor_batch9_2026",
       "type": "accelerator_grant",
       "headline": "Reaktor.Berlin Batch 9",
@@ -8082,7 +7627,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -14
+          "days": -15
         },
         "proof_matches": [
           {
@@ -8302,7 +7847,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -7
+          "days": -8
         },
         "proof_matches": [
           {
@@ -8532,7 +8077,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -7
+          "days": -8
         },
         "proof_matches": [
           {
@@ -8759,7 +8304,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -4
+          "days": -5
         },
         "proof_matches": [
           {
@@ -8981,7 +8526,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -4
+          "days": -5
         },
         "proof_matches": [
           {
@@ -9205,7 +8750,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -37
+          "days": -38
         },
         "proof_matches": [
           {
@@ -9431,7 +8976,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -18
+          "days": -19
         },
         "proof_matches": [
           {
