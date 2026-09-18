@@ -1,9 +1,77 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-17T11:45:38.122Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260818 SORT BY publication-date DESC",
+  "generated_at": "2026-09-18T11:19:26.136Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260819 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_645866_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Bereitstellung, Customizing, Betrieb sowie Weiterentwicklung eines landesweiten touristischen Datenmanagementsystems",
+      "deadline": "2026-10-15T23:59:59+02:00",
+      "buyer_or_program": "TMB Tourismus-Marketing Brandenburg GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/645866-2026"
+      ],
+      "ted": {
+        "publication_number": "645866-2026",
+        "publication_date": "2026-09-18+02:00",
+        "cpv": [
+          "72000000",
+          "48000000",
+          "72000000",
+          "48000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_645014_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Projekt \"OpenJS: AI Vulnerability Disclosure\"",
+      "deadline": null,
+      "buyer_or_program": "Sovereign Tech Agency GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/645014-2026"
+      ],
+      "ted": {
+        "publication_number": "645014-2026",
+        "publication_date": "2026-09-18+02:00",
+        "cpv": [
+          "73000000",
+          "73000000"
+        ]
+      }
+    },
     {
       "id": "ted_642749_2026",
       "type": "tender_candidate",
@@ -399,42 +467,6 @@
       }
     },
     {
-      "id": "ted_617955_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Projekt 1000 - \"Agentic AI: Prüfanforderungen für LLM-basierte agentische künstliche Intelligenz (PRAKI)\"",
-      "deadline": null,
-      "buyer_or_program": "Bundesamt für Sicherheit in der Informationstechnik",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 90,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/617955-2026"
-      ],
-      "ted": {
-        "publication_number": "617955-2026",
-        "publication_date": "2026-09-08+02:00",
-        "cpv": [
-          "72000000",
-          "72000000"
-        ]
-      }
-    },
-    {
       "id": "ted_616453_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Interne Betriebsrevision – Prüfungs- und Beratungsleistungen Interne Revision und Non-Financial Risk, Los 2: Interne Revision - IT",
@@ -469,6 +501,42 @@
           "79410000",
           "79212200",
           "79410000"
+        ]
+      }
+    },
+    {
+      "id": "ted_617955_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Projekt 1000 - \"Agentic AI: Prüfanforderungen für LLM-basierte agentische künstliche Intelligenz (PRAKI)\"",
+      "deadline": null,
+      "buyer_or_program": "Bundesamt für Sicherheit in der Informationstechnik",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 90,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/617955-2026"
+      ],
+      "ted": {
+        "publication_number": "617955-2026",
+        "publication_date": "2026-09-08+02:00",
+        "cpv": [
+          "72000000",
+          "72000000"
         ]
       }
     },
@@ -1231,45 +1299,6 @@
           "73000000",
           "73000000",
           "73000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_569980_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Dienstleistungen von Verfassern – Rahmenvertrag Erstellung von DAAD-Veröffentlichungen (Print-, Online- und Multimedia): Konzeption, Redaktion, Gestaltung, Lektorat, Übersetzung, Satz etc.",
-      "deadline": null,
-      "buyer_or_program": "Deutscher Akademischer Austauschdienst e. V.",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/569980-2026"
-      ],
-      "ted": {
-        "publication_number": "569980-2026",
-        "publication_date": "2026-08-18+02:00",
-        "cpv": [
-          "92312210",
-          "79822500",
-          "92110000",
-          "92312210",
-          "79822500",
-          "92110000"
         ]
       }
     }
