@@ -1,9 +1,9 @@
 {
   "schema_version": "citizen-founder-opportunity-api/1.0",
-  "generated_at": "2026-09-19T11:03:17.753Z",
+  "generated_at": "2026-09-20T11:28:07.565Z",
   "discovery": {
-    "ted_generated_at": "2026-09-19T11:03:17.126Z",
-    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260820 SORT BY publication-date DESC"
+    "ted_generated_at": "2026-09-20T11:28:07.085Z",
+    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260821 SORT BY publication-date DESC"
   },
   "profile": {
     "name": "Citizen Agents / Michael Ninh",
@@ -68,7 +68,7 @@
         "route": "PARTNER_FIRST",
         "deadline": {
           "state": "CRITICAL",
-          "days": 3
+          "days": 2
         },
         "proof_matches": [
           {
@@ -367,7 +367,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "URGENT",
-          "days": 5
+          "days": 4
         },
         "proof_matches": [
           {
@@ -2187,7 +2187,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 9
+          "days": 8
         },
         "proof_matches": [
           {
@@ -2866,7 +2866,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "CRITICAL",
-          "days": 3
+          "days": 2
         },
         "proof_matches": [
           {
@@ -3092,7 +3092,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 10
+          "days": 9
         },
         "proof_matches": [
           {
@@ -3322,7 +3322,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 11
+          "days": 10
         },
         "proof_matches": [
           {
@@ -3544,7 +3544,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 12
+          "days": 11
         },
         "proof_matches": [
           {
@@ -3768,7 +3768,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 17
+          "days": 16
         },
         "proof_matches": [
           {
@@ -3992,7 +3992,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 27
+          "days": 26
         },
         "proof_matches": [
           {
@@ -5997,7 +5997,7 @@
         "route": "SUBCONTRACT_OR_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -8
+          "days": -9
         },
         "proof_matches": [
           {
@@ -6297,7 +6297,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -3
+          "days": -4
         },
         "proof_matches": [
           {
@@ -6518,7 +6518,7 @@
         "route": "MONITOR_NEXT_ROUND",
         "deadline": {
           "state": "EXPIRED",
-          "days": -26
+          "days": -27
         },
         "proof_matches": [
           {
@@ -6725,7 +6725,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -5
+          "days": -6
         },
         "proof_matches": [
           {
@@ -6946,7 +6946,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -3
+          "days": -4
         },
         "proof_matches": [
           {
@@ -7161,7 +7161,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -17
+          "days": -18
         },
         "proof_matches": [
           {
@@ -7381,7 +7381,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -10
+          "days": -11
         },
         "proof_matches": [
           {
@@ -7611,7 +7611,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -10
+          "days": -11
         },
         "proof_matches": [
           {
@@ -7838,7 +7838,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -7
+          "days": -8
         },
         "proof_matches": [
           {
@@ -8060,7 +8060,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -7
+          "days": -8
         },
         "proof_matches": [
           {
@@ -8284,7 +8284,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -40
+          "days": -41
         },
         "proof_matches": [
           {
@@ -8510,7 +8510,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -21
+          "days": -22
         },
         "proof_matches": [
           {
@@ -8741,7 +8741,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -1
+          "days": -2
         },
         "proof_matches": [
           {
