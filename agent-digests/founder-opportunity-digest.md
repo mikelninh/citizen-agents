@@ -1,16 +1,16 @@
 # Founder Opportunity Digest
-Generated: 2026-09-20T11:28:07.565Z
-Open: **26** · Qualified: **6** · Automated new: **32** · Partner-route: **2** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-09-21T12:52:38.965Z
+Open: **27** · Qualified: **6** · Automated new: **33** · Partner-route: **2** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## BSI PRAKI — Prüfanforderungen für LLM-basierte Agentic AI
-**Origin:** CURATED · **Score:** 96/100 · **Route:** PARTNER_FIRST · **2d left** · **Pipeline:** FOUND
+**Origin:** CURATED · **Score:** 96/100 · **Route:** PARTNER_FIRST · **1d left** · **Pipeline:** FOUND
 **Why fit:** The tender asks for Agentic-AI use cases and test requirements. Existing work on tool compliance, human approval, replayability, evals, evidence and trust boundaries maps unusually well to the brief.
 **Best proof:** Digital Worker Factory / OpsPilot
 **First candidate partner to qualify:** msg Public Sector
 **Next action:** Review full suitability and procurement requirements, then choose direct-bid vs partner-first route.
 **Approval:** required before external action
 ## Horizon Europe 2026 — Democracy and Governance
-**Origin:** CURATED · **Score:** 83/100 · **Route:** CONSORTIUM_PARTNER · **4d left** · **Pipeline:** FOUND
+**Origin:** CURATED · **Score:** 84/100 · **Route:** CONSORTIUM_PARTNER · **3d left** · **Pipeline:** FOUND
 **Why fit:** Citizen Agents can be a technical demonstrator/data/evaluation work package for research consortia studying democratic governance, trust, rights and information integrity.
 **Best proof:** Citizen Agents
 **Next action:** Find an existing consortium with an exact topic fit; do not lead a new consortium this late.
@@ -45,6 +45,12 @@ Open: **26** · Qualified: **6** · Automated new: **32** · Partner-route: **2*
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
+## Deutschland – Softwarepaket und Informationssysteme – Legal AI Workspace
+**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **7d left** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched GitLaw. Full requirements still need review.
+**Best proof:** GitLaw
+**Next action:** Open the official TED notice
+**Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Beratungsleistungen für das Format Digi-Expert-kommunal für das Hessische Ministerium für Digitalisierung und Innovation in zwei Losen
 **Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
@@ -55,12 +61,6 @@ Open: **26** · Qualified: **6** · Automated new: **32** · Partner-route: **2*
 **Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Softwarepaket und Informationssysteme – Legal AI Workspace
-**Origin:** TED_AUTOMATED · **Score:** 64/100 · **Route:** REVIEW · **8d left** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched GitLaw. Full requirements still need review.
-**Best proof:** GitLaw
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Sicherheitssoftwarepaket – Extended Detection & Response (XDR) – Lösung
@@ -76,19 +76,19 @@ Open: **26** · Qualified: **6** · Automated new: **32** · Partner-route: **2*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Veranstaltung von Seminaren – 10017643-Personal Data Protection Centre-Support Plan
-**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **1d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Entwicklung von kundenspezifischer Software – Entwicklung und Implementierung KI-gestützter Besucherguide
-**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **9d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **8d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Studie Zukunftsprojektion und Entwicklungspotentiale der Kultur- und Kreativwirtschaft 2037
-**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **10d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **9d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
