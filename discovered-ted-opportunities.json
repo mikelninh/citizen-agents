@@ -1,9 +1,118 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-21T12:52:38.498Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260822 SORT BY publication-date DESC",
+  "generated_at": "2026-09-22T11:42:38.108Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260823 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_653286_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Maschinen für allgemeine und besondere Zwecke – Beschaffung von ferngesteuerten Unterwasserrobotern (ROV) für das DFKI Robotics Innovation Center",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Forschungszentrum für Künstliche Intelligenz GmbH (DFKI)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 62,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/653286-2026"
+      ],
+      "ted": {
+        "publication_number": "653286-2026",
+        "publication_date": "2026-09-22+02:00",
+        "cpv": [
+          "42900000",
+          "42900000"
+        ]
+      }
+    },
+    {
+      "id": "ted_652216_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie",
+      "deadline": "2026-10-12T23:59:59+02:00",
+      "buyer_or_program": "Universitätsklinikum Aachen AöR",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/652216-2026"
+      ],
+      "ted": {
+        "publication_number": "652216-2026",
+        "publication_date": "2026-09-22+02:00",
+        "cpv": [
+          "38000000",
+          "38000000",
+          "38000000",
+          "38000000",
+          "38000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_651380_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Softwarepaket und Informationssysteme – Legal AI Workspace",
+      "deadline": "2026-09-28T11:00:00+02:00",
+      "buyer_or_program": "KfW Bankengruppe",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "GitLaw"
+      ],
+      "why_fit": "Keyword-level discovery matched GitLaw. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/651380-2026"
+      ],
+      "ted": {
+        "publication_number": "651380-2026",
+        "publication_date": "2026-09-22+02:00",
+        "cpv": [
+          "48000000",
+          "48000000"
+        ]
+      }
+    },
     {
       "id": "ted_648921_2026",
       "type": "tender_candidate",
@@ -500,42 +609,6 @@
       }
     },
     {
-      "id": "ted_617955_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Projekt 1000 - \"Agentic AI: Prüfanforderungen für LLM-basierte agentische künstliche Intelligenz (PRAKI)\"",
-      "deadline": null,
-      "buyer_or_program": "Bundesamt für Sicherheit in der Informationstechnik",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 90,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/617955-2026"
-      ],
-      "ted": {
-        "publication_number": "617955-2026",
-        "publication_date": "2026-09-08+02:00",
-        "cpv": [
-          "72000000",
-          "72000000"
-        ]
-      }
-    },
-    {
       "id": "ted_616453_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Interne Betriebsrevision – Prüfungs- und Beratungsleistungen Interne Revision und Non-Financial Risk, Los 2: Interne Revision - IT",
@@ -684,6 +757,39 @@
       }
     },
     {
+      "id": "ted_605034_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS",
+      "deadline": "2026-09-30T23:59:59+02:00",
+      "buyer_or_program": "Eberhard Karls Universität Tübingen",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/605034-2026"
+      ],
+      "ted": {
+        "publication_number": "605034-2026",
+        "publication_date": "2026-09-02+02:00",
+        "cpv": [
+          "30211100",
+          "30211100"
+        ]
+      }
+    },
+    {
       "id": "ted_604737_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – IT-Roadmap der Sächsischen Krankenhäuser und des Haus am Karswald: Ist-Analyse, Zielbild und Umsetzungskonzept",
@@ -716,39 +822,6 @@
         "cpv": [
           "72000000",
           "72000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_605034_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS",
-      "deadline": "2026-09-30T23:59:59+02:00",
-      "buyer_or_program": "Eberhard Karls Universität Tübingen",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/605034-2026"
-      ],
-      "ted": {
-        "publication_number": "605034-2026",
-        "publication_date": "2026-09-02+02:00",
-        "cpv": [
-          "30211100",
-          "30211100"
         ]
       }
     },
@@ -1146,42 +1219,6 @@
         "cpv": [
           "31710000",
           "31710000"
-        ]
-      }
-    },
-    {
-      "id": "ted_584449_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Projekt 1000 - \"Agentic AI: Prüfanforderungen für LLM-basierte agentische künstliche Intelligenz (PRAKI)\"",
-      "deadline": null,
-      "buyer_or_program": "Bundesamt für Sicherheit in der Informationstechnik",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 90,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/584449-2026"
-      ],
-      "ted": {
-        "publication_number": "584449-2026",
-        "publication_date": "2026-08-25+02:00",
-        "cpv": [
-          "72000000",
-          "72000000"
         ]
       }
     },
