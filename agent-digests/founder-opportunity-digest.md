@@ -1,13 +1,7 @@
 # Founder Opportunity Digest
-Generated: 2026-09-24T11:49:56.324Z
-Open: **29** · Qualified: **6** · Automated new: **36** · Partner-route: **1** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-09-25T11:54:26.046Z
+Open: **26** · Qualified: **5** · Automated new: **33** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
-## Horizon Europe 2026 — Democracy and Governance
-**Origin:** CURATED · **Score:** 84/100 · **Route:** CONSORTIUM_PARTNER · **0d left** · **Pipeline:** FOUND
-**Why fit:** Citizen Agents can be a technical demonstrator/data/evaluation work package for research consortia studying democratic governance, trust, rights and information integrity.
-**Best proof:** Citizen Agents
-**Next action:** Find an existing consortium with an exact topic fit; do not lead a new consortium this late.
-**Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – IT-Roadmap der Sächsischen Krankenhäuser und des Haus am Karswald: Ist-Analyse, Zielbild und Umsetzungskonzept
 **Origin:** TED_AUTOMATED · **Score:** 73/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems, CareOS. Full requirements still need review.
@@ -45,13 +39,13 @@ Open: **29** · Qualified: **6** · Automated new: **36** · Partner-route: **1*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – Legal AI Workspace
-**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **4d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **3d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched GitLaw. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – Legal AI Workspace
-**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **4d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **3d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched GitLaw. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
@@ -81,7 +75,7 @@ Open: **29** · Qualified: **6** · Automated new: **36** · Partner-route: **1*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie
-**Origin:** TED_AUTOMATED · **Score:** 58/100 · **Route:** REVIEW · **19d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 58/100 · **Route:** REVIEW · **18d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
@@ -90,5 +84,11 @@ Open: **29** · Qualified: **6** · Automated new: **36** · Partner-route: **1*
 **Origin:** TED_AUTOMATED · **Score:** 57/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Entwicklung von kundenspezifischer Software – Entwicklung und Implementierung KI-gestützter Besucherguide
+**Origin:** TED_AUTOMATED · **Score:** 54/100 · **Route:** REVIEW · **4d left** · **Pipeline:** FOUND
+**Why fit:** AI-related German procurement candidate requiring manual qualification.
+**Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action

@@ -1,9 +1,51 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-24T11:49:55.586Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260825 SORT BY publication-date DESC",
+  "generated_at": "2026-09-25T11:54:25.387Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260826 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_661336_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Systemberatung – Application Management",
+      "deadline": "2026-09-18T12:00:00+02:00",
+      "buyer_or_program": "BEW Berliner Energie und Wärme GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/661336-2026"
+      ],
+      "ted": {
+        "publication_number": "661336-2026",
+        "publication_date": "2026-09-25+02:00",
+        "cpv": [
+          "72246000",
+          "72222200",
+          "72222300",
+          "72224100",
+          "72246000",
+          "72246000",
+          "72246000",
+          "72246000",
+          "72246000",
+          "72246000",
+          "72246000"
+        ]
+      }
+    },
     {
       "id": "ted_659569_2026",
       "type": "tender_candidate",
@@ -531,39 +573,6 @@
       }
     },
     {
-      "id": "ted_624283_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – KI im Secure Software Development Life Cycle (KISDL)",
-      "deadline": "2026-09-11T23:59:00+02:00",
-      "buyer_or_program": "Bundesamt für Sicherheit in der Informationstechnik",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 58,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/624283-2026"
-      ],
-      "ted": {
-        "publication_number": "624283-2026",
-        "publication_date": "2026-09-10+02:00",
-        "cpv": [
-          "72000000",
-          "72000000"
-        ]
-      }
-    },
-    {
       "id": "ted_624763_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Supercomputer – Rahmenvereinbarung - Hochleistungsrechner",
@@ -860,6 +869,39 @@
       }
     },
     {
+      "id": "ted_605034_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS",
+      "deadline": "2026-09-30T23:59:59+02:00",
+      "buyer_or_program": "Eberhard Karls Universität Tübingen",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/605034-2026"
+      ],
+      "ted": {
+        "publication_number": "605034-2026",
+        "publication_date": "2026-09-02+02:00",
+        "cpv": [
+          "30211100",
+          "30211100"
+        ]
+      }
+    },
+    {
       "id": "ted_604737_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – IT-Roadmap der Sächsischen Krankenhäuser und des Haus am Karswald: Ist-Analyse, Zielbild und Umsetzungskonzept",
@@ -892,39 +934,6 @@
         "cpv": [
           "72000000",
           "72000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_605034_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS",
-      "deadline": "2026-09-30T23:59:59+02:00",
-      "buyer_or_program": "Eberhard Karls Universität Tübingen",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/605034-2026"
-      ],
-      "ted": {
-        "publication_number": "605034-2026",
-        "publication_date": "2026-09-02+02:00",
-        "cpv": [
-          "30211100",
-          "30211100"
         ]
       }
     },
@@ -1221,107 +1230,6 @@
           "45332000",
           "45332400",
           "45332000"
-        ]
-      }
-    },
-    {
-      "id": "ted_587912_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – KI im Secure Software Development Life Cycle (KISDL)",
-      "deadline": "2026-09-11T23:59:00+02:00",
-      "buyer_or_program": "Bundesamt für Sicherheit in der Informationstechnik",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 58,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/587912-2026"
-      ],
-      "ted": {
-        "publication_number": "587912-2026",
-        "publication_date": "2026-08-26+02:00",
-        "cpv": [
-          "72000000",
-          "72000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_585906_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Lehrmittel und -geräte – Beschaffung einer \"didaktischen Schulungswand\" - Los 2",
-      "deadline": null,
-      "buyer_or_program": "Handwerkskammer der Pfalz",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/585906-2026"
-      ],
-      "ted": {
-        "publication_number": "585906-2026",
-        "publication_date": "2026-08-25+02:00",
-        "cpv": [
-          "39162200",
-          "32322000",
-          "39162200",
-          "32322000"
-        ]
-      }
-    },
-    {
-      "id": "ted_584743_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Elektronische Ausstattung – Beschaffung einer \"didaktischen Schulungswand\" - Zubehör (Los 5)",
-      "deadline": null,
-      "buyer_or_program": "Handwerkskammer der Pfalz",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/584743-2026"
-      ],
-      "ted": {
-        "publication_number": "584743-2026",
-        "publication_date": "2026-08-25+02:00",
-        "cpv": [
-          "31710000",
-          "31710000"
         ]
       }
     }
