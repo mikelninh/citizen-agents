@@ -1,9 +1,9 @@
 {
   "schema_version": "citizen-founder-opportunity-api/1.0",
-  "generated_at": "2026-09-26T11:28:20.159Z",
+  "generated_at": "2026-09-27T12:06:27.557Z",
   "discovery": {
-    "ted_generated_at": "2026-09-26T11:28:19.647Z",
-    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260827 SORT BY publication-date DESC"
+    "ted_generated_at": "2026-09-27T12:06:27.005Z",
+    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260828 SORT BY publication-date DESC"
   },
   "profile": {
     "name": "Citizen Agents / Michael Ninh",
@@ -1437,7 +1437,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "CRITICAL",
-          "days": 2
+          "days": 1
         },
         "proof_matches": [
           {
@@ -1664,7 +1664,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "CRITICAL",
-          "days": 2
+          "days": 1
         },
         "proof_matches": [
           {
@@ -2808,7 +2808,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 17
+          "days": 16
         },
         "proof_matches": [
           {
@@ -3263,7 +3263,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "CRITICAL",
-          "days": 3
+          "days": 2
         },
         "proof_matches": [
           {
@@ -3488,12 +3488,12 @@
       "discovery_origin": "TED_AUTOMATED",
       "qualification": {
         "opportunity_id": "ted_622567_2026",
-        "qualification_score": 54,
+        "qualification_score": 55,
         "qualified": false,
         "route": "REVIEW",
         "deadline": {
-          "state": "URGENT",
-          "days": 4
+          "state": "CRITICAL",
+          "days": 3
         },
         "proof_matches": [
           {
@@ -3586,10 +3586,10 @@
         "opportunity_id": "ted_622567_2026",
         "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Studie Zukunftsprojektion und Entwicklungspotentiale der Kultur- und Kreativwirtschaft 2037",
         "route": "REVIEW",
-        "qualification_score": 54,
+        "qualification_score": 55,
         "deadline": "2026-09-29T23:59:00+02:00",
         "buyer_or_program": "Bundesministerium für Wirtschaft und Energie",
-        "why_now": "Deadline is within seven days.",
+        "why_now": "Deadline is within three days.",
         "matching_proofs": [
           {
             "id": "care-public-service",
@@ -3715,7 +3715,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "URGENT",
-          "days": 5
+          "days": 4
         },
         "proof_matches": [
           {
@@ -3939,7 +3939,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 10
+          "days": 9
         },
         "proof_matches": [
           {
@@ -4163,7 +4163,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 20
+          "days": 19
         },
         "proof_matches": [
           {
@@ -4419,7 +4419,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 21
+          "days": 20
         },
         "proof_matches": [
           {
@@ -5758,7 +5758,7 @@
         "route": "PARTNER_FIRST",
         "deadline": {
           "state": "EXPIRED",
-          "days": -4
+          "days": -5
         },
         "proof_matches": [
           {
@@ -6058,7 +6058,7 @@
         "route": "SUBCONTRACT_OR_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -15
+          "days": -16
         },
         "proof_matches": [
           {
@@ -6358,7 +6358,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -10
+          "days": -11
         },
         "proof_matches": [
           {
@@ -6579,7 +6579,7 @@
         "route": "MONITOR_NEXT_ROUND",
         "deadline": {
           "state": "EXPIRED",
-          "days": -33
+          "days": -34
         },
         "proof_matches": [
           {
@@ -6786,7 +6786,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -12
+          "days": -13
         },
         "proof_matches": [
           {
@@ -7007,7 +7007,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -10
+          "days": -11
         },
         "proof_matches": [
           {
@@ -7223,7 +7223,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -2
+          "days": -3
         },
         "proof_matches": [
           {
@@ -7437,7 +7437,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -24
+          "days": -25
         },
         "proof_matches": [
           {
@@ -7657,7 +7657,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -17
+          "days": -18
         },
         "proof_matches": [
           {
@@ -7887,7 +7887,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -17
+          "days": -18
         },
         "proof_matches": [
           {
@@ -8116,7 +8116,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -47
+          "days": -48
         },
         "proof_matches": [
           {
@@ -8342,7 +8342,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -28
+          "days": -29
         },
         "proof_matches": [
           {
@@ -8573,7 +8573,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -8
+          "days": -9
         },
         "proof_matches": [
           {
@@ -8796,7 +8796,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -4
+          "days": -5
         },
         "proof_matches": [
           {
