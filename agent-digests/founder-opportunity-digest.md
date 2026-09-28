@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-09-27T12:06:27.557Z
-Open: **25** · Qualified: **5** · Automated new: **32** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-09-28T14:00:07.291Z
+Open: **24** · Qualified: **5** · Automated new: **30** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – IT-Roadmap der Sächsischen Krankenhäuser und des Haus am Karswald: Ist-Analyse, Zielbild und Umsetzungskonzept
 **Origin:** TED_AUTOMATED · **Score:** 73/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -39,13 +39,13 @@ Open: **25** · Qualified: **5** · Automated new: **32** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – Legal AI Workspace
-**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **1d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **0d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched GitLaw. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – Legal AI Workspace
-**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **1d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **0d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched GitLaw. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
@@ -68,14 +68,8 @@ Open: **25** · Qualified: **5** · Automated new: **32** · Partner-route: **0*
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – Sicherheitssoftwarepaket – Extended Detection & Response (XDR) – Lösung
-**Origin:** TED_AUTOMATED · **Score:** 63/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
-**Best proof:** CareOS
-**Next action:** Open the official TED notice
-**Approval:** required before external action
 ## Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie
-**Origin:** TED_AUTOMATED · **Score:** 58/100 · **Route:** REVIEW · **16d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 58/100 · **Route:** REVIEW · **15d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
@@ -87,6 +81,12 @@ Open: **25** · Qualified: **5** · Automated new: **32** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Entwicklung von kundenspezifischer Software – Entwicklung und Implementierung KI-gestützter Besucherguide
+**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **1d left** · **Pipeline:** FOUND
+**Why fit:** AI-related German procurement candidate requiring manual qualification.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Studie Zukunftsprojektion und Entwicklungspotentiale der Kultur- und Kreativwirtschaft 2037
 **Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
