@@ -1,0 +1,40 @@
+{
+  "agent": "meat-dairy",
+  "title": "Meat-Dairy Watch",
+  "date": "2026-08-19",
+  "generated_at": "2026-08-19T14:35:00+02:00",
+  "country": "DE/EU",
+  "focus": "meat & dairy industry lobbying, subsidies, policy, science",
+  "items": 4,
+  "lobby_entries": 3,
+  "subsidies_eur": "6.9 Mrd. EUR (GAP DE, HHJ 2024/25, ~301.000 Beguenstigte)",
+  "highlights": [
+    "Tierhaltungskennzeichnung Pflicht erneut verschoben auf 1. Maerz 2026 (zuvor 1. Aug 2025); BMV (R001861) & VDF (R001757) lobbyieren dazu",
+    "EU-Agrarsubventionen DE 2024/25: ~6,9 Mrd. EUR an ~301.000 Betriebe; ~80-82% (umstritten) an Tierhaltung/Milch gebunden",
+    "Tierhaltung = ~66% der EU-landwirtschaftlichen Treibhausgase; ~8,2 Mio. t Methan/Jahr (76% enterisch, 22% Guelle)",
+    "Antibiotika-Ziel Farm-to-Fork: -50% bis 2030; Nature Comms 2025 Szenarien +14,2% bis -56,8%"
+  ],
+  "sources": [
+    "https://www.bmleh.de/SharedDocs/Pressemitteilungen/DE/2025/041-tierhaltungskennzeichnung.html",
+    "https://www.lobbyregister.bundestag.de/suche/R001861",
+    "https://www.lobbyregister.bundestag.de/suche/R001757",
+    "https://www.bmleh.de/SharedDocs/Pressemitteilungen/DE/2025/043-agrarzahlungen.html",
+    "https://www.agrarzahlungen.de/",
+    "https://www.agrarheute.com/management/finanzen/80-aller-subventionen-fuer-tierhaltung-milchmaedchenrechnung-618711",
+    "https://www.catf.us/resource/integrating-agricultural-development-methane-mitigation-eu-livestock-strategy/",
+    "https://events.euractiv.com/event/info/reducing-the-use-of-antibiotics-in-the-meat-sector",
+    "https://www.nature.com/articles/s41467-025-56825-7"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents (fresh)",
+    "created dated branch agent/meat-dairy-2026-08-19",
+    "researched lobbying, subsidies, policy, science via web_search/web_extract",
+    "wrote agent-digests/meat-dairy-2026-08-19.md (bilingual DE+EN, 4 items)",
+    "wrote agent-logs/meat-dairy-2026-08-19.json",
+    "committed digest + log on branch",
+    "pushed branch to origin",
+    "opened PR against main (human review only; NOT merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/meat-dairy-2026-08-19"
+}
