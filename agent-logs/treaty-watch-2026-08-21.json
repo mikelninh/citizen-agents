@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-21",
+  "findings": 5,
+  "regions": ["Europe", "Middle East", "Africa"],
+  "highlights": [
+    "Türkiye Child Protection Law changes could expose child offenders to life imprisonment (CRC) — UN High Commissioner deplores, 13 Aug 2026",
+    "Lebanon abolishes death penalty — first in its region (right to life / ICCPR), 11 Aug 2026",
+    "Zambia: UN concern over arbitrary arrests of opposition members around 13 Aug election (ICCPR)",
+    "ECHR Grand Chamber to deliver Kavala v. Türkiye (no. 2) on 25 Aug 2026 (ECHR Arts 5/10/18)",
+    "Council of Europe Committee of Ministers took decisions on executing ECHR rulings in 24 countries, 12 Jun 2026"
+  ],
+  "sources": [
+    "https://www.ohchr.org/en/press-releases/2026/08/turkiye-un-human-rights-chief-deplores-legal-changes-could-subject-children",
+    "https://www.ohchr.org/en/press-releases/2026/08/lebanon-abolition-death-penalty",
+    "https://www.ohchr.org/en/statements-and-speeches/2026/08/zambia-turk-expresses-concern-over-arrests-opposition-members",
+    "https://www.echr.coe.int/ (Kavala v. Türkiye no. 2, delivery 25 Aug 2026)",
+    "https://www.coe.int/en/web/portal/-/implementing-echr-rulings-new-decisions-concerning-24-countries-taken"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/treaty-watch-2026-08-21",
+    "Researched OHCHR, ECHR and Council of Europe sources",
+    "Wrote agent-digests/treaty-watch-2026-08-21.md (5 bilingual DE/EN findings)",
+    "Wrote agent-logs/treaty-watch-2026-08-21.json",
+    "Committed and pushed branch",
+    "Opened PR to main (human review only — agent will NOT merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/treaty-watch-2026-08-21"
+}
