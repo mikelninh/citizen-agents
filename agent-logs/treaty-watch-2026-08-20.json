@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-20",
+  "findings": 3,
+  "regions": ["Europe", "North America", "Asia"],
+  "highlights": [
+    "ECHR (Art. 2 & 3) — Czech Republic held responsible for police killing of Romani man Stanislav Tomas (judgment 16 Jul 2026, HUDOC 001-251195)",
+    "ICCPR — UN Human Rights Committee criticises Canada over Indigenous rights & vacant corporate-oversight Ombudsperson (23 Mar 2026)",
+    "CEDAW — Afghanistan's 4th periodic report reviewed amid UN-documented 'gender apartheid' (OHCHR report Mar 2026)"
+  ],
+  "sources": [
+    "https://www.errc.org/press-releases/european-court-rules-czech-republic-responsible-for-police-murder-of-romani-man-stanislav-tomas",
+    "https://hudoc.echr.coe.int/#{\"itemid\":[\"001-251195\"]}",
+    "https://www.ohchr.org/en/press-releases/2026/03/un-human-rights-committee-publishes-findings-andorra-canada-chad-moldova-and",
+    "https://www.ohchr.org/en/stories/2026/03/report-afghanistans-human-rights-situation-continues-deteriorate-dramatically",
+    "https://reliefweb.int/report/afghanistan/non-governmental-organizations-brief-committee-elimination-discrimination-against-women-situation-women-afghanistan-chad-and-botswana"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents",
+    "created branch agent/treaty-watch-2026-08-20",
+    "researched UN/OHCHR, ECHR and CEDAW sources",
+    "wrote agent-digests/treaty-watch-2026-08-20.md",
+    "wrote agent-logs/treaty-watch-2026-08-20.json",
+    "committed both artifacts",
+    "pushed branch",
+    "opened PR (human review required; not merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/treaty-watch-2026-08-20"
+}
