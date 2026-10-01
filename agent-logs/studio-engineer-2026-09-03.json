@@ -1,0 +1,34 @@
+{
+  "date": "2026-09-03",
+  "changes": [
+    {
+      "file": "experiences/little-planet/src/shared/match.js",
+      "what": "Landed the soak→bubble terminal in the shared MatchSim: added soak field, bubbledUntil, terminal field, _drainSoak (movement drains, still builds), _soak handler (fills soak → bubble at cap, one terminal at a time with the lethal down lane), SOAK Cap constants, and snapshot fields sk/bd/be/td/tb.",
+      "why": "Directive 2 — the Director's 2026-09-01 brief called for the soak→bubble rule to live in shared match.js so it runs identically online and offline, and to coexist with the lethal HP lane. Previously soak had no home in match.js at all; the whole soak semantics lived only in client-side match-mode.js with no shared rule."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/weapons/saber.js",
+      "what": "Gave the Verdant Blade a stamina resource: SABER now exports staminaMax 100, swingCost 35, regenPerSec 0.35; Saber class tracks stamina + staminaRegenUntil, exposes staminaReady, gates startSwing on stamina, pays stamina on a successful swing, and pauses regen briefly during the swing commitment. Whiffing is free (no stamina cost) but the recovery window is still the commitment cost.",
+      "why": "Directive 1 — the Director's brief called for the saber to be a resource weapon so melee has a real identity (pacing/footwork, not click-speed DPS). The tuning mirrors the petalbow's 2-3 shots per charge so both families share a visible resource the other can pressure."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/match-mode.js",
+      "what": "Wired the saber swing through the new shared soak path: leafblade swing now sends {type:'soak', target, soak} instead of {type:'hit', damage}; added _isBubbled(st) helper; hud() reads the shared soak field (sk) instead of deriving it from HP, marks alive false while bubbled, and filters alivePerTeam to non-bubbled players; _handleEvents gains a 'bubble' case (alive=true, hp=100, canMove=false, chat message); saber hum pauses while bubbled; per-round reset clears bubbled/bubbleUntil; normalise() reads sk/bd fields.",
+      "why": "Directives 1+2 — the saber swing must route through the shared soak system so the bubble terminal is the real resolution, and the HUD/state must reflect the shared soak+bubble state instead of the old HP-derivation trick."
+    },
+    {
+      "file": "README.md",
+      "what": "Expanded the Little Planet section: documented the three combat families (Tactical carbine = hitscan HP, Splat Brawl = projectile tools soak→bubble, Melee Saber = energy sword with stamina), added the one-terminal-at-a-time interaction note, and clarified that both weapon families are first-class in match mode.",
+      "why": "Directive 3 — the Director's brief said the README must stop describing the PvP game as just 'hitscan gunplay' now that BOTH is the decision. A new player should see melee saber AND ranged projectiles are both real, first-class combat systems."
+    }
+  ],
+  "build_passed": true,
+  "directives_done": [
+    "Directive 1 — Saber gets a stamina resource (melee identity): implemented in saber.js (stamina gate, cost on swing, regen, staminaReady).",
+    "Directive 2 — Land the soak→bubble rule in match.js (shared rules, not client-only): implemented in match.js (soak field, _drainSoak, _soak, bubble terminal, one-terminal-at-a-time, snapshot fields).",
+    "Directive 3 — README status table reflects 'both' and the combat identity: implemented in README.md (Little Planet section now lists all three combat families with their resolution mechanics)."
+  ],
+  "challenge_for_mikel": "Stamina or heat for the saber? I implemented stamina (my recommendation from the 2026-09-01 brief): 100 stamina, 35 per swing, 0.35/s regen → ~2-3 swings per bar, ~2.5s to full regen. Whiffing is free — the cost of committing wrong is the recovery window, not the stamina. The deeper question I'm leaving for you: does the saber parry? I dropped it for scope (a parry is a second timing skill on top of stamina + swing timing). If you want the saber to feel more like a Nostale melee with counterplay, parry is the next enrichment. If you want it to feel more like a Smash power weapon, heat (overheat → vent) might suit better than stamina. Pick one and I'll tune the HUD and the swing feel around it.",
+  "repo": "bla-keks-world",
+  "branch": "studio/engineer-2026-09-03"
+}
