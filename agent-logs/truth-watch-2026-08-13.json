@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-13",
+  "items": 4,
+  "narratives": [
+    "After the Berlin CSD terror attack, out-of-context videos (a Toronto shooting mislabeled as Berlin CSD) and AI-generated 'reaction' clips spread as if real.",
+    "A forged DW broadcast video falsely claimed Chancellor Friedrich Merz would resign on 10 August, citing fake Handelsblatt/CDU sources (attributed to Russia-linked Storm-1516).",
+    "Misleading claim that the EU Digital Services Act is 'just paper' with no consequences — contradicted by a July 2026 wave of enforcement decisions.",
+    "False claim that the MMR vaccine is unsafe and that splitting the combo shot reduces autism (no evidence; decades of studies)."
+  ],
+  "debunks": [
+    "DW Faktencheck/ARD-faktenfinder (27.07.2026): video shows Toronto's 11 July Salsa on St. Clair shooting; 'arrest' clip is unrelated; reaction clips are AI-labeled fakes.",
+    "DW Faktencheck (07.08.2026): video is media spoofing; Handelsblatt and CDU deny any such correspondence; no September Bundestag election.",
+    "TechPolicy.Press (06.08.2026) + EC press corner: Instagram/Facebook (addictive design), TikTok (minor safety), X (compliance plan), AliExpress (EUR 550M fine) all acted on under DSA.",
+    "FactCheck.org (Aug 2026): no evidence for MMR- autism claim; vaccine well-studied for decades; splitting could discourage vaccination."
+  ],
+  "sources": [
+    "https://www.dw.com/de/csd-berlin-anschlag-2026-attentat-fake-news-faktencheck-social-media-soziale-medien-videos/a-78130619",
+    "https://www.dw.com/de/spoofing-dw-beitrag-bundeskanzler-merz-cdu-ruecktritt-fake-news-desinformationskampagne-matrjoschka/a-78274248",
+    "https://www.handelsblatt.com/politik/deutschland/handelsblatt-in-eigener-sache-gefaelschtes-merz-video-im-umlauf/100245619.html",
+    "https://www.bnd.bund.de/DE/Service/Public-Intelligence/_functions/20251212-attribuierung-storm-1516-sa.html",
+    "https://techpolicy.press/europes-summer-of-digital-services-act-enforcement-targets-platform-design",
+    "https://digital-strategy.ec.europa.eu/en/policies/digital-services-act",
+    "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1579",
+    "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1654",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminary-finds-tiktok-breach-digital-services-act-failing-ensure-safe-accounts-minors",
+    "https://www.factcheck.org/2026/08/trumps-false-mmr-vaccine-claims/",
+    "https://www.factcheck.org/2026/08/trump-and-rfk-jr-repeat-false-and-misleading-vaccine-claims/",
+    "https://www.statnews.com/2026/08/11/trump-executive-order-vaccines-undecided-parents-trust/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents to temp dir",
+    "Created branch agent/truth-watch-2026-08-13",
+    "Researched fact-checker outputs (DW, AFP, FactCheck.org, Full Fact) and EU DSA enforcement (July 2026)",
+    "Wrote agent-digests/truth-watch-2026-08-13.md (4 bilingual items, each with debunk + sources)",
+    "Wrote agent-logs/truth-watch-2026-08-13.json",
+    "Committed digest + log on branch",
+    "Pushed branch to origin",
+    "Opened PR against main (human review only; agent will NOT merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/truth-watch-2026-08-13"
+}
