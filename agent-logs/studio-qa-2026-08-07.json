@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-07",
+  "repo": "bla-keks-world",
+  "branch": "studio/qa-2026-08-07",
+  "verdict": "SHIP WITH NOTES",
+  "under_test": {
+    "branch": "studio/engineer-2026-08-06-dodge",
+    "pr": 4,
+    "title": "Dodge Roll (double-tap burst + i-frames)",
+    "reason": "The Gameplay Engineer cron run for 2026-08-07 FAILED and produced no branch. No new engineer work landed today, so this pass re-verifies the newest unmerged engineer change (PR #4) in depth rather than re-reporting PR #2.",
+    "diff_stat": "8 files, +335 / -3 (src/core/input.js, src/entities/player.js, src/modes/match-mode.js, src/ui/styles.css, src/ui/ui.js, tools/dodgetest.mjs, digest, log)"
+  },
+  "build_passed": true,
+  "build_output_tail": "vite v7.3.6 - 56 modules transformed - dist/assets/index-Cm5FVEUJ.js 927.63 kB (gzip 255.73 kB) - built in 2.91s - exit 0",
+  "server_booted": true,
+  "server_output": "\ud83c\udf6a Bla Keks World server on :8787 / local http://localhost:8787 / lan http://192.168.0.7:8787 -- no exceptions in 5s, HTTP GET / returned 200",
+  "tests_run": [
+    { "name": "npm install --no-audit --no-fund", "result": "pass", "detail": "97 packages, 5s" },
+    { "name": "npm run build", "result": "pass", "detail": "exit 0, 56 modules" },
+    { "name": "node tools/dodgetest.mjs", "result": "pass", "detail": "6/6 assertions: single tap no dodge; double tap <0.28s dodges; clears on endFrame; third tap is not a second dodge; taps 1s apart no dodge; A-then-D no dodge" },
+    { "name": "server boot + HTTP 200 health check", "result": "pass" },
+    { "name": "node tools/mptest.mjs (puppeteer E2E)", "result": "could_not_run", "detail": "puppeteer-core has no bundled Chrome; requires executablePath or channel. Same for iframe-test.mjs / shot.mjs / mpdiag.mjs." }
+  ],
+  "issues_found": [
+    {
+      "severity": "HIGH",
+      "file": "src/modes/match-mode.js:625-630 + :1061-1073",
+      "issue": "Dodge i-frames do not exist in real PvP. Hit resolution is shooter-authoritative -- _onProjectileHit bails with 'Someone else's shot: we only draw it, the owner reports it' and only the owner sends {type:'hit'}. The new `hittable` filter removes the LOCAL player from the target set in the LOCAL client only. A remote human shooting you resolves the hit in THEIR client, which has no knowledge of your `player.iframes`, so their shot lands anyway. The i-frames therefore only work against bots and your own local sim -- exactly the case that matters least. Worse, the HUD pip flashes 'active' and the player will believe they dodged, so the feature actively teaches a lie in 8-player matches.",
+      "suggestion": "Replicate the dodge over the network. Cheapest fix: broadcast a lightweight `{type:'ev', dodge:true}` (or add an `iframes`/`inv` flag to the existing input/state tick in server/room.js) so remote clients can filter a dodging player out of their own `parts` target list before resolving. Alternative: keep it shooter-authoritative but let the victim veto -- on receiving a 'hit', the target's client rejects it if it was inside its i-frame window, and the server applies damage only on victim ack. Until one of these ships, either scope the dodge as a pure mobility burst (drop the i-frames and the glow) or label it clearly as bot-only."
+    },
+    {
+      "severity": "MEDIUM",
+      "file": "src/entities/player.js:104-116 (dodge())",
+      "issue": "dodge() gates on canMove/frozen/crouching/swimming but NOT on `this.grounded`. A mid-air double-tap grants a 14 m/s horizontal air-dash that overrides the velocity cap (player.js:260-265 hard-sets vel.x/vel.z while dodgeTime > 0), bypassing the deliberately low air ACCEL of 14 and air FRICTION of 0.6. Jump + dodge chains give noticeably longer gap-crossing than the movement tuning intends -- on a tiny hand-made planet that is a map-skip risk, and it makes the roll a traversal tool rather than the committed combat decision the code comment claims.",
+      "suggestion": "Either add `if (!this.grounded) return false;` to dodge(), or deliberately keep the air-dash but give it its own reduced speed (~10) and no i-frames. Decide which -- right now it is an accident, not a choice."
+    },
+    {
+      "severity": "MEDIUM",
+      "file": "src/modes/match-mode.js:988 vs :625",
+      "issue": "Inconsistent i-frame coverage across weapon families. The `hittable` filter is applied to this.projectiles.update() and _driveBots(), but the local melee/soak path at line 988 sends {type:'hit', damage: stats.soak} through a separate code path that never consults iframes. So the dodge dodges projectiles but not melee. Given the lead's explicit BOTH decision (sabers and projectiles both first-class), a defensive verb that only counters one family breaks the rock-paper-scissors intent before it is even built.",
+      "suggestion": "Route all damage application through one helper (e.g. _tryHit(target, damage)) that checks target invulnerability once, so melee and projectiles share the same i-frame rule."
+    },
+    {
+      "severity": "LOW",
+      "file": "src/entities/player.js:220 (inWater guard)",
+      "issue": "On entering water the code does `if (inWater && this.dodgeTime > 0) this.dodgeTime = 0;` but leaves `this.iframes` and `this.dodgeCooldown` running. A player who rolls into the sea keeps up to 0.12s of invulnerability while swimming, with the burst already cancelled -- a small free-invuln edge case, and the HUD pip briefly shows 'active' with no roll happening.",
+      "suggestion": "Zero `this.iframes` in the same guard."
+    },
+    {
+      "severity": "LOW",
+      "file": "src/modes/match-mode.js:630",
+      "issue": "The filtered `hittable` list is also passed to _driveBots(). For 0.12s the local player vanishes from the bots' world, not just from their hit resolution -- bots may drop or re-pick targets mid-burst rather than simply missing. The intent (per the comment) was 'neither projectiles nor bot aim can resolve on them', but this couples aiming and target acquisition.",
+      "suggestion": "Pass the full `parts` to _driveBots for targeting and apply the i-frame filter only at the moment of hit resolution."
+    },
+    {
+      "severity": "LOW",
+      "file": "vite build output",
+      "issue": "Pre-existing: single 927 kB chunk (255 kB gzip) exceeds the 500 kB warning. Not introduced by this branch (main is 925 kB) but growing with every feature.",
+      "suggestion": "build.rollupOptions.output.manualChunks to split three.js out. Worth a director directive, not a blocker."
+    }
+  ],
+  "no_issues_confirmed": [
+    "Dodge world-space direction math at player.js:131-132 uses the identical sin/cos convention as the movement wish-vector at player.js:226-228 -- verified correct, no inverted strafe.",
+    "input.js endFrame() clears doubleTapped_ alongside justPressed -- no stuck edge signal, no leak.",
+    "Triple-tap guard (_lastTapAt.set(k, -9)) prevents a second free dodge; covered by dodgetest.",
+    "Player.reset() zeroes dodgeTime/dodgeCooldown/iframes -- clean across rounds and rematch.",
+    "No new setInterval/setTimeout introduced; nothing to clear.",
+    "Collision is still applied after the dodge velocity override -- no wall clipping from the 14 m/s burst."
+  ],
+  "untested": [
+    "Actual combat FEEL -- whether 0.35s / 14 m/s / 0.12s i-frames reads as satisfying or floaty. Automated QA cannot playtest. A human must hold the keyboard.",
+    "Real multiplayer with 2+ browsers -- the HIGH issue above is derived from reading the hit-resolution path, not from observing a desync live. puppeteer-core cannot launch (no Chrome executable on the runner), so tools/mptest.mjs, mpdiag.mjs, iframe-test.mjs and shot.mjs all failed to start.",
+    "Whether the double-tap window of 0.28s conflicts with normal strafe-tapping during a firefight (false-positive dodges). The unit test only proves the state machine, not the ergonomics.",
+    "Rendering / visual correctness of the .dodge-pip HUD element and the roll animation -- no browser, no screenshot.",
+    "Mobile / touch input paths.",
+    "Performance under 8 concurrent players."
+  ]
+}
