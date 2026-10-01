@@ -1,0 +1,29 @@
+{
+  "date": "2026-09-01",
+  "moves": 3,
+  "highlights": [
+    "Katherina Reiche (CDU) returned from energy industry / VKU lobbyist role into the Merz cabinet as Federal Minister for Economic Affairs and Climate Action — reverse revolving door (industry → government), opposition calls her 'gas lobbyist'",
+    "LobbyControl documented 72 revolving-door politicians overall; 12 of 44 ex-red-green cabinet members clearly moved into lobbying roles — systemic pattern, not isolated cases",
+    "Sven Afhüppe, ex-Editor-in-Chief of Handelsblatt, became Global Head of Political Affairs at Deutsche Bank (Mar 2023) — media-to-banking lobby crossover"
+  ],
+  "sources": [
+    "https://www.dw.com/en/germany-new-merz-cabinet-raises-concerns-over-lobbying/a-72491832",
+    "https://www.lobbycontrol.de/lobbyregister/heutige-lobby-jobs-des-letzten-rot-gruenen-kabinetts-510/",
+    "https://www.lobbycontrol.de/aus-der-lobbywelt/deutsche-politiker-die-die-seiten-gewechselt-haben-auf-einen-blick-10535/",
+    "https://www.spiegel.de/wirtschaft/unternehmen/ex-handelsblatt-chefredakteur-wird-banken-lobbyist-a-a5b53e96-4db3-41f0-a65e-8c69c0c1a6be",
+    "https://www.handelsblatt.com/unternehmen/management/aufsichtsraete-diese-fuehrenden-koepfe-praegen-die-deutsche-wirtschaft-2026/100241562.html",
+    "https://www.lobbyregister.bundestag.de/suche/R000249",
+    "https://www.abgeordnetenwatch.de/recherchen/nebentaetigkeiten/diese-nebeneinkuenfte-haben-die-abgeordneten-im-bundestag"
+  ],
+  "actions_taken": [
+    "Fresh clone of citizen-agents repo",
+    "Created dated branch agent/revolving-door-2026-09-01",
+    "Researched abgeordnetenwatch.de, Lobbycontrol.de, Spiegel, Handelsblatt, DW, Lobbyregister",
+    "Wrote agent-digests/revolving-door-2026-09-01.md (bilingual, 3 verified moves with source URLs)",
+    "Wrote agent-logs/revolving-door-2026-09-01.json",
+    "Committed + pushed branch",
+    "Opened PR for human review — NOT merged"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/revolving-door-2026-09-01"
+}
