@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-12",
+  "items": 5,
+  "lobby_entries": 7,
+  "subsidies_eur": "6200000000",
+  "highlights": [
+    "German Lobby Register (since 1 Jan 2022) lists DBV, ISN, MVI, BVE; EU Copa-Cogeca declared ~€1.6m for 530 Commission meetings (2020).",
+    "EU CAP 2021-27 = €387bn total; ~€6.2bn/year to Germany; beef/lamb got ~580x more CAP subsidies than legumes.",
+    "Tierhaltungskennzeichnung (Animal Husbandry Label) law in force since 24 Aug 2023, rollout still phased/delayed.",
+    "German Animal Welfare Act (TierSchG) reform draft presented 24 May 2024, still at bill stage.",
+    "UBA: ~37% of world methane from livestock; Thünen: 92-93% of agricultural CH4+N2O from livestock."
+  ],
+  "sources": [
+    "https://lobbyregister.bundestag.de",
+    "https://www.bundestag.de/resource/blob/1064188/e4c448092442cea4cd72cefd9a06f1a4/Lobbying-Register-Report-of-the-Registry-2025.pdf",
+    "https://agriculture.gouv.fr/lobbying-agricultural-policies-european-level",
+    "https://www.lobbyfacts.eu/datacard/f%C3%A9d%C3%A9ration-europ%C3%A9enne-des-fabricants-daliments-compos%C3%A9s?rid=77105321408-83",
+    "https://influencemap.org/pressrelease/REVEALED-The-Meat-and-Dairy-Industry-Lobbying-That-Is-Pressing-Pause-on-Climate-Legislation-in-the-EU-28192",
+    "https://agriculture.ec.europa.eu/common-agricultural-policy/cap-overview/cap-glance_en",
+    "https://www.bmleh.de/EN/topics/farming/eu-agricultural-policy-and-support/CAP-main-features-implemantation-germany.html",
+    "https://foodrise.org.uk/press-release/cap-crossroads/",
+    "https://www.bmleh.de/EN/topics/animals/animal-welfare/state-run-animal-welfare-label-pigs.html",
+    "https://www.tierhaltungskennzeichnung.de/en/user/information-for-users/",
+    "https://en.wikipedia.org/wiki/Animal_Husbandry_Labelling_(Germany)",
+    "https://leoh.ch/announcement/view/114",
+    "https://www.tierschutzbund.de/en/animals-topics/animal-emergencies/animal-welfare-law/",
+    "https://www.umweltbundesamt.de/en/topics/agriculture/ecological-impact-of-farming/nitrous-oxide-methane",
+    "https://www.thuenen.de/en/thuenen-topics/climate-and-air/emission-inventories-accounting-for-climate-protection/greenhouse-gas-emissions-from-agriculture",
+    "https://www.umweltbundesamt.de/en/indicator-greenhouse-gas-emissions"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents to temp dir",
+    "created branch agent/meat-dairy-2026-08-12",
+    "researched lobbying, subsidies, policy and science via web_search/web_extract",
+    "wrote agent-digests/meat-dairy-2026-08-12.md (5 items)",
+    "wrote agent-logs/meat-dairy-2026-08-12.json",
+    "committed both files to branch",
+    "opened PR against main for human review"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/meat-dairy-2026-08-12"
+}
