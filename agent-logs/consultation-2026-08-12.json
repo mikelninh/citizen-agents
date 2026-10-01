@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-12",
+  "windows_found": 6,
+  "deadlines": [
+    {"window": "EU public consultation — draft new Rescue and Restructuring Guidelines (state aid)", "deadline": "2026-09-04", "institution": "European Commission, DG Competition"},
+    {"window": "Bundestag öffentliche Anhörung 'BauGB-Upgrade' (Baugesetzbuch)", "deadline": "2026-09-23", "institution": "Ausschuss für Wohnen, Stadtentwicklung, Bauwesen und Kommunen"},
+    {"window": "Bundestag öffentliche Anhörung 'Haushaltsbegleitgesetz 2027'", "deadline": "2026-10-12", "institution": "Haushaltsausschuss"},
+    {"window": "Bundestag öffentliche Anhörung 'Änderung der Verwaltungsgerichtsordnung (VwGO)'", "deadline": "2026-10-14", "institution": "Ausschuss für Recht und Verbraucherschutz"},
+    {"window": "EU public consultation — European quantum technology future", "deadline": "2026-10-16", "institution": "European Commission"},
+    {"window": "Ministry Referentenentwurf — Gesetz zur Durchführung der KI-Verordnung (BMDS, online consultation Länder/Verbände)", "deadline": "ongoing-2026-08", "institution": "Bundesministerium für Digitales und Staatsmodernisierung (BMDS)"}
+  ],
+  "highlights": [
+    "NEW since 06 Aug: Bundestag hearing on the 2027 Budget Act (Haushaltsbegleitgesetz) set for 12 Oct 2026 — directly affects citizens' taxes and public spending.",
+    "VwGO hearing topic clarified: amendment of the Administrative Court Procedure Act (14 Oct 2026) — governs citizens' access to courts against authorities.",
+    "NEW EU state-aid consultations open to any individual: Rescue & Restructuring Guidelines (deadline 04 Sep 2026, nearest hard deadline) and regional State aid guidelines (30 Sep 2026).",
+    "EU quantum consultation (16 Oct 2026) remains open to individuals via 'Have your say'.",
+    "BMDS AI-Implementation Act Referentenentwurf is in an online Länder/Verbände round; citizens can still weigh in via their MdB.",
+    "BauGB-Upgrade hearing (23 Sep 2026) still open — highest everyday relevance (rents, densification, local participation)."
+  ],
+  "sources": [
+    "https://www.bundestag.de/ausschuesse",
+    "https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096",
+    "https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf",
+    "https://www.bundestag.de/ausschuesse/a08_haushalt/anhoerungen/1194566-1194566",
+    "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen/1194334-1194334",
+    "https://ec.europa.eu/info/law/better-regulation/",
+    "https://qt.eu/news/2026/2026-07-22_eu-quantum-public-consultation-2026",
+    "https://competition-policy.ec.europa.eu/public-consultations/2026-rescue-restructuring-guidelines_en",
+    "https://competition-policy.ec.europa.eu/public-consultations_en",
+    "https://bmds.bund.de/service/gesetzgebungsverfahren/gesetz-zur-durchfuehrung-der-ki-verordnung"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/consultation-2026-08-12",
+    "Researched Bundestag committee hearings, EU 'Have your say' / DG Competition consultations, and BMDS Referentenentwurf",
+    "Wrote citizen digest with 6 open windows and adaptable submission drafts (incl. 2 new Bundestag/EU windows vs 06 Aug)",
+    "Wrote structured JSON log",
+    "Committed, pushed branch and opened a pull request for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/consultation-2026-08-12"
+}
