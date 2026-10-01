@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-13",
+  "findings": 3,
+  "regions": ["Global/UN Geneva", "Middle East (Kuwait)", "South Asia (India)", "Latin America (Honduras)", "Europe (Finland, Türkiye, Council of Europe)"],
+  "highlights": [
+    "CERD opened its 118th session in Geneva (10-25 Aug 2026), reviewing Kuwait, India, Honduras and Finland under ICERD (182 States parties); concluding observations due 25 Aug 2026.",
+    "ECtHR Grand Chamber will deliver its judgment in Kavala v. Türkiye (no. 2) on 25 Aug 2026, 10:00 Strasbourg; judgment adopted 2 Jul 2026, final and binding on delivery.",
+    "CRPD gap: 185 of 193 UN Member States have ratified the Convention, but only 100 have ratified the Optional Protocol enabling individual complaints."
+  ],
+  "sources": [
+    "https://www.ohchr.org/en/media-advisories/2026/08/un-committee-elimination-racial-discrimination-review-kuwait-india",
+    "https://www.ohchr.org/en/meeting-summaries/2026/08/committee-elimination-racial-discrimination-opens-one-hundred-and",
+    "https://tbinternet.ohchr.org/_layouts/15/treatybodyexternal/SessionDetails1.aspx?SessionID=2915&Lang=en",
+    "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-2&chapter=4&clang=_en",
+    "https://www.mlsaturkey.com/en/the-european-court-of-human-rights-grand-chamber-will-announce-its-ruling-in-the-kavala-case-on-aug-25",
+    "https://hudoc.echr.coe.int/eng-press",
+    "https://www.echr.coe.int",
+    "https://www.ohchr.org/en/treaty-bodies/crpd",
+    "https://treaties.un.org/Pages/ViewDetails.aspx?src=TREATY&mtdsg_no=IV-15-a&chapter=4&clang=_en"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created dated branch agent/treaty-watch-2026-08-13",
+    "Researched OHCHR treaty-body activity, ECtHR/Council of Europe judgments and UN ratification status",
+    "Wrote bilingual (DE + EN) citizen digest to agent-digests/treaty-watch-2026-08-13.md",
+    "Wrote structured log to agent-logs/treaty-watch-2026-08-13.json",
+    "Committed and pushed branch; opened PR for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/treaty-watch-2026-08-13"
+}
