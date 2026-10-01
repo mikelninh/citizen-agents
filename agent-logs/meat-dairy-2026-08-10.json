@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-10",
+  "items": 5,
+  "lobby_entries": 3,
+  "subsidies_eur": "~6,300,000,000 EUR/year EU CAP funds to Germany (2023-2027); EU-wide 38.16bn direct payments + 12.95bn rural development (2023)",
+  "highlights": [
+    "Bundestag postponed the mandatory animal-husbandry label again on 15 Jan 2026 (Drs. 21/3292) - second delay after the 1 Aug 2025 -> 1 Mar 2026 shift; Green motions to keep the original date rejected.",
+    "BMLEH is preparing a third amendment plus a Fifth Act amending the Animal Welfare Act; Albert Schweitzer Stiftung calls the draft a clear improvement.",
+    "Germany receives about 6.3 bn EUR/year in EU CAP money; German direct payments run around 280 EUR per hectare per year, paid per area not per welfare outcome.",
+    "Deutscher Bauernverband declares 4,930,001-4,940,000 EUR lobbying spend for 2024 (~20.6 FTE lobbyists); Copa-Cogeca declared ~1.6m EUR for 530 EU meetings.",
+    "Agriculture GHG emissions fell 85.8 -> 60.8 Mt CO2-eq 1990-2025 (-29%, UBA), but veterinary antibiotic volumes rose again to ~562 t in 2024 after 529 t in 2023 (BVL)."
+  ],
+  "sources": [
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw03-de-tierhaltungskennzeichnungsgesetz-1134328",
+    "https://dserver.bundestag.de/btd/21/032/2103292.pdf",
+    "https://www.bmleh.de/SharedDocs/Gesetzestexte/DE/21-WP/3-AETierHaltKennzG.html",
+    "https://albert-schweitzer-stiftung.de/aktuell/referentenentwurf-tierhaltungskennzeichnung-deutliche-verbesserungen",
+    "https://www.bmleh.de/DE/themen/landwirtschaft/eu-agrarpolitik-und-foerderung/gap/gap_node.html",
+    "https://www.bund.net/themen/landwirtschaft/eu-agrarpolitik/",
+    "https://www.europarl.europa.eu/topics/de/article/20211118STO17609/agrarpolitik-der-eu-in-zahlen-infografik",
+    "https://www.lobbyregister.bundestag.de/suche/R002175/50843",
+    "https://lobbypedia.de/wiki/Deutscher_Bauernverband",
+    "https://www.euinsider.eu/news/eu-agricultural-lobbying-brussels",
+    "https://www.desmog.com/copa-cogeca/",
+    "https://agriculture.gouv.fr/lobbying-agricultural-policies-european-level",
+    "https://www.umweltbundesamt.de/themen/landwirtschaft/landwirtschaft-umweltfreundlich-gestalten/klimaschutz-in-der-landwirtschaft",
+    "https://www.thuenen.de/de/themenfelder/klima-und-luft/emissionsinventare-buchhaltung-fuer-den-klimaschutz/treibhausgas-emissionen-aus-der-landwirtschaft",
+    "https://www.bvl.bund.de/SharedDocs/Pressemitteilungen/05_tierarzneimittel/2024/PM_Abgabemengen_Antibiotika_Tiermedizin_2023.html",
+    "https://dserver.bundestag.de/btd/21/046/2104600.pdf"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/meat-dairy-2026-08-10",
+    "researched lobbying, subsidies, policy and science sources",
+    "wrote agent-digests/meat-dairy-2026-08-10.md",
+    "wrote agent-logs/meat-dairy-2026-08-10.json",
+    "committed and pushed branch",
+    "opened pull request for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/meat-dairy-2026-08-10"
+}
