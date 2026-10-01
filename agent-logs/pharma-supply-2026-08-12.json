@@ -1,0 +1,50 @@
+{
+  "date": "2026-08-12",
+  "repo": "citizen-agents",
+  "branch": "agent/pharma-supply-2026-08-12",
+  "shortages_found": 5,
+  "top_shortages": [
+    "Insulin (human/lispro) — 14 Präparate laut BfArM",
+    "Digoxin/Digitoxin (Herzglykoside)",
+    "Liraglutid (Victoza) — EU-Vertrieb bis Ende 2026 eingestellt",
+    "Nifedipin/Nitrendipin (Blutdrucksenker)",
+    "Ifosfamid (Krebstherapie) — Versorgungsmangel §79 Abs.5"
+  ],
+  "highlights": [
+    "Insulin: BfArM listet Lieferengpässe bei insgesamt 14 Insulinpräparaten (Informationsschreiben 21.04.2026) — Dauerthema.",
+    "Liraglutid/Victoza: Novo Nordisk stellt EU/EEA-Vertrieb bis Ende 2026 ein; N3 (10x3ml) in DE bis 31.12.2026 verfugbar, N1 eingestellt.",
+    "Digoxin/Digitoxin: BfArM-Therapieempfehlung 23.07.2026; Amiodaron als Frequenzkontrolle-Alternative.",
+    "Nifedipin/Nitrendipin: flachendeckender Engpass; BfArM-Gestattungen Mai 2026; teils bis Jahresende.",
+    "Ifosfamid: offizieller Versorgungsmangel (§79 Abs.5 AMG, 30.03.2026), aktualisiert 13.07.2026.",
+    "Politik: BfArM Dringlichkeitsliste §129 Abs.2b SGB V am 04.08.2026; ALBVVG gilt Fachmedien als weitgehend wirkungslos."
+  ],
+  "sources": [
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/_node.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/Massnahmen-des-BfArM/_artikel.html",
+    "https://www.bfarm.de/SharedDocs/Downloads/DE/Arzneimittel/Zulassung/amInformationen/Lieferengpaesse/info_insuline_lily.html",
+    "https://www.apotheke-adhoc.de/nachrichten/detail/pharmazie/insulin-weiter-von-lieferengpaessen-betroffen/",
+    "https://www.bfarm.de/SharedDocs/Downloads/DE/Arzneimittel/Zulassung/amInformationen/Lieferengpaesse/empfehlung_digoxin_digitoxin.html",
+    "https://www.apotheke-adhoc.de/nachrichten/detail/pharmazie/alternativen-gefragt-digitoxin-engpass-ist-kritisch/",
+    "https://www.bfarm.de/SharedDocs/Downloads/DE/Arzneimittel/Zulassung/amInformationen/Lieferengpaesse/info_liraglutid.html",
+    "https://www.abda.de/fuer-apotheker/arzneimittelkommission/amk-nachrichten/detail/29-26-information-der-hersteller-informationsschreiben-zu-victozar-liraglutid-eu-weite-vertriebseinstellung-bis-ende-dezember-2026/",
+    "https://www.bfarm.de/SharedDocs/Downloads/DE/Arzneimittel/Zulassung/amInformationen/Lieferengpaesse/gestattung_10_1a_nifedipin_10mg.html",
+    "https://www.apotheke-adhoc.de/nachrichten/detail/pharmazie/nitrendipin-engpass-dauert-an/",
+    "https://www.pta-in-love.de/engpass-nifedipin-in-auslaendischer-aufmachung-sichert-versorgung/",
+    "https://www.bfarm.de/SharedDocs/Downloads/DE/Arzneimittel/Zulassung/amInformationen/Lieferengpaesse/Bekanntmachung_79Abs5-amg_ifosfamid.pdf",
+    "https://www.bfarm.de/SharedDocs/Downloads/DE/Arzneimittel/Zulassung/amInformationen/Lieferengpaesse/info_ifosfamid_hikma_aktualisiert2.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/ALBVVG/_artikel.html",
+    "https://www.bundesgesundheitsministerium.de/ministerium/gesetze-und-verordnungen/guv-20-lp/albvvg",
+    "https://www.pharmazeutische-zeitung.de/lieferengpass-gesetz-offenbar-weitgehend-wirkungslos-161810/",
+    "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/pharma-supply-2026-08-12",
+    "Researched BfArM Lieferengpass-Maßnahmen + Fachpresse + ALBVVG",
+    "Wrote agent-digests/pharma-supply-2026-08-12.md (5 items, bilingual DE+EN)",
+    "Wrote agent-logs/pharma-supply-2026-08-12.json",
+    "Committed artifacts",
+    "Pushed branch",
+    "Opened PR (no merge — human review only)"
+  ]
+}
