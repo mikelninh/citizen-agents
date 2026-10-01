@@ -1,0 +1,67 @@
+{
+  "date": "2026-08-14",
+  "verdict": "SHIP WITH NOTES",
+  "build_passed": true,
+  "server_booted": false,
+  "server_booted_note": "N/A — repository has no server entrypoint. This is a client-only Vite/Three.js app: no server/node.js, no http.createServer/express/ws anywhere in the tree. Multiplayer is P2P with a host-authoritative MatchSim in the browser. Nothing to boot; not a regression.",
+  "tests_run": [
+    "vite build (exit 0, 39.97s)",
+    "npm run check — project static check (PASS: 6 DOM anchors, 102 PNG, 4 foundations)",
+    "npm run check:units — 182 pass / 0 fail / 1 skipped (exit 0)",
+    "npm run check:duel — 70 fairness checks PASS",
+    "npm run check:arena — 44/44 runtime checks PASS"
+  ],
+  "changes_reviewed": [
+    "experiences/little-planet/src/shared/match.js (_hit: HP-subtract -> soak-accumulate, down at >=100)",
+    "experiences/little-planet/src/modes/weapons/tools.js (leafblade.soak 100 -> 34)",
+    "experiences/little-planet/src/modes/match-mode.js (saber stamina, perfect-swing bonus, Exposed! tell, soak sync)",
+    "experiences/little-planet/src/modes/botbrain.js (botShoot now uses player TOOLS kit instead of legacy hitscan WEAPON carbine)"
+  ],
+  "issues_found": [
+    {
+      "severity": "medium",
+      "file": "experiences/little-planet/src/modes/botbrain.js",
+      "issue": "botShoot now applies full stats.soak damage with NO spread and NO miss check on any LOS-valid frame (old code used traceShot+spread and dealt WEAPON.damage*0.8). Bots can never whiff, and the damage is multiplied by bot.rarityMult (defaults to 1, but if bots are ever given rarity a legendary petalbow bot lands ~72 soak/hit). This inverts the old 'deliberately worse than a human' design intent — bots are now strictly more accurate than a human.",
+      "suggestion": "Keep a skill gate: re-run a traceShot-style hit test (or add a miss/spread chance) before c.onHit, and/or cap bot rarityMult for the tactical mode, so bots stay beatable by movement."
+    },
+    {
+      "severity": "medium",
+      "file": "experiences/little-planet/src/shared/match.js + match-mode.js",
+      "issue": "PRE-EXISTING (not introduced by this PR): heals adjust the client's hp+soak locally, but the sim only ever raises soak on damage and never lowers it on heal. The next damage event recomputes hp = 100 - soak and snaps the healed bar back, so a heal item is effectively cancelled for a damaged player. This predates D1-D3.",
+      "suggestion": "Make heal authoritative in the sim: on a heal event do target.soak = max(0, target.soak - heal) so client and sim agree. Flag for the next pass; not a regression from this PR."
+    },
+    {
+      "severity": "low",
+      "file": "experiences/little-planet/src/modes/botbrain.js",
+      "issue": "Bot ranged range uses `stats.range ?? 120`; petalbow/bubbler/splatter/confetti have no `range` field, so bots apply soak out to 120m regardless of the projectile's real travel/gravity. A bot can 'hit' from farther than a player's projectile would reach.",
+      "suggestion": "Give soak tools an explicit `range`, or clamp bot firing distance to the projectile's effective range."
+    },
+    {
+      "severity": "low",
+      "file": "experiences/little-planet/src/modes/match-mode.js",
+      "issue": "_recoveryUntil is assigned on the 'Exposed!' tell but never read anywhere, so the 'punishable opening' after a whiff is visual only, not mechanically enforced.",
+      "suggestion": "Either wire a real movement/action lock during recovery, or drop the dead variable. (Engineer flagged this as a deliberate follow-up.)"
+    },
+    {
+      "severity": "low",
+      "file": "experiences/little-planet/src/modes/match-mode.js",
+      "issue": "this.soak is never initialized in the MatchMode constructor (only set on damage/heal/down). Harmless today because the HUD derives soak from 100 - this.hp, but fragile for future readers.",
+      "suggestion": "Add `this.soak = 0;` in the constructor next to `this.hp = 100;`."
+    }
+  ],
+  "untested": [
+    "Real-time combat feel: saber timing window (swing 0.25-0.7), perfect-swing bonus, whiff-punish cadence, stamina regen feel — no headless browser/display available in this environment.",
+    "Actual 1v1 bot match outcome and difficulty balance — cannot run the live game end-to-end.",
+    "Multiplayer host-authority behaviour under real network latency/desync.",
+    "Server boot — N/A: repo has no server process (client-only Vite app)."
+  ],
+  "acceptance_vs_director": {
+    "D1_soak_win_condition": "MET — _hit accumulates soak 0->100, emits down at >=100, no raw HP subtraction remains (grep clean); HUD soak bar maps to 100-hp.",
+    "D2_saber_identity": "MET — leafblade.soak=34 (>=3 clean hits to down), swing spends stamina (0.34) and is blocked with 'Winded' when empty, early-swing connect (swing<=0.45) deals 1.5x, whiff past 0.7 shows 'Exposed!'. Note: recovery window not mechanically enforced (visual only).",
+    "D3_bots_use_player_kit": "MET (with balance caveat) — botShoot uses TOOLS leafblade/petalbow values; legacy WEAPON/applySpread/traceShot carbine import removed. Caveat: bots now hit-guaranteed (see medium issue)."
+  },
+  "repo": "bla-keks-world",
+  "branch": "studio/qa-2026-08-14",
+  "engineer_pr": 11,
+  "director_pr": 10
+}
