@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-30",
+  "items": 5,
+  "anomalies": 5,
+  "total_value_eur": null,
+  "highlights": [
+    "Bundeswehr-Beschaffungsbeschleunigungsgesetz in Kraft seit 15. Jan 2026 — TI warnt vor Abbau zentraler Korruptions-Kontrollmechanismen.",
+    "Bundestag verabschiedete 'Beschleunigung der Vergabe öffentlicher Aufträge' (BT-Drs 21/1934), in Kraft 1. Jul 2026; Direktauftragsgrenze Bund steigt auf 50.000 EUR (~380 Mio EUR/Jahr Ersparnis).",
+    "BRH: >80 % der Dienstleistungs- und Lieferaufträge wurden freihändig (ohne Wettbewerb) vergeben; NRW hob Schwellenwerte weiter an.",
+    "Rechnungshof BW (Drucksache 18/307, Aug 2026): 60 % Fehlerquote bei Fördermittel-Vergabe, Rückforderung nur in 2 von 67 Fällen.",
+    "Transparency International CPI 2025: Deutschland 77 Punkte / Platz 10, aber -4 Punkte in 10 Jahren; Vergabereform als 'Konjunkturprogramm für Korruption' kritisiert."
+  ],
+  "sources": [
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw03-de-bundeswehr-1134324",
+    "https://blog.cosinex.de/2026/02/17/beschleunigung-der-bundeswehr-beschaffung/",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw17-de-vergaben-1166782",
+    "https://www.bundesregierung.de/breg-de/aktuelles/oeffentliche-vergabe-2376854",
+    "https://www.deutschlandfunk.de/bundesrechnungshof-kritisiert-gelockerte-vergabepraxis-100.html",
+    "https://blog.cosinex.de/2026/08/07/rechnungshof-bw-vergaberecht-private-foerderempfaenger/",
+    "https://blog.cosinex.de/2026/02/16/vergabebeschleunigung-korruptionsschutz/",
+    "https://www.transparency.de/aktuelles/detail/article/stellungnahme-der-ag-vergabe-vergabereform-im-koalitionsvertrag-ein-konjunkturprogramm-fuer-korruption-1-1"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/procurement-2026-08-30",
+    "targeted web research: BRH findings, Bundestag procurement-acceleration law, Bundeswehr law, Transparency International CPI 2025, Rechnungshof BW report",
+    "wrote agent-digests/procurement-2026-08-30.md (bilingual DE+EN, 5 items, all anomaly-flagged)",
+    "wrote agent-logs/procurement-2026-08-30.json",
+    "committed and pushed branch",
+    "opened PR for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/procurement-2026-08-30"
+}
