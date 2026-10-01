@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-30",
+  "items": 4,
+  "systems": [
+    "EU AI Act Annex III high-risk systems (hiring, credit scoring, insurance, policing, education, border control)",
+    "Palantir Gotham / VeRA police data mining (Bavaria, Art. 61a BayPAG)",
+    "SCHUFA creditworthiness scoring (Germany)",
+    "Jobcenter / Bundesagentur für Arbeit automation and data matching"
+  ],
+  "highlights": [
+    "Digital Omnibus on AI delays Annex III high-risk obligations from 2 Aug 2026 to 2 Dec 2027 (Annex I to 2 Aug 2028); non-retroactivity under Art. 111 means pre-deadline systems may escape indefinitely, public-authority systems only caught from 31 Dec 2030.",
+    "Art. 50 AI Act transparency duties (chatbot disclosure, AI content labelling) still apply from 2 Aug 2026; grace period for existing systems under Art. 50(2) until 2 Dec 2026.",
+    "GFF filed a constitutional complaint against Art. 61a BayPAG allowing Palantir-based police data mining (VeRA) in Bavaria; builds on BVerfG ruling of 16 Feb 2023 striking down § 25a HSOG and § 49 HmbPolDVG.",
+    "CJEU: credit-agency scoring can be an automated individual decision under Art. 22(1) GDPR; VG Wiesbaden granted a broad Art. 15(1)(h) access right after a loan refusal based on a 85.96 % SCHUFA score.",
+    "Federal commission welfare-reform recommendations criticised by netzpolitik.org as a rollback of fundamental rights; Bundesagentur für Arbeit projects over 610,000 Jobcenter appeals in 2026, one in four successful."
+  ],
+  "sources": [
+    "https://www.techpolicy.press/eus-ai-act-delays-let-highrisk-systems-dodge-oversight/",
+    "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
+    "https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act",
+    "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-ai-regulation-proposal",
+    "https://artificialintelligenceact.eu/article/111/",
+    "https://freiheitsrechte.org/themen/freiheit-im-digitalen-zeitalter/palantir-bayern",
+    "https://www.lto.de/recht/nachrichten/n/gff-verfassungsbeschwerde-gegen-palantir-bayern-polizei-ueberwachung",
+    "https://www.sueddeutsche.de/bayern/bayern-software-polizeiaufgabengesetz-palantir-klage-bundesverfassungsgericht-li.3287417",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2023/02/rs20230216_1bvr154719.html",
+    "https://cms.law/de/deu/legal-updates/das-schufa-urteil-des-eugh-und-dessen-auswirkungen",
+    "https://www.dr-datenschutz.de/urteil-vg-wiesbaden-mehr-infos-zur-schufa-score-bildung-noetig/",
+    "https://dsgvo-gesetz.de/art-22-dsgvo/",
+    "https://netzpolitik.org/2026/sozialstaatsreform-kommission-empfiehlt-abbau-von-grundrechten/",
+    "https://www.welt.de/politik/deutschland/article6a72fe17203ba6592b088d1c/ki-widersprueche-leistungsempfaenger-fluten-jobcenter-jeder-4-hat-erfolg.html",
+    "https://www.focus.de/finanzen/grundsicherung/buergergeld-empfaenger-fluten-jobcenter-mit-ki-generierten-widerspruechen-behoerdenchefs-warnen-vor-ueberlastung_ee6e1fbb-fa45-4e69-9342-6410dd26f4ee.html"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/algorithm-watch-2026-08-30",
+    "web research on EU AI Act omnibus delay, Bavarian police data mining, SCHUFA scoring under Art. 22 GDPR, Jobcenter automation",
+    "wrote bilingual digest agent-digests/algorithm-watch-2026-08-30.md (DE + ### EN blocks)",
+    "wrote log agent-logs/algorithm-watch-2026-08-30.json",
+    "committed and pushed branch, opened PR for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/algorithm-watch-2026-08-30"
+}
