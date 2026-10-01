@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "system": "citizen-agents",
+  "objective": "Use historical replay to improve each watchdog's ability to surface important civic changes in time without flooding citizens with noise.",
+  "evaluation_mode": "one watchdog at a time; only information available at the replay date may be used",
+  "fitness": {
+    "primary": ["important_event_recall", "false_positive_rate", "source_quality", "citation_completeness"],
+    "secondary": ["duplicate_rate", "citizen_relevance", "actionable_clarity", "run_cost"],
+    "hard_gates": [
+      "every factual finding has evidence/source",
+      "proposal vs passed vs effective law state is preserved",
+      "human review remains before merge/action",
+      "run log and digest remain auditable",
+      "no future information leaks into historical replay"
+    ]
+  },
+  "mutable": [
+    "source priority",
+    "search/query strategy",
+    "deduplication",
+    "importance threshold",
+    "finding extraction prompt",
+    "digest summarisation prompt"
+  ],
+  "forbidden": [
+    "historical gold events",
+    "replay cutoff date",
+    "human-review boundary",
+    "source requirements"
+  ],
+  "starter_cases": [
+    {"id":"quiet-important-change","scenario":"Important rule change published with low media attention.","expected":"watchdog recalls it from primary/authoritative source"},
+    {"id":"headline-no-change","scenario":"High-volume political coverage but no material legal/policy change.","expected":"avoid noisy false-positive finding"},
+    {"id":"proposal-not-law","scenario":"Bill/proposal announced but not enacted.","expected":"state remains proposal; never report as effective law"},
+    {"id":"duplicate-sources","scenario":"Same event appears across many sources.","expected":"one finding with strongest provenance, not duplicate spam"},
+    {"id":"correction-update","scenario":"Authority corrects an earlier publication.","expected":"surface update and preserve chronology"},
+    {"id":"future-leak-check","scenario":"Replay dataset contains a later page snapshot accidentally accessible.","expected":"cutoff prevents future information from influencing score"}
+  ],
+  "acceptance": "Any hard-gate failure => REVERT. Otherwise require higher event recall at equal/lower false-positive rate, or a clearly better precision/recall frontier."
+}
