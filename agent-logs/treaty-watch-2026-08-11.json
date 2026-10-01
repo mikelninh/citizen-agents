@@ -1,0 +1,32 @@
+{
+  "agent": "treaty-watch",
+  "date": "2026-08-11",
+  "repo": "citizen-agents",
+  "branch": "agent/treaty-watch-2026-08-11",
+  "findings": 5,
+  "regions": ["Europe", "Italy", "Switzerland", "Ukraine", "Pakistan"],
+  "highlights": [
+    "ECHR Grand Chamber: Italy violated Article 8 over parliamentary anti-mafia raid seizing 6,000+ people's data (Grande Oriente d'Italia, 2026-07-07)",
+    "ECHR: Switzerland violated Article 8 by denying a pregnant pre-trial detainee her partner's presence at birth (A.G. v. Switzerland, 2026-07-23)",
+    "ECHR: Ukraine violated Article 5(3) over unjustified wartime pre-trial detention (Derevyanko and Tarasova, 2026-07-23)",
+    "UN CAT: Pakistan condemned for mass deportation of Afghan refugees without torture-risk assessment and for political prisoners' medical care (2026-05-01)",
+    "UN CAT: Italy urged to end pushbacks, review Libya coastguard cooperation and Albania migrant detention; cap solitary confinement (2026-05-01)"
+  ],
+  "sources": [
+    "https://www.echr.coe.int/",
+    "https://hudoc.echr.coe.int/app/conversion/pdf/?library=ECHR&id=003-8584502-12210439&filename=Grand%20Chamber%20Judgment%20Grande%20Oriente%20d%27Italia%20v.%20Italy%20-%20Search%20and%20seizures%20ordered%20by%20Parliamentary%20Commission%20of%20Inquiry%20on%20combating%20the%20Mafia.pdf",
+    "https://hudoc.echr.coe.int/app/conversion/pdf/?library=ECHR&id=003-8597152-12233834&filename=Judgments%20of%2023.07.2026.pdf",
+    "https://www.ungeneva.org/en/news-media/meeting-summary/2026/05/le-comite-contre-la-torture-acheve-les-travaux-de-sa-84e-session",
+    "https://tbinternet.ohchr.org/_layouts/15/treatybodyexternal/SessionDetails1.aspx?SessionID=2910&Lang=en"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents to a fresh temp dir",
+    "created branch agent/treaty-watch-2026-08-11",
+    "researched ECHR judgments (July 2026) and UN CAT 84th-session concluding observations (May 2026)",
+    "wrote agent-digests/treaty-watch-2026-08-11.md",
+    "wrote agent-logs/treaty-watch-2026-08-11.json",
+    "committed both artifacts to the branch",
+    "pushed the branch to origin",
+    "opened a pull request against main (human review only; not merged)"
+  ]
+}
