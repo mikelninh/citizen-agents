@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-12",
+  "repo": "citizen-agents",
+  "branch": "agent/directive-watch-2026-08-12",
+  "directives_found": 6,
+  "deadlines_coming": 1,
+  "late": 5,
+  "highlights": [
+    "Germany in formal/likely EU infringement for 4+ missed transposition deadlines: Anti-SLAPP (EU 2024/1069, infringement opened 15 Jul 2026), budgetary frameworks (EU 2024/1265, Jan 2026 package), financial-services package of 15 directives (22/27 MS failed, Mar 2026), and the EU Sanctions Directive (missed 20 May 2025, infringement Jul 2025).",
+    "Pay Transparency Directive (EU 2023/970, deadline 7 Jun 2026) not yet adopted by Germany; draft discussed Jun 2026, entry into force early 2027, pay-reporting duties not effective until Jun 2028.",
+    "Next hard deadline inside the 180-day window: Revised Product Liability Directive (EU 2024/2853), 9 Dec 2026 — no Germany-specific transposition bill widely reported; flagged AT RISK."
+  ],
+  "directives": [
+    {"name": "Anti-SLAPP Directive (EU) 2024/1069", "deadline": "2026-05-07", "ministry": "BMJ", "status": "late", "infringement": true, "eulex": "https://eur-lex.europa.eu/eli/dir/2024/1069/oj/eng"},
+    {"name": "Pay Transparency Directive (EU) 2023/970", "deadline": "2026-06-07", "ministry": "BMAS", "status": "late", "infringement": false, "eulex": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023L0970"},
+    {"name": "Budgetary Frameworks amendment (EU) 2024/1265", "deadline": "2025-12-31", "ministry": "BMF", "status": "late", "infringement": true, "eulex": "https://eur-lex.europa.eu/legal-content/en/NIM/?uri=oj:L_202401265"},
+    {"name": "Financial-services package (15 directives)", "deadline": "2026-01-10", "ministry": "BMF / BaFin", "status": "late", "infringement": true, "eulex": "https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX:32026L0500"},
+    {"name": "EU Sanctions (Criminal) Directive", "deadline": "2025-05-20", "ministry": "BMF / BMJ", "status": "late", "infringement": true, "eulex": ""},
+    {"name": "Revised Product Liability Directive (EU) 2024/2853", "deadline": "2026-12-09", "ministry": "BMJ / BMWK", "status": "at_risk", "infringement": false, "eulex": ""}
+  ],
+  "sources": [
+    "https://eur-lex.europa.eu/eli/dir/2024/1069/oj/eng",
+    "https://eapil.org/2026/07/16/commission-opens-infringement-proceedings-over-anti-slapp-directive-transposition/",
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023L0970",
+    "https://trusaic.com/resources/resources-eu-pay-transparency-directive-member-state-transposition-monitor/",
+    "https://eur-lex.europa.eu/legal-content/en/NIM/?uri=oj:L_202401265",
+    "https://ieu-monitoring.com/editorial/eu-commission-reveals-key-decisions-of-its-january-infringements-package/878984",
+    "https://www.regulationtomorrow.com/2026/03/commission-opens-infringement-procedures-against-member-states-for-failing-to-transpose-eu-directives/",
+    "https://eur-lex.europa.eu/legal-content/EN/NIM/?uri=CELEX:32026L0500",
+    "https://www.gleisslutz.com/en/know-how/stricter-criminal-sanctions-law-germanys-transposition-eu-sanctions-directive",
+    "https://www.jonesday.com/en/insights/2026/06/the-revised-eu-product-liability-directive-state-of-play-across-eu-member-states-and-evolving-risk-landscape"
+  ],
+  "actions_taken": [
+    "Cloned mikelninh/citizen-agents to a temp dir",
+    "Checked out branch agent/directive-watch-2026-08-12",
+    "Researched EUR-Lex directive texts/deadlines, EC infringement packages, and German transposition status (web_search)",
+    "Wrote agent-digests/directive-watch-2026-08-12.md (citizen-readable)",
+    "Wrote agent-logs/directive-watch-2026-08-12.json",
+    "Committed and pushed branch",
+    "Opened PR for human review (NO self-merge per guardrail)"
+  ]
+}
