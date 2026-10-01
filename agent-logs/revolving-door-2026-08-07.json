@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-07",
+  "moves": 5,
+  "highlights": [
+    "Robert Habeck (Grüne, Ex-Bundeswirtschafts- und Klimaminister) wird ab 08/2026 Senior Advisor bei der Investmentplattform Urban Partners",
+    "Christian Dürr (FDP, Ex-Parteichef und Fraktionsvorsitzender) wird zum 01.08.2026 Geschäftsführer des E-Fuels-Start-ups GLE360 — nachdem er im Bundestag für E-Fuels warb",
+    "Florian Toncar (FDP, Ex-PStS im Bundesfinanzministerium) ist seit 06/2026 Bereichsvorstand für Markt und Regulierung bei der DVAG",
+    "Jörg Kukies (SPD, Ex-Bundesfinanzminister) kehrt ins Investmentbanking zurück: Morgan Stanley (05/2026) und The Rhine Group (06/2026)",
+    "Tobias Lindner (Grüne, Ex-Staatsminister Auswärtiges Amt) ist seit 05/2026 Director für Verteidigung und Sicherheit bei PwC"
+  ],
+  "sources": [
+    "https://lobbypedia.de/wiki/Seitenwechsler_in_Deutschland_im_%C3%9Cberblick",
+    "https://www.lobbycontrol.de/seitenwechsel/",
+    "https://www.zeit.de/news/2026-07/15/ex-fdp-chef-duerr-steigt-bei-start-up-fuer-oeko-kraftstoffe-ein",
+    "https://www.welt.de/politik/deutschland/article6a57a2bcb471d7a3ad0a33a7/ex-fdp-chef-christian-duerr-wagt-beruflichen-neuanfang-und-wird-geschaeftsfuehrer-eines-start-ups.html",
+    "https://www.focusplus.de/wirtschaft/aus-politik-finanzvertrieb-florian-toncar-wechselt-zur-dvag-10294"
+  ],
+  "actions_taken": [
+    "Fresh clone of citizen-agents, dated branch created",
+    "Recherche: Lobbypedia Seitenwechsler-Übersicht (Stand 07/2026), LobbyControl, Presseberichte",
+    "Digest agent-digests/revolving-door-2026-08-07.md erstellt",
+    "Log agent-logs/revolving-door-2026-08-07.json erstellt",
+    "Branch gepusht, PR geöffnet (kein Merge — nur menschliche Prüfung)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/revolving-door-2026-08-07"
+}
