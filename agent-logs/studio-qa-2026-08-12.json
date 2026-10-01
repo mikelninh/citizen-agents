@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-12",
+  "verdict": "SHIP WITH NOTES",
+  "build_passed": true,
+  "server_booted": true,
+  "tests_run": [
+    "check-project (node scripts/check-project.mjs)",
+    "check-duel-fairness (node scripts/check-duel-fairness.mjs, 70 checks)",
+    "check-arena-runtime (node scripts/check-arena-runtime.mjs, 44 checks)",
+    "check-units (node --test src/**/*.test.mjs, 182 pass / 183 run / 0 fail)",
+    "vite build (dist emitted, 21.41s)",
+    "server boot (node experiences/little-planet/server/node.js :8787)"
+  ],
+  "issues_found": [
+    {
+      "severity": "BLOCKER",
+      "file": "(pipeline) repo name mismatch",
+      "issue": "No studio/* branches and no agent-digests/agent-logs exist in the repo. The director/engineer cron runs used 'mikelninh/bla-keks-world', which does not exist. The real repo is 'mikelninh/blakeks-world' (no hyphen). Their gh repo clone failed, so none of the director directives were implemented or PR'd and there were no engineer changes to verify.",
+      "suggestion": "Fix the repo name to mikelninh/blakeks-world in all studio-agent prompts; re-run director + engineer so QA has real diffs to gate."
+    },
+    {
+      "severity": "HIGH",
+      "file": "experiences/little-planet/src/modes/weapon.js + botbrain.js + match-mode.js",
+      "issue": "Studio Director brief is partly based on a misread: it claims src/modes/weapon.js is 'dead' and bots 'hitscan-snipe at 130m' to be killed. Reality: weapon.js is LIVE (imported by botbrain.js tacticalBrain->botShoot->traceShot and by match-mode.js applySpread). Per-weapon Charge ALREADY exists (match-mode.js:898). The real, accurately-framed asymmetry: PLAYER fires dodgeable projectile arcs (Projectiles pool) while BOTS fire hitscan (botShoot). 'Delete the dead file' would delete bot combat.",
+      "suggestion": "Do not delete weapon.js. If addressing fairness, convert bot fire to projectiles or add bot inaccuracy dial. Treat Duel Triangle (RMB guard/deflect), shared Focus meter, and Blade-vs-Petal classes as NEW features, not fixes/regressions."
+    },
+    {
+      "severity": "LOW",
+      "file": "experiences/little-planet/src/modes/match-mode.js (~976-988)",
+      "issue": "_pendingSwing is never reset on a whiffed saber swing (only reset inside the connecting-hit loop). A missed swing leaves a permanent per-frame saber.hits() call. Harmless: self-heals on next connecting swing; no double-charge (startSwing gated by !swinging).",
+      "suggestion": "Reset this._pendingSwing = false when the swing window closes or in the whiff branch."
+    }
+  ],
+  "untested": [
+    "Live 2+ player networked match over WebSocket (server booted but no clients connected; only offline sim + headless arena harness exercised).",
+    "Combat feel: saber timing, projectile dodgeability, bot readability (automated QA cannot playtest feel).",
+    "Mobile/touch input and low-end-GPU performance.",
+    "1 of 183 unit tests not counted as pass (skipped/ignored, not a failure)."
+  ],
+  "repo": "blakeks-world (brief referenced 'bla-keks-world' which 404s)",
+  "branch": "studio/qa-2026-08-12",
+  "head_tested": "18abede"
+}
