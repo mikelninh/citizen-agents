@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-12",
+  "agents_reviewed": 8,
+  "verified": 6,
+  "partial": 2,
+  "failed": 0,
+  "blockers": 0,
+  "issues": [
+    {"agent": "benefit-discovery", "severity": "HIGH", "issue": "agent-logs JSON missing canonical top-level fields highlights/sources/actions_taken (uses items/verification schema); breaks downstream fleet aggregation"},
+    {"agent": "benefit-discovery", "severity": "MEDIUM", "issue": "guardrail: committed digest+log directly to main, bypassing PR review workflow used by all peer agents"},
+    {"agent": "benefit-discovery", "severity": "LOW", "issue": "2 cited sources return HTTP 403 bot-walls (faegredrinker.com, regulationtomorrow.com); not dead links, secondary only"},
+    {"agent": "law-watch", "severity": "MEDIUM", "issue": "guardrail: PR #8 also modifies data/law-watch-log.json outside sanctioned agent-digests/ + agent-logs/ dirs"},
+    {"agent": "law-watch", "severity": "LOW", "issue": "BGBl I Nr. 207 enacted 13.07.2026 but published 17.07.2026; digest cites 'vom 13.07.2026' as the gazette date (imprecise)"},
+    {"agent": "bundestag-watch", "severity": "LOW", "issue": "Rentenpaket '+4,24% ab 1.7.2026' Rentenanpassung not independently re-verified (consistent with source)"},
+    {"agent": "directive-watch", "severity": "LOW", "issue": "2 cited sources behind 403 bot-walls (faegredrinker.com PLD, regulationtomorrow.com CRD VI); primary EUR-Lex/Commission sources confirm claims"}
+  ],
+  "source_resolution": {
+    "urls_swept": 114,
+    "ok": 112,
+    "broken": 0,
+    "bot_wall_403": 2
+  },
+  "guardrails": {
+    "any_agent_merged": false,
+    "benefit_discovery_pushed_to_main": true,
+    "law_watch_touched_data_dir": true,
+    "all_other_agents_permitted_dirs_only": true
+  },
+  "coverage_gap": [
+    "faireint-bundestag PR #3 (bundestag-watch 2026-08-11) — unreviewed",
+    "gitlaw PR #7 (law-watch 2026-08-11) — unreviewed",
+    "pmm-mcp PR #2 (money-flow 2026-08-11) — unreviewed",
+    "safevoice PR #4 (abuse-safety 2026-08-11) — unreviewed",
+    "flight-rights-mcp PR #2 (eu-rights-watch 2026-08-11) — unreviewed"
+  ],
+  "repo": "citizen-agents",
+  "branch": "studio/fleet-review-2026-08-12"
+}
