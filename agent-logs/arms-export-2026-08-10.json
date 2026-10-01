@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-10",
+  "items": 5,
+  "license_values_eur": "13,870,000,000 (H1 2026 total approvals; 9.6bn war weapons / 4.3bn other)",
+  "destinations": [
+    "Ukraine (~2.5bn EUR)",
+    "USA (~1.6bn EUR)",
+    "Netherlands",
+    "Czechia",
+    "Lithuania",
+    "Israel (~800m EUR)",
+    "Latvia (~500m EUR)",
+    "Norway",
+    "Estonia",
+    "Slovenia"
+  ],
+  "highlights": [
+    "H1 2026 approvals of ~EUR 13.87bn already exceed full-year 2025 (EUR 13.11bn)",
+    "Share to EU/NATO and close partners fell from ~83% to just over 60% year-on-year",
+    "Israel ranks 6th with ~EUR 800m; partial export stop lifted as of 24 November; Federal Constitutional Court dismissed Gaza claimant's complaint on 3 Feb 2026",
+    "Small arms approvals ~EUR 120m, 97% to EU/NATO-equivalent states; developing countries ~EUR 2.9bn",
+    "Civil society (Aktion Aufschrei) renews demand for a binding Ruestungsexportkontrollgesetz with parliamentary participation"
+  ],
+  "sources": [
+    "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/07/20260715-ruestungsexportpolitik-1-halbjahr-2026.html",
+    "https://www.n-tv.de/politik/Deutschland-vervierfacht-Genehmigungen-fuer-Ruestungsexporte-id31089357.html",
+    "https://www.zeit.de/politik/ausland/2026-07/ruestungsexporte-bundesregierung-anstieg-kriegswaffen-genehmigungen",
+    "https://www.deutschlandfunk.de/deutsche-ruestungsexporte-steigen-im-ersten-halbjahr-2026-auf-neuen-rekordwert-102.html",
+    "https://www.bundestag.de/presse/hib/kurzmeldungen-1178776",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2026/02/rk20260203_2bvr162625.html",
+    "https://www.zdfheute.de/politik/ausland/ruestungsgueter-exporte-deutschland-israel-nahost-100.html",
+    "https://www.ecchr.eu/fall/keine-deutschen-waffen-nach-israel/",
+    "https://aufschrei-waffenhandel.de/service/nachrichten/nachricht/ruestungsexportgenehmigungen-erreichen-schwindelnde-hoehen",
+    "https://www.lto.de/recht/hintergruende/h/ruestung-waffen-export-kontrolle-gesetz-ampel-auswaertiges-amt-gruene-wirtschaftsministerium"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/arms-export-2026-08-10",
+    "web research on BMWE half-year figures, Bundestag answers, court ruling, civil society",
+    "wrote digest + log",
+    "committed, pushed, opened PR (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/arms-export-2026-08-10"
+}
