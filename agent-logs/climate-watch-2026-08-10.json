@@ -1,0 +1,59 @@
+{
+  "date": "2026-08-10",
+  "items": 4,
+  "pledges_vs_reality": [
+    {
+      "pledge": "Paris Agreement / global net-zero: emissions must fall now",
+      "reality": "Energy-related CO2 rose ~145 Mt in 2025 to a record ~38.4 Gt; fossil+cement CO2 up 1.1% to record 38.1 Gt",
+      "gap": "Emissions still rising, not falling",
+      "source": "https://www.iea.org/reports/global-energy-review-2026/co2-emissions"
+    },
+    {
+      "pledge": "New 2035 NDCs marketed as raised, 1.5C-aligned ambition",
+      "reality": "UNFCCC: only ~12% GHG cut by 2035 vs 2019; ~60% needed. UNEP EGR 2025: 2.3-2.5C with NDCs, 2.8C current policies",
+      "gap": "~48 percentage points of ambition missing",
+      "source": "https://www.unep.org/resources/emissions-gap-report-2025"
+    },
+    {
+      "pledge": "Corporate 'net zero' and 'climate neutral' marketing",
+      "reality": "96% (3,455) of analysed companies show >=1 greenwashing red flag; self-declared leaders cut only ~36-40% of actual footprint",
+      "gap": "Label says 100%, delivery is ~36-40%",
+      "source": "https://www.nature.com/articles/s44168-026-00346-6"
+    },
+    {
+      "pledge": "'Carbon neutral flying' and offset-based product labels",
+      "reality": "21 airlines committed 5 Nov 2025 to change claims after EU/CPC action; ECGT bans offset-based 'climate neutral' claims from Sept 2026",
+      "gap": "Regulators now treating these claims as misleading",
+      "source": "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+    }
+  ],
+  "highlights": [
+    "Record global CO2: ~38.4 Gt in 2025 (IEA Global Energy Review 2026)",
+    "New NDCs deliver only ~12% cut by 2035 vs 2019, far from the ~60% needed",
+    "96% of analysed corporate net-zero claims carry at least one greenwashing red flag",
+    "EU bans offset-based 'climate neutral' product claims from September 2026"
+  ],
+  "sources": [
+    "https://www.iea.org/reports/global-energy-review-2026/co2-emissions",
+    "https://globalcarbonbudget.org/fossil-fuel-co2-emissions-hit-record-high-in-2025/",
+    "https://www.carbonbrief.org/analysis-fossil-fuel-co2-emissions-to-set-new-record-in-2025-as-land-sink-recovers",
+    "https://unfccc.int/news/update-to-ndc-synthesis-report-shows-the-emissions-curve-is-being-bent-downwards-but-urgent",
+    "https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/ndc-synthesis-report/ndc-synthesis-report",
+    "https://www.unep.org/resources/emissions-gap-report-2025",
+    "https://www.nature.com/articles/s44168-026-00346-6",
+    "https://carbonmarketwatch.org/2023/03/09/zeroing-in-on-greenwashing-how-corporations-misuse-net-zero-pledges/",
+    "https://newclimate.org/resources/publications/corporate-climate-responsibility-monitor-2022",
+    "https://www.bdlaw.com/publications/eu-enforcement-action-21-airlines-commit-to-reform-environmental-claims-what-aviation-and-non-aviation-businesses-should-know/",
+    "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+    "https://www.steptoe.com/en/news-publications/green-claims-regulatory-and-litigation-focus-intensifies-in-the-eu-and-uk.html"
+  ],
+  "actions_taken": [
+    "Fresh clone of citizen-agents",
+    "Created branch agent/climate-watch-2026-08-10",
+    "Researched UNFCCC, UNEP, IEA, Global Carbon Project, Carbon Market Watch/NewClimate, EU Commission green claims",
+    "Wrote digest and log",
+    "Committed, pushed, opened PR for human review (NOT merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/climate-watch-2026-08-10"
+}
