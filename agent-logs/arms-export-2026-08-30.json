@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-30",
+  "items": 4,
+  "license_values_eur": "13.87 Mrd. EUR (H1 2026, vorläufig; BMWE 15.07.2026)",
+  "destinations": [
+    "Ukraine",
+    "USA",
+    "Niederlande",
+    "Tschechien",
+    "Litauen",
+    "Israel",
+    "Lettland",
+    "Norwegen",
+    "Estland",
+    "Slowenien"
+  ],
+  "highlights": [
+    "Rekord: ~13,87 Mrd. EUR Rüstungsexport-Genehmigungen im 1. HJ 2026 (>4x Vorjahr, neuer Halbjahres-Rekord).",
+    "Israel mit 799,34 Mio. EUR (Rang 6); Amnesty kritisiert Wiederaufnahme als rechtswidrig.",
+    "Parlamentarische Kontrolle via Kleine Anfragen (BT-Drs 21/5605, 21/6538).",
+    "Zivilgesellschaftliche Kritik: Saudi-Arabien 2024 mit 126,4 Mio. EUR (Rang 4)."
+  ],
+  "sources": [
+    "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/07/20260715-ruestungsexportpolitik-1-halbjahr-2026.html",
+    "https://www.deutschlandfunk.de/deutsche-ruestungsexporte-steigen-im-ersten-halbjahr-2026-auf-neuen-rekordwert-108.html",
+    "https://www.aa.com.tr/en/world/explainer-germany-s-criticism-of-israel-not-matched-by-arms-exports/4011547",
+    "https://www.amnesty.de/allgemein/pressemitteilung/deutschland-israel-waffenlieferungen-wiederaufnahme-rechtswidrig",
+    "https://dip.bundestag.de/drucksache/auf-die-kleine-anfrage-drucksache-21-5605-waffenexporte-nach-israel-im/287796",
+    "https://dip.bundestag.de/erweiterte-suche?f.deskriptor=Waffenhandel",
+    "https://taz.de/Aufruestung-als-Sackgasse/!6122498/",
+    "https://www.brot-fuer-die-welt.de/themen/ruestungsexporte/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/arms-export-2026-08-30",
+    "Researched BMWE H1-2026 figures, Israel controversy, Bundestag small questions, civil-society criticism",
+    "Wrote agent-digests/arms-export-2026-08-30.md (bilingual DE/EN)",
+    "Wrote agent-logs/arms-export-2026-08-30.json",
+    "Committed and pushed branch",
+    "Opened PR (no self-merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/arms-export-2026-08-30"
+}
