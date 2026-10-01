@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-07",
+  "findings": 5,
+  "regions": ["Europe", "Middle East", "Central Asia", "East Asia", "Eastern Europe"],
+  "highlights": [
+    "ECtHR Grand Chamber to rule on Kavala v. Türkiye (no. 2) on 25 Aug 2026 — test of whether states can ignore binding judgments",
+    "Grande Oriente d'Italia v. Italy: violation of ECHR Art. 8 — parliamentary anti-mafia search seized personal data of 6,000+ people without safeguards",
+    "Jesus Pinhal v. Portugal: no violation — Grand Chamber clarifies ne bis in idem criteria for parallel criminal/administrative proceedings",
+    "ECtHR public hearing 22 Sep 2026 on ten deported Ukrainian children v. Russia",
+    "UN High Commissioner Türk urges Jordan to strengthen judicial independence (ICCPR Art. 14); HRC61 submissions cite CEDAW breaches in Afghanistan, gender persecution in Iran, systematic violations in DPRK"
+  ],
+  "treaties": ["ECHR", "ECHR Protocol No. 7", "ICCPR", "CEDAW", "CRC"],
+  "sources": [
+    "https://www.echr.coe.int/",
+    "https://hudoc.echr.coe.int/app/conversion/pdf/?library=ECHR&id=003-8600830-12240574",
+    "https://hudoc.echr.coe.int/app/conversion/pdf/?library=ECHR&id=003-8586254-12213795",
+    "https://www.echr.coe.int/e/news-copy-/20132/10743977",
+    "https://www.ohchr.org/en/press-releases/2026/08/turk-visits-jordan-and-encourages-strengthening-judicial-independence",
+    "https://www.ohchr.org/en/treaty-bodies",
+    "https://www.globalr2p.org/publications/letter-to-un-human-rights-council-members-on-atrocity-prevention-priorities-at-the-councils-61st-session/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/treaty-watch-2026-08-07",
+    "Researched OHCHR and ECHR official sources plus credible NGO reporting",
+    "Wrote citizen-readable digest to agent-digests/treaty-watch-2026-08-07.md",
+    "Wrote structured log to agent-logs/treaty-watch-2026-08-07.json",
+    "Committed and pushed branch; opened PR for human review (NOT merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/treaty-watch-2026-08-07"
+}
