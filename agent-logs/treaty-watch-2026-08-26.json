@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-26",
+  "findings": 4,
+  "regions": ["Europe", "South Asia", "Netherlands", "Sweden", "Türkiye", "India"],
+  "highlights": [
+    "UN Human Rights Committee: Netherlands violated a child's ICCPR privacy right by storing his DNA profile automatically (Views CCPR/C/145/D/3720/2020, 19 May 2026).",
+    "UN Human Rights Committee: Sweden violated the right to life of a severely disabled child by deporting him to Albania without verifying medical care (CCPR/C/145/D/3724/2020, 27 Apr 2026).",
+    "ECHR Grand Chamber (25 Aug 2026): Türkiye must immediately release Osman Kavala and quash his conviction — third binding ruling defied by the state (Kavala v. Türkiye no. 2).",
+    "UN CERD (18 Aug 2026): first India review since 2007; committee cited 1,300+ anti-Muslim hate-speech incidents in 2025 and Dalit religious-freedom concerns."
+  ],
+  "sources": [
+    "https://www.ohchr.org/en/press-releases/2026/05/netherlands-violated-childs-right-privacy-storing-his-dna-profile-un",
+    "https://www.ohchr.org/en/press-releases/2026/04/sweden-violated-rights-child-severe-disabilities-deporting-him-albania",
+    "https://www.amnesty.org/en/latest/news/2026/08/turkiye-osman-kavala-must-be-immediately-released-following-european-court-order-to-quash-his-conviction/",
+    "https://hudoc.echr.coe.int/eng",
+    "https://www.ohchr.org/en/meeting-summaries/2026/08/experts-committee-elimination-racial-discrimination-welcome-its-first-0"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents to temp dir",
+    "Created branch agent/treaty-watch-2026-08-26",
+    "Researched UN-OHCHR, ECHR/HUDOC and Amnesty sources",
+    "Wrote agent-digests/treaty-watch-2026-08-26.md (4 bilingual findings)",
+    "Wrote agent-logs/treaty-watch-2026-08-26.json",
+    "Committed and pushed branch",
+    "Opened pull request (no merge — human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/treaty-watch-2026-08-26"
+}
