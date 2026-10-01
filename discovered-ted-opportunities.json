@@ -1,9 +1,82 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-09-30T12:38:44.321Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260831 SORT BY publication-date DESC",
+  "generated_at": "2026-10-01T13:20:56.147Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260901 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_676854_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Branchenspezifisches Softwarepaket – Beschaffung von SAP Rise with SAP Private Cloud Edition - einschließlich Lizenzen, Betrieb und Infrastruktur",
+      "deadline": null,
+      "buyer_or_program": "Universitätsklinikum Essen (AöR)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/676854-2026"
+      ],
+      "ted": {
+        "publication_number": "676854-2026",
+        "publication_date": "2026-10-01+02:00",
+        "cpv": [
+          "48100000",
+          "48100000"
+        ]
+      }
+    },
+    {
+      "id": "ted_676917_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie",
+      "deadline": "2026-10-12T23:59:59+02:00",
+      "buyer_or_program": "Universitätsklinikum Aachen AöR",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/676917-2026"
+      ],
+      "ted": {
+        "publication_number": "676917-2026",
+        "publication_date": "2026-10-01+02:00",
+        "cpv": [
+          "38000000",
+          "38000000",
+          "38000000",
+          "38000000",
+          "38000000"
+        ]
+      }
+    },
     {
       "id": "ted_673584_2026",
       "type": "tender_candidate",
@@ -1202,41 +1275,6 @@
           "30236100",
           "30000000",
           "30236100"
-        ]
-      }
-    },
-    {
-      "id": "ted_597131_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvertrag Software, AI & Digital Services (SAID)",
-      "deadline": "2026-08-10T12:00:00+02:00",
-      "buyer_or_program": "Dataport AöR",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/597131-2026"
-      ],
-      "ted": {
-        "publication_number": "597131-2026",
-        "publication_date": "2026-08-31+02:00",
-        "cpv": [
-          "72000000",
-          "72000000",
-          "72000000",
-          "72000000"
         ]
       }
     }

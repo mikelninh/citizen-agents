@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-09-30T12:38:44.838Z
-Open: **24** · Qualified: **5** · Automated new: **33** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-10-01T13:20:56.643Z
+Open: **25** · Qualified: **5** · Automated new: **34** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – IT-Roadmap der Sächsischen Krankenhäuser und des Haus am Karswald: Ist-Analyse, Zielbild und Umsetzungskonzept
 **Origin:** TED_AUTOMATED · **Score:** 73/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -57,7 +57,19 @@ Open: **24** · Qualified: **5** · Automated new: **33** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie
-**Origin:** TED_AUTOMATED · **Score:** 60/100 · **Route:** REVIEW · **13d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 60/100 · **Route:** REVIEW · **12d left** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
+**Best proof:** CareOS
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie
+**Origin:** TED_AUTOMATED · **Score:** 60/100 · **Route:** REVIEW · **12d left** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
+**Best proof:** CareOS
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Branchenspezifisches Softwarepaket – Beschaffung von SAP Rise with SAP Private Cloud Edition - einschließlich Lizenzen, Betrieb und Infrastruktur
+**Origin:** TED_AUTOMATED · **Score:** 57/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
@@ -68,26 +80,14 @@ Open: **24** · Qualified: **5** · Automated new: **33** · Partner-route: **0*
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Studie Zukunftsprojektion und Entwicklungspotentiale der Kultur- und Kreativwirtschaft 2037
+## Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS
 **Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **0d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS
-**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **1d left** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
 ## Deutschland – Softwaretests – AIS Abnahmeprozess
-**Origin:** TED_AUTOMATED · **Score:** 54/100 · **Route:** REVIEW · **6d left** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Bereitstellung, Customizing, Betrieb sowie Weiterentwicklung eines landesweiten touristischen Datenmanagementsystems
-**Origin:** TED_AUTOMATED · **Score:** 51/100 · **Route:** REVIEW · **16d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 54/100 · **Route:** REVIEW · **5d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
