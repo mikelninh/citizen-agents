@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-13",
+  "items": 4,
+  "systems": [
+    "EU AI Act (Hochrisiko + Transparenz, Vollzug ab 02.08.2026)",
+    "SCHUFA Bonitaets-Score (Art. 22 DSGVO, EuGH C-634/21)",
+    "Predictive Policing / Palantir DE (BVerfG 16.02.2023)",
+    "Algorithmische Verwaltung Jobcenter/Finanzamt (ADM)"
+  ],
+  "highlights": [
+    "EU AI Act Vollzug durch AI Office + nationale Behorden ab 2. August 2026 gestartet; KI-Omnibus am 27.07.2026 in Kraft.",
+    "EuGH C-634/21 (07.12.2023): SCHUFA-Score kann automatisierte Entscheidung nach Art. 22 DSGVO sein; LG Bamberg (26.03.2025) verbietet automatische Score-Erzeugung.",
+    "BVerfG erklaerte Palantir-Einsatz in Hessen/Hamburg am 16.02.2023 fuer verfassungswidrig; BKA-PNR nur 0,3 % Trefferquote (277/94000).",
+    "AlgorithmWatch: algorithmische Verwaltung (Jobcenter, Finanzamt, BAMF) oft intransparent und undemokratisch legitimiert."
+  ],
+  "sources": [
+    "https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august",
+    "https://digital-strategy.ec.europa.eu/en/news/ai-omnibus-enters-force",
+    "https://www.vzbv.de/meldungen/eugh-urteil-sorgt-fuer-nachvollziehbare-scoring-ergebnisse",
+    "https://dejure.org/gesetze/DSGVO/22.html",
+    "https://algorithmwatch.org/de/algorithmische-polizeiarbeit-erklaert/",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2023/02/rs20230216_1bvr154719.html",
+    "https://algorithmwatch.org/en/algorithmic-administration-explained/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/algorithm-watch-2026-08-13",
+    "Researched 4 items via web_search/web_extract (EU AI Act, SCHUFA/Art.22, Predictive Policing, algorithmic administration)",
+    "Wrote agent-digests/algorithm-watch-2026-08-13.md (bilingual DE/EN)",
+    "Wrote agent-logs/algorithm-watch-2026-08-13.json",
+    "Committed both artifacts on branch agent/algorithm-watch-2026-08-13",
+    "Pushed branch and opened PR (human review only; no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/algorithm-watch-2026-08-13"
+}
