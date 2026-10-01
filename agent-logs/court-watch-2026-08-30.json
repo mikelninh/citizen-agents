@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-30",
+  "rulings": 4,
+  "courts": ["EuGH", "BVerfG"],
+  "highlights": [
+    "EuGH C-45/24: Airlines must refund full ticket price incl. booking-portal commission even if unaware of its amount (flight-rights-mcp).",
+    "EuGH C-234/25 (Sky Oesterreich): personalised streaming = digital service, 14-day withdrawal right applies; AGB waiver clauses invalid (agb-reader).",
+    "BVerfG 2 BvR 1502/26: extradition to Poland provisionally blocked pending Art. 4 CFR detention-conditions review.",
+    "BVerfG PM 51/2026 / 2 BvC 20/26: Bundestag reminded of timely/sachgerecht election-review duty under Art. 41 GG."
+  ],
+  "sources": [
+    "https://www.tagesschau.de/wirtschaft/verbraucher/eugh-vermittlungsgebuehr-airlines-100.html",
+    "https://www.datev-magazin.de/nachrichten-steuern-recht/recht/flugannullierung-die-erstattung-des-flugticketpreises-muss-die-beim-kauf-von-einem-vermittler-erhobene-provision-umfassen-144102",
+    "https://www.lto.de/recht/nachrichten/n/c4524-eugh-flugausfall-airline-muss-provision-erstatten",
+    "https://www.insideprivacy.com/consumer-protection/cjeu-decides-when-streaming-subscriptions-are-subject-to-the-right-of-withdrawal/",
+    "https://infocuria.curia.europa.eu/tabs/document/C/2025/C-0234-25-00000000RP-01-P-01/ARRET/323435-EN-1-html",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2026/08/rk20260811_2bvr150226.html",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-051.html"
+  ],
+  "actions_taken": [
+    "Cloned citizen-agents repo",
+    "Created branch agent/court-watch-2026-08-30",
+    "Researched BVerfG + EuGH/CJEU rulings via web_search/web_extract",
+    "Wrote agent-digests/court-watch-2026-08-30.md (bilingual DE/EN)",
+    "Wrote agent-logs/court-watch-2026-08-30.json",
+    "Committed and pushed branch",
+    "Opened PR against main (human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/court-watch-2026-08-30"
+}
