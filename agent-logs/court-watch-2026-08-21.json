@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-21",
+  "rulings": 6,
+  "courts": ["BVerfG", "EuGH"],
+  "highlights": [
+    "BVerfG 2 BvR 319/26: Pauschale Streichung der 'Menschenrechtsliste' verfassungswidrig (Willkürverbot).",
+    "EuGH C-234/25 (Sky Österreich): Streaming-Abos sind digitale Dienstleistung -> 14-Tage-Widerrufsrecht greift.",
+    "EuGH C-629/24 (Costa Crociere): Kreuzfahrt-Personenschaden -> Athen-Konvention deckelt Haftung.",
+    "EuGH C-81/24 (OTP banka): Basiskonto darf nicht auto-wegen Auslandssanktionsliste verweigert werden.",
+    "EuGH C-903/24 (Zmarka): Verzugszinsen bei nichtigem Vertrag erst ab beziffertem Betrag.",
+    "EuGH C-346/25 (FIBO Markets): CFD-Broker können Heimatrecht der Kunden nicht aushebeln."
+  ],
+  "sources": [
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-046.html",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2026/07/rs20260722_2bvr031926.html",
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:62025CJ0234",
+    "https://www.insideprivacy.com/consumer-protection/cjeu-decides-when-streaming-subscriptions-are-subject-to-the-right-of-withdrawal/",
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:62024CJ0629",
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:62024CJ0081",
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:62024CJ0903",
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:62025CJ0346"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/court-watch-2026-08-21",
+    "Researched BVerfG (July/August 2026) and EuGH/CJEU (June/July 2026) press releases and judgments",
+    "Wrote agent-digests/court-watch-2026-08-21.md (6 rulings, bilingual DE/EN)",
+    "Wrote agent-logs/court-watch-2026-08-21.json",
+    "Committed and pushed branch",
+    "Opened PR against main (no self-merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/court-watch-2026-08-21"
+}
