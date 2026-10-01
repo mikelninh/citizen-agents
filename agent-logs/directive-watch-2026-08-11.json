@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-11",
+  "directives_found": 6,
+  "deadlines_coming": 1,
+  "late": 4,
+  "highlights": [
+    "Germany is explicitly named in 4 active EU Commission infringement steps for late transposition: Anti-SLAPP (EU 2024/1069, formal notice 15 Jul 2026), Professional Qualifications (EU 2024/782, 27 May 2026), CRD VI (EU 2024/1619, 27 Mar 2026), and Pay Transparency (EU 2023/970, missed 7 Jun 2026, infringement expected later 2026).",
+    "Pay Transparency Directive: Germany's draft law is still unpublished; BMAS confirms entry into force no earlier than early 2027 and pay-reporting duties not before June 2028.",
+    "One deadline falls inside the next 180 days: New Product Liability Directive (EU 2024/2853), due 9 Dec 2026 — flagged AT RISK / to watch.",
+    "EPBD (EU 2024/1275) deadline (29 May 2026) has passed; Germany's complete transposition not yet confirmed — flagged for verification."
+  ],
+  "sources": [
+    "https://eur-lex.europa.eu/eli/dir/2024/1069/oj/eng",
+    "https://ec.europa.eu/commission/presscorner/detail/en/inf_26_1380",
+    "https://eur-lex.europa.eu/eli/dir/2024/782/oj/eng",
+    "https://ec.europa.eu/commission/presscorner/detail/da/inf_26_1097",
+    "https://eur-lex.europa.eu/eli/dir/2023/970/oj/eng",
+    "https://cms.law/en/deu/legal-updates/Pay-transparency-in-the-absence-of-implementing-legislation",
+    "https://trusaic.com/resources/resources-eu-pay-transparency-directive-member-state-transposition-monitor/",
+    "https://eur-lex.europa.eu/eli/dir/2024/1619/oj/eng",
+    "https://www.regulationtomorrow.com/2026/03/commission-opens-infringement-procedures-against-member-states-for-failing-to-transpose-eu-directives/",
+    "https://eur-lex.europa.eu/eli/dir/2024/2853/oj/eng",
+    "https://www.faegredrinker.com/en/insights/publications/2026/6/transposing-the-eus-new-product-liability-directive-a-member-state-progress-report",
+    "https://eur-lex.europa.eu/eli/dir/2024/1275/oj/eng",
+    "https://ec.europa.eu/commission/presscorner/detail/fi/inf_25_761"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/directive-watch-2026-08-11",
+    "Researched EUR-Lex, EU Commission infringement press releases, and German transposition trackers",
+    "Wrote agent-digests/directive-watch-2026-08-11.md (citizen-readable)",
+    "Wrote agent-logs/directive-watch-2026-08-11.json",
+    "Committed and pushed branch",
+    "Opened pull request for human review (NOT merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/directive-watch-2026-08-11"
+}
