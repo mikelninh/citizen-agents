@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-13",
+  "rulings": 4,
+  "courts": ["BVerfG", "EuGH"],
+  "highlights": [
+    "BVerfG 2 BvR 319/26: Pauschaler Widerruf von Aufnahmezusagen (Afghanistan) verstoesst gegen Willkuerverbot.",
+    "BVerfG 2 BvC 20/26: Bundestag muss Wahleinsprueche zeit- und sachgerecht pruefen.",
+    "EuGH C-45/24: Airline muss bei Flugausfall auch die Buchungsportal-Provision erstatten (betrifft flight-rights-mcp).",
+    "EuGH C-526/24 (Brillen Rottler): DSGVO-Auskunftsrecht kann bei Missbrauchszweck abgelehnt werden."
+  ],
+  "sources": [
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-046.html",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2026/07/rs20260722_2bvr031926.html",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-051.html",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2026/07/cs20260723_2bvc002026.html",
+    "https://www.tagesschau.de/wirtschaft/verbraucher/eugh-vermittlungsgebuehr-airlines-100.html",
+    "https://curia.europa.eu/site/upload/docs/application/pdf/2026-03/cp260038de.pdf",
+    "https://openjur.de/u/2544622.html"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents to temp dir",
+    "created branch agent/court-watch-2026-08-13",
+    "researched BVerfG press releases (bvg26-046, bvg26-051) and EuGH judgments (C-45/24, C-526/24)",
+    "wrote agent-digests/court-watch-2026-08-13.md (4 rulings, bilingual DE/EN)",
+    "wrote agent-logs/court-watch-2026-08-13.json",
+    "committed digest + log to branch",
+    "pushed branch to origin",
+    "opened PR against main (human review only, not merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/court-watch-2026-08-13"
+}
