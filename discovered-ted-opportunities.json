@@ -1,9 +1,44 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-01T13:20:56.147Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260901 SORT BY publication-date DESC",
+  "generated_at": "2026-10-02T12:40:14.955Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260902 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_680648_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement",
+      "deadline": "2026-10-23T23:59:59+02:00",
+      "buyer_or_program": "Postbeamtenkrankenkasse",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/680648-2026"
+      ],
+      "ted": {
+        "publication_number": "680648-2026",
+        "publication_date": "2026-10-02+02:00",
+        "cpv": [
+          "48000000",
+          "48000000"
+        ]
+      }
+    },
     {
       "id": "ted_676854_2026",
       "type": "tender_candidate",
@@ -1240,41 +1275,6 @@
           "72230000",
           "72263000",
           "72253200"
-        ]
-      }
-    },
-    {
-      "id": "ted_600829_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Maschinen, Material und Zubehör für Büro und Computer, außer Möbeln und Softwarepaketen – HPC-Performancespeicher",
-      "deadline": null,
-      "buyer_or_program": "Universität Duisburg-Essen",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/600829-2026"
-      ],
-      "ted": {
-        "publication_number": "600829-2026",
-        "publication_date": "2026-09-01+02:00",
-        "cpv": [
-          "30000000",
-          "30236100",
-          "30000000",
-          "30236100"
         ]
       }
     }
