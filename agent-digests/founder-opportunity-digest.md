@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-10-03T11:42:29.139Z
-Open: **21** · Qualified: **2** · Automated new: **28** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-10-04T12:25:09.195Z
+Open: **20** · Qualified: **2** · Automated new: **27** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Maschinen für allgemeine und besondere Zwecke – Beschaffung von ferngesteuerten Unterwasserrobotern (ROV) für das DFKI Robotics Innovation Center
 **Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -32,26 +32,20 @@ Open: **21** · Qualified: **2** · Automated new: **28** · Partner-route: **0*
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – RV zur Erbringung von KI- Forschungs- und Beratungsleistungen im Bereich der Einsatzevaluation für alle Behörden im gesamten Ressort des Finanzministeriums des Landes NRW
-**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
 ## Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie
-**Origin:** TED_AUTOMATED · **Score:** 60/100 · **Route:** REVIEW · **10d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 60/100 · **Route:** REVIEW · **9d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie
-**Origin:** TED_AUTOMATED · **Score:** 60/100 · **Route:** REVIEW · **10d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 60/100 · **Route:** REVIEW · **9d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement
-**Origin:** TED_AUTOMATED · **Score:** 58/100 · **Route:** REVIEW · **21d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 58/100 · **Route:** REVIEW · **20d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
@@ -69,25 +63,31 @@ Open: **21** · Qualified: **2** · Automated new: **28** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwaretests – AIS Abnahmeprozess
-**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **3d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Bereitstellung, Customizing, Betrieb sowie Weiterentwicklung eines landesweiten touristischen Datenmanagementsystems
-**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **13d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **12d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Allgemeine und berufliche Bildung – Development of Training Courses for the European Raw Materials Sector
-**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **14d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **13d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Zentralrechner – V444_2026 Rechenknoten für HPC-Cluster
-**Origin:** TED_AUTOMATED · **Score:** 51/100 · **Route:** REVIEW · **20d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 51/100 · **Route:** REVIEW · **19d left** · **Pipeline:** FOUND
+**Why fit:** AI-related German procurement candidate requiring manual qualification.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Video-Überwachungssystem – Bäderland Hamburg GmbH: Projekt KI - gestütztes Ertrinkenden-Erkennungssystem
+**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
