@@ -1,9 +1,85 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-04T12:25:08.600Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260904 SORT BY publication-date DESC",
+  "generated_at": "2026-10-05T14:45:20.486Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260905 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_682877_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
+      "deadline": null,
+      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
+      ],
+      "ted": {
+        "publication_number": "682877-2026",
+        "publication_date": "2026-10-05+02:00",
+        "cpv": [
+          "38000000",
+          "38622000",
+          "38000000",
+          "38622000"
+        ]
+      }
+    },
+    {
+      "id": "ted_683267_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Übersetzungsdienste – Translation works and services from EN into DE, FR and IT",
+      "deadline": null,
+      "buyer_or_program": "European Central Bank",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/683267-2026"
+      ],
+      "ted": {
+        "publication_number": "683267-2026",
+        "publication_date": "2026-10-05+02:00",
+        "cpv": [
+          "79530000",
+          "79530000",
+          "79530000",
+          "79530000",
+          "79530000",
+          "79530000",
+          "79530000",
+          "79530000",
+          "79530000",
+          "79530000"
+        ]
+      }
+    },
     {
       "id": "ted_680648_2026",
       "type": "tender_candidate",
@@ -974,43 +1050,6 @@
         "cpv": [
           "72130000",
           "72130000"
-        ]
-      }
-    },
-    {
-      "id": "ted_611345_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Digitalisierung der Arbeitsschutzverwaltung in Nordrhein-Westfalen",
-      "deadline": null,
-      "buyer_or_program": "Ministerium für Heimat, Kommunales, Bau und Digitalisierung des Landes Nordrhein-Westfalen",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/611345-2026"
-      ],
-      "ted": {
-        "publication_number": "611345-2026",
-        "publication_date": "2026-09-04+02:00",
-        "cpv": [
-          "72000000",
-          "72200000",
-          "72260000",
-          "72000000",
-          "72200000",
-          "72260000"
         ]
       }
     }
