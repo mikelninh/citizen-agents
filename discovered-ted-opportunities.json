@@ -1,9 +1,84 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-05T14:45:20.486Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260905 SORT BY publication-date DESC",
+  "generated_at": "2026-10-06T13:21:25.822Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260906 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_688976_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Systemdienstleistungen und Unterstützungsdienste – Beschaffung von GPU- und CPU-Rechenleistung zum Training eines LLM",
+      "deadline": null,
+      "buyer_or_program": "Gottfried Wilhelm Leibniz Universität Hannover",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 62,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof",
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof, CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/688976-2026"
+      ],
+      "ted": {
+        "publication_number": "688976-2026",
+        "publication_date": "2026-10-06+02:00",
+        "cpv": [
+          "72250000",
+          "72250000",
+          "72250000"
+        ]
+      }
+    },
+    {
+      "id": "ted_686124_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Softwarepaket und Informationssysteme – 1807-AB-Strategische Partnerschaft - KI für die Bw",
+      "deadline": null,
+      "buyer_or_program": "BWI GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/686124-2026"
+      ],
+      "ted": {
+        "publication_number": "686124-2026",
+        "publication_date": "2026-10-06+02:00",
+        "cpv": [
+          "48000000",
+          "72200000",
+          "72210000",
+          "48000000",
+          "72200000",
+          "72210000"
+        ]
+      }
+    },
     {
       "id": "ted_682877_2026",
       "type": "tender_candidate",
