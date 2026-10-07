@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-10-06T13:21:26.186Z
-Open: **23** · Qualified: **3** · Automated new: **30** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-10-07T13:28:41.853Z
+Open: **24** · Qualified: **3** · Automated new: **32** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Systemdienstleistungen und Unterstützungsdienste – Beschaffung von GPU- und CPU-Rechenleistung zum Training eines LLM
 **Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -39,19 +39,19 @@ Open: **23** · Qualified: **3** · Automated new: **30** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie
-**Origin:** TED_AUTOMATED · **Score:** 61/100 · **Route:** REVIEW · **7d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 61/100 · **Route:** REVIEW · **6d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie
-**Origin:** TED_AUTOMATED · **Score:** 61/100 · **Route:** REVIEW · **7d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 61/100 · **Route:** REVIEW · **6d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement
-**Origin:** TED_AUTOMATED · **Score:** 58/100 · **Route:** REVIEW · **18d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 58/100 · **Route:** REVIEW · **17d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
@@ -68,20 +68,20 @@ Open: **23** · Qualified: **3** · Automated new: **30** · Partner-route: **0*
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – Softwaretests – AIS Abnahmeprozess
-**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **0d left** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Bereitstellung, Customizing, Betrieb sowie Weiterentwicklung eines landesweiten touristischen Datenmanagementsystems
-**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **10d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **9d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Allgemeine und berufliche Bildung – Development of Training Courses for the European Raw Materials Sector
-**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **11d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **10d left** · **Pipeline:** FOUND
+**Why fit:** AI-related German procurement candidate requiring manual qualification.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Luxemburg, Belgien, Deutschland, Malta, Portugal – Entwicklung von Bibliothekensoftware – Library Services Platform
+**Origin:** TED_AUTOMATED · **Score:** 52/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
