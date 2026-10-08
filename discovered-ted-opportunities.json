@@ -1,7 +1,7 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-07T13:28:41.454Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260907 SORT BY publication-date DESC",
+  "generated_at": "2026-10-08T13:34:38.218Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260908 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
     {
@@ -149,6 +149,41 @@
       }
     },
     {
+      "id": "ted_682877_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
+      "deadline": null,
+      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
+      ],
+      "ted": {
+        "publication_number": "682877-2026",
+        "publication_date": "2026-10-05+02:00",
+        "cpv": [
+          "38000000",
+          "38622000",
+          "38000000",
+          "38622000"
+        ]
+      }
+    },
+    {
       "id": "ted_683267_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Übersetzungsdienste – Translation works and services from EN into DE, FR and IT",
@@ -186,41 +221,6 @@
           "79530000",
           "79530000",
           "79530000"
-        ]
-      }
-    },
-    {
-      "id": "ted_682877_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
-      "deadline": null,
-      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
-      ],
-      "ted": {
-        "publication_number": "682877-2026",
-        "publication_date": "2026-10-05+02:00",
-        "cpv": [
-          "38000000",
-          "38622000",
-          "38000000",
-          "38622000"
         ]
       }
     },
@@ -1012,47 +1012,6 @@
       }
     },
     {
-      "id": "ted_622567_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Studie Zukunftsprojektion und Entwicklungspotentiale der Kultur- und Kreativwirtschaft 2037",
-      "deadline": "2026-09-29T23:59:00+02:00",
-      "buyer_or_program": "Bundesministerium für Wirtschaft und Energie",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/622567-2026"
-      ],
-      "ted": {
-        "publication_number": "622567-2026",
-        "publication_date": "2026-09-09+02:00",
-        "cpv": [
-          "73000000",
-          "75130000",
-          "79311400",
-          "72314000",
-          "72312100",
-          "73000000",
-          "75130000",
-          "79311400",
-          "72314000",
-          "72312100"
-        ]
-      }
-    },
-    {
       "id": "ted_621432_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Supercomputer – Rahmenvereinbarung - Hochleistungsrechner",
@@ -1158,42 +1117,6 @@
           "79410000",
           "79212200",
           "79410000"
-        ]
-      }
-    },
-    {
-      "id": "ted_614053_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Beratung bei der Planung von Computeranlagen – Markterkundungsverfahren zur Einführung einer On-Premise-Plattform zum Betrieb von Large Language Modellen (LLM)",
-      "deadline": null,
-      "buyer_or_program": "Abrechnungszentrum Emmendingen",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 62,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/614053-2026"
-      ],
-      "ted": {
-        "publication_number": "614053-2026",
-        "publication_date": "2026-09-07+02:00",
-        "cpv": [
-          "72130000",
-          "72130000"
         ]
       }
     }
