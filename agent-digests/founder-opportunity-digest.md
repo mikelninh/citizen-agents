@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-10-08T13:34:38.820Z
-Open: **23** · Qualified: **2** · Automated new: **30** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-10-09T13:21:32.035Z
+Open: **22** · Qualified: **2** · Automated new: **27** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Systemdienstleistungen und Unterstützungsdienste – Beschaffung von GPU- und CPU-Rechenleistung zum Training eines LLM
 **Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -12,12 +12,6 @@ Open: **23** · Qualified: **2** · Automated new: **30** · Partner-route: **0*
 **Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.
 **Best proof:** Digital Worker Factory / OpsPilot
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Interne Betriebsrevision – Prüfungs- und Beratungsleistungen Interne Revision und Non-Financial Risk, Los 2: Interne Revision - IT
-**Origin:** TED_AUTOMATED · **Score:** 69/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched CARE / Public Service systems, PrüfPilot. Full requirements still need review.
-**Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Supercomputer – Rahmenvereinbarung - Hochleistungsrechner
@@ -33,19 +27,19 @@ Open: **23** · Qualified: **2** · Automated new: **30** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie
-**Origin:** TED_AUTOMATED · **Score:** 61/100 · **Route:** REVIEW · **5d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 61/100 · **Route:** REVIEW · **4d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie
-**Origin:** TED_AUTOMATED · **Score:** 61/100 · **Route:** REVIEW · **5d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 61/100 · **Route:** REVIEW · **4d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement
-**Origin:** TED_AUTOMATED · **Score:** 58/100 · **Route:** REVIEW · **16d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 58/100 · **Route:** REVIEW · **15d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
@@ -63,13 +57,19 @@ Open: **23** · Qualified: **2** · Automated new: **30** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Bereitstellung, Customizing, Betrieb sowie Weiterentwicklung eines landesweiten touristischen Datenmanagementsystems
-**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **8d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 54/100 · **Route:** REVIEW · **7d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Allgemeine und berufliche Bildung – Development of Training Courses for the European Raw Materials Sector
-**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **9d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **8d left** · **Pipeline:** FOUND
+**Why fit:** AI-related German procurement candidate requiring manual qualification.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Zentralrechner – V444_2026 Rechenknoten für HPC-Cluster
+**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **14d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
@@ -86,8 +86,8 @@ Open: **23** · Qualified: **2** · Automated new: **30** · Partner-route: **0*
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – Zentralrechner – V444_2026 Rechenknoten für HPC-Cluster
-**Origin:** TED_AUTOMATED · **Score:** 51/100 · **Route:** REVIEW · **15d left** · **Pipeline:** FOUND
+## Deutschland – Beratung im Bereich Forschung und Entwicklung – Projektträgerschaft für das Bundesministerium für Forschung, Technologie und Raumfahrt (BMFTR) im Bereich Technologische Souveränität und Innovationen – Schlüsseltechnologie Batterie
+**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice

@@ -1,7 +1,7 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-08T13:34:38.218Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260908 SORT BY publication-date DESC",
+  "generated_at": "2026-10-09T13:21:31.384Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260909 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
     {
@@ -666,41 +666,6 @@
       }
     },
     {
-      "id": "ted_651380_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Softwarepaket und Informationssysteme – Legal AI Workspace",
-      "deadline": "2026-09-28T11:00:00+02:00",
-      "buyer_or_program": "KfW Bankengruppe",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "GitLaw"
-      ],
-      "why_fit": "Keyword-level discovery matched GitLaw. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/651380-2026"
-      ],
-      "ted": {
-        "publication_number": "651380-2026",
-        "publication_date": "2026-09-22+02:00",
-        "cpv": [
-          "48000000",
-          "48000000"
-        ]
-      }
-    },
-    {
       "id": "ted_648921_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Projekt \"FreeBSD – AI-Assisted Vulnerability Discovery\"",
@@ -1044,79 +1009,6 @@
         "cpv": [
           "30211100",
           "30211100"
-        ]
-      }
-    },
-    {
-      "id": "ted_618833_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Softwarepaket und Informationssysteme – Legal AI Workspace",
-      "deadline": "2026-09-28T11:00:00+02:00",
-      "buyer_or_program": "KfW Bankengruppe",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "GitLaw"
-      ],
-      "why_fit": "Keyword-level discovery matched GitLaw. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/618833-2026"
-      ],
-      "ted": {
-        "publication_number": "618833-2026",
-        "publication_date": "2026-09-08+02:00",
-        "cpv": [
-          "48000000",
-          "48000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_616453_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Interne Betriebsrevision – Prüfungs- und Beratungsleistungen Interne Revision und Non-Financial Risk, Los 2: Interne Revision - IT",
-      "deadline": null,
-      "buyer_or_program": "KfW Bankengruppe",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 58,
-      "product_matches": [
-        "CARE / Public Service systems",
-        "PrüfPilot"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems, PrüfPilot. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/616453-2026"
-      ],
-      "ted": {
-        "publication_number": "616453-2026",
-        "publication_date": "2026-09-08+02:00",
-        "cpv": [
-          "79212200",
-          "79410000",
-          "79212200",
-          "79410000"
         ]
       }
     }
