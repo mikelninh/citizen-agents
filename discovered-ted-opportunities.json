@@ -1,7 +1,7 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-09T13:21:31.384Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260909 SORT BY publication-date DESC",
+  "generated_at": "2026-10-10T12:36:03.999Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260910 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
     {
@@ -149,41 +149,6 @@
       }
     },
     {
-      "id": "ted_682877_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
-      "deadline": null,
-      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
-      ],
-      "ted": {
-        "publication_number": "682877-2026",
-        "publication_date": "2026-10-05+02:00",
-        "cpv": [
-          "38000000",
-          "38622000",
-          "38000000",
-          "38622000"
-        ]
-      }
-    },
-    {
       "id": "ted_683267_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Übersetzungsdienste – Translation works and services from EN into DE, FR and IT",
@@ -221,6 +186,41 @@
           "79530000",
           "79530000",
           "79530000"
+        ]
+      }
+    },
+    {
+      "id": "ted_682877_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
+      "deadline": null,
+      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
+      ],
+      "ted": {
+        "publication_number": "682877-2026",
+        "publication_date": "2026-10-05+02:00",
+        "cpv": [
+          "38000000",
+          "38622000",
+          "38000000",
+          "38622000"
         ]
       }
     },
@@ -970,42 +970,6 @@
       "ted": {
         "publication_number": "624763-2026",
         "publication_date": "2026-09-10+02:00",
-        "cpv": [
-          "30211100",
-          "30211100"
-        ]
-      }
-    },
-    {
-      "id": "ted_621432_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Supercomputer – Rahmenvereinbarung - Hochleistungsrechner",
-      "deadline": "2026-09-08T23:59:59+02:00",
-      "buyer_or_program": "Universitätsklinikum Aachen AöR",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems",
-        "CareOS"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems, CareOS. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/621432-2026"
-      ],
-      "ted": {
-        "publication_number": "621432-2026",
-        "publication_date": "2026-09-09+02:00",
         "cpv": [
           "30211100",
           "30211100"
