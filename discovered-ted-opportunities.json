@@ -1,9 +1,55 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-14T11:57:21.126Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260914 SORT BY publication-date DESC",
+  "generated_at": "2026-10-15T11:33:47.299Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260915 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_712759_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Diverse Software-Entwicklungen und Computersysteme – Virtuelle Tourist-Information - KI-basierte Gästeberatung, Los 3 - Künstliche Intelligenz (KI) / KI-Chatbot / Gästeberatungssystem",
+      "deadline": null,
+      "buyer_or_program": "Felsenland Südeifel Tourismus GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 62,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/712759-2026"
+      ],
+      "ted": {
+        "publication_number": "712759-2026",
+        "publication_date": "2026-10-15+02:00",
+        "cpv": [
+          "72212900",
+          "48000000",
+          "72261000",
+          "72322000",
+          "72415000",
+          "73000000",
+          "72212900",
+          "48000000",
+          "72261000",
+          "72322000",
+          "72415000",
+          "73000000"
+        ]
+      }
+    },
     {
       "id": "ted_705665_2026",
       "type": "tender_candidate",
@@ -1043,41 +1089,6 @@
           "72000000",
           "72000000",
           "72000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_629342_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Softwaretests – AIS Abnahmeprozess",
-      "deadline": "2026-10-05T23:59:59+02:00",
-      "buyer_or_program": "FWU Institut für Film und Bild in Wissenschaft und Unterricht gGmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/629342-2026"
-      ],
-      "ted": {
-        "publication_number": "629342-2026",
-        "publication_date": "2026-09-14+02:00",
-        "cpv": [
-          "72254000",
-          "72254000",
-          "72254000",
-          "72254000"
         ]
       }
     }

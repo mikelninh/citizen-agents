@@ -1,11 +1,17 @@
 # Founder Opportunity Digest
-Generated: 2026-10-14T11:57:21.646Z
-Open: **24** · Qualified: **3** · Automated new: **29** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-10-15T11:33:48.030Z
+Open: **25** · Qualified: **4** · Automated new: **29** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Dienstleistungen im Rahmen der gesetzlichen Sozialversicherung – Abrechnung der Arzneimittel von öffentlichen Apotheken, Krankenhausapotheken und sonstigen Leistungserbringern nach § 300 SGB V
 **Origin:** TED_AUTOMATED · **Score:** 73/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Diverse Software-Entwicklungen und Computersysteme – Virtuelle Tourist-Information - KI-basierte Gästeberatung, Los 3 - Künstliche Intelligenz (KI) / KI-Chatbot / Gästeberatungssystem
+**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.
+**Best proof:** Digital Worker Factory / OpsPilot
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Systemdienstleistungen und Unterstützungsdienste – Beschaffung von GPU- und CPU-Rechenleistung zum Training eines LLM
@@ -39,7 +45,7 @@ Open: **24** · Qualified: **3** · Automated new: **29** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement
-**Origin:** TED_AUTOMATED · **Score:** 60/100 · **Route:** REVIEW · **10d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 60/100 · **Route:** REVIEW · **9d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
@@ -57,19 +63,19 @@ Open: **24** · Qualified: **3** · Automated new: **29** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Bereitstellung, Customizing, Betrieb sowie Weiterentwicklung eines landesweiten touristischen Datenmanagementsystems
-**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **1d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Allgemeine und berufliche Bildung – Development of Training Courses for the European Raw Materials Sector
-**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **3d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Zentralrechner – V444_2026 Rechenknoten für HPC-Cluster
-**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **9d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **8d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
@@ -82,12 +88,6 @@ Open: **24** · Qualified: **3** · Automated new: **29** · Partner-route: **0*
 **Approval:** required before external action
 ## Deutschland – Übersetzungsdienste – Translation works and services from EN into DE, FR and IT
 **Origin:** TED_AUTOMATED · **Score:** 52/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Miniwettbewerb aus Rahmenvertrag AS260012 Rolle 1 Machine Learning Engineer
-**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
