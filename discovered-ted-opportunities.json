@@ -1,9 +1,84 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-15T11:33:47.299Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260915 SORT BY publication-date DESC",
+  "generated_at": "2026-10-16T11:28:24.536Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260916 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_717390_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Telefonauftragsdienste – Leistungen zum Betrieb der „VRM-Bedarfsverkehrs-Hotline\"",
+      "deadline": null,
+      "buyer_or_program": "Verkehrsverbund Rhein-Mosel GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/717390-2026"
+      ],
+      "ted": {
+        "publication_number": "717390-2026",
+        "publication_date": "2026-10-16+02:00",
+        "cpv": [
+          "79510000",
+          "79512000",
+          "79510000",
+          "79512000"
+        ]
+      }
+    },
+    {
+      "id": "ted_716247_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen in den Bereichen Erholung, Kultur und Sport – Betrieb des Deutschen Museums Bonn-Organisation und Umsetzung von Bildungsangeboten",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Museum von Meisterwerken der Naturwissenschaft und Technik (AdöR)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/716247-2026"
+      ],
+      "ted": {
+        "publication_number": "716247-2026",
+        "publication_date": "2026-10-16+02:00",
+        "cpv": [
+          "92000000",
+          "92521000",
+          "92000000",
+          "79620000",
+          "75121000"
+        ]
+      }
+    },
     {
       "id": "ted_712759_2026",
       "type": "tender_candidate",
@@ -336,6 +411,41 @@
       }
     },
     {
+      "id": "ted_682877_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
+      "deadline": null,
+      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
+      ],
+      "ted": {
+        "publication_number": "682877-2026",
+        "publication_date": "2026-10-05+02:00",
+        "cpv": [
+          "38000000",
+          "38622000",
+          "38000000",
+          "38622000"
+        ]
+      }
+    },
+    {
       "id": "ted_683267_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Übersetzungsdienste – Translation works and services from EN into DE, FR and IT",
@@ -373,41 +483,6 @@
           "79530000",
           "79530000",
           "79530000"
-        ]
-      }
-    },
-    {
-      "id": "ted_682877_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
-      "deadline": null,
-      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
-      ],
-      "ted": {
-        "publication_number": "682877-2026",
-        "publication_date": "2026-10-05+02:00",
-        "cpv": [
-          "38000000",
-          "38622000",
-          "38000000",
-          "38622000"
         ]
       }
     },
@@ -1051,42 +1126,6 @@
         "publication_number": "636344-2026",
         "publication_date": "2026-09-16+02:00",
         "cpv": [
-          "72000000",
-          "72000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_633195_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Beratungsleistungen für das Format Digi-Expert-kommunal für das Hessische Ministerium für Digitalisierung und Innovation in zwei Losen",
-      "deadline": null,
-      "buyer_or_program": "Land Hessen, vertreten durch die Hessische Zentrale für Datenverarbeitung",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/633195-2026"
-      ],
-      "ted": {
-        "publication_number": "633195-2026",
-        "publication_date": "2026-09-15+02:00",
-        "cpv": [
-          "72000000",
           "72000000",
           "72000000"
         ]
