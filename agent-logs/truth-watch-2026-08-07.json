@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-07",
+  "items": 5,
+  "narratives": [
+    "Viral video allegedly showing a migrant rush into Ceuta (Spain)",
+    "Alleged Tagesschau report claiming Russian involvement in the Berlin CSD attack",
+    "Claim that Spain plans to build 5,000 new mosques",
+    "Claim that Spokane wildfires were set to clear land for data centres",
+    "Clip of Indonesian minister's remarks on government-backed cooperatives"
+  ],
+  "debunks": [
+    "FALSE - footage shows football fans after a PSG win, boy's words mistranslated (AFP, CORRECTIV)",
+    "FORGED - the Tagesschau item was never published (CORRECTIV)",
+    "UNSUPPORTED - no official source or evidence for any such plan (CORRECTIV)",
+    "NO EVIDENCE - investigators made no arson-for-data-centre finding (AFP)",
+    "MANIPULATED - audio altered with AI; minister did not say the quoted words (AFP)"
+  ],
+  "sources": [
+    "https://factcheck.afp.com/doc.afp.com.C3VT6KE",
+    "https://correctiv.org/faktencheck/2026/08/04/video-zeigt-feiernde-fussballfans-keine-menschen-in-ceuta/",
+    "https://correctiv.org/faktencheck/2026/07/29/csd-anschlag-tagesschau-meldung-zu-angeblicher-russischer-beteiligung-ist-gefaelscht/",
+    "https://correctiv.org/faktencheck/2026/08/06/5-000-neue-moscheen-fuer-spanien-tiktok-account-streut-unbelegte-geruechte/",
+    "https://factcheck.afp.com/doc.afp.com.C3VR39E",
+    "https://factcheck.afp.com/doc.afp.com.C43V4WE",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminary-finds-tiktok-breach-digital-services-act-failing-ensure-safe-accounts-minors",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-xs-action-plan-comply-digital-services-act",
+    "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1579",
+    "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1654",
+    "https://techpolicy.press/europes-summer-of-digital-services-act-enforcement-targets-platform-design"
+  ],
+  "policy_response": [
+    "2026-07-10 EU Commission preliminary finding: Instagram/Facebook addictive design breaches DSA",
+    "2026-07-16 EU Commission accepts X action plan on ad repository + researcher data access",
+    "2026-07-20 AliExpress fined EUR 550 million under DSA",
+    "2026-07-24 TikTok preliminary breach finding on minors' account safety"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/truth-watch-2026-08-07",
+    "Researched AFP Fact Check, CORRECTIV, EU DSA newsroom, Tech Policy Press",
+    "Wrote citizen digest and JSON log",
+    "Committed, pushed and opened PR for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/truth-watch-2026-08-07"
+}
