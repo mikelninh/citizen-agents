@@ -1,0 +1,97 @@
+{
+  "date": "2026-08-21",
+  "reviewed_batch": "2026-08-20",
+  "reviewer": "fleet-reviewer",
+  "repo": "citizen-agents",
+  "branch": "studio/fleet-review-2026-08-21",
+  "agents_reviewed": 8,
+  "verified": 4,
+  "partial": 4,
+  "failed": 0,
+  "blockers": 0,
+  "guardrails": {
+    "any_agent_merged": false,
+    "scope_clean_only_agent_dirs": true,
+    "reviewer_read_only": true
+  },
+  "external_repos_checked": [
+    "mikelninh/faireint-bundestag",
+    "mikelninh/gitlaw",
+    "mikelninh/pmm-mcp",
+    "mikelninh/safevoice",
+    "mikelninh/flight-rights-mcp"
+  ],
+  "external_repos_activity_2026_08_20_21": "none (latest commits 2026-08-14 to 2026-08-17)",
+  "verdicts": {
+    "court-watch": "VERIFIED",
+    "directive-watch": "VERIFIED",
+    "procurement": "VERIFIED",
+    "treaty-watch": "VERIFIED",
+    "truth-watch": "PARTIAL",
+    "meat-dairy": "PARTIAL",
+    "climate-watch": "PARTIAL",
+    "consultation": "PARTIAL"
+  },
+  "issues": [
+    {
+      "agent": "truth-watch",
+      "severity": "HIGH",
+      "issue": "agent-log JSON missing required field 'highlights' (schema check failed; other 7 logs have it). Content accurate; logging defect only."
+    },
+    {
+      "agent": "meat-dairy",
+      "severity": "MEDIUM",
+      "issue": "Cited UBA source URL (umweltbundesamt.de/.../fragen-antworten-zu-tierhaltung-ernaehrung) returns HTTP 404. Fund 4 stat '35.5 Mt CO2e / 68% of farm emissions' cannot be verified via the provided link (figure is a real, agency-attributed UBA number, not hallucinated)."
+    },
+    {
+      "agent": "climate-watch",
+      "severity": "MEDIUM",
+      "issue": "Headline '16% emissions rise by 2030 vs 2010 / 143 parties with assessable targets' is attributed to a 2021 UNFCCC NDC synthesis page (stale); the correct 2025 NDC Synthesis Report is cited as source 2 but the exact figures were not confirmed in the fetched excerpt."
+    },
+    {
+      "agent": "consultation",
+      "severity": "MEDIUM",
+      "issue": "EIT feedback deadline '23 Sep 2026' unverifiable — EU 'better-regulation' portal failed to fetch (scrape error). Second cited source appears to concern a different 'European Innovation Act', possible EIT/Innovation-Act source mismatch."
+    },
+    {
+      "agent": "directive-watch",
+      "severity": "LOW",
+      "issue": "Commission page inf_26_1376 (Mutter-Tochter, INFR(2026)2089) blocked scraping; claim independently corroborated via Tax@Hand/Deloitte, so not a real break."
+    },
+    {
+      "agent": "procurement",
+      "severity": "LOW",
+      "issue": "Findings 5 (Berlin thresholds) and 6 (price-audit >25%) not individually source-verified this run; Vergabe24 topic consistent, plausible."
+    },
+    {
+      "agent": "treaty-watch",
+      "severity": "LOW",
+      "issue": "Finding 3 (CEDAW Afghanistan 'gender apartheid') not deep-checked; consistent with well-documented OHCHR reporting."
+    },
+    {
+      "agent": "climate-watch",
+      "severity": "LOW",
+      "issue": "Findings 4 (ECGT 27 Sep 2026 / 20 MS) and 5 (Carbon Majors 35.5 Mt) not verified this run."
+    },
+    {
+      "agent": "court-watch",
+      "severity": "LOW",
+      "issue": "'~73 million GKV members' figure asserted in BVerfG context but not directly sourced; plausible."
+    },
+    {
+      "agent": "consultation",
+      "severity": "LOW",
+      "issue": "Finding 3 (BMWE ongoing draft bills) not verified this run."
+    }
+  ],
+  "source_checks": {
+    "court-watch": {"cp260097en.pdf": "OK", "cp260109en.pdf": "OK", "bvg26-041.html": "OK"},
+    "directive-watch": {"eur-lex-2024-1069": "OK", "eapil-anti-slapp": "OK", "inf_26_1376": "BROKEN(scrape)", "taxathand-PSD": "OK(corroborates)"},
+    "procurement": {"cosinx-rechnungshof": "OK", "deutschlandfunk-brh": "OK", "vergabe24-thresholds": "OK(resolves)"},
+    "treaty-watch": {"errc-stanislav-tomas": "OK", "ohchr-canada-iccpr": "OK"},
+    "truth-watch": {"aliexpress-550m": "OK", "reuters-matryoshka": "OK", "afp-haarp": "OK"},
+    "meat-dairy": {"lobbyregister-R001861": "OK", "bmleh-6-5bn": "OK", "uba-35-5mt": "BROKEN(404)"},
+    "climate-watch": {"unfccc-2021": "MISMATCH(stale)", "unfccc-2025": "OK", "iea-2026": "OK", "reuters-shell": "OK"},
+    "consultation": {"bundestag-hearings": "OK", "ec-better-regulation": "BROKEN(scrape)", "eit-innovation-act": "MISMATCH(possible)"}
+  }
+}
