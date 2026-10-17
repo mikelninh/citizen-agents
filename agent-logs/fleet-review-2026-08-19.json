@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-19",
+  "agents_reviewed": 5,
+  "verified": 4,
+  "partial": 1,
+  "failed": 0,
+  "issues": [
+    {
+      "agent": "truth-watch-2026-08-16",
+      "severity": "MEDIUM",
+      "issue": "agent-log missing required 'highlights' field (uses 'narratives'/'debunks' instead)"
+    },
+    {
+      "agent": "truth-watch-2026-08-16",
+      "severity": "MEDIUM",
+      "issue": "source factcheck.afp.com/doc.afp.com.C4CB8NQ returns 403 (AFP bot-block); content unverifiable via that URL, but narrative corroborated by CBC + CTV (both 200)"
+    },
+    {
+      "agent": "truth-watch-2026-08-16",
+      "severity": "MEDIUM",
+      "issue": "source bmi.bund.de/.../OESI2/NDRefG.pdf returns 400 (temporary server error); broken link, but core claim corroborated by CORRECTIV (200)"
+    },
+    {
+      "agent": "procurement-2026-08-16",
+      "severity": "LOW",
+      "issue": "source wolterskluwer.com/.../vergabebeschleunigungsgesetz returns 403 (Cloudflare); secondary source, law confirmed by Bundestag + Bundesregierung"
+    },
+    {
+      "agent": "consultation-2026-08-16",
+      "severity": "LOW",
+      "issue": "committee named 'Ausschuss für Wohnen, Bauen und Kommunale Angelegenheiten (A24)' differs from current official name 'Wohnen, Stadtentwicklung, Bauwesen und Kommunen'"
+    },
+    {
+      "agent": "consultation-2026-08-16",
+      "severity": "LOW",
+      "issue": "UVP-Anpassungsgesetz deadline 27.08.2026 not independently grepped (source resolves, topic matches the Referentenentwurf)"
+    },
+    {
+      "agent": "abuse-safety-2026-08-16",
+      "severity": "LOW",
+      "issue": "garbled title fragment mixes German + Chinese characters ('Strafrecht数码ischer Gewalt')"
+    }
+  ],
+  "repo": "citizen-agents",
+  "branch": "studio/fleet-review-2026-08-19"
+}
