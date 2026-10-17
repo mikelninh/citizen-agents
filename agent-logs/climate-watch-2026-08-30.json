@@ -1,0 +1,105 @@
+{
+  "agent": "climate-watch",
+  "title": "Climate-Watch",
+  "date": "2026-08-30",
+  "generated_at": "2026-08-30T15:10:00+02:00",
+  "research_mode": "live-web",
+  "country": "GLOBAL",
+  "focus": "climate pledges vs. actual emissions (corporate net-zero & government NDCs)",
+  "items": 4,
+  "pledges_vs_reality": [
+    {
+      "id": "unfccc-ndc-gap",
+      "headline_de": "UN-Klimazusagen vs. Realität: Neue NDCs bringen kaum Fortschritt — 16 % mehr Emissionen bis 2030 erwartet",
+      "headline_en": "UN climate pledges vs. reality: new NDCs barely move the needle — 16% more emissions expected by 2030",
+      "pledge": "Paris-Abkommen / NDCs: Welt soll Erwärmung auf 1,5 °C begrenzen.",
+      "reality": "UNFCCC-Synthese: alle NDCs zusammen implizieren ~16 % mehr globale Emissionen bis 2030 vs 2010; UNEP EGR 2025: 2,3–2,5 °C bei voller NDC-Umsetzung, 2,8 °C bei aktueller Politik.",
+      "metric": "16% emissions increase by 2030 vs 2010; 2.3-2.5 C projected warming",
+      "who_affected": "Alle; besonders vulnerable Staaten und Steuerzahler in Industrieländern",
+      "deadline": "NDC-Zyklen laufend; 2025-Zusagen in Bewertung",
+      "uncertain": false,
+      "sources": [
+        "https://www.unep.org/resources/emissions-gap-report-2025",
+        "https://unfccc.int/news/full-ndc-synthesis-report-some-progress-but-still-a-big-concern",
+        "https://www.un.org/en/climatechange/reports"
+      ]
+    },
+    {
+      "id": "iea-2025-co2-record",
+      "headline_de": "Energie-CO2 auf Rekordhoch: 38,4 Mrd. t im Jahr 2025 — trotz aller Klimaversprechen",
+      "headline_en": "Energy CO2 hits record high: 38.4 Gt in 2025 — despite all climate promises",
+      "pledge": "Energiewende / Net-Zero-Zusagen der Staaten und Konzerne.",
+      "reality": "IEA: energiebedingte CO2-Emissionen stiegen 2025 um 0,4 % auf knapp 38,4 Gt (Rekord, +5 % über 2019); atmosphärisch ~427 ppm. Industrieländer wuchsen erstmals seit ~30 J. stärker als Schwellenländer.",
+      "metric": "38.4 Gt CO2 in 2025 (new high); +0.4% YoY; 427 ppm",
+      "who_affected": "Globale Bevölkerung; Regionen mit Dürre/Hitzewellen (Europa ~45 Mt durch weniger Hydro)",
+      "deadline": "Jährliche IEA-Berichte; Trendumkehr vor 2030 nötig",
+      "uncertain": false,
+      "sources": [
+        "https://www.iea.org/reports/global-energy-review-2026/co2-emissions",
+        "https://www.iea.org/reports/electricity-2026/emissions"
+      ]
+    },
+    {
+      "id": "eu-green-claims-2026",
+      "headline_de": "EU-Greenwashing-Knopp zieht an: Anti-Greenwashing-Regeln ab 27. September 2026 in Kraft",
+      "headline_en": "EU greenwashing clampdown: anti-greenwashing rules take effect 27 September 2026",
+      "pledge": "EU will Greenwashing stoppen; 'klimaneutral' nur mit Beleg.",
+      "reality": "Richtlinie 2024/825 wird ab 27.9.2026 durchgesetzt (nationale Umsetzung bis 27.3.2026). Eigenständige Green Claims Directive (COM(2023)166) Juni 2025 zurückgezogen, 2024/825 gilt weiter.",
+      "metric": "Enforcement start 27 September 2026",
+      "who_affected": "Alle Unternehmen mit EU-Marktauftritt; Verbraucher:innen",
+      "deadline": "27 September 2026 (Start Strafverfolgung)",
+      "uncertain": false,
+      "sources": [
+        "https://www.ecoclaim.eu/green-claims-directive",
+        "https://normecverifavia.com/news/eu-greenwashing-empco-green-claims-directive/",
+        "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en"
+      ]
+    },
+    {
+      "id": "santos-greenwashing-dismissed",
+      "headline_de": "Rückschlag für Klimakläger: Australisches Gericht weist Santos-Greenwashing-Klage ab",
+      "headline_en": "Setback for climate litigants: Australian court dismisses Santos greenwashing case",
+      "pledge": "Santos warb mit 'clean fuel'/'clean energy' und Netto-Null-Zusagen.",
+      "reality": "Federal Court of Australia wies am 17.2.2026 alle 'misleading'-Klagen (ACCR) ab; Gericht hielt Aussagen nicht für täuschungsfähig.",
+      "metric": "Case dismissed 17 February 2026",
+      "who_affected": "Aktionär:innen, Klimakläger, Verbraucher:innen",
+      "deadline": "Rechtskräftig abgewiesen; Berufung möglich",
+      "uncertain": false,
+      "sources": [
+        "https://www.theguardian.com/australia-news/2026/feb/17/santos-greenwashing-court-case-dismissed",
+        "https://www.whitecase.com/insight-alert/australian-federal-court-dismisses-santos-greenwashing-case",
+        "https://www.cliffordchance.com/insights/resources/blogs/group-litigation-and-class-actions/2026/02/australian-court-dismisses-santos-greenwashing-case-key-takeaways.html"
+      ]
+    }
+  ],
+  "highlights": [
+    "UNFCCC: alle NDCs zusammen implizieren ~16 % mehr Emissionen bis 2030 vs 2010 (UNEP EGR 2025: 2,3–2,5 °C).",
+    "IEA: energiebedingte CO2-Emissionen erreichten 2025 mit 38,4 Gt einen neuen Rekord (+0,4 %).",
+    "EU-Greenwashing-Regeln (RL 2024/825) greifen am 27.9.2026 — 'klimaneutral' nur noch mit Beleg.",
+    "Australien: Gericht wies Santos-Greenwashing-Klage am 17.2.2026 ab — Rückschlag für Klimaklagen."
+  ],
+  "sources": [
+    "https://www.unep.org/resources/emissions-gap-report-2025",
+    "https://unfccc.int/news/full-ndc-synthesis-report-some-progress-but-still-a-big-concern",
+    "https://www.un.org/en/climatechange/reports",
+    "https://www.iea.org/reports/global-energy-review-2026/co2-emissions",
+    "https://www.iea.org/reports/electricity-2026/emissions",
+    "https://www.ecoclaim.eu/green-claims-directive",
+    "https://normecverifavia.com/news/eu-greenwashing-empco-green-claims-directive/",
+    "https://environment.ec.europa.eu/topics/circular-economy-topics/green-claims_en",
+    "https://www.theguardian.com/australia-news/2026/feb/17/santos-greenwashing-court-case-dismissed",
+    "https://www.whitecase.com/insight-alert/australian-federal-court-dismisses-santos-greenwashing-case",
+    "https://www.cliffordchance.com/insights/resources/blogs/group-litigation-and-class-actions/2026/02/australian-court-dismisses-santos-greenwashing-case-key-takeaways.html"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/climate-watch-2026-08-30",
+    "Researched UNFCCC/UNEP NDC gap, IEA 2025 CO2, EU Green Claims, Santos ruling via web",
+    "Wrote agent-digests/climate-watch-2026-08-30.md (bilingual DE/EN, 4 items)",
+    "Wrote agent-logs/climate-watch-2026-08-30.json",
+    "Committed both artifacts",
+    "Pushed branch and opened PR (no merge — human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/climate-watch-2026-08-30"
+}
