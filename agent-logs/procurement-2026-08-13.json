@@ -1,0 +1,32 @@
+{
+  "date": "2026-08-13",
+  "items": 4,
+  "anomalies": 4,
+  "total_value_eur": "BW-Förderbaumaßnahmen ≈3,9 Mrd EUR Gesamtvolumen (davon ≈670 Mio EUR Landesmittel); übrige Posten regulatorisch ohne Einzelwert",
+  "highlights": [
+    "Baden-Württemberg audit: 60% procurement error rate in €3.9bn of grant-funded construction; only 2 of 67 erroneous cases clawed back (Drucksache 18/307, 04 Aug 2026).",
+    "Bundesrechnungshof warns loosened procurement rules cut competition/transparency; >80% of 2009-era service/supply contracts were negotiated; NRW, BW, RP, Bavaria still extend easing.",
+    "Vergabebeschleunigungsgesetz raises federal direct-award limit to €15,000 and negotiated limit to €100,000; §97a GWB now allows single-lot infrastructure awards from 01 Jul 2026.",
+    "Defence acceleration law (BwPBBG) in force 14 Feb 2026; Bundeswehr sees only ~2.2 bids/procedure — low competition raises price risk."
+  ],
+  "sources": [
+    "https://www.deutschlandfunk.de/bundesrechnungshof-kritisiert-gelockerte-vergabepraxis-100.html",
+    "https://blog.cosinex.de/2026/08/07/rechnungshof-bw-vergaberecht-private-foerderempfaenger/",
+    "https://www.landtag-bw.de/resource/blob/647562/bd2fab81c935dc0fab7753b0922f8faf/18_0307_D.pdf",
+    "https://cms.law/de/deu/legal-updates/Neue-EU-Schwellenwerte-und-nationale-Anpassungen-ab-dem-1.-Januar-2026",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw17-de-vergaben-1166782",
+    "https://www.vergabe24.de/service/news/eu-schwellenwerte-2026-oeffentliche-vergabe/",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw03-de-bundeswehr-1134324",
+    "https://cms.law/de/deu/legal-updates/Bundeswehr-kann-schneller-beschaffen-Beschleunigungsgesetz-in-Kraft"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/procurement-2026-08-13",
+    "Researched BRH and Land audit findings plus 2026 procurement regulatory changes (EU thresholds, acceleration law, defence law)",
+    "Wrote bilingual citizen digest with 4 items, 4 anomaly flags",
+    "Wrote structured JSON log",
+    "Committed, pushed branch and opened a pull request for human review (no merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/procurement-2026-08-13"
+}
