@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-10",
+  "repo": "bla-keks-world",
+  "branch": "studio/engineer-2026-08-10",
+  "build_passed": true,
+  "changes": [
+    {
+      "file": "src/modes/botbrain.js",
+      "what": "botShoot() now spawns a real arcing projectile (speed 42, gravity 7, lead + lift) when a projectile pool is supplied; hitscan traceShot remains only as a fallback for callers without one.",
+      "why": "Director: bots hitscan-sniped at range while players lobbed dodgeable arcs. Bots now play by the same rules."
+    },
+    {
+      "file": "src/modes/weapons/projectiles.js",
+      "what": "spawn() carries an ownerBot reference on the pooled item.",
+      "why": "Locally simulated bots need to report their own projectile hits to the server."
+    },
+    {
+      "file": "src/modes/match-mode.js",
+      "what": "Passes this.projectiles into the bot brain ctx; _onProjectileHit reports bot-owned hits via item.ownerBot.netId; new _deflect() batting hostile arcs back (owner/team flipped, damage x1.25, speed x1.15) while guarding; RMB guard wired for the leafblade; charge value now carries across _swapWeapon (shared Focus); control hint updated.",
+      "why": "Duel Triangle: guard makes the saber answer projectiles; carrying charge over kills the Q-swap free-ammo exploit."
+    },
+    {
+      "file": "src/modes/weapons/saber.js",
+      "what": "guardArc/guardRange constants, guarding state + blended flat guard pose, guard blocked mid-swing and swings blocked while guarding.",
+      "why": "Guard must be a readable commitment with a real opportunity cost, not a free toggle."
+    }
+  ],
+  "directives_done": [
+    "Kill bot hitscan — bots fire dodgeable projectiles",
+    "Duel Triangle — RMB saber guard deflects projectiles back at their owner",
+    "Shared Focus — charge carries across weapon swaps"
+  ]
+}
