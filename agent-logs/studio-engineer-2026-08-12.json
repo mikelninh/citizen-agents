@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-12",
+  "changes": [
+    {
+      "file": "src/game/spatial-duel.js",
+      "what": "Implemented the Duel Triangle (director's ONE BIG IDEA). (1) A saber (melee form, range<13 per RANGED_BASIC_MIN) holding guard now DEFLECTS an incoming projectile back at the shooter instead of taking the 45% guard hit. The deflected bolt is re-owned by the defender, aimed at the original shooter, and resolves through the normal pipeline next tick (so a parry or second guard can answer it). A bounce cap (3) stops two sabers ping-ponging one bolt. Parry still takes precedence — a saber inside its parry window negates as before; only a plain guard deflects. (2) A committed saber SIGNATURE swing that lands on a guarding foe shatters the guard and staggers them 0.9s (new `staggerUntil` field); while staggered they cannot raise a new guard. No damage multiplier — the stagger is a commitment denial, not a snowball.",
+      "why": "Makes melee sabers and ranged projectiles finally interact, honouring the lead's BOTH decision. Without it the two weapon families existed in parallel and never answered each other."
+    },
+    {
+      "file": "src/game/spatial-duel.js",
+      "what": "Added REFLECT_DAMAGE_SCALE=.5 (deflected bolt returns at half damage) and limited guard-break to the signature (long cooldown) rather than every swing. Reflection now consumes the guard that produced it (one deflect per guard cast).",
+      "why": "Balance. The first pass made Oathstar a 93-100% monster on the fairness gate: full-damage deflects every bolt during a 2s guard window + a 1.4x damage-amp stagger + basic-swing guard-breaks that left guard-reliant kits defenceless for their whole cooldown. Tuning brought every matchup back under the 80% gate (70/70 PASS)."
+    },
+    {
+      "file": "src/game/spatial-duel.test.mjs",
+      "what": "Updated the parry unit test to encode the new behaviour: a guarding (but not parrying) saber now deflects the bolt (0 damage, no focus refund) instead of eating a 45% hit; a clean parry still negates + refunds focus.",
+      "why": "The old assertions encoded the previous guard-mitigation contract; the deflect is the directed design change, so the test now documents it."
+    }
+  ],
+  "build_passed": true,
+  "directives_done": [
+    "Duel Triangle pt.1 — saber guard deflects projectiles back at owner (resolveProjectile + REFLECT_DAMAGE_SCALE)",
+    "Duel Triangle pt.2 — committed saber signature swing breaks guard + 0.9s stagger (applyHit, staggerUntil, availability block)",
+    "Arcs zone the approach — already present (ranged basics/volley); both weapon families now interact through the above",
+    "Assessed 'shared Focus / Q-swap free ammo': Battle Arena already has a single shared focus meter per fighter — no change needed there; the critique targeted the separate Little Planet experience",
+    "Assessed 'bots hitscan-snipe at 130m': that path lives in experiences/little-planet/src/modes/weapon.js (a separate experience, not the Battle Arena). Battle Arena uses proper dodgeable projectiles. Flagged for a separate pass."
+  ],
+  "balance_flags_for_mikel": [
+    "Guard-break is restricted to the SIGNATURE swing (not every swing) to keep fairness under 80%. The director's brief said 'swings break guard' — if you want the basic/setup to also break guard, we'll need another balance pass.",
+    "Deflected bolt returns at 0.5x damage (REFLECT_DAMAGE_SCALE). Full-value deflects over-tuned melee vs guard kits. Easy to revisit."
+  ],
+  "repo": "bla-keks-world",
+  "branch": "studio/engineer-2026-08-12"
+}
