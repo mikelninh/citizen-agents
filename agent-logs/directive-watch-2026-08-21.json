@@ -1,0 +1,42 @@
+{
+  "date": "2026-08-21",
+  "directives_found": 5,
+  "deadlines_coming": 1,
+  "late": 4,
+  "highlights": [
+    "DEUTSCHLAND VERFEHLT 4 EU-Umsetzungsfristen: Anti-SLAPP (7.5.2026), Entgeltgleichheit (7.6.2026), DAC9 (31.12.2025), Sanktionen (20.5.2025).",
+    "Anti-SLAPP: EU-Kommission eroeffnete am 16.7.2026 ein Vertragsverletzungsverfahren gegen Deutschland.",
+    "Entgeltgleichheitsrichtlinie: Deutschland bestaetigt, die Frist vom 7.6.2026 zu verfehlen; Inkrafttreten fruehestens 2027.",
+    "Sanktionen-Richtlinie: Formelles Mahnschreiben der Kommission bereits am 24.7.2025 (18 Staaten, inkl. DE).",
+    "DAC9: Kommission leitete 2026 Vertragsverletzungsverfahren wegen unvollstaendiger Umsetzung ein.",
+    "POSITIV: EmpCo-Richtlinie (Greenwashing) fristgerecht umgesetzt (UWG-Novelle, BGBl 19.2.2026); anwendbar ab 27.9.2026."
+  ],
+  "sources": [
+    "https://eur-lex.europa.eu/eli/dir/2023/970/oj/eng",
+    "https://www.bakertilly.global/insights/the-eu-pay-transparency-directive-deadline-passed-now-what",
+    "https://trusaic.com/resources/resources-eu-pay-transparency-directive-member-state-transposition-monitor/",
+    "https://eur-lex.europa.eu/eli/dir/2024/1069/oj/eng",
+    "https://eapil.org/2026/05/07/status-of-the-anti-slapp-directive-transpositions-at-the-7-may-2026-deadline/",
+    "https://eapil.org/2026/07/16/commission-opens-infringement-proceedings-over-anti-slapp-directive-transposition/",
+    "https://eur-lex.europa.eu/eli/dir/2024/1226/oj/eng",
+    "https://www.gleisslutz.com/en/know-how/stricter-criminal-sanctions-law-germanys-transposition-eu-sanctions-directive",
+    "https://ec.europa.eu/commission/presscorner/detail/en/inf_25_1842",
+    "https://eur-lex.europa.eu/eli/dir/2025/872/oj/eng",
+    "https://www.globalvatcompliance.com/globalvatnews/eu-dac8-dac9-infringement/",
+    "https://kpmg.com/us/en/taxnewsflash/news/2026/02/ec-launches-infringement-procedures-dac9-dac8.html",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=OJ:L_202400825",
+    "https://saim.de/content-hub/blog/empco-richtlinie-directive-verbraucher",
+    "https://intep.com/ratgeber/empco-richtlinie/"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents",
+    "created branch agent/directive-watch-2026-08-21",
+    "researched EUR-Lex + infringement proceedings + German transposition status",
+    "wrote agent-digests/directive-watch-2026-08-21.md (bilingual DE/EN)",
+    "wrote agent-logs/directive-watch-2026-08-21.json",
+    "committed and pushed branch",
+    "opened PR against main (no self-merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/directive-watch-2026-08-21"
+}
