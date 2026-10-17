@@ -1,0 +1,36 @@
+{
+  "date": "2026-09-03",
+  "items": 5,
+  "lobby_entries": 4,
+  "subsidies_eur": "6,9 Mrd. Euro (Agrar-Haushaltsjahr 2024/2025, Deutschland)",
+  "highlights": [
+    "DBV lobbyisiert in 26 Regelungsvorhaben — inkl. Tierschutzgesetz (ablehnen), Tierarzneimittelgesetz, Industrieemissionsrichtlinie (Gold-Plating vermeiden), GAP-Haushalt 2025",
+    "GAP-Direktzahlungen 2024/25: 6,9 Mrd. Euro an 301.000 Betriebe; EU-weit 38,16 Mrd. Euro Direktzahlungen + 12,95 Mrd. Euro ländliche Entwicklung (2023)",
+    "Tierhaltungskennzeichnung: Frist verschoben, gilt aktuell nur für Schweinefleisch (5 Haltungsformen: Stall, Stall+Platz, Frischluftstall, Auslauf/Weide, Bio); ausländische Produkte freiwillig",
+    "UBA: Tierhaltung = 35,5 Mio. t CO₂-Äq/Jahr (68 % der Landwirtschaft, 5,3 % Deutschlands); tierische Lebensmittel = 70 % der ernährungsbedingten GHG-Emissionen; weltweit ca. 15 % der menschengemachten Emissionen durch Nutztierhaltung",
+    "Lobbyregister: Weitere Verbände — BMV (R001861), VDF (R001757), BVE (R000283), VDM (Kooperationspartner DBV)"
+  ],
+  "sources": [
+    "https://www.lobbyregister.bundestag.de/suche/R002175",
+    "https://www.lobbyregister.bundestag.de/suche/R001861",
+    "https://www.lobbyregister.bundestag.de/suche/R001757",
+    "https://www.lobbyregister.bundestag.de/suche/R000283",
+    "https://www.bmleh.de/DE/themen/landwirtschaft/eu-agrarpolitik-und-foerderung/direktzahlung/direktzahlung_node.html",
+    "https://www.bioland.de/fachmagazin/neues/meldungen/empfaenger-von-agrarzahlungen-veroeffentlicht",
+    "https://www.europarl.europa.eu/topics/de/article/20211118STO17609/agrarpolitik-der-eu-in-zahlen-infografik",
+    "https://www.ble.de/DE/Themen/Ernaehrung-Lebensmittel/Tierhaltungskennzeichnung/Tierhaltungskennzeichnung_node.html",
+    "https://www.bmleh.de/DE/themen/tiere/tierschutz/tierhaltungskennzeichnung/tierhaltungskennzeichnung_node.html",
+    "https://www.verbraucherzentrale.de/wissen/lebensmittel/lebensmittelproduktion/von-haltungsform-bis-tierwohl-alles-zur-tierhaltungskennzeichnung-25484",
+    "https://www.umweltbundesamt.de/daten/umweltzustand-trends/land-forstwirtschaft/beitrag-der-landwirtschaft-zu-den-treibhausgas",
+    "https://www.umweltbundesamt.de/themen/landwirtschaft/landwirtschaft-umweltfreundlich-gestalten/fragen-antworten-zu-tierhaltung-ernaehrung",
+    "https://www.umweltbundesamt.de/themen/landwirtschaft/umweltbelastungen-der-landwirtschaft/lachgas-methan"
+  ],
+  "actions_taken": [
+    "Frisheclone von mikelninh/citizen-agents",
+    "Branch agent/meat-dairy-2026-09-03 erstellt",
+    "Recherche: Lobbyregister (DBV, BMV, VDF, BVE), GAP-Direktzahlungen, Tierhaltungskennzeichnung, UBA-Emissionen",
+    "Digest + JSON erstellt, Commit + Push + PR vorbereitet"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/meat-dairy-2026-09-03"
+}
