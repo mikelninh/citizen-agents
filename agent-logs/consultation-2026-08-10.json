@@ -1,0 +1,37 @@
+{
+  "date": "2026-08-10",
+  "windows_found": 4,
+  "deadlines": [
+    "2026-09-11 — EU Dual-Use Regulation (EU) 2021/821 evaluation, targeted survey, 23:59 CEST",
+    "2026-09-09 — Bundesrat committee sessions (influence window closes shortly before)",
+    "2026-10-16 — EU public consultation: Horizon Europe partnerships as Joint Undertakings (Chips JU / Chips Act 2.0)",
+    "rolling — Bundestag committee public hearings, agendas published ~1-2 weeks ahead"
+  ],
+  "highlights": [
+    "EU Joint Undertakings consultation open until 16 Oct 2026 — directly shapes Chips Act 2.0 and how public R&I money is governed; open to citizens via EU Login.",
+    "EU Dual-Use Regulation evaluation closes 11 Sep 2026 — relevant for surveillance-tech export controls.",
+    "Bundesrat committees resume 9 Sep 2026 — no citizen form, but the Land government is the practical lever.",
+    "Bundestag hearings are expert-only; the open citizen route is the Petitionsausschuss plus direct mail to committee MPs."
+  ],
+  "sources": [
+    "https://ec.europa.eu/info/law/better-regulation/have-your-say/initiatives/16413-Horizon-Europe-European-Partnerships-to-be-implemented-as-joint-undertakings/public-consultation_en",
+    "https://aeneas-office.org/2026/07/30/help-shape-the-future-of-europes-semiconductor-ecosystem-two-eu-consultations-are-open/",
+    "https://ec.europa.eu/info/law/better-regulation/",
+    "https://www.bundesrat.de/DE/termine/termine-node.html",
+    "https://www.bundestag.de/ausschuesse",
+    "https://www.bundestag.de/ausschuesse/gesundheit/anhoerungen"
+  ],
+  "actions_taken": [
+    "cloned repo, created branch agent/consultation-2026-08-10",
+    "targeted web research on Bundestag committees, Bundesrat calendar, ministry Referentenentwuerfe, EU Have-your-say",
+    "wrote citizen digest with 4 windows and 4 adaptable submission drafts",
+    "wrote this JSON log",
+    "committed, pushed branch, opened PR for human review (no merge)"
+  ],
+  "notes": [
+    "beteiligung.bundesumweltministerium.de returned HTTP 403 this run — ministry consultation portal not verifiable, no unverified window logged.",
+    "No open federal Referentenentwurf comment period with a future deadline could be confirmed from a primary source this run."
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/consultation-2026-08-10"
+}
