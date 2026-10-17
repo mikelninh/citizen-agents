@@ -1,0 +1,69 @@
+{
+  "date": "2026-08-30",
+  "shortages_found": 538,
+  "top_shortages": [
+    {
+      "medication": "Ifosfamid (parenteral)",
+      "active_ingredient": "Ifosfamid",
+      "since": "2026-03-30",
+      "status": "Versorgungsmangel gemäß § 79 Abs. 5 AMG; Import-Gestattungen (Hikma, USA) bis BMG das Ende bekanntgibt",
+      "source": "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/ifosfamid.html"
+    },
+    {
+      "medication": "Salbutamol (pulmonal)",
+      "active_ingredient": "Salbutamol",
+      "since": "2026 (BfArM-Fokus, laufend)",
+      "status": "Versorgungsmangel im BfArM-Fokus",
+      "source": "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/salbutamol.html"
+    },
+    {
+      "medication": "Depotpenicillin (parenteral)",
+      "active_ingredient": "Benzathin-Benzylpenicillin",
+      "since": "2026 (BfArM-Fokus, laufend)",
+      "status": "Versorgungsmangel im BfArM-Fokus",
+      "source": "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/depotpenicillin.html"
+    },
+    {
+      "medication": "Acetylsalicylsäure / ASS (parenteral)",
+      "active_ingredient": "Acetylsalicylsäure",
+      "since": "laufend; Importliste aktualisiert 2026-08-10",
+      "status": "Importliste § 79 Abs. 5 AMG am 10.08.2026 aktualisiert",
+      "source": "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/acetylsalicylsaeure.html"
+    },
+    {
+      "medication": "Generika & Antibiotika (Systembild)",
+      "active_ingredient": "verschiedene (v. a. Generika, Antibiotika, Asthmamittel, Blutfettsenker)",
+      "since": "2025/2026 anhaltend",
+      "status": "538 veröffentlichte Meldungen in BfArM/PharmNet; >550 Arzneimittel im Herbst 2025 knapp",
+      "source": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    }
+  ],
+  "highlights": [
+    "BfArM/PharmNet database lists 538 published shortage reports for human medicines.",
+    "Ifosfamide supply shortage officially declared 2026-03-30 under § 79(5) AMG; US imports (Hikma) underway.",
+    "BfArM spotlight drugs: ifosfamide, salbutamol, depot-penicillin, parenteral acetylsalicylic acid.",
+    "EU Critical Medicines Act: provisional deal between Council and Parliament on 2026-05-12.",
+    "ALBVVG urgency list (§ 129 Abs. 2b SGB V) updated by BfArM on 2026-08-17."
+  ],
+  "sources": [
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/_node.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/ifosfamid.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/salbutamol.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/depotpenicillin.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/acetylsalicylsaeure.html",
+    "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml",
+    "https://www.tagesschau.de/wirtschaft/verbraucher/medikamente-pharma-100.html",
+    "https://www.merkur.de/welt/eu-beschliesst-neue-regelungen-gegen-medikamenten-engpaesse-94304503.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/ALBVVG/_artikel.html"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/pharma-supply-2026-08-30",
+    "Researched BfArM focus shortages, PharmNet count (538), tagesschau and EU CMA reporting",
+    "Wrote agent-digests/pharma-supply-2026-08-30.md (bilingual DE/EN)",
+    "Wrote agent-logs/pharma-supply-2026-08-30.json",
+    "Committed and pushed branch; opened PR for human review"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/pharma-supply-2026-08-30"
+}
