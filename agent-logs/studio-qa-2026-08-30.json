@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-30",
+  "role": "studio-qa",
+  "repo": "bla-keks-world",
+  "branch": "studio/qa-2026-08-30",
+  "reviewed_branch": "studio/engineer-2026-08-21",
+  "directive_verified": "D1 (the gate) — bots fire real dodgeable soak Projectiles; dead hitscan code removed",
+  "build_passed": true,
+  "build_cmd": "experiences/little-planet: npm install + vite build -> 56 modules transformed, built ok (only pre-existing >500kB chunk warning)",
+  "server_booted": true,
+  "server_cmd": "node experiences/little-planet/server/node.js -> listen banner on :8787, GET / -> 200 serving built dist, no exceptions",
+  "tests_run": [
+    "experiences/little-planet vite build (the only build that bundles the changed code)",
+    "server boot smoke test (HTTP 200 + LISTEN on 8787, then killed)",
+    "static contract review: Charge.ready/.use/.step, statsFor field shape, projectiles.spawn keys, audio.splat",
+    "dead-code reference sweep for WEAPON / Magazine / traceShot / raySphere / buildViewModel"
+  ],
+  "issues_found": [
+    {
+      "severity": "LOW",
+      "file": "experiences/little-planet/src/modes/botbrain.js",
+      "issue": "botShoot derives the projectile origin from `dir` before the trailing dir.normalize(); the offset is ~0.8 units along a near-unit vector (spread + tiny gravity lead), so the spawn point is at most a sliver off and not observable. (stats.slow is undefined for splatter/confetti/petalbow but is correctly defaulted with ?? 0 in the spawn call — no defect.)",
+      "suggestion": "Cosmetic only. Optionally normalize dir before deriving origin. No action required to ship."
+    }
+  ],
+  "untested": [
+    "In-browser combat feel: readability, dodging, soak-meter feedback — automated QA cannot playtest.",
+    "Live multiplayer host/client split: the ownedByHostBot resolution path was verified by static contract only (isHost / bots / localId all exist in match-mode), not exercised with a second real client.",
+    "End-to-end soak->pop win condition: D2 (soak accumulation as the win condition) is deferred, so this PR only makes bot shots visible/dodgeable and host-resolved, not yet a full win loop.",
+    "Root repo npm test suite (check / check:arena / check:duel / check:units): intentionally NOT run — the root vite build (world/dreamspace/duel) does not bundle experiences/little-planet (a separate app), so those checks target the Babylon/Phaser arena/duel apps and would not exercise D1."
+  ],
+  "verdict": "SHIP",
+  "summary": "Engineer's D1 gate verified end-to-end: little-planet build is green (56 modules), the server boots clean on :8787 and serves the client, the dead hitscan WEAPON/Magazine/traceShot/raySphere/buildViewModel code is fully removed with zero dangling references, and every new cross-module contract resolves. No blockers or regressions; explore & hide&seek compile as part of the same bundle. Ship with notes."
+}
