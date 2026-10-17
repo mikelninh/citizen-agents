@@ -1,0 +1,25 @@
+{
+  "date": "2026-08-30",
+  "files_read": [
+    "README.md",
+    "src/modes/weapon.js",
+    "src/modes/match-mode.js",
+    "src/modes/mode.js",
+    "src/modes/botbrain.js",
+    "src/modes/weapons/saber.js",
+    "src/modes/weapons/projectiles.js",
+    "src/modes/weapons/tools.js",
+    "src/shared/items.js",
+    "src/shared/match.js",
+    "server/room.js"
+  ],
+  "critiques": 4,
+  "directives": [
+    "Unify health into a Composure/soak meter that bubbles you out at 100 (match.js _hit, match-mode HUD, projectiles.makeBubble).",
+    "Give the saber its own Stamina resource + lunge; stop sharing the generic Charge (saber.js, tools.js Charge, match-mode leafblade path).",
+    "Reconcile bot loadout with human loadout; remove twin damage model + silent headshot (botbrain.js, weapon.js)."
+  ],
+  "challenge_for_mikel": "Saber resource: stamina or heat? And is a bubble elimination non-lethal (respawn w/ penalty) or lethal (round lost)? Decides whether Composure is a health bar or a scoreboard.",
+  "repo": "blakeks-world",
+  "branch": "studio/director-2026-08-30"
+}
