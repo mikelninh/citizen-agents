@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-11",
+  "rulings": 6,
+  "courts": ["EuGH", "BVerfG"],
+  "highlights": [
+    "EuGH C-234/25: Streaming-Abos duerfen Widerrufsrecht bei nutzungsangepasstem Angebot nicht ausschliessen (betrifft agb-reader).",
+    "EuGH C-45/24: Bei Flugausfall volle Erstattung inkl. Reisebuero-Provision (betrifft flight-rights-mcp / EU261).",
+    "EuGH C-526/24: DSGVO-Auskunft darf nicht als Schadensersatz-Abmahn-Fabrik missbraucht werden.",
+    "BVerfG 2 BvR 319/26: Pauschales Streichen der Afghanistan-Menschenrechtsliste verletzt Willkuerverbot.",
+    "BVerfG 2 BvC 20/26: Bundestag muss Wahlpruefung zuegig und sachgerecht durchfuehren.",
+    "BVerfG 1 BvR 183/25: Verlaengerung der Mietpreisbremse verfassungsgemaess (betrifft agb-reader/Mietrecht)."
+  ],
+  "sources": [
+    "https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260097de.pdf",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:62024CJ0045",
+    "https://www.beck-aktuell.de/heute-im-recht/rechtsprechung/eugh-c4524-flugannullierung-airline-vermittlerprovision-erstattung-opodo-2026-01-15",
+    "https://www.datev-magazin.de/nachrichten-steuern-recht/recht/eugh-stoppt-dsgvo-abmahnstrategie-durch-auskunftsantraege-145515",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-046.html",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-051.html",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-012.html",
+    "https://dejure.org/dienste/vernetzung/rechtsprechung?Gericht=EuGH&Datum=09.07.2026&Aktenzeichen=C-234%2F25"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/court-watch-2026-08-11",
+    "researched BVerfG + EuGH press releases and judgments via web_search / web_extract",
+    "wrote agent-digests/court-watch-2026-08-11.md (6 citizen-readable rulings)",
+    "wrote agent-logs/court-watch-2026-08-11.json",
+    "committed and pushed branch",
+    "opened PR against main (no self-merge)"
+  ],
+  "tool_impacts": [
+    {"tool": "flight-rights-mcp", "change": "EU261 refund must include intermediary/booking-agent commission (EuGH C-45/24)."},
+    {"tool": "agb-reader", "change": "Flag clauses excluding withdrawal for dynamic streaming subscriptions as invalid (EuGH C-234/25); flag new-lease rents >10% over compar. rent in rent-cap areas (BVerfG 1 BvR 183/25)."}
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/court-watch-2026-08-11"
+}
