@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-19",
+  "items": 4,
+  "license_values_eur": "13870000000 (H1 2026, vorläufig; davon ~9,6 Mrd. Kriegswaffen)",
+  "destinations": [
+    "Ukraine",
+    "USA",
+    "Niederlande",
+    "Tschechien",
+    "Litauen",
+    "Israel",
+    "Saudi-Arabien",
+    "VAE",
+    "Katar",
+    "Kuwait",
+    "Bahrain",
+    "Oman"
+  ],
+  "highlights": [
+    "H1-2026 Rekord: 13,87 Mrd. EUR Rüstungsexport-Genehmigungen (vorläufig)",
+    "Israel: ~799 Mio. EUR in H1 2026, U-Boot-Projekt (TKMS) >60 % des Werts",
+    "Golfstaaten: vereinfachte Ausfuhr von Luft-/Seerüstung per 6-Monats-Rahmenlizenz (Reiche, 20.03.2026)",
+    "Rüstungsexportkontrollgesetz gescheitert / auf Eis (Drucksache 20/14658)"
+  ],
+  "sources": [
+    "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/07/20260715-ruestungsexportpolitik-1-halbjahr-2026.html",
+    "https://www.aljazeera.com/news/2026/7/27/german-arms-export-licences-for-israel-surge-with-focus-on-sub-project",
+    "https://www.reuters.com/business/aerospace-defense/germany-eases-arms-exports-restrictions-gulf-states-ukraine-2026-03-20/",
+    "https://www.bundestag.de/presse/hib/kurzmeldungen-1042802",
+    "https://dserver.bundestag.de/btd/20/146/2014658.pdf",
+    "https://www.bundeswirtschaftsministerium.de/Redaktion/DE/Pressemitteilungen/2026/02/20260206-ruestungsexportpolitik-der-bundesregierung-im-jahr-2025.html"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "create branch agent/arms-export-2026-08-19",
+    "research arms-export data (BMWK, Bundestag, Al Jazeera, Reuters)",
+    "write agent-digests/arms-export-2026-08-19.md (4 bilingual items)",
+    "write agent-logs/arms-export-2026-08-19.json",
+    "commit digest + log",
+    "push branch",
+    "open PR (no self-merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/arms-export-2026-08-19"
+}
