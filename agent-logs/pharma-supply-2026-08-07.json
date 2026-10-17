@@ -1,0 +1,82 @@
+{
+  "date": "2026-08-07",
+  "shortages_found": 517,
+  "top_shortages": [
+    {
+      "medication": "Propranolol PUREN 10/40 mg Filmtabletten",
+      "active_ingredient": "Propranololhydrochlorid",
+      "atc": "C07AA05",
+      "shortage_since": "2026-07-20",
+      "expected_end": "2026-10-05",
+      "reason": "Produktionsproblem",
+      "alternative_available": true,
+      "source": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medication": "Pregabalin PUREN 75 mg Hartkapseln",
+      "active_ingredient": "Pregabalin",
+      "atc": "N02BF02",
+      "shortage_since": "2026-07-20",
+      "expected_end": "2026-09-28",
+      "reason": "Sonstige",
+      "alternative_available": true,
+      "source": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medication": "Quetiapin beta 150/200/300 mg Retardtabletten",
+      "active_ingredient": "Quetiapinfumarat",
+      "atc": "N05AH04",
+      "shortage_since": "2025-01-24",
+      "expected_end": "2026-09-30",
+      "reason": "Produktionsproblem",
+      "alternative_available": false,
+      "source": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medication": "Digoxin-/Digitoxinhaltige Arzneimittel",
+      "active_ingredient": "Digoxin, Digitoxin",
+      "shortage_since": "2026-07-23",
+      "expected_end": "unbekannt",
+      "reason": "BfArM-Therapieempfehlung wegen Versorgungslage",
+      "alternative_available": false,
+      "source": "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/Massnahmen-des-BfArM/_artikel.html"
+    },
+    {
+      "medication": "Onkologika: Ifosfamid, Cytarabin, Cyclophosphamid, Idarubicin",
+      "active_ingredient": "diverse Zytostatika",
+      "shortage_since": "2026-06-02",
+      "expected_end": "2026-11-30",
+      "reason": "Lieferengpass, BfArM-Gestattungen §§10 Abs.1a/11 Abs.1c AMG (Importpackungen)",
+      "alternative_available": true,
+      "source": "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/Massnahmen-des-BfArM/_artikel.html"
+    }
+  ],
+  "highlights": [
+    "517 aktive Lieferengpassmeldungen in der BfArM-/PharmNet-Datenbank (Stand 07.08.2026).",
+    "Entwarnung: Versorgungsmangel-Bekanntmachung fuer Kinder-Antibiotikasaefte (Erythromycin, Clindamycin, Cotrimoxazol, Cefuroxim) am 25./26.03.2026 vollstaendig aufgehoben.",
+    "Dauerengpass Quetiapin beta Retard seit Januar 2025 - ueber 18 Monate, keine Alternative gemeldet.",
+    "BfArM-Therapieempfehlung zu Digoxin/Digitoxin vom 23.07.2026 betrifft aeltere Herzpatienten.",
+    "Onkologie: laufende Gestattungen fuer auslaendisch beschriftete Importpackungen sichern Chemotherapie-Versorgung.",
+    "Ursachen laut tagesschau: Wirkstoffproduktion in Asien, Preisdruck durch Rabattvertraege, fehlende Reservekapazitaet.",
+    "ALBVVG: Apotheken duerfen bei Nichtlieferbarkeit ohne neues Rezept austauschen (50 Cent + MwSt. Zusatzgebuehr)."
+  ],
+  "sources": [
+    "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/_node.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/Massnahmen-des-BfArM/_artikel.html",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/Archiv/antibiotika.html",
+    "https://www.tagesschau.de/wirtschaft/unternehmen/lieferengpaesse-medikamente-pharmaindustrie-100.html",
+    "https://www.gelbe-liste.de/apotheke/inkraftreten-albvvg",
+    "https://www.pharmazeutische-zeitung.de/aerzte-wollen-keine-austausch-freiheiten-fuer-apotheken-138758/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/pharma-supply-2026-08-07",
+    "Researched BfArM/PharmNet shortage database and BfArM measures page",
+    "Wrote citizen digest agent-digests/pharma-supply-2026-08-07.md",
+    "Wrote log agent-logs/pharma-supply-2026-08-07.json",
+    "Committed, pushed branch and opened PR (no merge - human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/pharma-supply-2026-08-07"
+}
