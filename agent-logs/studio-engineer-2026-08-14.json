@@ -1,0 +1,29 @@
+{
+  "date": "2026-08-14",
+  "changes": [
+    {
+      "file": "experiences/little-planet/src/shared/match.js",
+      "what": "D1: replaced HP-subtract with soak-accumulate (soak 0->100, derived hp = 100 - soak); down emitted at soak >= 100; added soak field to addPlayer + resets in start()/_nextRound.",
+      "why": "Make soak the single win condition for BOTH weapon families. Kills the one-tap saber and the HP/soak double-bookkeeping; the existing HUD already renders soak = 100 - hp, so it stays honest with zero HUD rework."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/weapons/tools.js",
+      "what": "D2: leafblade.soak 100 -> 34, blurb updated to 'three clean touches'.",
+      "why": "Saber was deleting full-HP foes in one swing. At 34 soak, three clean hits bubble a foe; saber and projectiles now share one bar."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/match-mode.js",
+      "what": "D2: saber now spends stamina per swing (cost 0.34, regen 0.42/s, swing blocked + 'Winded' when empty); early-swing connect (saber.swing <= 0.45) deals 1.5x soak (timing reward); whiff past 0.7 sets a recoverable 'Exposed!' opening; synced this.soak on damage/down/heal events.",
+      "why": "Give the saber a melee identity of movement+timing commitment (the lead's BOTH split) without touching movement physics."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/botbrain.js",
+      "what": "D3: botShoot now fires the player's own kit (leafblade melee at <=3.4m, petalbow ranged otherwise) using TOOLS soak values; removed the legacy WEAPON/applySpread/traceShot carbine import.",
+      "why": "Bots were a third, invisible archetype with a gun players never touch. Now the AI trains against the exact numbers you ship."
+    }
+  ],
+  "build_passed": true,
+  "directives_done": ["D1", "D2", "D3"],
+  "repo": "bla-keks-world",
+  "branch": "studio/engineer-2026-08-14"
+}
