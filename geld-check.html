@@ -7,198 +7,116 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236e5bff'/%3E%3Cstop offset='0.55' stop-color='%23ff6ec7'/%3E%3Cstop offset='1' stop-color='%23ffa26b'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='48' height='48' rx='11' fill='url(%23g)'/%3E%3Cpath d='M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3Ccircle cx='24' cy='24' r='7.5' fill='%23fff'/%3E%3Cpath d='M20.5 24 L23 26.5 L27.8 21.4' stroke='%236e5bff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
 <style>
-  :root{
-    --paper:#fdf9f2; --ink:#26242b; --ink2:#5a5560; --ink3:#a39dab;
-    --line:rgba(38,36,43,0.10); --line2:rgba(38,36,43,0.18);
-    --violet:#6e5bff; --rose:#ff6ec7; --peach:#ffa26b;
-    --green:#2e8b6d; --lemon:#c07f2a;
-    --grad:linear-gradient(115deg,#6e5bff 0%,#ff6ec7 55%,#ffa26b 100%);
-  }
-  *{margin:0;padding:0;box-sizing:border-box}
-  html{scroll-behavior:smooth}
+  :root{--paper:#fdf9f2;--ink:#26242b;--ink2:#5a5560;--ink3:#8c8790;--line:rgba(38,36,43,.10);--line2:rgba(38,36,43,.18);--violet:#6e5bff;--rose:#ff6ec7;--peach:#ffa26b;--green:#2e8b6d;--amber:#9d6723;--grad:linear-gradient(115deg,#6e5bff 0%,#ff6ec7 55%,#ffa26b 100%)}
+  *{margin:0;padding:0;box-sizing:border-box} html{scroll-behavior:smooth}
   body{background:var(--paper);color:var(--ink);font-family:'Space Grotesk',system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  ::selection{background:rgba(255,110,199,0.22)}
-  .aurora{position:fixed;inset:0;pointer-events:none;z-index:0}
-  .aurora .layer{position:absolute;inset:-20%;filter:blur(120px);animation:drift 38s ease-in-out infinite alternate}
-  .aurora .l1{background:radial-gradient(closest-side at 25% 18%,rgba(255,162,107,0.20),transparent 70%)}
-  .aurora .l2{background:radial-gradient(closest-side at 78% 30%,rgba(255,110,199,0.15),transparent 70%);animation-delay:-13s}
-  .aurora .l3{background:radial-gradient(closest-side at 55% 90%,rgba(110,91,255,0.13),transparent 70%);animation-delay:-26s}
-  @keyframes drift{0%{transform:translate(0,0) rotate(0) scale(1)}50%{transform:translate(3vw,2vh) rotate(1.2deg) scale(1.06)}100%{transform:translate(-2vw,3vh) rotate(-1deg) scale(1.1)}}
+  ::selection{background:rgba(255,110,199,.22)}
+  .aurora{position:fixed;inset:0;pointer-events:none;z-index:0}.aurora .layer{position:absolute;inset:-20%;filter:blur(120px);animation:drift 38s ease-in-out infinite alternate}.aurora .l1{background:radial-gradient(closest-side at 25% 18%,rgba(255,162,107,.20),transparent 70%)}.aurora .l2{background:radial-gradient(closest-side at 78% 30%,rgba(255,110,199,.15),transparent 70%);animation-delay:-13s}.aurora .l3{background:radial-gradient(closest-side at 55% 90%,rgba(110,91,255,.13),transparent 70%);animation-delay:-26s}@keyframes drift{0%{transform:translate(0,0)}50%{transform:translate(3vw,2vh) scale(1.06)}100%{transform:translate(-2vw,3vh) scale(1.1)}}
   .wrap{max-width:960px;margin:0 auto;padding:0 36px;position:relative;z-index:1}
-
-  nav{display:flex;align-items:center;padding:30px 0;gap:28px}
-  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
-  .brand .mark{width:36px;height:36px;border-radius:12px;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(255,110,199,0.35)}
-  .brand .mark svg{width:27px;height:27px}
-  .brand .word{font-size:17px;font-weight:600;letter-spacing:-0.3px;color:var(--ink)}
-  .brand .word em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-  nav .links{margin-left:auto;display:flex;gap:8px;align-items:center}
-  nav .links a{color:var(--ink2);text-decoration:none;font-size:14px;padding:8px 14px;border-radius:999px;transition:all .18s}
-  nav .links a:hover{color:var(--ink);background:rgba(255,110,199,0.10)}
-  nav .links .pill{font-weight:500;color:#fff;background:var(--grad);padding:8px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(255,110,199,0.3)}
-
-  .hero{padding:76px 0 26px;max-width:820px}
-  .kicker{display:flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--violet);margin-bottom:24px;font-weight:500}
-  .kicker .live{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(46,139,109,0.15);animation:pulse 3s ease-in-out infinite}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:0.35}}
-  h1{font-size:clamp(40px,6.4vw,72px);font-weight:500;letter-spacing:-0.04em;line-height:1.0;margin-bottom:22px}
-  h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
-  .dek{font-size:17px;font-weight:300;color:var(--ink2);max-width:600px;line-height:1.7}
-  .dek b{font-weight:500;color:var(--ink)}
-
-  /* THE CHECK — warm rows */
-  .check{margin-top:40px;border-top:1px solid var(--line)}
-  .q-row{display:flex;align-items:center;gap:18px;padding:22px 4px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .18s}
-  .q-row:hover{background:rgba(255,110,199,0.05)}
-  .q-row .q{flex:1;font-size:16.5px;font-weight:400}
-  .q-row .h{font-size:12.5px;color:var(--ink3);font-weight:300;display:block;margin-top:2px}
-  .q-row .switch{width:52px;height:30px;border-radius:999px;background:var(--line2);position:relative;transition:background .2s;flex-shrink:0}
-  .q-row.on .switch{background:var(--grad)}
-  .q-row .switch::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.2);transition:left .2s}
-  .q-row.on .switch::after{left:25px}
-
-  /* RESULT */
-  .result{margin-top:14px;display:none}
-  .result.show{display:block;animation:fade .4s ease}
-  @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
-  .result .total{padding:30px 26px;border-radius:22px;background:var(--grad);color:#fff;display:flex;align-items:center;gap:22px;flex-wrap:wrap;box-shadow:0 14px 36px rgba(255,110,199,0.3)}
-  .result .total .big{font-size:54px;font-weight:500;letter-spacing:-0.03em;line-height:1}
-  .result .total .lbl{font-size:14.5px;opacity:0.92;max-width:340px;line-height:1.5}
-  .result .total .lbl b{font-weight:600}
-  .items{border-top:1px solid var(--line);margin-top:10px}
-  .item{display:grid;grid-template-columns:1fr auto;gap:14px;padding:22px 4px;border-bottom:1px solid var(--line);align-items:baseline}
-  .item .t{font-size:17px;font-weight:500;margin-bottom:3px}
-  .item .d{font-size:13.5px;color:var(--ink3);font-weight:300}
-  .item .d b{color:var(--ink);font-weight:500}
-  .item .amt{font-size:24px;font-weight:500;letter-spacing:-0.02em;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
-  .item .amt small{display:block;font-size:10.5px;color:var(--ink3);letter-spacing:1px;text-transform:uppercase;-webkit-text-fill-color:var(--ink3)}
-  .item .act{margin-top:8px;display:inline-block;font-size:13px;font-weight:500;color:#fff;background:var(--grad);text-decoration:none;padding:9px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(255,110,199,0.3)}
-  .item .act:hover{transform:translateY(-1px)}
-  .honest{margin-top:26px;padding:22px 0 6px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3);max-width:700px}
-  .honest b{color:var(--ink);font-weight:500}
-
-  footer{padding:40px 0 70px;color:var(--ink3);font-size:13px;text-align:center}
-  footer b{color:var(--ink);font-weight:500}
-  @media(max-width:640px){.wrap{padding:0 20px}.result .total .big{font-size:42px}}
+  nav{display:flex;align-items:center;padding:30px 0;gap:28px}.brand{display:flex;align-items:center;gap:12px;text-decoration:none}.brand .mark{width:36px;height:36px;border-radius:12px;background:var(--grad);display:flex;align-items:center;justify-content:center;box-shadow:0 6px 18px rgba(255,110,199,.35)}.brand .mark svg{width:27px;height:27px}.brand .word{font-size:17px;font-weight:600;color:var(--ink)}.brand .word em{font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}nav .links{margin-left:auto}nav .links a{color:#fff;text-decoration:none;font-size:14px;font-weight:500;background:var(--grad);padding:8px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(255,110,199,.3)}
+  .hero{padding:76px 0 26px;max-width:820px}.kicker{display:flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:2.5px;text-transform:uppercase;color:var(--violet);margin-bottom:24px;font-weight:500}.kicker .live{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 0 4px rgba(46,139,109,.15)}h1{font-size:clamp(40px,6.4vw,72px);font-weight:500;letter-spacing:-.04em;line-height:1;margin-bottom:22px}h1 .serif{font-family:'Newsreader',serif;font-style:italic;font-weight:300;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}.dek{font-size:17px;font-weight:300;color:var(--ink2);max-width:650px;line-height:1.7}.dek b{font-weight:500;color:var(--ink)}
+  .scope{margin-top:30px;padding:14px 18px;border:1px solid var(--line);border-radius:16px;background:rgba(255,255,255,.46);font-size:13px;color:var(--ink2)}.scope b{color:var(--ink)}
+  .section-label{margin-top:42px;margin-bottom:7px;font-size:11px;text-transform:uppercase;letter-spacing:2px;color:var(--violet);font-weight:600}.check{border-top:1px solid var(--line)}.q-row{display:flex;align-items:center;gap:18px;padding:19px 4px;border-bottom:1px solid var(--line);cursor:pointer;transition:background .18s}.q-row:hover{background:rgba(255,110,199,.05)}.q-row .q{flex:1;font-size:16px}.q-row .h{font-size:12.5px;color:var(--ink3);font-weight:300;display:block;margin-top:2px}.q-row .switch{width:52px;height:30px;border-radius:999px;background:var(--line2);position:relative;transition:background .2s;flex-shrink:0}.q-row.on .switch{background:var(--grad)}.q-row .switch::after{content:"";position:absolute;top:3px;left:3px;width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.2);transition:left .2s}.q-row.on .switch::after{left:25px}
+  .result{margin-top:22px;display:none}.result.show{display:block;animation:fade .35s ease}@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}.summary{padding:28px 26px;border-radius:22px;background:var(--grad);color:#fff;box-shadow:0 14px 36px rgba(255,110,199,.25)}.summary .big{font-size:clamp(30px,6vw,50px);font-weight:500;line-height:1.05;letter-spacing:-.03em}.summary .lbl{font-size:14px;opacity:.94;max-width:620px;margin-top:8px}.items{margin-top:10px;border-top:1px solid var(--line)}.item{display:grid;grid-template-columns:1fr auto;gap:16px;padding:22px 4px;border-bottom:1px solid var(--line);align-items:start}.item .t{font-size:17px;font-weight:500;margin-bottom:4px}.item .d{font-size:13.5px;color:var(--ink3);max-width:650px}.item .d b{color:var(--ink);font-weight:500}.item .amt{font-size:22px;font-weight:500;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}.item .amt small{display:block;font-size:10px;color:var(--ink3);text-transform:uppercase;letter-spacing:1px;-webkit-text-fill-color:var(--ink3)}.act{margin-top:9px;display:inline-block;font-size:13px;font-weight:500;color:#fff;background:var(--grad);text-decoration:none;padding:9px 18px;border-radius:999px;box-shadow:0 4px 14px rgba(255,110,199,.25)}
+  .notice{margin-top:12px;padding:16px 18px;border-radius:16px;border:1px solid rgba(157,103,35,.2);background:rgba(255,222,167,.22);font-size:13.5px;color:var(--ink2)}.notice b{color:var(--ink)}.honest{margin-top:24px;padding:20px 0 6px;border-top:1px solid var(--line);font-size:13px;color:var(--ink3);max-width:760px}.honest b{color:var(--ink);font-weight:500}
+  footer{padding:42px 0 70px;color:var(--ink3);font-size:13px;text-align:center}footer b{color:var(--ink);font-weight:500}@media(max-width:640px){.wrap{padding:0 20px}.item{grid-template-columns:1fr}.item .amt{font-size:19px}}
 </style>
 </head>
 <body>
 <div class="aurora"><div class="layer l1"></div><div class="layer l2"></div><div class="layer l3"></div></div>
-
 <div class="wrap">
-  <nav>
-    <a class="brand" href="index.html">
-      <span class="mark"><svg viewBox="0 0 48 48"><path d="M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="24" cy="24" r="7.5" fill="#fff"/><path d="M20.5 24 L23 26.5 L27.8 21.4" stroke="#6e5bff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
-      <span class="word">Citizen <em>Agents</em></span>
-    </a>
-    <div class="links">
-      <a class="pill" href="index.html">← Start</a>
-    </div>
-  </nav>
+  <nav><a class="brand" href="index.html"><span class="mark"><svg viewBox="0 0 48 48"><path d="M6 24 C12 12 36 12 42 24 C36 36 12 36 6 24 Z" fill="none" stroke="#fff" stroke-width="2.4"/><circle cx="24" cy="24" r="7.5" fill="#fff"/><path d="M20.5 24 L23 26.5 L27.8 21.4" stroke="#6e5bff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="word">Citizen <em>Agents</em></span></a><div class="links"><a href="index.html">← Start</a></div></nav>
 
   <div class="hero">
-    <div class="kicker"><span class="live"></span>30 Sekunden · kostenlos · deine Daten bleiben bei dir</div>
+    <div class="kicker"><span class="live"></span>kurzer Check · lokal im Browser · Berlin</div>
     <h1>Dein Geld <span class="serif">liegt rum.</span></h1>
-    <p class="dek">In Deutschland bleiben <b>Milliarden staatlicher Leistungen ungenutzt</b> — Wohngeld, Kinderzuschlag, Elterngeld, Fluggastrechte. Behörden sagen es dir nicht. <b>Dieser Check sagt es dir.</b></p>
+    <p class="dek">Ein erster Wegweiser zu möglichen Leistungen. <b>Kein automatischer Rechtsentscheid:</b> Wir zeigen dir, was sich offiziell zu prüfen lohnt — und wo typische Ausschlüsse liegen.</p>
+    <div class="scope"><b>CitizenSim v1:</b> Der Wohngeld-Pfad wurde als Routing-Problem getestet. Ziel ist nicht „Du hast Anspruch“, sondern „Diese offizielle Prüfung ist wahrscheinlich der richtige nächste Schritt“.</div>
   </div>
 
+  <div class="section-label">Wohnen & Wohngeld</div>
   <div class="check">
-    <div class="q-row" data-k="miete" onclick="toggle(this)">
-      <div class="q">Ich zahle Miete <span class="h">auch: WG · Genossenschaft · Untermiete</span></div>
-      <div class="switch"></div>
-    </div>
-    <div class="q-row" data-k="einkommen" onclick="toggle(this)">
-      <div class="q">Mein Einkommen ist niedrig bis mittel <span class="h">unter ~2.000 € netto / Monat im Haushalt</span></div>
-      <div class="switch"></div>
-    </div>
-    <div class="q-row" data-k="kind" onclick="toggle(this)">
-      <div class="q">Ich habe Kind(er) unter 18 <span class="h">auch: Kindergeld läuft bereits</span></div>
-      <div class="switch"></div>
-    </div>
-    <div class="q-row" data-k="eltern" onclick="toggle(this)">
-      <div class="q">Ich bin schwanger oder habe ein Kind unter 14 Monaten <span class="h">Elterngeld-Fall</span></div>
-      <div class="switch"></div>
-    </div>
-    <div class="q-row" data-k="pflege" onclick="toggle(this)">
-      <div class="q">Ich pflege einen Angehörigen <span class="h">auch: Pflegegrad vorhanden</span></div>
-      <div class="switch"></div>
-    </div>
-    <div class="q-row" data-k="flug" onclick="toggle(this)">
-      <div class="q">Ich bin 2026 geflogen und hatte Verspätung oder Ausfall <span class="h">auch: kurzfristige Absage</span></div>
-      <div class="switch"></div>
-    </div>
-    <div class="q-row" data-k="grundsicherung" onclick="toggle(this)">
-      <div class="q">Ich bin arbeitslos oder habe sehr wenig Einkommen <span class="h">Bürgergeld / Grundsicherung-Fall</span></div>
-      <div class="switch"></div>
-    </div>
+    <div class="q-row" data-k="berlin" onclick="toggle(this)"><div class="q">Mein Hauptwohnsitz ist in Berlin <span class="h">dieser Prototyp routet aktuell nur Berliner Wohngeld-Fälle</span></div><div class="switch"></div></div>
+    <div class="q-row" data-k="miete" data-exclusive="housing" onclick="toggle(this)"><div class="q">Ich wohne zur Miete <span class="h">auch: WG · Genossenschaft · Untermiete</span></div><div class="switch"></div></div>
+    <div class="q-row" data-k="eigentum" data-exclusive="housing" onclick="toggle(this)"><div class="q">Ich wohne in meinem eigenen Haus / meiner eigenen Wohnung <span class="h">selbst genutzt · möglicher Lastenzuschuss</span></div><div class="switch"></div></div>
+    <div class="q-row" data-k="einkommen" onclick="toggle(this)"><div class="q">Mein Haushaltseinkommen ist eher niedrig bis mittel <span class="h">nur ein grobes Signal — die offizielle Berechnung braucht Haushalt, Einkommen und Wohnkosten</span></div><div class="switch"></div></div>
+    <div class="q-row" data-k="wohnkosten_transfer" onclick="toggle(this)"><div class="q">Ich bekomme bereits eine Transferleistung, in der meine Wohnkosten berücksichtigt werden <span class="h">z. B. Bürgergeld, Grundsicherung oder Hilfe zum Lebensunterhalt</span></div><div class="switch"></div></div>
+    <div class="q-row" data-k="ausbildung_exkl" onclick="toggle(this)"><div class="q">Alle Personen in meinem Haushalt sind dem Grunde nach BAföG-/BAB-berechtigt <span class="h">kann Wohngeld ausschließen; Darlehensfälle können anders liegen</span></div><div class="switch"></div></div>
+  </div>
+
+  <div class="section-label">Weitere schnelle Hinweise</div>
+  <div class="check">
+    <div class="q-row" data-k="kind" onclick="toggle(this)"><div class="q">Ich habe Kind(er) unter 18 <span class="h">möglicher Kinderzuschlag</span></div><div class="switch"></div></div>
+    <div class="q-row" data-k="eltern" onclick="toggle(this)"><div class="q">Ich bin schwanger oder habe ein sehr junges Kind <span class="h">möglicher Elterngeld-Fall</span></div><div class="switch"></div></div>
+    <div class="q-row" data-k="pflege" onclick="toggle(this)"><div class="q">Ich pflege einen Angehörigen <span class="h">Pflegeleistungen und Entlastung können relevant sein</span></div><div class="switch"></div></div>
+    <div class="q-row" data-k="flug" onclick="toggle(this)"><div class="q">Ich hatte 2026 eine starke Flugverspätung oder einen Ausfall <span class="h">EU-Fluggastrechte können relevant sein</span></div><div class="switch"></div></div>
+    <div class="q-row" data-k="grundsicherung" onclick="toggle(this)"><div class="q">Ich bin arbeitslos oder habe sehr wenig Einkommen <span class="h">Grundsicherung / existenzsichernde Leistungen prüfen</span></div><div class="switch"></div></div>
   </div>
 
   <div class="result" id="result"></div>
-
-  <footer>
-    Wir beobachten. Wir verifizieren. Du entscheidest.<br>
-    <b>Schätzung ≠ Rechtsberatung</b> · Beträge sind Durchschnitts-Spannen · Berlin · Open Source
-  </footer>
+  <footer>Wir beobachten. Wir testen. Du entscheidest.<br><b>Hinweis ≠ Rechtsberatung</b> · keine Speicherung · Berlin-Prototyp · Open Source</footer>
 </div>
 
 <script>
 const S = new Set();
+const ROWS = () => [...document.querySelectorAll('.q-row')];
 function toggle(el){
   const k = el.dataset.k;
-  if(S.has(k)){ S.delete(k); el.classList.remove("on"); }
-  else { S.add(k); el.classList.add("on"); }
+  const group = el.dataset.exclusive;
+  if(S.has(k)){ S.delete(k); el.classList.remove('on'); }
+  else {
+    if(group){ ROWS().filter(r => r.dataset.exclusive === group && r !== el).forEach(r => { S.delete(r.dataset.k); r.classList.remove('on'); }); }
+    S.add(k); el.classList.add('on');
+  }
   render();
 }
 
-const ITEMS = [
-  { k:"miete+einkommen", need:()=>S.has("miete") && S.has("einkommen"),
-    t:"🏠 Wohngeld", lo:90, hi:250, per:"/ Monat",
-    d:"<b>50–87 % des Wohngelds bleiben ungenutzt</b> — rund 1,9 Mio Haushalte hätten Anspruch. Berechnung: 30 Sekunden.",
-    act:"Anspruch prüfen", href:"https://www.wohngeld.org/wohngeldrechner/" },
-  { k:"kind+einkommen", need:()=>S.has("kind") && S.has("einkommen"),
-    t:"🧒 Kinderzuschlag", lo:60, hi:292, per:"/ Kind / Monat",
-    d:"<b>60–88 % des Kinderzuschlags bleiben liegen</b> — bis zu €292 pro Kind zusätzlich zum Kindergeld.",
-    act:"KiZ-Check", href:"https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag" },
-  { k:"eltern", need:()=>S.has("eltern"),
-    t:"👶 Elterngeld", lo:300, hi:1800, per:"/ Monat",
-    d:"Deutschland ist kompliziert, Elterngeld muss es nicht sein: <b>Basis oder Plus, 14 statt 12 Monate</b> (aktuelle Reform), alle 16 Bundesländer.",
-    act:"Berechnen", href:"https://elterngeld-digital.de/" },
-  { k:"pflege", need:()=>S.has("pflege"),
-    t:"💚 Pflegegeld & Entlastungsbetrag", lo:331, hi:1699, per:"/ Monat",
-    d:"Pflegegeld (€331–1.699 je Pflegegrad), <b>€125 Entlastungsbetrag</b>, Verhinderungspflege — vieles bleibt ungenutzt, weil niemand es sagt.",
-    act:"Pflegegrad prüfen", href:"https://www.pflege.de/pflegekasse-pflegeleistungen/pflegegeld/" },
-  { k:"flug", need:()=>S.has("flug"),
-    t:"✈️ Fluggastrechte (EU261)", lo:250, hi:600, per:" pro Flug",
-    d:"<b>€4–5 Mrd bleiben jährlich unbeansprucht.</b> 3h+ Verspätung oder kurzfristiger Ausfall: €250–600 pro Person — auch ohne Anwalt.",
-    act:"€600 prüfen", href:"eu261.html" },
-  { k:"grundsicherung", need:()=>S.has("grundsicherung"),
-    t:"🛟 Bürgergeld / Grundsicherung", lo:563, hi:563, per:"/ Monat (Regelsatz)",
-    d:"Regelsatz aktuell <b>€563</b> — plus Wohnkosten. Wichtig: wird ab 01.07.2026 zur \u201eNeuen Grundsicherung\u201c mit schärferen Regeln.",
-    act:"Aktuelles", href:"https://www.grundsicherung.de/" },
-];
+function wohngeldState(){
+  const housing = S.has('miete') || S.has('eigentum');
+  const basics = S.has('berlin') && housing && S.has('einkommen');
+  if(!basics) return {route:false, reason:null};
+  if(S.has('wohnkosten_transfer')) return {route:false, reason:'transfer'};
+  if(S.has('ausbildung_exkl')) return {route:false, reason:'education'};
+  return {route:true, reason:null, owner:S.has('eigentum')};
+}
+
+function buildItems(){
+  const items = [];
+  const w = wohngeldState();
+  if(w.route){
+    items.push(w.owner ? {
+      t:'🏡 Wohngeld · Lastenzuschuss', d:'Für selbst genutztes Eigentum mit geringerem Einkommen kann <b>Lastenzuschuss</b> der passende Wohngeld-Pfad sein. Höhe und Anspruch hängen u. a. von Haushaltsgröße, Belastung und Gesamteinkommen ab.',
+      act:'Offiziell prüfen', href:'https://service.berlin.de/dienstleistung/120665/', amount:null
+    } : {
+      t:'🏠 Wohngeld · Mietzuschuss', d:'Für Mieter:innen mit geringerem Einkommen kann <b>Mietzuschuss</b> passen. Höhe und Anspruch hängen u. a. von Haushaltsgröße, Miete und Gesamteinkommen ab.',
+      act:'Offiziell prüfen', href:'https://service.berlin.de/dienstleistung/120656/', amount:null
+    });
+  }
+  if(S.has('kind') && S.has('einkommen')) items.push({t:'🧒 Kinderzuschlag',d:'Mit Kindern und kleinerem Einkommen kann sich ein offizieller KiZ-Check lohnen.',act:'KiZ-Lotse',href:'https://www.arbeitsagentur.de/familie-und-kinder/kinderzuschlag',amount:null});
+  if(S.has('eltern')) items.push({t:'👶 Elterngeld',d:'Bei Geburt oder sehr jungem Kind lohnt sich eine offizielle Elterngeld-Prüfung.',act:'ElterngeldDigital',href:'https://elterngeld-digital.de/',amount:null});
+  if(S.has('pflege')) items.push({t:'💚 Pflegeleistungen',d:'Pflegegeld, Entlastungsleistungen oder weitere Pflegekassen-Leistungen können relevant sein.',act:'Leistungen prüfen',href:'https://www.bundesgesundheitsministerium.de/themen/pflege/online-ratgeber-pflege/leistungen-der-pflegeversicherung.html',amount:null});
+  if(S.has('flug')) items.push({t:'✈️ Fluggastrechte',d:'Bei erheblicher Verspätung oder Annullierung können EU-Fluggastrechte greifen.',act:'Fall prüfen',href:'eu261.html',amount:null});
+  if(S.has('grundsicherung')) items.push({t:'🛟 Existenzsichernde Leistungen',d:'Bei Arbeitslosigkeit oder sehr geringem Einkommen lohnt sich eine offizielle Prüfung der aktuell passenden Leistung.',act:'Bundesagentur öffnen',href:'https://www.arbeitsagentur.de/',amount:null});
+  return items;
+}
 
 function render(){
-  const r = document.getElementById("result");
-  if(S.size === 0){ r.className = "result"; return; }
-  const hits = ITEMS.filter(i=>i.need());
-  if(hits.length === 0){ r.className = "result show"; r.innerHTML = `<div class="honest"><b>Kein Treffer —</b> nach unseren Modellen liegt bei dieser Kombination kein offensichtliches Geld rum. Gut! Aber: prüfe <a href="rechte-profil.html" style="color:var(--violet)">dein Rechte-Profil</a> oder frag <a href="https://gitlaw-xi.vercel.app/" style="color:var(--violet)">GitLaw</a> — es gibt mehr als Geld.</div>`; return; }
-  const lo = hits.reduce((a,i)=>a+i.lo,0);
-  const hi = hits.reduce((a,i)=>a+i.hi,0);
-  r.className = "result show";
+  const r = document.getElementById('result');
+  if(S.size === 0){ r.className='result'; r.innerHTML=''; return; }
+  const items = buildItems();
+  const w = wohngeldState();
+  const notices = [];
+  if(w.reason === 'transfer') notices.push('<b>Wohngeld-Hinweis:</b> Wenn eine Transferleistung deine Kosten der Unterkunft bereits berücksichtigt, besteht typischerweise ein Wohngeld-Ausschluss. Prüfe Sonder-/Übergangsfälle bei der Wohngeldstelle.');
+  if(w.reason === 'education') notices.push('<b>Wohngeld-Hinweis:</b> Haushalte, deren Mitglieder ausschließlich dem Grunde nach BAföG/BAB-berechtigt sind, sind typischerweise ausgeschlossen. Darlehensfälle können eine Ausnahme sein.');
+  if((S.has('miete') || S.has('eigentum')) && S.has('einkommen') && !S.has('berlin')) notices.push('<b>Noch ein Signal fehlt:</b> Für diesen Berlin-Prototyp bitte „Hauptwohnsitz in Berlin“ auswählen.');
+
+  r.className='result show';
+  const summary = items.length ? `${items.length} ${items.length===1?'Prüfung':'Prüfungen'} lohnen sich` : 'Noch kein klarer nächster Schritt';
   r.innerHTML = `
-    <div class="total">
-      <div class="big">~€${lo}–${hi.toLocaleString("de-DE")}</div>
-      <div class="lbl"><b>könnte dir monatlich zustehen.</b> Das sind Durchschnitts-Spannen — der echte Betrag hängt von deinen Details ab. Prüfen dauert 30 Sekunden.</div>
-    </div>
-    <div class="items">
-      ${hits.map(i=>`
-        <div class="item">
-          <div><div class="t">${i.t}</div><div class="d">${i.d}</div>
-          <a class="act" href="${i.href}" ${i.href.startsWith("http")?'target="_blank"':""}>${i.act} →</a></div>
-          <div class="amt">€${i.lo}–${i.hi.toLocaleString("de-DE")}<small>${i.per}</small></div>
-        </div>`).join("")}
-    </div>
-    <div class="honest"><b>Ehrlich bleiben:</b> Das ist eine Schätzung auf Basis offizieller Durchschnittswerte (SoVD, Arbeitsagentur, EuGH) — kein Rechtsanspruch, keine Beratung. Der Check speichert nichts: deine Antworten verlassen diesen Browser nicht.</div>`;
+    <div class="summary"><div class="big">${summary}</div><div class="lbl">Wir routen dich zu offiziellen Stellen — wir entscheiden nicht selbst über deinen Anspruch.</div></div>
+    ${notices.map(n=>`<div class="notice">${n}</div>`).join('')}
+    <div class="items">${items.map(i=>`<div class="item"><div><div class="t">${i.t}</div><div class="d">${i.d}</div><a class="act" href="${i.href}" ${i.href.startsWith('http')?'target="_blank" rel="noopener"':''}>${i.act} →</a></div><div class="amt">prüfen<small>offizieller nächster Schritt</small></div></div>`).join('')}</div>
+    <div class="honest"><b>Ehrlich bleiben:</b> Dieser Check ist ein Discovery-/Routing-Prototyp. Wohngeld wird offiziell anhand von Haushaltsgröße, Wohnkosten/Belastung und Gesamteinkommen berechnet. Deine Auswahl bleibt in diesem Browser.</div>`;
 }
 </script>
 </body>

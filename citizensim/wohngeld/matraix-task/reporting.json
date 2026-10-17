@@ -1,0 +1,15 @@
+{
+  "schemaVersion": "1.0",
+  "contextRules": [
+    {
+      "match": {"contextType": "decision"},
+      "distributions": [
+        {"id": "citizensim.completed", "facetKey": "completed", "title": "Flow completion"},
+        {"id": "citizensim.wohngeld_shown", "facetKey": "wohngeld_shown", "title": "Wohngeld surfaced"},
+        {"id": "citizensim.wohngeld_path", "facetKey": "wohngeld_path", "title": "Wohngeld route"},
+        {"id": "citizensim.clicked_next_step", "facetKey": "clicked_wohngeld_next_step", "title": "Official next-step click"},
+        {"id": "citizensim.routing_hint_understood", "facetKey": "understood_that_result_is_only_a_routing_hint", "title": "Routing disclaimer understood"}
+      ]
+    }
+  ]
+}
