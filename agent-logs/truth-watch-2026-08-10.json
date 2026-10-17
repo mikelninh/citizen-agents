@@ -1,0 +1,86 @@
+{
+  "date": "2026-08-10",
+  "items": 5,
+  "narratives": [
+    "FIFA officially excluded Argentina from the 2030 World Cup (FALSE)",
+    "Spain plans to build 5,000 new mosques (UNSUBSTANTIATED/FALSE)",
+    "Video shows threatening migrants at Ceuta (FALSE - mistranslated football fans)",
+    "Tagesschau reported Russian involvement in the Berlin CSD attack (FALSE - forged screenshot)",
+    "AI-generated crisis footage: SpaceX moon collision, Japan quake damage, HAARP-induced earthquake (FALSE)"
+  ],
+  "debunks": [
+    {
+      "narrative": "FIFA excluded Argentina from WM 2030",
+      "verdict": "false",
+      "debunker": "CORRECTIV.Faktencheck",
+      "date": "2026-08-07",
+      "url": "https://correctiv.org/faktencheck/2026/08/07/nein-die-fifa-hat-argentinien-im-juli-nicht-offiziell-von-der-wm-2030-ausgeschlossen/"
+    },
+    {
+      "narrative": "5,000 new mosques for Spain",
+      "verdict": "unsubstantiated",
+      "debunker": "CORRECTIV.Faktencheck",
+      "date": "2026-08-06",
+      "url": "https://correctiv.org/faktencheck/2026/08/06/5-000-neue-moscheen-fuer-spanien-tiktok-account-streut-unbelegte-geruechte/"
+    },
+    {
+      "narrative": "Ceuta migrant video",
+      "verdict": "false - shows Moroccan football fans celebrating, words mistranslated",
+      "debunker": "CORRECTIV.Faktencheck",
+      "date": "2026-08-04",
+      "url": "https://correctiv.org/faktencheck/2026/08/04/video-zeigt-feiernde-fussballfans-keine-menschen-in-ceuta/"
+    },
+    {
+      "narrative": "Tagesschau item on Russian involvement in CSD attack",
+      "verdict": "false - forged",
+      "debunker": "CORRECTIV.Faktencheck",
+      "date": "2026-07-29",
+      "url": "https://correctiv.org/faktencheck/2026/07/29/csd-anschlag-tagesschau-meldung-zu-angeblicher-russischer-beteiligung-ist-gefaelscht/"
+    },
+    {
+      "narrative": "AI-generated crisis footage cluster",
+      "verdict": "false - AI-generated / recycled",
+      "debunker": "AFP Fact Check",
+      "date": "2026-08-03/07",
+      "url": "https://factcheck.afp.com/doc.afp.com.C46B6WF"
+    }
+  ],
+  "policy_response": [
+    {
+      "event": "Commission preliminary findings: Instagram/Facebook addictive design breaches DSA",
+      "date": "2026-07-10",
+      "url": "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1579"
+    },
+    {
+      "event": "Commission accepts X action plan on ad repository and researcher data access",
+      "date": "2026-07-16",
+      "url": "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-xs-action-plan-comply-digital-services-act"
+    },
+    {
+      "event": "Second systemic risk report on VLOPs/VLOSEs published",
+      "date": "2026-07",
+      "url": "https://digital-strategy.ec.europa.eu/en/library/second-report-systemic-risks-very-large-online-platforms-and-search-engines-under-digital-services"
+    }
+  ],
+  "sources": [
+    "https://correctiv.org/faktencheck/",
+    "https://factcheck.afp.com/",
+    "https://digital-strategy.ec.europa.eu/en/policies/digital-services-act",
+    "https://techpolicy.press/europes-summer-of-digital-services-act-enforcement-targets-platform-design",
+    "https://ec.europa.eu/commission/presscorner/detail/en/ip_26_1579",
+    "https://commission.europa.eu/topics/digital-economy-and-society/special-panel_en",
+    "https://factcheck.afp.com/doc.afp.com.C3MY463",
+    "https://factcheck.afp.com/doc.afp.com.C3YL7NR"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/truth-watch-2026-08-10",
+    "researched CORRECTIV, AFP Fact Check, EU DSA enforcement news",
+    "wrote agent-digests/truth-watch-2026-08-10.md",
+    "wrote agent-logs/truth-watch-2026-08-10.json",
+    "committed and pushed branch",
+    "opened PR for human review (NOT merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/truth-watch-2026-08-10"
+}
