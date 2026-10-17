@@ -1,0 +1,24 @@
+{
+  "date": "2026-08-21",
+  "files_read": [
+    "README.md",
+    "experiences/little-planet/src/modes/match-mode.js",
+    "experiences/little-planet/src/modes/weapon.js",
+    "experiences/little-planet/src/modes/weapons/saber.js",
+    "experiences/little-planet/src/modes/weapons/projectiles.js",
+    "experiences/little-planet/src/modes/weapons/tools.js",
+    "experiences/little-planet/src/shared/items.js",
+    "experiences/little-planet/src/shared/match.js",
+    "experiences/little-planet/src/modes/botbrain.js",
+    "experiences/little-planet/server/room.js"
+  ],
+  "critiques": 4,
+  "directives": [
+    "Unify bot combat into the dodgeable soak-projectile model; delete the hitscan ghost carbine (botbrain.js)",
+    "Give the saber a distinct Stamina resource shared with movement (saber.js + match-mode.js + HUD)",
+    "Repurpose the dead Ammo crate into a Surge pickup that serves both weapon families (items.js + match-mode.js)"
+  ],
+  "challenge_for_mikel": "Saber resource = stamina (shared with sprint/dash) or heat (chaining swings overheats)? Pick one; we build HUD + feel around it this week.",
+  "repo": "bla-keks-world",
+  "branch": "studio/director-2026-08-21"
+}
