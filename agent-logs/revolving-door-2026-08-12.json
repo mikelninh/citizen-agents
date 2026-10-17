@@ -1,0 +1,27 @@
+{
+  "date": "2026-08-12",
+  "moves": 3,
+  "highlights": [
+    "Christian Lindner (Ex-Finanzminister, FDP) nahm nach Ablauf der 12-monatigen Karenzzeit Posten bei Stepstone (KKR/Springer), Autoland und Teneo an.",
+    "Christian Dürr (Ex-FDP-Chef) wurde zum 1.8.2026 Geschäftsführer des E-Fuels-Start-ups GLE360.",
+    "Katherina Reiche (Energiewirtschaft) amtiert seit 6.5.2025 als Wirtschaftsministerin - umgekehrte Drehtür (Industrie -> Ministeramt)."
+  ],
+  "sources": [
+    "https://www.lobbycontrol.de/seitenwechsel/christian-lindners-weicher-fall-auch-dank-springer-und-kkr-123206/",
+    "https://www.t-online.de/nachrichten/deutschland/innenpolitik/id_101345858/ex-fdp-chef-christian-duerr-hat-neuen-job-bei-start-up.html",
+    "https://www.bundeswirtschaftsministerium.de/Redaktion/EN/Artikel/Curriculum-Vitae/curriculum-vitae-reiche.html",
+    "https://www.lobbycontrol.de/seitenwechsel/",
+    "https://www.abgeordnetenwatch.de/recherchen/lobbyismus/diese-liste-zeigt-fuer-wen-ueber-100-ex-politikerinnen-heute-arbeiten"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/revolving-door-2026-08-12",
+    "Researched revolving-door moves via LobbyControl, abgeordnetenwatch, news",
+    "Wrote agent-digests/revolving-door-2026-08-12.md",
+    "Wrote agent-logs/revolving-door-2026-08-12.json",
+    "Committed and pushed branch",
+    "Opened PR (no merge - human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/revolving-door-2026-08-12"
+}
