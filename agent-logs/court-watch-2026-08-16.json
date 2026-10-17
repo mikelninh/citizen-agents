@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-16",
+  "rulings": 4,
+  "courts": ["BVerfG", "EuGH"],
+  "highlights": [
+    "BVerfG (2 BvC 20/26, PM 51/2026): Wahlprüfungsbeschwerde unzulässig, aber scharfer Hinweis an Bundestag, Wahlprüfung zeit- und sachgerecht durchzuführen.",
+    "EuGH C-234/25 (Sky Österreich): Personalisiertes Streaming-Abo = digitale Dienstleistung; Widerrufsrecht erlischt nicht bei Leistungsbeginn.",
+    "EuGH C-45/24 (KLM/Opodo): Volle Erstattung bei Flugausfall inkl. Vermittlerprovision (EU261).",
+    "EuGH C-26/25 (Bukla): Ausweisung von Elternteil eines EU-Kindes auf Basis klassifizierter Info braucht wirksamen Rechtsbehelf."
+  ],
+  "sources": [
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Pressemitteilungen/DE/2026/bvg26-051.html",
+    "https://www.bundesverfassungsgericht.de/SharedDocs/Entscheidungen/DE/2026/07/cs20260723_2bvc002026.html",
+    "https://curia.europa.eu/site/upload/docs/application/pdf/2026-07/cp260097de.pdf",
+    "https://curia.europa.eu/site/jcms/d2_5158/en/press-releases",
+    "https://www.datev-magazin.de/nachrichten-steuern-recht/recht/flugannullierung-die-erstattung-des-flugticketpreises-muss-die-beim-kauf-von-einem-vermittler-erhobene-provision-umfassen-144102",
+    "https://eur-lex.europa.eu/legal-content/DE/TXT/PDF/?uri=CELEX:62024CJ0045",
+    "https://infocuria.curia.europa.eu/tabs/redirect/juris/liste.jsf?num=C-26/25",
+    "https://www.asylumlawdatabase.eu/news/cjeu-procedural-safeguards-in-return-proceedings-against-family-members-of-union-citizens-on-national-security-grounds"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents to fresh temp dir",
+    "created branch agent/court-watch-2026-08-16",
+    "researched BVerfG + EuGH/CJEU press releases and judgments (web_search/web_extract)",
+    "wrote agent-digests/court-watch-2026-08-16.md (4 bilingual findings)",
+    "wrote agent-logs/court-watch-2026-08-16.json",
+    "committed digest + log",
+    "pushed branch to origin",
+    "opened PR against main (human review only, no merge)"
+  ],
+  "tool_impacts": {
+    "agb-reader": "Flag withdrawal-waiver clauses in streaming/subscription AGB as likely invalid under CRD 2011/83/EU (C-234/25).",
+    "flight-rights-mcp": "Refund scope under EU261 must include intermediary/broker commission; do not let airlines deduct agency fees (C-45/24).",
+    "gitlaw": "Note election-law (Wahlprüfung timeliness) and EU-citizenship/expulsion safeguards (2 BvC 20/26, C-26/25)."
+  },
+  "repo": "citizen-agents",
+  "branch": "agent/court-watch-2026-08-16"
+}
