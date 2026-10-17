@@ -1,0 +1,46 @@
+{
+  "date": "2026-08-12",
+  "role": "studio-director",
+  "repo": "bla-keks-world",
+  "branch": "studio/director-2026-08-12",
+  "files_read": [
+    "README.md",
+    "src/game/spatial-duel.js",
+    "src/data/character-transformations.js",
+    "duel/arena/arena.js",
+    "scripts/check-duel-fairness.mjs"
+  ],
+  "critiques": 4,
+  "critique_targets": [
+    "src/game/spatial-duel.js:56-57,148,195-205 (ranged-only commit cost; empty LANE_SKILLS)",
+    "src/data/character-transformations.js (only 2 of 8 Worldforms have a melee basic: Moonthorn range 7, Oathstar range 11)",
+    "src/game/spatial-duel.js:69-71,132-148 (only parry is a melee timing mechanic; Oathstar signature shipped disabled)",
+    "duel/arena/arena.js:28 + scripts/check-duel-fairness.mjs:25 (strictly 1v1; no 8-friend FFA sim)"
+  ],
+  "one_big_idea": "Saber Stamina: add a stamina resource to melee fighters (mirror of ranged AUTO_ATTACK_COMMIT slow) so melee gains movement+timing rhythm; ship it alongside a fixed Fourfold Verdict.",
+  "directives": [
+    {
+      "id": 1,
+      "title": "Saber Stamina",
+      "file": "src/game/spatial-duel.js",
+      "change": "Add stamina/maxStamina to buildFighter; melee basics drain stamina; below floor, scale swing cooldown / pause auto until regen out of contact.",
+      "acceptance": "getSpatialSkillReadout exposes stamina for melee basics; continuous-swing loop measurably slows; npm run check:duel stays green."
+    },
+    {
+      "id": 2,
+      "title": "Ship Fourfold Verdict",
+      "file": "src/game/spatial-duel.js + src/data/character-transformations.js",
+      "change": "Find real Moonthorn>Oathstar cause (kit, not constants); enable LANE_SKILLS as 4 readable bands (bands:4,bandWidth:74,bandGap:38,startAt:24,share:1.3).",
+      "acceptance": "Fourfold Verdict resolves as 4 dodgeable bands; Oathstar<->Moonthorn moves toward ~60% baseline without other pair breaching 80% bound; gate green."
+    },
+    {
+      "id": 3,
+      "title": "First step to FFA match mode",
+      "file": "src/game/spatial-duel.js + scripts/",
+      "change": "Add deterministic N-fighter (2-8) step sharing one projectiles/effects world; start with 4-fighter FFA that boots and terminates.",
+      "acceptance": "Headless 4-Wordform FFA (melee+ranged mix) runs under 16ms tick, invariants hold, fight terminates; npm run check:duel stays green."
+    }
+  ],
+  "challenge_for_mikel": "Saber combat needs a resource — stamina or heat? Ranged already has focus cost + per-shot move-slow (AUTO_ATTACK_COMMIT_SHARE). For melee I propose stamina (drains on swing, regens out of contact, forces movement-between-swings). You may prefer heat (builds while swinging, overheats and forces a vent). Decide: stamina or heat, and does it apply to all basics or melee-only? I will lock the constant and write Directive 1 around your answer.",
+  "lead_decision_honored": "2026-08-06 BOTH: melee sabers AND ranged projectiles first-class. Brief pushes melee from guest-class to parity via Saber Stamina + working melee signature; FFA directive builds toward both families coexisting in match mode."
+}
