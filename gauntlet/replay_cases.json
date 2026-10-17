@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "description": "Synthetic harness cases for validating historical-replay mechanics. These are NOT product performance gold labels.",
+  "cases": [
+    {
+      "id": "future-leak",
+      "cutoff": "2026-01-10",
+      "documents": [
+        {"id":"a","published":"2026-01-09","event":"benefit-rate-change","state":"passed","source":"primary"},
+        {"id":"b","published":"2026-01-11","event":"benefit-rate-change","state":"effective","source":"primary"}
+      ],
+      "expected_visible_ids": ["a"]
+    },
+    {
+      "id": "proposal-state",
+      "cutoff": "2026-02-01",
+      "documents": [
+        {"id":"a","published":"2026-01-30","event":"school-meals","state":"proposal","source":"primary"}
+      ],
+      "expected_states": {"school-meals":"proposal"}
+    },
+    {
+      "id": "duplicate-provenance",
+      "cutoff": "2026-03-01",
+      "documents": [
+        {"id":"a","published":"2026-02-28","event":"housing-rule","state":"passed","source":"secondary"},
+        {"id":"b","published":"2026-02-28","event":"housing-rule","state":"passed","source":"primary"}
+      ],
+      "expected_best_source": {"housing-rule":"primary"}
+    }
+  ]
+}
