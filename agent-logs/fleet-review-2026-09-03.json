@@ -1,0 +1,114 @@
+{
+  "date": "2026-09-03",
+  "agents_reviewed": 4,
+  "verified": 1,
+  "partial": 3,
+  "failed": 0,
+  "external_repos_checked": ["faireint-bundestag", "gitlaw", "pmm-mcp", "safevoice", "flight-rights-mcp"],
+  "external_today_artifacts": [
+    {
+      "repo": "pmm-mcp",
+      "pr": 9,
+      "branch": "agent/money-flow-2026-09-03",
+      "note": "Today artifact in satellite repo. BRH source solid (all numbers confirmed). ZEIT secondary URL 404 (same pattern as truth-watch CORRECTIV). Flagged, not fully reviewed."
+    }
+  ],
+  "issues": [
+    {
+      "agent": "benefit-discovery",
+      "severity": "HIGH",
+      "issue": "No PR or branch created. Agent wrote files but did not ship. Delivery incomplete — human may never see this work."
+    },
+    {
+      "agent": "benefit-discovery",
+      "severity": "HIGH",
+      "issue": "Required log field 'actions_taken' missing entirely. Log does not record what the agent did."
+    },
+    {
+      "agent": "benefit-discovery",
+      "severity": "LOW",
+      "issue": "Top-level 'highlights'/'sources' fields missing; data nested in items[] instead. Schema version 1 field-name divergence."
+    },
+    {
+      "agent": "truth-watch",
+      "severity": "HIGH",
+      "issue": "CORRECTIV source URL returns 404 (correctiv.org/en/factcheck/2026/03/signal-phishing-hack-russland-defisher/). The actual CORRECTIV investigation exists at correctiv.org/en/fact-checking-en/2026/03/24/signal-phishing-attack-digital-evidence-points-to-russia/ — confirmed via insightnews. Claim is true, URL is wrong."
+    },
+    {
+      "agent": "truth-watch",
+      "severity": "MEDIUM",
+      "issue": "Log schema uses 'narratives' instead of 'highlights'. Data is equivalent but field name deviates from spec."
+    },
+    {
+      "agent": "truth-watch",
+      "severity": "LOW",
+      "issue": "German text contains mixed Korean characters (encoding glitch): 'EU-ge 제재를 받는', 'hundedtritte'. Cosmetic, not factual."
+    },
+    {
+      "agent": "court-watch",
+      "severity": "LOW",
+      "issue": "Item 3 (EuGH C-26/25 Bukla) not independently source-verified this run due to source budget. Claim plausible, no red flags, but unverified."
+    },
+    {
+      "agent": "directive-watch",
+      "severity": "HIGH",
+      "issue": "4 of 6 directives (Items 3-6) not independently source-verified this run due to 2-4 source budget. Specific legal claims about transposition deadlines and penalties unverified."
+    },
+    {
+      "agent": "directive-watch",
+      "severity": "HIGH",
+      "issue": "Item 2 (Iran-Sanktionen-Richtlinie 2024/1226): specific penalty numbers (10 years, 40 Mio. EUR, 48-hour rule removal) not independently confirmed. Directive exists; penalty scope unverified."
+    },
+    {
+      "agent": "directive-watch",
+      "severity": "MEDIUM",
+      "issue": "Item 1 simplifies Art. 7 PTD individual information right timing. Noerr says it could be de facto binding from 8 June 2026; digest says 'fruehestens Juni 2028' without this nuance."
+    },
+    {
+      "agent": "pmm-mcp (external)",
+      "severity": "HIGH",
+      "issue": "ZEIT source URL returns 404 (zeit.de/wirtschaft/2026-04/bundesrechnungshof-schulden-kay-scheller-bundeshaushalt). BRH primary source is solid — all numbers confirmed by BRH directly."
+    }
+  ],
+  "source_checks": {
+    "benefit-discovery": {
+      "total_urls": 21,
+      "ok": 20,
+      "broken": 1,
+      "mismatch": 0,
+      "broken_urls": ["https://www.bmbfsfj.bund.de/bmbfsfj/themen/familie/familienleistungen/elterngeld (SSL cert verify failed — agent flagged honestly)"],
+      "key_claim_verified": "Kabinett 6. Juli 2026 Wohngeldreform (5→3 Mrd. Euro) — confirmed by Zeit, VHS, Bundesregierung.de"
+    },
+    "truth-watch": {
+      "total_urls": 4,
+      "ok": 3,
+      "broken": 1,
+      "mismatch": 0,
+      "verified_urls": ["edmo.eu/publications/rt-returns-to-x (OK, 6 Mio. Views, @RT_on_X, 2.7.2026)", "eunews.it/ban-on-broadcasting-rt (OK, EuGH 2.7.2026, free websites covered)", "dw.com/a-78193305 (OK, 180+ posts, Eric Stehr, Bauhaus-Univ, AfD/BSW spared)", "checkfirst.network/roska-bridge (OK, Brid.gy, Sept. 2025, Mastodon/Bluesky, Pravda/RT/Sputnik)"],
+      "broken_urls": ["correctiv.org/en/factcheck/2026/03/signal-phishing-hack-russland-defisher/ (404 — correct URL: .../fact-checking-en/2026/03/24/signal-phishing-attack-digital-evidence-points-to-russia/)"],
+      "unverified_urls": ["disinfo.eu/disinfo-update-15-07-2026", "cam.ac.uk/defeating-disinformation", "harvard misinforeview", "insightnews.media (fetched via CORRECTIV cross-ref — supports Item 1)"]
+    },
+    "court-watch": {
+      "total_urls": 2,
+      "ok": 2,
+      "broken": 0,
+      "verified_urls": ["bundesverfassungsgericht.de/rk20260805_2bvr022626 (OK, BVerfG 5.8.2026, 2 BvR 226/26, E-Bike 1.354,95 EUR, Art. 3(1) GG, Amtsgericht Weißenburg)", "eur-lex.europa.eu/CELEX:62024CJ0526 (OK, EuGH 19.3.2026, C-526/24, Brillen Rottler, 13 Tage, 1.000 EUR, Art. 82(1) Schadensersatz)"],
+      "supporting": ["heise.de/DSGVO-EuGH-schiebt-systematischen-Auskunftsmissbraeuchen-Riegel-vor (OK, confirms C-526/24 details)"]
+    },
+    "directive-watch": {
+      "total_urls": 2,
+      "ok": 2,
+      "broken": 0,
+      "verified_urls": ["eur-lex.europa.eu/eli/dir/2023/970/oj/eng (OK, Directive 2023/970, 10.5.2023)", "noerr.com/failure-to-transpose-eu-pay-transparency-directive (OK, 7.6.2026 deadline, Germany late, BMFSFJ, Entgelttransparenzgesetz, early 2027, June 2028 reporting)", "mirro.io/eu-pay-transparency/timeline-checklist (OK, 4/27 transposed, DE not among them, June 2027 reporting)"],
+      "unverified_urls": ["gleisslutz.com/stricter-criminal-sanctions-law (Item 2 — not fetched)", "Item 3-6 sources (not in budget)"]
+    }
+  },
+  "repo": "citizen-agents",
+  "branch": "studio/fleet-review-2026-09-03",
+  "guardrail_summary": {
+    "agent_merges_detected": 0,
+    "files_only_in_agent_digests_and_logs": true,
+    "read_only_reviewer": true,
+    "nothing_to_review": false
+  }
+}
