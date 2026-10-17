@@ -1,0 +1,44 @@
+{
+  "date": "2026-08-21",
+  "windows_found": 7,
+  "deadlines": [
+    {"topic": "Änderung des Wärmeplanungsgesetzes", "institution": "Bundestag, Ausschuss für Wirtschaft und Energie", "hearing": "2026-09-08", "submit_by": "2026-09-05"},
+    {"topic": "Verfolgung des Menschenhandels", "institution": "Bundestag, Ausschuss für Recht und Verbraucherschutz", "hearing": "2026-09-23", "submit_by": "2026-09-19"},
+    {"topic": "Situation der Reisebüros und Reiseveranstalter", "institution": "Bundestag, Ausschuss für Tourismus", "hearing": "2026-09-23", "submit_by": "2026-09-19"},
+    {"topic": "BauGB-Upgrade / 2. Novelle Baugesetzbuch (Schrottimmobilien)", "institution": "Bundestag, Ausschuss für Wohnen, Stadtentwicklung, Bauwesen und Kommunen", "hearing": "2026-09-23", "submit_by": "2026-09-19"},
+    {"topic": "Ärztliche Zwangsmaßnahmen im Betreuungsrecht", "institution": "Bundestag, Ausschuss für Recht und Verbraucherschutz", "hearing": "2026-10-07", "submit_by": "2026-10-02"},
+    {"topic": "Haushaltsbegleitgesetz 2027", "institution": "Bundestag, Haushaltsausschuss", "hearing": "2026-10-12", "submit_by": "2026-10-08"},
+    {"topic": "Referentenentwürfe in der Verbändeanhörung (UVP-Reform, Windenergie-auf-See, Eisenbahnrecht)", "institution": "BMUKN / BMWE / BMV", "hearing": null, "submit_by": "laufende Verbändefrist, so früh wie möglich"}
+  ],
+  "highlights": [
+    "Nächste harte Frist: 5. September 2026 – Zuschriften zur Anhörung Wärmeplanungsgesetz (8. September 2026, öffentlich, PLH E.200).",
+    "23. September 2026 ist der Sammeltermin: drei öffentliche Anhörungen an einem Tag (Menschenhandel, Reisebüros, BauGB-Upgrade).",
+    "Haushaltsbegleitgesetz 2027 (Anhörung 12. Oktober 2026) betrifft alle Haushalte – Leistungen, Abgaben, Zuschüsse.",
+    "Formell sprechen nur geladene Sachverständige; schriftliche Bürgerzuschriften an Ausschusssekretariate und Abgeordnete sind aber jederzeit möglich, ergänzend Petition.",
+    "EU-Portal 'Have your say' war in diesem Lauf technisch nicht auslesbar – kein EU-Fenster aufgenommen, um keine unbelegte Frist zu nennen."
+  ],
+  "sources": [
+    "https://www.bundestag.de/ausschuesse",
+    "https://www.bundestag.de/ausschuesse/a09_wirtschaft/wp21_a09_Anhoerungen/1205008-1205008",
+    "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen/1194302-1194302",
+    "https://www.bundestag.de/ausschuesse/a20_tourismus/anhoerungen/1201622-1201622",
+    "https://www.bundestag.de/ausschuesse/a24_wohnen/anhoerungen/1198096-1198096",
+    "https://www.bundestag.de/resource/blob/1200670/30-Sitzung-23-09-2026-TO-OeA.pdf",
+    "https://www.bundestag.de/ausschuesse/recht-verbraucherschutz/sitzungen/1194328-1194328",
+    "https://www.bundestag.de/ausschuesse/a08_haushalt/anhoerungen/1194566-1194566",
+    "https://bundestagszusammenfasser.de/",
+    "https://bundestagszusammenfasser.de/vorbereitung",
+    "https://www.bundesregierung.de/breg-de/bundesregierung/bundeskanzleramt/kabinettssitzungen",
+    "https://ec.europa.eu/info/law/better-regulation/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Branch agent/consultation-2026-08-21 created",
+    "Recherche: bundestag.de/ausschuesse, bundestagszusammenfasser.de, EU Have-your-say (nicht erreichbar)",
+    "Digest agent-digests/consultation-2026-08-21.md mit 7 Fenstern + zweisprachigen EN-Blöcken und je einem Einreichungsentwurf",
+    "Log agent-logs/consultation-2026-08-21.json geschrieben",
+    "Commit + Push des Branches, PR geöffnet (kein Merge – Human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/consultation-2026-08-21"
+}
