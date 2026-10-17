@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-12",
+  "items": 4,
+  "anomalies": 4,
+  "total_value_eur": ">=4.8 Mrd EUR (davon ~3.9 Mrd EUR BW-Foerderbaumaßnahmen mit 60% Vergabefehlern; 855 Mio EUR Moselschleusen-Ausbau vom BRH als unwirtschaftlich beanstandet)",
+  "highlights": [
+    "Vergabebeschleunigungsgesetz (seit 1.7.2026) hebt Direktvergabe-Grenze auf 50.000 EUR + kuerzt Rechtsschutz auf 1 Instanz; Transparency warnt vor Korruptionsrisiko",
+    "BRH 'Bemerkungen 2025' (10.12.2025): massive Verschwendung, u.a. 855 Mio EUR Moselschleusen-Ausbau unwirtschaftlich",
+    "Rechnungshof BW Jahresbericht 2026: 60% Vergabefehler bei 3,9 Mrd EUR gefoerderten Baumaßnahmen (Drucksache 18/307)",
+    "SPIEGEL 12.8.2026: Korruptionsverdacht bei Bundeswehr-Sturmgewehr-Beschaffung, Staatsanwaltschaft aktiv"
+  ],
+  "sources": [
+    "https://www.bundesregierung.de/breg-de/aktuelles/oeffentliche-vergabe-2376854",
+    "https://blog.cosinex.de/2025/06/25/konjunkturprogramm-fuer-korruption-transparency-zur-vergabereform/",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw17-de-vergaben-1166782",
+    "https://www.tagesschau.de/wirtschaft/bundesrechnungshof-vorwuerfe-100.html",
+    "https://vergabeblog.de/2026-01-23/bundesrechnungshof-legt-bemerkungen-2025-vor/",
+    "https://dserver.bundestag.de/btd/21/032/2103200.pdf",
+    "https://blog.cosinex.de/2026/08/07/rechnungshof-bw-vergaberecht-private-foerderempfaenger/",
+    "https://www.landtag-bw.de/resource/blob/647562/bd2fab81c935dc0fab7753b0922f8faf/18_0307_D.pdf",
+    "https://www.spiegel.de/politik/deutschland/bundeswehr-geraet-bei-beschaffung-unter-verdacht-der-korruption-a-901929.html",
+    "https://blog.cosinex.de/2026/05/21/reformagenda-ruestung-baainnbw-reorganisation/"
+  ],
+  "actions_taken": [
+    "gh repo clone mikelninh/citizen-agents",
+    "git checkout -b agent/procurement-2026-08-12",
+    "web research via web_search/web_extract (Vergaberecht, BRH, Landesrechnungshoefe, Bundeswehr)",
+    "wrote agent-digests/procurement-2026-08-12.md",
+    "wrote agent-logs/procurement-2026-08-12.json",
+    "git commit",
+    "git push --set-upstream origin agent/procurement-2026-08-12",
+    "gh pr create (human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/procurement-2026-08-12"
+}
