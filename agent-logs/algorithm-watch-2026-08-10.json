@@ -1,0 +1,43 @@
+{
+  "date": "2026-08-10",
+  "items": 5,
+  "systems": [
+    "EU AI Act Anhang-III Hochrisiko-KI (Recruiting, Kreditscoring, Polizei, Bildung, Grenze)",
+    "AI Act Art. 111 Bestandssysteme (nicht-rueckwirkend)",
+    "AI Act Art. 50 Transparenz: Chatbots, KI-Generatoren, Deepfakes",
+    "SCHUFA-/Bonitaets-Scoring (Art. 22 DSGVO)",
+    "Palantir Gotham / VeRA automatisierte Polizei-Datenanalyse"
+  ],
+  "highlights": [
+    "Verordnung (EU) 2026/1744 (Digital Omnibus on AI) am 24.07.2026 im Amtsblatt, in Kraft 27.07.2026: Hochrisiko-Pflichten verschoben auf 02.12.2027 (Anhang III) bzw. 02.08.2028 (Anhang I).",
+    "Nicht-Rueckwirkung nach Art. 111: vor dem Stichtag platzierte Hochrisiko-Systeme (z.B. Recruiting-Filter) koennen dauerhaft ausserhalb des AI Act bleiben; fuer Behoerden erst ab 31.12.2030.",
+    "Art. 50 Transparenzpflichten sind planmaessig am 02.08.2026 in Kraft getreten und wurden NICHT verschoben; Watermarking-Schonfrist fuer Altsysteme bis 02.12.2026; Verbot von Nudifier-Apps.",
+    "EuGH C-634/21: Bonitaets-Score ist selbst eine automatisierte Entscheidung nach Art. 22 DSGVO, wenn er die Vertragsentscheidung massgeblich bestimmt - Recht auf menschliche Pruefung und Anfechtung.",
+    "GFF-Verfassungsbeschwerde gegen Palantir-Einsatz der bayerischen Polizei; Sachsen-Anhalts Innenausschuss winkt kritisiertes Palantir-Gesetz unveraendert durch."
+  ],
+  "sources": [
+    "https://eur-lex.europa.eu/eli/reg/2026/1744/oj/eng",
+    "https://labs.cloudsecurityalliance.org/research/csa-research-note-eu-ai-act-high-risk-deadline-omnibus-20260/",
+    "https://digital-strategy.ec.europa.eu/en/library/digital-omnibus-ai-regulation-proposal",
+    "https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act",
+    "https://techpolicy.press/eus-ai-act-delays-let-highrisk-systems-dodge-oversight",
+    "https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/",
+    "https://www.europarl.europa.eu/news/en/press-room/20260323IPR38829/artificial-intelligence-act-delayed-application-ban-on-nudifier-apps",
+    "https://curia.europa.eu/juris/document/document.jsf?docid=280426&doclang=DE",
+    "https://www.dr-datenschutz.de/urteil-vg-wiesbaden-mehr-infos-zur-schufa-score-bildung-noetig/",
+    "https://cms.law/de/deu/legal-updates/das-schufa-urteil-des-eugh-und-dessen-auswirkungen",
+    "https://freiheitsrechte.org/themen/freiheit-im-digitalen-zeitalter/automatisierte-datenanalyse",
+    "https://www.lto.de/recht/nachrichten/n/gff-verfassungsbeschwerde-gegen-palantir-bayern-polizei-ueberwachung",
+    "https://netzpolitik.org/2026/automatisierte-datenanalyse-innenausschuss-in-sachsen-anhalt-winkt-massiv-kritisiertes-palantir-gesetz-unveraendert-durch/"
+  ],
+  "actions_taken": [
+    "fresh clone of mikelninh/citizen-agents",
+    "created branch agent/algorithm-watch-2026-08-10",
+    "web research: EU AI Act omnibus, Art. 50, Art. 22 DSGVO scoring, Palantir police analytics",
+    "wrote agent-digests/algorithm-watch-2026-08-10.md",
+    "wrote agent-logs/algorithm-watch-2026-08-10.json",
+    "committed and pushed branch; opened PR (no merge - human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/algorithm-watch-2026-08-10"
+}
