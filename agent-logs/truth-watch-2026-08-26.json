@@ -1,0 +1,38 @@
+{
+  "date": "2026-08-26",
+  "items": 4,
+  "narratives": [
+    "Operation Matryoshka/Overload: 180+ gefalschte Posts mit erfundenen Straftaten gegen deutsche Landtagskandidaten (X, Bluesky, TikTok).",
+    "Ceuta-Krise: Falsches Gerucht 'Grenze ist offen' trieb ~72.000 Migranten aus Marokko.",
+    "EU DSA-Vollzugswelle: TikTok-Vorabfeststellungen (Minderjahrige), AliExpress 550 Mio EUR Strafe, X-Aktionsplan.",
+    "Storm-1516: Russische KI-Deepfake-Kampagne mit 100+ gefalschten Webseiten gegen deutsche Politiker."
+  ],
+  "debunks": [
+    "Polizei: Eric Stehr nicht verdachtigt/ermittelt; Bauhaus-Universitat Weimar dementiert Sexpartys/Noten-Skandal (DW Fact Check, Antibot4Navalny, CeMAS, ISD).",
+    "Grenze war nicht 'offen'; EU richtete freiwilligen Faktencheck-Mechanismus unter DSA-Koordination ein (Le Monde).",
+    "Offizielle EU-DSA-Entscheidungen bestatigen Verstoße und verhangen Sanktionen/Auflagen (digital-strategy.ec.europa.eu).",
+    "CORRECTIV+NewsGuard+Gnida: 102 gefalschte Domains identifiziert, Kampagne Russlands GRU zugeordnet; Verfassungsschutz bestatigt Muster (CORRECTIV)."
+  ],
+  "sources": [
+    "https://www.dw.com/en/operation-overload-matryoshka-state-elections-local-elections-berlin-germany-russia/a-78193305",
+    "https://x.com/antibot4navalny",
+    "https://www.lemonde.fr/en/pixels/article/2026/08/11/eu-secures-voluntary-fact-checking-pact-with-meta-and-tiktok-after-ceuta-crisis_6756389_13.html",
+    "https://digital-strategy.ec.europa.eu/en/policies/digital-services-act",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminary-finds-tiktok-breach-digital-services-act-failing-ensure-safe-accounts-minors",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-fines-aliexpress-eu550-million-breaching-digital-services-act",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-xs-action-plan-comply-digital-services-act",
+    "https://correctiv.org/en/fact-checking-en/2025/01/24/disinformation-operation-russian-meddling-in-german-election-campaign-exposed/",
+    "https://correctiv.org/faktencheck/russische-desinformation/2025/01/23/angriff-aus-russland-auf-bundestagswahl-deepfake-ki/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created branch agent/truth-watch-2026-08-26",
+    "Researched fact-checker outputs (DW, CORRECTIV, AFP/Le Monde) and EU DSA enforcement",
+    "Wrote agent-digests/truth-watch-2026-08-26.md (bilingual)",
+    "Wrote agent-logs/truth-watch-2026-08-26.json",
+    "Committed and pushed branch",
+    "Opened PR against main (human review only — no self-merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/truth-watch-2026-08-26"
+}
