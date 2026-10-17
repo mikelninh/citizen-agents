@@ -1,0 +1,30 @@
+{
+  "date": "2026-08-10",
+  "moves": 4,
+  "highlights": [
+    "Christian Lindner (Ex-Bundesfinanzminister, FDP) → Shareholder Board der Stepstone Group (Eigentümer KKR, Springer 10%), plus Beraterjob bei Teneo und Managerposten bei Autoland; Karenzzeit nur 12 statt möglicher 18 Monate.",
+    "Bengt Bergt (Ex-MdB SPD, stellv. energiepolitischer Sprecher) → Leiter Public Affairs beim Gasverband 'Die Gas- und Wasserstoffwirtschaft' (vormals Zukunft Gas) seit 01.06.2025; er prägte zuvor die Grüngasquote, für die ihn der Verband namentlich lobte.",
+    "Kevin Kühnert (Ex-SPD-Generalsekretär) → Bereichsleiter Steuern, Verteilung und Lobbyismus bei Bürgerbewegung Finanzwende e.V. seit Dezember 2025 (Gegenrichtung: Politik → NGO).",
+    "Johannes Kahrs (Ex-MdB SPD, Haushaltspolitiker) → eigene Beratungsfirma, vertritt laut Lobbyregister Arzneimittel- und Tabakindustrie (Bestandsfall seit 2020).",
+    "Strukturbefund: Für Bundestagsabgeordnete existiert KEINE gesetzliche Karenzzeit — anders als für Regierungsmitglieder (12-18 Monate) und im Europaparlament."
+  ],
+  "sources": [
+    "https://www.lobbycontrol.de/seitenwechsel/christian-lindners-weicher-fall-auch-dank-springer-und-kkr-123206/",
+    "https://www.lobbycontrol.de/wp-content/uploads/BAnz-05.11.2025-Lindner.pdf",
+    "https://www.tagesschau.de/investigativ/br-recherche/spd-abgeordneter-wechsel-gasverband-100.html",
+    "https://gas-h2.de/verband-gas-und-wasserstoffwirtschaft/presse/detailseite-news/detail/pressrelease-verstaerkung_im_fuehrungsteam_bengt_bergt_uebernimmt_public_affairs_bei_die_gas_und_wasserstoffwirtschaft-3390056/",
+    "https://www.finanzwende.de/ueber-uns/aktuelles/kevin-kuehnert-wird-bereichsleiter-fuer-steuern-verteilung-und-lobbyismus",
+    "https://lobbypedia.de/wiki/Seitenwechsler_in_Deutschland_im_%C3%9Cberblick",
+    "https://www.lobbycontrol.de/seitenwechsel/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents",
+    "Created dated branch agent/revolving-door-2026-08-10",
+    "Researched LobbyControl Seitenwechsel dossiers, tagesschau/BR-Recherche, Lobbypedia Seitenwechsler-Übersicht, Finanzwende press release",
+    "Wrote citizen-readable digest agent-digests/revolving-door-2026-08-10.md with 4 sourced moves",
+    "Wrote structured log agent-logs/revolving-door-2026-08-10.json",
+    "Committed and pushed branch; opened PR for human review (NOT merged)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/revolving-door-2026-08-10"
+}
