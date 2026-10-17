@@ -1,0 +1,78 @@
+{
+  "date": "2026-08-20",
+  "items": 5,
+  "pledges_vs_reality": [
+    {
+      "id": 1,
+      "topic": "UNFCCC NDCs vs 2030 reality",
+      "pledge": "Paris-Ziel: Emissionen senken, 1,5 °C halten",
+      "reality": "Neue/aktualisierte NDCs aller 191/192 Parteien implizieren ~16 % MEHR Emissionen bis 2030 vs 2010; NDC-Lücke zu 1,5 °C = 28 GtCO2e; <14 % der nötigen Einsparungen bis 2035 geschlossen",
+      "numbers": "16% increase by 2030; 28 GtCO2e gap; <14% closed; 2.3-2.5°C (NDC) vs 2.8°C (current policy)",
+      "sources": ["https://unfccc.int/news/full-ndc-synthesis-report-some-progress-but-still-a-big-concern", "https://www.unep.org/resources/emissions-gap-report-2025", "https://www.wri.org/insights/assessing-2025-ndcs"]
+    },
+    {
+      "id": 2,
+      "topic": "Global energy CO2 vs net-zero pathway",
+      "pledge": "Energiewende / Net-Zero-Pfade",
+      "reality": "Energie-CO2 2025 auf Rekord von ~38,4 Gt (+0,4 % / +145 Mt); Industrieländer wuchsen erstmals seit 1990er stärker als Schwellenländer",
+      "numbers": "38.4 Gt in 2025 (vs 37.8 Gt 2024); +0.4%; +145 Mt; +5% vs 2019; clean energy avoided ~3 Gt",
+      "sources": ["https://www.iea.org/reports/global-energy-review-2026/co2-emissions", "https://www.iea.org/reports/global-energy-review-2025/co2-emissions"]
+    },
+    {
+      "id": 3,
+      "topic": "Shell net-zero 2050 vs actual targets",
+      "pledge": "Shell: Net-Zero-Energieunternehmen bis 2050",
+      "reality": "2030-Ziel 2024 gelockert, 2035-Ziel gestrichen; Berufungsgericht kippte 2021-Urteil (45 %-Kürzung bis 2030)",
+      "numbers": "2030 target weakened; 2035 goal scrapped; 45% cut by 2030 (overturned ruling)",
+      "sources": ["https://www.reuters.com/sustainability/climate-energy/shell-loosens-2030-carbon-emissions-target-2024-03-14/", "https://www.clientearth.org/projects/the-greenwashing-files/shell/"]
+    },
+    {
+      "id": 4,
+      "topic": "EU green-claims rules vs greenwashing",
+      "pledge": "EU schützt vor Greenwashing",
+      "reality": "ECGT gilt ab 27.9.2026; Kommission verklagt 20 Mitgliedstaaten wegen versäumter Umsetzung; strengere Green Claims Directive ausgesetzt",
+      "numbers": "Effective 27 Sep 2026; 20 Member States in breach; transposition due 27 Mar 2026",
+      "sources": ["https://www.rpclegal.com/thinking/esg/green-claims-update-july-2026/", "https://www.senken.io/academy/regulation-and-standards/green-claims-directive-eu"]
+    },
+    {
+      "id": 5,
+      "topic": "Carbon Majors producer responsibility",
+      "pledge": "—",
+      "reality": "32 Fossil-Konzerne verursachen ~50 % der weltweiten CO2-Emissionen; Top-20 = 42,5 % historisch seit 1824; 122 Produzenten = ~70 % seit 1854",
+      "numbers": "32 firms ≈ 50% of emissions; top-20 = 872 GtCO2e = 42.5%; 122 producers ≈ 70% since 1854",
+      "sources": ["https://carbonmajors.org/Use-Cases", "https://influencemap.org/briefing/Carbon-Majors-2024-Data-Update-35466"]
+    }
+  ],
+  "highlights": [
+    "UNFCCC NDCs implizieren ~16 % Emissionsanstieg bis 2030 — Paris-Lücke wächst",
+    "IEA: Energie-CO2 auf Rekord ~38,4 Gt 2025",
+    "Shell lockert Klimaziele, Gericht kippt Kürzungsurteil",
+    "EU-Anti-Greenwashing (ECGT) greift 27.9.2026; 20 Staaten säumig",
+    "32 Fossil-Konzerne = ~50 % aller CO2-Emissionen"
+  ],
+  "sources": [
+    "https://unfccc.int/news/full-ndc-synthesis-report-some-progress-but-still-a-big-concern",
+    "https://unfccc.int/process-and-meetings/the-paris-agreement/nationally-determined-contributions-ndcs/2025-ndc-synthesis-report",
+    "https://www.unep.org/resources/emissions-gap-report-2025",
+    "https://www.iea.org/reports/global-energy-review-2026/co2-emissions",
+    "https://www.iea.org/reports/global-energy-review-2025/co2-emissions",
+    "https://www.reuters.com/sustainability/climate-energy/shell-loosens-2030-carbon-emissions-target-2024-03-14/",
+    "https://www.clientearth.org/projects/the-greenwashing-files/shell/",
+    "https://www.rpclegal.com/thinking/esg/green-claims-update-july-2026/",
+    "https://www.senken.io/academy/regulation-and-standards/green-claims-directive-eu",
+    "https://carbonmajors.org/Use-Cases",
+    "https://influencemap.org/briefing/Carbon-Majors-2024-Data-Update-35466",
+    "https://www.wri.org/insights/assessing-2025-ndcs"
+  ],
+  "actions_taken": [
+    "Cloned mikelninh/citizen-agents",
+    "Created branch agent/climate-watch-2026-08-20",
+    "Researched UNFCCC, IEA, corporate greenwashing, EU rules, Carbon Majors",
+    "Wrote agent-digests/climate-watch-2026-08-20.md (bilingual DE/EN)",
+    "Wrote agent-logs/climate-watch-2026-08-20.json",
+    "Committed and pushed branch",
+    "Opened PR against main (no merge — human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/climate-watch-2026-08-20"
+}
