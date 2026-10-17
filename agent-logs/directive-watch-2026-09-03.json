@@ -1,0 +1,111 @@
+{
+  "date": "2026-09-03",
+  "directives_found": 6,
+  "deadlines_coming": 0,
+  "late": 5,
+  "on_time": 1,
+  "highlights": [
+    {
+      "directive": "Right to Repair Directive (EU) 2024/1799",
+      "deadline": "2026-07-31",
+      "status": "on_time",
+      "german_status": "Bundestag passed Reparaturgesetz on 26 June 2026, 5 weeks before deadline",
+      "ministry": "BMJ (Justice) and BMWK (Economic Affairs)",
+      "impact": "Consumers gain right to repair covered products at reasonable price, 12-month warranty extension when choosing repair over replacement, access to spare parts and repair tools",
+      "source": "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024L1799",
+      "note": "Penalties are national, not EU-harmonized — Germany's law was finalized very late in the process"
+    },
+    {
+      "directive": "Pay Transparency Directive (EU) 2023/970",
+      "deadline": "2026-06-07",
+      "status": "late",
+      "german_status": "Deadline missed. No draft legislation published. BMFSFJ confirmed pay reporting and individual right to information not effective until June 2028 at earliest",
+      "ministry": "BMFSFJ (Family, Senior Citizens, Women and Youth)",
+      "impact": "Employees currently have no legal right to pay transparency information, no right to explanation of pay differences, no access to gender pay gap reporting at company level",
+      "source": "https://eur-lex.europa.eu/eli/dir/2023/970/oj/eng",
+      "note": "Expert commission report completed November 2025, ministerial draft expected February 2026 but never published. Cabinet meeting scheduled June 2026 for draft. At risk of further delay."
+    },
+    {
+      "directive": "Sanctions Directive (EU) 2024/1226",
+      "deadline": "2025-05-20",
+      "status": "late",
+      "german_status": "Deadline missed. Infringement procedure opened July 2025. Germany passed Sanctions Act (Sanctionsgesetz) on 5 February 2026, largely transposing the directive",
+      "ministry": "BMJ (Justice)",
+      "impact": "Many sanctions violations upgraded from administrative offences to criminal offences. Corporate fines for intentional violations increased from EUR 10 million to EUR 40 million. 48-hour grace period abolished — companies must immediately implement new sanctions after publication. Dual-use export violations can now be criminal even when reckless",
+      "source": "https://www.gleisslutz.com/en/know-how/stricter-criminal-sanctions-law-germanys-transposition-eu-sanctions-directive",
+      "note": "Earlier 2024 bill stalled due to premature government change. Law published 5 February 2026, largely corresponds to the earlier 2024 draft"
+    },
+    {
+      "directive": "Parent-Subsidiary Directive (Taxation) — alignment of dividend taxation",
+      "deadline": "2025-01-17",
+      "status": "late",
+      "german_status": "Deadline missed. Infringement procedure opened 7 July 2026 — letter of formal notice INFR(2026)2089. Germany, France, Italy notified for taxing dividends from subsidiaries in other member states beyond what directive permits",
+      "ministry": "BMF (Finance)",
+      "impact": "Cross-border companies face fragmented taxation and reduced competitiveness. German tax law causes multiple taxation of dividends received from subsidiaries in other EU member states beyond allowed levels",
+      "source": "https://ec.europa.eu/commission/presscorner/detail/en/inf_26_1376",
+      "note": "Commission also sent letter of formal notice in October 2025 (INFR(2025)2079). Two-month deadline to respond from July 2026 notice. Further escalation to reasoned opinion possible"
+    },
+    {
+      "directive": "NIS2 Directive (EU) 2022/2555",
+      "deadline": "2024-10-17",
+      "status": "late",
+      "german_status": "Transposition deadline missed. Germany transposed via NIS2UmsuCG entering into force 6 December 2025 — over one year late. Commission sent reasoned opinion 7 May 2025. Germany NOT yet referred to CJEU (unlike Ireland, Spain, France, Netherlands referred in July 2026 infringement package)",
+      "ministry": "BMI (Interior) / BSI (Federal Office for Information Security)",
+      "impact": "Approximately 25,000-30,000 organizations in scope. Organizations must register with BSI, report incidents, management accountable for cybersecurity. Critical infrastructure obligations extended beyond NIS2 minimum",
+      "source": "https://www.dlapiper.com/en/insights/publications/2026/02/nis-2-directive-transposed-in-germany",
+      "note": "While Germany transposed later than deadline, it did complete transposition. Other member states (Ireland, Spain, France, Netherlands) were referred to CJEU in July 2026 for complete failure to notify transposition. Germany currently in implementation phase rather than transposition phase"
+    },
+    {
+      "directive": "CSDDD — Corporate Sustainability Due Diligence Directive (EU) 2024/1760",
+      "deadline": "2026-07-26 (original) → 2028-07-26 (post-Omnibus I)",
+      "status": "on_time_postponed",
+      "german_status": "Original deadline 26 July 2026 was extended by Omnibus I directive (Directive (EU) 2026/470, published 26 February 2026). New transposition deadline: 26 July 2028. Application from 26 July 2029 for largest companies (>5000 employees, EUR 1.6 billion turnover). No German draft legislation yet",
+      "ministry": "BMJ (Justice), BMAS (Labour), BMWK (Economic Affairs)",
+      "impact": "Large companies will be required to conduct human rights and environmental due diligence across supply chains, remediate harms, and remedy damages. Consumer and worker transparency benefits delayed until 2029",
+      "source": "https://commission.europa.eu/topics/business-and-industry/company-law-and-corporate-governance/corporate-sustainability-due-diligence_en",
+      "note": "Omnibus I directive came into force 18 March 2026. One-year extension of transposition deadline. Germany has not yet started formal legislative process"
+    }
+  ],
+  "sources": [
+    "https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32024L1799",
+    "https://eur-lex.europa.eu/eli/dir/2023/970/oj/eng",
+    "https://www.noerr.com/en/insights/failure-to-transpose-the-eu-pay-transparency-directive-into-german-law-by-the-deadline-what-applies-after-7-june-2026",
+    "https://mirro.io/eu-pay-transparency/timeline-checklist/",
+    "https://www.gleisslutz.com/en/know-how/stricter-criminal-sanctions-law-germanys-transposition-eu-sanctions-directive",
+    "https://eur-lex.europa.eu/eli/dir/2024/1226/oj/eng",
+    "https://ec.europa.eu/commission/presscorner/detail/en/inf_26_1376",
+    "https://blogs.pwc.de/en/german-tax-and-legal-news/article/255767/commission-infringement-procedures-to-align-domestic-tax-law-with-parent-subsidiary-directive/",
+    "https://www.dlapiper.com/en/insights/publications/2026/02/nis-2-directive-transposed-in-germany",
+    "https://www.freshfields.com/en/our-thinking/blogs/technology-quotient/germany-implements-nis2-what-you-need-to-know-now-102lwz4",
+    "https://www.nis-2-directive.com/Transposition/Germany.html",
+    "https://commission.europa.eu/topics/business-and-industry/company-law-and-corporate-governance/corporate-sustainability-due-diligence_en",
+    "https://eur-lex.europa.eu/eli/dir/2024/1760/oj/eng",
+    "https://viewpoint.pwc.com/gx/en/pwc/in-briefs/ib_int202527.html",
+    "https://www.cleolabs.co/en/blog/eu-right-to-repair-transposition-2026",
+    "https://repair.eu/news/whats-going-on-with-the-right-to-repair-directive-transposition-in-germany/"
+  ],
+  "actions_taken": [
+    "Fresh clone of mikelninh/citizen-agents to temporary directory",
+    "Created dated branch agent/directive-watch-2026-09-03",
+    "Researched EUR-Lex for directives with transposition deadlines in next 180 days or recently missed",
+    "Checked EU infringement procedures against Germany (July 2026 infringement package)",
+    "Checked German transposition status reports (BMI, Bundesanzeiger, legal commentary)",
+    "Produced citizen-readable digest: agent-digests/directive-watch-2026-09-03.md (DE + EN bilingual)",
+    "Produced JSON log: agent-logs/directive-watch-2026-09-03.json",
+    "Committed both artifacts to branch",
+    "Opened PR #1 for human review — NOT merged"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/directive-watch-2026-09-03",
+  "summary": {
+    "total_directives_tracked": 6,
+    "deadlines_in_window": 6,
+    "deadlines_passed": 5,
+    "missed_deadlines": 4,
+    "on_time": 1,
+    "postponed_deadlines": 1,
+    "active_infringement_against_germany": 3,
+    "ministries_involved": ["BMJ (Justice)", "BMFSFJ (Family/Women)", "BMF (Finance)", "BMI (Interior)", "BMWK (Economic Affairs)", "BMAS (Labour)"],
+    "german_transposition_pattern": "Chronic lateness — Germany missed 4 of 5 deadlines due in the tracked period. One directive (Right to Repair) met deadline but was passed only 5 weeks before. One (CSDDD) had its deadline extended by EU Omnibus action. Active infringement procedures: Parent-Subsidiary (tax), Sanctions Directive (now resolved via late law), NIS2 (not yet referred to CJEU), Pay Transparency (deadline missed, no draft yet)."
+  }
+}
