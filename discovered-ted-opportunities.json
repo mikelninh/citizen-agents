@@ -1,9 +1,46 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-17T10:48:21.927Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260917 SORT BY publication-date DESC",
+  "generated_at": "2026-10-18T11:10:45.132Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260918 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_717390_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Telefonauftragsdienste – Leistungen zum Betrieb der „VRM-Bedarfsverkehrs-Hotline\"",
+      "deadline": null,
+      "buyer_or_program": "Verkehrsverbund Rhein-Mosel GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/717390-2026"
+      ],
+      "ted": {
+        "publication_number": "717390-2026",
+        "publication_date": "2026-10-16+02:00",
+        "cpv": [
+          "79510000",
+          "79512000",
+          "79510000",
+          "79512000"
+        ]
+      }
+    },
     {
       "id": "ted_716247_2026",
       "type": "tender_candidate",
@@ -39,43 +76,6 @@
           "92000000",
           "79620000",
           "75121000"
-        ]
-      }
-    },
-    {
-      "id": "ted_717390_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Telefonauftragsdienste – Leistungen zum Betrieb der „VRM-Bedarfsverkehrs-Hotline\"",
-      "deadline": null,
-      "buyer_or_program": "Verkehrsverbund Rhein-Mosel GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/717390-2026"
-      ],
-      "ted": {
-        "publication_number": "717390-2026",
-        "publication_date": "2026-10-16+02:00",
-        "cpv": [
-          "79510000",
-          "79512000",
-          "79510000",
-          "79512000"
         ]
       }
     },
@@ -159,39 +159,6 @@
       }
     },
     {
-      "id": "ted_706923_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Miniwettbewerb aus Rahmenvertrag AS260012 Rolle 2 Data Engineer",
-      "deadline": null,
-      "buyer_or_program": "Phoenics.IT GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/706923-2026"
-      ],
-      "ted": {
-        "publication_number": "706923-2026",
-        "publication_date": "2026-10-13+02:00",
-        "cpv": [
-          "72000000",
-          "72000000"
-        ]
-      }
-    },
-    {
       "id": "ted_705091_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Beratungsleistungen für das Format Digi-Expert-kommunal für das Hessische Ministerium für Digitalisierung und Innovation in zwei Losen",
@@ -263,6 +230,39 @@
           "72512000",
           "75300000",
           "72512000"
+        ]
+      }
+    },
+    {
+      "id": "ted_706923_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Miniwettbewerb aus Rahmenvertrag AS260012 Rolle 2 Data Engineer",
+      "deadline": null,
+      "buyer_or_program": "Phoenics.IT GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/706923-2026"
+      ],
+      "ted": {
+        "publication_number": "706923-2026",
+        "publication_date": "2026-10-13+02:00",
+        "cpv": [
+          "72000000",
+          "72000000"
         ]
       }
     },
@@ -1025,39 +1025,6 @@
           "48000000",
           "72000000",
           "48000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_642749_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Miniwettbewerb aus Rahmenvertrag AS260012 Rolle 1 Machine Learning Engineer",
-      "deadline": null,
-      "buyer_or_program": "BG-Phoenics GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/642749-2026"
-      ],
-      "ted": {
-        "publication_number": "642749-2026",
-        "publication_date": "2026-09-17+02:00",
-        "cpv": [
-          "72000000",
-          "72000000"
         ]
       }
     }
