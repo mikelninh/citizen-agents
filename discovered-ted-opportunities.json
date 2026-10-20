@@ -1,9 +1,83 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-19T13:22:27.648Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260919 SORT BY publication-date DESC",
+  "generated_at": "2026-10-20T11:42:24.853Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260920 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_726150_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Anwendungsentwicklungsleistungen mit .NET, Java und verwandten Technologien in 5 Losen",
+      "deadline": null,
+      "buyer_or_program": "Land Hessen, vertreten durch die Hessische Zentrale für Datenverarbeitung",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/726150-2026"
+      ],
+      "ted": {
+        "publication_number": "726150-2026",
+        "publication_date": "2026-10-20+02:00",
+        "cpv": [
+          "72000000",
+          "72000000",
+          "72000000",
+          "72000000",
+          "72000000",
+          "72000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_722921_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung",
+      "deadline": null,
+      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/722921-2026"
+      ],
+      "ted": {
+        "publication_number": "722921-2026",
+        "publication_date": "2026-10-20+02:00",
+        "cpv": [
+          "80522000",
+          "72268000",
+          "80522000",
+          "72268000"
+        ]
+      }
+    },
     {
       "id": "ted_717390_2026",
       "type": "tender_candidate",
@@ -595,6 +669,41 @@
       }
     },
     {
+      "id": "ted_673212_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung",
+      "deadline": null,
+      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/673212-2026"
+      ],
+      "ted": {
+        "publication_number": "673212-2026",
+        "publication_date": "2026-09-30+02:00",
+        "cpv": [
+          "80522000",
+          "72268000",
+          "80522000",
+          "72268000"
+        ]
+      }
+    },
+    {
       "id": "ted_673584_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Video-Überwachungssystem – Bäderland Hamburg GmbH: Projekt KI - gestütztes Ertrinkenden-Erkennungssystem",
@@ -636,41 +745,6 @@
           "48000000",
           "51314000",
           "48328000"
-        ]
-      }
-    },
-    {
-      "id": "ted_673212_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung",
-      "deadline": null,
-      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/673212-2026"
-      ],
-      "ted": {
-        "publication_number": "673212-2026",
-        "publication_date": "2026-09-30+02:00",
-        "cpv": [
-          "80522000",
-          "72268000",
-          "80522000",
-          "72268000"
         ]
       }
     },

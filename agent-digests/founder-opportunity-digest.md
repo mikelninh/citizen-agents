@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-10-19T13:22:28.068Z
-Open: **21** · Qualified: **4** · Automated new: **25** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-10-20T11:42:25.362Z
+Open: **23** · Qualified: **4** · Automated new: **27** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Dienstleistungen im Rahmen der gesetzlichen Sozialversicherung – Abrechnung der Arzneimittel von öffentlichen Apotheken, Krankenhausapotheken und sonstigen Leistungserbringern nach § 300 SGB V
 **Origin:** TED_AUTOMATED · **Score:** 73/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -24,6 +24,12 @@ Open: **21** · Qualified: **4** · Automated new: **25** · Partner-route: **0*
 **Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.
 **Best proof:** Digital Worker Factory / OpsPilot
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Anwendungsentwicklungsleistungen mit .NET, Java und verwandten Technologien in 5 Losen
+**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
+**Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Telefonauftragsdienste – Leistungen zum Betrieb der „VRM-Bedarfsverkehrs-Hotline"
@@ -51,7 +57,7 @@ Open: **21** · Qualified: **4** · Automated new: **25** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement
-**Origin:** TED_AUTOMATED · **Score:** 61/100 · **Route:** REVIEW · **5d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 61/100 · **Route:** REVIEW · **4d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
@@ -63,7 +69,7 @@ Open: **21** · Qualified: **4** · Automated new: **25** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Zentralrechner – V444_2026 Rechenknoten für HPC-Cluster
-**Origin:** TED_AUTOMATED · **Score:** 54/100 · **Route:** REVIEW · **4d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **3d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
@@ -80,13 +86,7 @@ Open: **21** · Qualified: **4** · Automated new: **25** · Partner-route: **0*
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Miniwettbewerb aus Rahmenvertrag AS260012 Rolle 1 Machine Learning Engineer
-**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Miniwettbewerb aus Rahmenvertrag AS260012 Rolle 2 Data Engineer
+## Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung
 **Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
