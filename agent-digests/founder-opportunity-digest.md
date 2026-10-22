@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-10-21T11:54:11.401Z
-Open: **24** · Qualified: **5** · Automated new: **28** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-10-22T11:57:05.519Z
+Open: **24** · Qualified: **4** · Automated new: **28** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Dienstleistungen im Rahmen der gesetzlichen Sozialversicherung – Abrechnung der Arzneimittel von öffentlichen Apotheken, Krankenhausapotheken und sonstigen Leistungserbringern nach § 300 SGB V
 **Origin:** TED_AUTOMATED · **Score:** 73/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -18,12 +18,6 @@ Open: **24** · Qualified: **5** · Automated new: **28** · Partner-route: **0*
 **Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.
 **Best proof:** Digital Worker Factory / OpsPilot
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Systemdienstleistungen und Unterstützungsdienste – Beschaffung von GPU- und CPU-Rechenleistung zum Training eines LLM
-**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof, CARE / Public Service systems. Full requirements still need review.
-**Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Maschinen für allgemeine und besondere Zwecke – Beschaffung von ferngesteuerten Unterwasserrobotern (ROV) für das DFKI Robotics Innovation Center
@@ -63,7 +57,7 @@ Open: **24** · Qualified: **5** · Automated new: **28** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement
-**Origin:** TED_AUTOMATED · **Score:** 62/100 · **Route:** REVIEW · **3d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 62/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
 **Best proof:** CareOS
 **Next action:** Open the official TED notice
@@ -75,7 +69,13 @@ Open: **24** · Qualified: **5** · Automated new: **28** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Zentralrechner – V444_2026 Rechenknoten für HPC-Cluster
-**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **1d left** · **Pipeline:** FOUND
+**Why fit:** AI-related German procurement candidate requiring manual qualification.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Allgemeine und berufliche Bildung – Development of Training Courses for the European Raw Materials Sector
+**Origin:** TED_AUTOMATED · **Score:** 53/100 · **Route:** REVIEW · **8d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice

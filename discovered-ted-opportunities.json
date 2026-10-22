@@ -1,9 +1,115 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-21T11:54:10.452Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260921 SORT BY publication-date DESC",
+  "generated_at": "2026-10-22T11:57:05.176Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260922 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_731212_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Allgemeine und berufliche Bildung – Development of Training Courses for the European Raw Materials Sector",
+      "deadline": "2026-10-29T23:59:59+01:00",
+      "buyer_or_program": "EIT RawMaterials GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/731212-2026"
+      ],
+      "ted": {
+        "publication_number": "731212-2026",
+        "publication_date": "2026-10-22+02:00",
+        "cpv": [
+          "80000000",
+          "80521000",
+          "80522000",
+          "80420000",
+          "80000000",
+          "80000000",
+          "80000000",
+          "80000000",
+          "80000000",
+          "80000000",
+          "80000000",
+          "80000000",
+          "80521000",
+          "80522000",
+          "80420000",
+          "80521000",
+          "80522000",
+          "80420000",
+          "80521000",
+          "80522000",
+          "80420000",
+          "80521000",
+          "80522000",
+          "80420000",
+          "80521000",
+          "80522000",
+          "80420000",
+          "80521000",
+          "80522000",
+          "80420000",
+          "80521000",
+          "80522000",
+          "80420000",
+          "80521000",
+          "80522000",
+          "80420000"
+        ]
+      }
+    },
+    {
+      "id": "ted_732291_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Internetseitenbetreiberdienste – Relaunch, Betrieb und Hosting der Websites",
+      "deadline": null,
+      "buyer_or_program": "Rheinland-Pfalz Tourismus GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/732291-2026"
+      ],
+      "ted": {
+        "publication_number": "732291-2026",
+        "publication_date": "2026-10-22+02:00",
+        "cpv": [
+          "72415000",
+          "72413000",
+          "72421000",
+          "72420000",
+          "72415000",
+          "72413000",
+          "72421000",
+          "72420000"
+        ]
+      }
+    },
     {
       "id": "ted_729402_2026",
       "type": "tender_candidate",
@@ -448,44 +554,6 @@
           "48160000",
           "92511000",
           "48161000"
-        ]
-      }
-    },
-    {
-      "id": "ted_688976_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Systemdienstleistungen und Unterstützungsdienste – Beschaffung von GPU- und CPU-Rechenleistung zum Training eines LLM",
-      "deadline": null,
-      "buyer_or_program": "Gottfried Wilhelm Leibniz Universität Hannover",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 62,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof",
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof, CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/688976-2026"
-      ],
-      "ted": {
-        "publication_number": "688976-2026",
-        "publication_date": "2026-10-06+02:00",
-        "cpv": [
-          "72250000",
-          "72250000",
-          "72250000"
         ]
       }
     },
@@ -1040,39 +1108,6 @@
           "38000000",
           "38000000",
           "38000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_648921_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Projekt \"FreeBSD – AI-Assisted Vulnerability Discovery\"",
-      "deadline": null,
-      "buyer_or_program": "Sovereign Tech Agency GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/648921-2026"
-      ],
-      "ted": {
-        "publication_number": "648921-2026",
-        "publication_date": "2026-09-21+02:00",
-        "cpv": [
-          "73000000",
-          "73000000"
         ]
       }
     }
