@@ -1,9 +1,42 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-22T11:57:05.176Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260922 SORT BY publication-date DESC",
+  "generated_at": "2026-10-23T11:43:09.255Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260923 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_735326_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – KI-Prototypenentwicklung",
+      "deadline": null,
+      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/735326-2026"
+      ],
+      "ted": {
+        "publication_number": "735326-2026",
+        "publication_date": "2026-10-23+02:00",
+        "cpv": [
+          "72000000",
+          "72000000"
+        ]
+      }
+    },
     {
       "id": "ted_731212_2026",
       "type": "tender_candidate",
@@ -1034,80 +1067,6 @@
         "cpv": [
           "30211100",
           "30211100"
-        ]
-      }
-    },
-    {
-      "id": "ted_653286_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Maschinen für allgemeine und besondere Zwecke – Beschaffung von ferngesteuerten Unterwasserrobotern (ROV) für das DFKI Robotics Innovation Center",
-      "deadline": null,
-      "buyer_or_program": "Deutsches Forschungszentrum für Künstliche Intelligenz GmbH (DFKI)",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 62,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/653286-2026"
-      ],
-      "ted": {
-        "publication_number": "653286-2026",
-        "publication_date": "2026-09-22+02:00",
-        "cpv": [
-          "42900000",
-          "42900000"
-        ]
-      }
-    },
-    {
-      "id": "ted_652216_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – Scanner Hub Digitale Pathologie",
-      "deadline": "2026-10-12T23:59:59+02:00",
-      "buyer_or_program": "Universitätsklinikum Aachen AöR",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CareOS"
-      ],
-      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/652216-2026"
-      ],
-      "ted": {
-        "publication_number": "652216-2026",
-        "publication_date": "2026-09-22+02:00",
-        "cpv": [
-          "38000000",
-          "38000000",
-          "38000000",
-          "38000000",
-          "38000000"
         ]
       }
     }
