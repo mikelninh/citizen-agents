@@ -1,7 +1,13 @@
 # Founder Opportunity Digest
-Generated: 2026-10-27T12:16:31.931Z
-Open: **25** · Qualified: **3** · Automated new: **28** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-10-28T12:59:26.743Z
+Open: **27** · Qualified: **4** · Automated new: **30** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
+## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System
+**Origin:** TED_AUTOMATED · **Score:** 87/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.
+**Best proof:** Digital Worker Factory / OpsPilot
+**Next action:** Open the official TED notice
+**Approval:** required before external action
 ## Deutschland – Dienstleistungen im Rahmen der gesetzlichen Sozialversicherung – Abrechnung der Arzneimittel von öffentlichen Apotheken, Krankenhausapotheken und sonstigen Leistungserbringern nach § 300 SGB V
 **Origin:** TED_AUTOMATED · **Score:** 73/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems, GitLaw, CareOS. Full requirements still need review.
@@ -51,7 +57,7 @@ Open: **25** · Qualified: **3** · Automated new: **28** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Allgemeine und berufliche Bildung – Development of Training Courses for the European Raw Materials Sector
-**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **3d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
@@ -68,6 +74,12 @@ Open: **25** · Qualified: **3** · Automated new: **28** · Partner-route: **0*
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
+## Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung
+**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** AI-related German procurement candidate requiring manual qualification.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
 ## Deutschland – Aufladegeräte – Beschaffung einer Ladeinfrastruktur für Elektrobusse
 **Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
@@ -75,18 +87,6 @@ Open: **25** · Qualified: **3** · Automated new: **28** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Projekt "ONNX"
-**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Beschaffung, Implementierung und Einführung eines integrierten Cloud-LIMS (native SaaS) für ein akkreditiertes Auftragslabor
-**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Internetseitenbetreiberdienste – Lernplattform ILIAS - PR1272158-9753-I
 **Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems

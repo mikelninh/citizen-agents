@@ -1,9 +1,80 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-27T12:16:31.078Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260927 SORT BY publication-date DESC",
+  "generated_at": "2026-10-28T12:59:26.215Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260928 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_745428_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System",
+      "deadline": null,
+      "buyer_or_program": "Agentur für Innovation in der Cybersicherheit GmbH (Cyberagentur)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 90,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/745428-2026"
+      ],
+      "ted": {
+        "publication_number": "745428-2026",
+        "publication_date": "2026-10-28+01:00",
+        "cpv": [
+          "73000000",
+          "73000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_748883_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung",
+      "deadline": null,
+      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/748883-2026"
+      ],
+      "ted": {
+        "publication_number": "748883-2026",
+        "publication_date": "2026-10-28+01:00",
+        "cpv": [
+          "80522000",
+          "72268000",
+          "80522000",
+          "72268000"
+        ]
+      }
+    },
     {
       "id": "ted_742832_2026",
       "type": "tender_candidate",
@@ -768,6 +839,41 @@
       }
     },
     {
+      "id": "ted_682877_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
+      "deadline": null,
+      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
+      ],
+      "ted": {
+        "publication_number": "682877-2026",
+        "publication_date": "2026-10-05+02:00",
+        "cpv": [
+          "38000000",
+          "38622000",
+          "38000000",
+          "38622000"
+        ]
+      }
+    },
+    {
       "id": "ted_683267_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Übersetzungsdienste – Translation works and services from EN into DE, FR and IT",
@@ -805,41 +911,6 @@
           "79530000",
           "79530000",
           "79530000"
-        ]
-      }
-    },
-    {
-      "id": "ted_682877_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
-      "deadline": null,
-      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
-      ],
-      "ted": {
-        "publication_number": "682877-2026",
-        "publication_date": "2026-10-05+02:00",
-        "cpv": [
-          "38000000",
-          "38622000",
-          "38000000",
-          "38622000"
         ]
       }
     },
@@ -952,41 +1023,6 @@
       }
     },
     {
-      "id": "ted_673212_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung",
-      "deadline": null,
-      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/673212-2026"
-      ],
-      "ted": {
-        "publication_number": "673212-2026",
-        "publication_date": "2026-09-30+02:00",
-        "cpv": [
-          "80522000",
-          "72268000",
-          "80522000",
-          "72268000"
-        ]
-      }
-    },
-    {
       "id": "ted_673584_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Video-Überwachungssystem – Bäderland Hamburg GmbH: Projekt KI - gestütztes Ertrinkenden-Erkennungssystem",
@@ -1028,6 +1064,41 @@
           "48000000",
           "51314000",
           "48328000"
+        ]
+      }
+    },
+    {
+      "id": "ted_673212_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung",
+      "deadline": null,
+      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/673212-2026"
+      ],
+      "ted": {
+        "publication_number": "673212-2026",
+        "publication_date": "2026-09-30+02:00",
+        "cpv": [
+          "80522000",
+          "72268000",
+          "80522000",
+          "72268000"
         ]
       }
     },
