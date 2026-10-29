@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-10-28T12:59:26.743Z
-Open: **27** · Qualified: **4** · Automated new: **30** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-10-29T13:06:45.663Z
+Open: **31** · Qualified: **5** · Automated new: **34** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System
 **Origin:** TED_AUTOMATED · **Score:** 87/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -12,6 +12,12 @@ Open: **27** · Qualified: **4** · Automated new: **30** · Partner-route: **0*
 **Origin:** TED_AUTOMATED · **Score:** 73/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
+**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **23d left** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
+**Best proof:** GitLaw
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Unterstützende Dienste für die öffentliche Verwaltung – Projektträgerschaft zur fachlichen und administrativen Umsetzung des Förderprogramms „Innovation und Infrastruktur für industrielle Künstliche Intelligenz“
@@ -32,13 +38,13 @@ Open: **27** · Qualified: **4** · Automated new: **30** · Partner-route: **0*
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – Dienstleistungen in den Bereichen Erholung, Kultur und Sport – Betrieb des Deutschen Museums Bonn-Organisation und Umsetzung von Bildungsangeboten
+## Deutschland – Telefonauftragsdienste – Leistungen zum Betrieb der „VRM-Bedarfsverkehrs-Hotline"
 **Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – Telefonauftragsdienste – Leistungen zum Betrieb der „VRM-Bedarfsverkehrs-Hotline"
+## Deutschland – Dienstleistungen in den Bereichen Erholung, Kultur und Sport – Betrieb des Deutschen Museums Bonn-Organisation und Umsetzung von Bildungsangeboten
 **Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
@@ -50,6 +56,12 @@ Open: **27** · Qualified: **4** · Automated new: **30** · Partner-route: **0*
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
+## Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement
+**Origin:** TED_AUTOMATED · **Score:** 62/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
+**Best proof:** CareOS
+**Next action:** Open the official TED notice
+**Approval:** required before external action
 ## Deutschland – Branchenspezifisches Softwarepaket – Beschaffung von SAP Rise with SAP Private Cloud Edition - einschließlich Lizenzen, Betrieb und Infrastruktur
 **Origin:** TED_AUTOMATED · **Score:** 57/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
@@ -57,7 +69,7 @@ Open: **27** · Qualified: **4** · Automated new: **30** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Allgemeine und berufliche Bildung – Development of Training Courses for the European Raw Materials Sector
-**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **2d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 55/100 · **Route:** REVIEW · **1d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
@@ -74,20 +86,8 @@ Open: **27** · Qualified: **4** · Automated new: **30** · Partner-route: **0*
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung
-**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Aufladegeräte – Beschaffung einer Ladeinfrastruktur für Elektrobusse
-**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – Projekt "ONNX"
-**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+## Deutschland – Server – GPU-Serversystem
+**Origin:** TED_AUTOMATED · **Score:** 51/100 · **Route:** REVIEW · **27d left** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
