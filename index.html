@@ -93,12 +93,12 @@
 <div class="hero"><div class="wrap">
   <div class="kicker">Digital Democracy Studio · Berlin · Open Source · Kostenlos</div>
   <h1>Dein Recht. Dein Geld. <em>Deine Frage.</em></h1>
-  <p class="sub">Citizen Agents ist die erste Anlaufstelle für alles, was der Staat, Gesetze und Konzerne mit dir zu tun haben. <b>Kostenlos. Mit Quellen. Von Menschen geprüft.</b></p>
+  <p class="sub">Citizen Agents ist die erste Anlaufstelle für alles, was der Staat, Gesetze und Konzerne mit dir zu tun haben. <b>Kostenlos. Mit Quellen und sichtbaren Prüfgrenzen.</b></p>
   <div class="cta">
     <a class="btn primary" href="#anliegen">Was ist dein Anliegen?</a>
     <a class="btn ghost" href="https://github.com/mikelninh/citizen-agents" target="_blank">Quellcode</a>
   </div>
-  <div class="trust"><b>16 Wächter-Agenten</b> beobachten Gesetze · Parlament · Haushalt · Gerichte <span class="sep">·</span> <b>0 €</b> für Bürger:innen <span class="sep">·</span> <b>100 %</b> Quellenangabe</div>
+  <div class="trust"><b>Watchdog-Prototypen</b> für Recht · Parlament · Haushalt · Gerichte <span class="sep">·</span> <b>0 €</b> für Bürger:innen <span class="sep">·</span> Quellen und Prüfstatus statt blindem Vertrauen</div>
 </div></div>
 
 <!-- THE CORE: problem-first -->
@@ -128,46 +128,37 @@
       <div class="go">Simulation starten</div></a>
     <a class="prob" href="dashboard.html">
       <div class="q">📡 „Was passiert gerade in meinem Namen?"</div>
-      <div class="a">Die Wächter berichten täglich: neue Gesetze, Lobby-Aktivität, Haushalts-Anomalien, Leiturteile, EU-Fristen.</div>
-      <div class="go">Heutige Meldungen</div></a>
+      <div class="a">Öffentliche Signale prüfen: Quellen, Stichtage, offene Fragen und was Menschen selbst nachsehen sollten.</div>
+      <div class="go">So funktioniert die Prüfung</div></a>
   </div>
 </div></div>
 
-<!-- TODAY'S DIGEST — real, cited, human-reviewed -->
+<!-- READINESS / EVIDENCE — date-safe public overview -->
 <section id="heute"><div class="wrap">
-  <h2>Heutige Meldungen — 6. August 2026</h2>
-  <p class="lede">Was die Wächter heute fanden. Jede Meldung von einem unabhängigen Fleet-Reviewer geprüft — <b style="color:var(--green-text)">4 verifiziert</b>, <b style="color:#9b6829">2 teilweise</b>, 0 Fehler. So funktioniert Vertrauen: prüfen, nicht versprechen.</p>
+  <h2>So prüfen wir öffentliche Signale</h2>
+  <p class="lede">Dies ist ein <strong>öffentlicher Entwicklungsprototyp</strong>, kein verlässlich tagesaktueller Rechts- oder Fristendienst. Meldungen dürfen nur mit Quelle, Funddatum, Prüfstatus und klaren Wissensgrenzen weitergegeben werden.</p>
   <div class="probs">
-    <div class="prob" style="cursor:default">
-      <div class="q">🏛️ Bundestag-Watch — Lobby aktiv trotz Sommerpause</div>
-      <div class="a">eFuel GmbH neu im Lobbyregister (03.08., exakt verifiziert) — Energiepolitik. Bürgergeld wird ab 01.07.2026 zur „Neuen Grundsicherung" (Drs. 21/3541).</div>
-      <div class="go" style="color:var(--green-text)">Quelle: lobbyregister.bundestag.de · tagesschau.de</div></div>
-    <div class="prob" style="cursor:default">
-      <div class="q">🏠 Benefit-Watch — Wohngeld-Änderungen</div>
-      <div class="a">Kabinett plant Neuordnung des Wohngeldgesetzes; Formel-Koeffizient C sinkt → geringere Auszahlungen. Tipp: Wer nahe der Einkommensgrenze ist, sollte jetzt beantragen.</div>
-      <div class="go" style="color:var(--green-text)">Quelle: bundesregierung.de · bmwsb.bund.de · tagesschau.de</div></div>
-    <div class="prob" style="cursor:default">
-      <div class="q">🗳️ Consultation-Watch — 5 offene Beteiligungsfenster</div>
-      <div class="a">BauGB-Anhörung minutengenau verifiziert gegen bundestag.de. Mit Fristen und 10-Minuten-Stellungnahme-Vorlagen.</div>
-      <div class="go" style="color:var(--green-text)">Quelle: bundestag.de (verifiziert)</div></div>
+    <div class="prob" style="cursor:default"><div class="q">1 · Quelle und Gültigkeitsdatum</div><div class="a">Die Originalquelle und der genaue Stand werden festgehalten. Eine Meldung von gestern ist nicht automatisch heute gültig.</div></div>
+    <div class="prob" style="cursor:default"><div class="q">2 · Unsicherheit und Review</div><div class="a">Belegt, teilweise belegt und offen bleiben unterscheidbar. KI darf Vorschläge erstellen; ein interner Review ersetzt keine fachliche Prüfung.</div></div>
+    <div class="prob" style="cursor:default"><div class="q">3 · Nächste Handlung</div><div class="a">Handlungshinweise gelten erst nach Verifikation des konkreten Einzelfalls. Bei fehlender Evidenz wird kein Anspruch oder Termin behauptet.</div></div>
   </div>
-  <p class="lede" style="margin-top:14px;font-size:13.5px">Ehrliche Prüfung: 2 Meldungen des Tages hatten Quellen-Unschärfen (Wohngeld-Zahl, GKV-Datum) — vom Fleet-Reviewer gefunden, gemeldet, korrigierbar. Das ist das System: <b>Agenten entwerfen, Menschen entscheiden.</b> Alle Befunde: <a href="https://github.com/mikelninh/citizen-agents/tree/main/agent-digests" style="color:var(--purple)" target="_blank">agent-digests →</a></p>
+  <p class="lede" style="margin-top:14px;font-size:13.5px">Dokumentierte historische Testausgaben sind im <a href="https://github.com/mikelninh/citizen-agents/tree/main/agent-digests" style="color:var(--purple)" target="_blank" rel="noopener">Projektrepository</a> einsehbar. Sie sind <b>nicht</b> als aktuelle Nachrichten oder Rechtsberatung zu verwenden.</p>
 </div></section>
 
 <!-- RIGHTS THAT SELF-UPDATE -->
 <section id="selbstaktualisierend" style="padding-top:0"><div class="wrap">
-  <h2>Rechte, die sich selbst aktualisieren</h2>
-  <p class="lede">Ein Gesetz ändert sich — und niemand sagt es dir. Das ist der Fehler, den wir beheben. Unsere Wächter beobachten das Recht täglich und melden: <b style="color:var(--navy)">was sich geändert hat, was es für dich bedeutet, mit Quelle und Frist.</b> Deine Rechte sind kein Archiv — sie sind eine Meldung.</p>
+  <h2>Rechtsänderungen besser verfolgen</h2>
+  <p class="lede">Gesetze, Fristen und Behördeninformationen ändern sich. Citizen Agents erprobt, wie öffentliche Änderungen <b style="color:var(--navy)">mit Originalquelle, Datum und sichtbarem Prüfstatus</b> verständlich aufbereitet werden können. Die Abdeckung und Automatisierung unterscheiden sich je Bereich.</p>
   <div class="probs">
     <div class="prob" style="cursor:default">
       <div class="q">🔔 Law-Watch — „Ein Gesetz hat sich geändert"</div>
       <div class="a">Neue und geänderte Bundesgesetze werden erklärt, bevor sie dich treffen. Mit BGBl-Quelle und Einordnung: Wer ist betroffen, ab wann gilt es?</div></div>
     <div class="prob" style="cursor:default">
       <div class="q">🏠 Benefit-Watch — „Dein Anspruch hat sich geändert"</div>
-      <div class="a">Wohngeld, Elterngeld, Bürgergeld: Regeln und Fristen ändern sich still. Wir melden jede Änderung — inklusive „jetzt beantragen"-Tipp, wenn es sich lohnt.</div></div>
+      <div class="a">Wohngeld, Elterngeld, Bürgergeld: Regeln und Fristen ändern sich still. Ziel sind überprüfbare Hinweise auf Änderungen und zuständige offizielle Anlaufstellen – keine automatischen Anspruchsentscheidungen.</div></div>
     <div class="prob" style="cursor:default">
       <div class="q">🏛️⚖️ Court-Watch — „Ein Urteil ändert dein Recht"</div>
-      <div class="a">BVerfG und EuGH entscheiden über deinen Alltag. Leiturteile in Alltagssprache, am Tag der Veröffentlichung — mit dem, was sich konkret für dich ändert.</div></div>
+      <div class="a">BVerfG und EuGH entscheiden über deinen Alltag. Leiturteile verständlich erklären, sobald sie erfasst und fachlich geprüft sind – ohne die individuelle Rechtswirkung zu behaupten.</div></div>
     <div class="prob" style="cursor:default">
       <div class="q">🇪🇺 Directive-Watch — „Deutschland ist zu spät"</div>
       <div class="a">EU-Richtlinien, die Deutschland umsetzen muss — mit Frist und Ministerium. Verspätung wird sichtbar, statt still zu passieren.</div></div>
