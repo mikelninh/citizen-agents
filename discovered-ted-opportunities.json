@@ -1,9 +1,46 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-10-29T13:06:45.292Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260929 SORT BY publication-date DESC",
+  "generated_at": "2026-10-30T12:59:59.384Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20260930 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_755177_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Allgemeine Managementberatung – Erbringung von Beratungsleistungen zur Organisationsstruktur von Germany Trade and Invest",
+      "deadline": null,
+      "buyer_or_program": "Germany Trade and Invest Gesellschaft für Außenwirtschaft und Standortmarketing mbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/755177-2026"
+      ],
+      "ted": {
+        "publication_number": "755177-2026",
+        "publication_date": "2026-10-30+01:00",
+        "cpv": [
+          "79411000",
+          "79411100",
+          "79411000",
+          "79411100"
+        ]
+      }
+    },
     {
       "id": "ted_751115_2026",
       "type": "tender_candidate",
@@ -1241,40 +1278,6 @@
           "72268000",
           "80522000",
           "72268000"
-        ]
-      }
-    },
-    {
-      "id": "ted_670361_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Zentralrechner – V444_2026 Rechenknoten für HPC-Cluster",
-      "deadline": "2026-10-23T10:00:00+02:00",
-      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/670361-2026"
-      ],
-      "ted": {
-        "publication_number": "670361-2026",
-        "publication_date": "2026-09-29+02:00",
-        "cpv": [
-          "30211000",
-          "30211000",
-          "30211000"
         ]
       }
     }
