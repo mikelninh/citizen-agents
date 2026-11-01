@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-10-31T12:37:09.669Z
-Open: **29** · Qualified: **5** · Automated new: **32** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-11-01T13:29:08.863Z
+Open: **27** · Qualified: **5** · Automated new: **30** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System
 **Origin:** TED_AUTOMATED · **Score:** 87/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -15,7 +15,7 @@ Open: **29** · Qualified: **5** · Automated new: **32** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **21d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **20d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
@@ -62,18 +62,6 @@ Open: **29** · Qualified: **5** · Automated new: **32** · Partner-route: **0*
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement
-**Origin:** TED_AUTOMATED · **Score:** 62/100 · **Route:** REVIEW · **0d left** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
-**Best proof:** CareOS
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Branchenspezifisches Softwarepaket – Beschaffung von SAP Rise with SAP Private Cloud Edition - einschließlich Lizenzen, Betrieb und Infrastruktur
-**Origin:** TED_AUTOMATED · **Score:** 57/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched CareOS. Full requirements still need review.
-**Best proof:** CareOS
-**Next action:** Open the official TED notice
-**Approval:** required before external action
 ## Luxemburg, Belgien, Deutschland, Malta, Portugal – Entwicklung von Bibliothekensoftware – Library Services Platform
 **Origin:** TED_AUTOMATED · **Score:** 52/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
@@ -87,7 +75,19 @@ Open: **29** · Qualified: **5** · Automated new: **32** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Server – GPU-Serversystem
-**Origin:** TED_AUTOMATED · **Score:** 51/100 · **Route:** REVIEW · **25d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 51/100 · **Route:** REVIEW · **24d left** · **Pipeline:** FOUND
+**Why fit:** AI-related German procurement candidate requiring manual qualification.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Geologische, ozeanografische und hydrologische Untersuchungen – RV Hydrogeologische Modellierung und Data Science
+**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** AI-related German procurement candidate requiring manual qualification.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung
+**Origin:** TED_AUTOMATED · **Score:** 50/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
