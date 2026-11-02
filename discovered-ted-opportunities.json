@@ -1,9 +1,148 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-11-01T13:29:08.559Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261002 SORT BY publication-date DESC",
+  "generated_at": "2026-11-02T15:59:59.510Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261003 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_759169_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Bereitstellung von Software – Vergabe eines BVG-weiten BMS-Systems (Betriebshof-Management-System)",
+      "deadline": null,
+      "buyer_or_program": "Berliner Verkehrsbetriebe, Bereich Einkauf/ Materialwirtschaft",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/759169-2026"
+      ],
+      "ted": {
+        "publication_number": "759169-2026",
+        "publication_date": "2026-11-02+01:00",
+        "cpv": [
+          "72268000",
+          "72227000",
+          "72263000",
+          "48810000",
+          "48000000",
+          "48100000",
+          "48211000",
+          "48218000",
+          "48820000",
+          "48810000",
+          "72000000",
+          "72200000",
+          "72260000",
+          "72267000",
+          "72250000",
+          "72263000",
+          "30200000",
+          "30230000",
+          "51610000",
+          "72268000",
+          "72227000",
+          "72263000",
+          "48810000",
+          "48000000",
+          "48100000",
+          "48211000",
+          "48218000",
+          "48820000",
+          "48810000",
+          "72000000",
+          "72200000",
+          "72260000",
+          "72267000",
+          "72250000",
+          "72263000",
+          "30200000",
+          "30230000",
+          "51610000"
+        ]
+      }
+    },
+    {
+      "id": "ted_758867_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Labormöbel – V456_2026 - HiPOLE - Laborausstattung inkl. Planung (Lab2Fab)",
+      "deadline": "2026-12-01T23:45:00+02:00",
+      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/758867-2026"
+      ],
+      "ted": {
+        "publication_number": "758867-2026",
+        "publication_date": "2026-11-02+01:00",
+        "cpv": [
+          "39180000",
+          "39180000"
+        ]
+      }
+    },
+    {
+      "id": "ted_758427_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen in Verbindung mit der Forstwirtschaft – Gesamtwaldprojekt",
+      "deadline": null,
+      "buyer_or_program": "Staatsbetrieb Sachsenforst - Geschäftsleitung",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/758427-2026"
+      ],
+      "ted": {
+        "publication_number": "758427-2026",
+        "publication_date": "2026-11-02+01:00",
+        "cpv": [
+          "77230000",
+          "72310000",
+          "77230000",
+          "72310000"
+        ]
+      }
+    },
     {
       "id": "ted_755177_2026",
       "type": "tender_candidate",
@@ -1018,6 +1157,41 @@
       }
     },
     {
+      "id": "ted_682877_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
+      "deadline": null,
+      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
+      ],
+      "ted": {
+        "publication_number": "682877-2026",
+        "publication_date": "2026-10-05+02:00",
+        "cpv": [
+          "38000000",
+          "38622000",
+          "38000000",
+          "38622000"
+        ]
+      }
+    },
+    {
       "id": "ted_683267_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Übersetzungsdienste – Translation works and services from EN into DE, FR and IT",
@@ -1055,76 +1229,6 @@
           "79530000",
           "79530000",
           "79530000"
-        ]
-      }
-    },
-    {
-      "id": "ted_682877_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Laborgeräte, optische Geräte und Präzisionsgeräte (außer Gläser) – V427_2026 – WI-AOS – Toroid-Spiegel für KMC-1 (Bessy II+)",
-      "deadline": null,
-      "buyer_or_program": "Helmholtz-Zentrum Berlin für Materialien und Energie GmbH (HZB)",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/682877-2026"
-      ],
-      "ted": {
-        "publication_number": "682877-2026",
-        "publication_date": "2026-10-05+02:00",
-        "cpv": [
-          "38000000",
-          "38622000",
-          "38000000",
-          "38622000"
-        ]
-      }
-    },
-    {
-      "id": "ted_680648_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement",
-      "deadline": "2026-10-23T23:59:59+02:00",
-      "buyer_or_program": "Postbeamtenkrankenkasse",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CareOS"
-      ],
-      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/680648-2026"
-      ],
-      "ted": {
-        "publication_number": "680648-2026",
-        "publication_date": "2026-10-02+02:00",
-        "cpv": [
-          "48000000",
-          "48000000"
         ]
       }
     }
