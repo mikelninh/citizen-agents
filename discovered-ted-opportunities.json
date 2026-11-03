@@ -1,9 +1,221 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-11-02T15:59:59.510Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261003 SORT BY publication-date DESC",
+  "generated_at": "2026-11-03T14:20:25.567Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261004 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_761955_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Technischen Ausrüstung HLS, ALG 1, 2 und 3, Leistungsphasen 2-8 gemäß §§ 53 ff. HOAI",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Zentrum für Luft-und Raumfahrt e. V. | TI-ZVM",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/761955-2026"
+      ],
+      "ted": {
+        "publication_number": "761955-2026",
+        "publication_date": "2026-11-03+01:00",
+        "cpv": [
+          "71300000",
+          "71300000"
+        ]
+      }
+    },
+    {
+      "id": "ted_761215_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Architekturbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Objektplanung Freianlagen gemäß §§ 38 ff. HOAI, Leistungsphasen 3-8",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Zentrum für Luft-und Raumfahrt e. V. | TI-ZVM",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/761215-2026"
+      ],
+      "ted": {
+        "publication_number": "761215-2026",
+        "publication_date": "2026-11-03+01:00",
+        "cpv": [
+          "71200000",
+          "71200000"
+        ]
+      }
+    },
+    {
+      "id": "ted_763579_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Architekturbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Objektplanung Gebäude und Innenräume gemäß §§ 33 ff. HOAI, Leistungsphasen 3-8",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Zentrum für Luft-und Raumfahrt e. V. | TI-ZVM",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/763579-2026"
+      ],
+      "ted": {
+        "publication_number": "763579-2026",
+        "publication_date": "2026-11-03+01:00",
+        "cpv": [
+          "71200000",
+          "71200000"
+        ]
+      }
+    },
+    {
+      "id": "ted_762871_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Systemdienstleistungen und Unterstützungsdienste – Beschaffung von GPU- und CPU-Rechenleistung zum Training eines LLM",
+      "deadline": null,
+      "buyer_or_program": "Gottfried Wilhelm Leibniz Universität Hannover",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 62,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof",
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof, CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/762871-2026"
+      ],
+      "ted": {
+        "publication_number": "762871-2026",
+        "publication_date": "2026-11-03+01:00",
+        "cpv": [
+          "72250000",
+          "72250000",
+          "72250000"
+        ]
+      }
+    },
+    {
+      "id": "ted_762894_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS",
+      "deadline": null,
+      "buyer_or_program": "Eberhard Karls Universität Tübingen",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/762894-2026"
+      ],
+      "ted": {
+        "publication_number": "762894-2026",
+        "publication_date": "2026-11-03+01:00",
+        "cpv": [
+          "30211100",
+          "30211100"
+        ]
+      }
+    },
+    {
+      "id": "ted_763186_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Technische Betreuung und Weiterentwicklung der Websites www.familienplanung.de und www.jung-und-schwanger.de",
+      "deadline": null,
+      "buyer_or_program": "Bundesinstitut für Öffentliche Gesundheit (BIÖG)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/763186-2026"
+      ],
+      "ted": {
+        "publication_number": "763186-2026",
+        "publication_date": "2026-11-03+01:00",
+        "cpv": [
+          "72000000",
+          "72000000",
+          "75130000"
+        ]
+      }
+    },
     {
       "id": "ted_759169_2026",
       "type": "tender_candidate",
@@ -1188,47 +1400,6 @@
           "38622000",
           "38000000",
           "38622000"
-        ]
-      }
-    },
-    {
-      "id": "ted_683267_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Übersetzungsdienste – Translation works and services from EN into DE, FR and IT",
-      "deadline": null,
-      "buyer_or_program": "European Central Bank",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/683267-2026"
-      ],
-      "ted": {
-        "publication_number": "683267-2026",
-        "publication_date": "2026-10-05+02:00",
-        "cpv": [
-          "79530000",
-          "79530000",
-          "79530000",
-          "79530000",
-          "79530000",
-          "79530000",
-          "79530000",
-          "79530000",
-          "79530000",
-          "79530000"
         ]
       }
     }

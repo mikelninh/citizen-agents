@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-11-02T15:59:59.985Z
-Open: **30** · Qualified: **5** · Automated new: **32** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-11-03T14:20:26.062Z
+Open: **35** · Qualified: **6** · Automated new: **37** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System
 **Origin:** TED_AUTOMATED · **Score:** 87/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -15,9 +15,15 @@ Open: **30** · Qualified: **5** · Automated new: **32** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **19d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **18d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Systemdienstleistungen und Unterstützungsdienste – Beschaffung von GPU- und CPU-Rechenleistung zum Training eines LLM
+**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof, CARE / Public Service systems. Full requirements still need review.
+**Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Unterstützende Dienste für die öffentliche Verwaltung – Projektträgerschaft zur fachlichen und administrativen Umsetzung des Förderprogramms „Innovation und Infrastruktur für industrielle Künstliche Intelligenz“
@@ -30,6 +36,24 @@ Open: **30** · Qualified: **5** · Automated new: **32** · Partner-route: **0*
 **Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.
 **Best proof:** Digital Worker Factory / OpsPilot
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Technischen Ausrüstung HLS, ALG 1, 2 und 3, Leistungsphasen 2-8 gemäß §§ 53 ff. HOAI
+**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Dienstleistungen von Architekturbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Objektplanung Freianlagen gemäß §§ 38 ff. HOAI, Leistungsphasen 3-8
+**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Dienstleistungen von Architekturbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Objektplanung Gebäude und Innenräume gemäß §§ 33 ff. HOAI, Leistungsphasen 3-8
+**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
+**Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Dienstleistungen in Verbindung mit der Forstwirtschaft – Gesamtwaldprojekt
@@ -65,30 +89,6 @@ Open: **30** · Qualified: **5** · Automated new: **32** · Partner-route: **0*
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Beratungsleistungen für das Format Digi-Expert-kommunal für das Hessische Ministerium für Digitalisierung und Innovation in zwei Losen
 **Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Bereitstellung von Software – Vergabe eines BVG-weiten BMS-Systems (Betriebshof-Management-System)
-**Origin:** TED_AUTOMATED · **Score:** 52/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Luxemburg, Belgien, Deutschland, Malta, Portugal – Entwicklung von Bibliothekensoftware – Library Services Platform
-**Origin:** TED_AUTOMATED · **Score:** 52/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Übersetzungsdienste – Translation works and services from EN into DE, FR and IT
-**Origin:** TED_AUTOMATED · **Score:** 52/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Server – GPU-Serversystem
-**Origin:** TED_AUTOMATED · **Score:** 51/100 · **Route:** REVIEW · **23d left** · **Pipeline:** FOUND
-**Why fit:** AI-related German procurement candidate requiring manual qualification.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
