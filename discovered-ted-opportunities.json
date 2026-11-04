@@ -1,9 +1,196 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-11-03T14:20:25.567Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261004 SORT BY publication-date DESC",
+  "generated_at": "2026-11-04T14:37:05.570Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261005 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_766689_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen- Leistungen des Brandschutzes gem. Kapitel 1.4 des Heftes 17 der Schriftreihe AHO, Leistungsphasen 3-5 und 8,",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Zentrum für Luft-und Raumfahrt e. V. | TI-ZVM",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/766689-2026"
+      ],
+      "ted": {
+        "publication_number": "766689-2026",
+        "publication_date": "2026-11-04+01:00",
+        "cpv": [
+          "71300000",
+          "71300000"
+        ]
+      }
+    },
+    {
+      "id": "ted_767113_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Technischen Ausrüstung ELT, ALG 4, 5, 6 und 8, Leistungsphasen 2-3, 5-8 gemäß §§ 53 ff. HOAI",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Zentrum für Luft-und Raumfahrt e. V. | TI-ZVM",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/767113-2026"
+      ],
+      "ted": {
+        "publication_number": "767113-2026",
+        "publication_date": "2026-11-04+01:00",
+        "cpv": [
+          "71300000",
+          "71300000"
+        ]
+      }
+    },
+    {
+      "id": "ted_766450_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Sicherheits- und Gesundheitsschutz Koordination (SiGeKO)",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Zentrum für Luft-und Raumfahrt e. V. | TI-ZVM",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 58,
+      "product_matches": [
+        "CARE / Public Service systems",
+        "CareOS"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems, CareOS. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/766450-2026"
+      ],
+      "ted": {
+        "publication_number": "766450-2026",
+        "publication_date": "2026-11-04+01:00",
+        "cpv": [
+          "71300000",
+          "71300000",
+          "71300000",
+          "71300000"
+        ]
+      }
+    },
+    {
+      "id": "ted_765085_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Systemberatung und technische Beratung – 10017688 - National Information Sharing and Analysis Framework",
+      "deadline": "2026-11-23T23:59:59+01:00",
+      "buyer_or_program": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/765085-2026"
+      ],
+      "ted": {
+        "publication_number": "765085-2026",
+        "publication_date": "2026-11-04+01:00",
+        "cpv": [
+          "72220000",
+          "72220000"
+        ]
+      }
+    },
+    {
+      "id": "ted_766865_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dentalgeräte – Lieferung von dentalen Geräten und Arbeitsstühlen für die überbetriebliche Ausbildung im Zahntechniker-Handwerk",
+      "deadline": null,
+      "buyer_or_program": "Zahntechniker-Innung Düsseldorf",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/766865-2026"
+      ],
+      "ted": {
+        "publication_number": "766865-2026",
+        "publication_date": "2026-11-04+01:00",
+        "cpv": [
+          "33130000",
+          "42999100",
+          "33130000",
+          "33130000",
+          "39100000",
+          "33130000",
+          "33130000",
+          "33130000",
+          "33130000",
+          "33130000",
+          "33130000",
+          "33130000",
+          "33130000",
+          "33130000",
+          "33130000"
+        ]
+      }
+    },
     {
       "id": "ted_761955_2026",
       "type": "tender_candidate",
