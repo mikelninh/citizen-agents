@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-11-04T14:37:06.138Z
-Open: **40** · Qualified: **6** · Automated new: **42** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-11-05T14:41:49.569Z
+Open: **39** · Qualified: **6** · Automated new: **42** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System
 **Origin:** TED_AUTOMATED · **Score:** 87/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -15,7 +15,7 @@ Open: **40** · Qualified: **6** · Automated new: **42** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **17d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **16d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
