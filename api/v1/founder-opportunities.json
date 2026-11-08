@@ -1,9 +1,9 @@
 {
   "schema_version": "citizen-founder-opportunity-api/1.0",
-  "generated_at": "2026-11-07T13:07:14.615Z",
+  "generated_at": "2026-11-08T13:28:54.275Z",
   "discovery": {
-    "ted_generated_at": "2026-11-07T13:07:14.199Z",
-    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261008 SORT BY publication-date DESC"
+    "ted_generated_at": "2026-11-08T13:28:53.773Z",
+    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261009 SORT BY publication-date DESC"
   },
   "profile": {
     "name": "Citizen Agents / Michael Ninh",
@@ -300,7 +300,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "URGENT",
-          "days": 7
+          "days": 6
         },
         "proof_matches": [
           {
@@ -764,7 +764,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 14
+          "days": 13
         },
         "proof_matches": [
           {
@@ -1000,7 +1000,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 14
+          "days": 13
         },
         "proof_matches": [
           {
@@ -5377,7 +5377,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 17
+          "days": 16
         },
         "proof_matches": [
           {
@@ -5601,7 +5601,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 18
+          "days": 17
         },
         "proof_matches": [
           {
@@ -5823,7 +5823,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 25
+          "days": 24
         },
         "proof_matches": [
           {
@@ -9182,7 +9182,7 @@
         "route": "PARTNER_FIRST",
         "deadline": {
           "state": "EXPIRED",
-          "days": -46
+          "days": -47
         },
         "proof_matches": [
           {
@@ -9482,7 +9482,7 @@
         "route": "SUBCONTRACT_OR_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -57
+          "days": -58
         },
         "proof_matches": [
           {
@@ -9782,7 +9782,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -52
+          "days": -53
         },
         "proof_matches": [
           {
@@ -10003,7 +10003,7 @@
         "route": "MONITOR_NEXT_ROUND",
         "deadline": {
           "state": "EXPIRED",
-          "days": -75
+          "days": -76
         },
         "proof_matches": [
           {
@@ -10210,7 +10210,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -54
+          "days": -55
         },
         "proof_matches": [
           {
@@ -10424,7 +10424,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -44
+          "days": -45
         },
         "proof_matches": [
           {
@@ -10638,7 +10638,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -66
+          "days": -67
         },
         "proof_matches": [
           {
@@ -10857,7 +10857,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -7
+          "days": -8
         },
         "proof_matches": [
           {
@@ -11082,7 +11082,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -15
+          "days": -16
         },
         "proof_matches": [
           {
@@ -11338,7 +11338,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -8
+          "days": -9
         },
         "proof_matches": [
           {

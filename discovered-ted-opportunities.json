@@ -1,7 +1,7 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-11-07T13:07:14.199Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261008 SORT BY publication-date DESC",
+  "generated_at": "2026-11-08T13:28:53.773Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261009 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
     {
@@ -40,39 +40,6 @@
           "72000000",
           "72220000",
           "48000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_774263_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Rundfunk- und Fernsehgeräte, Kommunikations- und Fernmeldeanlagen und Zubehör – Modernisierung der Infrastruktur des Videostudios im Multimedialabor am Standort Amberg",
-      "deadline": null,
-      "buyer_or_program": "Ostbayerische Technische Hochschule (OTH) Amberg-Weiden, Standort Amberg",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/774263-2026"
-      ],
-      "ted": {
-        "publication_number": "774263-2026",
-        "publication_date": "2026-11-06+01:00",
-        "cpv": [
-          "32000000",
-          "32000000"
         ]
       }
     },
@@ -148,6 +115,39 @@
           "72000000",
           "79000000",
           "72000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_774263_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Rundfunk- und Fernsehgeräte, Kommunikations- und Fernmeldeanlagen und Zubehör – Modernisierung der Infrastruktur des Videostudios im Multimedialabor am Standort Amberg",
+      "deadline": null,
+      "buyer_or_program": "Ostbayerische Technische Hochschule (OTH) Amberg-Weiden, Standort Amberg",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/774263-2026"
+      ],
+      "ted": {
+        "publication_number": "774263-2026",
+        "publication_date": "2026-11-06+01:00",
+        "cpv": [
+          "32000000",
+          "32000000"
         ]
       }
     },
