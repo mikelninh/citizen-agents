@@ -1,0 +1,48 @@
+{
+  "date": "2026-08-30",
+  "repo": "blakeks-world",
+  "branch": "studio/engineer-2026-08-30-guard",
+  "note": "No director brief existed in the repo (agent-digests/ was absent), so I picked the highest-leverage PvP change from the code, honouring the lead's BOTH-weapon-families decision. studio/engineer-2026-08-30 already existed on the remote (tactical + stamina commit); this branch is cherry-picked on top of it rather than force-pushed over it.",
+  "changes": [
+    {
+      "file": "experiences/little-planet/src/modes/weapons/saber.js",
+      "what": "Added GUARD config, pure deflectsProjectile() cone test, guarding state and a blended guard view-model pose.",
+      "why": "Melee had zero interaction with projectiles, so the saber had no answer to ranged. Guard makes the two weapon families a real rock-paper-scissors."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/weapons/projectiles.js",
+      "what": "update() accepts optional { onDeflect }; a bounce reflects velocity, reassigns owner/team, scales damage and refreshes life. deflected flag reset on spawn.",
+      "why": "Projectiles previously had one outcome vs a player: damage. Needed a hook so a defender can swat a shot back. Signature stays backwards compatible."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/weapons/tools.js",
+      "what": "STAMINA.guardDrain (16/s), deflectCost (12), guardFloor (8); Stamina.canGuard() and Stamina.spend(cost).",
+      "why": "Guard must cost something or a saber player turtles a projectile team out of the round. Reuses the stamina pool that landed earlier today instead of inventing a second resource."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/match-mode.js",
+      "what": "New _tryDeflect(); right mouse drives guarding through saber.update(); guard drains stamina while held and each swat spends deflectCost; hitmarker, spark burst and toast.",
+      "why": "Wires the mechanic to real input, the live projectile loop and the resource, local player only, no friendly-fire deflects."
+    },
+    {
+      "file": "experiences/little-planet/tools/deflect-test.mjs",
+      "what": "6 geometry checks for the guard cone (front-only, in-reach, closing-velocity, swing arc wider than guard arc).",
+      "why": "deflectsProjectile() is pure, so its behaviour is cheap to lock down before balance tuning starts."
+    }
+  ],
+  "build_passed": true,
+  "tests": {
+    "tools/deflect-test.mjs": "6/6 pass",
+    "stamina arithmetic": "8 deflects from a full bar, canGuard() false at 4",
+    "little-planet npm run build": "pass",
+    "root npm run build": "pass",
+    "root npm run check": "pass"
+  },
+  "directives_done": [
+    "BOTH weapon families interact: saber guard deflects incoming projectiles back at the thrower",
+    "Counterplay stays symmetric: front-only 3m cone, wider on swing, guard breakable by volume of fire, flanking still wins",
+    "Guard priced against the existing stamina pool rather than a new resource",
+    "Readable combat: distinct guard pose, spark burst, hitmarker and toast"
+  ],
+  "challenge_for_mikel": "Are 8 deflects per stamina bar too generous? After one playtest, tune deflectCost (punish spam) vs guardDrain (punish holding)."
+}
