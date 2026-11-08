@@ -1,0 +1,116 @@
+{
+  "date": "2026-09-03",
+  "shortages_found": 22,
+  "top_shortages": [
+    {
+      "medikament": "Buprenorphin AL 30 µg/h / 20 µg/h transdermales Pflaster",
+      "wirkstoff": "Buprenorphin",
+      "art": "Neu (Erstmeldung)",
+      "beginn": "2026-09-02",
+      "ende": "2026-09-28",
+      "grund": "Sonstige",
+      "betroffen": "Schmerzpatienten mit Opioid-Therapie",
+      "quelle": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medikament": "Tacrolimus AL 5 mg Hartkapseln",
+      "wirkstoff": "Tacrolimus",
+      "art": "Neu (Erstmeldung)",
+      "beginn": "2026-09-02",
+      "ende": "2026-09-29",
+      "grund": "Sonstige",
+      "betroffen": "Transplantierte Patienten (Immunsuppressiva)",
+      "quelle": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medikament": "Cilostazol AL 50 mg Tabletten",
+      "wirkstoff": "Cilostazol",
+      "art": "Neu (Erstmeldung)",
+      "beginn": "2026-09-02",
+      "ende": "2026-09-30",
+      "grund": "Sonstige",
+      "betroffen": "Patienten mit pAVK (Schaufensterdisease)",
+      "quelle": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medikament": "Noxafil (Posaconazol)",
+      "wirkstoff": "Posaconazol",
+      "art": "Neu (Erstmeldung), KKH-relevant",
+      "beginn": "2026-09-02",
+      "ende": "2026-10-30",
+      "grund": "Sonstige",
+      "betroffen": "Immunsupprimierte Patienten (Pilgsinfektion-Prophylaxe)",
+      "quelle": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medikament": "Levetiracetam Holsten 750 mg / 1000 mg Filmtabletten",
+      "wirkstoff": "Levetiracetam",
+      "art": "Laufend (Änderungsmeldung), Produktionsproblem",
+      "beginn": "2026-01-05 / 2026-08-10",
+      "ende": "2026-12-31",
+      "grund": "Produktionsproblem",
+      "betroffen": "Epilepsie-Patienten",
+      "quelle": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medikament": "Cytarabin (ARA-cell 4000 mg, 1000 mg, 100 mg/ml, 40 mg)",
+      "wirkstoff": "Cytarabin",
+      "art": "Laufend (Änderungsmeldung), Produktionsproblem",
+      "beginn": "2025-10-07",
+      "ende": "2027-12-31",
+      "grund": "Produktionsproblem",
+      "betroffen": "Krebspatienten (AML, Lymphom)",
+      "quelle": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medikament": "Visipaque 270 / 320 (Iodixanol) — Kontrastmittel",
+      "wirkstoff": "Iodixanol",
+      "art": "Laufend (Änderungsmeldung), Produktionsproblem",
+      "beginn": "2026-07-20 / 2026-07-29",
+      "ende": "2026-09-23 / 2026-10-14",
+      "grund": "Produktionsproblem",
+      "betroffen": "Patienten mit CT/MRT-Untersuchungen",
+      "quelle": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    },
+    {
+      "medikament": "Cefuroxim - 1 A Pharma 125 mg/5 ml Granulat (Kinder-Antibiotikum)",
+      "wirkstoff": "Cefuroximaxetil",
+      "art": "Neu (Erstmeldung)",
+      "beginn": "2026-07-14",
+      "ende": "2026-11-11",
+      "grund": "Sonstige",
+      "betroffen": "Kinder mit bakteriellen Infektionen",
+      "quelle": "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml"
+    }
+  ],
+  "highlights": [
+    "546 Lieferengpässe in der BfArM-Datenbank (Stand 03.09.2026) — kein Rückgang gegenüber Herbst 2025 (~550).",
+    "4 neue Erstmeldungen am 02./03.09.2026: Buprenorphin AL Pflaster, Tacrolimus AL 5 mg, Cilostazol AL 50 mg, Noxafil (Posaconazol) — alle mit knappem Zeitfenster (28–30 Tage).",
+    "Kritisch: Cytarabin-Aufstockung für Krebspatienten bis 31.12.2027 — längster bekannter Engpass.",
+    "Levetiracetam (Antiepileptikum) weiterhin knapp bis Jahresende 2026 — viele Epilepsie-Patienten betroffen.",
+    "Visipaque (Kontrastmittel) mit Produktionsproblem bis September/Oktober 2026 — CT/MRT-Untersuchungen betroffen.",
+    "EU-Critical-Medicines-Act: EU-Parlament hat am 20.01.2026 für das Gesetz gestimmt; Trilog-Verhandlungen laufen; finale Einigung voraussichtlich vor Sommer 2026.",
+    "BfArM hat für antibiotikahaltige Säfte für Kinder die Versorgungsmangel-Bekanntmachung aufgehoben (25.03.2026) — einige Präparate wie Cefuroxim-1A-Pharma bleiben aber weiterhin knapp.",
+    "Hauptursachen: Preisdruck auf Generika, Verlagerung Produktion nach China/Indien, Marktkonzentration, Produktionsprobleme einzelner Hersteller."
+  ],
+  "sources": [
+    "https://anwendungen.pharmnet-bund.de/lieferengpassmeldungen/faces/public/meldungen.xhtml",
+    "https://www.bfarm.de/DE/Arzneimittel/Arzneimittelinformationen/Lieferengpaesse/Massnahmen-des-BfArM/_artikel.html",
+    "https://www.tagesschau.de/wirtschaft/verbraucher/medikamente-pharma-100.html",
+    "https://www.pharmazeutische-zeitung.de/ursachen-und-loesungsansaetze-fuer-lieferengpaesse-141779/",
+    "https://logistik-heute.de/news/pharma-eu-plant-massnahmenpaket-gegen-medikamenten-engpaesse-263802.html",
+    "https://www.aerzteblatt.de/news/eu-parlament-stimmt-fur-gesetz-gegen-arzneimittelengpasse-1b5c61f5-5275-48f5-a664-9b5acc1e7388"
+  ],
+  "actions_taken": [
+    "Clonen des citizen-agents Repos (mikelninh/citizen-agents)",
+    "Erstellen des branches agent/pharma-supply-2026-09-03",
+    "Recherche: BfArM Lieferengpassmeldungen (546 aktuelle Einträge), BfArM Maßnahmen, Tagesschau, Pharmazeutische Zeitung, LOGISTIK HEUTE, Ärzteblatt",
+    "Erstellen des Bürger-Digests: agent-digests/pharma-supply-2026-09-03.md",
+    "Erstellen des JSON-Logs: agent-logs/pharma-supply-2026-09-03.json",
+    "Commit vorbereitet",
+    "Push vorbereitet",
+    "PR-Vorschlag erstellt (nicht gemergt — Human Review)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/pharma-supply-2026-09-03"
+}
