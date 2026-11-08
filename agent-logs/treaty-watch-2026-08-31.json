@@ -1,0 +1,31 @@
+{
+  "date": "2026-08-31",
+  "findings": 4,
+  "regions": ["Europe", "Africa"],
+  "highlights": [
+    "ECHR (Grand Chamber, 25 Aug 2026): orders Türkiye to release Osman Kavala immediately and declares his conviction null and void (Kavala v. Türkiye no. 2) — several Convention violations under Article 46.",
+    "UN CERD Early Warning Procedure (28 Aug 2026): warns Tanzania to halt forced evictions of Maasai from Ngorongoro/Loliondo and address law-enforcement abuses.",
+    "ECHR Grand Chamber (7 Jul 2026): Italy violated the right to respect for the home — Mafia-inquiry search seized data of 6,000+ individuals without safeguards (Grande Oriente d'Italia v. Italy).",
+    "ECHR Grand Chamber (9 Jul 2026): no violation of ne bis in idem; clarified double-jeopardy limits in parallel proceedings (Jesus Pinhal v. Portugal)."
+  ],
+  "sources": [
+    "https://hudoc.echr.coe.int/eng-press?i=003-8614878-12265396",
+    "https://www.echr.coe.int/",
+    "https://www.ohchr.org/en/press-releases/2026/08/tanzania-maasai-indigenous-peoples-face-forced-evictions-law-enforcement",
+    "https://tbinternet.ohchr.org/_layouts/15/treatybodyexternal/Download.aspx?symbolno=INT%2FCERD%2FSWA%2FTZA%2F11528&Lang=en",
+    "https://hudoc.echr.coe.int/app/conversion/pdf/?library=ECHR&id=003-8584502-12210439&filename=Grand%20Chamber%20Judgment%20Grande%20Oriente%20d%27Italia%20v.%20Italy%20-%20Search%20and%20seizures%20ordered%20by%20Parliamentary%20Commission%20of%20Inquiry%20on%20combating%20the%20Mafia.pdf",
+    "https://hudoc.echr.coe.int/app/conversion/pdf/?library=ECHR&id=003-8586254-12213795&filename=Grand%20Chamber%20judgment%20Jesus%20Pinhal%20v.%20Portugal%20-%20no%20violation%20of%20the%20ne%20bis%20in%20idem%20principle%20.pdf"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents to temp dir",
+    "created branch agent/treaty-watch-2026-08-31",
+    "researched ECHR + OHCHR/UN treaty-body developments (Aug 2026)",
+    "wrote agent-digests/treaty-watch-2026-08-31.md (4 bilingual findings)",
+    "wrote agent-logs/treaty-watch-2026-08-31.json",
+    "committed both artifacts",
+    "pushed branch",
+    "opened PR (no merge — human review only)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/treaty-watch-2026-08-31"
+}
