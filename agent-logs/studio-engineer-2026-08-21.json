@@ -1,0 +1,33 @@
+{
+  "date": "2026-08-21",
+  "role": "studio-engineer",
+  "repo": "bla-keks-world",
+  "branch": "studio/engineer-2026-08-21",
+  "directives_done": ["D1"],
+  "directive_source": "studio-director-2026-08-19 (One Big Idea + D1 gate)",
+  "changes": [
+    {
+      "file": "experiences/little-planet/src/modes/botbrain.js",
+      "what": "Rewrote botShoot to fire a real, dodgeable soak projectile from the bot's own TOOLS loadout via c.projectiles.spawn (damage = stats.soak), removing the dead hitscan WEAPON/traceShot carbine path. Gated firing on the bot's Charge.",
+      "why": "D1 gate: bots must use the same soak kit as the player so the PvP loop is observable and the BOTH-weapons fantasy holds; also unifies hit resolution through Projectiles."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/match-mode.js",
+      "what": "Gave tactical bots a randomized soak loadout + Charge in _styleBot; passed the mode's Projectiles pool into the bot-brain ctx; stepped each bot's Charge per frame; and let the host resolve bot-owned projectile hits in _onProjectileHit (ownedByHostBot check).",
+      "why": "D1: feed the bot a real loadout, wire the pool through, and make bot projectiles actually deal soak damage on the host (offline and online host) instead of only drawing them."
+    },
+    {
+      "file": "experiences/little-planet/src/modes/weapon.js",
+      "what": "Deleted dead hitscan code (WEAPON, Magazine, buildViewModel, traceShot, raySphere); kept only the shared applySpread helper.",
+      "why": "D1 acceptance: Magazine/buildViewModel must be deletable without breaking the build; the hitscan carbine only fed the bot and is now fully replaced by Projectiles."
+    }
+  ],
+  "build_passed": true,
+  "build_cmd": "experiences/little-planet: npm run build (vite build) — 56 modules transformed, built ok (only pre-existing >500kB chunk warning)",
+  "verification": "grep confirms no live WEAPON/traceShot/Magazine/buildViewModel/raySphere references remain (only descriptive comment text in weapon.js); vite build green.",
+  "deferred": [
+    "D2 — soak-accumulate win condition + stamina-gated saber (leafblade.soak 100->34, whiff punish, perfect-timing bonus)",
+    "D3 — petalbow as explicit anti-saber tool + small out-of-combat soak regen"
+  ],
+  "notes": "D1 is the gate the Director named as blocking D2/D3. Implemented and build-verified. Bots now fire the same splatter/bubbler/confetti/petalbow tools players hold (randomized per bot), so a bot duel is finally watchable and the soak numbers are real for the first time. D2/D3 should land on top of this once merged. Explore/hide&seek modes untouched and still compile."
+}
