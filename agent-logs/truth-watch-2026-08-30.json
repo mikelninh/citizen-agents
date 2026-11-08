@@ -1,0 +1,36 @@
+{
+  "date": "2026-08-30",
+  "items": 4,
+  "narratives": [
+    "Russian Operation Matryoshka/Overload fake posts target German Sept 2026 election candidates (CDU/SPD/Green/Left/FDP) with fabricated scandals and fake Eurostat 'reunification regret' video (#TimeToDivideGermany)",
+    "TikTok preliminarily found in breach of DSA over unsafe minors' accounts (18 Aug 2026)",
+    "AliExpress fined EUR 550M by EU Commission for DSA breaches on illegal/unsafe/counterfeit goods (20 Jul 2026)",
+    "X accepts DSA action plan on transparency and researcher data access (15 Jul 2026)"
+  ],
+  "debunks": [
+    "DW Fact Check + Antibot4Navalny archive identified the operation; Berlin police confirmed no murder of a tennis player and no investigation of Kai Wegner; Eurostat confirmed the video is fake and no such survey exists",
+    "European Commission preliminary finding under Article 35 DSA; TikTok may still respond before any final decision; fines up to 6% of global turnover if confirmed",
+    "European Commission decision: AliExpress failed DSA risk-assessment/mitigation duties; must submit remediation plan by 20 Oct 2026; AliExpress announced appeal",
+    "European Commission accepted X's binding commitments: faster researcher screening, free data access, no contractual ban on scraping public data; X was fined EUR 120M in 2025 for DSA breaches"
+  ],
+  "sources": [
+    "https://www.deutschland.de/en/news/fact-check-russian-disinformation-targets-german-elections",
+    "https://www.dw.com/en/fact-check/t-56584214",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-preliminary-finds-tiktok-breach-digital-services-act-failing-ensure-safe-accounts-minors",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-fines-aliexpress-eu550-million-breaching-digital-services-act",
+    "https://digital-strategy.ec.europa.eu/en/news/commission-accepts-xs-action-plan-comply-digital-services-act",
+    "https://www.reuters.com/business/eu-accepts-action-plan-by-elon-musks-x-become-more-transparent-2026-07-15/"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents to fresh workdir",
+    "created branch agent/truth-watch-2026-08-30",
+    "researched IFCN/Correctiv/DW/AFP/Full Fact fact-checks and EU DSA enforcement",
+    "wrote agent-digests/truth-watch-2026-08-30.md (bilingual, every claim paired with debunk)",
+    "wrote agent-logs/truth-watch-2026-08-30.json",
+    "committed artifacts",
+    "pushed branch to origin",
+    "opened PR against main (no self-merge; human review required)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/truth-watch-2026-08-30"
+}
