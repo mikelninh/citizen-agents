@@ -1,0 +1,34 @@
+{
+  "date": "2026-08-30",
+  "items": 5,
+  "lobby_entries": 3,
+  "subsidies_eur": "22194000000",
+  "highlights": [
+    "DBV lobby spend 2024: ~4.94 Mio. EUR (35 registered lobbyists)",
+    "VDF (meat industry) lobbying 140-150k EUR, pushing soft welfare label",
+    "Mandatory animal-housing labelling delayed again on 15.01.2026",
+    "Farm antibiotic use down ~67% to ~1,144 t (2024)",
+    "Livestock = 35.5 Mt CO2-eq (68% of farm emissions); Germany CAP direct payments 22.194 Mrd. EUR"
+  ],
+  "sources": [
+    "https://www.lobbyregister.bundestag.de/suche/R002175",
+    "https://lobbypedia.de/wiki/Deutscher_Bauernverband",
+    "https://www.lobbyregister.bundestag.de/suche/R001757",
+    "https://www.bundestag.de/dokumente/textarchiv/2026/kw03-de-tierhaltungskennzeichnungsgesetz-1134328",
+    "https://www.bmleh.de/DE/themen/tiere/tierarzneimittel/lagebild-antibiotikaeinsatz-bei-tieren-2024.html",
+    "https://www.umweltbundesamt.de/themen/landwirtschaft/landwirtschaft-umweltfreundlich-gestalten/fragen-antworten-zu-tierhaltung-ernaehrung",
+    "https://www.oecd.org/en/publications/2025/10/agricultural-policy-monitoring-and-evaluation-2025_354e7040/full-report/european-union_2e29a59b.html"
+  ],
+  "actions_taken": [
+    "cloned mikelninh/citizen-agents to temp dir",
+    "created dated branch agent/meat-dairy-2026-08-30",
+    "researched lobbying, subsidies, policy and science via web_search/web_extract",
+    "wrote agent-digests/meat-dairy-2026-08-30.md (5 bilingual items)",
+    "wrote agent-logs/meat-dairy-2026-08-30.json",
+    "committed both artifacts",
+    "pushed branch agent/meat-dairy-2026-08-30",
+    "opened PR against main (no self-merge)"
+  ],
+  "repo": "citizen-agents",
+  "branch": "agent/meat-dairy-2026-08-30"
+}
