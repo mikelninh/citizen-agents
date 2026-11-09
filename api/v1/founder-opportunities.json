@@ -1,9 +1,9 @@
 {
   "schema_version": "citizen-founder-opportunity-api/1.0",
-  "generated_at": "2026-11-08T13:28:54.275Z",
+  "generated_at": "2026-11-09T16:26:19.112Z",
   "discovery": {
-    "ted_generated_at": "2026-11-08T13:28:53.773Z",
-    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261009 SORT BY publication-date DESC"
+    "ted_generated_at": "2026-11-09T16:26:18.677Z",
+    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261010 SORT BY publication-date DESC"
   },
   "profile": {
     "name": "Citizen Agents / Michael Ninh",
@@ -300,7 +300,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "URGENT",
-          "days": 6
+          "days": 5
         },
         "proof_matches": [
           {
@@ -764,7 +764,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 13
+          "days": 12
         },
         "proof_matches": [
           {
@@ -1000,7 +1000,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 13
+          "days": 12
         },
         "proof_matches": [
           {
@@ -5377,7 +5377,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 16
+          "days": 15
         },
         "proof_matches": [
           {
@@ -5601,7 +5601,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 17
+          "days": 16
         },
         "proof_matches": [
           {
@@ -5823,7 +5823,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 24
+          "days": 23
         },
         "proof_matches": [
           {
@@ -9182,7 +9182,7 @@
         "route": "PARTNER_FIRST",
         "deadline": {
           "state": "EXPIRED",
-          "days": -47
+          "days": -48
         },
         "proof_matches": [
           {
@@ -9482,7 +9482,7 @@
         "route": "SUBCONTRACT_OR_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -58
+          "days": -59
         },
         "proof_matches": [
           {
@@ -9782,7 +9782,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -53
+          "days": -55
         },
         "proof_matches": [
           {
@@ -10003,7 +10003,7 @@
         "route": "MONITOR_NEXT_ROUND",
         "deadline": {
           "state": "EXPIRED",
-          "days": -76
+          "days": -77
         },
         "proof_matches": [
           {
@@ -10210,7 +10210,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -55
+          "days": -56
         },
         "proof_matches": [
           {
@@ -10424,7 +10424,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -45
+          "days": -47
         },
         "proof_matches": [
           {
@@ -10638,7 +10638,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -67
+          "days": -68
         },
         "proof_matches": [
           {
@@ -10816,7 +10816,7 @@
       }
     },
     {
-      "id": "ted_751115_2026",
+      "id": "ted_778266_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement",
       "deadline": "2026-10-30T23:59:59+01:00",
@@ -10839,11 +10839,11 @@
       ],
       "source_status": "OFFICIAL_TED_API",
       "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/751115-2026"
+        "https://ted.europa.eu/de/notice/-/detail/778266-2026"
       ],
       "ted": {
-        "publication_number": "751115-2026",
-        "publication_date": "2026-10-29+01:00",
+        "publication_number": "778266-2026",
+        "publication_date": "2026-11-09+01:00",
         "cpv": [
           "48000000",
           "48000000"
@@ -10851,13 +10851,13 @@
       },
       "discovery_origin": "TED_AUTOMATED",
       "qualification": {
-        "opportunity_id": "ted_751115_2026",
+        "opportunity_id": "ted_778266_2026",
         "qualification_score": 54,
         "qualified": false,
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -8
+          "days": -9
         },
         "proof_matches": [
           {
@@ -10948,7 +10948,7 @@
       },
       "action_pack_v1": {
         "schema_version": "citizen-opportunity-action-pack/1.0",
-        "opportunity_id": "ted_751115_2026",
+        "opportunity_id": "ted_778266_2026",
         "headline": "Deutschland – Softwarepaket und Informationssysteme – KI Wissensmanagement",
         "route": "REVIEW",
         "qualification_score": 54,
@@ -11033,7 +11033,7 @@
       },
       "candidate_partners": [],
       "pipeline": {
-        "opportunity_id": "ted_751115_2026",
+        "opportunity_id": "ted_778266_2026",
         "status": "FOUND",
         "decision": "PENDING",
         "next_action": "Open the official TED notice",
@@ -11082,7 +11082,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -16
+          "days": -17
         },
         "proof_matches": [
           {
@@ -11338,7 +11338,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -9
+          "days": -10
         },
         "proof_matches": [
           {

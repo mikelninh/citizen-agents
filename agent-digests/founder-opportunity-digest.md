@@ -1,5 +1,5 @@
 # Founder Opportunity Digest
-Generated: 2026-11-08T13:28:54.275Z
+Generated: 2026-11-09T16:26:19.112Z
 Open: **40** · Qualified: **8** · Automated new: **43** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System
@@ -9,7 +9,7 @@ Open: **40** · Qualified: **8** · Automated new: **43** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Dienstleistungen für Unternehmen: Recht, Marketing, Consulting, Einstellungen, Druck und Sicherheit – Multi-LLM-SaaS-Plattform und KI-Beratung
-**Origin:** TED_AUTOMATED · **Score:** 80/100 · **Route:** REVIEW · **6d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 80/100 · **Route:** REVIEW · **5d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof, CARE / Public Service systems, GitLaw. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
@@ -21,13 +21,13 @@ Open: **40** · Qualified: **8** · Automated new: **43** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 72/100 · **Route:** REVIEW · **13d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 72/100 · **Route:** REVIEW · **12d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 72/100 · **Route:** REVIEW · **13d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 72/100 · **Route:** REVIEW · **12d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
