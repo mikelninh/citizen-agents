@@ -1,7 +1,7 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-11-13T14:38:09.797Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261014 SORT BY publication-date DESC",
+  "generated_at": "2026-11-14T13:35:14.731Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261015 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
     {
