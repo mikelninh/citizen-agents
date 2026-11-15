@@ -1,17 +1,11 @@
 # Founder Opportunity Digest
-Generated: 2026-11-14T13:35:15.129Z
-Open: **44** · Qualified: **10** · Automated new: **47** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-11-15T13:58:17.933Z
+Open: **42** · Qualified: **8** · Automated new: **46** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System
 **Origin:** TED_AUTOMATED · **Score:** 87/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.
 **Best proof:** Digital Worker Factory / OpsPilot
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Dienstleistungen für Unternehmen: Recht, Marketing, Consulting, Einstellungen, Druck und Sicherheit – Multi-LLM-SaaS-Plattform und KI-Beratung
-**Origin:** TED_AUTOMATED · **Score:** 81/100 · **Route:** REVIEW · **0d left** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof, CARE / Public Service systems, GitLaw. Full requirements still need review.
-**Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [Ne-Trust] Negative-Trust-Architekturen
@@ -27,13 +21,13 @@ Open: **44** · Qualified: **10** · Automated new: **47** · Partner-route: **0
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **7d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **6d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **7d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **6d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
@@ -50,14 +44,8 @@ Open: **44** · Qualified: **10** · Automated new: **47** · Partner-route: **0
 **Best proof:** Digital Worker Factory / OpsPilot
 **Next action:** Open the official TED notice
 **Approval:** required before external action
-## Deutschland – Diverse Software-Entwicklungen und Computersysteme – Virtuelle Tourist-Information - KI-basierte Gästeberatung, Los 3 - Künstliche Intelligenz (KI) / KI-Chatbot / Gästeberatungssystem
-**Origin:** TED_AUTOMATED · **Score:** 71/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.
-**Best proof:** Digital Worker Factory / OpsPilot
-**Next action:** Open the official TED notice
-**Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvertrag "Unterstützungs-/Dienstleistungen im Bereich IT-Betriebs-Compliance"
-**Origin:** TED_AUTOMATED · **Score:** 70/100 · **Route:** REVIEW · **19d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 70/100 · **Route:** REVIEW · **18d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems, GitLaw. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
@@ -87,6 +75,18 @@ Open: **44** · Qualified: **10** · Automated new: **47** · Partner-route: **0
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen- Leistungen des Brandschutzes gem. Kapitel 1.4 des Heftes 17 der Schriftreihe AHO, Leistungsphasen 3-5 und 8,
+**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Technischen Ausrüstung ELT, ALG 4, 5, 6 und 8, Leistungsphasen 2-3, 5-8 gemäß §§ 53 ff. HOAI
+**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Technischen Ausrüstung HLS, ALG 1, 2 und 3, Leistungsphasen 2-8 gemäß §§ 53 ff. HOAI
 **Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems

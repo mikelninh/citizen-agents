@@ -1,7 +1,7 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-11-14T13:35:14.731Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261015 SORT BY publication-date DESC",
+  "generated_at": "2026-11-15T13:58:17.424Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261016 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
     {
@@ -373,6 +373,41 @@
       }
     },
     {
+      "id": "ted_771440_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Beihilfen, Unterstützungsleistungen und Zuwendungen – RV Beihilfeabrechnung",
+      "deadline": null,
+      "buyer_or_program": "Max-Planck-Gesellschaft z.F.d.W. Generalverwaltung;",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/771440-2026"
+      ],
+      "ted": {
+        "publication_number": "771440-2026",
+        "publication_date": "2026-11-06+01:00",
+        "cpv": [
+          "75310000",
+          "75310000"
+        ]
+      }
+    },
+    {
       "id": "ted_773064_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Dienstleistungen für Unternehmen: Recht, Marketing, Consulting, Einstellungen, Druck und Sicherheit – Multi-LLM-SaaS-Plattform und KI-Beratung",
@@ -446,41 +481,6 @@
       }
     },
     {
-      "id": "ted_771440_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Beihilfen, Unterstützungsleistungen und Zuwendungen – RV Beihilfeabrechnung",
-      "deadline": null,
-      "buyer_or_program": "Max-Planck-Gesellschaft z.F.d.W. Generalverwaltung;",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/771440-2026"
-      ],
-      "ted": {
-        "publication_number": "771440-2026",
-        "publication_date": "2026-11-06+01:00",
-        "cpv": [
-          "75310000",
-          "75310000"
-        ]
-      }
-    },
-    {
       "id": "ted_768252_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Zentralrechner – V444_2026 Rechenknoten für HPC-Cluster",
@@ -542,41 +542,6 @@
       ],
       "ted": {
         "publication_number": "766689-2026",
-        "publication_date": "2026-11-04+01:00",
-        "cpv": [
-          "71300000",
-          "71300000"
-        ]
-      }
-    },
-    {
-      "id": "ted_767113_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Technischen Ausrüstung ELT, ALG 4, 5, 6 und 8, Leistungsphasen 2-3, 5-8 gemäß §§ 53 ff. HOAI",
-      "deadline": null,
-      "buyer_or_program": "Deutsches Zentrum für Luft-und Raumfahrt e. V. | TI-ZVM",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/767113-2026"
-      ],
-      "ted": {
-        "publication_number": "767113-2026",
         "publication_date": "2026-11-04+01:00",
         "cpv": [
           "71300000",
@@ -702,6 +667,41 @@
       }
     },
     {
+      "id": "ted_767113_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Technischen Ausrüstung ELT, ALG 4, 5, 6 und 8, Leistungsphasen 2-3, 5-8 gemäß §§ 53 ff. HOAI",
+      "deadline": null,
+      "buyer_or_program": "Deutsches Zentrum für Luft-und Raumfahrt e. V. | TI-ZVM",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/767113-2026"
+      ],
+      "ted": {
+        "publication_number": "767113-2026",
+        "publication_date": "2026-11-04+01:00",
+        "cpv": [
+          "71300000",
+          "71300000"
+        ]
+      }
+    },
+    {
       "id": "ted_761955_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Technischen Ausrüstung HLS, ALG 1, 2 und 3, Leistungsphasen 2-8 gemäß §§ 53 ff. HOAI",
@@ -807,6 +807,39 @@
       }
     },
     {
+      "id": "ted_762894_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS",
+      "deadline": null,
+      "buyer_or_program": "Eberhard Karls Universität Tübingen",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/762894-2026"
+      ],
+      "ted": {
+        "publication_number": "762894-2026",
+        "publication_date": "2026-11-03+01:00",
+        "cpv": [
+          "30211100",
+          "30211100"
+        ]
+      }
+    },
+    {
       "id": "ted_762871_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Systemdienstleistungen und Unterstützungsdienste – Beschaffung von GPU- und CPU-Rechenleistung zum Training eines LLM",
@@ -841,39 +874,6 @@
           "72250000",
           "72250000",
           "72250000"
-        ]
-      }
-    },
-    {
-      "id": "ted_762894_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Supercomputer – Erweiterung der ML Cloud Tübingen am HLRS",
-      "deadline": null,
-      "buyer_or_program": "Eberhard Karls Universität Tübingen",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/762894-2026"
-      ],
-      "ted": {
-        "publication_number": "762894-2026",
-        "publication_date": "2026-11-03+01:00",
-        "cpv": [
-          "30211100",
-          "30211100"
         ]
       }
     },
@@ -1125,6 +1125,39 @@
       }
     },
     {
+      "id": "ted_751877_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Geologische, ozeanografische und hydrologische Untersuchungen – RV Hydrogeologische Modellierung und Data Science",
+      "deadline": null,
+      "buyer_or_program": "Bundesgesellschaft für Endlagerung mbH (BGE)",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/751877-2026"
+      ],
+      "ted": {
+        "publication_number": "751877-2026",
+        "publication_date": "2026-10-29+01:00",
+        "cpv": [
+          "71351900",
+          "71351900"
+        ]
+      }
+    },
+    {
       "id": "ted_751925_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen",
@@ -1160,39 +1193,6 @@
           "72000000",
           "72220000",
           "48000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_751877_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Geologische, ozeanografische und hydrologische Untersuchungen – RV Hydrogeologische Modellierung und Data Science",
-      "deadline": null,
-      "buyer_or_program": "Bundesgesellschaft für Endlagerung mbH (BGE)",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/751877-2026"
-      ],
-      "ted": {
-        "publication_number": "751877-2026",
-        "publication_date": "2026-10-29+01:00",
-        "cpv": [
-          "71351900",
-          "71351900"
         ]
       }
     },
@@ -1663,43 +1663,6 @@
       }
     },
     {
-      "id": "ted_717390_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Telefonauftragsdienste – Leistungen zum Betrieb der „VRM-Bedarfsverkehrs-Hotline\"",
-      "deadline": null,
-      "buyer_or_program": "Verkehrsverbund Rhein-Mosel GmbH",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/717390-2026"
-      ],
-      "ted": {
-        "publication_number": "717390-2026",
-        "publication_date": "2026-10-16+02:00",
-        "cpv": [
-          "79510000",
-          "79512000",
-          "79510000",
-          "79512000"
-        ]
-      }
-    },
-    {
       "id": "ted_716247_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Dienstleistungen in den Bereichen Erholung, Kultur und Sport – Betrieb des Deutschen Museums Bonn-Organisation und Umsetzung von Bildungsangeboten",
@@ -1738,18 +1701,17 @@
       }
     },
     {
-      "id": "ted_712759_2026",
+      "id": "ted_717390_2026",
       "type": "tender_candidate",
-      "headline": "Deutschland – Diverse Software-Entwicklungen und Computersysteme – Virtuelle Tourist-Information - KI-basierte Gästeberatung, Los 3 - Künstliche Intelligenz (KI) / KI-Chatbot / Gästeberatungssystem",
+      "headline": "Deutschland – Telefonauftragsdienste – Leistungen zum Betrieb der „VRM-Bedarfsverkehrs-Hotline\"",
       "deadline": null,
-      "buyer_or_program": "Felsenland Südeifel Tourismus GmbH",
+      "buyer_or_program": "Verkehrsverbund Rhein-Mosel GmbH",
       "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 62,
+      "fit_score": 50,
       "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
+        "CARE / Public Service systems"
       ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
       "blockers": [
         "Full procurement documents not yet reviewed",
         "Formal suitability, references and value not yet established"
@@ -1762,24 +1724,16 @@
       ],
       "source_status": "OFFICIAL_TED_API",
       "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/712759-2026"
+        "https://ted.europa.eu/de/notice/-/detail/717390-2026"
       ],
       "ted": {
-        "publication_number": "712759-2026",
-        "publication_date": "2026-10-15+02:00",
+        "publication_number": "717390-2026",
+        "publication_date": "2026-10-16+02:00",
         "cpv": [
-          "72212900",
-          "48000000",
-          "72261000",
-          "72322000",
-          "72415000",
-          "73000000",
-          "72212900",
-          "48000000",
-          "72261000",
-          "72322000",
-          "72415000",
-          "73000000"
+          "79510000",
+          "79512000",
+          "79510000",
+          "79512000"
         ]
       }
     }
