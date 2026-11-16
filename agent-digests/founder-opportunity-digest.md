@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-11-15T13:58:17.933Z
-Open: **42** · Qualified: **8** · Automated new: **46** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-11-16T15:51:45.063Z
+Open: **41** · Qualified: **8** · Automated new: **44** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System
 **Origin:** TED_AUTOMATED · **Score:** 87/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -21,13 +21,13 @@ Open: **42** · Qualified: **8** · Automated new: **46** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **6d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **5d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **6d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **5d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
@@ -45,7 +45,7 @@ Open: **42** · Qualified: **8** · Automated new: **46** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvertrag "Unterstützungs-/Dienstleistungen im Bereich IT-Betriebs-Compliance"
-**Origin:** TED_AUTOMATED · **Score:** 70/100 · **Route:** REVIEW · **18d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 70/100 · **Route:** REVIEW · **17d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems, GitLaw. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
@@ -53,6 +53,12 @@ Open: **42** · Qualified: **8** · Automated new: **46** · Partner-route: **0*
 ## Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Sicherheits- und Gesundheitsschutz Koordination (SiGeKO)
 **Origin:** TED_AUTOMATED · **Score:** 69/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems, CareOS. Full requirements still need review.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Unternehmens- und Managementberatung und zugehörige Dienste – Rahmenvereinbarung zur strategischen Beratung und IT-Dienstleistungen
+**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **24d left** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
@@ -81,12 +87,6 @@ Open: **42** · Qualified: **8** · Automated new: **46** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Technischen Ausrüstung ELT, ALG 4, 5, 6 und 8, Leistungsphasen 2-3, 5-8 gemäß §§ 53 ff. HOAI
-**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Dienstleistungen von Ingenieurbüros – Sanierung Labor- und Bürogebäude Robert-Hooke-Str. 5 am Standort DLR Bremen - Leistungen der Technischen Ausrüstung HLS, ALG 1, 2 und 3, Leistungsphasen 2-8 gemäß §§ 53 ff. HOAI
 **Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
