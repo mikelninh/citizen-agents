@@ -1,5 +1,5 @@
 # Founder Opportunity Digest
-Generated: 2026-11-16T15:51:45.063Z
+Generated: 2026-11-17T16:04:04.114Z
 Open: **41** · Qualified: **8** · Automated new: **44** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System
@@ -21,13 +21,13 @@ Open: **41** · Qualified: **8** · Automated new: **44** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **5d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **4d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **5d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **4d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
@@ -45,7 +45,7 @@ Open: **41** · Qualified: **8** · Automated new: **44** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvertrag "Unterstützungs-/Dienstleistungen im Bereich IT-Betriebs-Compliance"
-**Origin:** TED_AUTOMATED · **Score:** 70/100 · **Route:** REVIEW · **17d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 70/100 · **Route:** REVIEW · **16d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems, GitLaw. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
@@ -57,7 +57,7 @@ Open: **41** · Qualified: **8** · Automated new: **44** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Unternehmens- und Managementberatung und zugehörige Dienste – Rahmenvereinbarung zur strategischen Beratung und IT-Dienstleistungen
-**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **24d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **23d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice

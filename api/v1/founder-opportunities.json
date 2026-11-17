@@ -1,9 +1,9 @@
 {
   "schema_version": "citizen-founder-opportunity-api/1.0",
-  "generated_at": "2026-11-16T15:51:45.063Z",
+  "generated_at": "2026-11-17T16:04:04.114Z",
   "discovery": {
-    "ted_generated_at": "2026-11-16T15:51:44.639Z",
-    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261017 SORT BY publication-date DESC"
+    "ted_generated_at": "2026-11-17T16:04:03.680Z",
+    "ted_query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261018 SORT BY publication-date DESC"
   },
   "profile": {
     "name": "Citizen Agents / Michael Ninh",
@@ -753,7 +753,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "URGENT",
-          "days": 5
+          "days": 4
         },
         "proof_matches": [
           {
@@ -989,7 +989,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "URGENT",
-          "days": 5
+          "days": 4
         },
         "proof_matches": [
           {
@@ -1679,7 +1679,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 17
+          "days": 16
         },
         "proof_matches": [
           {
@@ -2141,7 +2141,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 24
+          "days": 23
         },
         "proof_matches": [
           {
@@ -5322,12 +5322,12 @@
       "discovery_origin": "TED_AUTOMATED",
       "qualification": {
         "opportunity_id": "ted_765085_2026",
-        "qualification_score": 53,
+        "qualification_score": 54,
         "qualified": false,
         "route": "REVIEW",
         "deadline": {
-          "state": "SOON",
-          "days": 8
+          "state": "URGENT",
+          "days": 7
         },
         "proof_matches": [
           {
@@ -5420,10 +5420,10 @@
         "opportunity_id": "ted_765085_2026",
         "headline": "Deutschland – Systemberatung und technische Beratung – 10017688 - National Information Sharing and Analysis Framework",
         "route": "REVIEW",
-        "qualification_score": 53,
+        "qualification_score": 54,
         "deadline": "2026-11-23T23:59:59+01:00",
         "buyer_or_program": "Deutsche Gesellschaft für Internationale Zusammenarbeit (GIZ) GmbH",
-        "why_now": "Deadline is within fourteen days.",
+        "why_now": "Deadline is within seven days.",
         "matching_proofs": [
           {
             "id": "care-public-service",
@@ -5551,7 +5551,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "SOON",
-          "days": 9
+          "days": 8
         },
         "proof_matches": [
           {
@@ -6033,7 +6033,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "OPEN",
-          "days": 16
+          "days": 15
         },
         "proof_matches": [
           {
@@ -9396,7 +9396,7 @@
         "route": "PARTNER_FIRST",
         "deadline": {
           "state": "EXPIRED",
-          "days": -55
+          "days": -56
         },
         "proof_matches": [
           {
@@ -9696,7 +9696,7 @@
         "route": "SUBCONTRACT_OR_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -66
+          "days": -67
         },
         "proof_matches": [
           {
@@ -9996,7 +9996,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -62
+          "days": -63
         },
         "proof_matches": [
           {
@@ -10217,7 +10217,7 @@
         "route": "MONITOR_NEXT_ROUND",
         "deadline": {
           "state": "EXPIRED",
-          "days": -84
+          "days": -85
         },
         "proof_matches": [
           {
@@ -10424,7 +10424,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -63
+          "days": -64
         },
         "proof_matches": [
           {
@@ -10638,7 +10638,7 @@
         "route": "CONSORTIUM_PARTNER",
         "deadline": {
           "state": "EXPIRED",
-          "days": -54
+          "days": -55
         },
         "proof_matches": [
           {
@@ -10864,7 +10864,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -2
+          "days": -3
         },
         "proof_matches": [
           {
@@ -11083,7 +11083,7 @@
         "route": "DIRECT_APPLICATION",
         "deadline": {
           "state": "EXPIRED",
-          "days": -75
+          "days": -76
         },
         "proof_matches": [
           {
@@ -11301,7 +11301,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -24
+          "days": -25
         },
         "proof_matches": [
           {
@@ -11557,7 +11557,7 @@
         "route": "REVIEW",
         "deadline": {
           "state": "EXPIRED",
-          "days": -17
+          "days": -18
         },
         "proof_matches": [
           {
