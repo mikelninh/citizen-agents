@@ -1,9 +1,42 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-11-17T16:04:03.680Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261018 SORT BY publication-date DESC",
+  "generated_at": "2026-11-18T15:43:13.458Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261019 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_800874_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Bereitstellung eines durch den Auftragnehmer betriebenen KI-Inferenzdienstes mittels OpenAI-kompatibler Schnittstelle",
+      "deadline": null,
+      "buyer_or_program": "Stadt Chemnitz",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/800874-2026"
+      ],
+      "ted": {
+        "publication_number": "800874-2026",
+        "publication_date": "2026-11-18+01:00",
+        "cpv": [
+          "72000000",
+          "72000000"
+        ]
+      }
+    },
     {
       "id": "ted_794059_2026",
       "type": "tender_candidate",
@@ -82,41 +115,6 @@
       }
     },
     {
-      "id": "ted_791547_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung",
-      "deadline": null,
-      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/791547-2026"
-      ],
-      "ted": {
-        "publication_number": "791547-2026",
-        "publication_date": "2026-11-13+01:00",
-        "cpv": [
-          "80522000",
-          "72268000",
-          "80522000",
-          "72268000"
-        ]
-      }
-    },
-    {
       "id": "ted_790188_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [Ne-Trust] Negative-Trust-Architekturen",
@@ -149,6 +147,41 @@
         "cpv": [
           "73000000",
           "73000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_791547_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung",
+      "deadline": null,
+      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/791547-2026"
+      ],
+      "ted": {
+        "publication_number": "791547-2026",
+        "publication_date": "2026-11-13+01:00",
+        "cpv": [
+          "80522000",
+          "72268000",
+          "80522000",
+          "72268000"
         ]
       }
     },
@@ -197,6 +230,41 @@
       }
     },
     {
+      "id": "ted_787822_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Softwareprogrammierung und -beratung – IT-Werkleistungen und IT-Dienstleistungen für das Serviceportal Migration Deutschland (SMD) für das Bundesministerium des Innern",
+      "deadline": null,
+      "buyer_or_program": "Bundesrepublik Deutschland, vertreten durch das Bundesministerium des Innern, vertreten durch das Beschaffungsamt des BMI",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/787822-2026"
+      ],
+      "ted": {
+        "publication_number": "787822-2026",
+        "publication_date": "2026-11-12+01:00",
+        "cpv": [
+          "72200000",
+          "72200000"
+        ]
+      }
+    },
+    {
       "id": "ted_789259_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvertrag \"Unterstützungs-/Dienstleistungen im Bereich IT-Betriebs-Compliance\"",
@@ -229,41 +297,6 @@
         "cpv": [
           "72000000",
           "72000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_787822_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Softwareprogrammierung und -beratung – IT-Werkleistungen und IT-Dienstleistungen für das Serviceportal Migration Deutschland (SMD) für das Bundesministerium des Innern",
-      "deadline": null,
-      "buyer_or_program": "Bundesrepublik Deutschland, vertreten durch das Bundesministerium des Innern, vertreten durch das Beschaffungsamt des BMI",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/787822-2026"
-      ],
-      "ted": {
-        "publication_number": "787822-2026",
-        "publication_date": "2026-11-12+01:00",
-        "cpv": [
-          "72200000",
-          "72200000"
         ]
       }
     },
@@ -415,6 +448,39 @@
       }
     },
     {
+      "id": "ted_774263_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Rundfunk- und Fernsehgeräte, Kommunikations- und Fernmeldeanlagen und Zubehör – Modernisierung der Infrastruktur des Videostudios im Multimedialabor am Standort Amberg",
+      "deadline": null,
+      "buyer_or_program": "Ostbayerische Technische Hochschule (OTH) Amberg-Weiden, Standort Amberg",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/774263-2026"
+      ],
+      "ted": {
+        "publication_number": "774263-2026",
+        "publication_date": "2026-11-06+01:00",
+        "cpv": [
+          "32000000",
+          "32000000"
+        ]
+      }
+    },
+    {
       "id": "ted_773064_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Dienstleistungen für Unternehmen: Recht, Marketing, Consulting, Einstellungen, Druck und Sicherheit – Multi-LLM-SaaS-Plattform und KI-Beratung",
@@ -451,39 +517,6 @@
           "72000000",
           "79000000",
           "72000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_774263_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Rundfunk- und Fernsehgeräte, Kommunikations- und Fernmeldeanlagen und Zubehör – Modernisierung der Infrastruktur des Videostudios im Multimedialabor am Standort Amberg",
-      "deadline": null,
-      "buyer_or_program": "Ostbayerische Technische Hochschule (OTH) Amberg-Weiden, Standort Amberg",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/774263-2026"
-      ],
-      "ted": {
-        "publication_number": "774263-2026",
-        "publication_date": "2026-11-06+01:00",
-        "cpv": [
-          "32000000",
-          "32000000"
         ]
       }
     },
