@@ -1,9 +1,88 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-11-19T15:47:26.322Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261020 SORT BY publication-date DESC",
+  "generated_at": "2026-11-20T15:30:01.709Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261021 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_807412_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung",
+      "deadline": null,
+      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [],
+      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/807412-2026"
+      ],
+      "ted": {
+        "publication_number": "807412-2026",
+        "publication_date": "2026-11-20+01:00",
+        "cpv": [
+          "80522000",
+          "72268000",
+          "80522000",
+          "72268000"
+        ]
+      }
+    },
+    {
+      "id": "ted_810275_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Entwicklung von kundenspezifischer Software – KI-Agenten für das Bauwesen und Building Information Modeling",
+      "deadline": null,
+      "buyer_or_program": "Hamburg Port Authority AöR",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 70,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/810275-2026"
+      ],
+      "ted": {
+        "publication_number": "810275-2026",
+        "publication_date": "2026-11-20+01:00",
+        "cpv": [
+          "72230000",
+          "72263000",
+          "72262000",
+          "72267100",
+          "73000000",
+          "72230000",
+          "72262000",
+          "72263000",
+          "72267100",
+          "73000000"
+        ]
+      }
+    },
     {
       "id": "ted_806861_2026",
       "type": "tender_candidate",
@@ -113,6 +192,50 @@
       }
     },
     {
+      "id": "ted_790817_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Entwicklung von kundenspezifischer Software – KI-Agenten für das Bauwesen und Building Information Modeling",
+      "deadline": null,
+      "buyer_or_program": "Hamburg Port Authority AöR",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 70,
+      "product_matches": [
+        "Digital Worker Factory / OpsPilot",
+        "SafeTrace / Master Proof"
+      ],
+      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/790817-2026"
+      ],
+      "ted": {
+        "publication_number": "790817-2026",
+        "publication_date": "2026-11-13+01:00",
+        "cpv": [
+          "72230000",
+          "72263000",
+          "72262000",
+          "72267100",
+          "73000000",
+          "72230000",
+          "72262000",
+          "72263000",
+          "72267100",
+          "73000000"
+        ]
+      }
+    },
+    {
       "id": "ted_789755_2026",
       "type": "tender_candidate",
       "headline": "Deutschland – Beihilfen, Unterstützungsleistungen und Zuwendungen – RV Beihilfeabrechnung",
@@ -215,50 +338,6 @@
           "72268000",
           "80522000",
           "72268000"
-        ]
-      }
-    },
-    {
-      "id": "ted_790817_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Entwicklung von kundenspezifischer Software – KI-Agenten für das Bauwesen und Building Information Modeling",
-      "deadline": null,
-      "buyer_or_program": "Hamburg Port Authority AöR",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 70,
-      "product_matches": [
-        "Digital Worker Factory / OpsPilot",
-        "SafeTrace / Master Proof"
-      ],
-      "why_fit": "Keyword-level discovery matched Digital Worker Factory / OpsPilot, SafeTrace / Master Proof. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/790817-2026"
-      ],
-      "ted": {
-        "publication_number": "790817-2026",
-        "publication_date": "2026-11-13+01:00",
-        "cpv": [
-          "72230000",
-          "72263000",
-          "72262000",
-          "72267100",
-          "73000000",
-          "72230000",
-          "72262000",
-          "72263000",
-          "72267100",
-          "73000000"
         ]
       }
     },
@@ -1658,80 +1737,6 @@
           "75131000",
           "79411100",
           "73000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_726150_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Anwendungsentwicklungsleistungen mit .NET, Java und verwandten Technologien in 5 Losen",
-      "deadline": null,
-      "buyer_or_program": "Land Hessen, vertreten durch die Hessische Zentrale für Datenverarbeitung",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [
-        "CARE / Public Service systems"
-      ],
-      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/726150-2026"
-      ],
-      "ted": {
-        "publication_number": "726150-2026",
-        "publication_date": "2026-10-20+02:00",
-        "cpv": [
-          "72000000",
-          "72000000",
-          "72000000",
-          "72000000",
-          "72000000",
-          "72000000"
-        ]
-      }
-    },
-    {
-      "id": "ted_722921_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – Schulungsseminare – Bereitstellung einer KI-Kompetenzplattform sowie Durchführung von KI-Grundlagen- und KI-Aufbauqualifizierung",
-      "deadline": null,
-      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/722921-2026"
-      ],
-      "ted": {
-        "publication_number": "722921-2026",
-        "publication_date": "2026-10-20+02:00",
-        "cpv": [
-          "80522000",
-          "72268000",
-          "80522000",
-          "72268000"
         ]
       }
     }
