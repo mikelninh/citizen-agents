@@ -1,9 +1,114 @@
 {
   "schema_version": "citizen-ted-discovery/1.0",
-  "generated_at": "2026-11-22T14:38:03.966Z",
-  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261023 SORT BY publication-date DESC",
+  "generated_at": "2026-11-23T18:15:20.505Z",
+  "query": "((FT~\"artificial intelligence\") OR (FT~\"künstliche Intelligenz\") OR (FT~\"agentic AI\") OR (FT~LLM) OR (FT~\"machine learning\")) AND buyer-country=DEU AND PD>=20261024 SORT BY publication-date DESC",
   "coverage_complete": false,
   "items": [
+    {
+      "id": "ted_810940_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Architektur-, Konstruktions- und Ingenieurbüros und Prüfstellen – Umbau Werkhalle BBZ Homburg | Objektplanung",
+      "deadline": "2027-01-04T23:59:59+01:00",
+      "buyer_or_program": "Saarpfalz-Kreis",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/810940-2026"
+      ],
+      "ted": {
+        "publication_number": "810940-2026",
+        "publication_date": "2026-11-23+01:00",
+        "cpv": [
+          "71000000",
+          "71000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_811951_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Architektur-, Konstruktions- und Ingenieurbüros und Prüfstellen – Leistungen der Objektplanung Gebäude und Innenräume, LPH 1-9 gemäß §§ 33 ff. HOAI, Leistungen der BIM-Gesamtkoordination",
+      "deadline": null,
+      "buyer_or_program": "Staatliches Bauamt Krumbach",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/811951-2026"
+      ],
+      "ted": {
+        "publication_number": "811951-2026",
+        "publication_date": "2026-11-23+01:00",
+        "cpv": [
+          "71000000",
+          "71000000"
+        ]
+      }
+    },
+    {
+      "id": "ted_811661_2026",
+      "type": "tender_candidate",
+      "headline": "Deutschland – Dienstleistungen von Architektur-, Konstruktions- und Ingenieurbüros und Prüfstellen – Umbau Werkhalle BBZ Homburg | TGA",
+      "deadline": "2027-01-04T23:59:59+01:00",
+      "buyer_or_program": "Saarpfalz-Kreis",
+      "potential": "Public procurement opportunity; value must be checked in the original notice.",
+      "fit_score": 50,
+      "product_matches": [
+        "CARE / Public Service systems"
+      ],
+      "why_fit": "Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.",
+      "blockers": [
+        "Full procurement documents not yet reviewed",
+        "Formal suitability, references and value not yet established"
+      ],
+      "action_pack": [
+        "Open the official TED notice",
+        "Check scope, deadline, eligibility and references",
+        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
+        "Only after approval: prepare submission or partner outreach"
+      ],
+      "source_status": "OFFICIAL_TED_API",
+      "sources": [
+        "https://ted.europa.eu/de/notice/-/detail/811661-2026"
+      ],
+      "ted": {
+        "publication_number": "811661-2026",
+        "publication_date": "2026-11-23+01:00",
+        "cpv": [
+          "71000000",
+          "71000000"
+        ]
+      }
+    },
     {
       "id": "ted_807412_2026",
       "type": "tender_candidate",
@@ -1556,39 +1661,6 @@
         "cpv": [
           "72415000",
           "72415000"
-        ]
-      }
-    },
-    {
-      "id": "ted_735326_2026",
-      "type": "tender_candidate",
-      "headline": "Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – KI-Prototypenentwicklung",
-      "deadline": null,
-      "buyer_or_program": "Neue Wege Kreis Bergstraße - Kommunales Jobcenter -",
-      "potential": "Public procurement opportunity; value must be checked in the original notice.",
-      "fit_score": 50,
-      "product_matches": [],
-      "why_fit": "AI-related German procurement candidate requiring manual qualification.",
-      "blockers": [
-        "Full procurement documents not yet reviewed",
-        "Formal suitability, references and value not yet established"
-      ],
-      "action_pack": [
-        "Open the official TED notice",
-        "Check scope, deadline, eligibility and references",
-        "Run proof matcher and decide DIRECT_BID_REVIEW vs PARTNER_FIRST",
-        "Only after approval: prepare submission or partner outreach"
-      ],
-      "source_status": "OFFICIAL_TED_API",
-      "sources": [
-        "https://ted.europa.eu/de/notice/-/detail/735326-2026"
-      ],
-      "ted": {
-        "publication_number": "735326-2026",
-        "publication_date": "2026-10-23+02:00",
-        "cpv": [
-          "72000000",
-          "72000000"
         ]
       }
     }
