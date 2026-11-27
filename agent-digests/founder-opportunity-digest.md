@@ -1,6 +1,6 @@
 # Founder Opportunity Digest
-Generated: 2026-11-26T16:57:27.028Z
-Open: **39** · Qualified: **7** · Automated new: **45** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
+Generated: 2026-11-27T16:42:55.479Z
+Open: **41** · Qualified: **7** · Automated new: **47** · Partner-route: **0** · Won: **0** · Observed revenue: **€0**
 > Revenue stays €0 until a WON record has award/contract/payment evidence. Automated TED hits are candidates until requirements are reviewed. Candidate partners are leads to qualify, not claims that they will bid.
 ## Deutschland – Forschungs- und Entwicklungsdienste und zugehörige Beratung – [AI-as-OS] Artificial Intelligence as Operating System
 **Origin:** TED_AUTOMATED · **Score:** 87/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
@@ -27,13 +27,13 @@ Open: **39** · Qualified: **7** · Automated new: **45** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvereinbarung zum Einsatz von KI zur Unterstützung der Krankenhausabrechnungsprüfung sowie zu Compliance, KI-Governance und Managementsystemen
-**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **5d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 74/100 · **Route:** REVIEW · **4d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched PrüfPilot, GitLaw, CareOS. Full requirements still need review.
 **Best proof:** GitLaw
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – IT-Dienste: Beratung, Software-Entwicklung, Internet und Hilfestellung – Rahmenvertrag "Unterstützungs-/Dienstleistungen im Bereich IT-Betriebs-Compliance"
-**Origin:** TED_AUTOMATED · **Score:** 73/100 · **Route:** REVIEW · **7d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 73/100 · **Route:** REVIEW · **6d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems, GitLaw. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
@@ -51,18 +51,24 @@ Open: **39** · Qualified: **7** · Automated new: **45** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Unternehmens- und Managementberatung und zugehörige Dienste – Rahmenvereinbarung zur strategischen Beratung und IT-Dienstleistungen
-**Origin:** TED_AUTOMATED · **Score:** 68/100 · **Route:** REVIEW · **14d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 68/100 · **Route:** REVIEW · **13d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Dienstleistungen von Architektur-, Konstruktions- und Ingenieurbüros und Prüfstellen – Umbau Werkhalle BBZ Homburg | Objektplanung
-**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **40d left** · **Pipeline:** FOUND
+**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **39d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Dienstleistungen von Architektur-, Konstruktions- und Ingenieurbüros und Prüfstellen – Umbau Werkhalle BBZ Homburg | TGA
+**Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **39d left** · **Pipeline:** FOUND
+**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
+**Best proof:** CARE / Public Service systems
+**Next action:** Open the official TED notice
+**Approval:** required before external action
+## Deutschland – Dienstleistungen von Architektur-, Konstruktions- und Ingenieurbüros und Prüfstellen – Neubau MINT-Zentrum Dillingen - Leistungen der Tragwerksplanung, LPH 1-6 gemäß §§ 49 ff. HOAI
 **Origin:** TED_AUTOMATED · **Score:** 66/100 · **Route:** REVIEW · **40d left** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
@@ -81,12 +87,6 @@ Open: **39** · Qualified: **7** · Automated new: **45** · Partner-route: **0*
 **Next action:** Open the official TED notice
 **Approval:** required before external action
 ## Deutschland – Softwareprogrammierung und -beratung – IT-Werkleistungen und IT-Dienstleistungen für das Serviceportal Migration Deutschland (SMD) für das Bundesministerium des Innern
-**Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
-**Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
-**Best proof:** CARE / Public Service systems
-**Next action:** Open the official TED notice
-**Approval:** required before external action
-## Deutschland – Beihilfen, Unterstützungsleistungen und Zuwendungen – RV Beihilfeabrechnung
 **Origin:** TED_AUTOMATED · **Score:** 65/100 · **Route:** REVIEW · **no deadline** · **Pipeline:** FOUND
 **Why fit:** Keyword-level discovery matched CARE / Public Service systems. Full requirements still need review.
 **Best proof:** CARE / Public Service systems
